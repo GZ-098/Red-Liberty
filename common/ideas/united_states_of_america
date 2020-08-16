@@ -13,6 +13,21 @@ ideas = {
 		ai_will_do = {
 			factor = 8
 		}  
+	} 
+	
+		Clark_Hewitt = {  
+
+		picture = Clark_Hewitt
+
+		allowed = {
+			original_tag = USA
+		}
+
+		traits = { captain_of_industry } 
+
+		ai_will_do = {
+			factor = 8
+		}  
 	}
 }
 
