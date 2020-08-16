@@ -5,7 +5,7 @@ ideas = {
 		picture = Leo_Hill
 
 		allowed = {
-			original_tag = SBR
+			original_tag = USA
 		}
 
 		traits = { financial_expert } 
