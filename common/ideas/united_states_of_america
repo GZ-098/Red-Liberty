@@ -28,6 +28,21 @@ ideas = {
 		ai_will_do = {
 			factor = 8
 		}  
+	} 
+	
+		Charles_Mccarthy = {
+		
+		picture = Charles_Mccarthy 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { communist_revolutionary } 
+		
+		ai_will_do = { 
+			factor = 3 
+		} 
 	}
 }
 
