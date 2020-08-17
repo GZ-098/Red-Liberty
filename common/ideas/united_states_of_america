@@ -610,6 +610,118 @@ ideas = {
 	}
 	materiel_manufacturer = {
 	}
-	theorist = {
+	theorist = { 
+	 	Willie_Gillespie = { 
+		
+		picture = Willie_Gillespie 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { military_theorist } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Collin_Key = { 
+		
+		picture = Collin_Key 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { superior_firepower_expert } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Jaylin_Stuart = { 
+		
+		picture = Jaylin_Stuart 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_warfare_theorist } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Alexander_Pearce = { 
+		
+		picture = Alexander_Pearce 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { close_air_support_proponent } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	}
+		Jayden_Baxter = { 
+		
+		picture = Jayden_Baxter 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { naval_theorist } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+		Jonathan_Stone = { 
+		
+		picture = Jonathan_Stone 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { naval_aviation_pioneer } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+		Oliver_Blair = { 
+		
+		picture = Oliver_Blair 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { submarine_specialist } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+		Finlay_Edwards = { 
+		
+		picture = Finlay_Edwards 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { victory_through_airpower } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
 	}
 }
+
