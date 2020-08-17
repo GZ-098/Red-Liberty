@@ -1,8 +1,5 @@
 ideas = {
 	political_advisor = { 
-	 ###################### 
-	 #US political advisors 
- 	 ######################
 		Leo_Hill = {  
 
 		picture = Leo_Hill
@@ -118,8 +115,22 @@ ideas = {
 }
 
 	#Military
-	army_chief = {
+	army_chief = {  
+	 	Oscar_Sutton = {
+		
+		picture = Oscar_Sutton 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_chief_defensive_2 } 
+		
+		ai_will_do = { 
+			factor = 3
+		} 
 	}
+}
 	navy_chief = {
 	}
 	air_chief = {
