@@ -65,4 +65,8 @@ spriteTypes = {
 		name = "GFX_idea_Brody_Burks" 
 		texturefile = "gfx/interface/army_chiefs/Brody_Burks.dds"
 	} 
+	spriteType = {
+		name = "GFX_idea_Jacob_Harris" 
+		texturefile = "gfx/interface/army_chiefs/Jacob_Harris.dds"
+	} 
 }
