@@ -357,8 +357,120 @@ ideas = {
 		} 
 	}
 }
-	air_chief = {
+	air_chief = { 
+	 	Ellis_Sharp = {
+		
+		picture = Ellis_Sharp 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_chief_reform_3 } 
+		
+		ai_will_do = { 
+			factor = 6
+		} 
+	} 
+	 	Josh_Brown = {
+		
+		picture = Josh_Brown 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_chief_safety_1 } 
+		
+		ai_will_do = { 
+			factor = 3
+		} 
+	} 
+	 	Ryan_Turner = {
+		
+		picture = Ryan_Turner 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_chief_old_guard } 
+		
+		ai_will_do = { 
+			factor = 3
+		} 
+	} 
+	 	Freddy_Poole = {
+		
+		picture = Freddy_Poole 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_chief_night_operations_2 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Roderick_Baldwin = {
+		
+		picture = Roderick_Baldwin 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_chief_ground_support_1 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Steven_Boyd = {
+		
+		picture = Steven_Boyd 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_chief_all_weather_2 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Clayton_Hess = {
+		
+		picture = Clayton_Hess 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_chief_reform_3 } 
+		
+		ai_will_do = { 
+			factor = 10
+		} 
+	}  
+	 	Louis_Watkins = {
+		
+		picture = Louis_Watkins 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_chief_ground_support_3 } 
+		
+		ai_will_do = { 
+			factor = 10
+		} 
 	}
+}
 	high_command = {
 	}
 	#Manufacturers
