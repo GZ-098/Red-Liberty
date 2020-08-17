@@ -30,4 +30,15 @@ spriteTypes = {
 		name = "GFX_idea_Alex_Sharp" 
 		texturefile = "gfx/interface/advisors/Alex_Sharp.dds"
 	} 
+	spriteType = {
+		name = "GFX_idea_Mack_Higgins" 
+		texturefile = "gfx/interface/advisors/Mack_Higgins.dds"
+	} 
+	###################### 
+ 	#US army chiefs 
+ 	###################### 
+	spriteType = {
+		name = "GFX_idea_Oscar_Sutton" 
+		texturefile = "gfx/interface/advisors/Oscar_Sutton.dds"
+	} 
 }
