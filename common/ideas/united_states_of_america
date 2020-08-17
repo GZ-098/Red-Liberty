@@ -100,6 +100,20 @@ ideas = {
 		ai_will_do = { 
 			factor = 8
 		} 
+	} 
+		Mack_Higgins = {
+		
+		picture = Mack_Higgins 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { armaments_organizer war_industrialist } 
+		
+		ai_will_do = { 
+			factor = 8
+		} 
 	}
 }
 
