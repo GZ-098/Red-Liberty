@@ -139,4 +139,39 @@ spriteTypes = {
 		name = "GFX_idea_Louis_Watkins" 
 		texturefile = "gfx/interface/air_chiefs/Louis_Watkins.dds"
 	} 
+	###################### 
+ 	#US high command 
+ 	######################  
+	spriteType = {
+		name = "GFX_idea_Nehemiah_Massey" 
+		texturefile = "gfx/interface/high_command/Nehemiah_Massey.dds"
+	}  
+	spriteType = {
+		name = "GFX_idea_Justin_Warren" 
+		texturefile = "gfx/interface/high_command/Justin_Warren.dds"
+	} 	
+	spriteType = {
+		name = "GFX_idea_Ray_Bailey" 
+		texturefile = "gfx/interface/high_command/Ray_Bailey.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Scott_Jones" 
+		texturefile = "gfx/interface/high_command/Scott_Jones.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Brendon_Osborn" 
+		texturefile = "gfx/interface/high_command/Brendon_Osborn.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Aiden_Wells" 
+		texturefile = "gfx/interface/high_command/Aiden_Wells.dds"
+	}  
+	spriteType = {
+		name = "GFX_idea_Nikolas_Espinoza" 
+		texturefile = "gfx/interface/high_command/Nikolas_Espinoza.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Truman_Savage" 
+		texturefile = "gfx/interface/high_command/Truman_Savage.dds"
+	} 
 }
