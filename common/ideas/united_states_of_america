@@ -471,8 +471,136 @@ ideas = {
 		} 
 	}
 }
-	high_command = {
+	high_command = { 
+	 	Nehemiah_Massey = { 
+		
+		ledger = air
+		
+		picture = Nehemiah_Massey 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_chief_all_weather_3 } 
+		
+		ai_will_do = { 
+			factor = 10
+		} 
+	} 
+	 	Justin_Warren = { 
+		
+		ledger = air
+		
+		picture = Justin_Warren 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_air_combat_training_2 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Ray_Bailey = { 
+		
+		ledger = army
+		
+		picture = Ray_Bailey 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_entrenchment_2 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Scott_Jones = { 
+		
+		ledger = army
+		
+		picture = Scott_Jones 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_armored_1 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Brendon_Osborn = { 
+		
+		ledger = army
+		
+		picture = Brendon_Osborn 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_artillery_2 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Aiden_Wells = { 
+		
+		ledger = army
+		
+		picture = Aiden_Wells 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_infantry_1 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Nikolas_Espinoza = { 
+		
+		ledger = navy
+		
+		picture = Nikolas_Espinoza 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_fleet_logistics_1 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Truman_Savage = { 
+		
+		ledger = navy
+		
+		picture = Truman_Savage 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_amphibious_assault_2 } 
+		
+		ai_will_do = { 
+			factor = 7
+		} 
 	}
+}
 	#Manufacturers
 	tank_manufacturer = {
 	}
