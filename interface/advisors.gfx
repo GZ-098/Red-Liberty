@@ -41,4 +41,28 @@ spriteTypes = {
 		name = "GFX_idea_Oscar_Sutton" 
 		texturefile = "gfx/interface/army_chiefs/Oscar_Sutton.dds"
 	} 
+	spriteType = {
+		name = "GFX_idea_Zachary_Mcdonald" 
+		texturefile = "gfx/interface/army_chiefs/Zachary_Mcdonald.dds"
+	}  
+	spriteType = {
+		name = "GFX_idea_Ethan_Miller" 
+		texturefile = "gfx/interface/army_chiefs/Ethan_Miller.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Collin_Bolton" 
+		texturefile = "gfx/interface/army_chiefs/Collin_Bolton.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Patrick_Palmer" 
+		texturefile = "gfx/interface/army_chiefs/Patrick_Palmer.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Max_Kelly" 
+		texturefile = "gfx/interface/army_chiefs/Max_Kelly.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Brody_Burks" 
+		texturefile = "gfx/interface/army_chiefs/Brody_Burks.dds"
+	} 
 }
