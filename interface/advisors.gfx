@@ -95,5 +95,48 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_Elliot_Lee" 
 		texturefile = "gfx/interface/navy_chiefs/Elliot_Lee.dds"
-	}
+	} 
+	spriteType = {
+		name = "GFX_idea_Harrison_Davis" 
+		texturefile = "gfx/interface/navy_chiefs/Harrison_Davis.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Riley_Hart" 
+		texturefile = "gfx/interface/navy_chiefs/Riley_Hart.dds"
+	} 
+	###################### 
+ 	#US air chiefs 
+ 	###################### 
+	spriteType = {
+		name = "GFX_idea_Ellis_Sharp" 
+		texturefile = "gfx/interface/air_chiefs/Ellis_Sharp.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Josh_Brown" 
+		texturefile = "gfx/interface/air_chiefs/Josh_Brown.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Ryan_Turner" 
+		texturefile = "gfx/interface/air_chiefs/Ryan_Turner.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Freddy_Poole" 
+		texturefile = "gfx/interface/air_chiefs/Freddy_Poole.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Roderick_Baldwin" 
+		texturefile = "gfx/interface/air_chiefs/Roderick_Baldwin.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Steven_Boyd" 
+		texturefile = "gfx/interface/air_chiefs/Steven_Boyd.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Clayton_Hess" 
+		texturefile = "gfx/interface/air_chiefs/Clayton_Hess.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Louis_Watkins" 
+		texturefile = "gfx/interface/air_chiefs/Louis_Watkins.dds"
+	} 
 }
