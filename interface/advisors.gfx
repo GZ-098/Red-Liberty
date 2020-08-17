@@ -26,4 +26,8 @@ spriteTypes = {
 		name = "GFX_idea_Cody_Walker" 
 		texturefile = "gfx/interface/advisors/Cody_Walker.dds"
 	} 
+	spriteType = {
+		name = "GFX_idea_Alex_Sharp" 
+		texturefile = "gfx/interface/advisors/Alex_Sharp.dds"
+	} 
 }
