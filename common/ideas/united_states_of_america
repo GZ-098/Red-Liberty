@@ -14,7 +14,6 @@ ideas = {
 			factor = 8
 		}  
 	} 
-	
 		Clark_Hewitt = {  
 
 		picture = Clark_Hewitt
@@ -29,7 +28,6 @@ ideas = {
 			factor = 8
 		}  
 	} 
-	
 		Charles_Mccarthy = {
 		
 		picture = Charles_Mccarthy 
@@ -44,7 +42,6 @@ ideas = {
 			factor = 3 
 		} 
 	} 
-	
 		Matthew_Black = {
 		
 		picture = Matthew_Black 
@@ -54,6 +51,20 @@ ideas = {
 		} 
 		
 		traits = { democratic_reformer social_reformer } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+		Benjamin_Cook = {
+		
+		picture = Benjamin_Cook 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { popular_figurehead propaganda_expert } 
 		
 		ai_will_do = { 
 			factor = 5
