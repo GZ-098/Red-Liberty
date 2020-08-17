@@ -327,6 +327,34 @@ ideas = {
 		ai_will_do = { 
 			factor = 5
 		} 
+	} 
+	 	Harrison_Davis = {
+		
+		picture = Harrison_Davis 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_fleet_logistics_1 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Riley_Hart = {
+		
+		picture = Riley_Hart 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_amphibious_assault_3 } 
+		
+		ai_will_do = { 
+			factor = 10
+		} 
 	}
 }
 	air_chief = {
