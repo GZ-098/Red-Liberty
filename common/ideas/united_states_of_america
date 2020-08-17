@@ -229,8 +229,106 @@ ideas = {
 		} 
 	}
 }
-	navy_chief = {
+	navy_chief = { 
+	 	Jamison_Brady = {
+		
+		picture = Jamison_Brady 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_chief_naval_aviation_3 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Tucker_Fletcher = {
+		
+		picture = Tucker_Fletcher 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_chief_reform_1 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Zac_Poole = {
+		
+		picture = Zac_Poole 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_chief_reform_1 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Lewis_Wallace = {
+		
+		picture = Lewis_Wallace 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_chief_maneuver_3 } 
+		
+		ai_will_do = { 
+			factor = 10
+		} 
+	} 
+	 	William_Wood = {
+		
+		picture = William_Wood 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_anti_submarine_2 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Elliot_Lee = {
+		
+		picture = Elliot_Lee 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_anti_submarine_2 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Elliot_Lee = {
+		
+		picture = Elliot_Lee 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_anti_submarine_2 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
 	}
+}
 	air_chief = {
 	}
 	high_command = {
