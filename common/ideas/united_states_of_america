@@ -86,6 +86,20 @@ ideas = {
 		ai_will_do = { 
 			factor = 5
 		} 
+	} 
+		Alex_Sharp = {
+		
+		picture = Alex_Sharp 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { backroom_backstabber silent_workhorse } 
+		
+		ai_will_do = { 
+			factor = 8
+		} 
 	}
 }
 
