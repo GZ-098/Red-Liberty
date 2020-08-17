@@ -39,6 +39,6 @@ spriteTypes = {
  	###################### 
 	spriteType = {
 		name = "GFX_idea_Oscar_Sutton" 
-		texturefile = "gfx/interface/advisors/Oscar_Sutton.dds"
+		texturefile = "gfx/interface/army_chiefs/Oscar_Sutton.dds"
 	} 
 }
