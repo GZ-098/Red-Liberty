@@ -11,4 +11,8 @@ spriteTypes = {
 		name = "GFX_idea_Charles_Mccarthy" 
 		texturefile = "gfx/interface/advisors/Charles_Mccarthy.dds"
 	} 
+	spriteType = {
+		name = "GFX_idea_Matthew_Black" 
+		texturefile = "gfx/interface/advisors/Matthew_Black.dds"
+	} 
 }
