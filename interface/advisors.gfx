@@ -1,4 +1,7 @@
 spriteTypes = {	
+	###################### 
+ 	#US political advisors 
+ 	######################
 	spriteType = {
 		name = "GFX_idea_Leo_Hill" 
 		texturefile = "gfx/interface/advisors/Leo_Hill.dds"
