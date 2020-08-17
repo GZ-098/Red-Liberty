@@ -1,5 +1,8 @@
 ideas = {
-	political_advisor = {
+	political_advisor = { 
+	 ###################### 
+	 #US political advisors 
+ 	 ######################
 		Leo_Hill = {  
 
 		picture = Leo_Hill
@@ -65,6 +68,20 @@ ideas = {
 		} 
 		
 		traits = { popular_figurehead propaganda_expert } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+		Cody_Walker = {
+		
+		picture = Cody_Walker 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { technocrat } 
 		
 		ai_will_do = { 
 			factor = 5
