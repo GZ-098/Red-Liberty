@@ -69,4 +69,31 @@ spriteTypes = {
 		name = "GFX_idea_Jacob_Harris" 
 		texturefile = "gfx/interface/army_chiefs/Jacob_Harris.dds"
 	} 
+	###################### 
+ 	#US navy chiefs 
+ 	######################
+	spriteType = {
+		name = "GFX_idea_Jamison_Brady" 
+		texturefile = "gfx/interface/navy_chiefs/Jamison_Brady.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Tucker_Fletcher" 
+		texturefile = "gfx/interface/navy_chiefs/Tucker_Fletcher.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Zac_Poole" 
+		texturefile = "gfx/interface/navy_chiefs/Zac_Poole.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Lewis_Wallace" 
+		texturefile = "gfx/interface/navy_chiefs/Lewis_Wallace.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_William_Wood" 
+		texturefile = "gfx/interface/navy_chiefs/William_Wood.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Elliot_Lee" 
+		texturefile = "gfx/interface/navy_chiefs/Elliot_Lee.dds"
+	}
 }
