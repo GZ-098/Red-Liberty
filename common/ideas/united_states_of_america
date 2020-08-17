@@ -43,6 +43,21 @@ ideas = {
 		ai_will_do = { 
 			factor = 3 
 		} 
+	} 
+	
+		Matthew_Black = {
+		
+		picture = Matthew_Black 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { democratic_reformer social_reformer } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
 	}
 }
 
