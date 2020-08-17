@@ -174,4 +174,39 @@ spriteTypes = {
 		name = "GFX_idea_Truman_Savage" 
 		texturefile = "gfx/interface/high_command/Truman_Savage.dds"
 	} 
+	###################### 
+ 	#US theorists
+ 	######################  
+	spriteType = {
+		name = "GFX_idea_Willie_Gillespie" 
+		texturefile = "gfx/interface/theorists/Willie_Gillespie.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Collin_Key" 
+		texturefile = "gfx/interface/theorists/Collin_Key.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Jaylin_Stuart" 
+		texturefile = "gfx/interface/theorists/Jaylin_Stuart.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Alexander_Pearce" 
+		texturefile = "gfx/interface/theorists/Alexander_Pearce.dds"
+	}  
+	spriteType = {
+		name = "GFX_idea_Jayden_Baxter" 
+		texturefile = "gfx/interface/theorists/Jayden_Baxter.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_Jonathan_Stone" 
+		texturefile = "gfx/interface/theorists/Jonathan_Stone.dds"
+	}  
+	spriteType = {
+		name = "GFX_idea_Oliver_Blair" 
+		texturefile = "gfx/interface/theorists/Oliver_Blair.dds"
+	}  
+	spriteType = {
+		name = "GFX_idea_Finlay_Edwards" 
+		texturefile = "gfx/interface/theorists/Finlay_Edwards.dds"
+	} 
 }
