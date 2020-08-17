@@ -129,6 +129,104 @@ ideas = {
 		ai_will_do = { 
 			factor = 3
 		} 
+	} 
+	 	Zachary_Mcdonald = {
+		
+		picture = Zachary_Mcdonald 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_chief_drill_1 } 
+		
+		ai_will_do = { 
+			factor = 3
+		} 
+	} 
+	 	Ethan_Miller = {
+		
+		picture = Ethan_Miller 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_chief_reform_3 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Collin_Bolton = {
+		
+		picture = Collin_Bolton 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_chief_offensive_2 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Patrick_Palmer = {
+		
+		picture = Patrick_Palmer 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_armored_1 } 
+		
+		ai_will_do = { 
+			factor = 3
+		} 
+	} 
+	 	Max_Kelly = {
+		
+		picture = Max_Kelly 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_entrenchment_2 } 
+		
+		ai_will_do = { 
+			factor = 3
+		} 
+	} 
+	 	Brody_Burks = {
+		
+		picture = Brody_Burks 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_artillery_1 } 
+		
+		ai_will_do = { 
+			factor = 3
+		} 
+	} 
+	 	Jacob_Harris = {
+		
+		picture = Jacob_Harris 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_regrouping_1 } 
+		
+		ai_will_do = { 
+			factor = 3
+		} 
 	}
 }
 	navy_chief = {
