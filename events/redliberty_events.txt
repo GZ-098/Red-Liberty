@@ -17,6 +17,6 @@ country_event = {
 	}
 	option = {
 		name = "Got it"
-		ai_chance = { factor = 1}
+		ai_chance = { factor = 1} 
 	}
 }
