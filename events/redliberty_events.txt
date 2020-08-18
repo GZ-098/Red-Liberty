@@ -7,9 +7,7 @@ country_event = {
 	desc = redliberty.1.desc
 	picture = GFX_report_event_usa_lore
 	fire_only_once = yes
-	trigger = {
-		tag= USA
-	}
+	major = no
 	on_actions = {
     		on_startup = {
         		effect = {
