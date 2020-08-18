@@ -5,8 +5,6 @@
             			  every_country = {
                				  news_event = { id = redliberties.1 days = 1 }
             			  }
-        		  } 
-        		  effect = {
             			  USA = {
                				  country_event = { id = redliberty.1 days = 3 }
             			  }
