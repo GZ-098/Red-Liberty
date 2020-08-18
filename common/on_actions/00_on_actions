@@ -3,7 +3,7 @@
     		on_startup = {
         		  effect = {
             			  every_country = {
-               				  news_event = { id = redliberties.1 days = 1 }
+               				  news_event = { id = redliberties.1 days = 2 }
             			  }
         		  }
    		  }
