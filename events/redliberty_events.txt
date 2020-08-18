@@ -1,20 +1,26 @@
 add_namespace = redliberty
 
-##Event: A Few Good Men
+##Event: US lore
 country_event = {
 	id = redliberty.1
-	title = redliberty.1.title
+	title = "US Lore"
 	desc = redliberty.1.desc
-	picture = GFX_report_event_generic_truck
+	picture = GFX_report_event_usa_lore
 	fire_only_once = yes
 	trigger = {
 		tag= USA
 	}
-	mean_time_to_happen = {
-		days = 69
+	on_actions = {
+    		on_startup = {
+        		effect = {
+            			USA = {
+               				country_event = { id = redliberty.1 days = 3 }
+            			}
+        		}
+   		 }
 	}
 	option = {
-		name = redliberty.1.a
+		name = "Got it"
 		ai_chance = { factor = 1}
 	}
 }
