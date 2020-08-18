@@ -10,12 +10,10 @@ country_event = {
 	major = no
 	on_actions = {
     		on_startup = {
-        		effect = {
             			USA = {
                				country_event = { id = redliberty.1 days = 3 }
             			}
         		}
-   		 }
 	}
 	option = {
 		name = "Got it"
