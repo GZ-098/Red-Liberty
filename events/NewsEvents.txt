@@ -28,7 +28,6 @@ news_event = {
 	
 	option = {
 		name = "Alright" 
-		country_event = { id = redliberty.1 days = 1}
 	}
 }
 	
