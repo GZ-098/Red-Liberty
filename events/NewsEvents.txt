@@ -27,7 +27,8 @@ news_event = {
 	timeout_days = 10
 	
 	option = {
-		name = "Alright"
+		name = "Alright" 
+		country_event = { id = redliberty.1 days = 1}
 	}
 }
 	
