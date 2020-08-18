@@ -1,0 +1,32 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = redliberties
+
+# Welcome message
+news_event = {
+	id = redliberties.1
+	title = "Welcome to the Red Liberty Mod!"
+	desc = redliberties.1.d
+	picture = GFX_news_event_red_liberty_welcome   
+
+	is_triggered_only = yes
+
+	on_actions = {
+    		on_startup = {
+        		effect = {
+            			every_country = {
+               				news_event = { id = redliberties.1 days = 1 }
+            			}
+			}
+   		}
+	}
+	
+	timeout_days = 10
+	
+	option = {
+		name = "Alright" 
+	}
+}
+	
