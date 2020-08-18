@@ -4,29 +4,23 @@
 
 add_namespace = redliberties
 
-# Marco Polo Bridge I
+# Welcome message
 news_event = {
 	id = redliberties.1
 	title = "Welcome to the Red Liberty Mod!"
 	desc = redliberties.1.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_red_liberty_welcome
 	
 	major = yes
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = news.1.a
-		trigger = {
-			NOT = {
-				TAG = JAP
-				TAG = CHI
-			}
-		}
-	}
-	option = {
 		name = "Alright"
-		trigger = { TAG = USA }
+		add_political_power = 10 
+		ai_chance = { 
+		factor = 100
+		} 
 	}
 }
 	
