@@ -9,4 +9,5 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_news_event_red_liberty_welcome"
 		texturefile = "gfx/event_gfx/news_event_red_liberty_welcome.dds"
-	}
+	} 
+}
