@@ -11,13 +11,20 @@ news_event = {
 	desc = redliberties.1.d
 	picture = GFX_news_event_red_liberty_welcome
 	
-	major = yes 
+	major = no 
 
-	fire_only_once= yes
+	on_actions = {
+    		on_startup = {
+        		effect = {
+            			every_country = {
+               				news_event = { id = redliberties.1 days = 1 }
+            			}
+        		}
+   		 }
+	}
+
 	
-	mean_time_to_happen = { days = 1 }
-	
-	timeout_days = 15
+	timeout_days = 10
 	
 	option = {
 		name = "Alright"
