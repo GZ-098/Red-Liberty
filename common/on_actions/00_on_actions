@@ -1,0 +1,10 @@
+
+	on_actions = {
+    		on_startup = {
+        		  effect = {
+            			  every_country = {
+               				  news_event = { id = redliberties.1 days = 1 }
+            			  }
+        		  }
+   		  }
+	}
