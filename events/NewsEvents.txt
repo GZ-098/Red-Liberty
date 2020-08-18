@@ -15,14 +15,10 @@ news_event = {
 	
 	on_startup = yes
 	
-	timeout_days = 20
+	timeout_days = 15
 	
 	option = {
 		name = "Alright"
-		add_political_power = 10 
-		ai_chance = { 
-		factor = 100
-		} 
 	}
 }
 	
