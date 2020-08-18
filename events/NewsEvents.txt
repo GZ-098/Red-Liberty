@@ -13,7 +13,7 @@ news_event = {
 	
 	major = yes 
 	
-	on_startup = yes
+	mean_time_to_happen = { days = 1 }
 	
 	timeout_days = 15
 	
