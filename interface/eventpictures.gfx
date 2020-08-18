@@ -1,10 +1,9 @@
 spriteTypes = {
 	
-	#spriteType = {
-		#name = "GFX_report_event_canada_ronnie"
-		#texturefile = "gfx/event_pictures/report_event_canada_ronnie.dds"
-	#} 
-#remove the hashtags to use the code above
+	spriteType = {
+		name = "GFX_report_event_usa_lore"
+		texturefile = "gfx/event_gfx/report_event_usa_lore.dds"
+	} 
 
 	spriteType = {
 		name = "GFX_news_event_red_liberty_welcome"
