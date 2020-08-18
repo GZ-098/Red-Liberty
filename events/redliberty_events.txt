@@ -11,7 +11,7 @@ country_event = {
 	
 	trigger = {
 		tag = USA 
-		date > 1936 
+		date > 1936.1.1
 	} 
 	
 	mean_time_to_happen = { days = 1 }
