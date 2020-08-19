@@ -8,7 +8,21 @@ spriteTypes = {
 		noOfFrames = 15		
 	}
 
-	### new tfv nat spirit icons
+	### new tfv nat spirit icons 
+	##################
+	#red liberty icons 
+	################## 
+	spriteType = {
+		name = "GFX_idea_USA_goodyear"
+		texturefile = "gfx/interface/ideas/USA_goodyear.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_USA_republic_aviation"
+		texturefile = "gfx/interface/ideas/USA_republic_aviation.dds"
+	}
+	##################
+	#red liberty icons 
+	##################
 
 	spriteType = {
 		name = "GFX_idea_generic_degauss_ship_hulls"
