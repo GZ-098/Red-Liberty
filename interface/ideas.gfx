@@ -19,6 +19,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_USA_republic_aviation"
 		texturefile = "gfx/interface/ideas/USA_republic_aviation.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_USA_vultee"
+		texturefile = "gfx/interface/ideas/USA_vultee.dds"
 	}
 	##################
 	#red liberty icons 
