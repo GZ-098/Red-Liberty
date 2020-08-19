@@ -35,6 +35,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_USA_consolidated_aircraft"
 		texturefile = "gfx/interface/ideas/USA_consolidated_aircraft.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_USA_newport_news_shipbuilding"
+		texturefile = "gfx/interface/ideas/USA_newport_news_shipbuilding.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_USA_bollinger_shipyards"
+		texturefile = "gfx/interface/ideas/USA_bollinger_shipyards.dds"
 	}
 	##################
 	#red liberty icons 
