@@ -21,16 +21,16 @@ set_technology = {
 #Politics for 1936.1.1
 set_politics = {
 	ruling_party = autocratic_despotism
-	last_election = "1935.1.1"
-	election_frequency = 0
-	elections_allowed = no
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 4
-	empowered_nationalism = 18
-	revolutionary_socialism = 6 
-	democratic_socialism = 12
-	autocratic_despotism = 60
+	democratic = 20
+	revolutionary_socialism = 20
+	empowered_nationalism = 20
+	democratic_socialism = 20
+	autocratic_despotism = 20
 }
 
 #Politics for 1939.1.1
