@@ -706,7 +706,7 @@ ideas = {
 		
 		jeep = {
 			
-			picture = USA_repeating
+			picture = USA_jeep
 
 			allowed = {
 				original_tag = USA
@@ -723,7 +723,7 @@ ideas = {
 		} 
 		repeating = {
 			
-			picture = USA_jeep
+			picture = USA_repeating
 
 			allowed = {
 				original_tag = USA
