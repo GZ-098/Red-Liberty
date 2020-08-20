@@ -604,7 +604,43 @@ ideas = {
 	#Manufacturers
 	tank_manufacturer = {
 	}
-	naval_manufacturer = {
+	naval_manufacturer = {  
+		designer = yes
+		
+		newport_news_shipbuilding = {
+			
+			picture = USA_newport_news_shipbuilding
+
+			allowed = {
+				original_tag = USA
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				naval_equipment = 0.25
+			}
+			
+			traits = { naval_manufacturer }
+		} 
+		bollinger_shipyards = {
+			
+			picture = USA_bollinger_shipyards
+
+			allowed = {
+				original_tag = USA
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				naval_equipment = 0.25
+			}
+			
+			traits = { pacific_fleet_naval_manufacturer  }
+		}
 	}
 	aircraft_manufacturer = {  
 	
@@ -681,7 +717,10 @@ ideas = {
 			traits = { medium_aircraft_manufacturer }
 		}
 	}
-	materiel_manufacturer = { 
+	materiel_manufacturer = {  
+
+		designer = yes 
+		
 		jeep = {
 			
 			picture = USA_repeating
@@ -694,7 +733,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				air_equipment = 0.30
+				motorized_equipment = 0.30
 			}
 			
 			traits = { motorized_equipment_manufacturer }
@@ -711,7 +750,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				air_equipment = 0.20
+				infantry_weapons = 0.20
 			}
 			
 			traits = { infantry_equipment_manufacturer }
