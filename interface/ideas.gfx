@@ -42,10 +42,6 @@ spriteTypes = {
 	} 
 	spriteType = {
 		name = "GFX_idea_USA_jeep"
-		texturefile = "gfx/interface/ideas/USA_jeep.dds"
-	} 
-	spriteType = {
-		name = "GFX_idea_USA_jeep"
 		texturefile = "gfx/interface/ideas/USA_jeep.dds" 
 	} 
 	spriteType = {
