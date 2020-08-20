@@ -37,12 +37,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/USA_consolidated_aircraft.dds"
 	} 
 	spriteType = {
-		name = "GFX_idea_USA_newport_news_shipbuilding"
-		texturefile = "gfx/interface/ideas/USA_newport_news_shipbuilding.dds"
-	} 
-	spriteType = {
 		name = "GFX_idea_USA_bollinger_shipyards"
 		texturefile = "gfx/interface/ideas/USA_bollinger_shipyards.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_USA_jeep"
+		texturefile = "gfx/interface/ideas/USA_jeep.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_USA_jeep"
+		texturefile = "gfx/interface/ideas/USA_jeep.dds" 
+	} 
+	spriteType = {
+		name = "GFX_idea_USA_repeating"
+		texturefile = "gfx/interface/ideas/USA_repeating.dds" 
 	}
 	##################
 	#red liberty icons 
