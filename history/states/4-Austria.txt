@@ -23,12 +23,12 @@ state={
 			industrial_complex = 5
 			air_base = 6
 		}
-		add_core_of = AUS
+		add_core_of = AHE
 
 		1938.3.12 = {
-			owner = GER
-			controller = GER
-			add_core_of = GER
+			owner = AHE
+			controller = AHE
+			add_core_of = AHE
 		}
 		1939.1.1 = {
 			buildings = {
