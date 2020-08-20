@@ -1,8 +1,8 @@
 #reload countrycolors
 
 AHE = {
-	color = HSV { 0 0 84 }
-	color_ui = rgb { 215 215 215 }
+	color = HSV { 105 145 114 }
+	color_ui = rgb { 134 28 57 }
 }
 GER = {
 	color = HSV { 0.1 0.15 0.4 }
