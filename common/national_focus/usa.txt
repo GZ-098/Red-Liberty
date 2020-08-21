@@ -1,0 +1,332 @@
+focus_tree = {
+	id = usa_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USA
+		} 
+
+	default = no
+
+	}
+	#Focus for Our plans cannot be impeded!
+	focus = {
+		id = USA_our_plans_cannot_be_impeded
+		icon = GFX_goal_unknown
+		x = 24
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_reviewing_the_constitution }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Game of Politics
+	focus = {
+		id = USA_a_game_of_politics
+		icon = GFX_goal_unknown
+		x = 27
+		y = 8
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_congressional_complaints }
+		mutually_exclusive = { focus = USA_we_have_the_majority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Coalition with the Liberals?
+	focus = {
+		id = USA_a_coalition_with_the_liberals
+		icon = GFX_goal_unknown
+		x = 18
+		y = 8
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_liberal_path }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Convincing the Liberals
+	focus = {
+		id = USA_convincing_the_liberals
+		icon = GFX_goal_unknown
+		x = 18
+		y = 9
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_a_coalition_with_the_liberals }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Congressional Complaints
+	focus = {
+		id = USA_congressional_complaints
+		icon = GFX_goal_unknown
+		x = 26
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_all_in_baby }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Right through the house...
+	focus = {
+		id = USA_right_through_the_house
+		icon = GFX_goal_unknown
+		x = 25
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_we_have_the_majority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ...And into the Senate
+	focus = {
+		id = USA_and_into_the_senate
+		icon = GFX_goal_unknown
+		x = 25
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_right_through_the_house }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Who cares about the constitution?
+	focus = {
+		id = USA_who_cares_about_the_constitution
+		icon = GFX_goal_unknown
+		x = 25
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_our_plans_cannot_be_impeded }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for All in, baby
+	focus = {
+		id = USA_all_in_baby
+		icon = GFX_goal_unknown
+		x = 26
+		y = 6
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_who_cares_about_the_constitution }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Follow the Constitution
+	focus = {
+		id = USA_follow_the_constitution
+		icon = GFX_goal_unknown
+		x = 22
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_reviewing_the_constitution }
+		mutually_exclusive = { focus = USA_our_plans_cannot_be_impeded }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tread the Line
+	focus = {
+		id = USA_tread_the_line
+		icon = GFX_goal_unknown
+		x = 21
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_follow_the_constitution }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Conservative Path
+	focus = {
+		id = USA_the_conservative_path
+		icon = GFX_goal_unknown
+		x = 22
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_compromises_and_deals }
+		mutually_exclusive = { 
+			focus = USA_the_liberal_path 
+		}
+		mutually_exclusive = { 
+			focus = USA_the_moderate_path 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Liberal Path
+	focus = {
+		id = USA_the_liberal_path
+		icon = GFX_goal_unknown
+		x = 18
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_compromises_and_deals }
+		mutually_exclusive = { 
+			focus = USA_the_moderate_path 
+		}
+		mutually_exclusive = { 
+			focus = USA_the_conservative_path 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Moderate Path
+	focus = {
+		id = USA_the_moderate_path
+		icon = GFX_goal_unknown
+		x = 20
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_compromises_and_deals }
+		mutually_exclusive = { 
+			focus = USA_the_liberal_path 
+		}
+		mutually_exclusive = { 
+			focus = USA_the_conservative_path 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A socialist cabinet
+	focus = {
+		id = USA_a_socialist_cabinet
+		icon = GFX_goal_unknown
+		x = 24
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_debs_administration }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Mixed cabinet
+	focus = {
+		id = USA_a_mixed_cabinet
+		icon = GFX_goal_unknown
+		x = 22
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_debs_administration }
+		mutually_exclusive = { focus = USA_a_socialist_cabinet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Our plans for this presidency?
+	focus = {
+		id = USA_our_plans_for_this_presidency
+		icon = GFX_goal_unknown
+		x = 23
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_a_mixed_cabinet 
+			focus = USA_a_socialist_cabinet 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reviewing the Constitution
+	focus = {
+		id = USA_reviewing_the_constitution
+		icon = GFX_goal_unknown
+		x = 23
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_our_plans_for_this_presidency }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Debs Administration
+	focus = {
+		id = USA_the_debs_administration
+		icon = GFX_focus_usa_recruit_the_free_corps
+		x = 23
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Compromises and deals
+	focus = {
+		id = USA_compromises_and_deals
+		icon = GFX_goal_unknown
+		x = 20
+		y = 6
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_tread_the_line }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for We have the majority!
+	focus = {
+		id = USA_we_have_the_majority
+		icon = GFX_goal_unknown
+		x = 25
+		y = 8
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_congressional_complaints }
+		mutually_exclusive = { focus = USA_a_game_of_politics }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }
