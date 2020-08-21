@@ -2,7 +2,7 @@
 
 AHE = {
 	color = HSV { 105 145 114 }
-	color_ui = rgb { 134 28 57 }
+	color_ui = rgb { 255 255 255 }
 }
 GER = {
 	color = HSV { 0.1 0.15 0.4 }
