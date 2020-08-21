@@ -33,6 +33,16 @@ set_popularities = {
 	autocratic_despotism = 20
 }
 
+create_country_leader = {
+	name = "Karl I"
+	desc = ""
+	picture = "Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+
 #Politics for 1939.1.1
 1939.1.1 = {
 	set_politics = {
