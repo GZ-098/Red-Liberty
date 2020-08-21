@@ -6,7 +6,10 @@ focus_tree = {
 			add = 10
 			tag = GER
 		}
-	}
+	} 
+
+	default = no
+	
 	#Focus for Kaiser Wilhelm II
 	focus = {
 		id = GER_kaiser_wilhelm_ii
