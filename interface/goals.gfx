@@ -1,7 +1,164 @@
 spriteTypes = {	
 
 	#### Generic continuous goal icons
-
+##################
+#Red Liberty Icons
+################## 
+	SpriteType = {
+	name = "GFX_GFX_GER_a_fixed_economy-38248"
+	texturefile = "gfx/interface/goals/GFX_GER_a_fixed_economy-38248.dds"			
+	}  
+	SpriteType = {
+	name = "GFX_GFX_GER_all_eyes_on_goebbels-38713"
+	texturefile = "gfx/interface/goals/GFX_GER_all_eyes_on_goebbels-38713.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_GER_announce_the_german_security_act-38611"
+	texturefile = "gfx/interface/goals/GFX_GER_announce_the_german_security_act-38611.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_GER_attend_the_coronation-38349"
+	texturefile = "gfx/interface/goals/GFX_GER_attend_the_coronation-38349.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_GER_bribe_party_officials-38357"
+	texturefile = "gfx/interface/goals/GFX_GER_bribe_party_officials-38357.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_GER_establishing_contact_with_inside_men-38386"
+	texturefile = "gfx/interface/goals/GFX_GER_establishing_contact_with_inside_men-38386.dds"			
+	}  
+	SpriteType = {
+	name = "GFX_GFX_GER_fixing_the_economy-37883"
+	texturefile = "gfx/interface/goals/GFX_GER_fixing_the_economy-37883.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_GER_fixing_the_wrongs_of_the_20s-38247"
+	texturefile = "gfx/interface/goals/GFX_GER_fixing_the_wrongs_of_the_20s-38247.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_GER_hltwHfod-38276"
+	texturefile = "gfx/interface/goals/GFX_GER_hltwHfod-38276.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_GER_investigate_corrupt_banks-37885"
+	texturefile = "gfx/interface/goals/GFX_GER_investigate_corrupt_banks-37885.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_GER_kaiser_wilhelm_ii-38246"
+	texturefile = "gfx/interface/goals/GFX_GER_kaiser_wilhelm_ii-38246.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_GER_operation_leistung-38612"
+	texturefile = "gfx/interface/goals/GFX_GER_operation_leistung-38612.dds"			
+	}
+	SpriteType = {
+	name = "GFX_GFX_GER_the_death_of_the_kaiser-38609"
+	texturefile = "gfx/interface/goals/GFX_GER_the_death_of_the_kaiser-38609.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_GER_the_imperial_economic_plan-37884"
+	texturefile = "gfx/interface/goals/GFX_GER_the_imperial_economic_plan-37884.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_GER_the_rise_of_goebbels-38712"
+	texturefile = "gfx/interface/goals/GFX_GER_the_rise_of_goebbels-38712.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_GER_threaten_the_kaiser-38393"
+	texturefile = "gfx/interface/goals/GFX_GER_threaten_the_kaiser-38393.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_a_coalition_with_the_conservatives-37542"
+	texturefile = "gfx/interface/goals/GFX_USA_a_coalition_with_the_conservatives-37542.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_a_coalition_with_the_socialists-37529"
+	texturefile = "gfx/interface/goals/GFX_USA_a_coalition_with_the_socialists-37529.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_a_liberal_cabinet-37486"
+	texturefile = "gfx/interface/goals/GFX_USA_a_liberal_cabinet-37486.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_a_mixed_cabinet-37487"
+	texturefile = "gfx/interface/goals/GFX_USA_a_mixed_cabinet-37487.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_a_socialist_cabinet-37525"
+	texturefile = "gfx/interface/goals/GFX_USA_a_socialist_cabinet-37525.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_a_weary_coalition-37540"
+	texturefile = "gfx/interface/goals/GFX_USA_a_weary_coalition-37540.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_as_if_it_was_meant_to_be-38613"
+	texturefile = "gfx/interface/goals/GFX_USA_as_if_it_was_meant_to_be-38613.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_but_we_can_manage-37537"
+	texturefile = "gfx/interface/goals/GFX_USA_but_we_can_manage-37537.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_dNITiemx-37487"
+	texturefile = "gfx/interface/goals/GFX_USA_dNITiemx-37487.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_fighting_for_the_people-37543"
+	texturefile = "gfx/interface/goals/GFX_USA_fighting_for_the_people-37543.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_fighting_for_the_people-37543"
+	texturefile = "gfx/interface/goals/GFX_USA_fighting_for_the_people-37543.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_getting_started-37467"
+	texturefile = "gfx/interface/goals/GFX_USA_getting_started-37467.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_listen_to_our_opponents-37468"
+	texturefile = "gfx/interface/goals/GFX_USA_listen_to_our_opponents-37468.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_nkYxjwGs-37539"
+	texturefile = "gfx/interface/goals/GFX_USA_nkYxjwGs-37539.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_our_plans_for_this_presidency-37522"
+	texturefile = "gfx/interface/goals/GFX_USA_our_plans_for_this_presidency-37522.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_promise_hope_for_america-37466"
+	texturefile = "gfx/interface/goals/GFX_USA_promise_hope_for_america-37466.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_reviewing_the_constitution-37513"
+	texturefile = "gfx/interface/goals/GFX_USA_reviewing_the_constitution-37513.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_teaming_up-37533"
+	texturefile = "gfx/interface/goals/GFX_USA_teaming_up-37533.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_the_vote_fails-37546"
+	texturefile = "gfx/interface/goals/GFX_USA_the_vote_fails-37546.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_the_voting_begins-37538"
+	texturefile = "gfx/interface/goals/GFX_USA_the_voting_begins-37538.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_the_voting_begins-37538"
+	texturefile = "gfx/interface/goals/GFX_USA_the_voting_begins-37538.dds"			
+	} 
+	SpriteType = {
+	name = "GFX_GFX_USA_the_way_forward-37485"
+	texturefile = "gfx/interface/goals/GFX_USA_the_way_forward-37485.dds"			
+	}
+##################
+#Red Liberty Icons
+################## 
 	SpriteType = {
 	name = "GFX_goal_continuous_air_production"
 	texturefile = "gfx/interface/goals/goal_continuous_air_production.dds"			
