@@ -13,7 +13,7 @@ focus_tree = {
 	#Focus for Kaiser Wilhelm II
 	focus = {
 		id = GER_kaiser_wilhelm_ii
-		icon = GFX_GER_kaiser_wilhelm_ii-38246
+		icon = GER_kaiser_wilhelm_ii
 		x = 15
 		y = 0
 		cost = 1
