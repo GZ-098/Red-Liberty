@@ -209,4 +209,23 @@ spriteTypes = {
 		name = "GFX_idea_Finlay_Edwards" 
 		texturefile = "gfx/interface/theorists/Finlay_Edwards.dds"
 	} 
+	###################### 
+ 	#US tank companies
+ 	###################### 
+	spriteType = {
+		name = "GFX_idea_USA_army_ordnance_department" 
+		texturefile = "gfx/interface/theorists/USA_army_ordnance_department.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_USA_tank_destroyer_board" 
+		texturefile = "gfx/interface/theorists/USA_tank_destroyer_board.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_USA_chrysler" 
+		texturefile = "gfx/interface/theorists/USA_chrysler.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_USA_marmon_herrington" 
+		texturefile = "gfx/interface/theorists/USA_marmon_herrington.dds"
+	}
 }
