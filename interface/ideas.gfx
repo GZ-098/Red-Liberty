@@ -11,7 +11,23 @@ spriteTypes = {
 	### new tfv nat spirit icons 
 	##################
 	#red liberty icons 
-	################## 
+	##################  
+	spriteType = {
+		name = "GFX_idea_USA_newport_news_shipbuilding"
+		texturefile = "gfx/interface/ideas/USA_newport_news_shipbuilding.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_brooklyn_naval_yard"
+		texturefile = "gfx/interface/ideas/USA_brooklyn_naval_yard.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_electric_boat_company"
+		texturefile = "gfx/interface/ideas/USA_electric_boat_company.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_norfolk_naval_yard"
+		texturefile = "gfx/interface/ideas/USA_norfolk_naval_yard.dds"
+	}
 	spriteType = {
 		name = "GFX_idea_USA_goodyear"
 		texturefile = "gfx/interface/ideas/USA_goodyear.dds"
