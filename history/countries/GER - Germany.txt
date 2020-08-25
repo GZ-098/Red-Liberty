@@ -4,6 +4,14 @@ oob = "GER_1936"
 
 set_fuel_ratio = 0.8 
 
+puppet = POL 
+
+puppet = LIT 
+
+puppet = LAT 
+
+puppet = EST
+
 puppet = BEL
 
 # Starting tech
