@@ -77,30 +77,33 @@ set_technology = {
 
 
 set_politics = {
-	ruling_party = revolutionary_socialism
-	last_election = "1932.11.8"
-	election_frequency = 48
-	elections_allowed = yes
-}
+	ruling_party = autocratic_despotism
+	last_election = "1936.1.1"
+	election_frequency = 0
+	elections_allowed = no
+} 
+
 set_popularities = {
-	democratic = 20
-	revolutionary_socialism = 20
-	empowered_nationalism = 20
-	democratic_socialism = 20
-	autocratic_despotism = 20
-}
+	democratic = 10
+	revolutionary_socialism = 15
+	empowered_nationalism = 10
+	democratic_socialism = 5
+	autocratic_despotism = 60
+} 
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = democratic
+		ruling_party = autocratic_despotism
 		last_election = "1939.4.2"
 		election_frequency = 48
 		elections_allowed = yes
 	}
 	set_popularities = {
-		democratic = 87
-		fascism = 8
-		communism = 5
+		autocratic_despotism = 87
+		empowered_nationalism = 3 
+		revolutionary_socialism = 3 
+		democratic_socialism = 3 
+	        democratic = 4
 	}
 }
 
