@@ -13,6 +13,14 @@ spriteTypes = {
 	#red liberty icons 
 	##################  
 	spriteType = {
+		name = "GFX_idea_USA_springfield_armory"
+		texturefile = "gfx/interface/ideas/USA_springfield_armory.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_ford_motor_company"
+		texturefile = "gfx/interface/ideas/USA_ford_motor_company.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_USA_newport_news_shipbuilding"
 		texturefile = "gfx/interface/ideas/USA_newport_news_shipbuilding.dds"
 	}
