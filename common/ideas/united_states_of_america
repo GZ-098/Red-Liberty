@@ -909,6 +909,43 @@ ideas = {
 			}
 			
 			traits = { infantry_equipment_manufacturer }
+		} 
+		springfield_armory = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		ford_motor_company = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
 		}
 	}
 	theorist = { 
