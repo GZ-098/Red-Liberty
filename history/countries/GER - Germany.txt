@@ -2,7 +2,9 @@
 
 oob = "GER_1936"
 
-set_fuel_ratio = 0.8
+set_fuel_ratio = 0.8 
+
+puppet = BEL
 
 # Starting tech
 set_technology = {
