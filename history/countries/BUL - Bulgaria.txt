@@ -78,8 +78,8 @@ set_convoys = 5
 set_politics = {
 	ruling_party = autocratic_despotism
 	last_election = "1932.11.8"
-	election_frequency = 48
-	elections_allowed = yes
+	election_frequency = 0
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 10
@@ -94,7 +94,7 @@ set_popularities = {
 	set_politics = {
 		ruling_party = autocratic_despotism
 		last_election = "1938.3.27"
-		election_frequency = 48
+		election_frequency = 0
 		elections_allowed = no
 	}
 }
