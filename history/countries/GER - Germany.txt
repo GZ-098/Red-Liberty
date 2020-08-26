@@ -12,10 +12,6 @@ puppet = LIT
 
 puppet = BEL 
 
-GER = {
-add_to_faction = AHE 
-}
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
