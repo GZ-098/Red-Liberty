@@ -1,0 +1,71 @@
+capital = 4
+set_research_slots = 3
+set_stability = 0
+set_war_support = 0
+#Starting tech
+set_technology = {
+} 
+
+puppet = MOL 
+
+puppet = UKR 
+
+puppet = SER 
+
+puppet = MNT 
+
+puppet = ROM 
+
+#For start date 1939.1.1
+1939.1.1 = {
+	add_political_power = 500
+
+	#complete_national_focus = YOUR_FOCUS_ID
+	#complete_national_focus = YOUR_FOCUS_ID
+
+	set_technology = {
+	}
+	#set_convoys = 100
+}
+
+#Politics for 1936.1.1
+set_politics = {
+	ruling_party = autocratic_despotism
+	last_election = "1932.11.8"
+	election_frequency = 0
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 2
+	revolutionary_socialism = 4
+	empowered_nationalism = 2
+	democratic_socialism = 2
+	autocratic_despotism = 90
+}
+
+create_country_leader = {
+	name = "Karl I"
+	desc = ""
+	picture = "Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+
+#Politics for 1939.1.1
+1939.1.1 = {
+	set_politics = {
+		ruling_party = autocratic_despotism
+		last_election = "1936.2.1"
+		election_frequency = 0
+		elections_allowed = no
+	}
+	set_popularities = {
+	democratic = 2
+	revolutionary_socialism = 4
+	empowered_nationalism = 2
+	democratic_socialism = 2
+	autocratic_despotism = 90
+	}
+}
