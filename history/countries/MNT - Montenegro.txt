@@ -43,13 +43,18 @@ if = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = autocratic_despotism
 	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = yes
+	election_frequency = 0
+	elections_allowed = no
 }
 
-set_popularities = {	democratic = 33	neutrality = 33	communism = 34
+set_popularities = {
+	democratic = 4
+	revolutionary_socialism = 4
+	empowered_nationalism = 12
+	democratic_socialism = 8
+	autocratic_despotism = 72
 }
 
 create_country_leader = {
