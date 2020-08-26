@@ -1,5 +1,56 @@
 ideas = {
 	political_advisor = {
+	} 
+	
+    country = { 
+
+		GER_the_loss_of_a_generation = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+			
+			modifier = {
+				conscription = -0.10 
+				production_factory_max_efficiency_factor = -0.3 
+				conversion_cost_civ_to_mil_factor = 0.3 
+				production_speed_industrial_complex_factor = -0.2
+			}
+		}   
+	}
+
+    country = { 
+
+		GER_faith_in_the_kaiser = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+			
+			modifier = {
+				political_power_gain = 0.5
+				add_stability = 0.1
+			}
+		}   
+	}
+
+    country = { 
+
+		GER_unpaid_war_expenses = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.10  
+				min_export = 0.05 
+				production_speed_arms_factory_factor = -0.10
+			}
+		}   
 	}
 
 	#Military
