@@ -69,22 +69,22 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = revolutionary_socialism
+	ruling_party = autocratic_despotism
 	last_election = "1932.11.8"
-	election_frequency = 48
-	elections_allowed = yes
+	election_frequency = 0
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 20
-	revolutionary_socialism = 20
-	empowered_nationalism = 20
-	democratic_socialism = 20
-	autocratic_despotism = 20
+	democratic = 5
+	revolutionary_socialism = 10
+	empowered_nationalism = 15
+	democratic_socialism = 12
+	autocratic_despotism = 58
 }
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = neutrality
+		ruling_party = autocratic_despotism
 		last_election = "1936.6.10"
 		election_frequency = 120
 		elections_allowed = no
