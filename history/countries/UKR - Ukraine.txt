@@ -69,7 +69,7 @@ set_politics = {
 set_popularities = {
 	democratic = 2
 	revolutionary_socialism = 4
-	empowered_nationalism = 4
+	empowered_nationalism = 11
 	democratic_socialism = 4
 	autocratic_despotism = 79
 }
