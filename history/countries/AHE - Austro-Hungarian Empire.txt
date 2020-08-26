@@ -4,7 +4,17 @@ set_stability = 0
 set_war_support = 0
 #Starting tech
 set_technology = {
-}
+} 
+
+puppet = MOL 
+
+puppet = UKR 
+
+puppet = SER 
+
+puppet = MNT 
+
+puppet = ROM 
 
 #For start date 1939.1.1
 1939.1.1 = {
