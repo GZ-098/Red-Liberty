@@ -11,7 +11,19 @@ spriteTypes = {
 	### new tfv nat spirit icons 
 	##################
 	#red liberty icons 
-	##################  
+	################## 
+	spriteType = {
+		name = "GFX_idea_GER_the_loss_of_a_generation"
+		texturefile = "gfx/interface/ideas/GER_the_loss_of_a_generation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_faith_in_the_kaiser"
+		texturefile = "gfx/interface/ideas/GER_faith_in_the_kaiser.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_unpaid_war_expenses"
+		texturefile = "gfx/interface/ideas/GER_unpaid_war_expenses.png"
+	}
 	spriteType = {
 		name = "GFX_idea_USA_springfield_armory"
 		texturefile = "gfx/interface/ideas/USA_springfield_armory.dds"
