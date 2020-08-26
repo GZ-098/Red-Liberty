@@ -12,10 +12,6 @@ puppet = POL
 
 puppet = LIT 
 
-puppet = LAT 
-
-puppet = EST
-
 puppet = BEL
 
 # Starting tech
