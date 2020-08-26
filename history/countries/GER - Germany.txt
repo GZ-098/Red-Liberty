@@ -4,15 +4,17 @@ oob = "GER_1936"
 
 set_fuel_ratio = 0.8 
 
-puppet = UKR
-
 puppet = BLR
 
 puppet = POL 
 
 puppet = LIT 
 
-puppet = BEL
+puppet = BEL 
+
+GER = {
+add_to_faction = AHE 
+}
 
 # Starting tech
 set_technology = {
