@@ -5,7 +5,9 @@ ideas = {
     country = { 
 
 		GER_the_loss_of_a_generation = {
-			removal_cost = -1
+			removal_cost = -1 
+			
+			picture = GER_the_loss_of_a_generation
 			
 			allowed = {
 				always = no 
@@ -23,7 +25,9 @@ ideas = {
     country = { 
 
 		GER_faith_in_the_kaiser = {
-			removal_cost = -1
+			removal_cost = -1 
+			
+			picture = GER_faith_in_the_kaiser
 			
 			allowed = {
 				always = no 
@@ -39,7 +43,9 @@ ideas = {
     country = { 
 
 		GER_unpaid_war_expenses = {
-			removal_cost = -1
+			removal_cost = -1 
+			
+			picture = GER_unpaid_war_expenses
 			
 			allowed = {
 				always = no 
