@@ -6,11 +6,14 @@ focus_tree = {
 			add = 10
 			tag = AHE
 		}
-	}
+	} 
+	
+	default = no
+	
 	#Focus for Farewell, Hungary...
 	focus = {
 		id = AHE_farewell_hungary
-		icon = GFX_goal_unknown
+		icon = GFX_AHE_farewell_hungary
 		x = 10
 		y = 6
 		cost = 1
@@ -18,6 +21,23 @@ focus_tree = {
 		prerequisite = { focus = AHE_the_two_crowns_act }
 		ai_will_do = {
 			factor = 1
+		} 
+		completion_reward = { 
+			HUN = {
+			set_state_owner = 103  
+			set_state_owner = 109 
+			set_state_owner = 155 
+			set_state_owner = 619 
+			set_state_owner = 764 
+			set_state_owner = 82 
+			set_state_owner = 84 
+			set_state_owner = 76 
+			set_state_owner = 73 
+			set_state_owner = 71 
+			set_state_owner = 664 
+			set_state_owner = 70 
+			set_state_owner = 43 
+			set_state_owner = 154
 		}
 	}
 	#Focus for Canceling Ancient Treaties
