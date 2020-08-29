@@ -5,6 +5,10 @@ spriteTypes = {
 #Red Liberty Icons
 ################## 
 	SpriteType = {
+	name = "GFX_AHE_farewell_hungary"
+	texturefile = "gfx/interface/goals/AHE_farewell_hungary.dds"			
+	} 
+	SpriteType = {
 	name = "GFX_GER_a_fixed_economy"
 	texturefile = "gfx/interface/goals/GER_a_fixed_economy.png"			
 	}  
