@@ -39,7 +39,8 @@ focus_tree = {
 			set_state_owner = 43 
 			set_state_owner = 154
 		}
-	}
+	} 
+}
 	#Focus for Canceling Ancient Treaties
 	focus = {
 		id = AHE_canceling_ancient_treaties
