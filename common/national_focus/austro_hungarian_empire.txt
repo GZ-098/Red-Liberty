@@ -24,22 +24,23 @@ focus_tree = {
 		} 
 		completion_reward = { 
 			HUN = { 
-			set_state_owner = 83
-			set_state_owner = 45
-			set_state_owner = 103  
-			set_state_owner = 109 
-			set_state_owner = 155 
-			set_state_owner = 619 
-			set_state_owner = 764 
-			set_state_owner = 82 
-			set_state_owner = 84 
-			set_state_owner = 76 
-			set_state_owner = 73 
-			set_state_owner = 71 
-			set_state_owner = 664 
-			set_state_owner = 70 
-			set_state_owner = 43 
-			set_state_owner = 154
+			transfer_state = 103
+			transfer_state = 83
+			transfer_state = 45
+			transfer_state = 103  
+			transfer_state = 109 
+			transfer_state = 155 
+			transfer_state = 619 
+			transfer_state = 764 
+			transfer_state = 82 
+			transfer_state = 84 
+			transfer_state = 76 
+			transfer_state = 73 
+			transfer_state = 71 
+			transfer_state = 664 
+			transfer_state = 70 
+			transfer_state = 43 
+			transfer_state = 154
 		}
 	} 
 }
