@@ -1,6 +1,6 @@
 
 state={
-	id=103
+	id=798
 	name="STATE_789" # Dalmatia
 	manpower = 1431700
 
@@ -10,10 +10,10 @@ state={
 	history={
 		owner = AHE
 		victory_points = {
-			3924 3
+			3924 5
 		}
 		victory_points = {
-			11564 1 
+			11564 5
 		}
 		buildings = {
 			infrastructure = 5
@@ -27,7 +27,6 @@ state={
 			}
 		}
 		add_core_of = YUG
-		#add_claim_by = ITA #added by focus
 		add_core_of = CRO
 	}
 
