@@ -23,7 +23,9 @@ focus_tree = {
 			factor = 1
 		} 
 		completion_reward = { 
-			HUN = {
+			HUN = { 
+			set_state_owner = 83
+			set_state_owner = 45
 			set_state_owner = 103  
 			set_state_owner = 109 
 			set_state_owner = 155 
