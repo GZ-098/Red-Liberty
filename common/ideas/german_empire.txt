@@ -9,7 +9,7 @@ ideas = {
 			picture = GER_the_loss_of_a_generation
 			
 			allowed = {
-				always = no 
+				original_tag = GER
 			} 
 			
 			allowed_civil_war = {
@@ -33,7 +33,7 @@ ideas = {
 			}
 			
 			allowed = {
-				always = no 
+				original_tag = GER 
 			}
 			
 			modifier = {
@@ -48,7 +48,7 @@ ideas = {
 		allowed_civil_war = {		
 		}		
 		allowed = {
-			always = no 
+			original_tag = GER
 		}
 			
 		modifier = {
