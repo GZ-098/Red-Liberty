@@ -11,6 +11,10 @@ ideas = {
 			
 			allowed = {
 				always = no 
+			} 
+			
+			allowed_civil_war = {
+				
 			}
 			
 			modifier = {
@@ -27,7 +31,11 @@ ideas = {
 		GER_faith_in_the_kaiser = {
 			removal_cost = -1 
 			
-			picture = GER_faith_in_the_kaiser
+			picture = GER_faith_in_the_kaiser 
+			
+			allowed_civil_war = {
+				
+			}
 			
 			allowed = {
 				always = no 
@@ -45,7 +53,11 @@ ideas = {
 		GER_unpaid_war_expenses = {
 			removal_cost = -1 
 			
-			picture = GER_unpaid_war_expenses
+			picture = GER_unpaid_war_expenses 
+			
+			allowed_civil_war = {
+				
+			}
 			
 			allowed = {
 				always = no 
