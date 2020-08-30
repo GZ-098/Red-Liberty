@@ -33,7 +33,7 @@ ideas = {
 			}
 			
 			allowed = {
-				original_tag = GER 
+				always = no
 			}
 			
 			modifier = {
@@ -42,13 +42,17 @@ ideas = {
 			}
 		}   
 
-		GER_unpaid_war_expenses = {
+		GER_unpaid_war_expenses = { 
+		
 		removal_cost = -1 
-		picture = GER_unpaid_war_expenses 	
+		
+		picture = GER_unpaid_war_expenses  
+		
 		allowed_civil_war = {		
-		}		
+		}	
+		
 		allowed = {
-			original_tag = GER
+			always = no
 		}
 			
 		modifier = {
