@@ -22,12 +22,12 @@
  #################
  #Germany ideas 
  ################# 
- GER_unpaid_war_expenses:0 "Unpaid War Expenses" 
- GER_unpaid_war_expenses_desc:0 "" 
- GER_faith_in_the_kaiser:0 "Faith in the Kaiser" 
- GER_faith_in_the_kaiser_desc:0 "" 
- GER_the_loss_of_a_generation:0 "The Loss of a Generation" 
- GER_the_loss_of_a_generation_desc:0 ""
+ unpaid_war_expenses:0 "Unpaid War Expenses" 
+ unpaid_war_expenses_desc:0 "" 
+ faith_in_the_kaiser:0 "Faith in the Kaiser" 
+ faith_in_the_kaiser_desc:0 "" 
+ the_loss_of_a_generation:0 "The Loss of a Generation" 
+ the_loss_of_a_generation_desc:0 ""
  ################# 
  fascist_influence:0 "Fascist Influence"
  fascist_influence_desc:0 "Fascist pressure has made fascism very popular, and the country is susceptible to align with other fascists."
