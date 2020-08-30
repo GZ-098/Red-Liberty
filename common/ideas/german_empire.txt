@@ -2,17 +2,21 @@ ideas = {
 	political_advisor = {
 	} 
 	
- country = { 
-		GER_the_loss_of_a_generation = {
+    country = { 
+		the_loss_of_a_generation = {
 			removal_cost = -1 
 			
 			picture = GER_the_loss_of_a_generation
 			
 			allowed = {
-				always = no
-			} 
+				tag = GER
+			}  
+
+			available = {
+			}
 			
-			allowed_civil_war = {
+			allowed_civil_war = { 
+				always = yes
 			}
 			
 			modifier = {
@@ -23,17 +27,17 @@ ideas = {
 			}
 		}   
 
-		GER_faith_in_the_kaiser = {
+		faith_in_the_kaiser = {
 			removal_cost = -1 
 			
 			picture = GER_faith_in_the_kaiser 
 			
 			allowed_civil_war = {
-				
+				always = yes	
 			}
 			
 			allowed = {
-				always = no
+				tag = GER
 			}
 			
 			modifier = {
@@ -42,17 +46,18 @@ ideas = {
 			}
 		}   
 
-		GER_unpaid_war_expenses = { 
+		unpaid_war_expenses = { 
 		
 		removal_cost = -1 
 		
 		picture = GER_unpaid_war_expenses  
 		
-		allowed_civil_war = {		
+		allowed_civil_war = {	 
+			always = yes	
 		}	
 		
 		allowed = {
-			always = no
+			tag = GER
 		}
 			
 		modifier = {
@@ -60,8 +65,9 @@ ideas = {
 			min_export = 0.05 
 			production_speed_arms_factory_factor = -0.10
 		}
-	}   
-}
+	     }
+       }   
+
 
 	#Military
 	army_chief = {
