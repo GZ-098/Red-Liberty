@@ -9,7 +9,7 @@ ideas = {
 			picture = GER_the_loss_of_a_generation
 			
 			allowed = {
-				original_tag = GER
+				always = no
 			} 
 			
 			allowed_civil_war = {
