@@ -1,0 +1,476 @@
+USA_congress_get_quorum = {
+	set_variable = { var = quorum_low value = senators_total }
+	multiply_variable = { var = quorum_low value = 0.4 }
+	set_variable = { var = quorum_medium value = senators_total }
+	multiply_variable = { var = quorum_medium value = 0.5 }
+	set_variable = { var = quorum_high value = senators_total }
+	multiply_variable = { var = quorum_high value = 0.6 }
+	round_variable = quorum_low 
+	round_variable = quorum_medium 
+	round_variable = quorum_high
+	
+	set_variable = { var = rep_quorum_low value = representatives_total }
+	multiply_variable = { var = rep_quorum_low value = 0.4 }
+	set_variable = { var = rep_quorum_medium value = representatives_total }
+	multiply_variable = { var = rep_quorum_medium value = 0.5 }
+	set_variable = { var = rep_quorum_high value = representatives_total }
+	multiply_variable = { var = rep_quorum_high value = 0.6 }
+	round_variable = rep_quorum_low 
+	round_variable = rep_quorum_medium
+	round_variable = rep_quorum_high
+	
+	#USA_recalc_congress_icon_frames = yes
+}
+
+USA_congress_remove_state = {
+	custom_effect_tooltip = mtg_usa_congress_remove_state_tt
+	subtract_from_variable = { senators_total = 2 }
+	clamp_variable = { var = senators_support max = senators_total min = 0 }
+	USA_congress_get_quorum = yes
+}
+
+USA_congress_add_state = {
+	custom_effect_tooltip = mtg_usa_congress_add_state_tt
+	add_to_variable = { senators_total = 2 }
+	add_to_variable = { senators_support = 2 }
+	USA_congress_get_quorum = yes
+}
+
+USA_debug_example_setup = { # example debug act
+	log = "[GetDateText]: [Root.GetName]: bill setup active"
+	
+	set_variable = { bill_id = 1 } # EACH BILL MUST HAVE A UNIQUE ID
+	
+	set_country_flag = USA_republican_discussing # Sets up who you can negotiate with
+	set_country_flag = USA_democrat_discussing
+	set_country_flag = USA_communist_discussing
+	set_country_flag = USA_socialist_discussing
+	set_country_flag = USA_fascist_discussing
+	
+	set_country_flag = bill_enable_mission # Gives the President penalties if they drag their feet for too long doing this
+	set_variable = { USA_bill_mission_deadline = 150 }
+	
+	set_variable = { USA_republican_bill_support = 0.7 } # percentage of congresspeople who will initially support the bill
+	set_variable = { USA_democrat_bill_support = 0.3 }
+	set_variable = { USA_communist_bill_support = 1 }
+	set_variable = { USA_socialist_bill_support = 1 }
+	set_variable = { USA_fascist_bill_support = 0 }
+	
+	set_variable = { average_boost_republican = 0.3 } # this shows the percentage of politicians (who are not currently supportive) who would be on average would be flipped by a compromise
+	set_variable = { average_boost_democrat = 0.2 } 
+	
+	set_variable = { republican_flip_cost = 25 } # how much pp negotiation decisions cost
+	set_variable = { democrat_flip_cost = 40 }
+	set_variable = { communist_flip_cost = 20 }
+	
+	USA_bill_setup = yes # always required
+}
+
+USA_bill_setup = {
+	USA_initialize_bill_support = yes
+}
+
+USA_initialize_bill_support = {
+	set_country_flag = USA_discussing_bill
+	set_variable = { senators_support = 0 }
+	
+	set_variable = { republican_supporting_senators = senators_republican }
+	set_variable = { democrat_supporting_senators =  senators_democrat }
+	set_variable = { communist_supporting_senators = senators_communist }
+	set_variable = { socialist_supporting_senators = senators_socialist }
+	set_variable = { fascist_supporting_senators = senators_fascist }
+	
+	set_variable = { republican_supporting_reps = representatives_republican }
+	set_variable = { democrat_supporting_reps = representatives_democrat }
+	set_variable = { communist_supporting_reps = representatives_communist }
+	set_variable = { socialist_supporting_reps = representatives_socialist }
+	set_variable = { fascist_supporting_reps = representatives_fascist }
+	
+	multiply_variable = { republican_supporting_senators = USA_republican_bill_support }
+	multiply_variable = { democrat_supporting_senators = USA_democrat_bill_support }
+	multiply_variable = { communist_supporting_senators = USA_communist_bill_support }
+	multiply_variable = { socialist_supporting_senators = USA_socialist_bill_support }
+	multiply_variable = { fascist_supporting_senators = USA_fascist_bill_support }
+	
+	multiply_variable = { republican_supporting_reps = USA_republican_bill_support }
+	multiply_variable = { democrat_supporting_reps = USA_democrat_bill_support }
+	multiply_variable = { communist_supporting_reps = USA_communist_bill_support }
+	multiply_variable = { socialist_supporting_reps = USA_socialist_bill_support }
+	multiply_variable = { fascist_supporting_reps = USA_fascist_bill_support }
+	
+	round_variable = republican_supporting_senators 
+	round_variable = democrat_supporting_senators
+	round_variable = communist_supporting_senators
+	round_variable = socialist_supporting_senators
+	round_variable = fascist_supporting_senators
+	
+	round_variable = republican_supporting_reps 
+	round_variable = democrat_supporting_reps
+	round_variable = communist_supporting_reps
+	round_variable = socialist_supporting_reps
+	round_variable = fascist_supporting_reps
+	
+	add_to_variable = { senators_support = republican_supporting_senators } 
+	add_to_variable = { senators_support = democrat_supporting_senators }
+	add_to_variable = { senators_support = communist_supporting_senators }
+	add_to_variable = { senators_support = socialist_supporting_senators }
+	add_to_variable = { senators_support = fascist_supporting_senators }
+	
+	add_to_variable = { representatives_support = republican_supporting_reps } 
+	add_to_variable = { representatives_support = democrat_supporting_reps }
+	add_to_variable = { representatives_support = communist_supporting_reps }
+	add_to_variable = { representatives_support = socialist_supporting_reps }
+	add_to_variable = { representatives_support = fascist_supporting_reps }
+}
+
+check_if_bill_passed = {
+	set_variable = { percent_support = senators_support }
+	divide_variable = { percent_support = senators_total }
+	set_variable = { votes_needed = 0.5 }
+	if = {
+		limit = { has_country_flag = fillibuster_active }
+		set_variable = { votes_needed = 0.6 }
+	}
+
+	if = {
+		limit = {
+			check_variable = {
+				var = percent_support
+				value = votes_needed
+				compare = greater_than_or_equals
+			}
+		}
+		set_country_flag = bill_passed
+	}
+}
+
+USA_bill_clear = {
+	clr_country_flag = USA_BILL_EVENTLESS_NEGOTIATION
+	clr_country_flag = USA_discussing_bill
+	
+	clr_country_flag = USA_republican_discussing
+	clr_country_flag = USA_democrat_discussing
+	clr_country_flag = USA_communist_discussing
+	clr_country_flag = USA_socialist_discussing
+	clr_country_flag = USA_fascist_discussing
+	
+	set_variable = { bill_id = 0 }
+	
+	clear_variable = USA_bill_mission_deadline
+	
+	clear_variable = USA_republican_bill_support
+	clear_variable = USA_democrat_bill_support
+	clear_variable = USA_communist_bill_support
+	clear_variable = USA_socialist_bill_support
+	clear_variable = USA_fascist_bill_support
+	
+	clear_variable = average_boost_republican
+	clear_variable = average_boost_democrat
+	clear_variable = average_boost_communist
+	clear_variable = average_boost_socialist
+	clear_variable = average_boost_fascist
+	
+	clr_country_flag = republicans_negotiated
+	clr_country_flag = democrats_negotiated
+	clr_country_flag = communists_negotiated
+	clr_country_flag = socialists_negotiated
+	clr_country_flag = fascists_negotiated
+	
+	clear_variable = republican_supporting_senators
+	clear_variable = democrat_supporting_senators
+	clear_variable = communist_supporting_senators
+	clear_variable = socialist_supporting_senators
+	clear_variable = fascist_supporting_senators
+	
+	clear_variable = republican_supporting_reps
+	clear_variable = democrat_supporting_reps
+	clear_variable = communist_supporting_reps
+	clear_variable = socialist_supporting_reps
+	clear_variable = fascist_supporting_reps
+	
+	clear_variable = senators_support
+	clear_variable = representatives_support
+	
+	clr_country_flag = bill_passed
+	clr_country_flag = bill_enable_mission
+}
+
+USA_republican_support_eventless = {
+	custom_effect_tooltip = negotiate_some_republican_support
+	USA = {
+		set_country_flag = republicans_negotiated
+		
+		set_temp_variable = { temp_senate_republican = senators_republican }
+		set_temp_variable = { temp_senate_already_supporting = republican_supporting_senators }
+		
+		subtract_from_temp_variable = { temp_senate_republican = temp_senate_already_supporting }
+		log = "[GetDateText]: [Root.GetName]: calculated non-supporting republicans: [?temp_senate_republican]"
+						
+		set_temp_variable = { new_senate_support = temp_senate_republican }
+		log = "[GetDateText]: [Root.GetName]: set republican senator support: [?new_senate_support]"
+		
+		multiply_temp_variable = { new_senate_support = average_boost_republican }
+		log = "[GetDateText]: [Root.GetName]: calculated new republican support: [?new_senate_support]"
+						
+		round_variable = new_senate_support
+		log = "[GetDateText]: [Root.GetName]: rounded republican senator support: [?new_senate_support]"
+		
+		add_to_variable = { republican_supporting_senators = new_senate_support }
+		clamp_variable = {
+			var = republican_supporting_senators
+			min = 0
+			max = senators_republican
+		}
+		clamp_variable = {
+			var = new_senate_support
+			min = 0
+			max = senators_republican
+		}
+		add_to_variable = { senators_support = new_senate_support }
+	}
+	
+	USA = {# representatives
+		set_temp_variable = { temp_house_republican = representatives_republican }
+		set_temp_variable = { temp_house_already_supporting = republican_supporting_reps }
+		
+		subtract_from_temp_variable = { temp_house_republican = temp_house_already_supporting }
+		log = "[GetDateText]: [Root.GetName]: calculated non-supporting republicans: [?temp_house_republican]"
+	
+		set_temp_variable = { new_house_support = temp_house_republican }
+		multiply_temp_variable = { new_house_support = average_boost_republican }
+		
+		round_variable = new_house_support
+		log = "[GetDateText]: [Root.GetName]: rounded republican representative support: [?new_house_support]"
+		
+		add_to_variable = { republican_supporting_reps = new_house_support }
+		clamp_variable = {
+			var = republican_supporting_reps
+			min = 0
+			max = representatives_republican
+		}
+		clamp_variable = {
+			var = new_house_support
+			min = 0
+			max = representatives_republican
+		}
+		add_to_variable = { representatives_support = new_house_support }
+	}
+	
+	clear_variable = { new_senate_support }
+	clear_variable = { new_house_support }
+}
+
+USA_democrat_support_eventless = {
+	custom_effect_tooltip = negotiate_some_democrat_support
+	USA = { #senators
+		set_country_flag = democrats_negotiated
+		
+		set_temp_variable = { temp_senate_democrat = senators_democrat }
+		set_temp_variable = { temp_senate_already_supporting = democrat_supporting_senators }
+		
+		subtract_from_temp_variable = { temp_senate_democrat = temp_senate_already_supporting }
+		log = "[GetDateText]: [Root.GetName]: calculated non-supporting democrats: [?temp_senate_democrat]"
+		
+		set_temp_variable = { new_senate_support = temp_senate_democrat }
+		log = "[GetDateText]: [Root.GetName]: set democrat senator support: [?new_senate_support]"
+		
+		multiply_temp_variable = { new_senate_support = average_boost_democrat }
+		log = "[GetDateText]: [Root.GetName]: calculated new democrat support: [?new_senate_support]"
+						
+		round_variable = new_senate_support
+		log = "[GetDateText]: [Root.GetName]: rounded democrat senator support: [?new_senate_support]"
+		
+		add_to_variable = { democrat_supporting_senators = new_senate_support }
+		clamp_variable = {
+			var = democrat_supporting_senators
+			min = 0
+			max = senators_democrat
+		}
+		clamp_variable = {
+			var = new_senate_support
+			min = 0
+			max = senators_democrat
+		}
+		add_to_variable = { senators_support = new_senate_support }
+						
+		clear_variable = { new_senate_support }
+	}
+					
+	USA = {# representatives
+		set_temp_variable = { temp_house_democrat = representatives_republican }
+		set_temp_variable = { temp_house_already_supporting = republican_supporting_reps }
+		
+		subtract_from_temp_variable = { temp_house_democrat = temp_house_already_supporting }
+		log = "[GetDateText]: [Root.GetName]: calculated non-supporting democrats: [?temp_house_democrat]"
+	
+		set_temp_variable = { new_house_support = temp_house_democrat }
+		multiply_temp_variable = { new_house_support = average_boost_democrat }
+		
+		round_variable = new_house_support
+		log = "[GetDateText]: [Root.GetName]: rounded democrat representative support: [?new_house_support]"
+		
+		add_to_variable = { democrat_supporting_reps = new_house_support }
+		clamp_variable = {
+			var = democrat_supporting_reps
+			min = 0
+			max = representatives_democrat
+		}
+		clamp_variable = {
+			var = new_house_support
+			min = 0
+			max = representatives_democrat
+		}
+		add_to_variable = { representatives_support = new_house_support }
+	}
+	
+	clear_variable = { new_senate_support }
+	clear_variable = { new_house_support }
+}
+
+USA_recalc_house = { # this will recalculate the number of representatives based on party popularity, in an unbiased manner which does not favor any parties
+	
+	#Sets variable to check for discrepencies
+	set_variable = {
+		USA_old_representatives_total = representatives_total
+	}
+	
+	set_variable = {
+		representatives_communist = party_popularity@revolutionary_socialism
+	}
+	set_variable = {
+		representatives_socialist = party_popularity@democratic_socialism
+	}
+	set_variable = {
+		representatives_republican = party_popularity@democratic
+	}
+	set_variable = {
+		representatives_democrat = party_popularity@autocratic_despotism
+	}
+	set_variable = {
+		representatives_fascist = party_popularity@empowered_nationalism
+	}
+	
+	#Gets seats
+	multiply_variable = {
+		representatives_communist = representatives_total
+	}
+	multiply_variable = {
+		representatives_socialist = representatives_total
+	}
+	multiply_variable = {
+		representatives_republican = representatives_total
+	}
+	multiply_variable = {
+		representatives_democrat = representatives_total
+	}
+	multiply_variable = {
+		representatives_fascist = representatives_total
+	}
+	
+	#rounds
+	round_variable = representatives_communist
+	round_variable = representatives_socialist
+	round_variable = representatives_republican
+	round_variable = representatives_democrat
+	round_variable = representatives_fascist
+	
+	#Gets new total seat value
+	set_variable = {
+		representatives_total = 0
+	}
+	add_to_variable = {
+		representatives_total = representatives_communist
+	}
+	add_to_variable = {
+		representatives_total = representatives_socialist
+	}
+	add_to_variable = {
+		representatives_total = representatives_republican
+	}
+	add_to_variable = {
+		representatives_total = representatives_democrat
+	}
+	add_to_variable = {
+		representatives_total = representatives_fascist
+	}
+	
+	#gets discrepency
+	subtract_from_variable = {
+		USA_old_representatives_total = representatives_total
+	}
+	
+	#deals with discrepency, if needed
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					USA_old_representatives_total = 0
+				}
+			}
+		}
+		add_to_variable = {
+			representatives_total = USA_old_representatives_total
+		}
+		if = {
+			limit = {
+				has_government = revolutionary_socialism
+			}
+			add_to_variable = {
+				representatives_communist = USA_old_representatives_total
+			}
+		}
+		else_if = {
+			limit = {
+				has_government = democratic_socialism
+			}
+			add_to_variable = {
+				representatives_socialist = USA_old_representatives_total
+			}
+		}
+		else_if = {
+			limit = {
+				has_government = democratic
+			}
+			add_to_variable = {
+				representatives_republican = USA_old_representatives_total
+			}
+		}
+		else_if = {
+			limit = {
+				has_government = autocratic_despotism
+			}
+			add_to_variable = {
+				representatives_democrat = USA_old_representatives_total
+			}
+		}
+		else_if = {
+			limit = {
+				has_government = empowered_nationalism
+			}
+			add_to_variable = {
+				representatives_fascist = USA_old_representatives_total
+			}
+		}
+	}
+}
+
+USA_bill_vote = {
+	if = {
+		limit = {
+			check_variable = { bill_id = 1 } # debug act
+		}
+		country_event = {
+			id = us_bill.1
+			hours = 1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { bill_id = # }
+		}
+		country_event = {
+			id = us_bill.#
+			hours = 1
+		}
+	}
+}

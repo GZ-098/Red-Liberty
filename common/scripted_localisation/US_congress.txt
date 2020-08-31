@@ -1,0 +1,105 @@
+defined_text = {
+	name = get_us_socialist_rep_count
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_socialist > 0 }
+        }
+        localization_key = "USA_congress_socialist_rep_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_socialist_senator_count
+	
+	text = { 
+        trigger = {
+			check_variable = { senators_socialist > 0 }
+        }
+        localization_key = "USA_congress_socialist_senator_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_fascist_rep_count
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_fascist > 0 }
+        }
+        localization_key = "USA_congress_fascist_rep_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_fascist_senator_count
+	
+	text = { 
+        trigger = {
+			check_variable = { senators_fascist > 0 }
+        }
+        localization_key = "USA_congress_fascist_senator_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_communist_rep_count
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_communist > 0 }
+        }
+        localization_key = "USA_congress_communist_rep_count"
+    }
+	
+	text = {
+		localization_key = "not_working"
+    }
+}
+
+defined_text = {
+	name = get_us_communist_senator_count
+	
+	text = { 
+        trigger = {
+			check_variable = { senators_communist > 0 }
+        }
+        localization_key = "USA_congress_communist_senator_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_congress_voting
+	
+	text = { 
+        trigger = {
+			check_variable = { bill_id = 1 }
+			has_country_flag = USA_discussing_bill
+        }
+        localization_key = "USA_congress_voting_debug_bill_example"
+    }
+	
+	text = {
+		localization_key = "USA_congress_voting_none"
+    }
+}

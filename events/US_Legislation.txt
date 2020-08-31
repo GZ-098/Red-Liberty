@@ -1,0 +1,42 @@
+add_namespace = us_bill
+
+country_event = { # debug act
+	id = us_bill.1
+	
+	# different loc based on if it passes or fails
+	title = {
+		text = us_bill.1.t_passed
+		trigger = { has_country_flag = bill_passed }
+	}
+	title = { 
+		text = us_bill.1.t_failed
+		trigger = { NOT = { has_country_flag = bill_passed } }
+	}
+	desc = {
+		text = us_bill.1.d_passed
+		trigger = { has_country_flag = bill_passed }
+	}
+	desc = {
+		text = us_bill.1.d_failed
+		trigger = { NOT = { has_country_flag = bill_passed } }
+	}
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event us_bill.1"
+	}
+
+	is_triggered_only = yes
+
+	option = { # bill passes
+		name = us_bill.1.a
+		trigger = { has_country_flag = bill_passed }
+		add_stability = 0.02
+		USA_bill_clear = yes # ALWAYS DO THIS
+	}
+	
+	option = { # bill fails
+		name = us_bill.1.b
+		trigger = { NOT = { has_country_flag = bill_passed } }
+		USA_bill_clear = yes # ALWAYS DO THIS
+	}
+}

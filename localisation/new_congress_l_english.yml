@@ -1,0 +1,52 @@
+﻿l_english:
+ USA_congress:0 "Congress"
+ USA_congress_desc:0 "The Hill has its own rules and ideas. We will have to work with them to make things happen, but there are ways to ensure that we have a sympathetic and supportive §YCongress§! to work with.\n\n§R[?representatives_republican]§! Representative(s) support the §RRepublican Party§!.\n§C[?representatives_democrat]§! Representative(s) support the §CDemocratic Party§!.[get_us_socialist_rep_count][get_us_fascist_rep_count][get_us_communist_rep_count]\nTotal Representatives: §G[?representatives_total]§!\n\n§R[?senators_republican]§! Senator(s) support the §RRepublican Party§!.\n§C[?senators_democrat]§! Senator(s) support the §CDemocratic Party§!.[get_us_socialist_senator_count][get_us_fascist_senator_count][get_us_communist_senator_count]\nTotal Senators: §G[?senators_total]§!\n\n[get_congress_voting]"
+ 
+ 
+ USA_congress_voting_none:0 "There is currently no important legislation being considered."
+ 
+ USA_congress_voting_debug_bill_example:0 "§YCongress§! is currently considering the §YDebug Act§!, which currently expects the support of §G[?USA.representatives_support]§! Representatives and §G[?USA.senators_support]§! Senators.\n\n§G[?republican_supporting_reps]§! Republican Representative(s) support this bill.\n§G[?democrat_supporting_reps]§! Democratic Representative(s) support this bill.\n§G[?socialist_supporting_reps]§! Socialist Representative(s) support this bill.\n§G[?fascist_supporting_reps]§! Fascist Representative(s) support the bill.\n§G[?communist_supporting_reps]§! Communist Representative(s) support the bill.\n\n§G[?republican_supporting_senators]§! Republican Senator(s) support the bill.\n§G[?democrat_supporting_senators]§! Democratic Senator(s) support the bill.\n§G[?socialist_supporting_senators]§! Socialist Senator(s) support the bill.\n§G[?fascist_supporting_senators]§! Fascist Senator(s) support the bill.\n§G[?communist_supporting_senators]§! Communist Senator(s) support the bill."
+ 
+ not_working:0 "\nWHY IS ONLY THIS LINE IN PARTICULAR NOT WORKING"
+ 
+ USA_discussing_bill:0 "Congress is currently dicussing legislation."
+ 
+ start_vote:0 "Start Voting"
+ start_vote_tt:0 "The current bill will be voted on in congress."
+ 
+ USA_bill_timer:0 "Hold the Vote"
+ USA_bill_timer_pass_criteria:0 "§YA vote has been held on this Bill§!"
+ unavaliable_already_negotiated:0 "We've haven't already struck a deal."
+ mut_exclude:0 "Negotiating with some factions is not mutually exclusive."
+ 
+ USA_talk_with_republicans:0 "Negotiate with the Republicans"
+ negotiate_some_republican_support:0 "We will negotiate the support of some §RRepublican§! members of Congress."
+ USA_talk_with_democrats:0 "Negotiate with the Democrats"
+ negotiate_some_democrat_support:0 "We will negotiate the support of some §CDemocratic§! members of Congress."
+ 
+ reps_talking:0 "The Republicans are willing to negotiate."
+ reps_fully_support:0 "The Republicans don't fully support this bill."
+ dems_talking:0 "The Democrats are willing to negotiate."
+ dems_fully_support:0 "The Democrats don't fully support this bill."
+ 
+ USA_congress_socialist_rep_count:0 "\n§R[?representatives_socialist]§! Representative(s) support the §RSocialist Party of America§!."
+ USA_congress_socialist_senator_count:0 "\n§R[?senators_socialist]§! Senator(s) support the §RSocialist Party of America§!."
+ 
+ USA_congress_fascist_rep_count:0 "\n§g[?representatives_fascist]§! Representative(s) support the §gNational League of Fascists§!."
+ USA_congress_fascist_senator_count:0 "\n§g[?senators_fascist]§! Senator(s) support the §gNational League of Fascists§!."
+ 
+ USA_congress_communist_rep_count:0 "\n§R[?representatives_wpa]§! Representative(s) support the §RCommunist Party of America§!."
+ USA_congress_communist_senator_count:0 "\n§R[?senators_communist]§! Senator(s) support the §RCommunist Party of America§!."
+ 
+ USA_govt_controlled_by_republicans:0 "Currently, §YCongress§! is controlled by the §RRepublican Party§!."
+ USA_govt_controlled_by_democrats:0 "Currently, Congress is controlled by the §CDemocratic Party§!."
+ USA_govt_split_dem_rep:0 "Currently, Congress is split between the §CDemocratic Party§! and the §RRepublican Party§!."
+ USA_govt_controlled_by_none:0 "Currently, no party is dominant."
+ 
+ 
+ start_test_bill_debug:0 "The Debug Act"
+ debug_bill_passed:0 "We have passed the Debug Act."
+ us_bill.1.t_passed:0 "The Debug Act - Passed"
+ us_bill.1.a:0 "A great victory."
+ USA_debug_act_effect:0 "If passed, the §YDebug Act§! will provide the following bonus:\nStability: §G+2%§!\n\n"
+ 

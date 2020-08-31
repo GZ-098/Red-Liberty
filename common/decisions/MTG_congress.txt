@@ -1,0 +1,303 @@
+USA_congress = {
+	
+	start_test_bill_debug = { # example bill
+		icon = ger_mefo_bills
+		available = {
+			NOT = {
+				has_country_flag = debug_bill_passed
+				has_country_flag = USA_discussing_bill
+			}
+		}
+		
+		visible = {
+			original_tag = USA
+			NOT = {
+				has_country_flag = USA_discussing_bill
+			}
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			custom_effect_tooltip = USA_debug_act_effect
+			USA_debug_example_setup = yes
+		}
+	}
+	
+############## DO NOT MODIFY BELOW THIS LINE ###################################
+	
+	start_vote = {
+		icon = ger_mefo_bills
+		available = {
+			
+		}
+		
+		visible = {
+			original_tag = USA
+			has_country_flag = USA_discussing_bill
+		}
+		
+		cost = 0
+		
+		days_remove = 5
+		
+		complete_effect = {
+			custom_effect_tooltip = start_vote_tt
+			#add_days_mission_timeout = {
+			#	mission = USA_bill_timer
+			#	days = 10
+			#}
+		}
+		
+		remove_effect = {
+			check_if_bill_passed = yes
+			USA_bill_vote = yes
+		}
+	}
+	
+	USA_talk_with_republicans = {
+		
+		visible = {
+			original_tag = USA
+			check_variable = { bill_id > 0 }
+			check_variable = { senators_republican > 0 }
+        }
+			
+		cost = republican_flip_cost
+       		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = reps_talking
+				has_country_flag = USA_republican_discussing
+			}
+			custom_trigger_tooltip = {
+				tooltip = unavaliable_already_negotiated
+				NOT = { has_country_flag = republicans_negotiated }
+			}
+			custom_trigger_tooltip = {
+				tooltip = reps_fully_support
+				NOT = { check_variable = { USA_republican_bill_support = 1 } }
+			}
+			#custom_trigger_tooltip = {
+			#	tooltip = mut_exclude
+			#}
+		}
+    	days_remove = 5
+    	remove_effect = {
+			random_list = {
+				95 = {
+					USA_republican_support_eventless = yes
+				}
+				
+				5 = {
+					
+				}
+			}
+		}
+	}
+	
+	USA_talk_with_democrats = {
+		
+		visible = {
+			AND = {
+				original_tag = USA
+				check_variable = { bill_id > 0 }
+				check_variable = { senators_democrat > 0 }
+				has_country_flag = USA_democrat_discussing
+			}
+        }
+			
+		cost = democrat_flip_cost
+       		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = dems_talking
+				has_country_flag = USA_democrat_discussing
+			}
+			custom_trigger_tooltip = {
+				tooltip = unavaliable_already_negotiated
+				NOT = { has_country_flag = democrats_negotiated }
+			}
+			custom_trigger_tooltip = {
+				tooltip = dems_fully_support
+				NOT = { check_variable = { USA_democrat_bill_support = 1 } }
+			}
+			#custom_trigger_tooltip = {
+			#	tooltip = mut_exclude
+			#}
+		}
+    	days_remove = 5
+    	remove_effect = {
+		
+			random_list = {
+				95 = {
+					USA_democrat_support_eventless = yes
+				}
+				5 = {
+					
+				}
+			}
+		}
+	}
+	
+	USA_talk_with_dem_socialists = {
+		
+		visible = {
+			AND = {
+				original_tag = USA
+				check_variable = { bill_id > 0 }
+				check_variable = { senators_socialist > 0 }
+				has_country_flag = USA_socialist_discussing
+			}
+        }
+			
+		cost = farmer_labor_flip_cost
+       		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = socialist_talking
+				has_country_flag = USA_socialist_discussing
+			}
+			custom_trigger_tooltip = {
+				tooltip = unavaliable_already_negotiated
+				NOT = { has_country_flag = socialists_negotiated }
+			}
+			custom_trigger_tooltip = {
+				tooltip = socialist_fully_support
+				NOT = { check_variable = { USA_socialist_bill_support = 1 } }
+			}
+			#custom_trigger_tooltip = {
+			#	tooltip = mut_exclude
+			#}
+		}
+    	days_remove = 5
+    	remove_effect = {
+			
+			random_list = {
+				95 = {
+					
+				}
+				5 = {
+					
+				}
+			}
+		}
+	}
+	
+	USA_talk_with_communists = {
+		
+		visible = {
+			AND = {
+				original_tag = USA
+				check_variable = { bill_id > 0 }
+				OR = {
+					check_variable = { senators_communist > 0 }
+					check_variable = { representatives_communist > 0 }
+				}
+				has_country_flag = USA_communist_discussing
+			}
+        }
+			
+		cost = farmer_labor_flip_cost
+       		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = communinsts_talking
+				has_country_flag = USA_communist_discussing
+			}
+			custom_trigger_tooltip = {
+				tooltip = unavaliable_already_negotiated
+				NOT = { has_country_flag = communist_negotiated }
+			}
+			custom_trigger_tooltip = {
+				tooltip = communists_fully_support
+				NOT = { check_variable = { USA_communist_bill_support = 1 } }
+			}
+			#custom_trigger_tooltip = {
+			#	tooltip = mut_exclude
+			#}
+		}
+    	days_remove = 5
+    	remove_effect = {
+			
+			random_list = {
+				95 = {
+					
+				}
+				5 = {
+					
+				}
+			}
+		}
+	}
+	
+	USA_talk_with_fascists = {
+		
+		visible = {
+			AND = {
+				original_tag = USA
+				check_variable = { bill_id > 0 }
+				OR = {
+					check_variable = { senators_fascist > 0 }
+					check_variable = { representatives_fascist > 0 }
+				}
+				has_country_flag = USA_fascist_discussing
+			}
+        }
+			
+		cost = farmer_labor_flip_cost
+       		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = fascists_talking
+				has_country_flag = USA_fascist_discussing
+			}
+			custom_trigger_tooltip = {
+				tooltip = unavaliable_already_negotiated
+				NOT = { has_country_flag = fascist_negotiated }
+			}
+			custom_trigger_tooltip = {
+				tooltip = fascists_fully_support
+				NOT = { check_variable = { USA_fascist_bill_support = 1 } }
+			}
+			#custom_trigger_tooltip = {
+			#	tooltip = mut_exclude
+			#}
+		}
+    	days_remove = 5
+    	remove_effect = {
+			
+			random_list = {
+				95 = {
+					
+				}
+				5 = {
+					
+				}
+			}
+		}
+	}
+	
+	USA_bill_timer = {
+		visible = {
+			original_tag = USA
+		}
+		available = { #Mission is completed when the player brings the bill to a vote
+			custom_trigger_tooltip = {
+				tooltip = USA_bill_timer_pass_criteria
+				NOT = { has_country_flag = bill_enable_mission }
+			}
+		}
+		activation = {
+			has_country_flag = bill_enable_mission
+		}
+		is_good = no
+		
+		days_mission_timeout = USA_bill_mission_deadline #Length of deadline is specified by each individuall bill
+		
+		timeout_effect = {
+			add_stability = -0.02
+			add_political_power = -50
+		}
+	}
+}
