@@ -23,6 +23,9 @@
  negotiate_some_republican_support:0 "We will negotiate the support of some §RRepublican§! members of Congress."
  USA_talk_with_democrats:0 "Negotiate with the Democrats"
  negotiate_some_democrat_support:0 "We will negotiate the support of some §CDemocratic§! members of Congress."
+ USA_talk_with_dem_socialists:0 "Negotiate with the Socialists"
+ USA_talk_with_communists:0 "Negotiate with the Communists"
+ USA_talk_with_fascists:0 "Negotiate with the Fascists"
  
  reps_talking:0 "The Republicans are willing to negotiate."
  reps_fully_support:0 "The Republicans don't fully support this bill."

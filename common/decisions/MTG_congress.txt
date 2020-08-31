@@ -151,7 +151,7 @@ USA_congress = {
 			}
         }
 			
-		cost = farmer_labor_flip_cost
+		cost = socialist_flip_cost
        		
 		available = {
 			custom_trigger_tooltip = {
@@ -198,7 +198,7 @@ USA_congress = {
 			}
         }
 			
-		cost = farmer_labor_flip_cost
+		cost = communist_flip_cost
        		
 		available = {
 			custom_trigger_tooltip = {
@@ -245,7 +245,7 @@ USA_congress = {
 			}
         }
 			
-		cost = farmer_labor_flip_cost
+		cost = fascist_flip_cost
        		
 		available = {
 			custom_trigger_tooltip = {

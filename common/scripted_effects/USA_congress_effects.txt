@@ -62,6 +62,8 @@ USA_debug_example_setup = { # example debug act
 	set_variable = { republican_flip_cost = 25 } # how much pp negotiation decisions cost
 	set_variable = { democrat_flip_cost = 40 }
 	set_variable = { communist_flip_cost = 20 }
+	set_variable = { socialist_flip_cost = 20 }
+	set_variable = { fascist_flip_cost = 70 }
 	
 	USA_bill_setup = yes # always required
 }
