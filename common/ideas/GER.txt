@@ -1,0 +1,92 @@
+ideas = {
+	political_advisor = {
+	} 
+	
+    country = { 
+		the_loss_of_a_generation = {
+			removal_cost = -1 
+			
+			picture = GER_the_loss_of_a_generation
+			
+			allowed = {
+				tag = GER
+			}  
+
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				conscription = -0.10 
+				production_factory_max_efficiency_factor = -0.3 
+				conversion_cost_civ_to_mil_factor = 0.3 
+				production_speed_industrial_complex_factor = -0.2
+			}
+		}   
+
+		faith_in_the_kaiser = {
+			removal_cost = -1 
+			
+			picture = GER_faith_in_the_kaiser 
+			
+			allowed_civil_war = {
+				always = yes	
+			}
+			
+			allowed = {
+				tag = GER
+			}
+			
+			modifier = {
+				political_power_gain = 0.5
+				add_stability = 0.1
+			}
+		}   
+
+	   unpaid_war_expenses = { 
+		
+		removal_cost = -1 
+		
+		picture = GER_unpaid_war_expenses  
+		
+		allowed_civil_war = {	 
+			always = yes	
+		}	
+		
+		allowed = {
+			tag = GER
+		}
+			
+		modifier = {
+			consumer_goods_factor = 0.10  
+			min_export = 0.05 
+			production_speed_arms_factory_factor = -0.10
+		}
+	  }
+    }   
+
+
+	#Military
+	army_chief = {
+	}
+	navy_chief = {
+	}
+	air_chief = {
+	}
+	high_command = {
+	}
+	#Manufacturers
+	tank_manufacturer = {
+	}
+	naval_manufacturer = {
+	}
+	aircraft_manufacturer = {
+	}
+	materiel_manufacturer = {
+	}
+	theorist = {
+	}
+}
