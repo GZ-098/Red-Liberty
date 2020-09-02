@@ -34,6 +34,9 @@ focus_tree = {
 		prerequisite = { focus = GER_kaiser_wilhelm_ii }
 		ai_will_do = {
 			factor = 1 #add 5% stability#
+		} 
+		completion_reward = { 
+			add_stability = 0.05
 		}
 	}
 
@@ -49,6 +52,13 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_fixing_the_economy }
 		ai_will_do = {
 			factor = 1 #will give a little research bonus for weapons#
+		} 
+		completion_reward = { 
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_tech
+			} 
 		}
 	}
 
@@ -64,6 +74,12 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_fixing_the_military }
 		ai_will_do = {
 			factor = 1 #Will slightly dampen effects of The Lost of a Generation#
+		} 
+		completion_reward = { 
+			swap_ideas = { 
+				remove_idea = the_loss_of_a_generation
+				add_idea = the_loss_of_a_generation2
+			} 
 		}
 	}
 
@@ -78,6 +94,13 @@ focus_tree = {
 		prerequisite = { focus = GER_fixing_the_military }
 		ai_will_do = {
 			factor = 1 #Will give player a x1 50% research bonus for blitzkrieg doctrine#
+		} 
+		completion_reward = { 
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}  
 		}
 	}
 
@@ -92,6 +115,9 @@ focus_tree = {
 		prerequisite = { focus = GER_rearrange_the_general_staff }
 		ai_will_do = {
 			factor = 1 #Will add 1000 manpower#
+		} 
+		completion_reward = { 
+			add_manpower = 1000 
 		}
 	}
 
@@ -106,6 +132,13 @@ focus_tree = {
 		prerequisite = { focus = GER_fixing_the_military }
 		ai_will_do = {
 			factor = 1 #Will give player x1 50% weapon research bonus#
+		} 
+		completion_reward = { 
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}  
 		}
 	}
 
@@ -120,6 +153,13 @@ focus_tree = {
 		prerequisite = { focus = GER_bring_in_new_equipment }
 		ai_will_do = {
 			factor = 1 #Will give player a x1 50% research bonus for blitzkrieg doctrine#
+		} 
+		completion_reward = { 
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}  
 		}
 	}
 
@@ -139,6 +179,12 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1 #Moderately remove some effects of the Lost of a Generation National effect#
+		} 
+		completion_reward = { 
+			swap_ideas = { 
+				remove_idea = the_loss_of_a_generation2
+				add_idea = the_loss_of_a_generation3
+			} 
 		}
 	}
 
@@ -214,7 +260,7 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-		}
+		} 
 	}
 
 	#Focus for Towards a Brighter Future
