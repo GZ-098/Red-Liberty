@@ -13,6 +13,10 @@ spriteTypes = {
 	#red liberty icons 
 	################## 
 	spriteType = {
+		name = "GFX_idea_GER_the_loss_of_a_generation3"
+		texturefile = "gfx/interface/ideas/GER_the_loss_of_a_generation3.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_GER_the_loss_of_a_generation2"
 		texturefile = "gfx/interface/ideas/GER_the_loss_of_a_generation2.dds"
 	}
