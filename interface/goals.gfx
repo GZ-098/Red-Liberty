@@ -46,7 +46,7 @@ spriteTypes = {
 	} 
 	SpriteType = {
 	name = "GFX_GER_kaiser_wilhelm_ii_man"
-	texturefile = "gfx/interface/goals/GER_kaiser_wilhelm_ii_man.png"			
+	texturefile = "gfx/interface/goals/GER_kaiser_wilhelm_ii_man.dds"			
 	} 
 	SpriteType = {
 	name = "GFX_GER_investigate_corrupt_banks"
