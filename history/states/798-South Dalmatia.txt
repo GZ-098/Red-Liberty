@@ -2,7 +2,7 @@
 state={
 	id=798
 	name="STATE_798" # Dalmatia
-	manpower = 1431700
+	manpower = 141700
 
 	state_category = large_town
 
@@ -25,6 +25,6 @@ state={
 	}
 
 	provinces={
-		6889 11816 3868 3924 3974 3943
+		6889 11816 3868 3924 3974
 	}
 }
