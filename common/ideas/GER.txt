@@ -2,7 +2,31 @@ ideas = {
 	political_advisor = {
 	} 
 	
-    country = {  
+    country = { 
+       		the_loss_of_a_generation3 = {
+			removal_cost = -1 
+			
+			picture = GER_the_loss_of_a_generation3
+			
+			allowed = {
+				tag = GER
+			}  
+
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				conscription = -0.04
+				production_factory_max_efficiency_factor = -0.15 
+				conversion_cost_civ_to_mil_factor = 0.15
+				production_speed_industrial_complex_factor = -0.5
+			}
+		}
+		
     		the_loss_of_a_generation2 = {
 			removal_cost = -1 
 			
