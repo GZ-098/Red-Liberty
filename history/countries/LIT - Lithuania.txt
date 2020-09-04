@@ -89,6 +89,29 @@ set_popularities = {
 		election_frequency = 120
 		elections_allowed = no
 	}
+} 
+
+create_country_leader = {
+	name = "Ludwig Beck"
+	desc = "POLITICS_LUDWIG_BECK_DESC"
+	picture = "gfx/leaders/LIT/Portrait_Europe_Generic_1.tga"
+	expire = "1965.1.1"
+	ideology = democratic_socialist 
+	traits = {
+		#
+	}
+}
+
+
+create_country_leader = {
+	name = "Ludwig Beck"
+	desc = "POLITICS_LUDWIG_BECK_DESC"
+	picture = "gfx/leaders/LIT/Portrait_Europe_Generic_1.tga"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
 }
 
 create_country_leader = {
@@ -107,7 +130,7 @@ create_country_leader = {
 	desc = "POLITICS_ANTANAS_SNIECKUS_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = marxism
 	traits = {
 		#
 	}
@@ -118,7 +141,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = nazism
 	traits = {
 		#
 	}
