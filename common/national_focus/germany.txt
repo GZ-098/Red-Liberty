@@ -19,7 +19,7 @@ focus_tree = {
 		cost = 1
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 1 #Gives event (Just set up the reward for the me, I'll add in the event ID)#
 		}
 	}
 
@@ -198,7 +198,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_fixing_the_economy }
 		ai_will_do = {
-			factor = 1
+			factor = 1 #Will gain 25 PP, lose 10% stability#
 		}
 	}
 
@@ -212,7 +212,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_fixing_the_economy }
 		ai_will_do = {
-			factor = 1
+			factor = 1 #Will slightly dampen effects of unpaid war expenses, but very slightly#
 		}
 	}
 
@@ -226,7 +226,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_invest_in_construction_projects }
 		ai_will_do = {
-			factor = 1
+			factor = 1 #Will give economic boost via national idea for GER for 365 days#
 		}
 	}
 
@@ -240,7 +240,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_freeze_bank_withdrawals }
 		ai_will_do = {
-			factor = 1
+			factor = 1 #Lose 50 PP, gain 10% stability#
 		}
 	}
 
@@ -259,7 +259,7 @@ focus_tree = {
 			focus = GER_the_imperial_economic_plan 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 1 #add 25 PP, gain 5% stability#
 		} 
 	}
 
@@ -276,7 +276,7 @@ focus_tree = {
 			focus = GER_a_fixed_economy 
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 1 #Gives event (Just set up the reward for the me, I'll add in the event ID)#
 		}
 	}
 
