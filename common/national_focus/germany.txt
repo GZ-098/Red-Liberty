@@ -20,6 +20,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1 #Gives event (Just set up the reward for the me, I'll add in the event ID)#
+		} 
+		completion_reward = { 
+			country_event = { id =  days = 1 } 
 		}
 	}
 
@@ -199,7 +202,11 @@ focus_tree = {
 		prerequisite = { focus = GER_fixing_the_economy }
 		ai_will_do = {
 			factor = 1 #Will gain 25 PP, lose 10% stability#
-		}
+		} 
+        completion_reward = { 
+            add_stability = -0.10 
+            add_political_power = 25 
+        }
 	}
 
 	#Focus for Invest in Construction Projects
@@ -213,7 +220,13 @@ focus_tree = {
 		prerequisite = { focus = GER_fixing_the_economy }
 		ai_will_do = {
 			factor = 1 #Will slightly dampen effects of unpaid war expenses, but very slightly#
-		}
+		} 
+        completion_reward = { 
+            swap_ideas = { 
+                remove_idea = unpaid_war_expenses 
+                add_idea = unpaid_war_expenses2
+            }
+        }
 	}
 
 	#Focus for The Imperial Economic Plan
@@ -227,7 +240,13 @@ focus_tree = {
 		prerequisite = { focus = GER_invest_in_construction_projects }
 		ai_will_do = {
 			factor = 1 #Will give economic boost via national idea for GER for 365 days#
-		}
+		} 
+        completion_reward = { 
+            add_timed_idea = {
+                add_idea = new_imperial_economic_plan 
+                days = 365
+            }
+        }
 	}
 
 	#Focus for Investigate Corrupt Banks
@@ -241,7 +260,11 @@ focus_tree = {
 		prerequisite = { focus = GER_freeze_bank_withdrawals }
 		ai_will_do = {
 			factor = 1 #Lose 50 PP, gain 10% stability#
-		}
+		} 
+        completion_reward = {
+            add_stability = 0.10 
+            add_political_power = -50
+        }
 	}
 
 	#Focus for A Fixed Economy
@@ -261,6 +284,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1 #add 25 PP, gain 5% stability#
 		} 
+        completion_reward = {
+            add_political_power = 25 
+            add_stability = 0.05
+        }
 	}
 
 	#Focus for Towards a Brighter Future
@@ -277,7 +304,10 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1 #Gives event (Just set up the reward for the me, I'll add in the event ID)#
-		}
+		} 
+        completion_reward = {
+            country_event = { id =  days = 1 }
+        }
 	}
 
 #End of focuses 
