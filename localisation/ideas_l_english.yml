@@ -22,6 +22,10 @@
  #################
  #Germany ideas 
  ################# 
+ new_imperial_economic_plan:0 "New Imperial Economic Plan" 
+ new_imperial_economic_plan_desc:0 "After a long time of creating construction projects, we have finally figured out an economic plan that can best suit the German economy. We have found the Imperial Economy Plan that has the highest chance of helping to improve the German economy."
+ unpaid_war_expenses2:0 "Unpaid War Expenses" 
+ unpaid_war_expenses2_desc:0 "Due to the stalemate that we agreed to in the Great War, we have gathered unpaid war expenses. While the tax revenue that we collect from our citizens is at a critical low due to a smaller population after the stalemate. We are starting to consider exploiting the resources from the Russian lands that we have conquered, and who knows? Maybe we will." 
  unpaid_war_expenses:0 "Unpaid War Expenses" 
  unpaid_war_expenses_desc:0 "Due to the stalemate that we agreed to in the Great War, we have gathered unpaid war expenses. While the tax revenue that we collect from our citizens is at a critical low due to a smaller population after the stalemate. We are starting to consider exploiting the resources from the Russian lands that we have conquered, and who knows? Maybe we will." 
  faith_in_the_kaiser:0 "Faith in the Kaiser" 
