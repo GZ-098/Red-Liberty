@@ -92,7 +92,50 @@ ideas = {
 				political_power_gain = 0.5
 				add_stability = 0.1
 			}
-		}   
+		}    
+		
+	   new_imperial_economic_plan = { 
+		
+		removal_cost = -1 
+		
+		picture = new_imperial_economic_plan
+		
+		allowed_civil_war = {	 
+			always = yes	
+		}	
+		
+		allowed = {
+			tag = GER
+		}
+			
+		modifier = {
+			consumer_goods_factor = -0.05 
+			production_speed_industrial_complex_factor = 0.10 
+			production_speed_arms_factory_factor = 0.05 
+			production_factory_efficiency_gain_factor = 0.10
+		}
+	  }
+
+	   unpaid_war_expenses2 = { 
+		
+		removal_cost = -1 
+		
+		picture = GER_unpaid_war_expenses2
+		
+		allowed_civil_war = {	 
+			always = yes	
+		}	
+		
+		allowed = {
+			tag = GER
+		}
+			
+		modifier = {
+			consumer_goods_factor = 0.09 
+			min_export = 0.04
+			production_speed_arms_factory_factor = -0.09
+		}
+	  }
 
 	   unpaid_war_expenses = { 
 		
