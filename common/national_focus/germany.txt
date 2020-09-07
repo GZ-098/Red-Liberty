@@ -243,7 +243,7 @@ focus_tree = {
 		} 
         completion_reward = { 
             add_timed_idea = {
-                add_idea = new_imperial_economic_plan 
+                idea = new_imperial_economic_plan 
                 days = 365
             }
         }
