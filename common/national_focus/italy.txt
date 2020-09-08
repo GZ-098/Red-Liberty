@@ -11,7 +11,9 @@ focus_tree = {
 	default = no 
 
 	continuous_focus_position = { x = 80 y = 1800 } 
-
+	############################ 
+	#domestic path 
+	############################
 	#Focus for Use the Church to Inspire
 	focus = {
 		id = ITA_use_the_church_to_inspire
@@ -645,7 +647,9 @@ popularity = 0.15
   			add_political_power= -20
 		}
 	}
-
+	############################ 
+	#foreign paths 
+	############################
 	#Focus for An Expansionists Policy
 	focus = {
 		id = ITA_an_expansionists_policy
@@ -665,6 +669,112 @@ popularity = 0.15
 				category = land_doctrine
 			}
   			add_ideas= ITA_expasionists_policy
+		}
+	} 
+	#Focus for Suppress Rebel Sentiments in Ethiopia
+	focus = {
+		id = ITA_suppress_rebel_sentiments_in_ethiopia
+		icon = GFX_goal_unknown
+		x = 14
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_connect_the_our_african_holdings }
+		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST } 
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			bypass = {
+IF = {
+ITA = {
+        NOT = {
+ controls_state = 271
+            }
+        }
+    } 
+}
+		}
+		completion_reward = {
+			add_ideas= ITA_supression
+		}
+	}
+
+	#Focus for Influence the Politics of Ethiopia
+	focus = {
+		id = ITA_influence_the_politics_of_ethiopia
+		icon = GFX_goal_unknown
+		x = 20
+		y = 1
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_put_italy_back_on_the_stage }
+		mutually_exclusive = { focus = ITA_connect_the_our_african_holdings }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			ETH = {
+ add_timed_idea= { 
+ idea = ETH_italian_influence 
+ days = 240 
+ } 
+}
+		}
+	}
+
+	#Focus for Connect the Our African Holdings
+	focus = {
+		id = ITA_connect_the_our_african_holdings
+		icon = GFX_goal_unknown
+		x = 14
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_put_italy_back_on_the_stage }
+		mutually_exclusive = { focus = ITA_influence_the_politics_of_ethiopia }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = ETH
+}
+		}
+	}
+
+	#Focus for fill
+	focus = {
+		id = ITA_fill
+		icon = GFX_goal_unknown
+		x = 28
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Put Italy Back on the Stage
+	focus = {
+		id = ITA_put_italy_back_on_the_stage
+		icon = GFX_goal_unknown
+		x = 17
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50  
+add_stability= 0.05  
+add_war_support= 1
 		}
 	}
 }
