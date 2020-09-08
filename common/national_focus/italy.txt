@@ -1,0 +1,670 @@
+focus_tree = {
+	id = italy_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ITA
+		}
+	} 
+
+	default = no 
+
+	continuous_focus_position = { x = 80 y = 1800 } 
+
+	#Focus for Use the Church to Inspire
+	focus = {
+		id = ITA_use_the_church_to_inspire
+		icon = GFX_goal_unknown
+		x = 12
+		y = 7
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_loosen_church_restrictions }
+		mutually_exclusive = { focus = ITA_allow_the_church_to_influence_government_policy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = empowered_nationalism 
+popularity = 0.20 
+}
+ 
+
+  add_political_power= 30
+		}
+	}
+
+	#Focus for Isolate Priests
+	focus = {
+		id = ITA_isolate_priests
+		icon = GFX_goal_unknown
+		x = 6
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_add_a_church_tax }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= -0.10  add_political_power= -30  add_ideas= ITA_isolated_priests
+		}
+	}
+
+	#Focus for Keep the Monarchy Only as a Figure Head
+	focus = {
+		id = ITA_keep_the_monarchy_only_as_a_figure_head
+		icon = GFX_goal_unknown
+		x = 8
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_weaken_the_monarchs_influence }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_a_figure_head_monarchy
+		}
+	}
+
+	#Focus for Leave the Church be
+	focus = {
+		id = ITA_leave_the_church_be
+		icon = GFX_goal_unknown
+		x = 8
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_italy_is_fine_as_it_is }
+		mutually_exclusive = { focus = ITA_increase_church_restrictions }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50  add_popularity= { 
+ideology = democratic
+popularity = 0.10
+}
+		}
+	}
+
+	#Focus for Increase Church Restrictions
+	focus = {
+		id = ITA_increase_church_restrictions
+		icon = GFX_goal_unknown
+		x = 6
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_italy_is_fine_as_it_is }
+		mutually_exclusive = { focus = ITA_leave_the_church_be }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = revolutionary_socialism
+popularity = 0.15
+}
+		}
+	}
+
+	#Focus for Take Full Control of Parliament
+	focus = {
+		id = ITA_take_full_control_of_parliament
+		icon = GFX_goal_unknown
+		x = 12
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_use_the_church_as_a_crowbar }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = empowered_nationalism 
+popularity = 0.25 
+}
+  add_ideas= ITA_a_fascist_senate   add_political_power= -60
+		}
+	}
+
+	#Focus for Abolish the Monarchy!
+	focus = {
+		id = ITA_abolish_the_monarchy
+		icon = GFX_goal_unknown
+		x = 6
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_break_down_the_church_in_italy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_abolished_monarchy 
+
+add_popularity = { 
+ideology = revolutionary_socialism  
+popularity = 0.25 
+}
+		}
+	}
+
+	#Focus for Allow the Church to Influence Government Policy
+	focus = {
+		id = ITA_allow_the_church_to_influence_government_policy
+		icon = GFX_goal_unknown
+		x = 10
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_loosen_church_restrictions }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = autocratic_despotism
+popularity = 0.25
+}
+  add_ideas= ITA_church_influence
+		}
+	}
+
+	#Focus for Count the Bodies
+	focus = {
+		id = ITA_count_the_bodies
+		icon = GFX_goal_unknown
+		x = 9
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_MANPOWER } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= ITA_the_body_count
+		}
+	}
+
+	#Focus for Italy is Fine as it is
+	focus = {
+		id = ITA_italy_is_fine_as_it_is
+		icon = GFX_goal_unknown
+		x = 8
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_relook_italys_secularization }
+		mutually_exclusive = { focus = ITA_loosen_church_restrictions }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.10
+		}
+	}
+
+	#Focus for Break Down the Church in Italy
+	focus = {
+		id = ITA_break_down_the_church_in_italy
+		icon = GFX_goal_unknown
+		x = 6
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_isolate_priests }
+		search_filters = { FOCUS_FILTER_MEX_CHURCH_AUTHORITY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= ITA_a_broken_church  add_political_power= -50
+		}
+	}
+
+	#Focus for The Parliament is the Monarch's Fiddle
+	focus = {
+		id = ITA_the_parliament_is_the_monarchs_fiddle
+		icon = GFX_goal_unknown
+		x = 10
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_reduce_the_power_of_the_parliament }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= ITA_monarchist_parliament  add_popularity= { 
+ideology = autocratic_despotism  
+popularity = 0.15
+}
+		}
+	}
+
+	#Focus for Break Down Italy's Secularization
+	focus = {
+		id = ITA_break_down_italys_secularization
+		icon = GFX_goal_unknown
+		x = 10
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_the_parliament_is_the_monarchs_fiddle }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = autocratic_despotism 
+popularity = 0.05
+}
+  add_timed_idea= { 
+idea = ITA_the_resacralization_of_italy 
+days = 250
+}
+		}
+	}
+
+	#Focus for Fully Resacraliza Society
+	focus = {
+		id = ITA_fully_resacraliza_society
+		icon = GFX_goal_unknown
+		x = 10
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_break_down_italys_secularization }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 150
+		}
+	}
+
+	#Focus for Use the Church as a Crowbar
+	focus = {
+		id = ITA_use_the_church_as_a_crowbar
+		icon = GFX_goal_unknown
+		x = 12
+		y = 8
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_use_the_church_to_inspire }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = empowered_nationalism 
+popularity = 0.15
+}
+  add_political_power= 20
+		}
+	}
+
+	#Focus for Make a Cult of Personality
+	focus = {
+		id = ITA_make_a_cult_of_personality
+		icon = GFX_goal_unknown
+		x = 12
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_take_full_control_of_parliament }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= ITA_a_cult_personality
+		}
+	}
+
+	#Focus for Loosen Church Restrictions
+	focus = {
+		id = ITA_loosen_church_restrictions
+		icon = GFX_goal_unknown
+		x = 10
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_relook_italys_secularization }
+		mutually_exclusive = { focus = ITA_italy_is_fine_as_it_is }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_loosened_church_restrictions
+		}
+	}
+
+	#Focus for Encourage Work in the Iron Mines
+	focus = {
+		id = ITA_encourage_work_in_the_iron_mines
+		icon = GFX_goal_unknown
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_the_battle_for_industry }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource= { 
+				type = steel 
+				amount = 24
+				state = 159
+			}
+		}
+	}
+
+	#Focus for Gold for the Fartherland
+	focus = {
+		id = ITA_gold_for_the_fartherland
+		icon = GFX_goal_unknown
+		x = 11
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_begin_the_battles_of_italy }
+		search_filters = { FOCUS_FILTER_STABILITY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea= { 
+				idea = ITA_gold_for_the_fartherland 
+				days = 365 
+			}
+		}
+	}
+
+	#Focus for Pride in Italy
+	focus = {
+		id = ITA_pride_in_italy
+		icon = GFX_goal_unknown
+		x = 11
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_gold_for_the_fartherland }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+	}
+
+	#Focus for Finish the Battles Program
+	focus = {
+		id = ITA_finish_the_battles_program
+		icon = GFX_goal_unknown
+		x = 9
+		y = 4
+		cost = 9
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_the_battle_for_land 
+		}
+		prerequisite = { 
+			focus = ITA_pride_in_italy 
+		}
+		prerequisite = { 
+			focus = ITA_encourage_work_in_the_iron_mines 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 100
+		}
+	}
+
+	#Focus for The Battle for Births
+	focus = {
+		id = ITA_the_battle_for_births
+		icon = GFX_goal_unknown
+		x = 7
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_begin_the_battles_of_italy }
+		search_filters = { FOCUS_FILTER_MANPOWER } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_encouraged_births
+		}
+	}
+
+	#Focus for Begin the Battles of Italy
+	focus = {
+		id = ITA_begin_the_battles_of_italy
+		icon = GFX_goal_unknown
+		x = 9
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_count_the_bodies }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+
+	#Focus for The Battle for Industry
+	focus = {
+		id = ITA_the_battle_for_industry
+		icon = GFX_goal_unknown
+		x = 9
+		y = 2
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_begin_the_battles_of_italy }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_building_construction= {
+			type = industrial_complex
+			state = 114
+			level = 3 
+			instant_build = yes }
+		}
+	}
+
+	#Focus for The Battle for Land
+	focus = {
+		id = ITA_the_battle_for_land
+		icon = GFX_goal_unknown
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_the_battle_for_births }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= ITA_land_extraction
+		}
+	}
+
+	#Focus for Relook Italy's Secularization
+	focus = {
+		id = ITA_relook_italys_secularization
+		icon = GFX_goal_unknown
+		x = 9
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_finish_the_battles_program }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+	}
+
+	#Focus for Add a Church Tax
+	focus = {
+		id = ITA_add_a_church_tax
+		icon = GFX_goal_unknown
+		x = 6
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_increase_church_restrictions }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= ITA_churchs_taxed  add_political_power= 25
+		}
+	}
+
+	#Focus for Reinforce Italy's Secularization
+	focus = {
+		id = ITA_reinforce_italys_secularization
+		icon = GFX_goal_unknown
+		x = 8
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_leave_the_church_be }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+			ideology = democratic 
+			popularity = 0.20
+			}
+  			add_political_power= 10
+		}
+	}
+
+	#Focus for Weaken the Monarchs Influence
+	focus = {
+		id = ITA_weaken_the_monarchs_influence
+		icon = GFX_goal_unknown
+		x = 8
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_reinforce_italys_secularization }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+			ideology = democratic
+			popularity = 0.15 
+		}
+  		add_ideas= ITA_weakend_church
+		}
+	}
+
+	#Focus for Give the Monarch's Power to the Parliament
+	focus = {
+		id = ITA_give_the_monarchs_power_to_the_parliament
+		icon = GFX_goal_unknown
+		x = 8
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_keep_the_monarchy_only_as_a_figure_head }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+			ideology = democratic
+			popularity = 0.10
+		}	
+  		add_political_power= 20
+		}
+	}
+
+	#Focus for Reduce the Power of the Parliament
+	focus = {
+		id = ITA_reduce_the_power_of_the_parliament
+		icon = GFX_goal_unknown
+		x = 10
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_allow_the_church_to_influence_government_policy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+			ideology = revolutionary_socialism 
+			popularity = 0.20
+			}
+  			add_political_power= -20
+		}
+	}
+
+	#Focus for An Expansionists Policy
+	focus = {
+		id = ITA_an_expansionists_policy
+		icon = GFX_goal_unknown
+		x = 12
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_make_a_cult_of_personality }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ 				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+  			add_ideas= ITA_expasionists_policy
+		}
+	}
+}
