@@ -10,14 +10,28 @@ focus_tree = {
 
 	default = no 
 
-	continuous_focus_position = { x = 80 y = 1800 } 
-	############################ 
-	#domestic path 
-	############################
+	continuous_focus_position = { x = 80 y = 1800 }  
+#focus = {
+    #    id = TAG_Focus_Name_And_ID
+    #    icon = GFX_TAG_Focus_Name_And_ID
+    #    x = 1
+    #    y = 1
+    #    cost = 10
+    #    available = { }
+    #    bypass = { }
+    #    mutually_exclusive = { }
+    #    prerequisite = { focus = TAG_Focus_Name_And_ID_2 }
+    #    available_if_capitulated = yes
+    #    search_filters = { }
+    #    ai_will_do = {
+    #        factor = 15 }
+    #    completion_reward = { }
+    #  }
+
 	#Focus for Use the Church to Inspire
 	focus = {
 		id = ITA_use_the_church_to_inspire
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_use_the_church_to_inspire
 		x = 12
 		y = 7
 		cost = 4
@@ -42,7 +56,7 @@ popularity = 0.20
 	#Focus for Isolate Priests
 	focus = {
 		id = ITA_isolate_priests
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_isolate_priests
 		x = 6
 		y = 9
 		cost = 10
@@ -60,7 +74,7 @@ popularity = 0.20
 	#Focus for Keep the Monarchy Only as a Figure Head
 	focus = {
 		id = ITA_keep_the_monarchy_only_as_a_figure_head
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_keep_the_monarchy_only_as_a_figure_head
 		x = 8
 		y = 10
 		cost = 10
@@ -78,7 +92,7 @@ popularity = 0.20
 	#Focus for Leave the Church be
 	focus = {
 		id = ITA_leave_the_church_be
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_leave_the_church_be
 		x = 8
 		y = 7
 		cost = 3
@@ -100,7 +114,7 @@ popularity = 0.10
 	#Focus for Increase Church Restrictions
 	focus = {
 		id = ITA_increase_church_restrictions
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_increase_church_restrictions
 		x = 6
 		y = 7
 		cost = 7
@@ -122,7 +136,7 @@ popularity = 0.15
 	#Focus for Take Full Control of Parliament
 	focus = {
 		id = ITA_take_full_control_of_parliament
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_take_full_control_of_parliament
 		x = 12
 		y = 9
 		cost = 10
@@ -144,7 +158,7 @@ popularity = 0.25
 	#Focus for Abolish the Monarchy!
 	focus = {
 		id = ITA_abolish_the_monarchy
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_abolish_the_monarchy
 		x = 6
 		y = 11
 		cost = 10
@@ -167,7 +181,7 @@ popularity = 0.25
 	#Focus for Allow the Church to Influence Government Policy
 	focus = {
 		id = ITA_allow_the_church_to_influence_government_policy
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_allow_the_church_to_influence_government_policy
 		x = 10
 		y = 7
 		cost = 10
@@ -188,7 +202,7 @@ popularity = 0.25
 	#Focus for Count the Bodies
 	focus = {
 		id = ITA_count_the_bodies
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_count_the_bodies
 		x = 9
 		y = 0
 		cost = 10
@@ -205,7 +219,7 @@ popularity = 0.25
 	#Focus for Italy is Fine as it is
 	focus = {
 		id = ITA_italy_is_fine_as_it_is
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_italy_is_fine_as_it_is
 		x = 8
 		y = 6
 		cost = 10
@@ -224,7 +238,7 @@ popularity = 0.25
 	#Focus for Break Down the Church in Italy
 	focus = {
 		id = ITA_break_down_the_church_in_italy
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_break_down_the_church_in_italy
 		x = 6
 		y = 10
 		cost = 10
@@ -242,7 +256,7 @@ popularity = 0.25
 	#Focus for The Parliament is the Monarch's Fiddle
 	focus = {
 		id = ITA_the_parliament_is_the_monarchs_fiddle
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_the_parliament_is_the_monarchs_fiddle
 		x = 10
 		y = 9
 		cost = 10
@@ -263,7 +277,7 @@ popularity = 0.15
 	#Focus for Break Down Italy's Secularization
 	focus = {
 		id = ITA_break_down_italys_secularization
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_break_down_italys_secularization
 		x = 10
 		y = 10
 		cost = 5
@@ -288,7 +302,7 @@ days = 250
 	#Focus for Fully Resacraliza Society
 	focus = {
 		id = ITA_fully_resacraliza_society
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_fully_resacraliza_society
 		x = 10
 		y = 11
 		cost = 10
@@ -306,7 +320,7 @@ days = 250
 	#Focus for Use the Church as a Crowbar
 	focus = {
 		id = ITA_use_the_church_as_a_crowbar
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_use_the_church_as_a_crowbar
 		x = 12
 		y = 8
 		cost = 6
@@ -328,7 +342,7 @@ popularity = 0.15
 	#Focus for Make a Cult of Personality
 	focus = {
 		id = ITA_make_a_cult_of_personality
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_make_a_cult_of_personality
 		x = 12
 		y = 10
 		cost = 10
@@ -346,7 +360,7 @@ popularity = 0.15
 	#Focus for Loosen Church Restrictions
 	focus = {
 		id = ITA_loosen_church_restrictions
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_loosen_church_restrictions
 		x = 10
 		y = 6
 		cost = 5
@@ -365,7 +379,7 @@ popularity = 0.15
 	#Focus for Encourage Work in the Iron Mines
 	focus = {
 		id = ITA_encourage_work_in_the_iron_mines
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_encourage_work_in_the_iron_mines
 		x = 9
 		y = 3
 		cost = 10
@@ -387,7 +401,7 @@ popularity = 0.15
 	#Focus for Gold for the Fartherland
 	focus = {
 		id = ITA_gold_for_the_fartherland
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_gold_for_the_fartherland
 		x = 11
 		y = 2
 		cost = 10
@@ -408,7 +422,7 @@ popularity = 0.15
 	#Focus for Pride in Italy
 	focus = {
 		id = ITA_pride_in_italy
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_pride_in_italy
 		x = 11
 		y = 3
 		cost = 2
@@ -426,7 +440,7 @@ popularity = 0.15
 	#Focus for Finish the Battles Program
 	focus = {
 		id = ITA_finish_the_battles_program
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_finish_the_battles_program
 		x = 9
 		y = 4
 		cost = 9
@@ -452,7 +466,7 @@ popularity = 0.15
 	#Focus for The Battle for Births
 	focus = {
 		id = ITA_the_battle_for_births
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_the_battle_for_births
 		x = 7
 		y = 2
 		cost = 4
@@ -470,7 +484,7 @@ popularity = 0.15
 	#Focus for Begin the Battles of Italy
 	focus = {
 		id = ITA_begin_the_battles_of_italy
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_begin_the_battles_of_italy
 		x = 9
 		y = 1
 		cost = 10
@@ -488,7 +502,7 @@ popularity = 0.15
 	#Focus for The Battle for Industry
 	focus = {
 		id = ITA_the_battle_for_industry
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_the_battle_for_industry
 		x = 9
 		y = 2
 		cost = 6
@@ -510,7 +524,7 @@ popularity = 0.15
 	#Focus for The Battle for Land
 	focus = {
 		id = ITA_the_battle_for_land
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_the_battle_for_land
 		x = 7
 		y = 3
 		cost = 10
@@ -528,7 +542,7 @@ popularity = 0.15
 	#Focus for Relook Italy's Secularization
 	focus = {
 		id = ITA_relook_italys_secularization
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_relook_italys_secularization
 		x = 9
 		y = 5
 		cost = 10
@@ -546,7 +560,7 @@ popularity = 0.15
 	#Focus for Add a Church Tax
 	focus = {
 		id = ITA_add_a_church_tax
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_add_a_church_tax
 		x = 6
 		y = 8
 		cost = 5
@@ -564,7 +578,7 @@ popularity = 0.15
 	#Focus for Reinforce Italy's Secularization
 	focus = {
 		id = ITA_reinforce_italys_secularization
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_reinforce_italys_secularization
 		x = 8
 		y = 8
 		cost = 10
@@ -586,7 +600,7 @@ popularity = 0.15
 	#Focus for Weaken the Monarchs Influence
 	focus = {
 		id = ITA_weaken_the_monarchs_influence
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_weaken_the_monarchs_influence
 		x = 8
 		y = 9
 		cost = 10
@@ -607,7 +621,7 @@ popularity = 0.15
 	#Focus for Give the Monarch's Power to the Parliament
 	focus = {
 		id = ITA_give_the_monarchs_power_to_the_parliament
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_give_the_monarchs_power_to_the_parliament
 		x = 8
 		y = 11
 		cost = 10
@@ -629,7 +643,7 @@ popularity = 0.15
 	#Focus for Reduce the Power of the Parliament
 	focus = {
 		id = ITA_reduce_the_power_of_the_parliament
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_reduce_the_power_of_the_parliament
 		x = 10
 		y = 8
 		cost = 10
@@ -647,13 +661,11 @@ popularity = 0.15
   			add_political_power= -20
 		}
 	}
-	############################ 
-	#foreign paths 
-	############################
+
 	#Focus for An Expansionists Policy
 	focus = {
 		id = ITA_an_expansionists_policy
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_an_expansionists_policy
 		x = 12
 		y = 11
 		cost = 10
@@ -671,10 +683,13 @@ popularity = 0.15
   			add_ideas= ITA_expasionists_policy
 		}
 	} 
+	#######################
+	#Foreign policy path 
+	####################### 
 	#Focus for Suppress Rebel Sentiments in Ethiopia
 	focus = {
 		id = ITA_suppress_rebel_sentiments_in_ethiopia
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_suppress_rebel_sentiments_in_ethiopia
 		x = 14
 		y = 2
 		cost = 7
@@ -685,15 +700,13 @@ popularity = 0.15
 			factor = 1
 		}
 		bypass = {
-			bypass = {
-IF = {
-ITA = {
-        NOT = {
- controls_state = 271
-            }
-        }
-    } 
-}
+		IF = {
+				ITA = {
+       				NOT = {
+ 					controls_state = 271
+            	}
+        	}
+    	} 
 		}
 		completion_reward = {
 			add_ideas= ITA_supression
@@ -703,7 +716,7 @@ ITA = {
 	#Focus for Influence the Politics of Ethiopia
 	focus = {
 		id = ITA_influence_the_politics_of_ethiopia
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_influence_the_politics_of_ethiopia
 		x = 20
 		y = 1
 		cost = 4
@@ -722,12 +735,182 @@ ITA = {
  } 
 }
 		}
-	}
+	} 
+
+	focus = {
+        id = ITA_forceful_submission 
+        icon = GFX_ITA_forceful_submission
+        x = 19
+        y = 2
+        cost = 10
+        available = { }
+        bypass = { }
+        mutually_exclusive = { focus = ITA_diplomatic_submission }
+        prerequisite = { focus = ITA_influence_the_politics_of_ethiopia }
+        available_if_capitulated = yes
+        search_filters = { }
+        ai_will_do = {
+           factor = 15 }
+        completion_reward = { 
+			ITA = { create_wargoal = { 
+					type = puppet_wargoal_focus target = ETH 
+				} 
+			}
+		}
+    } 
+
+	focus = {
+        id = ITA_diplomatic_submission 
+        icon = GFX_ITA_diplomatic_submission
+        x = 21
+        y = 2
+        cost = 10
+        available = { }
+        bypass = { }
+        mutually_exclusive = { focus = ITA_forceful_submission }
+        prerequisite = { focus = ITA_influence_the_politics_of_ethiopia }
+        available_if_capitulated = yes
+        search_filters = { }
+        ai_will_do = {
+           factor = 15 }
+        completion_reward = { 
+			ETH = {
+				country_event = { id = ethoipia.1 days = 1 }
+			}
+		}
+    } 
+
+	focus = {
+        id = ITA_help_out_the_ethiopians 
+        icon = GFX_ITA_help_out_the_ethiopians
+        x = 20
+        y = 3
+        cost = 5
+        available = { }
+        bypass = { }
+        prerequisite = { focus = ITA_forceful_submission focus = ITA_diplomatic_submission }
+        available_if_capitulated = yes
+        search_filters = { }
+        ai_will_do = {
+           factor = 15 }
+        completion_reward = { 
+			ETH = {
+				add_ideas = {
+					ETH_italian_help
+				}
+			}
+		}
+    } 
+
+	focus = {
+        id = ITA_look_at_europe 
+        icon = GFX_ITA_look_at_europe
+        x = 17
+        y = 4
+        cost = 5
+        available = { }
+        bypass = { }
+        prerequisite = { focus = ITA_help_out_the_ethiopians focus = ITA_italianize_the_ethiopians }
+        available_if_capitulated = yes
+        search_filters = { }
+        ai_will_do = {
+           factor = 15 }
+        completion_reward = { 
+			add_political_power = 25 
+			add_war_support = 0.15
+		}
+    } 
+
+	focus = {
+        id = ITA_lay_claims_to_austrian_terratories  
+        icon = GFX_ITA_lay_claims_to_austrian_terratories
+        x = 17
+        y = 5
+        cost = 5
+        available = { }
+        bypass = { }
+        prerequisite = { focus = ITA_look_at_europe }
+        available_if_capitulated = yes
+        search_filters = { }
+        ai_will_do = {
+           factor = 15 }
+        completion_reward = { 
+			add_state_claim = 736 
+			add_state_claim = 103 
+			add_state_claim = 163 
+			add_state_claim = 798
+		}
+    } 
+
+	focus = {
+        id = ITA_fortifie_the_austrian_border 
+        icon = GFX_ITA_fortifie_the_austrian_border
+        x = 17
+        y = 6
+        cost = 5
+        available = { }
+        bypass = { }
+        prerequisite = { focus = ITA_lay_claims_to_austrian_terratories }
+        available_if_capitulated = yes
+        search_filters = { }
+        ai_will_do = {
+           factor = 15 }
+        completion_reward = { 
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 628
+				instant_build = yes
+			} 
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 9613
+				instant_build = yes
+			} 
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 3657
+				instant_build = yes
+			} 
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 6656
+				instant_build = yes
+			} 
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 3604
+				instant_build = yes
+			} 
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 603
+				instant_build = yes
+			} 
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 11568
+				instant_build = yes
+			} 
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 11587
+				instant_build = yes
+			}
+		}
+    } 
 
 	#Focus for Connect the Our African Holdings
 	focus = {
 		id = ITA_connect_the_our_african_holdings
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_connect_the_our_african_holdings
 		x = 14
 		y = 1
 		cost = 10
@@ -746,23 +929,10 @@ target = ETH
 		}
 	}
 
-	#Focus for fill
-	focus = {
-		id = ITA_fill
-		icon = GFX_goal_unknown
-		x = 28
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	#Focus for Put Italy Back on the Stage
 	focus = {
 		id = ITA_put_italy_back_on_the_stage
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_put_italy_back_on_the_stage
 		x = 17
 		y = 0
 		cost = 10
@@ -773,8 +943,38 @@ target = ETH
 		}
 		completion_reward = {
 			add_political_power= 50  
-add_stability= 0.05  
-add_war_support= 1
+			add_stability= 0.05  
+			add_war_support= 1
 		}
-	}
+	} 
+	focus = {
+       id = ITA_italianize_the_ethiopians
+        icon = GFX_ITA_italianize_the_ethiopians
+        x = 14
+        y = 3
+        cost = 6
+        available = { }
+        bypass = { 
+		IF = {
+				ITA = {
+       				NOT = {
+ 					controls_state = 271
+            	}
+        	}
+    	} 
+		}
+        mutually_exclusive = { }
+        prerequisite = { focus = ITA_suppress_rebel_sentiments_in_ethiopia }
+        available_if_capitulated = yes
+        search_filters = { FOCUS_FILTER_ANNEXATION }
+    
+        ai_will_do = {
+            factor = 15 }
+    
+       completion_reward = { 
+		   add_ideas = {
+			   ITA_italinize_program 
+		   }
+	    }
+    }
 }
