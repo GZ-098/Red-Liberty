@@ -304,7 +304,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 10
+	conservatism = 10
 	revolutionary_socialism = 15
 	empowered_nationalism = 10
 	democratic_socialism = 5

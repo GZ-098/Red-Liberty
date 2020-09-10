@@ -73,7 +73,7 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 20
+	conservatism = 20
 	revolutionary_socialism = 20
 	empowered_nationalism = 20
 	democratic_socialism = 20
@@ -83,7 +83,7 @@ set_popularities = {
 1939.1.1 = {
 	#next election october 39
 	set_popularities = {
-		democratic = 95
+		conservatism = 95
 		fascism = 2
 		communism = 3
 	}

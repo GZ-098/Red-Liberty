@@ -62,20 +62,20 @@ set_stability = 0.8
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = conservatism
 	last_election = "1934.6.3"
 	election_frequency = 36
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 92
+	conservatism = 92
 	fascism = 3
 	communism = 5
 }
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = democratic
+		ruling_party = conservatism
 		last_election = "1937.6.6"
 		election_frequency = 36
 		elections_allowed = yes

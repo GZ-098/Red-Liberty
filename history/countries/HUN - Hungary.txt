@@ -131,7 +131,7 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 20
+	conservatism = 20
 	revolutionary_socialism = 20
 	empowered_nationalism = 20
 	democratic_socialism = 20
@@ -222,7 +222,7 @@ create_country_leader = {
 		elections_allowed = yes
 	}
 	set_popularities = {
-		democratic = 27
+		conservatism = 27
 		fascism = 70
 		communism = 3
 	}

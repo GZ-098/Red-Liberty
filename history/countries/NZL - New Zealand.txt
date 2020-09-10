@@ -154,7 +154,7 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 20
+	conservatism = 20
 	revolutionary_socialism = 20
 	empowered_nationalism = 20
 	democratic_socialism = 20
@@ -210,7 +210,7 @@ set_convoys = 70
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = democratic
+		ruling_party = conservatism
 		last_election = "1938.10.15"
 		election_frequency = 60
 		elections_allowed = yes

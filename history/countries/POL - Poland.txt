@@ -183,7 +183,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 8
+	conservatism = 8
 	revolutionary_socialism = 6
 	empowered_nationalism = 12
 	democratic_socialism = 6
@@ -192,7 +192,7 @@ set_popularities = {
 
 1939.1.1 = {
 	set_popularities = {
-	democratic = 8
+	conservatism = 8
 	revolutionary_socialism = 6
 	empowered_nationalism = 12
 	democratic_socialism = 6

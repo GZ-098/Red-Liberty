@@ -99,33 +99,25 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = autocratic_despotism
+	ruling_party = liberalism
 	last_election = "1932.11.8"
 	election_frequency = 0
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 5
+	liberalism = 35
 	revolutionary_socialism = 13
-	empowered_nationalism = 15
+	conservatism = 15
 	democratic_socialism = 7
-	autocratic_despotism = 60
-}
-
-# probably needs some adjustment before nazi occupation in 1940
-1939.1.1 = {
-	ruling_party = autocratic_despotism
-	last_election = "1932.11.8"
-	election_frequency = 0
-	elections_allowed = no
+	autocratic_despotism = 30
 }
 
 create_country_leader = {
-	name = "Karlis Ulmanis"
-	desc = "POLITICS_KARLIS_ULMANIS_DESC"
-	picture = "GFX_Portrait_latvia_karlis_ulmanis"
+	name = "Marģers Skujenieks"
+	desc = ""
+	picture = "Portrait_LAT_Margers_Skujenieks.tga"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = liberalism_subtype
 	traits = {
 		#
 	}

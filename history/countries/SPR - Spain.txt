@@ -16,7 +16,7 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 20
+	conservatism = 20
 	revolutionary_socialism = 20
 	empowered_nationalism = 20
 	democratic_socialism = 20
@@ -79,7 +79,7 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 20
+	conservatism = 20
 	revolutionary_socialism = 20
 	empowered_nationalism = 20
 	democratic_socialism = 20
@@ -115,7 +115,7 @@ set_stability = 0.5
 			elections_allowed = no
 		}
 		set_popularities = {
-			democratic = 22
+			conservatism = 22
 			fascism = 76
 			communism = 2
 		}
@@ -174,7 +174,7 @@ set_stability = 0.5
 			elections_allowed = no
 		}
 		set_popularities = {
-			democratic = 17
+			conservatism = 17
 			neutrality = 38
 			fascism = 45
 		}

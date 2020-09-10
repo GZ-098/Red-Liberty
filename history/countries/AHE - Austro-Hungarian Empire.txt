@@ -36,7 +36,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 2
+	conservatism = 2
 	revolutionary_socialism = 4
 	empowered_nationalism = 2
 	democratic_socialism = 2
@@ -62,7 +62,7 @@ create_country_leader = {
 		elections_allowed = no
 	}
 	set_popularities = {
-	democratic = 2
+	conservatism = 2
 	revolutionary_socialism = 4
 	empowered_nationalism = 2
 	democratic_socialism = 2
