@@ -690,7 +690,7 @@ popularity = 0.15
 	focus = {
 		id = ITA_suppress_rebel_sentiments_in_ethiopia
 		icon = GFX_ITA_suppress_rebel_sentiments_in_ethiopia
-		x = 14
+		x = 15
 		y = 2
 		cost = 7
 		available_if_capitulated = yes
@@ -701,8 +701,8 @@ popularity = 0.15
 		}
 		bypass = {
 		IF = {
-				ITA = {
-       				NOT = {
+				NOT = {
+       				ITA = {
  					controls_state = 271
             	}
         	}
@@ -717,7 +717,7 @@ popularity = 0.15
 	focus = {
 		id = ITA_influence_the_politics_of_ethiopia
 		icon = GFX_ITA_influence_the_politics_of_ethiopia
-		x = 20
+		x = 21
 		y = 1
 		cost = 4
 		available_if_capitulated = yes
@@ -740,7 +740,7 @@ popularity = 0.15
 	focus = {
         id = ITA_forceful_submission 
         icon = GFX_ITA_forceful_submission
-        x = 19
+        x = 20
         y = 2
         cost = 10
         available = { }
@@ -762,7 +762,7 @@ popularity = 0.15
 	focus = {
         id = ITA_diplomatic_submission 
         icon = GFX_ITA_diplomatic_submission
-        x = 21
+        x = 22
         y = 2
         cost = 10
         available = { }
@@ -783,7 +783,7 @@ popularity = 0.15
 	focus = {
         id = ITA_help_out_the_ethiopians 
         icon = GFX_ITA_help_out_the_ethiopians
-        x = 20
+        x = 21
         y = 3
         cost = 5
         available = { }
@@ -805,7 +805,7 @@ popularity = 0.15
 	focus = {
         id = ITA_look_at_europe 
         icon = GFX_ITA_look_at_europe
-        x = 17
+        x = 18
         y = 4
         cost = 5
         available = { }
@@ -824,7 +824,7 @@ popularity = 0.15
 	focus = {
         id = ITA_lay_claims_to_austrian_terratories  
         icon = GFX_ITA_lay_claims_to_austrian_terratories
-        x = 17
+        x = 18
         y = 5
         cost = 5
         available = { }
@@ -845,11 +845,69 @@ popularity = 0.15
 	focus = {
         id = ITA_fortifie_the_austrian_border 
         icon = GFX_ITA_fortifie_the_austrian_border
-        x = 17
+        x = 16
         y = 6
         cost = 5
         available = { }
-        bypass = { }
+        bypass = { 
+		IF = {
+				NOT = {
+       				ITA = {
+ 					owns_state = 628
+            	}
+        	}
+    	} 
+		IF = {
+				NOT = {
+       				ITA = {
+ 					controls_state = 9613
+            	}
+        	}
+    	} 
+		IF = {
+				NOT = {
+       				ITA = {
+ 					controls_state = 3657
+            	}
+        	}
+    	} 
+		IF = {
+				NOT = {
+       				ITA = {
+ 					controls_state = 6656
+            	}
+        	}
+    	} 
+		IF = {
+				NOT = {
+       				ITA = {
+ 					controls_state = 3604
+            	}
+        	}
+    	} 
+		IF = {
+				NOT = {
+       				ITA = {
+ 					controls_state = 603
+            	}
+        	}
+    	} 
+		IF = {
+				NOT = {
+       				ITA = {
+ 					controls_state = 11568
+            	}
+        	}
+    	} 
+		IF = {
+				NOT = {
+       				ITA = {
+ 					controls_state = 11587
+            	}
+        	}
+    	}
+		} 
+		mutually_exclusive = { focus = ITA_fortifie_the_french_border }
         prerequisite = { focus = ITA_lay_claims_to_austrian_terratories }
         available_if_capitulated = yes
         search_filters = { }
@@ -911,7 +969,7 @@ popularity = 0.15
 	focus = {
 		id = ITA_connect_the_our_african_holdings
 		icon = GFX_ITA_connect_the_our_african_holdings
-		x = 14
+		x = 15
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -933,7 +991,7 @@ target = ETH
 	focus = {
 		id = ITA_put_italy_back_on_the_stage
 		icon = GFX_ITA_put_italy_back_on_the_stage
-		x = 17
+		x = 18
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
@@ -950,14 +1008,14 @@ target = ETH
 	focus = {
        id = ITA_italianize_the_ethiopians
         icon = GFX_ITA_italianize_the_ethiopians
-        x = 14
+        x = 15
         y = 3
         cost = 6
         available = { }
         bypass = { 
 		IF = {
-				ITA = {
-       				NOT = {
+				NOT = {
+       				ITA = {
  					controls_state = 271
             	}
         	}
@@ -976,5 +1034,174 @@ target = ETH
 			   ITA_italinize_program 
 		   }
 	    }
+    } 
+
+	focus = {
+        id = ITA_help_fund_sepratist_in_austira 
+        icon = GFX_ITA_help_fund_sepratist_in_austira
+        x = 16
+        y = 7
+        cost = 10
+        available = { }
+        bypass = { }
+        mutually_exclusive = {  }
+        prerequisite = { focus = ITA_fortifie_the_austrian_border }
+        available_if_capitulated = yes
+        search_filters = { }
+        ai_will_do = {
+           factor = 15 }
+        completion_reward = { 
+			AUS = {
+				add_ideas = {
+					AUS_italian_destabilization
+				}
+			} 
+			add_political_power = -30 
+
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = -5000
+    			producer = ITA
+			}
+		}
+    } 
+
+	focus = {
+        id = ITA_lay_claims_to_croatia 
+        icon = GFX_ITA_lay_claims_to_croatia
+        x = 15
+        y = 8
+        cost = 10
+        available = { }
+        bypass = { }
+        mutually_exclusive = {  }
+        prerequisite = { focus = ITA_help_fund_sepratist_in_austira }
+        available_if_capitulated = yes
+        search_filters = { }
+        ai_will_do = {
+           factor = 15 }
+        completion_reward = { 
+			add_state_claim = 736 
+			add_state_claim = 103 
+			add_state_claim = 163 
+			add_state_claim = 798
+		}
+    } 
+
+	focus = {
+        id = ITA_sanction_austria 
+        icon = GFX_ITA_lay_claims_to_croatia
+        x = 17
+        y = 8
+        cost = 10
+        available = { }
+        bypass = { }
+        mutually_exclusive = {  }
+        prerequisite = { focus = ITA_help_fund_sepratist_in_austira }
+        available_if_capitulated = yes
+        search_filters = { }
+        ai_will_do = {
+           factor = 15 }
+        completion_reward = { 
+			AHE = {
+				add_opinion_modifier = { target = ITA modifier = embargo }
+				add_opinion_modifier = { target = ITA modifier = sanctions_relations } 
+			}
+		}
     }
+
+	focus = {
+        id = ITA_fortifie_the_french_border 
+        icon = GFX_ITA_help_fund_sepratist_in_austira
+        x = 20
+        y = 6
+        cost = 10
+        available = { }
+        bypass = { 
+		IF = {
+			NOT = {
+       			ITA = {
+ 				owns_state = 11891
+            	}
+        	} 
+			NOT = {
+       			ITA = {
+ 				owns_state = 11721
+            	}
+        	} 
+			NOT = {
+       			ITA = {
+ 				owns_state = 9738
+            	}
+        	} 
+			NOT = {
+       			ITA = {
+ 				owns_state = 6780
+            	}
+        	} 
+			NOT = {
+       			ITA = {
+ 				owns_state = 611
+            	}
+        	}
+    	}
+		}
+        mutually_exclusive = { focus = ITA_fortifie_the_austrian_border }
+        prerequisite = { focus = ITA_lay_claims_to_austrian_terratories }
+        available_if_capitulated = yes
+        search_filters = { }
+        ai_will_do = {
+           factor = 15 }
+        completion_reward = { 
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 611
+				instant_build = yes
+			} 
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 6780
+				instant_build = yes
+			}  
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 9738
+				instant_build = yes
+			} 
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 11721
+				instant_build = yes
+			}  
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 11891
+				instant_build = yes
+			}  
+		}
+    } 
+	focus = {
+        id = ITA_lay_claims_to_french_territories 
+        icon = GFX_ITA_lay_claim_to_french_territories
+        x = 20
+        y = 7
+        cost = 10
+        available = { }
+        bypass = { }
+        mutually_exclusive = {  }
+        prerequisite = { focus = ITA_fortifie_the_french_border }
+        available_if_capitulated = yes
+        search_filters = { }
+        ai_will_do = {
+           factor = 15 }
+        completion_reward = { 
+			add_state_claim = 735
+			add_state_claim = 1
+		}
+    }  
 }
