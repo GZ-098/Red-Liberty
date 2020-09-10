@@ -6,13 +6,9 @@ set_war_support = 0
 set_technology = {
 } 
 
-puppet = MOL 
-
 puppet = UKR 
 
 puppet = SER 
-
-puppet = MNT 
 
 puppet = ROM 
 
