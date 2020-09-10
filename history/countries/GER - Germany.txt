@@ -311,7 +311,7 @@ set_popularities = {
 	autocratic_despotism = 60
 }
 
-create_faction = Central Powers
+create_faction = central_powers
 add_to_faction = GER 
 add_to_faction = AHE
 
