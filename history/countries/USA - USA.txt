@@ -301,7 +301,7 @@ create_country_leader = {
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
 	picture = "gfx/leaders/norman.dds"
 	expire = "1947.1.1"
-	ideology = conservatism_socialist
+	ideology = democratic_socialist
 	traits = {
 		dislikes_germany
 	}
