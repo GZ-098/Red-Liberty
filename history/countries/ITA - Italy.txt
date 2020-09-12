@@ -229,17 +229,18 @@ if = {
 set_convoys = 200
 
 set_politics = {
-	ruling_party = democratic_socialism
+	ruling_party = conservatism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 20
-	revolutionary_socialism = 20
-	empowered_nationalism = 20
-	democratic_socialism = 20
-	autocratic_despotism = 20
+	conservatism = 51
+	revolutionary_socialism = 4
+	empowered_nationalism = 5
+	democratic_socialism = 10
+	autocratic_despotism = 19
+	liberalism = 11
 }
 
 create_country_leader = {
