@@ -105,7 +105,7 @@ popularity = 0.20
 		}
 		completion_reward = {
 			add_political_power= 50  add_popularity= { 
-ideology = democratic
+ideology = conservatism
 popularity = 0.10
 }
 		}
@@ -244,7 +244,7 @@ popularity = 0.25
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_isolate_priests }
-		search_filters = { FOCUS_FILTER_MEX_CHURCH_AUTHORITY } 
+		search_filters = {  } 
 		ai_will_do = {
 			factor = 1
 		}
@@ -267,7 +267,8 @@ popularity = 0.25
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas= ITA_monarchist_parliament  add_popularity= { 
+			add_ideas= ITA_monarchist_parliament  
+			add_popularity= { 
 ideology = autocratic_despotism  
 popularity = 0.15
 }
@@ -590,7 +591,7 @@ popularity = 0.15
 		}
 		completion_reward = {
 			add_popularity= { 
-			ideology = democratic 
+			ideology = conservatism 
 			popularity = 0.20
 			}
   			add_political_power= 10
@@ -611,7 +612,7 @@ popularity = 0.15
 		}
 		completion_reward = {
 			add_popularity= { 
-			ideology = democratic
+			ideology = conservatism
 			popularity = 0.15 
 		}
   		add_ideas= ITA_weakend_church
@@ -633,7 +634,7 @@ popularity = 0.15
 		}
 		completion_reward = {
 			add_popularity= { 
-			ideology = democratic
+			ideology = conservatism
 			popularity = 0.10
 		}	
   		add_political_power= 20
@@ -695,7 +696,7 @@ popularity = 0.15
 		cost = 7
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_connect_the_our_african_holdings }
-		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST } 
+		search_filters = {  } 
 		ai_will_do = {
 			factor = 1
 		}
@@ -853,59 +854,17 @@ popularity = 0.15
 		IF = {
 				NOT = {
        				ITA = {
- 					owns_state = 628
+ 					controls_state = 628 
+					controls_state = 11587 
+					controls_state = 9613 
+					controls_state = 3657 
+					controls_state = 6656 
+					controls_state = 3604 
+					controls_state = 603 
+					controls_state = 11568
             	}
         	}
     	} 
-		IF = {
-				NOT = {
-       				ITA = {
- 					controls_state = 9613
-            	}
-        	}
-    	} 
-		IF = {
-				NOT = {
-       				ITA = {
- 					controls_state = 3657
-            	}
-        	}
-    	} 
-		IF = {
-				NOT = {
-       				ITA = {
- 					controls_state = 6656
-            	}
-        	}
-    	} 
-		IF = {
-				NOT = {
-       				ITA = {
- 					controls_state = 3604
-            	}
-        	}
-    	} 
-		IF = {
-				NOT = {
-       				ITA = {
- 					controls_state = 603
-            	}
-        	}
-    	} 
-		IF = {
-				NOT = {
-       				ITA = {
- 					controls_state = 11568
-            	}
-        	}
-    	} 
-		IF = {
-				NOT = {
-       				ITA = {
- 					controls_state = 11587
-            	}
-        	}
-    	}
 		} 
 		mutually_exclusive = { focus = ITA_fortifie_the_french_border }
         prerequisite = { focus = ITA_lay_claims_to_austrian_terratories }
@@ -1141,7 +1100,6 @@ popularity = 0.15
 		completion_reward = { 
 			start_border_war = {
     			change_state_after_war = yes 
-			ITA = {
     			attacker = {
         			state = 159
         			num_provinces = 10
@@ -1149,9 +1107,9 @@ popularity = 0.15
         			on_lose = italy.2
         			on_cancel = italy.3
     			} 
-			} 
+		 
 
-			AHE = {	
+
     			defender = {
         			state = 39
         				num_provinces = 7
@@ -1160,12 +1118,8 @@ popularity = 0.15
         				on_cancel = austriahungar.3
     				}
 				} 
-				news_event = {
-    				id = redliberties.2
-    				days = 1
-    				random = 1
-				} 
-			}
+
+			
 			} 
 	} 
 
@@ -1231,29 +1185,13 @@ popularity = 0.15
 		IF = {
 			NOT = {
        			ITA = {
- 				owns_state = 11891
+ 				controls_state = 11891 
+				controls_state = 611 
+				controls_state = 11721 
+				controls_state = 9738 
+				controls_state = 6780
             	}
         	} 
-			NOT = {
-       			ITA = {
- 				owns_state = 11721
-            	}
-        	} 
-			NOT = {
-       			ITA = {
- 				owns_state = 9738
-            	}
-        	} 
-			NOT = {
-       			ITA = {
- 				owns_state = 6780
-            	}
-        	} 
-			NOT = {
-       			ITA = {
- 				owns_state = 611
-            	}
-        	}
     	}
 		}
         mutually_exclusive = { focus = ITA_fortifie_the_austrian_border }
@@ -1416,30 +1354,15 @@ popularity = 0.15
            factor = 15 }
         completion_reward = { 
 			158 = {
-                if = {
-                    limit = { 
-                    OR = { 
-                            ITA = { controls_state = 158 }
-                        }
-                    }
-
 add_extra_state_shared_building_slots = 1                    
 					add_building_construction = {
                         type = anti_air_building  
                         level = 2
                         instant_build = yes
                     }
-
-                }
 
             } 
 			159 = {
-                if = {
-                    limit = { 
-                    OR = { 
-                            ITA = { controls_state = 159 }
-                        }
-                    }
 
 add_extra_state_shared_building_slots = 1                    
 					add_building_construction = {
@@ -1448,16 +1371,10 @@ add_extra_state_shared_building_slots = 1
                         instant_build = yes
                     }
 
-                }
+                
 
             } 
 			161 = {
-                if = {
-                    limit = { 
-                    OR = { 
-                            ITA = { controls_state = 161 }
-                        }
-                    }
 
 add_extra_state_shared_building_slots = 1                    
 					add_building_construction = {
@@ -1466,7 +1383,7 @@ add_extra_state_shared_building_slots = 1
                         instant_build = yes
                     }
 
-                }
+                
 
             }
 
