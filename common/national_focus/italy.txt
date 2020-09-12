@@ -836,10 +836,6 @@ popularity = 0.15
         ai_will_do = {
            factor = 15 }
         completion_reward = { 
-			add_state_claim = 736 
-			add_state_claim = 103 
-			add_state_claim = 163 
-			add_state_claim = 798
 		}
     } 
 
@@ -854,14 +850,14 @@ popularity = 0.15
 		IF = {
 				NOT = {
        				ITA = {
- 					controls_state = 628 
-					controls_state = 11587 
-					controls_state = 9613 
-					controls_state = 3657 
-					controls_state = 6656 
-					controls_state = 3604 
-					controls_state = 603 
-					controls_state = 11568
+ 					owns_state = 628 
+					owns_state = 11587 
+					owns_state = 9613 
+					owns_state = 3657 
+					owns_state = 6656 
+					owns_state = 3604 
+					owns_state = 603 
+					owns_state = 11568
             	}
         	}
     	} 
@@ -991,7 +987,7 @@ popularity = 0.15
 		IF = {
 				NOT = {
        				ITA = {
- 					controls_state = 271
+ 					owns_state = 271
             	}
         	}
     	} 
@@ -1185,11 +1181,11 @@ popularity = 0.15
 		IF = {
 			NOT = {
        			ITA = {
- 				controls_state = 11891 
-				controls_state = 611 
-				controls_state = 11721 
-				controls_state = 9738 
-				controls_state = 6780
+ 				owns_state = 11891 
+				owns_state = 611 
+				owns_state = 11721 
+				owns_state = 9738 
+				owns_state = 6780
             	}
         	} 
     	}
@@ -1338,9 +1334,9 @@ popularity = 0.15
 			IF = {
 				NOT = {
 					ITA = {
-						controls_state = 158 
-						controls_state = 159
-						controls_state = 161
+						owns_state = 158 
+						owns_state = 159
+						owns_state = 161
 					}
 				}
 			}
