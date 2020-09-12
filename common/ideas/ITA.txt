@@ -3,7 +3,98 @@ ideas = {
 
 } 
 
-	country = { 
+	country = {  
+
+
+		ITA_land_extraction = {
+			removal_cost = -1 
+			
+			picture = ITA_land_extraction
+			
+			allowed = {
+				tag = ITA
+			}  
+
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10 
+				local_building_slots_factor = 0.25
+			}
+		}
+
+
+		ITA_land_extraction = {
+			removal_cost = -1 
+			
+			picture = ITA_land_extraction
+			
+			allowed = {
+				tag = ITA
+			}  
+
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10 
+				local_building_slots_factor = 0.25
+			}
+		}
+
+		ITA_gold_for_the_fartherland = {
+			removal_cost = -1 
+			
+			picture = ITA_gold_for_the_fartherland
+			
+			allowed = {
+				tag = ITA
+			}  
+
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				economy_cost_factor = -0.10
+				political_power_gain = 0.05
+			}
+		} 
+
+		ITA_the_body_count3 = {
+			removal_cost = -1 
+			
+			picture = ITA_the_body_count3
+			
+			allowed = {
+				tag = ITA
+			}  
+
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				conscription_factor = -0.05
+				army_morale_factor = -0.05
+			}
+		}  
+
 		ITA_the_body_count2 = {
 			removal_cost = -1 
 			

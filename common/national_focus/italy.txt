@@ -192,10 +192,13 @@ popularity = 0.25
 		}
 		completion_reward = {
 			add_popularity= { 
-ideology = autocratic_despotism
-popularity = 0.25
-}
-  add_ideas= ITA_church_influence
+				ideology = autocratic_despotism
+				popularity = 0.25
+			}
+			swap_ideas = {
+				remove_idea = ITA_loosened_church_restrictions
+				add_idea = ITA_church_influence
+			}
 		}
 	}
 
@@ -434,7 +437,11 @@ popularity = 0.15
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power = 25
+			add_political_power = 25 
+			swap_ideas = {
+				remove_idea = ITA_count_the_bodies2 
+				add_idea = ITA_count_the_bodies3
+			}
 		}
 	}
 
@@ -460,7 +467,10 @@ popularity = 0.15
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power= 100
+			add_political_power= 100 
+			remove_ideas = {
+				ITA_count_the_bodies3
+			}
 		}
 	}
 
@@ -660,7 +670,7 @@ popularity = 0.15
 		}
 		completion_reward = {
 			add_popularity= { 
-			ideology = revolutionary_socialism 
+			ideology = autocratic_despotism 
 			popularity = 0.20
 			}
   			add_political_power= -20
