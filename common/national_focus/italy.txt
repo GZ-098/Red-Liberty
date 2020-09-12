@@ -434,7 +434,7 @@ popularity = 0.15
 			factor = 1
 		}
 		completion_reward = {
-			add_political_power= 25
+			add_political_power = 25
 		}
 	}
 
@@ -477,8 +477,12 @@ popularity = 0.15
 		ai_will_do = {
 			factor = 1
 		}
-		completion_reward = {
-			add_ideas = ITA_encouraged_births
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = ITA_the_body_count 
+				add_idea = ITA_the_body_count2
+			}
+			
 		}
 	}
 
