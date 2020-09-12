@@ -8,7 +8,7 @@ state={
 
 	history={
 		victory_points = {
-			9602 3 
+			6953 3 
 		}
 		owner = SER
 		buildings = {
