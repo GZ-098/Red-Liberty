@@ -1,0 +1,53 @@
+ideas = {
+	political_advisor = { 
+
+} 
+
+	country = {
+		ITA_the_body_count = {
+			removal_cost = -1 
+			
+			picture = ITA_the_body_count
+			
+			allowed = {
+				tag = ITA
+			}  
+
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				conscription_factor = -0.10
+				army_morale_factor = -0.10
+			}
+		}
+	}
+
+	#Military
+	army_chief = {  
+
+}
+	navy_chief = { 
+
+}
+	air_chief = { 
+
+}
+	high_command = { 
+
+}
+	#Manufacturers
+	tank_manufacturer = { 
+
+}
+	naval_manufacturer = {  
+
+}
+	aircraft_manufacturer = {  
+
+}
+
