@@ -914,14 +914,7 @@ popularity = 0.15
         ai_will_do = {
            factor = 15 }
         completion_reward = { 
-		628 = { 
-			if = {
-                limit = { 
-                    OR = { 
-                        ITA = { controls_state = 628 } 
-					} 
-				} 
-			}
+		628 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -929,14 +922,7 @@ popularity = 0.15
 				instant_build = yes
 			}
 		} 
-		9613 = { 
-			if = {
-                limit = { 
-                    OR = { 
-                        ITA = { controls_state = 9613 } 
-					} 
-				} 
-			}
+		9613 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -944,14 +930,7 @@ popularity = 0.15
 				instant_build = yes
 			} 
 		}
-		3657 = { 
-			if = {
-                limit = { 
-                    OR = { 
-                        ITA = { controls_state = 3657 } 
-					} 
-				} 
-			}
+		3657 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -959,14 +938,7 @@ popularity = 0.15
 				instant_build = yes
 			} 
 		} 
-		6656 = { 
-			if = {
-                limit = { 
-                    OR = { 
-                        ITA = { controls_state = 6656 } 
-					} 
-				} 
-			} 
+		6656 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -974,14 +946,7 @@ popularity = 0.15
 				instant_build = yes
 			} 
 		}
-		3604 = { 
-			if = {
-                limit = { 
-                    OR = { 
-                        ITA = { controls_state = 3604 } 
-					} 
-				} 
-			}
+		3604 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -989,14 +954,7 @@ popularity = 0.15
 				instant_build = yes
 			} 
 		} 
-		603 = { 
-			if = {
-                limit = { 
-                    OR = { 
-                        ITA = { controls_state = 603 } 
-					} 
-				} 
-			}
+		603 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -1004,14 +962,7 @@ popularity = 0.15
 				instant_build = yes
 			} 
 		} 
-		11568 = { 
-			if = {
-                limit = { 
-                    OR = { 
-                        ITA = { controls_state = 11568 }
-					} 
-				} 
-			}
+		11568 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -1020,13 +971,6 @@ popularity = 0.15
 			} 
 		}
 		11587 = {
-			if = {
-                limit = { 
-                    OR = { 
-                        ITA = { controls_state = 11587 } 
-					} 
-				} 
-			}
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -1065,7 +1009,7 @@ popularity = 0.15
 		icon = GFX_ITA_put_italy_back_on_the_stage
 		x = 18
 		y = 0
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
@@ -1200,7 +1144,7 @@ popularity = 0.15
 			ITA = {
     			attacker = {
         			state = 159
-        			num_provinces = 2
+        			num_provinces = 10
         			on_win = italy.1
         			on_lose = italy.2
         			on_cancel = italy.3
@@ -1210,13 +1154,18 @@ popularity = 0.15
 			AHE = {	
     			defender = {
         			state = 39
-        				num_provinces = 2
+        				num_provinces = 7
         				on_win = austriahungary.1
         				on_lose = austriahungary.2
         				on_cancel = austriahungar.3
     				}
-				}  
-			} 
+				} 
+				news_event = {
+    				id = redliberties.2
+    				days = 1
+    				random = 1
+				} 
+			}
 			} 
 	} 
 
@@ -1547,4 +1496,26 @@ add_extra_state_shared_building_slots = 1
 	#######################
 	#Military/industry boosts path 
 	####################### 
+	focus = {
+        id = ITA_start_industrial_development
+        icon = GFX_ITA_start_industrial_development
+        x = 27
+        y = 0
+        cost = 5
+        available = { }
+        bypass = { }
+        mutually_exclusive = {  }
+        prerequisite = {  }
+        available_if_capitulated = yes
+        search_filters = { }
+        ai_will_do = {
+           factor = 15 }
+        completion_reward = {  
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 1
+   			 	category = radar_tech
+			}
+		}
+    } 
 }
