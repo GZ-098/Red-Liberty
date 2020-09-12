@@ -1144,7 +1144,7 @@ popularity = 0.15
 			ITA = {
     			attacker = {
         			state = 159
-        			num_provinces = 10
+        			num_provinces = 2
         			on_win = italy.1
         			on_lose = italy.2
         			on_cancel = italy.3
@@ -1154,18 +1154,13 @@ popularity = 0.15
 			AHE = {	
     			defender = {
         			state = 39
-        				num_provinces = 7
+        				num_provinces = 2
         				on_win = austriahungary.1
         				on_lose = austriahungary.2
         				on_cancel = austriahungar.3
     				}
-				} 
-				news_event = {
-    				id = redliberties.2
-    				days = 1
-    				random = 1
-				} 
-			}
+				}  
+			} 
 			} 
 	} 
 
@@ -1496,26 +1491,4 @@ add_extra_state_shared_building_slots = 1
 	#######################
 	#Military/industry boosts path 
 	####################### 
-	focus = {
-        id = ITA_start_industrial_development
-        icon = GFX_ITA_start_industrial_development
-        x = 27
-        y = 0
-        cost = 5
-        available = { }
-        bypass = { }
-        mutually_exclusive = {  }
-        prerequisite = {  }
-        available_if_capitulated = yes
-        search_filters = { }
-        ai_will_do = {
-           factor = 15 }
-        completion_reward = {  
-			add_tech_bonus = {
-    			bonus = 1.0
-    			uses = 1
-    			category = industry
-			}
-		}
-    } 
 }
