@@ -914,54 +914,70 @@ popularity = 0.15
         ai_will_do = {
            factor = 15 }
         completion_reward = { 
+		628 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
 				province = 628
 				instant_build = yes
-			} 
+			}
+		} 
+		9613 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
 				province = 9613
 				instant_build = yes
 			} 
+		}
+		3657 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
 				province = 3657
 				instant_build = yes
 			} 
+		} 
+		6656 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
 				province = 6656
 				instant_build = yes
 			} 
+		}
+		3604 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
 				province = 3604
 				instant_build = yes
 			} 
+		} 
+		603 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
 				province = 603
 				instant_build = yes
 			} 
+		} 
+		11568 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
 				province = 11568
 				instant_build = yes
 			} 
+		}
+		11587 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
 				province = 11587
 				instant_build = yes
-			}
+			} 
+		}
 		}
     } 
 
@@ -981,9 +997,9 @@ popularity = 0.15
 		}
 		completion_reward = {
 			create_wargoal= { 
-type = annex_everything 
-target = ETH
-}
+				type = annex_everything 
+				target = ETH
+			}
 		}
 	}
 
@@ -993,7 +1009,7 @@ target = ETH
 		icon = GFX_ITA_put_italy_back_on_the_stage
 		x = 18
 		y = 0
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
@@ -1124,15 +1140,18 @@ target = ETH
 		}
 		completion_reward = { 
 			start_border_war = {
-    			change_state_after_war = yes
+    			change_state_after_war = yes 
+			ITA = {
     			attacker = {
         			state = 159
         			num_provinces = 10
         			on_win = italy.1
         			on_lose = italy.2
         			on_cancel = italy.3
-    			}
-				
+    			} 
+			} 
+
+			AHE = {	
     			defender = {
         			state = 39
         				num_provinces = 7
@@ -1142,10 +1161,11 @@ target = ETH
     				}
 				} 
 				news_event = {
-    				id = redliberties.1
+    				id = redliberties.2
     				days = 1
     				random = 1
-				}
+				} 
+			}
 			} 
 	} 
 
@@ -1242,37 +1262,47 @@ target = ETH
         search_filters = { }
         ai_will_do = {
            factor = 15 }
-        completion_reward = { 
+        completion_reward = {  
+		611 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
 				province = 611
 				instant_build = yes
 			} 
+		} 
+		6780 = {			
 			add_building_construction = {
 				type = bunker
 				level = 2
 				province = 6780
 				instant_build = yes
-			}  
+			}
+		}
+		9738 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
 				province = 9738
 				instant_build = yes
 			} 
+		}
+		11721 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
 				province = 11721
 				instant_build = yes
-			}  
+			} 
+		} 
+		11891 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
 				province = 11891
 				instant_build = yes
-			}  
+			} 
+		} 
 		}
     } 
 	focus = {
@@ -1460,6 +1490,31 @@ add_extra_state_shared_building_slots = 1
 			create_wargoal = {
     			type = annex_everything
     			target = FRA
+			}
+		}
+    } 
+	#######################
+	#Military/industry boosts path 
+	####################### 
+	focus = {
+        id = ITA_start_industrial_development
+        icon = GFX_ITA_start_industrial_development
+        x = 27
+        y = 0
+        cost = 5
+        available = { }
+        bypass = { }
+        mutually_exclusive = {  }
+        prerequisite = {  }
+        available_if_capitulated = yes
+        search_filters = { }
+        ai_will_do = {
+           factor = 15 }
+        completion_reward = {  
+			add_tech_bonus = {
+    			bonus = 1.0
+    			uses = 1
+    			category = industry
 			}
 		}
     } 
