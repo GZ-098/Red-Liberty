@@ -10,10 +10,10 @@ state={
 	history={
 		owner = AHE
 		victory_points = {
-			3924 3
+			984 3
 		}
 		victory_points = {
-			11564 1 
+			11901 1 
 		}
 		buildings = {
 			infrastructure = 5
