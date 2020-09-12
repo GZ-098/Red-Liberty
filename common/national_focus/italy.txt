@@ -918,7 +918,10 @@ popularity = 0.15
 			if = {
                 limit = { 
                     OR = { 
-                        ITA = { controls_state = 628 }
+                        ITA = { controls_state = 628 } 
+					} 
+				} 
+			}
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -930,7 +933,10 @@ popularity = 0.15
 			if = {
                 limit = { 
                     OR = { 
-                        ITA = { controls_state = 9613 }
+                        ITA = { controls_state = 9613 } 
+					} 
+				} 
+			}
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -942,7 +948,10 @@ popularity = 0.15
 			if = {
                 limit = { 
                     OR = { 
-                        ITA = { controls_state = 3657 }
+                        ITA = { controls_state = 3657 } 
+					} 
+				} 
+			}
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -954,7 +963,10 @@ popularity = 0.15
 			if = {
                 limit = { 
                     OR = { 
-                        ITA = { controls_state = 6656 }
+                        ITA = { controls_state = 6656 } 
+					} 
+				} 
+			} 
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -966,7 +978,10 @@ popularity = 0.15
 			if = {
                 limit = { 
                     OR = { 
-                        ITA = { controls_state = 3604 }
+                        ITA = { controls_state = 3604 } 
+					} 
+				} 
+			}
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -978,7 +993,10 @@ popularity = 0.15
 			if = {
                 limit = { 
                     OR = { 
-                        ITA = { controls_state = 603 }
+                        ITA = { controls_state = 603 } 
+					} 
+				} 
+			}
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -991,6 +1009,9 @@ popularity = 0.15
                 limit = { 
                     OR = { 
                         ITA = { controls_state = 11568 }
+					} 
+				} 
+			}
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -998,11 +1019,14 @@ popularity = 0.15
 				instant_build = yes
 			} 
 		}
-		11587 = { 
+		11587 = {
 			if = {
                 limit = { 
                     OR = { 
-                        ITA = { controls_state = 11587 }
+                        ITA = { controls_state = 11587 } 
+					} 
+				} 
+			}
 			add_building_construction = {
 				type = bunker
 				level = 2
