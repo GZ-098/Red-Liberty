@@ -6,6 +6,234 @@ ideas = {
 	country = {  
 
 
+		ITA_the_resacralization_of_italy = {
+			removal_cost = -1 
+			
+			picture = ITA_the_resacralization_of_italy
+			
+			allowed = {
+				tag = ITA
+			}  
+
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				autocratic_despotism_drift = 0.03
+				conservatism_drift = -0.02 
+				liberalism_drift = -0.02 
+				revolutionary_socialism = -0.02
+			}
+		}
+
+		ITA_monarchist_parliament = {
+			removal_cost = -1 
+			
+			picture = ITA_monarchist_parliament
+			
+			allowed = {
+				tag = ITA
+			}  
+
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				autocratic_despotism_drift = 0.08
+				political_power_gain = 0.15
+			}
+		}
+
+		ITA_church_influence = {
+			removal_cost = -1 
+			
+			picture = ITA_church_influence
+			
+			allowed = {
+				tag = ITA
+			}  
+
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				autocratic_despotism_drift = 0.04
+				political_power_gain = 0.10
+			}
+		}
+
+		ITA_loosened_church_restrictions = {
+			removal_cost = -1 
+			
+			picture = ITA_loosened_church_restrictions
+			
+			allowed = {
+				tag = ITA
+			}  
+
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				autocratic_despotism_drift = 0.02 
+				political_power_gain = 0.05 
+			}
+		}
+
+		ITA_a_figure_head_monarchy = {
+			removal_cost = -1 
+			
+			picture = ITA_a_figure_head_monarchy
+			
+			allowed = {
+				tag = ITA
+			}  
+
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				conservatism_drift = 0.02 
+				drift_defence_factor = 0.30
+			}
+		}
+
+		ITA_weakend_church = {
+			removal_cost = -1 
+			
+			picture = ITA_weakend_church
+			
+			allowed = {
+				tag = ITA
+			}  
+
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				conservatism_drift = 0.02 
+				political_power_gain = 0.02
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		ITA_abolished_monarchy = {
+			removal_cost = -1 
+			
+			picture = ITA_abolished_monarchy
+			
+			allowed = {
+				tag = ITA
+			}  
+
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				revolutionary_socialism_drift = 0.02 
+				trade_laws_cost_factor = 0.05 
+				consumer_goods_factor = -0.10
+			}
+		}
+
+		ITA_a_broken_church = {
+			removal_cost = -1 
+			
+			picture = ITA_a_broken_church
+			
+			allowed = {
+				tag = ITA
+			}  
+
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				revolutionary_socialism_drift = 0.02 
+				political_power_gain = 0.05
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+
+		ITA_isolated_priests = {
+			removal_cost = -1 
+			
+			picture = ITA_isolated_priests
+			
+			allowed = {
+				tag = ITA
+			}  
+
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				revolutionary_socialism_drift = 0.02
+				conservatism_drift = -0.02
+				autocratic_despotism_drift = -0.02
+				empowered_nationalism_drift = -0.02
+			}
+		}
+
+		ITA_churchs_taxed = {
+			removal_cost = -1 
+			
+			picture = ITA_churchs_taxed
+			
+			allowed = {
+				tag = ITA
+			}  
+
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain = 0.05 
+				trade_laws_cost_factor = 0.05 
+				enemy_partisan_effect = 0.05
+			}
+		}
+
 		ITA_land_extraction = {
 			removal_cost = -1 
 			
@@ -73,10 +301,10 @@ ideas = {
 			}
 		} 
 
-		ITA_the_body_count3 = {
+		ITA_count_the_bodies3 = {
 			removal_cost = -1 
 			
-			picture = ITA_the_body_count3
+			picture = ITA_count_the_bodies3
 			
 			allowed = {
 				tag = ITA
@@ -95,10 +323,10 @@ ideas = {
 			}
 		}  
 
-		ITA_the_body_count2 = {
+		ITA_count_the_bodies2 = {
 			removal_cost = -1 
 			
-			picture = ITA_the_body_count2
+			picture = ITA_count_the_bodies2
 			
 			allowed = {
 				tag = ITA
