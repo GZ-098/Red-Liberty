@@ -1,18 +1,18 @@
 ﻿l_english: 
  #################
- #US air companies
+ #Country air companies
  goodyear:0 "Goodyear"  
  vultee:0 "Vultee"
  republic_aviation:0 "Republic Aviation" 
  consolidated_aircraft:0 "Consolidated Aircraft"
  ################# 
  #################
- #US matirel companies
+ #Country matirel companies
  jeep:0 "Jeep" 
  repeating:0 "Winchester Repeating Arms Company"
  ################# 
  ################# 
- #US naval companies  
+ #Country naval companies  
  brooklyn_naval_yard:0 "Brooklyn Naval Yard"
  newport_news_shipbuilding:0 "Newport News Shipbuilding" 
  bollinger_shipyards:0 "Bollinger Shipyards" 
@@ -20,8 +20,14 @@
  norfolk_naval_yard:0 "Norfolk Naval Yard"
  ################# 
  #################
- #Germany ideas 
- ################# 
+ #Country ideas 
+ #################  
+ AHE_embarrassment_on_the_italian_front:0 "Embarrasment on the Italian Front" 
+ AHE_embarrassment_on_the_italian_front_desc:0 "" 
+ AHE_economic_downturn:0 "Economic Downturn" 
+ AHE_economic_downturn_desc:0 "" 
+ AHE_ethnic_division:0 "Ethnic Division" 
+ AHE_ethnic_division_desc:0 ""
  new_imperial_economic_plan:0 "New Imperial Economic Plan" 
  new_imperial_economic_plan_desc:0 "After a long time of creating construction projects, we have finally figured out an economic plan that can best suit the German economy. We have found the Imperial Economy Plan that has the highest chance of helping to improve the German economy."
  unpaid_war_expenses2:0 "Unpaid War Expenses" 
