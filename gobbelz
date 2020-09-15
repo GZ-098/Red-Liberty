@@ -56,8 +56,11 @@ focus_tree = {
 		prerequisite = { focus = GER_establish_the_department_of_entitlement }
 		ai_will_do = {
 			factor = 1
+			completion_reward = {
+		    add_ideas = geheime_saatspolizei
 		}
 	}
+}
 
 	#Focus for Intimidate Political Opponents
 	focus = {
