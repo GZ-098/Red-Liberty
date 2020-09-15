@@ -1,8 +1,79 @@
 ideas = {
 	political_advisor = {
 	}
+	country = { 
+       	AHE_embarrassment_on_the_italian_front = {
+		removal_cost = -1 
+			
+		picture = embarrassment_on_the_italian_front
+			
+		allowed = {
+			tag = AHE
+		}  
 
-	#Military
+		available = {
+		}
+			
+		allowed_civil_war = { 
+			always = yes
+		}
+			
+		modifier = {
+			drift_defence_factor = -0.30 
+			political_power_gain = -0.15
+			justify_war_goal_time = 0.35 
+			army_morale_factor = -0.15 
+			conscription_factor = -0.15
+		}
+		} 
+
+       	AHE_economic_downturn = {
+		removal_cost = -1 
+			
+		picture = economic_downturn
+			
+		allowed = {
+			tag = AHE
+		}  
+
+		available = {
+		}
+			
+		allowed_civil_war = { 
+			always = yes
+		}
+			
+		modifier = {
+			consumer_goods_factor = 0.12 
+			industrial_capacity_factory = -0.10 
+			production_speed_buildings_factor = -0.07
+		}
+		} 
+
+       	AHE_ethnic_division = {
+		removal_cost = -1 
+			
+		picture = ethnic_division
+			
+		allowed = {
+			tag = AHE
+		}  
+
+		available = {
+		}
+			
+		allowed_civil_war = { 
+			always = yes
+		}
+			
+		modifier = {
+			resistance_target = 0.10 
+			army_core_defence_factor  = -0.10 
+			non_core_manpower = -0.10
+		}
+		}
+	}
+	#MilAHEry
 	army_chief = {
 	}
 	navy_chief = {
