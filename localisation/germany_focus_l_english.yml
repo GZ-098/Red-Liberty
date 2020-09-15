@@ -21,14 +21,12 @@
  GER_freeze_bank_withdrawals_desc:0 "The constant removal of money from banks leaves them unstable and unreliable if we want to improve our economic stability and output, we must temporarily freeze all withdrawals."
  GER_the_imperial_economic_plan:0 "The Imperial Economic Plan"
  GER_invest_in_construction_projects:0 "Invest in Construction Projects"
- GER_invest_in_construction_projects_desc:0 "To help grow the economy, we will invest in good construction plans to boost growth around the empire.
-"
+ GER_invest_in_construction_projects_desc:0 "To help grow the economy, we will invest in good construction plans to boost growth around the empire."
  GER_the_imperial_economic_plan_desc:0 "lack of lore temp"
  GER_investigate_corrupt_banks:0 "Investigate Corrupt Banks"
  GER_investigate_corrupt_banks_desc:0 "For too long, we have been letting banks get away with unlawful and corrupt business practices. It is time we investigate and put an end to their dubious schemes."
  GER_a_fixed_economy:0 "A Fixed Economy"
  GER_a_fixed_economy_desc:0 "With the completion of many state construction projects, investments, and reforms, we have fixed the German economy. "
  GER_towards_a_brighter_future:0 "Towards a Brighter Future"
- GER_towards_a_brighter_future_desc:0 "" 
- GER_hltwHfod:0 "Towards a Brighter Future" 
- GER_hltwHfod_desc:0 "The German Empire is now heading towards prosperity and greatness. Our only job now is not to mess it up. "
+ GER_towards_a_brighter_future_desc:0 "The German Empire is now heading towards prosperity and greatness. Our only job now is not to mess it up." 
+ 

@@ -71,7 +71,11 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_GER_threaten_the_kaiser"
 	texturefile = "gfx/interface/goals/GER_threaten_the_kaiser.png"			
-	} 
+	}
+	SpriteType = {
+		name = "GFX_GER_towards_a_brighter_future"
+		texturefile = "gfx/interface/goals/GER_towards_a_brighter_future.png"
+	]
 	SpriteType = {
 	name = "GFX_USA_a_coalition_with_the_conservatives_focus"
 	texturefile = "gfx/interface/goals/USA_a_coalition_with_the_conservatives_focus.png"			
