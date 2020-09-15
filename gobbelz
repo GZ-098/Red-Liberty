@@ -1,0 +1,453 @@
+focus_tree = {
+	id = gobbelstree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+#Focus for Fascist Economics
+	focus = {
+		id = GER_fascist_economics
+		icon = GFX_spr_collectivized_society
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_the_new_german_reich }
+		mutually_exclusive = { focus = GER_prepare_the_wehrmacht }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+			swap_ideas = { 
+				remove_idea = the_loss_of_a_generation
+				add_idea = the_loss_of_a_generation2
+	 }
+  }
+  }
+	#Focus for German Welfare Programs
+	focus = {
+		id = GER_german_welfare_programs
+		icon = GFX_goal_unknown
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fascist_economics }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+		 add_stability = 0.1
+		 add_political_power = 100
+	}
+	}
+
+	#Focus for Form The Gestapo
+	focus = {
+		id = GER_form_the_gestapo
+		icon = GFX_goal_unknown
+		x = 12
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_establish_the_department_of_entitlement }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Intimidate Political Opponents
+	focus = {
+		id = GER_intimidate_political_opponents
+		icon = GFX_goal_unknown
+		x = 24
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Public Works
+	focus = {
+		id = GER_public_works
+		icon = GFX_goal_unknown
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_increase_solider_pay_checks }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The New German Reich
+	focus = {
+		id = GER_the_new_german_reich
+		icon = GFX_goal_unknown
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_form_the_gestapo }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Establish The Department of Entitlement
+	focus = {
+		id = GER_establish_the_department_of_entitlement
+		icon = GFX_goal_unknown
+		x = 12
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward ={
+			add_ideas = department_of_propoganda
+		}
+	}
+
+	#Focus for d
+	focus = {
+		id = GER_d
+		icon = GFX_goal_unknown
+		x = 0
+		y = 100
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for sa
+	focus = {
+		id = GER_sa
+		icon = GFX_goal_unknown
+		x = 100
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Autarky
+	focus = {
+		id = GER_autarky
+		icon = GFX_goal_unknown
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_german_welfare_programs }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Economic Boom
+	focus = {
+		id = GER_economic_boom
+		icon = GFX_goal_unknown
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_coordinated_research_efforts 
+		}
+		prerequisite = { 
+			focus = GER_autarky 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Nationalize Key Industry
+	focus = {
+		id = GER_nationalize_key_industry
+		icon = GFX_goal_unknown
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fascist_economics }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Coordinated Research Efforts
+	focus = {
+		id = GER_coordinated_research_efforts
+		icon = GFX_goal_unknown
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_nationalize_key_industry }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Increase Solider Pay Checks
+	focus = {
+		id = GER_increase_solider_pay_checks
+		icon = GFX_goal_unknown
+		x = 11
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_prepare_the_wehrmacht }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Force To Be Reckoned With
+	focus = {
+		id = GER_a_force_to_be_reckoned_with
+		icon = GFX_goal_unknown
+		x = 10
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_public_works 
+		}
+		prerequisite = { 
+			focus = GER_study_new_doctrines 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The 4 Year Plan
+	focus = {
+		id = GER_the_4_year_plan
+		icon = GFX_goal_unknown
+		x = 12
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Study New Doctrines
+	focus = {
+		id = GER_study_new_doctrines
+		icon = GFX_goal_unknown
+		x = 9
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_upgrade_old_equipment }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Upgrade Old Equipment
+	focus = {
+		id = GER_upgrade_old_equipment
+		icon = GFX_goal_unknown
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_prepare_the_wehrmacht }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Prepare The Wehrmacht
+	focus = {
+		id = GER_prepare_the_wehrmacht
+		icon = GFX_goal_unknown
+		x = 10
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_the_new_german_reich }
+		mutually_exclusive = { focus = GER_fascist_economics }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A
+	focus = {
+		id = GER_a
+		icon = GFX_goal_unknown
+		x = 1
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Increase Military Spending
+	focus = {
+		id = GER_increase_military_spending
+		icon = GFX_goal_unknown
+		x = 3
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for More Civillian Factories
+	focus = {
+		id = GER_more_civillian_factories
+		icon = GFX_goal_unknown
+		x = 3
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expansion Path
+	focus = {
+		id = GER_expansion_path
+		icon = GFX_goal_unknown
+		x = 1
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A
+	focus = {
+		id = GER_JoTpPxkE
+		icon = GFX_goal_unknown
+		x = 3
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Prepare The Luftwaffe
+	focus = {
+		id = GER_prepare_the_luftwaffe
+		icon = GFX_goal_unknown
+		x = 1
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Naval Expansion Act
+	focus = {
+		id = GER_naval_expansion_act
+		icon = GFX_goal_unknown
+		x = 3
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Relocate The Gold Reserves
+	focus = {
+		id = GER_relocate_the_gold_reserves
+		icon = GFX_goal_unknown
+		x = 1
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for e
+	focus = {
+		id = GER_e
+		icon = GFX_goal_unknown
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for e
+	focus = {
+		id = GER_PEjISRcC
+		icon = GFX_goal_unknown
+		x = 3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for e
+	focus = {
+		id = GER_pVsTrxDf
+		icon = GFX_goal_unknown
+		x = 1
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for e
+	focus = {
+		id = GER_SwBDLuxp
+		icon = GFX_goal_unknown
+		x = 1
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+	  }
+	
+	}
+
+#End of focuses 
+	}
