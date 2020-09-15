@@ -292,8 +292,8 @@ focus_tree = {
 
 	#Focus for Towards a Brighter Future
 	focus = {
-		id = GER_hltwHfod
-		icon = GFX_GER_hltwHfod-38276
+		id = GER_towards_a_brighter_future
+		icon = GFX_GER_towards_a_brighter_future
 		x = 15
 		y = 6
 		cost = 1

@@ -1,17 +1,14 @@
 ideas = {
-	political_advisor = {
-	} 
 	
- }   country = { 
-       		the_loss_of_a_generation3 = {
+	country = { 
+       	the_loss_of_a_generation3 = {
 			removal_cost = -1 
 			
 			picture = GER_the_loss_of_a_generation3
 			
 			allowed = {
 				tag = GER
-			}  
-}
+			} 
 			available = {
 			}
 			
@@ -27,7 +24,7 @@ ideas = {
 			}
 		}
 		
-    		the_loss_of_a_generation2 = {
+    	the_loss_of_a_generation2 = {
 			removal_cost = -1 
 			
 			picture = GER_the_loss_of_a_generation2

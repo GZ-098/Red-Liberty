@@ -30,7 +30,15 @@ set_politics = {
 	last_election = "1932.11.8"
 	election_frequency = 0
 	elections_allowed = no
+} 
+1936.1.1 = {
+add_ideas = {
+	AHE_ethnic_division 
+	AHE_economic_downturn 
+	AHE_embarrassment_on_the_italian_front
 }
+} 
+
 set_popularities = {
 	conservatism = 2
 	revolutionary_socialism = 4
