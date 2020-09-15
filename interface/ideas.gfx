@@ -11,7 +11,19 @@ spriteTypes = {
 	### new tfv nat spirit icons 
 	##################
 	#red liberty icons 
-	##################  
+	##################   
+	spriteType = {
+		name = "GFX_idea_embarrassment_on_the_italian_front"
+		texturefile = "gfx/interface/ideas/embarrassment_on_the_italian_front.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_economic_downturn"
+		texturefile = "gfx/interface/ideas/economic_downturn.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_ethnic_division"
+		texturefile = "gfx/interface/ideas/ethnic_division.dds"
+	} 
 	spriteType = {
 		name = "GFX_idea_new_imperial_economic_plan"
 		texturefile = "gfx/interface/ideas/new_imperial_economic_plan.dds"
