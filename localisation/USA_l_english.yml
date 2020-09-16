@@ -1,4 +1,8 @@
-l_english:
+﻿l_english:
 USA:0 "United States of America"
 USA_DEF:0 "United States of America"
 USA_ADJ:0 "Citizen of United States of America"
+
+USA_the_great_depression:0 "The Great Depression"
+USA_pacifism:0 "Widespread Pacifism"
+ 

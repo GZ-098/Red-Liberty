@@ -1,0 +1,57 @@
+ideas = {
+	
+	country = { 
+       	FRA_a_falling_democracy = {
+			removal_cost = -1 
+			
+			picture = FRA_a_falling_democracy
+			
+			allowed = {
+				tag = FRA
+			} 
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				revolutionary_socialism_drift = 0.05  
+				autocratic_despotism_drift = 0.05 
+				empowered_nationalism_drift = 0.05
+				liberalism_drift = -0.05 
+				conservatism_drift = -0.05 
+				democratic_socialism_drift = -0.05 
+				political_power_gain = -0.15 
+			}
+		} 
+	}
+	
+	
+
+       
+
+
+	#Military
+	army_chief = {
+	}
+	navy_chief = {
+	}
+	air_chief = {
+	}
+	high_command = {
+	}
+	#Manufacturers
+	tank_manufacturer = {
+	}
+	naval_manufacturer = {
+	}
+	aircraft_manufacturer = {
+	}
+	materiel_manufacturer = {
+	}
+	theorist = {
+	}
+}
+}

@@ -1,0 +1,12 @@
+spriteTypes = { 
+	
+	spriteType = {
+		name = "GFX_idea_USA_the_great_depression"
+		texturefile = "gfx/interface/ideas/USA/USA_great_depression.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_USA_pacifism"
+		texturefile = "gfx/interface/ideas/USA/USA_pacifism.tga"
+	}
+}

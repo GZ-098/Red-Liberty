@@ -51,11 +51,13 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	conservatism = 9
-	revolutionary_socialism = 8
-	empowered_nationalism = 10
-	democratic_socialism = 13
-	autocratic_despotism = 60
+	conservatism = 5
+	revolutionary_socialism = 5
+	democratic_socialism = 5
+	liberalism = 85 
+	conservatism = 0 
+	autocratic_despotism = 0 
+	empowered_nationalism = 0 
 } 
 }
 1939.1.1 = {
@@ -66,11 +68,13 @@ set_popularities = {
 		elections_allowed = no
 	}
 	set_popularities = {
-	conservatism = 10
+	conservatism = 5
 	revolutionary_socialism = 5
-	empowered_nationalism = 15
 	democratic_socialism = 5
-	autocratic_despotism = 65
+	liberalism = 85 
+	conservatism = 0 
+	autocratic_despotism = 0 
+	empowered_nationalism = 0 
 	}
 }
 

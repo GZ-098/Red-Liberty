@@ -61,8 +61,13 @@ if = {
 }
 
 set_popularities = {
-	conservatism = 60
-	communism = 40
+	conservatism = 5
+	revolutionary_socialism = 5
+	democratic_socialism = 5
+	liberalism = 85 
+	conservatism = 0 
+	autocratic_despotism = 0 
+	empowered_nationalism = 0 
 }
 
 create_country_leader = {

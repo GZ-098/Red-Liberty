@@ -11,7 +11,11 @@ spriteTypes = {
 	### new tfv nat spirit icons 
 	##################
 	#red liberty icons 
-	##################   
+	##################  
+	spriteType = {
+		name = "GFX_idea_FRA_a_falling_democracy"
+		texturefile = "gfx/interface/ideas/FRA_a_falling_democracy.dds"
+	}  
 	spriteType = {
 		name = "GFX_idea_embarrassment_on_the_italian_front"
 		texturefile = "gfx/interface/ideas/embarrassment_on_the_italian_front.dds"

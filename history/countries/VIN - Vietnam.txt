@@ -72,10 +72,13 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 35
-	fascism = 15
-	communism = 15
-	neutrality = 35
+	conservatism = 5
+	revolutionary_socialism = 5
+	democratic_socialism = 5
+	liberalism = 85 
+	conservatism = 0 
+	autocratic_despotism = 0 
+	empowered_nationalism = 0 
 }
 
 #NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!

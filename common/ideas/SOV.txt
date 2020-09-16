@@ -1,0 +1,47 @@
+ideas = {
+
+	country = {
+	
+		SOV_home_of_the_revolution = {
+			
+			removal_cost = -1 
+		
+			#picture = new_imperial_economic_plan
+			
+			allowed_civil_war = {	 
+				always = yes	
+			}	
+			
+			allowed = {
+				tag = USA
+			}
+				
+			modifier = {
+				subversive_activites_upkeep = -0.15
+				drift_defence_factor = 0.25
+				send_volunteer_size = 2
+			}
+		}
+		
+		SOV_political_turmoil = {
+			
+			removal_cost = -1 
+		
+			#picture = new_imperial_economic_plan
+			
+			allowed_civil_war = {	 
+				always = yes	
+			}	
+			
+			allowed = {
+				tag = USA
+			}
+				
+			modifier = {
+				political_power_gain = -0.5
+				consumer_goods_factor = 0.1
+				stability_factor = -0.1
+			}
+		}
+	}
+}

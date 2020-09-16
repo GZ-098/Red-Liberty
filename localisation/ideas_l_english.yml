@@ -21,13 +21,15 @@
  ################# 
  #################
  #Country ideas 
- #################  
+ #################   
+ FRA_a_falling_democracy:0 "A Falling Democracy" 
+ FRA_a_falling_democracy_desc:0 ""
  AHE_embarrassment_on_the_italian_front:0 "Embarrasment on the Italian Front" 
  AHE_embarrassment_on_the_italian_front_desc:0 "During the Great War, we suffered a humiliating defeat against the inferior army of the Italians, not only did we lose land as a result of this, but the hit of prestige to our country has caused a drop in morale and made foreign powers view us in a lesser way. We must now take action to make sure this never happens again." 
  AHE_economic_downturn:0 "Economic Downturn" 
  AHE_economic_downturn_desc:0 "Due to the massive loans taken out during The Great War, as-well-as countless policies and spending failers from the government, the current state of the Austro-Hungarian economy is one of economic downturn and failure. We will need to take action to reverse the course of our economy or risk a great depression." 
  AHE_ethnic_division:0 "Ethnic Division" 
- AHE_ethnic_division_desc:0 "Austria-Hungary is one of the world's largest empires. Throughout its borders are many different ethnicities and cultures. While this may sound good, a rise in nationalism and independence movements have caused increase tension and problems. "
+ AHE_ethnic_division_desc:0 "Austria-Hungary is one of the world's largest empires. Throughout its borders are many different ethnicities and cultures. While this may sound good, a rise in nationalism and independence movements have caused an increase in tension and problems. "
  new_imperial_economic_plan:0 "New Imperial Economic Plan" 
  new_imperial_economic_plan_desc:0 "After a long time of creating construction projects, we have finally figured out an economic plan that can best suit the German economy. We have found the Imperial Economy Plan that has the highest chance of helping to improve the German economy."
  unpaid_war_expenses2:0 "Unpaid War Expenses" 

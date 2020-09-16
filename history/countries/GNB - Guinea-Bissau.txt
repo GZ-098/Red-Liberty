@@ -59,8 +59,11 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	conservatism = 25
-	fascism = 20
-	communism = 50
-	neutrality = 5
+	conservatism = 5
+	revolutionary_socialism = 5
+	democratic_socialism = 5
+	liberalism = 85 
+	conservatism = 0 
+	autocratic_despotism = 0 
+	empowered_nationalism = 0 
 }
