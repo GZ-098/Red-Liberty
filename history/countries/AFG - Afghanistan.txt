@@ -91,9 +91,13 @@ create_country_leader = {
 		elections_allowed = no
 	}
 	set_popularities = {
-		fascism = 20
-		communism = 10
-		neutrality = 70
+	conservatism = 5
+	revolutionary_socialism = 5
+	democratic_socialism = 5
+	liberalism = 85 
+	conservatism = 0 
+	autocratic_despotism = 0 
+	empowered_nationalism = 0 
 	}
 }
 
