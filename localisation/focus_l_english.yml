@@ -2,7 +2,7 @@
  AHE_farewell_hungary:0 "Farewell Hungary..." 
  AHE_farewell_hungary_desc:0 "The process is over; we are no longer Austria-Hungary farewell old friend." 
  AHE_canceling_ancient_treaties:0 "Canceling Ancient Treaties" 
- AHE_canceling_ancient_treaties_desc:0 "For Hungary to gain independence first, we must cancel some ancient treaties this day will go down in history." 
+ AHE_canceling_ancient_treaties_desc:0 "For Hungary to gain independence first, we must cancel some ancient treaties ;this day will go down in history." 
  AHE_the_two_crowns_act:0 "The Two Crowns Act" 
  AHE_the_two_crowns_act_desc:0 "With one of the final legislation being passed, this will allow for two crowns, the one of Austria and the one of Hungary.
 " 
@@ -21,7 +21,7 @@
  AHE_the_hard_truth_we_live_with:0 "The Hard Truth We Live With" 
  AHE_the_hard_truth_we_live_with_desc:0 "The harsh reality is that if Austria-Aungry does not make significant changes, it will soon collapse. " 
  AHE_reeling_in_the_troops:0 "Reeling in the Troops" 
- AHE_reeling_in_the_troops_desc:0 "We must real in the rest of the Austrian army we can't allow for any thoughts of independence or rebellion." 
+ AHE_reeling_in_the_troops_desc:0 "We must reel in the rest of the Austrian army we can't allow for any thoughts of independence or rebellion." 
  AHE_the_separate_armies_act:0 "The Separate Armies Act" 
  AHE_the_separate_armies_act_desc:0 "We will now pass legislation to allow for a Hungarian army. "
  WHILE_FOCUSING:0 "While focusing on this, there will be the following effects:\n$EFF$"
