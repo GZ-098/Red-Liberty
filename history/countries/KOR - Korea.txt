@@ -17,10 +17,13 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 35
-	fascism = 25
-	communism = 30
-	neutrality = 10
+	conservatism = 5
+	revolutionary_socialism = 5
+	democratic_socialism = 5
+	liberalism = 85 
+	conservatism = 0 
+	autocratic_despotism = 0 
+	empowered_nationalism = 0 
 }
 
 create_country_leader = {

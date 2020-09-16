@@ -76,10 +76,12 @@ set_politics = {
 }
 set_popularities = {
 	conservatism = 5
-	revolutionary_socialism = 10
-	empowered_nationalism = 15
-	democratic_socialism = 12
-	autocratic_despotism = 58
+	revolutionary_socialism = 5
+	democratic_socialism = 5
+	liberalism = 85 
+	conservatism = 0 
+	autocratic_despotism = 0 
+	empowered_nationalism = 0 
 }
 
 1939.1.1 = {
