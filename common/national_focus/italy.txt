@@ -856,6 +856,10 @@ popularity = 0.15
         ai_will_do = {
            factor = 15 }
         completion_reward = { 
+			add_state_core = 736 
+			add_state_core = 103 
+			add_state_core = 163 
+			add_state_core = 798
 		}
     } 
 
