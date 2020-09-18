@@ -1,0 +1,97 @@
+ideas = {
+	
+	country = { 
+       	ENG_a_unstable_coalition = {
+			removal_cost = -1 
+			
+			picture = ENG_a_unstable_coalition
+			
+			allowed = {
+				tag = ENG
+			} 
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = -0.10 
+				political_power_gain = -0.20 
+			}
+		}  
+       	ENG_polarized_politics = {
+			removal_cost = -1 
+			
+			picture = ENG_polarized_politics
+			
+			allowed = {
+				tag = ENG
+			} 
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				revolutionary_socialism_drift = 0.10 
+				empowered_nationalism_drift = 0.10 
+				conservatism_drift = -0.10 
+				liberalism_drift = -0.10
+			}
+		} 
+       	ENG_extremist_militant_groups = {
+			removal_cost = -1 
+			
+			picture = ENG_polarized_politics
+			
+			allowed = {
+				tag = ENG
+			} 
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				revolutionary_socialism_drift = 0.05 
+				empowered_nationalism_drift = 0.05 
+				army_core_attack_factor = -0.10 
+				army_core_defence_factor = -0.10  
+				army_org = -20
+			}
+		}
+	}
+	
+	
+
+       
+
+
+	#Military
+	army_chief = {
+	}
+	navy_chief = {
+	}
+	air_chief = {
+	}
+	high_command = {
+	}
+	#Manufacturers
+	tank_manufacturer = {
+	}
+	naval_manufacturer = {
+	}
+	aircraft_manufacturer = {
+	}
+	materiel_manufacturer = {
+	}
+	theorist = {
+	}
+}
+}
