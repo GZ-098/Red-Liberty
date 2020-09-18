@@ -1,19 +1,21 @@
 ideas = {
 
-	country = {  
+	country = {
 		
 		USA_the_great_depression = {
 			
 			removal_cost = -1 
-		
-			#picture = new_imperial_economic_plan
 			
 			allowed_civil_war = {	 
-				always = yes	
-			}	
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
 			
 			allowed = {
-				tag = USA
+				original_tag = USA
 			}
 				
 			modifier = {
@@ -28,16 +30,18 @@ ideas = {
 		
 		USA_pacifism = {
 			
-			removal_cost = -1 
-		
-			#picture = new_imperial_economic_plan
+			removal_cost = -1
 			
 			allowed_civil_war = {	 
 				always = yes	
-			}	
+			}
+			
+			available = {
+				always = yes
+			}
 			
 			allowed = {
-				tag = USA
+				original_tag = USA
 			}
 				
 			modifier = {

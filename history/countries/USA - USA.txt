@@ -12,18 +12,7 @@ if = {
 set_research_slots = 4
 set_stability = 0.75
 set_war_support = 0
-#set_variable = { var = senators_support value = 48 }
-#set_variable = { var = senators_total value = 96 }
-#set_variable = { var = representatives_support value = 218 }
-#set_variable = { var = representatives_total value = 435 }
-#set_variable = { var = quorum_low value = 39 }
-#set_variable = { var = quorum_medium value = 49 }
-#set_variable = { var = quorum_high value = 58 }
-#USA_recalc_congress_icon_frames = yes
-#USA = {
-#	country_event = { id = usa.50 days = 2 }
-#	country_event = { id = usa.51 days = 2 }
-#}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -96,29 +85,6 @@ if = {
 	add_ideas = MTG_naval_treaty_adherent
 }
 
-#Monroe Doctrine
-give_guarantee = CAN
-give_guarantee = MEX
-give_guarantee = CUB
-give_guarantee = HAI
-give_guarantee = DOM
-give_guarantee = GUA
-give_guarantee = HON
-give_guarantee = ELS
-give_guarantee = NIC
-give_guarantee = COS
-give_guarantee = PAN
-give_guarantee = VEN
-give_guarantee = COL
-give_guarantee = ECU
-give_guarantee = PRU
-give_guarantee = BRA
-give_guarantee = BOL
-give_guarantee = CHL
-give_guarantee = PAR
-give_guarantee = ARG
-give_guarantee = URG
-
 set_convoys = 500
 
 
@@ -129,10 +95,10 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
+	conservatism = 20
+	revolutionary_socialism = 3
+	democratic_socialism = 42
+	liberalism = 35
 	conservatism = 0 
 	autocratic_despotism = 0 
 	empowered_nationalism = 0 
@@ -147,7 +113,6 @@ add_ideas = {
 	disarmed_nation
 	free_trade
 }
-
 
 # DIPLOMACY
 set_autonomy = {
