@@ -11,7 +11,19 @@ spriteTypes = {
 	### new tfv nat spirit icons 
 	##################
 	#red liberty icons 
-	##################  
+	##################   
+	spriteType = {
+		name = "GFX_idea_ENG_a_unstable_coalition"
+		texturefile = "gfx/interface/ideas/ENG_a_unstable_coalition.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_polarized_politics"
+		texturefile = "gfx/interface/ideas/ENG_polarized_politics.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_ENG_extremist_militant_groups"
+		texturefile = "gfx/interface/ideas/ENG_extremist_militant_groups.dds"
+	} 
 	spriteType = {
 		name = "GFX_idea_FRA_a_falling_democracy"
 		texturefile = "gfx/interface/ideas/FRA_a_falling_democracy.dds"

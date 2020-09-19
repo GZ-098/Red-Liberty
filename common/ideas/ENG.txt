@@ -46,7 +46,7 @@ ideas = {
        	ENG_extremist_militant_groups = {
 			removal_cost = -1 
 			
-			picture = ENG_polarized_politics
+			picture = ENG_extremist_militant_groups
 			
 			allowed = {
 				tag = ENG
