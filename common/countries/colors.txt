@@ -1,5 +1,8 @@
 #reload countrycolors
-
+HEZ = {
+	color = rgb { 67 183 79 }
+	color_ui = rgb { 225 225 225 }
+}
 AHE = {
 	color = rgb { 229 229 229 }
 	color_ui = rgb { 225 225 225 }

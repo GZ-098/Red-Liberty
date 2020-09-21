@@ -6,7 +6,7 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = ENG
+		owner = HEZ
 		victory_points = {
 			12758 1 
 		}
