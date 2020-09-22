@@ -222,7 +222,7 @@ if = {
 
 
 set_convoys = 200
-
+1936.1.1 = {
 set_politics = {
 	ruling_party = conservatism
 	last_election = "1932.11.8"
@@ -230,13 +230,15 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 5
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	revolutionary_socialism = 16
+	democratic_socialism = 6
+	liberalism = 9
+	conservatism = 48
+	autocratic_despotism = 5
+	empowered_nationalism = 16
 }
+}
+
 
 create_country_leader = {
 	name = "Benito Mussolini"
