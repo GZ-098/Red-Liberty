@@ -1,0 +1,1199 @@
+ideas = {
+
+	political_advisor = { 
+		Leo_Hill = {  
+
+		picture = Leo_Hill
+
+		allowed = {
+			original_tag = USA
+		}
+
+		traits = { financial_expert } 
+
+		ai_will_do = {
+			factor = 8
+		}  
+	} 
+		Clark_Hewitt = {  
+
+		picture = Clark_Hewitt
+
+		allowed = {
+			original_tag = USA
+		}
+
+		traits = { captain_of_industry } 
+
+		ai_will_do = {
+			factor = 8
+		}  
+	} 
+		Charles_Mccarthy = {
+		
+		picture = Charles_Mccarthy 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { communist_revolutionary } 
+		
+		ai_will_do = { 
+			factor = 3 
+		} 
+	} 
+		Matthew_Black = {
+		
+		picture = Matthew_Black 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { democratic_reformer social_reformer } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+		Benjamin_Cook = {
+		
+		picture = Benjamin_Cook 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { popular_figurehead propaganda_expert } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+		Cody_Walker = {
+		
+		picture = Cody_Walker 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { technocrat } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+		Alex_Sharp = {
+		
+		picture = Alex_Sharp 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { backroom_backstabber silent_workhorse } 
+		
+		ai_will_do = { 
+			factor = 8
+		} 
+	} 
+		Mack_Higgins = {
+		
+		picture = Mack_Higgins 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { armaments_organizer war_industrialist } 
+		
+		ai_will_do = { 
+			factor = 8
+		} 
+	}
+}
+
+	#Military
+	army_chief = {  
+	 	Oscar_Sutton = {
+		
+		picture = Oscar_Sutton 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_chief_defensive_2 } 
+		
+		ai_will_do = { 
+			factor = 3
+		} 
+	} 
+	 	Zachary_Mcdonald = {
+		
+		picture = Zachary_Mcdonald 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_chief_drill_1 } 
+		
+		ai_will_do = { 
+			factor = 3
+		} 
+	} 
+	 	Ethan_Miller = {
+		
+		picture = Ethan_Miller 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_chief_reform_3 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Collin_Bolton = {
+		
+		picture = Collin_Bolton 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_chief_offensive_2 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Patrick_Palmer = {
+		
+		picture = Patrick_Palmer 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_armored_1 } 
+		
+		ai_will_do = { 
+			factor = 3
+		} 
+	} 
+	 	Max_Kelly = {
+		
+		picture = Max_Kelly 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_entrenchment_2 } 
+		
+		ai_will_do = { 
+			factor = 3
+		} 
+	} 
+	 	Brody_Burks = {
+		
+		picture = Brody_Burks 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_artillery_1 } 
+		
+		ai_will_do = { 
+			factor = 3
+		} 
+	} 
+	 	Jacob_Harris = {
+		
+		picture = Jacob_Harris 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_regrouping_1 } 
+		
+		ai_will_do = { 
+			factor = 3
+		} 
+	}
+}
+	navy_chief = { 
+	 	Jamison_Brady = {
+		
+		picture = Jamison_Brady 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_chief_naval_aviation_3 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Tucker_Fletcher = {
+		
+		picture = Tucker_Fletcher 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_chief_reform_1 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Zac_Poole = {
+		
+		picture = Zac_Poole 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_chief_reform_1 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Lewis_Wallace = {
+		
+		picture = Lewis_Wallace 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_chief_maneuver_3 } 
+		
+		ai_will_do = { 
+			factor = 10
+		} 
+	} 
+	 	William_Wood = {
+		
+		picture = William_Wood 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_anti_submarine_2 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Elliot_Lee = {
+		
+		picture = Elliot_Lee 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_anti_submarine_2 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Elliot_Lee = {
+		
+		picture = Elliot_Lee 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_anti_submarine_2 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Harrison_Davis = {
+		
+		picture = Harrison_Davis 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_fleet_logistics_1 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Riley_Hart = {
+		
+		picture = Riley_Hart 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_amphibious_assault_3 } 
+		
+		ai_will_do = { 
+			factor = 10
+		} 
+	}
+}
+	air_chief = { 
+	 	Ellis_Sharp = {
+		
+		picture = Ellis_Sharp 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_chief_reform_3 } 
+		
+		ai_will_do = { 
+			factor = 6
+		} 
+	} 
+	 	Josh_Brown = {
+		
+		picture = Josh_Brown 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_chief_safety_1 } 
+		
+		ai_will_do = { 
+			factor = 3
+		} 
+	} 
+	 	Ryan_Turner = {
+		
+		picture = Ryan_Turner 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_chief_old_guard } 
+		
+		ai_will_do = { 
+			factor = 3
+		} 
+	} 
+	 	Freddy_Poole = {
+		
+		picture = Freddy_Poole 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_chief_night_operations_2 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Roderick_Baldwin = {
+		
+		picture = Roderick_Baldwin 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_chief_ground_support_1 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Steven_Boyd = {
+		
+		picture = Steven_Boyd 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_chief_all_weather_2 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Clayton_Hess = {
+		
+		picture = Clayton_Hess 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_chief_reform_3 } 
+		
+		ai_will_do = { 
+			factor = 10
+		} 
+	}  
+	 	Louis_Watkins = {
+		
+		picture = Louis_Watkins 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_chief_ground_support_3 } 
+		
+		ai_will_do = { 
+			factor = 10
+		} 
+	}
+}
+	high_command = { 
+	 	Nehemiah_Massey = { 
+		
+		ledger = air
+		
+		picture = Nehemiah_Massey 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_chief_all_weather_3 } 
+		
+		ai_will_do = { 
+			factor = 10
+		} 
+	} 
+	 	Justin_Warren = { 
+		
+		ledger = air
+		
+		picture = Justin_Warren 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_air_combat_training_2 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Ray_Bailey = { 
+		
+		ledger = army
+		
+		picture = Ray_Bailey 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_entrenchment_2 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Scott_Jones = { 
+		
+		ledger = army
+		
+		picture = Scott_Jones 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_armored_1 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Brendon_Osborn = { 
+		
+		ledger = army
+		
+		picture = Brendon_Osborn 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_artillery_2 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Aiden_Wells = { 
+		
+		ledger = army
+		
+		picture = Aiden_Wells 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { army_infantry_1 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Nikolas_Espinoza = { 
+		
+		ledger = navy
+		
+		picture = Nikolas_Espinoza 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_fleet_logistics_1 } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Truman_Savage = { 
+		
+		ledger = navy
+		
+		picture = Truman_Savage 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { navy_amphibious_assault_2 } 
+		
+		ai_will_do = { 
+			factor = 7
+		} 
+	}
+}
+	#Manufacturers
+	tank_manufacturer = { 
+	
+		designer = yes
+	
+		marmon_herrington = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		chrysler = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+		detroit_arsenal = {
+			
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = USA
+			}
+			available = {
+				has_completed_focus = USA_main_battle_tanks
+			}
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { }
+			
+			equipment_bonus = {
+				medium_tank_equipment = {
+					build_cost_ic = -0.1
+				}
+				light_tank_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+
+			modifier = {
+
+			}
+		}
+		tank_destroyer_board = {
+			
+			picture = usa_tank_destroyer_board
+			allowed = {
+				original_tag = USA
+			}
+			available = {
+				has_completed_focus = USA_tank_destroyer_doctrine
+			}
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { }
+			
+			equipment_bonus = {
+				light_tank_destroyer_equipment = {
+					build_cost_ic = -0.1
+					ap_attack = 0.1
+					hard_attack = 0.25
+				}
+				medium_tank_destroyer_equipment = {
+					build_cost_ic = -0.1
+					ap_attack = 0.1
+					hard_attack = 0.25
+				}
+				heavy_tank_destroyer_equipment = {
+					build_cost_ic = -0.1
+					ap_attack = 0.1
+					hard_attack = 0.25
+				}
+			}
+
+			modifier = {
+
+			}
+		}
+		
+		army_ordnance_department = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			modifier = {
+			}
+		}	
+	}
+	
+	naval_manufacturer = { 
+	
+		designer = yes
+		
+		norfolk_naval_yard = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { coastal_defence_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		electric_boat_company = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		brooklyn_naval_yard = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		newport_news_shipbuilding = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { pacific_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	aircraft_manufacturer = { 
+		
+		designer = yes
+		
+		north_american_aviation = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		#bell = {
+		#	
+		#	
+		#	allowed = {
+		#		original_tag = USA
+		#	}
+		#	
+		#
+		#	
+		#	research_bonus = {
+		#		air_equipment = 0.15
+		#	}
+		#	
+		#	traits = { light_aircraft_manufacturer }	#TODO, make different from north american
+		#	
+		#	modifier = {
+		#	}
+		#}	
+		
+		lockheed = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		douglas_aircraft_company = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { CAS_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		
+		boeing = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		#consolidated_aircraft = {
+		#	
+		#	
+		#	allowed = {
+		#		original_tag = USA
+		#	}
+		#	
+		#
+		#	
+		#	research_bonus = {
+		#		air_equipment = 0.15
+		#	}
+		#	
+		#	traits = { heavy_aircraft_manufacturer } #TODO remove?
+		#	
+		#	modifier = {
+		#	}
+		#}
+		grumman = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}		
+	}
+	
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		springfield_armory = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		ford_motor_company = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+	
+		
+		rock_island_arsenal = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+
+	
+	industrial_concern = {
+					
+		standard_oil_california = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
+			modifier = {
+			}
+		}
+		
+		general_electric = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+		USA_general_motors = {
+			
+			picture = usa_general_motors
+			allowed = {
+				original_tag = USA
+			}
+			available = {
+				has_completed_focus = USA_wartime_industry
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+	}
+
+	theorist = { 
+	 	Willie_Gillespie = { 
+		
+		picture = Willie_Gillespie 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { military_theorist } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Collin_Key = { 
+		
+		picture = Collin_Key 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { superior_firepower_expert } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Jaylin_Stuart = { 
+		
+		picture = Jaylin_Stuart 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { air_warfare_theorist } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+	 	Alexander_Pearce = { 
+		
+		picture = Alexander_Pearce 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { close_air_support_proponent } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	}
+		Jayden_Baxter = { 
+		
+		picture = Jayden_Baxter 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { naval_theorist } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+		Jonathan_Stone = { 
+		
+		picture = Jonathan_Stone 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { naval_aviation_pioneer } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+		Oliver_Blair = { 
+		
+		picture = Oliver_Blair 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { submarine_specialist } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+		Finlay_Edwards = { 
+		
+		picture = Finlay_Edwards 
+		
+		allowed = {
+			original_tag = USA 
+		} 
+		
+		traits = { victory_through_airpower } 
+		
+		ai_will_do = { 
+			factor = 5
+		} 
+	} 
+    }
