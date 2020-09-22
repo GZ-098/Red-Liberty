@@ -1,5 +1,5 @@
 focus_tree = {
-	id = President Thomas
+	id = USA_thomas_start_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -470,7 +470,7 @@ focus_tree = {
 	focus = {
 		id = USA_the_thomas_administration
 		icon = GFX_focus_usa_recruit_the_free_corps
-		x = 23
+		x = 10
 		y = 0
 		cost = 1
 		available_if_capitulated = yes
@@ -641,7 +641,7 @@ focus_tree = {
 	}
 	#Focus for The Bill Passes
 	focus = {
-		id = USA_eATIjLqw
+		id = USA_the_bill_passes
 		icon = GFX_focus_generic_treaty
 		x = 19
 		y = 20
