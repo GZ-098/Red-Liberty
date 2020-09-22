@@ -1126,7 +1126,7 @@ leader_traits = {
 		random = no
 		# Boosts revolutionary socialism
 		sprite = 13
-		revolutionary_socialism = 0.1
+		revolutionary_socialism_drift = 0.1
 		
 		ai_will_do = {
 			factor = 1

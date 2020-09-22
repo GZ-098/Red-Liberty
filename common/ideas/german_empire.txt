@@ -61,12 +61,6 @@ ideas = {
 			}
 			
 			traits = { revolutionary_socialist }
-
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
 			
 			ai_will_do = {
 				factor = 0
@@ -166,17 +160,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { smooth_talking_charmer }
-		}
-
-		GER_hans_oster = {
-
-			
-			traits = { anti_fascist_agent }
-
-			ai_will_do = {
-				factor = 0
-			}
+			traits = { liberal_journalist }
 		}
 
 		GER_alfred_hugenberg = {
@@ -193,44 +177,6 @@ ideas = {
 				factor = 0
 			}
 		}
-
-		GER_carl_friedrich_goerdeler = {
-
-			
-			traits = { economist }
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-		GER_julius_leber = {
-
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			traits = { connected_citizen }
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-		GER_theodor_heuss = {
-
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			traits = { liberal_journalist }
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
 	
 		ger_wilhelm_canaris = {
 			
@@ -238,7 +184,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { head_of_intelligence }
+			traits = { connected_citizen }
 
 		}
 	}
@@ -726,10 +672,6 @@ ideas = {
 			
 			allowed = {
 				original_tag = GER
-			}
-
-			available = {
-				has_government = fascism
 			}
 						
 			traits = { army_chief_drill_2 }
