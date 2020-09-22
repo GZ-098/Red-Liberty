@@ -1,5 +1,5 @@
 focus_tree = {
-	id = USA_foster_start
+	id = USA_foster_start_focus
 	country = {
 		factor = 0
 		modifier = {

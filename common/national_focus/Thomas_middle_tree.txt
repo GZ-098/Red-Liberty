@@ -1,9 +1,9 @@
 focus_tree = {
-	id = Thomas Middle tree
+	id = USA_thomas_middle_focus
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 0
 			tag = USA
 		}
 	}

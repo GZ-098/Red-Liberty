@@ -1,9 +1,9 @@
 focus_tree = {
-	id = Lister beginning
+	id = USA_lister_start_focus
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 0
 			tag = USA
 		}
 	}

@@ -1,5 +1,5 @@
 focus_tree = {
-	id = Slovakia
+	id = Slovakia_focus
 	country = {
 		factor = 0
 		modifier = {

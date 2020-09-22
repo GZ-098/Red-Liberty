@@ -1,9 +1,9 @@
 focus_tree = {
-	id = Roosevelt Beginning
+	id = USA_roosevelt_start
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 0
 			tag = USA
 		}
 	}

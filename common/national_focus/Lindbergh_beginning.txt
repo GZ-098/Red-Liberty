@@ -1,9 +1,9 @@
 focus_tree = {
-	id = Lindbergh beginning
+	id = UAS_lindbergh_start_focus
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 0
 			tag = USA
 		}
 	}
