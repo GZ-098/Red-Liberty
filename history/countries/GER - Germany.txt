@@ -296,22 +296,23 @@ create_import = {
 		set_naval_oob = "GER_1939_naval_mtg"
 	}
 }
-
+1936.1.1 = {
 set_politics = {
 	ruling_party = autocratic_despotism
 	last_election = ""
-	election_frequency = 
+	election_frequency = 0
 	elections_allowed = no
 }
 set_popularities = {
-	conservatism = 5
 	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	democratic_socialism = 4
+	liberalism = 4 
+	conservatism = 14
+	autocratic_despotism = 49
+	empowered_nationalism = 24
+}	
 }
+
 
 create_faction = central_powers
 add_to_faction = GER 

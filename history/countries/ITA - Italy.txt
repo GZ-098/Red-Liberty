@@ -105,11 +105,6 @@ if = {
 	limit = {
 		has_start_date < 1936.01.02
 	}
-
-	declare_war_on = {
-		target = ETH
-		type = annex_everything
-	}
 	give_guarantee = ALB
 }
 
@@ -235,11 +230,10 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 5
 	revolutionary_socialism = 5
 	democratic_socialism = 5
 	liberalism = 85 
-	conservatism = 0 
+	conservatism = 5
 	autocratic_despotism = 0 
 	empowered_nationalism = 0 
 }

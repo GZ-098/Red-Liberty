@@ -221,22 +221,22 @@ if = {
 set_convoys = 300
 
 
+
+1936.1.1 = { 
 set_politics = {
-	ruling_party = revolutionary_socialism
+	ruling_party = liberalism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	revolutionary_socialism = 27
+	democratic_socialism = 7
+	liberalism = 36 
+	conservatism = 4
+	autocratic_despotism = 6
+	empowered_nationalism = 20
 }
-1936.1.1 = {
 add_ideas = {
 	FRA_a_falling_democracy
 } 

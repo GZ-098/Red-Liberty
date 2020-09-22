@@ -170,7 +170,7 @@ if = {
 
 	add_to_tech_sharing_group = commonwealth_research
 }
-
+1936.1.1 = { 
 set_politics = {
 	ruling_party = democratic_socialism
 	last_election = "1932.11.8"
@@ -184,7 +184,9 @@ set_popularities = {
 	conservatism = 13
 	autocratic_despotism = 2
 	empowered_nationalism = 20
+} 
 }
+
 
 
 create_faction = Entente
