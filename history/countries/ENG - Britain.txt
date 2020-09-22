@@ -183,7 +183,7 @@ set_popularities = {
 	liberalism = 11
 	conservatism = 13
 	autocratic_despotism = 2
-	empowered_nationalism = 20
+	empowered_nationalism = 18
 } 
 }
 
