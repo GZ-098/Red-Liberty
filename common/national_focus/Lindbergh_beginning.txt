@@ -1,0 +1,290 @@
+focus_tree = {
+	id = Lindbergh beginning
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+	#Focus for Together Towards the Future!
+	focus = {
+		id = USA_together_towards_the_future
+		icon = GFX_goal_unknown
+		x = 6
+		y = 9
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_a_natural_team }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Legacy our Fore-fathers Would be Proud of
+	focus = {
+		id = USA_a_legacy_our_forefathers_would_be_proud_of
+		icon = GFX_USA_a_legacy_our_forefathers_would_be_proud_of-49057
+		x = 10
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_but_the_revisionists_are_proud 
+		}
+		prerequisite = { 
+			focus = USA_the_beginning_of_change 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Nationalist Cabinet
+	focus = {
+		id = USA_a_nationalist_cabinet
+		icon = GFX_USA_a_nationalist_cabinet-49083
+		x = 12
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_lindbergh_administration }
+		mutually_exclusive = { focus = USA_a_conservative_cabinet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Beginning of Change
+	focus = {
+		id = USA_the_beginning_of_change
+		icon = GFX_USA_the_beginning_of_change-49055
+		x = 11
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_a_nationalist_cabinet 
+			focus = USA_a_conservative_cabinet 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Lindbergh Administration
+	focus = {
+		id = USA_the_lindbergh_administration
+		icon = GFX_focus_usa_recruit_the_free_corps
+		x = 10
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Liberals Riot...
+	focus = {
+		id = USA_the_liberals_riot
+		icon = GFX_USA_the_liberals_riot-48974
+		x = 8
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_lindbergh_administration }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for ...But the Revisionists are Proud!
+	focus = {
+		id = USA_but_the_revisionists_are_proud
+		icon = GFX_USA_but_the_revisionists_are_proud-49056
+		x = 9
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_liberals_riot }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Conservative Cabinet
+	focus = {
+		id = USA_a_conservative_cabinet
+		icon = GFX_USA_a_conservative_cabinet-49086
+		x = 10
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_lindbergh_administration }
+		mutually_exclusive = { focus = USA_a_nationalist_cabinet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Extraordinary Powers Act (EPA)
+	focus = {
+		id = USA_the_extraordinary_powers_act_epa
+		icon = GFX_goal_unknown
+		x = 11
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_a_legacy_our_forefathers_would_be_proud_of }
+		mutually_exclusive = { focus = USA_crack_down_on_the_riots }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus= USA_a_nationalist_coalition
+		}
+	}
+	#Focus for Introduce the Political Realigning Act (PRA)
+	focus = {
+		id = USA_introduce_the_political_realigning_act_pra
+		icon = GFX_goal_unknown
+		x = 8
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_crack_down_on_the_riots }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Trust-worthy Coalition?
+	focus = {
+		id = USA_a_trustworthy_coalition
+		icon = GFX_goal_unknown
+		x = 7
+		y = 6
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_introduce_the_political_realigning_act_pra }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Natural Team
+	focus = {
+		id = USA_a_natural_team
+		icon = GFX_goal_unknown
+		x = 6
+		y = 8
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_a_nationalist_coalition }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for We Both Want a Strong America. Right?
+	focus = {
+		id = USA_we_both_want_a_strong_america_right
+		icon = GFX_goal_unknown
+		x = 8
+		y = 8
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_a_conservative_coalition }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Counting the Vote
+	focus = {
+		id = USA_counting_the_vote
+		icon = GFX_goal_unknown
+		x = 7
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_admit_our_differences 
+			focus = USA_together_towards_the_future 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Congress Claims Tyranny!
+	focus = {
+		id = USA_congress_claims_tyranny
+		icon = GFX_goal_unknown
+		x = 12
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_extraordinary_powers_act_epa }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for But Everyone Trusts Lindy
+	focus = {
+		id = USA_but_everyone_trusts_lindy
+		icon = GFX_goal_unknown
+		x = 13
+		y = 6
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_congress_claims_tyranny }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Crack Down on the Riots
+	focus = {
+		id = USA_crack_down_on_the_riots
+		icon = GFX_goal_unknown
+		x = 9
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_a_legacy_our_forefathers_would_be_proud_of }
+		mutually_exclusive = { focus = USA_the_extraordinary_powers_act_epa }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Nationalist Coalition
+	focus = {
+		id = USA_a_nationalist_coalition
+		icon = GFX_goal_unknown
+		x = 6
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_a_trustworthy_coalition }
+		mutually_exclusive = { focus = USA_a_conservative_coalition }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Conservative Coalition
+	focus = {
+		id = USA_a_conservative_coalition
+		icon = GFX_goal_unknown
+		x = 8
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_a_trustworthy_coalition }
+		mutually_exclusive = { focus = USA_a_nationalist_coalition }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Admit our Differences
+	focus = {
+		id = USA_admit_our_differences
+		icon = GFX_goal_unknown
+		x = 8
+		y = 9
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_we_both_want_a_strong_america_right }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#End of focuses 
+ }
