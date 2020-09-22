@@ -1,0 +1,919 @@
+focus_tree = {
+	id = Slovakia
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SLO
+		}
+	}
+	#Focus for What to do with the Other Ethnicities?
+	focus = {
+		id = SLO_what_to_do_with_the_other_ethnicities
+		icon = GFX_goal_unknown
+		x = 21
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_a_whole_slovakia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Reconciliation with Bohemia
+	focus = {
+		id = SLO_reconciliation_with_bohemia
+		icon = GFX_goal_unknown
+		x = 26
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_enemies_no_more }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for On the Question of Other Ethnicities
+	focus = {
+		id = SLO_on_the_question_of_other_ethnicities
+		icon = GFX_goal_unknown
+		x = 14
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_the_birth_of_slovakia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+		}
+	}
+	#Focus for The Birth of Slovakia
+	focus = {
+		id = SLO_the_birth_of_slovakia
+		icon = GFX_goal_unknown
+		x = 14
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Accept them
+	focus = {
+		id = SLO_accept_them
+		icon = GFX_goal_unknown
+		x = 13
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_on_the_question_of_other_ethnicities }
+		mutually_exclusive = { focus = SLO_expel_them }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Expel Them
+	focus = {
+		id = SLO_expel_them
+		icon = GFX_goal_unknown
+		x = 15
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_on_the_question_of_other_ethnicities }
+		mutually_exclusive = { focus = SLO_accept_them }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for On the Question of Voting
+	focus = {
+		id = SLO_on_the_question_of_voting
+		icon = GFX_goal_unknown
+		x = 14
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SLO_accept_them 
+			focus = SLO_expel_them 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+		}
+	}
+	#Focus for Allow All to Vote
+	focus = {
+		id = SLO_allow_all_to_vote
+		icon = GFX_goal_unknown
+		x = 13
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_on_the_question_of_voting }
+		mutually_exclusive = { focus = SLO_allow_some_to_vote }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Allow Some to Vote
+	focus = {
+		id = SLO_allow_some_to_vote
+		icon = GFX_goal_unknown
+		x = 15
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_on_the_question_of_voting }
+		mutually_exclusive = { focus = SLO_allow_all_to_vote }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for On the Question of Justice
+	focus = {
+		id = SLO_on_the_question_of_justice
+		icon = GFX_goal_unknown
+		x = 14
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SLO_allow_all_to_vote 
+			focus = SLO_allow_some_to_vote 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+		}
+	}
+	#Focus for Free and Fair Trials
+	focus = {
+		id = SLO_free_and_fair_trials
+		icon = GFX_goal_unknown
+		x = 13
+		y = 6
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_on_the_question_of_justice }
+		mutually_exclusive = { focus = SLO_biased_trials }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Biased Trials
+	focus = {
+		id = SLO_biased_trials
+		icon = GFX_goal_unknown
+		x = 15
+		y = 6
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_on_the_question_of_justice }
+		mutually_exclusive = { focus = SLO_free_and_fair_trials }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Our First Election
+	focus = {
+		id = SLO_our_first_election
+		icon = GFX_goal_unknown
+		x = 14
+		y = 7
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SLO_free_and_fair_trials 
+			focus = SLO_biased_trials 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+		}
+	}
+	#Focus for Liberal Majority
+	focus = {
+		id = SLO_liberal_majority
+		icon = GFX_goal_unknown
+		x = 12
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_our_first_election }
+		mutually_exclusive = { 
+			focus = SLO_conservative_majority 
+		}
+		mutually_exclusive = { 
+			focus = SLO_nationalist_majority 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Conservative Majority
+	focus = {
+		id = SLO_conservative_majority
+		icon = GFX_goal_unknown
+		x = 14
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_our_first_election }
+		mutually_exclusive = { 
+			focus = SLO_liberal_majority 
+		}
+		mutually_exclusive = { 
+			focus = SLO_nationalist_majority 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Nationalist Majority
+	focus = {
+		id = SLO_nationalist_majority
+		icon = GFX_goal_unknown
+		x = 16
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_our_first_election }
+		mutually_exclusive = { 
+			focus = SLO_conservative_majority 
+		}
+		mutually_exclusive = { 
+			focus = SLO_liberal_majority 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Pathway to Greatness
+	focus = {
+		id = SLO_the_pathway_to_greatness
+		icon = GFX_goal_unknown
+		x = 16
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_nationalist_majority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Nationalizing Hungarian Businesses
+	focus = {
+		id = SLO_nationalizing_hungarian_businesses
+		icon = GFX_goal_unknown
+		x = 16
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_the_pathway_to_greatness }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_extra_state_shared_building_slots= {
+ add_extra_state_shared_building_slots = 3 
+}
+		}
+	}
+	#Focus for Nationalizing Bohemian Businesses
+	focus = {
+		id = SLO_nationalizing_bohemian_businesses
+		icon = GFX_goal_unknown
+		x = 16
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_nationalizing_hungarian_businesses }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Nationalizing Polish businesses
+	focus = {
+		id = SLO_nationalizing_polish_businesses
+		icon = GFX_goal_unknown
+		x = 16
+		y = 12
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_nationalizing_bohemian_businesses }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Nationalizing Everything!
+	focus = {
+		id = SLO_nationalizing_everything
+		icon = GFX_goal_unknown
+		x = 16
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_nationalizing_polish_businesses }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Slovakia Made Greater
+	focus = {
+		id = SLO_slovakia_made_greater
+		icon = GFX_goal_unknown
+		x = 16
+		y = 14
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_nationalizing_everything }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Pathway to Freedom
+	focus = {
+		id = SLO_the_pathway_to_freedom
+		icon = GFX_goal_unknown
+		x = 12
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_liberal_majority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Allow Foreign Businesses
+	focus = {
+		id = SLO_allow_foreign_businesses
+		icon = GFX_goal_unknown
+		x = 12
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_the_pathway_to_freedom }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Our Friends in America
+	focus = {
+		id = SLO_our_friends_in_america
+		icon = GFX_goal_unknown
+		x = 12
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_allow_foreign_businesses }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Advocate for Human Rights
+	focus = {
+		id = SLO_advocate_for_human_rights
+		icon = GFX_goal_unknown
+		x = 12
+		y = 12
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_our_friends_in_america }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Perfect the Democratic Process
+	focus = {
+		id = SLO_perfect_the_democratic_process
+		icon = GFX_goal_unknown
+		x = 12
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_advocate_for_human_rights }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Free Slovakia
+	focus = {
+		id = SLO_a_free_slovakia
+		icon = GFX_goal_unknown
+		x = 12
+		y = 14
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_perfect_the_democratic_process }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Pathway to Moderation
+	focus = {
+		id = SLO_the_pathway_to_moderation
+		icon = GFX_goal_unknown
+		x = 14
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_conservative_majority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Allow Some Foreign Businesses
+	focus = {
+		id = SLO_allow_some_foreign_businesses
+		icon = GFX_goal_unknown
+		x = 14
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_the_pathway_to_moderation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Our Friends in Europe
+	focus = {
+		id = SLO_our_friends_in_europe
+		icon = GFX_goal_unknown
+		x = 14
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_allow_some_foreign_businesses }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Admit People have Rights
+	focus = {
+		id = SLO_admit_people_have_rights
+		icon = GFX_goal_unknown
+		x = 14
+		y = 12
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_our_friends_in_europe }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Fortify the Borders
+	focus = {
+		id = SLO_fortify_the_borders
+		icon = GFX_goal_unknown
+		x = 14
+		y = 13
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_admit_people_have_rights }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Moderate Slovakia
+	focus = {
+		id = SLO_a_moderate_slovakia
+		icon = GFX_goal_unknown
+		x = 14
+		y = 14
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_fortify_the_borders }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Staying in our Little Corner
+	focus = {
+		id = SLO_staying_in_our_little_corner
+		icon = GFX_goal_unknown
+		x = 16
+		y = 15
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_slovakia_made_greater }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Our Position in Europe...
+	focus = {
+		id = SLO_our_position_in_europe
+		icon = GFX_goal_unknown
+		x = 13
+		y = 15
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SLO_a_moderate_slovakia 
+			focus = SLO_a_free_slovakia 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for ...Is Quite Influential
+	focus = {
+		id = SLO_is_quite_influential
+		icon = GFX_goal_unknown
+		x = 25
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus= SLO_our_position_in_europe
+		}
+	}
+	#Focus for Solving Some Disagreements
+	focus = {
+		id = SLO_solving_some_disagreements
+		icon = GFX_goal_unknown
+		x = 26
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_making_peace_with_our_rivals }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Making Peace with our Rivals
+	focus = {
+		id = SLO_making_peace_with_our_rivals
+		icon = GFX_goal_unknown
+		x = 29
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_is_quite_influential }
+		mutually_exclusive = { focus = SLO_pressing_our_claims }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Pressing our Claims
+	focus = {
+		id = SLO_pressing_our_claims
+		icon = GFX_goal_unknown
+		x = 21
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_is_quite_influential }
+		mutually_exclusive = { focus = SLO_making_peace_with_our_rivals }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Enemies No More!
+	focus = {
+		id = SLO_enemies_no_more
+		icon = GFX_goal_unknown
+		x = 26
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_solving_some_disagreements }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Our Southern Neighbors
+	focus = {
+		id = SLO_our_southern_neighbors
+		icon = GFX_goal_unknown
+		x = 29
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_making_peace_with_our_rivals }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Only Ask for the South
+	focus = {
+		id = SLO_only_ask_for_the_south
+		icon = GFX_goal_unknown
+		x = 28
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_our_southern_neighbors }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Ask for Both
+	focus = {
+		id = SLO_ask_for_both
+		icon = GFX_goal_unknown
+		x = 30
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_our_southern_neighbors }
+		mutually_exclusive = { focus = SLO_only_ask_for_the_south }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Hungary Bows down!
+	focus = {
+		id = SLO_hungary_bows_down
+		icon = GFX_goal_unknown
+		x = 30
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SLO_only_ask_for_the_south 
+			focus = SLO_ask_for_both 
+		}
+		mutually_exclusive = { focus = SLO_hungary_rejects_our_diplomacy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Hungary Rejects our Diplomacy!
+	focus = {
+		id = SLO_hungary_rejects_our_diplomacy
+		icon = GFX_goal_unknown
+		x = 28
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SLO_ask_for_both 
+			focus = SLO_only_ask_for_the_south 
+		}
+		mutually_exclusive = { focus = SLO_hungary_bows_down }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			declare_war_on= { 
+target = HUN 
+type = 
+}
+		}
+	}
+	#Focus for A Defeated Slovakia...
+	focus = {
+		id = SLO_a_defeated_slovakia
+		icon = GFX_goal_unknown
+		x = 28
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_hungary_rejects_our_diplomacy }
+		mutually_exclusive = { focus = SLO_a_strong_slovakia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Strong Slovakia!
+	focus = {
+		id = SLO_a_strong_slovakia
+		icon = GFX_goal_unknown
+		x = 30
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SLO_hungary_rejects_our_diplomacy 
+			focus = SLO_hungary_bows_down 
+		}
+		mutually_exclusive = { focus = SLO_a_defeated_slovakia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Our Northern Neighbors
+	focus = {
+		id = SLO_our_northern_neighbors
+		icon = GFX_goal_unknown
+		x = 32
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_making_peace_with_our_rivals }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for No Surprise Invasions
+	focus = {
+		id = SLO_no_surprise_invasions
+		icon = GFX_goal_unknown
+		x = 32
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_our_northern_neighbors }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Weathering the Storm
+	focus = {
+		id = SLO_weathering_the_storm
+		icon = GFX_goal_unknown
+		x = 29
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SLO_a_defeated_slovakia
+		}
+		prerequisite = { 
+			focus = SLO_a_strong_slovakia
+		}
+		prerequisite = { 
+			focus = SLO_a_new_friendship
+			focus = SLO_reconciliation_with_bohemia
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A New Friendship
+	focus = {
+		id = SLO_a_new_friendship
+		icon = GFX_goal_unknown
+		x = 32
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_no_surprise_invasions }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Demand our Land from Hungary
+	focus = {
+		id = SLO_demand_our_land_from_hungary
+		icon = GFX_goal_unknown
+		x = 21
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_pressing_our_claims }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Hungary Backs Down!
+	focus = {
+		id = SLO_hungary_backs_down
+		icon = GFX_goal_unknown
+		x = 22
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_demand_our_land_from_hungary }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A War with Hungary
+	focus = {
+		id = SLO_a_war_with_hungary
+		icon = GFX_goal_unknown
+		x = 20
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_demand_our_land_from_hungary }
+		mutually_exclusive = { focus = SLO_hungary_backs_down }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Failure in Our Crusade...
+	focus = {
+		id = SLO_failure_in_our_crusade
+		icon = GFX_goal_unknown
+		x = 20
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_a_war_with_hungary }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Whole Slovakia
+	focus = {
+		id = SLO_a_whole_slovakia
+		icon = GFX_goal_unknown
+		x = 22
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SLO_a_war_with_hungary 
+			focus = SLO_hungary_backs_down 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Accept them with Open Arms
+	focus = {
+		id = SLO_accept_them_with_open_arms
+		icon = GFX_goal_unknown
+		x = 20
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_what_to_do_with_the_other_ethnicities }
+		mutually_exclusive = { focus = SLO_ban_them_from_the_country }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus= SLO_accept_them
+		}
+	}
+	#Focus for Ban Them from the Country
+	focus = {
+		id = SLO_ban_them_from_the_country
+		icon = GFX_goal_unknown
+		x = 22
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_what_to_do_with_the_other_ethnicities }
+		mutually_exclusive = { focus = SLO_accept_them_with_open_arms }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus= SLO_expel_them
+		}
+	}
+	#Focus for Foreign Threats
+	focus = {
+		id = SLO_foreign_threats
+		icon = GFX_goal_unknown
+		x = 21
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SLO_ban_them_from_the_country 
+			focus = SLO_accept_them_with_open_arms 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Ask for German Protection
+	focus = {
+		id = SLO_ask_for_german_protection
+		icon = GFX_goal_unknown
+		x = 20
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_foreign_threats }
+		mutually_exclusive = { focus = SLO_ask_for_polish_protection }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Ask for Polish Protection
+	focus = {
+		id = SLO_ask_for_polish_protection
+		icon = GFX_goal_unknown
+		x = 22
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = SLO_foreign_threats }
+		mutually_exclusive = { focus = SLO_ask_for_german_protection }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#End of focuses 
+ }

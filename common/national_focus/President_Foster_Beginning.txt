@@ -1,5 +1,5 @@
 focus_tree = {
-	id = President Foster Beginning
+	id = USA_foster_start
 	country = {
 		factor = 0
 		modifier = {
