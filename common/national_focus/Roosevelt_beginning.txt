@@ -1,0 +1,592 @@
+focus_tree = {
+	id = Roosevelt Beginning
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+	#Focus for Clean Measures
+	focus = {
+		id = USA_clean_measures
+		icon = GFX_USA_clean_measures-40581
+		x = 17
+		y = 11
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_trying_again }
+		mutually_exclusive = { focus = USA_bribes_and_blackmail }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for For the Future!
+	focus = {
+		id = USA_for_the_future
+		icon = GFX_USA_for_the_future-39204
+		x = 14
+		y = 10
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_enough_to_pass }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Bribes and Blackmail
+	focus = {
+		id = USA_bribes_and_blackmail
+		icon = GFX_USA_bribes_and_blackmail-40580
+		x = 15
+		y = 11
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_trying_again }
+		mutually_exclusive = { focus = USA_clean_measures }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Counting the vote again...
+	focus = {
+		id = USA_counting_the_vote_again
+		icon = GFX_USA_counting_the_vote_again-37538
+		x = 16
+		y = 12
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_bribes_and_blackmail 
+		}
+		prerequisite = { 
+			focus = USA_clean_measures 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Kill the Bill...
+	focus = {
+		id = USA_kill_the_bill
+		icon = GFX_USA_kill_the_bill-39197
+		x = 18
+		y = 10
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_bill_fails }
+		mutually_exclusive = { focus = USA_trying_again }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Vote Succeeds!
+	focus = {
+		id = USA_the_vote_succeeds
+		icon = GFX_focus_generic_treaty
+		x = 9
+		y = 12
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_voting_begins }
+		mutually_exclusive = { focus = USA_the_vote_fails }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for As if it was Meant to be
+	focus = {
+		id = USA_as_if_it_was_meant_to_be
+		icon = GFX_USA_as_if_it_was_meant_to_be-38613
+		x = 10
+		y = 9
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_a_coalition_with_the_socialists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Counting the Vote
+	focus = {
+		id = USA_counting_the_vote
+		icon = GFX_USA_counting_the_vote-37538
+		x = 16
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_promises_we_can_keep }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Roosevelt Administration
+	focus = {
+		id = USA_the_roosevelt_administration
+		icon = GFX_focus_usa_recruit_the_free_corps
+		x = 13
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Listen to our Opponents
+	focus = {
+		id = USA_listen_to_our_opponents
+		icon = GFX_USA_listen_to_our_opponents-37468
+		x = 11
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_roosevelt_administration }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Liberal Cabinet
+	focus = {
+		id = USA_a_liberal_cabinet
+		icon = GFX_USA_a_liberal_cabinet-37486
+		x = 15
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_roosevelt_administration }
+		mutually_exclusive = { focus = USA_a_mixed_cabinet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Mixed Cabinet
+	focus = {
+		id = USA_a_mixed_cabinet
+		icon = GFX_USA_a_mixed_cabinet-37487
+		x = 13
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_roosevelt_administration }
+		mutually_exclusive = { focus = USA_a_liberal_cabinet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Way Forward
+	focus = {
+		id = USA_the_way_forward
+		icon = GFX_USA_the_way_forward-37485
+		x = 14
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_a_mixed_cabinet 
+			focus = USA_a_liberal_cabinet 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Promise Hope for America
+	focus = {
+		id = USA_promise_hope_for_america
+		icon = GFX_USA_promise_hope_for_america-37466
+		x = 12
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_listen_to_our_opponents }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Getting Started
+	focus = {
+		id = USA_getting_started
+		icon = GFX_USA_getting_started-37467
+		x = 13
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_promise_hope_for_america 
+		}
+		prerequisite = { 
+			focus = USA_the_way_forward 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Coalition with the Socialists?
+	focus = {
+		id = USA_a_coalition_with_the_socialists
+		icon = GFX_USA_a_coalition_with_the_socialists-37529
+		x = 10
+		y = 8
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_teaming_up }
+		mutually_exclusive = { focus = USA_a_coalition_with_the_conservatives }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Remembering the Constitution
+	focus = {
+		id = USA_remembering_the_constitution
+		icon = GFX_focus_chi_mission_to_the_us
+		x = 13
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_getting_started }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for For the People, By the People
+	focus = {
+		id = USA_for_the_people_by_the_people
+		icon = GFX_goal_support_democracy
+		x = 13
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_remembering_the_constitution }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Normal Game of Politics
+	focus = {
+		id = USA_a_normal_game_of_politics
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 14
+		y = 6
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_for_the_people_by_the_people }
+		mutually_exclusive = { focus = USA_a_peoples_coalition }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A People's Coalition
+	focus = {
+		id = USA_a_peoples_coalition
+		icon = GFX_goal_generic_national_unity
+		x = 12
+		y = 6
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_for_the_people_by_the_people }
+		mutually_exclusive = { focus = USA_a_normal_game_of_politics }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Teaming Up
+	focus = {
+		id = USA_teaming_up
+		icon = GFX_USA_teaming_up-37533
+		x = 11
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_a_peoples_coalition }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Promises We Can Keep
+	focus = {
+		id = USA_promises_we_can_keep
+		icon = GFX_goal_generic_major_alliance
+		x = 15
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_a_normal_game_of_politics }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Coalition with the Conservatives?
+	focus = {
+		id = USA_a_coalition_with_the_conservatives
+		icon = GFX_USA_a_coalition_with_the_conservatives-37539
+		x = 12
+		y = 8
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_teaming_up }
+		mutually_exclusive = { focus = USA_a_coalition_with_the_socialists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Weary Coalition...
+	focus = {
+		id = USA_a_weary_coalition
+		icon = GFX_USA_a_weary_coalition-37540
+		x = 12
+		y = 9
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_a_coalition_with_the_conservatives }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for ...But we can Manage
+	focus = {
+		id = USA_but_we_can_manage
+		icon = GFX_USA_but_we_can_manage-37537
+		x = 12
+		y = 10
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_a_weary_coalition }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Fighting for the People
+	focus = {
+		id = USA_fighting_for_the_people
+		icon = GFX_USA_fighting_for_the_people-37543
+		x = 10
+		y = 10
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_as_if_it_was_meant_to_be }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Voting Begins
+	focus = {
+		id = USA_the_voting_begins
+		icon = GFX_USA_the_voting_begins-37538
+		x = 11
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_fighting_for_the_people 
+			focus = USA_but_we_can_manage 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Vote fails!
+	focus = {
+		id = USA_the_vote_fails
+		icon = GFX_USA_the_vote_fails-37546
+		x = 12
+		y = 12
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_voting_begins }
+		mutually_exclusive = { focus = USA_the_vote_succeeds }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A New Hope...
+	focus = {
+		id = USA_a_new_hope
+		icon = GFX_USA_a_new_hope-39202
+		x = 9
+		y = 13
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_vote_succeeds }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Hope Will Always Succeed
+	focus = {
+		id = USA_hope_will_always_succeed
+		icon = GFX_USA_hope_will_always_succeed-39202
+		x = 10
+		y = 17
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_bill_lives }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Bill has Died...
+	focus = {
+		id = USA_the_bill_has_died
+		icon = GFX_USA_the_bill_has_died-39196
+		x = 12
+		y = 16
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_a_second_round_of_voting }
+		mutually_exclusive = { focus = USA_the_bill_lives }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Second Round of Voting
+	focus = {
+		id = USA_a_second_round_of_voting
+		icon = GFX_USA_a_second_round_of_voting-37538
+		x = 11
+		y = 15
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_is_needed_for_america }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Bill fails...
+	focus = {
+		id = USA_the_bill_fails
+		icon = GFX_USA_the_bill_fails-37546
+		x = 17
+		y = 9
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_counting_the_vote }
+		mutually_exclusive = { focus = USA_enough_to_pass }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for ...Is Needed for America
+	focus = {
+		id = USA_is_needed_for_america
+		icon = GFX_USA_is_needed_for_america-39340
+		x = 11
+		y = 14
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_a_stronger_coalition }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Enough to pass!
+	focus = {
+		id = USA_enough_to_pass
+		icon = GFX_focus_generic_treaty
+		x = 14
+		y = 9
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_counting_the_vote }
+		mutually_exclusive = { focus = USA_the_bill_fails }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Trying Again...
+	focus = {
+		id = USA_trying_again
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 16
+		y = 10
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_bill_fails }
+		mutually_exclusive = { focus = USA_kill_the_bill }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Bill Passes!
+	focus = {
+		id = USA_the_bill_passes
+		icon = GFX_focus_generic_treaty
+		x = 15
+		y = 13
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_counting_the_vote_again }
+		mutually_exclusive = { focus = USA_no_need_for_anymore_votes }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for To a Better Future!
+	focus = {
+		id = USA_to_a_better_future
+		icon = GFX_USA_to_a_better_future-39203
+		x = 15
+		y = 14
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_bill_passes }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Death of a Bill
+	focus = {
+		id = USA_the_death_of_a_bill
+		icon = GFX_USA_the_death_of_a_bill-39196
+		x = 13
+		y = 13
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_vote_fails }
+		mutually_exclusive = { focus = USA_a_stronger_coalition }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for No Need for Anymore Votes...
+	focus = {
+		id = USA_no_need_for_anymore_votes
+		icon = GFX_USA_no_need_for_anymore_votes-39197
+		x = 17
+		y = 13
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_counting_the_vote_again }
+		mutually_exclusive = { focus = USA_the_bill_passes }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Stronger Coalition...
+	focus = {
+		id = USA_a_stronger_coalition
+		icon = GFX_USA_a_stronger_coalition-39206
+		x = 11
+		y = 13
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_vote_fails }
+		mutually_exclusive = { focus = USA_the_death_of_a_bill }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Bill Lives!
+	focus = {
+		id = USA_the_bill_lives
+		icon = GFX_focus_generic_treaty
+		x = 10
+		y = 16
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_a_second_round_of_voting }
+		mutually_exclusive = { focus = USA_the_bill_has_died }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#End of focuses 
+ }

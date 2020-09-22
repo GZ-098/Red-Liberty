@@ -1,0 +1,407 @@
+focus_tree = {
+	id = Estonia beginning
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = EST
+		}
+	}
+	#Focus for A Smart One Learns From the Mistakes of Others
+	focus = {
+		id = EST_a_smart_one_learns_from_the_mistakes_of_others
+		icon = GFX_goal_unknown
+		x = 12
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_he_who_helps_himself_will_be_helped_by_others }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for He Who Helps Himself Will be Helped by Others
+	focus = {
+		id = EST_he_who_helps_himself_will_be_helped_by_others
+		icon = GFX_goal_unknown
+		x = 12
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_he_who_is_patient_will_live_long }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for All That Glimmers is Not Gold
+	focus = {
+		id = EST_all_that_glimmers_is_not_gold
+		icon = GFX_goal_unknown
+		x = 6
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_where_theres_work_theres_bread }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Work Will Teach the Worker
+	focus = {
+		id = EST_the_work_will_teach_the_worker
+		icon = GFX_goal_unknown
+		x = 10
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_make_fun_of_the_man_not_of_his_hat }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Steady Row, Far You'll Go
+	focus = {
+		id = EST_steady_row_far_youll_go
+		icon = GFX_goal_unknown
+		x = 8
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_old_love_does_not_rust }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Don't Sell the Bear Skin Until You Have the Bear
+	focus = {
+		id = EST_dont_sell_the_bear_skin_until_you_have_the_bear
+		icon = GFX_goal_unknown
+		x = 8
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_estonia_strong_and_brave }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Old Love Does Not Rust
+	focus = {
+		id = EST_old_love_does_not_rust
+		icon = GFX_goal_unknown
+		x = 8
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_one_does_not_look_into_the_mouth_of_a_horse_given_as_a_present }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Morning is Wiser than the Evening
+	focus = {
+		id = EST_the_morning_is_wiser_than_the_evening
+		icon = GFX_goal_unknown
+		x = 12
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_a_smart_one_learns_from_the_mistakes_of_others }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Cone Does Not Fall Far From the Tree
+	focus = {
+		id = EST_the_cone_does_not_fall_far_from_the_tree
+		icon = GFX_goal_unknown
+		x = 10
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_every_tup_has_his_st_michaels_day }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for One Does Not Look Into the Mouth of a Horse Given as a Present
+	focus = {
+		id = EST_one_does_not_look_into_the_mouth_of_a_horse_given_as_a_present
+		icon = GFX_goal_unknown
+		x = 8
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_an_old_bear_will_not_learn_to_dance }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for An Old Bear Will Not Learn To Dance
+	focus = {
+		id = EST_an_old_bear_will_not_learn_to_dance
+		icon = GFX_goal_unknown
+		x = 8
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_dont_sell_the_bear_skin_until_you_have_the_bear }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Send our Regards
+	focus = {
+		id = EST_send_our_regards
+		icon = GFX_goal_unknown
+		x = 11
+		y = 7
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_its_time_to_talk }
+		mutually_exclusive = { focus = EST_reaffirm_our_alliance }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus= EST_a_lie_has_short_legs
+		}
+	}
+	#Focus for Reaffirm our Alliance
+	focus = {
+		id = EST_reaffirm_our_alliance
+		icon = GFX_goal_unknown
+		x = 9
+		y = 7
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_its_time_to_talk }
+		mutually_exclusive = { focus = EST_send_our_regards }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus= EST_a_man_by_his_word_an_ox_by_his_horn
+		}
+	}
+	#Focus for Estonia, Strong and Brave!
+	focus = {
+		id = EST_estonia_strong_and_brave
+		icon = GFX_goal_unknown
+		x = 10
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for He Who Seeks Shall Find
+	focus = {
+		id = EST_he_who_seeks_shall_find
+		icon = GFX_goal_unknown
+		x = 6
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_estonia_strong_and_brave }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for He Who Does Not Work, Does Not Eat
+	focus = {
+		id = EST_he_who_does_not_work_does_not_eat
+		icon = GFX_goal_unknown
+		x = 6
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_he_who_seeks_shall_find }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for He Who is Late Will be Left Without
+	focus = {
+		id = EST_he_who_is_late_will_be_left_without
+		icon = GFX_goal_unknown
+		x = 6
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_he_who_does_not_work_does_not_eat }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Where There's Work, There's Bread
+	focus = {
+		id = EST_where_theres_work_theres_bread
+		icon = GFX_goal_unknown
+		x = 6
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_he_who_is_late_will_be_left_without }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Only a Sheep Lets Himself be Sheared
+	focus = {
+		id = EST_only_a_sheep_lets_himself_be_sheared
+		icon = GFX_goal_unknown
+		x = 14
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_estonia_strong_and_brave }
+		mutually_exclusive = { focus = EST_he_who_is_patient_will_live_long }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for He Who is Patient Will Live Long
+	focus = {
+		id = EST_he_who_is_patient_will_live_long
+		icon = GFX_goal_unknown
+		x = 12
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_estonia_strong_and_brave }
+		mutually_exclusive = { focus = EST_only_a_sheep_lets_himself_be_sheared }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for He Who Sows the Wind Will Reap a Storm
+	focus = {
+		id = EST_he_who_sows_the_wind_will_reap_a_storm
+		icon = GFX_goal_unknown
+		x = 14
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_only_a_sheep_lets_himself_be_sheared }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Where There's Smoke, There's Fire
+	focus = {
+		id = EST_where_theres_smoke_theres_fire
+		icon = GFX_goal_unknown
+		x = 14
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_he_who_sows_the_wind_will_reap_a_storm }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for He Who Brings Up the Past, Will Have His Eye Plucked Out
+	focus = {
+		id = EST_he_who_brings_up_the_past_will_have_his_eye_plucked_out
+		icon = GFX_goal_unknown
+		x = 14
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_where_theres_smoke_theres_fire }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Lie Has Short Legs
+	focus = {
+		id = EST_a_lie_has_short_legs
+		icon = GFX_goal_unknown
+		x = 14
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_he_who_brings_up_the_past_will_have_his_eye_plucked_out }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Man By His Word, An Ox By His Horn
+	focus = {
+		id = EST_a_man_by_his_word_an_ox_by_his_horn
+		icon = GFX_goal_unknown
+		x = 12
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_the_morning_is_wiser_than_the_evening }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Make Fun of the Man, Not of His Hat
+	focus = {
+		id = EST_make_fun_of_the_man_not_of_his_hat
+		icon = GFX_goal_unknown
+		x = 10
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_estonia_strong_and_brave }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Every Tup Has His St. Michael's Day
+	focus = {
+		id = EST_every_tup_has_his_st_michaels_day
+		icon = GFX_goal_unknown
+		x = 10
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_the_work_will_teach_the_worker }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Don't Rejoice Before the Evening
+	focus = {
+		id = EST_dont_rejoice_before_the_evening
+		icon = GFX_goal_unknown
+		x = 10
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = EST_the_cone_does_not_fall_far_from_the_tree }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for It's Time to Talk...
+	focus = {
+		id = EST_its_time_to_talk
+		icon = GFX_goal_unknown
+		x = 10
+		y = 6
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = EST_all_that_glimmers_is_not_gold
+			focus = EST_steady_row_far_youll_go
+			focus = EST_dont_rejoice_before_the_evening
+		}
+		prerequisite = { 
+			focus = EST_a_man_by_his_word_an_ox_by_his_horn
+		}
+		prerequisite = { 
+			focus = EST_a_lie_has_short_legs
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#End of focuses 
+ }

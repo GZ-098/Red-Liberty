@@ -44,12 +44,12 @@ set_popularities = {
 		elections_allowed = no
 	}
 	set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	conservatism = 7
+	revolutionary_socialism = 23
+	democratic_socialism = 37
+	liberalism = 18
+	conservatism = 11
+	autocratic_despotism = 1 
+	empowered_nationalism = 3
 	}
 }

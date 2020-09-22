@@ -1,0 +1,127 @@
+focus_tree = {
+	id = Rise of Goebbels
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	#Focus for Bribe Party Officials
+	focus = {
+		id = GER_bribe_party_officials
+		icon = GFX_GER_bribe_party_officials-38357
+		x = 11
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_attend_the_coronation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Establishing Contact with Inside Men
+	focus = {
+		id = GER_establishing_contact_with_inside_men
+		icon = GFX_GER_establishing_contact_with_inside_men-38386
+		x = 11
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_bribe_party_officials }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Attend the Coronation
+	focus = {
+		id = GER_attend_the_coronation
+		icon = GFX_GER_attend_the_coronation-38349
+		x = 11
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_announce_the_german_security_act }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Announce the German Security Act
+	focus = {
+		id = GER_announce_the_german_security_act
+		icon = GFX_GER_announce_the_german_security_act-38611
+		x = 11
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_all_eyes_on_goebbels }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Death of the Kaiser
+	focus = {
+		id = GER_the_death_of_the_kaiser
+		icon = GFX_GER_the_death_of_the_kaiser-38609
+		x = 11
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for All Eyes on Goebbels
+	focus = {
+		id = GER_all_eyes_on_goebbels
+		icon = GFX_GER_all_eyes_on_goebbels-38713
+		x = 11
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_the_death_of_the_kaiser }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Operation: LEISTUNG
+	focus = {
+		id = GER_operation_leistung
+		icon = GFX_GER_operation_leistung-38612
+		x = 11
+		y = 7
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_threaten_the_kaiser }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Rise of Goebbels
+	focus = {
+		id = GER_the_rise_of_goebbels
+		icon = GFX_GER_the_rise_of_goebbels-38712
+		x = 11
+		y = 8
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_operation_leistung }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Threaten the Kaiser
+	focus = {
+		id = GER_threaten_the_kaiser
+		icon = GFX_GER_threaten_the_kaiser-38393
+		x = 11
+		y = 6
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_establishing_contact_with_inside_men }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#End of focuses 
+ }
