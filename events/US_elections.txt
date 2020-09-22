@@ -1,0 +1,29 @@
+add_namespace = us_election
+
+country_event = {
+	id = us_election.1
+	
+	title = {
+		text = us_bill.1.t_passed
+	}
+	desc = {
+		text = us_bill.1.d_passed
+	}
+
+	is_triggered_only = yes
+
+	option = { # roosevelt wins
+		name = us_election.1.a
+		#load_focus_tree = 
+	}
+	
+	option = { # thomas wins
+		name = us_election.1.b
+		#load_focus_tree = 
+	}
+	
+	option = { # foster wins
+		name = us_election.1.c
+		load_focus_tree = USA_foster_start
+	}
+}
