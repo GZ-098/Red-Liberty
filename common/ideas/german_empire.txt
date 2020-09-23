@@ -168,7 +168,6 @@ ideas = {
 			
 			allowed = {
 				original_tag = GER
-				has_dlc = "Waking the Tiger"
 			}
 			
 			traits = { monarchist_media_mogul }
