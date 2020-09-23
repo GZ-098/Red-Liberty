@@ -41,9 +41,9 @@ bookmarks = {
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-				sour_loser
-				general_staff
-				GER_mefo_bills_1
+	unpaid_war_expenses
+	faith_in_the_kaiser
+	the_loss_of_a_generation
 			}
 			focuses = {
 			}
@@ -52,9 +52,6 @@ bookmarks = {
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = autocratic_despotism 
 			ideas = {
-	unpaid_war_expenses
-	faith_in_the_kaiser
-	the_loss_of_a_generation
 			}	
 			focuses = {
 			}		
