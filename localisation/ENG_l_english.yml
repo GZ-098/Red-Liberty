@@ -3,7 +3,10 @@
  ENG_DEF:0 "United Kingdom"
  ENG_ADJ:0 "British"
 
- ENG_a_unstable_coalition:0 "An Unstable Coalition"
+ ENG_a_unstable_coalition:0 "An Unstable Government"
+ ENG_a_unstable_coalition_desc:0 "The Atlee Government under the Labour Party has been since it's conception, entirely unstable. A healthy distrust of their Socialistic policies and weak leadership in the face of National Crisis has led to the people of Great Britain to look elsewhere for leadership."
  ENG_polarized_politics:0 "Polarized Politics"
+ ENG_polarized_politics_desc:0 "The United Kingdom has long been regarded as a bastion of level-headedness and stoicism politically - but following the stalemate of The War to End All Wars, British Society has moved closer and closer towards radicalization and dirty politics. The average British citizen can no longer escape the issue of the day, or issue a neutral response without gaining many an enemy."
  ENG_extremist_militant_groups:0 "Militant Extremism"
+ ENG_extremist_militant_groups_desc:0 "With rapid support building in favour of the British Union of Fascists and their leftwing counterpart, the Communist Party of Great Britain - militias in favour of these extremist ideologies have begun to form and arm themselves for what they see as an inevitable ideological struggle. Planning a defence or rather an offensive within the British Isles by His Majesty's Armed Forces will be met with large scale civilian resistance depending on the enemy."
  

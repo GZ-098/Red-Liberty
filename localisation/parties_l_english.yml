@@ -6,6 +6,12 @@
  autocratic_despotism:0 "Autocratic Despotism"
  empowered_nationalism:0 "Empowered Nationalism"
 
+ revolutionary_socialism_drift:0 "Revolutionary Socialism Drift"
+ democratic_socialism_drift:0 "Democratic Socialism Drift"
+ liberalism_drift:0 "Liberalism Drift"
+ conservatism_drift:0 "Conservatism Drift"
+ autocratic_despotism_drift:0 "Autocratic Despotism Drift"
+ empowered_nationalism_drift:0 "Empowered Nationalism Drift"
 
  ENG_british_union_of_fascist:0 "BUF" 
  ENG_british_union_of_fascist_long:0 "British Union of Fascists" 
