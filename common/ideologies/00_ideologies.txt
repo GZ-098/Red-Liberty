@@ -62,7 +62,7 @@ ideologies = {
 	
 		types = {
 			
-			democratic_socialist = {
+			democratic_socialist_subtype = {
 			}	
 
 		}
