@@ -59,7 +59,10 @@ if = {
 		basic_torpedo = 1
 	}
 }
-1936.1.1 = {
+
+set_variable = { UKR_austrian_influence = 27 }
+set_variable = { UKR_russian_influence = 15 }
+
 set_politics = {
 	ruling_party = autocratic_despotism
 	last_election = "1932.11.8"
@@ -74,25 +77,8 @@ set_popularities = {
 	conservatism = 0 
 	autocratic_despotism = 0 
 	empowered_nationalism = 0 
-} 
 }
-1939.1.1 = {
-	set_politics = {
-		ruling_party = autocratic_despotism
-		last_election = "1939.7.15"
-		election_frequency = 0
-		elections_allowed = no
-	}
-	set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
-	}
-}
+
 create_country_leader = {
 	name = "Kost Levytsky"
 	desc = ""

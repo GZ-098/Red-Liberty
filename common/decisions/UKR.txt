@@ -1,0 +1,32 @@
+UKR_foreign_influence_category = {
+	
+	UKR_grant_austrian_concession = {
+	
+		icon = ger_mefo_bills
+		
+		visible = {
+			always = yes
+		}
+		
+		cost = 15
+		
+		complete_effect = {
+			
+		}
+	}
+	
+	UKR_search_for_soviet_spies = {
+	
+		icon = ger_mefo_bills
+		
+		visible = {
+			always = yes
+		}
+		
+		cost = 15
+		
+		complete_effect = {
+			
+		}
+	}
+}

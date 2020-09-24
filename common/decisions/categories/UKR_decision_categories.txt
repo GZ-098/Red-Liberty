@@ -1,0 +1,11 @@
+UKR_foreign_influence_category = {
+
+	icon = usa_congress
+	
+	allowed = {
+		original_tag = UKR
+	}
+	visible = {
+		original_tag = UKR
+	}
+}
