@@ -24,7 +24,7 @@ USA_congress = {
 		}
 	}
 	
-############## DO NOT MODIFY BELOW THIS LINE ###################################
+############## DO NOT MODIFY BELOW THIS LINE ### I'm gonna modify beyond this line if I don't get my 1 million dollars #################################
 	
 	start_vote = {
 		icon = ger_mefo_bills
