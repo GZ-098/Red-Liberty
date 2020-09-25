@@ -1,0 +1,838 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Infantry Division"  	# Standard formation for frontline divisions
+
+	division_names_group = USA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
+		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
+	}
+}
+division_template = {
+	name = "National Guard"
+
+	division_names_group = USA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
+		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
+	}
+	priority = 0
+}
+division_template = {
+	name = "Organized Reserve"
+
+	division_names_group = USA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # US Eng Rgt consisted of 2 Bns
+	}
+	priority = 0
+}
+division_template = {
+	name = "Garrison Division"
+
+	#division_names_group = USA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Cavalry Division"  		# 1st Cavalry Division only
+
+	division_names_group = USA_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # US Cav Recon consisted of 52 ACs, 13 L Arm
+		engineer = { x = 0 y = 1 }   # US Eng Bn
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Marine Brigade" 		# 1st, 2nd Marine Brigades, precursors to 1st, 2nd USMC Divisions
+
+	division_names_group = USA_MAR_01
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+	priority = 2
+}
+
+###### OOB ######
+units = {
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3878 # Fort Hamilton, NYC, NY
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 12782 # Fort Sam Houston, San Antonio, TX
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 7386 # Fort Lewis, WA
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12384 # Fort McPherson, Atlanta, GA
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 6855 # Columbus, Ohio
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 9450 # Chicago, IL
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 6845 # Philadelphia, PA
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 6732 # Boston, MA
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 6732 # Boston, MA
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = 3878 # Manhattan, NYC, NY
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 6845 # Philadelphia, PA
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 3957 # Washington DC
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location = 12384 # Atlanta, GA
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = 1572 # St. Augustine, FL
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}
+		location = 6769 # Lansing, MI
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 9450 # Chicago, IL
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = 10666 # Council Bluffs, IA
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location = 10337 # Houston, TX
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 37
+		}
+		location = 6855 # Columbus, OH
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 38
+		}
+		location = 1595 # Indianapolis, IN
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 40
+		}
+		location = 3678 # Berkeley, CA
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
+		location = 9850 # Hartford, CT
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 6882 # Newark, NJ
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 45
+		}
+		location = 10798 # Oklahoma City, OK
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 76
+		}
+		location = 9850 # Hartford, CT
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 77
+		}
+		location = 3878 # Manhattan, NYC, NY
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 78
+		}
+		location = 6882 # Newark, NJ
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 79
+		}
+		location = 6845 # Philadelphia, PA
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 80
+		}
+		location = 3823 # Richmond, VA
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 81
+		}
+		location = 10657 # Knoxville, TN
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 82
+		}
+		location = 7012 # Columbia, SC
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 83
+		}
+		location = 6855 # Fort Hayes, Columbus, OH
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 84
+		}
+		location = 1595 # Indianapolis, IN
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 85
+		}
+		location = 6710 # Detroit, MI
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 86
+		}
+		location = 9450 # Chicago, IL
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 87
+		}
+		location = 7552 # New Orleans, LA
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 88
+		}
+		location = 1866 # Minneapolis, MN
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 89
+		}
+		location = 12586 # Omaha, NE
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 90
+		}
+		location = 12782 # San Antonio, TX 
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 91
+		}
+		location = 9671 # San Francisco, CA
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 94
+		}
+		location = 6732 # Boston, MA
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 95
+		}
+		location = 10798 # Oklahoma City, OK
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 96
+		}
+		location = 3513 # Portland, OR
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 97
+		}
+		location = 3712 # Manchester, NH
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 98
+		}
+		location = 3747 # Syracuse, NY
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 99
+		}
+		location = 11800 # Pittsburgh, PA
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 100
+		}
+		location = 6971 # Huntington, WV
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		}
+		location = 12357 # Milwaukee, WI
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 102
+		}
+		location = 4569 # St. Louis, MO
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 103
+		}
+		location = 1827 # Denver, CO
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 104
+		}
+		location = 4865 # Salt Lake City, UT
+		division_template = "Organized Reserve"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division = {
+		name = "Panama Canal Division"
+		location = 7617 # Fort Amador, CZ
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+	division = {
+		name = "Hawaiian Division"
+		location = 4180 # Schofeld Barracks, TH
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+	division = {
+		name = "Philippine Division"
+		location = 10265 # Fort McKinley, Manila, PI
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5022 # Fort Hood, TX
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 12513 # Fort Riley, KN
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+}
+	
+	
+air_wings = {
+	### 1 USAAF Wing -- Los Angeles
+	378 = {
+		# 7th Bombardment Group 
+		# 19th Bombardment Group 
+		tac_bomber_equipment_0 = {
+			owner = "USA" 
+			amount = 60
+		}
+		# 17th Attack Group 
+		CAS_equipment_1 = {
+			owner = "USA" 
+			amount = 48
+		}
+	}
+
+	### 2 USAAF Wing -- Norfolk
+	362 = { 
+		# 1st Pursuit Group 
+		# 8th Pursuit Group 
+		fighter_equipment_0 =  {
+			owner = "USA" 
+			amount = 144
+		}
+		# 2nd Bombardment Group 
+		# 9th Bombardment Group 
+		tac_bomber_equipment_0 = {
+			owner = "USA" 
+			amount = 96
+		}
+	}
+
+	### 3 USAAF Wing -- Louisiana
+	371 = { 
+		# 20th Pursuit Group 
+		fighter_equipment_0 =  {
+			owner = "USA" 
+			amount = 96
+		}
+		# 3rd Attack Group 
+		CAS_equipment_1 = {
+			owner = "USA" 
+			amount = 48
+		}
+	}
+
+	### 18th Composite Wing -- Hawaii
+	629 = { 
+		# 18th Pursuit Group 
+		fighter_equipment_0 =  {
+			owner = "USA" 
+			amount = 48
+		}
+		# 5th Composite Group 
+		tac_bomber_equipment_0 = {
+			owner = "USA" 
+			amount = 36
+		}
+	}
+
+	### 19th Composite Wing -- Panama Canal
+	685 = { 
+		# 16th Pursuit Group 
+		fighter_equipment_0 =  {
+			owner = "USA" 
+			amount = 96
+		}
+		# 6th Composite Group 
+		tac_bomber_equipment_0 = {
+			owner = "USA" 
+			amount = 12
+		}
+	}
+
+	### Philippines Composite Group -- Manilla
+#	327 = { 
+#		# 4th Composite Group 
+#		fighter_equipment_0 =  {
+#			owner = "USA" 
+#			amount = 36
+#		}
+#	}
+
+	### USN Atlantic Naval Patrol Division -- Norfolk
+	362 = { 
+		# Naval Patrol Wing 3 
+		nav_bomber_equipment_1 =  {
+			owner = "USA" 
+			amount = 36
+		}
+	}
+	### USN Pacific Naval Patrol Division -- San Diego
+	378 = { 
+		# Naval Patrol Wing 1 
+		# Naval Patrol Wing 2 
+		nav_bomber_equipment_1 =  {
+			owner = "USA" 
+			amount = 72
+		}
+	}
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+		
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "USA"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = cv_fighter_equipment_0
+			creator = "USA" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_carrier_conversion_bb
+			creator = "USA"
+			version_name = "Ranger Class"
+		}
+		name = "USS Ranger"
+		requested_factories = 4
+		progress = 0.02
+		amount = 1
+	}
+
+
+}
+#####################
