@@ -859,7 +859,6 @@ popularity = 0.15
 			add_state_core = 736 
 			add_state_core = 103 
 			add_state_core = 163 
-			add_state_core = 798
 		}
     } 
 
@@ -1118,29 +1117,8 @@ popularity = 0.15
 			factor = 15
 		}
 		completion_reward = { 
-			start_border_war = {
-    			change_state_after_war = yes 
-    			attacker = {
-        			state = 159
-        			num_provinces = 10
-        			on_win = italy.1
-        			on_lose = italy.2
-        			on_cancel = italy.3
-    			} 
-		 
-
-
-    			defender = {
-        			state = 39
-        				num_provinces = 7
-        				on_win = austriahungary.1
-        				on_lose = austriahungary.2
-        				on_cancel = austriahungar.3
-    				}
-				} 
-
 			
-			} 
+		} 
 	} 
 
 	focus = {

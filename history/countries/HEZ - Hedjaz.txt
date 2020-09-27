@@ -1,4 +1,4 @@
-﻿capital = 293
+﻿capital = 679
 
 oob = "HEZ_1936"
 
@@ -49,7 +49,7 @@ set_convoys = 5
 }
 
 set_politics = {
-	ruling_party = revolutionary_socialism
+	ruling_party = liberalism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
@@ -69,7 +69,7 @@ create_country_leader = {
 	desc = "POLITICS_IMAM_YAHYA_DESC"
 	picture = "GFX_portrait_yemen_imam_yahya"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = liberal
 	traits = {
 		#
 	}

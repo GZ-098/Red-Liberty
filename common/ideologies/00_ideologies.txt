@@ -115,10 +115,10 @@ ideologies = {
 	
 	liberalism = {
 		
-		types = {
-		
+		types = { 
+
 			liberalism_subtype = {
-			
+		
 			}
 		}
 		
