@@ -60,7 +60,7 @@ if = {
 	}
 }
 
-set_variable = { UKR_austrian_influence = 27 }
+set_variable = { UKR_german_influence = 27 }
 set_variable = { UKR_russian_influence = 15 }
 
 set_politics = {
