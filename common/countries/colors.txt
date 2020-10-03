@@ -715,3 +715,23 @@ USA = {
 	color = rgb { 0 115 255 }
 	color_ui = rgb { 0 115 255 }
 }
+
+IDE  = {
+	color = rgb { 0 147 221 }
+	color_ui = rgb { 0 147 221 }
+}
+
+RUS = {
+	color = rgb { 95 135 80 }
+	color_ui = rgb { 77 133 56 }
+}
+
+NRR = {
+	color = rgb { 106 183 186 }
+	color_ui = rgb { 106 183 186 }
+}
+
+ALT = {
+	color = rgb { 186 185 106 }
+	color_ui = rgb { 186 185 106 }
+}

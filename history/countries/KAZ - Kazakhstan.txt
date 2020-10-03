@@ -70,6 +70,8 @@ set_popularities = {
 	empowered_nationalism = 0 
 }
 
+set_cosmetic_tag = KAZ_russia
+
 create_country_leader = {
 	name = "Nikolay Aleksandrovich Skvortsov"
 	desc = ""
