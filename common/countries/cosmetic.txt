@@ -2,3 +2,8 @@ SBR_russia = {
 	color = rgb { 95 135 80 }
 	color_ui = rgb { 77 133 56 }
 }
+
+KAZ_russia = {
+	color = rgb { 95 135 80 }
+	color_ui = rgb { 77 133 56 }
+}
