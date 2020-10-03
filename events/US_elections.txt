@@ -26,4 +26,21 @@ country_event = {
 		name = us_election.1.c
 		load_focus_tree = USA_foster_start
 	}
+} 
+
+country_event = {
+	id = us_election.2
+	title = us_election.2.t
+	desc = us_election.2.d
+	picture = GFX_report_event_norman_thomas_elected 
+
+	is_triggered_only = yes 
+
+	trigger = {
+		has_completed_focus = { focus = USA_the_thomas_administration }
+	}
+	
+	option = {
+		name = "A smile spread across Thomas’s face, and he continued his speech."
+	}
 }
