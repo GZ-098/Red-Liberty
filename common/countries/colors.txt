@@ -730,3 +730,8 @@ NRR = {
 	color = rgb { 106 183 186 }
 	color_ui = rgb { 106 183 186 }
 }
+
+ALT = {
+	color = rgb { 186 185 106 }
+	color_ui = rgb { 186 185 106 }
+}
