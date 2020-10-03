@@ -720,3 +720,8 @@ IDE  = {
 	color = rgb { 0 147 221 }
 	color_ui = rgb { 0 147 221 }
 }
+
+RUS = {
+	color = rgb { 95 135 80 }
+	color_ui = rgb { 77 133 56 }
+}

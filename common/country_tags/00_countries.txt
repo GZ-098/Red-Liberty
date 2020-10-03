@@ -207,3 +207,6 @@ COR = "countries/Corsica.txt"
 
 RUS = "countries/Russian State.txt"
 IDE = "countries/Idel-Ural.txt"
+ALT = "countries/Altai.txt"
+SBR = "countries/Siberia.txt"
+FER = "countries/Far Eastern Republic.txt"
