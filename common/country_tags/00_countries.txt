@@ -204,3 +204,6 @@ ADU = "countries/Andalusia.txt"
 BRI = "countries/Brittany.txt"
 OCC = "countries/Occitania.txt"
 COR = "countries/Corsica.txt"
+
+RUS = "countries/Russian State.txt"
+IDE = "countries/Idel-Ural.txt"

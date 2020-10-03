@@ -1,0 +1,52 @@
+﻿capital = 249
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		mtg_transport = 1
+	}
+}
+
+
+
+
+set_research_slots = 2
+set_convoys = 50
+set_stability = 0.75
+
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+
+}
+set_popularities = {
+	revolutionary_socialism = 5
+	democratic_socialism = 5
+	liberalism = 5
+	conservatism = 75
+	autocratic_despotism = 10 
+	empowered_nationalism = 0 
+}
+
