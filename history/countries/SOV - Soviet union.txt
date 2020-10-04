@@ -82,7 +82,7 @@ if = {
 }
 
 set_convoys = 50
-1936.1.1 = { 
+
 set_politics = {
 	ruling_party = revolutionary_socialism
 	last_election = "1932.11.8"
@@ -97,14 +97,6 @@ set_popularities = {
 	autocratic_despotism = 3
 	empowered_nationalism = 4
 }
-}
-
-
-create_faction = Comintern
-add_to_faction = SOV
-add_to_faction = MON
-add_to_faction = TAN
-
 
 add_ideas = {
 	SOV_home_of_the_revolution
@@ -117,28 +109,6 @@ create_country_leader = {
 	#picture = "Portrait_Soviet_Joseph_Stalin.dds"
 	expire = "1953.3.1"
 	ideology = stalinism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Konstantin Rodzaevsky"
-	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
-	picture = "Portrait_Soviet_Konstantin_Rodzaevsky.dds"
-	expire = "1953.3.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Alexander Fyodorovich Kerensky"
-	desc = "POLITICS_ALEXANDER_FYODOROVICH_KERENSKY_DESC"
-	picture = "Portrait_Soviet_Generic_1.dds"
-	expire = "1953.3.1"
-	ideology = socialism
 	traits = {
 		
 	}
