@@ -64,8 +64,6 @@ country_event = {
 	}
 } 
 
-
-
 country_event = {
 	id = us_election.4
 	title = us_election.4.t
