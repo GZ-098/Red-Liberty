@@ -30,7 +30,7 @@ country_event = {
 	desc = redliberty.2.d
 	picture = GFX_report_event_norman_thomas_elected 
 
-	is_triggered_only = yes }
+	is_triggered_only = yes 
 	
 	option = { 
 		ai_chance = { factor = 100 }
@@ -39,9 +39,9 @@ country_event = {
 } 
 
 country_event = {
-	id = redliberty.5
-	title = redliberty.5.t
-	desc = redliberty.5.d
+	id = redliberty.3
+	title = redliberty.3.t
+	desc = redliberty.3.d
 	picture = GFX_report_event_usa_election_generic
 
 	is_triggered_only = yes 
@@ -63,6 +63,34 @@ country_event = {
 	option = { 
 		ai_chance = { factor = 100 }
 		name = "There can be no compromise on morality"
+	}
+} 
+
+country_event = {
+	id = redliberty.5
+	title = redliberty.5.t
+	desc = redliberty.5.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes 
+	
+	option = { 
+		ai_chance = { factor = 100 }
+		name = "Now let’s put it into effect"
+	}
+} 
+
+country_event = {
+	id = redliberty.6
+	title = redliberty.6.t
+	desc = redliberty.6.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes 
+	
+	option = { 
+		ai_chance = { factor = 100 }
+		name = "Now, let’s see…”"
 	}
 }
 
