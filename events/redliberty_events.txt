@@ -1,6 +1,7 @@
 add_namespace = redliberty
-
-##Event: US lore
+####################
+##	 US events   ##
+###################
 country_event = {
 	id = redliberty.1
 	title = "US Lore"
@@ -16,9 +17,64 @@ country_event = {
 	
 	mean_time_to_happen = { days = 1 }
 
-	}
+
 	option = {
 		name = "Got it"
 		ai_chance = { factor = 1} 
 	}
+} 
+
+country_event = {
+	id = redliberty.2
+	title = redliberty.2.t
+	desc = redliberty.2.d
+	picture = GFX_report_event_norman_thomas_elected 
+
+	is_triggered_only = yes 
+
+	trigger = {
+		has_completed_focus = { focus = USA_the_thomas_administration }
+	}
+	
+	option = { 
+		ai_chance = { factor = 100 }
+		name = "A smile spread across Thomas’s face, and he continued his speech."
+	}
+} 
+
+country_event = {
+	id = redliberty.5
+	title = redliberty.5.t
+	desc = redliberty.5.d
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes 
+
+	trigger = {
+		has_completed_focus = { focus = USA_a_mixed_cabinet }
+	}
+	
+	option = { 
+		ai_chance = { factor = 100 }
+		name = "Compromise is a virtue"
+	}
+} 
+
+country_event = {
+	id = redliberty.4
+	title = redliberty.4.t
+	desc = redliberty.4.d
+	picture = GFX_report_event_generic_communist_congress 
+
+	is_triggered_only = yes 
+
+	trigger = {
+		has_completed_focus = { focus = USA_a_socialist_cabinet }
+	}
+	
+	option = { 
+		ai_chance = { factor = 100 }
+		name = "There can be no compromise on morality"
+	}
 }
+
