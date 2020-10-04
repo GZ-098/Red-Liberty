@@ -90,7 +90,7 @@ country_event = {
 	
 	option = { 
 		ai_chance = { factor = 100 }
-		name = "Now, let’s see…”"
+		name = "Now, let’s see..."
 	}
 }
 
