@@ -18,7 +18,7 @@ spriteTypes = {
 		texturefile = "gfx/event_gfx/report_event_usa_election_generic.dds"
 	}  
 	spriteType = {
-		name = "GFX_report_event_generic_communist_congress 
+		name = "GFX_report_event_generic_communist_congress" 
 		texturefile = "gfx/event_gfx/report_event_generic_communist_congress.dds"
 	}
 }
