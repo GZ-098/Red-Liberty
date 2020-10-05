@@ -1,6 +1,6 @@
 ﻿capital = 652
 
-oob = ""
+oob = "ORE"
 
 set_research_slots = 2
 
@@ -22,11 +22,19 @@ set_politics = {
 set_popularities = {
 	revolutionary_socialism = 5
 	democratic_socialism = 5
-	liberalism = 5
-	conservatism = 0
-	autocratic_despotism = 85
+	liberalism = 15
+	conservatism = 20
+	autocratic_despotism = 55
 	empowered_nationalism = 0 
 }
 
-
-
+create_country_leader = {
+	name = "Alexander Dutov"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
