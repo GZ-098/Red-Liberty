@@ -49,5 +49,4 @@ set_popularities = {
 
 create_faction = RUS_white_movement
 
-puppet = SBR
 puppet = KAZ

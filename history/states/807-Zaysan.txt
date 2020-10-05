@@ -1,0 +1,21 @@
+
+state={
+	id=807
+	name="STATE_807"
+
+	history={
+		owner = SCH
+		add_core_of = SCH
+		add_core_of = KAZ
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		1749 1818 1864 4674 7784 7890 10610 10680 12427 12529 12564 12635 12662 13149 13197 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}
