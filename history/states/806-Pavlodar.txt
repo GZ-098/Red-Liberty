@@ -1,0 +1,20 @@
+state={
+	id=806
+	name="STATE_806"
+
+	history={
+		owner = RUS
+		add_core_of = RUS
+		add_core_of = KAZ
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces={
+		1879 4661 4670 4685 7317 7708 10202 10235 10630 12616 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

@@ -1,0 +1,23 @@
+
+state={
+	id=808
+	name="STATE_808"
+
+	history={
+		owner = RUS
+		add_core_of = RUS
+		add_core_of = KAZ
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		1229 1309 1375 1391 1418 1662 1680 1694 4238 4281 4309 4850 7298 7326 7383 7741 7874 10211 10239 10308 10633 12619 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
