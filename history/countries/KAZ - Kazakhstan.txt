@@ -1,4 +1,4 @@
-﻿capital = 586 #Almaty
+﻿capital = 590
 
 oob = "KAZ_1936"
 
