@@ -739,3 +739,8 @@ SCH = {
 	color = rgb { 232 46 46 }
 	color_ui = rgb { 232 46 46 }
 }
+
+ORE = {
+	color = rgb { 119 201 212 }
+	color_ui = rgb { 119 201 212 }
+}

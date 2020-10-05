@@ -48,5 +48,7 @@ set_popularities = {
 }
 
 create_faction = RUS_white_movement
+add_to_faction = ORE
+add_to_faction = SCH
 
 puppet = KAZ

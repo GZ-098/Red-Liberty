@@ -1,19 +1,22 @@
+
 state={
 	id=805
 	name="STATE_805"
-	
+
 	history={
 		owner = IDE
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = IDE
+
 	}
-	
+
 	provinces={
-		1406 4265 4311 4383 7300 7373 12200 
+		1258 1278 4265 4311 7300 7373 10185 10226 12117 12130 12200 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category=rural
 }

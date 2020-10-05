@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = IDE
+		owner = SOV
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1
@@ -18,7 +18,7 @@ state={
 		victory_points = {
 			6338 10
 		}
-		add_core_of = IDE
+		add_core_of = SOV
 	}
 
 	provinces={
