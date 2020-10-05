@@ -1,6 +1,6 @@
 ﻿capital = 219
 
-oob = "SOV_1936"
+oob = ""
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "SOV_1936_naval_mtg"
