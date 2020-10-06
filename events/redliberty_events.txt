@@ -92,5 +92,21 @@ country_event = {
 		ai_chance = { factor = 100 }
 		name = "Now, let’s see..."
 	}
+} 
+
+country_event = {
+	id = redliberty.7
+	title = redliberty.7.t
+	desc = redliberty.7.d
+	picture = GFX_report_event_death_of_charles_curtis
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+	option = { 
+		ai_chance = { factor = 100 }
+		name = "Rest in peace, old friend"
+	}
 }
 
