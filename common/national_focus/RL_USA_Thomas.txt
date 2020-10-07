@@ -1,0 +1,255 @@
+shared_focus = {
+    id = USA_the_thomas_admin
+	
+    x = 10
+	
+	cost = 2
+    completion_reward = {
+        country_event = {
+			id = redliberty.2
+			days = 1
+		}
+    }
+}
+
+shared_focus = {
+    id = USA_socialist_cabinet
+	
+    x = 1
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_the_thomas_admin
+	mutually_exclusive = {
+		focus = USA_liberal_cabinet
+	}
+	prerequisite = { focus = USA_the_thomas_admin }
+    completion_reward = {
+        country_event = {
+			id = redliberty.4
+			days = 1
+		}
+    }
+}
+
+shared_focus = {
+    id = USA_liberal_cabinet
+	
+	x = -1
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_the_thomas_admin
+	mutually_exclusive = {
+		focus = USA_socialist_cabinet
+	}
+	prerequisite = { focus = USA_the_thomas_admin }
+    completion_reward = {
+        country_event = {
+			id = redliberty.3
+			days = 1
+		}
+    }
+}
+
+shared_focus = {
+    id = USA_plans_for_presidency
+	
+    x = 1
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_liberal_cabinet
+	prerequisite = { focus = USA_liberal_cabinet OR = USA_socialist_cabinet }
+    completion_reward = {
+        country_event = {
+			id = redliberty.5
+			days = 1
+		}
+    }
+}
+
+shared_focus = {
+    id = USA_review_the_constitution
+	
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_plans_for_presidency
+	prerequisite = { focus = USA_plans_for_presidency }
+    completion_reward = {
+        country_event = {
+			id = redliberty.6
+			days = 1
+		}
+    }
+}
+
+shared_focus = {
+    id = USA_accept_our_limitations
+	
+	x = -1
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_review_the_constitution
+	mutually_exclusive = {
+		focus = USA_we_cannot_be_impeded
+	}
+	prerequisite = { focus = USA_review_the_constitution }
+    completion_reward = {
+        
+    }
+}
+
+shared_focus = {
+    id = USA_toe_the_line
+	
+	x = -1
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_accept_our_limitations
+	prerequisite = { focus = USA_accept_our_limitations }
+    completion_reward = {
+        
+    }
+}
+
+shared_focus = {
+    id = USA_deals_and_compromises
+	
+	x = -1
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_toe_the_line
+	prerequisite = { focus = USA_toe_the_line }
+    completion_reward = {
+        
+    }
+}
+
+shared_focus = {
+    id = USA_liberal_path
+	
+	x = -3
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_deals_and_compromises
+	mutually_exclusive = {
+		focus = USA_conservative_path
+		focus = USA_moderate_path
+	}
+	prerequisite = { focus = USA_deals_and_compromises }
+    completion_reward = {
+        
+    }
+}
+
+shared_focus = {
+    id = USA_liberal_coalition
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_liberal_path
+	prerequisite = { focus = USA_liberal_path }
+    completion_reward = {
+        
+    }
+}
+
+shared_focus = {
+    id = USA_moderate_path
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_deals_and_compromises
+	mutually_exclusive = {
+		focus = USA_conservative_path
+		focus = USA_liberal_path
+	}
+	prerequisite = { focus = USA_deals_and_compromises }
+    completion_reward = {
+        
+    }
+}
+
+shared_focus = {
+    id = USA_conservative_path
+	
+	x = 3
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_deals_and_compromises
+	mutually_exclusive = {
+		focus = USA_conservative_path
+		focus = USA_moderate_path
+	}
+	prerequisite = { focus = USA_deals_and_compromises }
+    completion_reward = {
+        
+    }
+}
+
+shared_focus = {
+    id = USA_conservative_coalition
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_conservative_path
+	prerequisite = { focus = USA_conservative_path }
+    completion_reward = {
+        
+    }
+}
+
+shared_focus = {
+    id = USA_we_cannot_be_impeded
+	
+	x = 1
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_review_the_constitution
+	mutually_exclusive = {
+		focus = USA_accept_our_limitations
+	}
+	prerequisite = { focus = USA_review_the_constitution }
+    completion_reward = {
+        
+    }
+}
+
+shared_focus = {
+    id = USA_who_cares
+	
+	x = 1
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_we_cannot_be_impeded
+	prerequisite = { focus = USA_we_cannot_be_impeded }
+    completion_reward = {
+        
+    }
+}
+
+shared_focus = {
+    id = USA_all_in
+	
+	x = 1
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_who_cares
+	prerequisite = { focus = USA_who_cares }
+    completion_reward = {
+        
+    }
+}

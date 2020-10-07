@@ -1,0 +1,17 @@
+###INITIAL TREE
+focus_tree = {
+	id = USA_initial_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+	continuous_focus_position = {
+		x = 25
+		y = 125
+	}
+	default = no
+	shared_focus = USA_the_thomas_admin
+}
