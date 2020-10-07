@@ -38,7 +38,7 @@
  USA_congress_fascist_rep_count:0 "\n§g[?representatives_fascist]§! Representative(s) support the §gNational League of Fascists§!."
  USA_congress_fascist_senator_count:0 "\n§g[?senators_fascist]§! Senator(s) support the §gNational League of Fascists§!."
  
- USA_congress_communist_rep_count:0 "\n§R[?representatives_wpa]§! Representative(s) support the §RCommunist Party of America§!."
+ USA_congress_communist_rep_count:0 "\n§R[?representatives_communist]§! Representative(s) support the §RCommunist Party of America§!."
  USA_congress_communist_senator_count:0 "\n§R[?senators_communist]§! Senator(s) support the §RCommunist Party of America§!."
  
  USA_govt_controlled_by_republicans:0 "Currently, §YCongress§! is controlled by the §RRepublican Party§!."

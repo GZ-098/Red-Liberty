@@ -8,16 +8,16 @@ on_actions = {
 				set_variable = { var = representatives_total value = 435 }
 				USA_congress_get_quorum = yes
 
-				set_variable = { var = senators_communist value = 1 }
-				set_variable = { var = senators_socialist value = 4 }
-				set_variable = { var = senators_republican value = 49 }
-				set_variable = { var = senators_democrat value = 41 }
-				set_variable = { var = senators_fascist value = 1 }
+				set_variable = { var = senators_communist value = 2 }
+				set_variable = { var = senators_socialist value = 22 }
+				set_variable = { var = senators_republican value = 30 }
+				set_variable = { var = senators_democrat value = 39 }
+				set_variable = { var = senators_fascist value = 3 }
 
-				set_variable = { var = representatives_communist value = 1 }
-				set_variable = { var = representatives_socialist value = 3 }
-				set_variable = { var = representatives_republican value = 268 }
-				set_variable = { var = representatives_democrat value = 160 }
+				set_variable = { var = representatives_communist value = 11 }
+				set_variable = { var = representatives_socialist value = 143 }
+				set_variable = { var = representatives_republican value = 148 }
+				set_variable = { var = representatives_democrat value = 130 }
 				set_variable = { var = representatives_fascist value = 3 }
 			}
 		}
