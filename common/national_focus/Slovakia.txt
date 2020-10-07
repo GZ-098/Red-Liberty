@@ -672,7 +672,7 @@ focus_tree = {
 		completion_reward = {
 			declare_war_on= { 
 target = HUN 
-type = 
+type = annex_everything
 }
 		}
 	}
