@@ -32,5 +32,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_death_of_charles_curtis" 
 		texturefile = "gfx/event_gfx/report_event_death_of_charles_curtis.dds"
+	} 
+	spriteType = {
+		name = "GFX_report_event_lister_hill_can_into_president" 
+		texturefile = "gfx/event_gfx/report_event_lister_hill_can_into_president.dds"
 	}
 }

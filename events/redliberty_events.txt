@@ -108,5 +108,22 @@ country_event = {
 		ai_chance = { factor = 100 }
 		name = "Rest in peace, old friend"
 	}
+} 
+
+#The Inauguration of Lister Hill
+country_event = {
+	id = redliberty.8
+	title = redliberty.8.t
+	desc = redliberty.8.d
+	picture = GFX_report_event_lister_hill_can_into_president
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+	option = { 
+		ai_chance = { factor = 100 }
+		name = "Old wisdom and new knowledge make a healthy body politic"
+	}
 }
 
