@@ -565,7 +565,7 @@ focus_tree = {
 		y = 13
 		cost = 3
 		available_if_capitulated = yes
-		prerequisite = { focus = USA_the_bill_passes }
+		prerequisite = { focus = USA_the_bill_passes_yes }
 		mutually_exclusive = { focus = USA_break_up_the_coalition }
 		ai_will_do = {
 			factor = 1
@@ -641,7 +641,7 @@ focus_tree = {
 	}
 	#Focus for The Bill Passes
 	focus = {
-		id = USA_the_bill_passes
+		id = USA_the_bill_passes_yes
 		icon = GFX_focus_generic_treaty
 		x = 19
 		y = 20
@@ -662,7 +662,7 @@ focus_tree = {
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = USA_a_second_round_of_voting }
-		mutually_exclusive = { focus = USA_the_bill_passes }
+		mutually_exclusive = { focus = USA_the_bill_passes_yes }
 		ai_will_do = {
 			factor = 1
 		}
@@ -864,6 +864,569 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+	} 
+####################################### 
+#Thomas Tree 
+####################################### 
+	#Focus for The Universal Social Security Act (USSA)
+	focus = {
+		id = USA_the_universal_social_security_act_ussa
+		icon = GFX_goal_unknown
+		x = 6
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_speak_with_the_poor 
+		}
+		prerequisite = { 
+			focus = USA_reassure_senators 
+		}
+		prerequisite = { 
+			focus = USA_the_expansion_of_social_security_act_essa 
+		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
+	#Focus for C
+	focus = {
+		id = USA_c
+		icon = GFX_goal_unknown
+		x = 18
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Reassure Representatives
+	focus = {
+		id = USA_reassure_representatives
+		icon = GFX_goal_unknown
+		x = 7
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_expanding_social_security }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Tour the Nation
+	focus = {
+		id = USA_tour_the_nation
+		icon = GFX_goal_unknown
+		x = 5
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_expanding_social_security }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Expanding Education
+	focus = {
+		id = USA_expanding_education
+		icon = GFX_goal_unknown
+		x = 9
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_beginning_of_change }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Expanding Social Security
+	focus = {
+		id = USA_expanding_social_security
+		icon = GFX_goal_unknown
+		x = 6
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_beginning_of_change }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Expansion of Social Security Act (ESSA)
+	focus = {
+		id = USA_the_expansion_of_social_security_act_essa
+		icon = GFX_goal_unknown
+		x = 6
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_tour_the_nation 
+		}
+		prerequisite = { 
+			focus = USA_reassure_representatives 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Speak with the Poor
+	focus = {
+		id = USA_speak_with_the_poor
+		icon = GFX_goal_unknown
+		x = 5
+		y = 4
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_tour_the_nation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Reassure Senators
+	focus = {
+		id = USA_reassure_senators
+		icon = GFX_goal_unknown
+		x = 7
+		y = 4
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_reassure_representatives }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Increase Government Funded Schools
+	focus = {
+		id = USA_increase_government_funded_schools
+		icon = GFX_goal_unknown
+		x = 9
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_expanding_education }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Beginning of Change
+	focus = {
+		id = USA_the_beginning_of_change
+		icon = GFX_goal_unknown
+		x = 6
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Focus should only be available or completed if player succeeded in passing their first bill#
+		}
+	}
+	#Focus for Expanding Healthcare
+	focus = {
+		id = USA_expanding_healthcare
+		icon = GFX_goal_unknown
+		x = 3
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_beginning_of_change }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The People's Faith Shaken
+	focus = {
+		id = USA_the_peoples_faith_shaken
+		icon = GFX_goal_unknown
+		x = 15
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = USA_the_beginning_of_change }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Send Teaching Equipment to Rural Areas
+	focus = {
+		id = USA_send_teaching_equipment_to_rural_areas
+		icon = GFX_goal_unknown
+		x = 9
+		y = 3
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_increase_government_funded_schools }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Introduce Integration
+	focus = {
+		id = USA_introduce_integration
+		icon = GFX_goal_unknown
+		x = 9
+		y = 4
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_send_teaching_equipment_to_rural_areas }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The School Integration Act (SIA)
+	focus = {
+		id = USA_the_school_integration_act_sia
+		icon = GFX_goal_unknown
+		x = 9
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_introduce_integration }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Small Question of Funding
+	focus = {
+		id = USA_the_small_question_of_funding
+		icon = GFX_goal_unknown
+		x = 6
+		y = 6
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_universal_social_security_act_ussa }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The South Strikes Back
+	focus = {
+		id = USA_the_south_strikes_back
+		icon = GFX_goal_unknown
+		x = 9
+		y = 6
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_school_integration_act_sia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Expanding to Rural America
+	focus = {
+		id = USA_expanding_to_rural_america
+		icon = GFX_goal_unknown
+		x = 3
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_expanding_healthcare }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Research Grants for Students
+	focus = {
+		id = USA_research_grants_for_students
+		icon = GFX_goal_unknown
+		x = 3
+		y = 3
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_expanding_to_rural_america }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Invite the Red Cross Organisation
+	focus = {
+		id = USA_invite_the_red_cross_organisation
+		icon = GFX_goal_unknown
+		x = 3
+		y = 4
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_research_grants_for_students }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Disabled with Benefits Act (DBA)
+	focus = {
+		id = USA_the_disabled_with_benefits_act_dba
+		icon = GFX_goal_unknown
+		x = 3
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_invite_the_red_cross_organisation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for The Drug Companies Complain
+	focus = {
+		id = USA_the_drug_companies_complain
+		icon = GFX_goal_unknown
+		x = 3
+		y = 6
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_disabled_with_benefits_act_dba }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Compromise can be Made
+	focus = {
+		id = USA_a_compromise_can_be_made
+		icon = GFX_goal_unknown
+		x = 3
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_the_drug_companies_complain 
+		}
+		prerequisite = { 
+			focus = USA_the_small_question_of_funding 
+		}
+		mutually_exclusive = { focus = USA_you_cannot_betray_the_people }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Allow the South to Segregate
+	focus = {
+		id = USA_allow_the_south_to_segregate
+		icon = GFX_goal_unknown
+		x = 9
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_the_south_strikes_back 
+		}
+		prerequisite = { 
+			focus = USA_the_small_question_of_funding 
+		}
+		mutually_exclusive = { focus = USA_you_cannot_betray_the_people }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for You Cannot Betray the People!
+	focus = {
+		id = USA_you_cannot_betray_the_people
+		icon = GFX_goal_unknown
+		x = 6
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_the_drug_companies_complain 
+		}
+		prerequisite = { 
+			focus = USA_the_south_strikes_back 
+		}
+		prerequisite = { 
+			focus = USA_the_small_question_of_funding 
+		}
+		mutually_exclusive = { 
+			focus = USA_allow_the_south_to_segregate 
+		}
+		mutually_exclusive = { 
+			focus = USA_a_compromise_can_be_made 
+		}
+		mutually_exclusive = { 
+			focus = USA_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Betraying our Values...
+	focus = {
+		id = USA_betraying_our_values
+		icon = GFX_goal_unknown
+		x = 3
+		y = 8
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_a_compromise_can_be_made }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Betraying our People...
+	focus = {
+		id = USA_betraying_our_people
+		icon = GFX_goal_unknown
+		x = 9
+		y = 8
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_allow_the_south_to_segregate }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Staying True with our Beliefs
+	focus = {
+		id = USA_staying_true_with_our_beliefs
+		icon = GFX_goal_unknown
+		x = 6
+		y = 8
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_you_cannot_betray_the_people }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for A Changed America, for Better or Worse
+	focus = {
+		id = USA_a_changed_america_for_better_or_worse
+		icon = GFX_goal_unknown
+		x = 6
+		y = 9
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_staying_true_with_our_beliefs 
+			focus = USA_betraying_our_people 
+			focus = USA_betraying_our_values 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Preparing for the Next Elections
+	focus = {
+		id = USA_preparing_for_the_next_elections
+		icon = GFX_goal_unknown
+		x = 12
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_peoples_faith_shaken }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Keeping Our Hold
+	focus = {
+		id = USA_keeping_our_hold
+		icon = GFX_goal_unknown
+		x = 15
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_the_peoples_faith_shaken }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Bribery Works
+	focus = {
+		id = USA_bribery_works
+		icon = GFX_goal_unknown
+		x = 14
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_keeping_our_hold }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Threaten the Politicians
+	focus = {
+		id = USA_threaten_the_politicians
+		icon = GFX_goal_unknown
+		x = 16
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_keeping_our_hold }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Our Hold on Congress
+	focus = {
+		id = USA_our_hold_on_congress
+		icon = GFX_goal_unknown
+		x = 15
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_threaten_the_politicians 
+		}
+		prerequisite = { 
+			focus = USA_bribery_works 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Threaten to Release the Photos
+	focus = {
+		id = USA_threaten_to_release_the_photos
+		icon = GFX_goal_unknown
+		x = 14
+		y = 4
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_bribery_works }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Blackmail the Politicians
+	focus = {
+		id = USA_blackmail_the_politicians
+		icon = GFX_goal_unknown
+		x = 16
+		y = 4
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = USA_threaten_the_politicians }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Our Hold Tightened
+	focus = {
+		id = USA_our_hold_tightened
+		icon = GFX_goal_unknown
+		x = 15
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = USA_blackmail_the_politicians 
+		}
+		prerequisite = { 
+			focus = USA_threaten_to_release_the_photos 
+		}
+		prerequisite = { 
+			focus = USA_our_hold_on_congress 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	} 
+
+ 
+############################## 
+#Lindbergh Tree 
+############################## 
+
 #End of focuses 
  }
