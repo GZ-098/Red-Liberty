@@ -53,11 +53,13 @@ if = {
 		basic_carrier = 1
 		transport = 1
 	}
-} 
+}
+
 country_event = {
     id = redliberty.7
    days = 38
 }
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
