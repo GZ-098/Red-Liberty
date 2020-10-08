@@ -1,0 +1,122 @@
+ideas = {
+	
+	country = { 
+       	RUS_ill_cordinated_army = {
+			removal_cost = -1 
+			
+			picture = RUS_ill_cordinated_army
+			
+			allowed = {
+				tag = RUS
+			} 
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {  
+				army_org = -0.30 
+				army_morale_factor = -0.20 
+				experience_gain_army = -0.10 
+				army_speed_factor = -0.05  
+				army_attack_factor = -0.05 
+				army_defence_factor = -0.05
+			}
+		}  
+	
+       	RUS_scheming_generals = {
+			removal_cost = -1 
+			
+			picture = RUS_scheming_generals
+			
+			allowed = {
+				tag = RUS
+			} 
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {  
+				political_power_gain = -0.15 
+				political_advisor_cost_factor = 0.10 
+				high_command_cost_factor = 0.10 
+				air_chief_cost_factor = 0.10 
+				navy_chief_cost_factor = 0.10 
+				army_chief_cost_factor = 0.10 
+			}
+		} 
+
+       	RUS_mixed_ideologies = {
+			removal_cost = -1 
+			
+			picture = RUS_mixed_ideologies
+			
+			allowed = {
+				tag = RUS
+			} 
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {  
+				drift_defence_factor = -0.75
+			}
+		} 
+
+       	RUS_siberian_wasteland = {
+			removal_cost = -1 
+			
+			picture = RUS_siberian_wasteland
+			
+			allowed = {
+				tag = RUS
+			} 
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {  
+				global_building_slots_factor = -0.10 
+				production_factory_max_efficiency_factor = -0.10 
+				production_speed_buildings_factor = -0.25
+			}
+		}
+	}
+	
+	
+
+       
+
+
+	#Military
+	army_chief = {
+	}
+	navy_chief = {
+	}
+	air_chief = {
+	}
+	high_command = {
+	}
+	#Manufacturers
+	tank_manufacturer = {
+	}
+	naval_manufacturer = {
+	}
+	aircraft_manufacturer = {
+	}
+	materiel_manufacturer = {
+	}
+	theorist = {
+	}
+}
