@@ -10,6 +10,10 @@ shared_focus = {
 			days = 1
 		}
     }
+	
+	ai_will_do = {
+		factor = 10
+	}
 }
 
 shared_focus = {
@@ -30,6 +34,10 @@ shared_focus = {
 			days = 1
 		}
     }
+	
+	ai_will_do = {
+		factor = 10
+	}
 }
 
 shared_focus = {
@@ -50,6 +58,10 @@ shared_focus = {
 			days = 1
 		}
     }
+	
+	ai_will_do = {
+		factor = 10
+	}
 }
 
 shared_focus = {
@@ -67,6 +79,10 @@ shared_focus = {
 			days = 1
 		}
     }
+	
+	ai_will_do = {
+		factor = 10
+	}
 }
 
 shared_focus = {
@@ -83,6 +99,10 @@ shared_focus = {
 			days = 1
 		}
     }
+	
+	ai_will_do = {
+		factor = 10
+	}
 }
 
 shared_focus = {
@@ -100,6 +120,10 @@ shared_focus = {
     completion_reward = {
         
     }
+	
+	ai_will_do = {
+		factor = 10
+	}
 }
 
 shared_focus = {
@@ -114,6 +138,10 @@ shared_focus = {
     completion_reward = {
         
     }
+	
+	ai_will_do = {
+		factor = 10
+	}
 }
 
 shared_focus = {
@@ -128,6 +156,10 @@ shared_focus = {
     completion_reward = {
         
     }
+	
+	ai_will_do = {
+		factor = 10
+	}
 }
 
 shared_focus = {
@@ -146,6 +178,10 @@ shared_focus = {
     completion_reward = {
         
     }
+	
+	ai_will_do = {
+		factor = 10
+	}
 }
 
 shared_focus = {
@@ -159,6 +195,44 @@ shared_focus = {
     completion_reward = {
         
     }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_convince_liberals
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_liberal_coalition
+	prerequisite = { focus = USA_liberal_coalition }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_finish_the_deal
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_convince_liberals
+	prerequisite = { focus = USA_convince_liberals }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
 }
 
 shared_focus = {
@@ -176,6 +250,86 @@ shared_focus = {
     completion_reward = {
         
     }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_coalition_with_both
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_moderate_path
+	prerequisite = { focus = USA_moderate_path }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_this_isnt_working
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_coalition_with_both
+	prerequisite = { focus = USA_coalition_with_both }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_liberal_focus
+	
+	x = -1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_this_isnt_working
+	mutually_exclusive = {
+		focus = USA_conservative_focus
+	}
+	prerequisite = { focus = USA_this_isnt_working }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_conservative_focus
+	
+	x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_this_isnt_working
+	mutually_exclusive = {
+		focus = USA_liberal_focus
+	}
+	prerequisite = { focus = USA_this_isnt_working }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
 }
 
 shared_focus = {
@@ -194,6 +348,10 @@ shared_focus = {
     completion_reward = {
         
     }
+	
+	ai_will_do = {
+		factor = 10
+	}
 }
 
 shared_focus = {
@@ -207,6 +365,159 @@ shared_focus = {
     completion_reward = {
         
     }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_convince_conservatives
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_conservative_coalition
+	prerequisite = { focus = USA_conservative_coalition }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_just_few_more_weeks
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_convince_conservatives
+	prerequisite = { focus = USA_convince_conservatives }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_ready_for_the_vote
+	
+	x = -3
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_just_few_more_weeks
+	prerequisite = {
+		focus = USA_just_few_more_weeks
+		focus = USA_liberal_focus
+		focus = USA_conservative_focus
+		focus = USA_finish_the_deal
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_bill_passes
+	
+	x = -2
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_ready_for_the_vote
+	mutually_exclusive = {
+		focus = USA_bill_fails
+	}
+	prerequisite = {
+		focus = USA_ready_for_the_vote
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_keep_the_caolition
+	
+	x = -1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_bill_passes
+	mutually_exclusive = {
+		focus = USA_end_of_coalition
+	}
+	prerequisite = {
+		focus = USA_bill_passes
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_end_of_coalition
+	
+	x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_bill_passes
+	mutually_exclusive = {
+		focus = USA_keep_the_caolition
+	}
+	prerequisite = {
+		focus = USA_bill_passes
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_bill_fails
+	
+	x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_ready_for_the_vote
+	mutually_exclusive = {
+		focus = USA_bill_passes
+	}
+	prerequisite = {
+		focus = USA_ready_for_the_vote
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
 }
 
 shared_focus = {
@@ -224,6 +535,10 @@ shared_focus = {
     completion_reward = {
         
     }
+	
+	ai_will_do = {
+		factor = 10
+	}
 }
 
 shared_focus = {
@@ -238,6 +553,10 @@ shared_focus = {
     completion_reward = {
         
     }
+	
+	ai_will_do = {
+		factor = 10
+	}
 }
 
 shared_focus = {
@@ -252,4 +571,25 @@ shared_focus = {
     completion_reward = {
         
     }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_congress_complains
+	
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_all_in
+	prerequisite = { focus = USA_all_in }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
 }
