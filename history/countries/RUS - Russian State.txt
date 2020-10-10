@@ -7,29 +7,25 @@ set_technology = {
 	tech_support = 1		
 	tech_mountaineers = 1
 	motorised_infantry = 1
-	gw_artillery = 1
+	gw_artillery = 1 
+	transport = 1 
+	mtg_transport = 1
 	
-}
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_technology = {
-		transport = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		mtg_transport = 1
-	}
 }
 
 set_research_slots = 2
 set_convoys = 50
-set_stability = 0.75
+set_stability = 0.75 
+
+add_ideas = {  
+	RUS_ill_cordinated_army 
+	RUS_scheming_generals 
+	RUS_mixed_ideologies 
+	RUS_siberian_wasteland
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
+}
 
 set_politics = {
 	ruling_party = autocratic_despotism 
