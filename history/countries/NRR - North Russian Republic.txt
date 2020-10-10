@@ -26,6 +26,17 @@ set_popularities = {
 	conservatism = 0
 	autocratic_despotism = 85
 	empowered_nationalism = 0 
+} 
+
+create_country_leader = {
+	name = "Piotr Struve"
+	desc = "POLITICS_PIOTR_STRUVE_DESC"
+	picture = "GFX_portrait_nrr_piotr_struve.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
 }
 
 
