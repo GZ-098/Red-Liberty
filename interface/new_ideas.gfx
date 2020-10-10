@@ -9,4 +9,9 @@ spriteTypes = {
 		name = "GFX_idea_USA_pacifism"
 		texturefile = "gfx/interface/ideas/USA/USA_pacifism.tga"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_SOV_home_of_the_revolution"
+		texturefile = "gfx/interface/ideas/SOV/SOV_home_of_revolution.tga"
+	}
 }
