@@ -11,7 +11,23 @@ spriteTypes = {
 	### new tfv nat spirit icons 
 	##################
 	#red liberty icons 
-	##################   
+	##################  
+	spriteType = {
+		name = "GFX_idea_RUS_siberian_wasteland"
+		texturefile = "gfx/interface/ideas/RUS_siberian_wasteland.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_RUS_mixed_ideologies"
+		texturefile = "gfx/interface/ideas/RUS_mixed_ideologies.dds"
+	}   
+	spriteType = {
+		name = "GFX_idea_RUS_scheming_generals"
+		texturefile = "gfx/interface/ideas/RUS_scheming_generals.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_RUS_ill_cordinated_army"
+		texturefile = "gfx/interface/ideas/RUS_ill_cordinated_army.dds"
+	}   
 	spriteType = {
 		name = "GFX_idea_ENG_a_unstable_coalition"
 		texturefile = "gfx/interface/ideas/ENG_a_unstable_coalition.dds"
