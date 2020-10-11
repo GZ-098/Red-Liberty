@@ -28,6 +28,11 @@ set_popularities = {
 	empowered_nationalism = 0 
 }
 
+add_ideas = {
+	ORE_cossacks
+	ORE_fervent_anti_communists
+}
+
 create_country_leader = {
 	name = "Alexander Dutov"
 	desc = ""

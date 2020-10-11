@@ -28,5 +28,6 @@ set_popularities = {
 	empowered_nationalism = 0 
 }
 
-
-
+add_ideas = {
+	SCH_cossacks
+}

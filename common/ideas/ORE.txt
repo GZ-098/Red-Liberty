@@ -1,0 +1,45 @@
+ideas = {
+
+	country = {  
+
+
+		ORE_cossacks = {
+			
+			removal_cost = -1 
+			
+			#picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.01
+				army_org_factor = -0.05
+				cavalry_attack_factor = 0.1
+				cavalry_defence_factor = 0.1
+			}
+		}
+		
+		ORE_fervent_anti_communists = {
+			
+			removal_cost = -1 
+			
+			#picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			targeted_modifier = { tag = SOV attack_bonus_against = 0.1 }
+		}
+	}
+}

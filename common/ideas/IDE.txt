@@ -1,0 +1,47 @@
+ideas = {
+
+	country = {  
+
+
+		IDE_fighting_for_our_people = {
+			
+			removal_cost = -1 
+			
+			#picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.02
+				army_org_factor = 0.05
+				army_core_defence_factor = 0.1
+			}
+		}
+		
+		IDE_mixed_sympathies = {
+			
+			removal_cost = -1 
+			
+			#picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.2
+			}
+		}
+	}
+}

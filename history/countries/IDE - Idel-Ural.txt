@@ -27,8 +27,10 @@ if = {
 	}
 }
 
-
-
+add_ideas = {
+	IDE_fighting_for_our_people
+	IDE_mixed_sympathies
+}
 
 set_research_slots = 2
 set_convoys = 50
