@@ -14,4 +14,14 @@ spriteTypes = {
 		name = "GFX_idea_SOV_home_of_the_revolution"
 		texturefile = "gfx/interface/ideas/SOV/SOV_home_of_revolution.tga"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_ORE_cossacks"
+		texturefile = "gfx/interface/ideas/ORE/ORE_cossacks.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SCH_cossacks"
+		texturefile = "gfx/interface/ideas/ORE/ORE_cossacks.tga"
+	}
 }
