@@ -1,0 +1,67 @@
+ideas = {
+
+	country = {  
+
+
+		ALT_the_center_of_asia = {
+			
+			removal_cost = -1 
+			
+			#picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.2
+			}
+		}
+
+		ALT_peasant_army = {
+			
+			removal_cost = -1 
+			
+			#picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				army_org_factor = -0.15
+				planning_speed = -0.25
+				army_morale_factor = -0.1
+			}
+		}
+
+		ALT_the_first_step = {
+			
+			removal_cost = -1 
+			
+			#picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				war_support_factor = 0.1
+				conscription = 0.01
+				justify_war_goal_time = -0.1
+			}
+		}
+	}
+}
