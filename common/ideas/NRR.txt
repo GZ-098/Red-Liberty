@@ -1,0 +1,97 @@
+ideas = {
+	
+	country = { 
+       	NRR_starving_army = {
+			removal_cost = -1 
+			
+			picture = NRR_starving_army
+			
+			allowed = {
+				tag = NRR
+			} 
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {  
+				army_org = -0.15
+				army_attack_factor = -0.05 
+				army_defence_factor = -0.05
+			}
+		}   
+	
+       	NRR_one_common_enemy = {
+			removal_cost = -1 
+			
+			picture = NRR_one_common_enemy
+			
+			allowed = {
+				tag = NRR
+			} 
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {  
+				justify_war_goal_time = -0.05
+				stability_factor = 0.10 
+				war_support_factor = 0.05 
+			}
+		} 
+
+       	NRR_northern_isolation = {
+			removal_cost = -1 
+			
+			picture = NRR_northern_isolation
+			
+			allowed = {
+				tag = NRR
+			} 
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {  
+				join_faction_tension = 0.70 
+				send_volunteers_tension = 0.70 
+				lend_lease_tension = 0.70 
+
+			}
+		}   
+	}
+	
+	
+
+       
+
+
+	#Military
+	army_chief = {
+	}
+	navy_chief = {
+	}
+	air_chief = {
+	}
+	high_command = {
+	}
+	#Manufacturers
+	tank_manufacturer = {
+	}
+	naval_manufacturer = {
+	}
+	aircraft_manufacturer = {
+	}
+	materiel_manufacturer = {
+	}
+	theorist = {
+	}
+}

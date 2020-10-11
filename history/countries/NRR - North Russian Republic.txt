@@ -28,6 +28,12 @@ set_popularities = {
 	empowered_nationalism = 0 
 } 
 
+add_ideas = {
+	NRR_one_common_enemy 
+	NRR_starving_army 
+	NRR_northern_isolation
+}
+
 create_country_leader = {
 	name = "Piotr Struve"
 	desc = "POLITICS_PIOTR_STRUVE_DESC"
