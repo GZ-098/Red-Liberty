@@ -41,6 +41,17 @@ set_popularities = {
 	conservatism = 35
 	autocratic_despotism = 30 
 	empowered_nationalism = 20
+} 
+
+create_country_leader = {
+	name = "Alexander Kolchak"
+	desc = "POLITICS_KOLCHAK_DESC"
+	picture = "portrait_alexander_kolchak.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
 }
 
 create_faction = RUS_white_movement
