@@ -1,4 +1,9 @@
-spriteTypes = { 
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_IDE_mixed_sympathies"
+		texturefile = "gfx/interface/ideas/IDE/IDE_mixed_sympathies.tga"
+	}
 	
 	spriteType = {
 		name = "GFX_idea_USA_the_great_depression"
