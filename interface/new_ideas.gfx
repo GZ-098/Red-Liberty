@@ -1,4 +1,9 @@
-spriteTypes = { 
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_IDE_mixed_sympathies"
+		texturefile = "gfx/interface/ideas/IDE/IDE_mixed_sympathies.tga"
+	}
 	
 	spriteType = {
 		name = "GFX_idea_USA_the_great_depression"
@@ -18,6 +23,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ORE_cossacks"
 		texturefile = "gfx/interface/ideas/ORE/ORE_cossacks.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ORE_fervent_anti_communists"
+		texturefile = "gfx/interface/ideas/ORE/ORE_anti_communism.tga"
 	}
 	
 	spriteType = {

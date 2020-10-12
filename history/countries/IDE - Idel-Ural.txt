@@ -52,3 +52,13 @@ set_popularities = {
 	empowered_nationalism = 0 
 }
 
+create_country_leader = {
+	name = "Sadri Maksudi Arsal"
+	desc = ""
+	picture = "Portrait_IDE_Sadri_Maksudi_Arsal.tga"
+	expire = "1953.3.1"
+	ideology = conservatism_subtype
+	traits = {
+		
+	}
+}
