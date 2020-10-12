@@ -32,15 +32,15 @@ add_ideas = {
 	ALT_the_center_of_asia
 	ALT_peasant_army
 	ALT_the_first_step
-} 
+}  
 
 create_country_leader = {
-	name = "People's Council"
+	name = "Boris Annenkov"
 	desc = ""
-	picture = "portrait_cossack_council.dds"
+	picture = "Portrait_SCH_Boris_Annenkov.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
 	}
-} 
+}
 

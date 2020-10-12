@@ -32,11 +32,10 @@ add_ideas = {
 	SCH_cossacks
 }
 
-
 create_country_leader = {
-	name = "Boris Annenkov"
+	name = "People's Council"
 	desc = ""
-	picture = "Portrait_SCH_Boris_Annenkov.dds"
+	picture = "portrait_cossack_council.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
