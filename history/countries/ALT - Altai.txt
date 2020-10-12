@@ -35,9 +35,9 @@ add_ideas = {
 } 
 
 create_country_leader = {
-	name = "Boris Annenkov"
+	name = ""
 	desc = ""
-	picture = "portrait_boris_idklastname.dds"
+	picture = ""
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
