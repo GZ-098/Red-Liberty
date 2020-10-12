@@ -22,7 +22,7 @@ set_politics = {
 set_popularities = {
 	revolutionary_socialism = 5
 	democratic_socialism = 5
-	liberalism = 5
+	liberalism = 0
 	conservatism = 0
 	autocratic_despotism = 85
 	empowered_nationalism = 0 
@@ -30,4 +30,14 @@ set_popularities = {
 
 add_ideas = {
 	SCH_cossacks
+}
+
+create_country_leader = {
+	name = "Boris Annenkov"
+	desc = ""
+	picture = "portrait_boris_idklastname.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+	}
 }
