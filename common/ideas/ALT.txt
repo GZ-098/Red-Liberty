@@ -7,7 +7,7 @@ ideas = {
 			
 			removal_cost = -1 
 			
-			#picture = 
+			picture = ALT_the_center_of_asia
 			
 			allowed = {
 				always = no
@@ -26,7 +26,7 @@ ideas = {
 			
 			removal_cost = -1 
 			
-			#picture = 
+			picture = ALT_peasant_army
 			
 			allowed = {
 				always = no
@@ -47,7 +47,7 @@ ideas = {
 			
 			removal_cost = -1 
 			
-			#picture = 
+			picture = ALT_the_first_step
 			
 			allowed = {
 				always = no

@@ -11,7 +11,31 @@ spriteTypes = {
 	### new tfv nat spirit icons 
 	##################
 	#red liberty icons 
-	##################  
+	################## 
+	spriteType = {
+		name = "GFX_idea_NRR_starving_army"
+		texturefile = "gfx/interface/ideas/NRR_starving_army.dds"
+	}  
+	spriteType = {
+		name = "GFX_idea_NRR_northern_isolation"
+		texturefile = "gfx/interface/ideas/NRR_northern_isolation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NRR_one_common_enemy"
+		texturefile = "gfx/interface/ideas/NRR_one_common_enemy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ALT_the_center_of_asia"
+		texturefile = "gfx/interface/ideas/ALT_the_center_of_asia.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ALT_peasant_army"
+		texturefile = "gfx/interface/ideas/ALT_peasant_army.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_ALT_the_first_step"
+		texturefile = "gfx/interface/ideas/ALT_the_first_step.dds"
+	}   
 	spriteType = {
 		name = "GFX_idea_RUS_siberian_wasteland"
 		texturefile = "gfx/interface/ideas/RUS_siberian_wasteland.dds"
