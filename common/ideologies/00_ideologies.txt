@@ -170,7 +170,10 @@ ideologies = {
 
 	conservatism = {
 	
-		types = {
+		types = { 
+
+			conservative = {
+			}
 
 			conservatism_subtype = {
 			}
