@@ -22,6 +22,15 @@
  #################
  #Country ideas 
  #################  
+ SCH_cossacks:0 "Cossacks"
+ IDE_fighting_for_our_people:0 "Fighting for our People" 
+ IDE_mixed_sympathies:0 "Mixed Sympathies" 
+ ORE_fervent_anti_communists:0 "Fervent Anti-Communism"
+ ORE_cossacks:0 "Cossacks"
+ RUS_ill_cordinated_army:0 "Ill Cordinated Army" 
+ RUS_scheming_generals:0 "Scheming Generals" 
+ RUS_mixed_ideologies:0 "Mixed Ideologies" 
+ RUS_siberian_wasteland:0 "Siberian Wasteland"
  ALT_the_center_of_asia:0 "The Center of Asia"  
  ALT_peasant_army:0 "Peasent Army" 
  ALT_the_first_step:0 "The First Steps" 
