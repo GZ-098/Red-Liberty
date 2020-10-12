@@ -21,7 +21,13 @@
  ################# 
  #################
  #Country ideas 
- #################   
+ #################  
+ ALT_the_center_of_asia:0 "The Center of Asia"  
+ ALT_peasant_army:0 "Peasent Army" 
+ ALT_the_first_step:0 "The First Steps" 
+ NRR_starving_army:0 "Starving Army" 
+ NRR_one_common_enemy:0 "One Common Enemy" 
+ NRR_northern_isolation:0 "Northern Isolation"
  FRA_a_falling_democracy:0 "A Falling Democracy" 
  FRA_a_falling_democracy_desc:0 ""
  AHE_embarrassment_on_the_italian_front:0 "Embarrasment on the Italian Front" 
