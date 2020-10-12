@@ -21,6 +21,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_SOV_political_turmoil"
+		texturefile = "gfx/interface/ideas/SOV/SOV_political_turmoil.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_ORE_cossacks"
 		texturefile = "gfx/interface/ideas/ORE/ORE_cossacks.tga"
 	}
