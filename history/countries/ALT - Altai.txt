@@ -35,9 +35,9 @@ add_ideas = {
 } 
 
 create_country_leader = {
-	name = ""
+	name = "People's Council"
 	desc = ""
-	picture = ""
+	picture = "portrait_cossack_council.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
