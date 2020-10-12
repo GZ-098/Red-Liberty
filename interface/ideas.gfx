@@ -11,7 +11,11 @@ spriteTypes = {
 	### new tfv nat spirit icons 
 	##################
 	#red liberty icons 
-	################## 
+	##################  
+	spriteType = {
+		name = "GFX_idea_IDE_fighting_for_our_people"
+		texturefile = "gfx/interface/ideas/IDE/IDE_fighting_for_our_people.dds"
+	}
 	spriteType = {
 		name = "GFX_idea_NRR_starving_army"
 		texturefile = "gfx/interface/ideas/NRR_starving_army.dds"

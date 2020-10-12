@@ -7,7 +7,7 @@ ideas = {
 			
 			removal_cost = -1 
 			
-			#picture = 
+			picture = IDE_fighting_for_our_people
 			
 			allowed = {
 				always = no
