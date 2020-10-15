@@ -60,7 +60,10 @@ ideologies = {
 
 	democratic_socialism = {
 	
-		types = {
+		types = { 
+
+			dem_soc = {
+			}
 			
 			democratic_socialist_subtype = {
 			}	
@@ -113,7 +116,10 @@ ideologies = {
 		ai_democratic = yes # uses the democratic AI behaviour
 	}
 	
-	liberalism = {
+	liberalism = { 
+
+		libtard = {
+		}
 		
 		types = { 
 
