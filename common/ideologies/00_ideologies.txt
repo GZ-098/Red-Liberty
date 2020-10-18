@@ -118,14 +118,19 @@ ideologies = {
 	
 	liberalism = { 
 
-		libtard = {
-		}
-		
-		types = { 
 
-			liberalism_subtype = {
 		
-			}
+		types = {  
+
+		liberal = {
+		}
+
+		democrat = {
+		}
+
+		libtard = {
+		} 
+		
 		}
 		
 		dynamic_faction_names = {

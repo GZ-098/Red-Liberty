@@ -9,7 +9,7 @@ bookmarks = {
 		
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
-			ideology = liberalism
+			ideology = libtard
 			ideas = {
 				FRA_a_falling_democracy
 			}
