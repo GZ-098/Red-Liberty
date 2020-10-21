@@ -1,4 +1,4 @@
-﻿capital = 267
+capital = 267
 
 oob = "AFG_1936"
 
@@ -58,28 +58,38 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = revolutionary_socialism
+	ruling_party = empowered_nationalism
 	last_election = "1932.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	conservatism = 20
-	revolutionary_socialism = 20
-	empowered_nationalism = 20
-	democratic_socialism = 20
-	autocratic_despotism = 20
+	conservatism = 0
+	revolutionary_socialism = 0
+	empowered_nationalism = 65
+	democratic_socialism = 0
+	autocratic_despotism = 35
 }
 
 # Mohammad Hashim Khan (Prime Minister) other potential candidate
 create_country_leader = {
-	name = "Mohammed Zahir Shah"
-	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
-	picture = "Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
+	name = "Habibullah Kalakani"
+	desc = "POLITICS_HABIBULLAH_DESC"
+	picture = "Portrait_Habibullah.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Amanullah Khan"
+	desc = "POLITICS_AMANULLAH_DESC"
+	picture = "Portrait_Amanullah.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-		#
 	}
 }
 
@@ -99,15 +109,4 @@ create_country_leader = {
 	autocratic_despotism = 0 
 	empowered_nationalism = 0 
 	}
-}
-
-create_corps_commander = {
-	name = "Sardar Shah Wali Khan"
-	portrait_path = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
-	traits = { desert_fox }
-	skill = 4
-	attack_skill = 5
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 3
 }
