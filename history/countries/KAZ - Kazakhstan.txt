@@ -60,17 +60,21 @@ if = {
 	}
 }
 
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
 set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
+	conservatism = 50
+	revolutionary_socialism = 0
+	democratic_socialism = 20
+	liberalism = 30
 	autocratic_despotism = 0 
 	empowered_nationalism = 0 
 }
-
-set_cosmetic_tag = KAZ_russia
 
 create_country_leader = {
 	name = "Nikolay Aleksandrovich Skvortsov"
@@ -84,11 +88,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ilyas Zhansugurov"
+	name = "Akhmet Baitursynov"
 	desc = ""
-	picture = "Portrait_KAZ_Ilyas_Zhansugurov.dds"
+	picture = "Portrait_KAZ_Baitursynov.dds"
 	expire = "1953.3.1"
-	ideology = conservatism
+	ideology = conservative 
 	traits = {
 		
 	}
