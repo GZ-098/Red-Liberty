@@ -1,0 +1,57 @@
+﻿###########################
+# Afghan Events
+###########################
+
+add_namespace = afghan
+
+country_event = {
+	id = afghan.1
+	title = "Amanite Uprising"
+	desc = afghan.1.d
+	picture = GFX_report_event_afg_civil_war
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AFG
+		has_defensive_war = no
+		NOT = { has_government = autocratic_despotism }
+		date > 1937.1.1 # Trigger at some point after 1936 elections
+	}
+
+	mean_time_to_happen = {
+		days = 121	# Historical outbreak time after elections
+	}
+
+	option = {
+		name = "Long live Emir Kalakani and the Saqqawists!"
+		ai_chance = {
+			factor = 100
+		}
+		start_civil_war = {
+			ideology = autocratic_despotism
+			size = 0.5
+		}
+	}
+
+	option = {
+		name = "Long live King Amanullah"
+		ai_chance = {
+			factor = 0
+		}
+		if = {
+			limit = {
+				has_government = empowered_nationalism
+			}
+			start_civil_war = {
+				ruling_party = autocratic_despotism
+				ideology = empowered_nationalism
+				size = 0.5
+			}
+		}
+				
+	}
+
+}
+	   
+				
