@@ -3,8 +3,9 @@ state={
 	name="STATE_585"
 
 	history={
+		add_core_of = KYR
 		add_core_of = UZB
-		owner = UZB
+		owner = KYR
 		buildings = {
 			infrastructure = 3
 
