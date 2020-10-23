@@ -1,7 +1,9 @@
 state={
 	id=405
 	name="STATE_405"
-
+	resources={
+		steel=10
+		
 	history={
 		owner = KYR
 		add_core_of = KYR
@@ -13,6 +15,7 @@ state={
 			infrastructure = 5
 			industrial_complex = 3
 			air_base = 1
+			arms_factory = 2
 
 		}
 	}
