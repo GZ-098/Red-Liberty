@@ -1,6 +1,6 @@
-﻿capital = 732
+﻿capital = 405
 
-#oob = ""
+#oob = "KYR_1936"
 
 # Starting tech
 set_technology = {
@@ -44,28 +44,29 @@ set_convoys = 5
 	}
 }
 set_politics = {
-	ruling_party = conservatism
+	ruling_party = empowered_nationalism
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
+	conservatism = 0
+	revolutionary_socialism = 0
+	democratic_socialism = 10
+	liberalism = 0
 	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	autocratic_despotism = 30
+	empowered_nationalism = 60
+}
+create_country_leader = {
+	name = "Enver Pasha"
+	desc = "POLITICS_ENVER_DESC"
+	picture = "Portrait_KYR_ENVER.dds"
+	expire = "1953.3.1"
+	ideology = fascism_ideology  
+	traits = {
+		
+	}
 }
 
-#create_country_leader = {
-#	
-#	name = "Jonas Lote"
-#	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-#	expire = "1965.1.1"
-#	ideology = centrism
-#	traits = {
-#		#
-#	}
-#}
+
