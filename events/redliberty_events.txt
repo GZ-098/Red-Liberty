@@ -6,9 +6,9 @@ add_namespace = italy_events
 #The Cleansing
 country_event = {
 	id = italy_events.1
-	title = "Begin the Revisions"
+	title = italy_events.1.t
 	desc = italy_events.1.d
-	picture = GFX_report_event_lister_hill_can_into_president
+	picture = GFX_report_event_italy_future
 
 	is_triggered_only = yes
 
@@ -17,6 +17,7 @@ country_event = {
 	option = { 
 		ai_chance = { factor = 100 }
 		name = "A Great Future Lies for Italy!"
+		add_political_power = 20
 	} 
 }
 ####################

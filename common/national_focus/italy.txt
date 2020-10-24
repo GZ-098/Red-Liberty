@@ -28,8 +28,8 @@ focus_tree = {
     #    completion_reward = { }
     #  }
 	focus = {
-        id = ITA_begin_the_cleansings 
-        icon = GFX_report_event_generic_sign_treaty2
+        id = ITA_begin_the_revisions 
+        icon = GFX_ITA_begin_the_cleansings
         x = 7
         y = 1
         cost = 1
@@ -48,22 +48,48 @@ focus_tree = {
     }
 
 	focus = {
-        id = ITA_refill_the_lost_ranks 
-        icon = GFX_report_event_generic_sign_treaty2
-        x = 7
+        id = ITA_purge_lefists_off_the_grand_council_of_fascists
+        icon = GFX_ITA_purge_lefists_off_the_grand_council_of_fascists
+        x = 7 
         y = 2
         cost = 1
         available = { }
         bypass = { }
         mutually_exclusive = { }
-        prerequisite = { focus = ITA_begin_the_cleansings }
+        prerequisite = { focus = ITA_begin_the_revisions }
         available_if_capitulated = yes
         search_filters = { }
 	    ai_will_do = {
             factor = 15 }
         completion_reward = {
-			add_stability = -0.15
-			country_event = { id = italy_events.1 days = 1}
+			add_stability = -0.05
+			add_political_power = -20 
+            add_ideas = {
+                ITA_purged_council
+            }
+		}
+    } 
+
+	focus = {
+        id = ITA_purg_the_unloyal_blackshirts
+        icon = GFX_ITA_purg_the_unloyal_blackshirts
+        x = 7 
+        y = 2
+        cost = 1
+        available = { }
+        bypass = { }
+        mutually_exclusive = { }
+        prerequisite = { focus = ITA_begin_the_revisions }
+        available_if_capitulated = yes
+        search_filters = { }
+	    ai_will_do = {
+            factor = 15 }
+        completion_reward = {
+			add_stability = -0.05
+			add_political_power = -20 
+            add_ideas = {
+                ITA_purged_council
+            }
 		}
     }
  
