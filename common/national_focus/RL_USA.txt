@@ -15,3 +15,16 @@ focus_tree = {
 	default = no
 	shared_focus = USA_the_thomas_admin
 }
+
+focus_tree = {
+	id = USA_RL_Thomas_tree
+	country = {
+		factor = 0
+	}
+	continuous_focus_position = {
+		x = 25
+		y = 125
+	}
+	default = no
+	shared_focus = USA_the_thomas_admin
+}
