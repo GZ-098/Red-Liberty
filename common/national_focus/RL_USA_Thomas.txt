@@ -72,7 +72,7 @@ shared_focus = {
 	
 	cost = 4
 	relative_position_id = USA_liberal_cabinet
-	prerequisite = { focus = USA_liberal_cabinet OR = USA_socialist_cabinet }
+	prerequisite = { focus = USA_liberal_cabinet focus = USA_socialist_cabinet }
     completion_reward = {
         country_event = {
 			id = redliberty.5
