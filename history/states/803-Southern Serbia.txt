@@ -1,27 +1,27 @@
 
 state={
-	id=802
-	name="STATE_802"
+	id=827
+	name="STATE_803"
 
 	history={
 		victory_points = {
-			6940 3 
+			11857 1 
 		}
 		owner = BUL
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 
 		}
 		add_core_of = YUG
-		add_core_of = KOS
 		add_core_of = SER
+		add_claim_by = BUL
 
 	}
 
 	provinces={
-		6940 9849 9874  
+		11832 11857 11868 
 	}
-	manpower=616000
+	manpower=210000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 }

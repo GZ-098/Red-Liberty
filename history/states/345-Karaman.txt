@@ -1,6 +1,6 @@
 
 state={
-	id=345
+	id=925
 	name="STATE_345" # Mersin
 	manpower = 411798
 
