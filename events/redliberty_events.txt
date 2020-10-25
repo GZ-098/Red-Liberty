@@ -60,7 +60,7 @@ country_event = {
 
 	option = { 
 		ai_chance = { factor = 100 }
-		name = "A Great Future Lies for Italy!"
+		name = "The state must be cleansed…"
 		add_political_power = 20
 	} 
 } 
