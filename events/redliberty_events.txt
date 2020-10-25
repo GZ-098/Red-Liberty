@@ -78,7 +78,7 @@ country_event = {
 
 	option = { 
 		ai_chance = { factor = 100 }
-		name = "The Ethiopians Never Stood a Match!"
+		name = "The Ethiopians Never Stood a Chance!"
 		add_political_power = 10 
 		add_war_support = 0.10
 	} 
