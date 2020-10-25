@@ -1,15 +1,24 @@
 
 state={
-	id=350
+	id=842
 	name="STATE_350"
 
 	history={
-		owner = TUR
+		owner = FRA
 		victory_points = {
 			4512 5 
 		}
 		victory_points = {
-			11759 1 
+			9823 1 
+		}
+		victory_points = {
+			12387 1 
+		} 
+		victory_points = {
+			4512 1 
+		}
+		victory_points = {
+			9823 1 
 		}
 		buildings = {
 			infrastructure = 3
@@ -32,7 +41,7 @@ state={
 	}
 
 	provinces={
-		4512 11759 9912 7620
+		4512 9823 11759 11871 12387 12416 
 	}
 	manpower=571935
 	state_category=town
