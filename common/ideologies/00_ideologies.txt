@@ -61,9 +61,6 @@ ideologies = {
 	democratic_socialism = {
 	
 		types = { 
-
-			dem_soc = {
-			}
 			
 			democratic_socialist_subtype = {
 			}	
@@ -122,13 +119,10 @@ ideologies = {
 		
 		types = {  
 
-		liberal = {
+		liberalism_subtype = {
 		}
 
-		democrat = {
-		}
-
-		libtard = {
+		libtard_subtype = {
 		} 
 		
 		}
@@ -182,9 +176,6 @@ ideologies = {
 	conservatism = {
 	
 		types = { 
-
-			conservative = {
-			}
 
 			conservatism_subtype = {
 			}
@@ -244,16 +235,6 @@ ideologies = {
 			}
 			
 			oligarchism  = {
-			}
-
-			anarchism = {
-				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-			}
-			
-			moderatism = {
-			}
-			
-			centrism = {
 			}
 		}
 

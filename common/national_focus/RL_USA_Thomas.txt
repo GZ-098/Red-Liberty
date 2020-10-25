@@ -18,6 +18,7 @@ shared_focus = {
 
 shared_focus = {
     id = USA_socialist_cabinet
+	icon = GFX_USA_socialist_cabinet_focus
 	
     x = 1
 	y = 1
@@ -42,6 +43,7 @@ shared_focus = {
 
 shared_focus = {
     id = USA_liberal_cabinet
+	icon = GFX_USA_liberal_cabinet_focus
 	
 	x = -1
 	y = 1
@@ -66,6 +68,7 @@ shared_focus = {
 
 shared_focus = {
     id = USA_plans_for_presidency
+	icon = GFX_USA_plans_for_presidency_focus
 	
     x = 1
 	y = 1
@@ -87,6 +90,7 @@ shared_focus = {
 
 shared_focus = {
     id = USA_review_the_constitution
+	icon = GFX_USA_review_the_constitution_focus
 	
 	y = 1
 	
