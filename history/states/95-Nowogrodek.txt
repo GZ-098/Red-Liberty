@@ -5,7 +5,7 @@ state={
 
 	history={
 		victory_points = {
-			318 1 
+			9304 1 
 		}
 		owner = LIT
 		buildings = {
