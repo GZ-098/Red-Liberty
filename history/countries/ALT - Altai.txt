@@ -39,7 +39,7 @@ create_country_leader = {
 	desc = ""
 	picture = "portrait_cossack_council.dds"
 	expire = "1965.1.1"
-	ideology = conservative
+	ideology = conservatism_subtype 
 	traits = {
 	}
 } 
