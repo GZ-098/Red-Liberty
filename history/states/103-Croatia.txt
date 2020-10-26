@@ -10,9 +10,6 @@ state={
 	history={
 		owner = AHE
 		victory_points = {
-			984 3
-		}
-		victory_points = {
 			11901 1 
 		}
 		buildings = {

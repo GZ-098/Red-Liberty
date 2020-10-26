@@ -10,7 +10,7 @@ focus_tree = {
 
 	default = no 
 
-	continuous_focus_position = { x = 80 y = 1800 }  
+	continuous_focus_position = { x = -19 y = 1800 }  
 #focus = {
     #    id = TAG_Focus_Name_And_ID
     #    icon = GFX_TAG_Focus_Name_And_ID
@@ -30,7 +30,7 @@ focus_tree = {
 	focus = {
         id = ITA_begin_the_revisions 
         icon = GFX_ITA_begin_the_cleansings
-        x = 5
+        x = 10
         y = 2
         cost = 1 
         available = { }
@@ -119,7 +119,7 @@ focus_tree = {
 	focus = {
         id = ITA_begin_to_refill_lost_ranks
         icon = GFX_ITA_the_one_man_dictator
-        x = 7
+        x = 12
         y = 6
         cost = 1
         available = { }
@@ -139,7 +139,7 @@ focus_tree = {
 	focus = {
         id = ITA_begin_to_expand_italys_influence
         icon = GFX_ITA_the_one_man_dictator
-        x = 3
+        x = 8
         y = 6
         cost = 1
         available = { }
@@ -157,7 +157,7 @@ focus_tree = {
     } 
 
 	focus = {
-        id = ITA_claim_yugoslav_land
+        id = ITA_claim_austrian_land
         icon = GFX_ITA_claim_yugoslav_land
         x = 1
         y = 1
@@ -167,6 +167,30 @@ focus_tree = {
         mutually_exclusive = { }  
         relative_position_id = ITA_begin_to_expand_italys_influence
         prerequisite = { focus = ITA_begin_to_expand_italys_influence }
+        available_if_capitulated = yes
+        search_filters = { }
+	    ai_will_do = {
+            factor = 15 }
+        completion_reward = {
+            add_state_claim = 39 
+            add_state_claim = 736 
+            add_state_claim = 103 
+            add_state_claim = 163 
+            add_state_claim = 798
+		}
+    } 
+
+	focus = {
+        id = ITA_lay_claims_to_french_lands
+        icon = GFX_ITA_lay_claims_to_french_lands
+        x = 1
+        y = 2
+        cost = 1
+        available = { }
+        bypass = { }
+        mutually_exclusive = { }  
+        relative_position_id = ITA_begin_to_expand_italys_influence
+        prerequisite = { focus = ITA_claim_austrian_land }
         available_if_capitulated = yes
         search_filters = { }
 	    ai_will_do = {
@@ -245,8 +269,8 @@ focus_tree = {
     }
 
 	focus = {
-        id = ITA_setup_a_collaboration_government_in_libya
-        icon = GFX_ITA_setup_a_collaboration_government_in_libya
+        id = ITA_italianize_the_ethiopians
+        icon = GFX_ITA_italianize_the_ethiopians
         x = -1
         y = 3
         cost = 1
@@ -259,17 +283,9 @@ focus_tree = {
         search_filters = { }
 	    ai_will_do = {
             factor = 15 }
-        completion_reward = {
-            ENG = {
-                country_event = { id = uk_events.1 days = 1}
-            } 
-            create_wargoal = {
-                type = annex_everything
-                target = ETH
-            } 
-            news_event = {
-                id = redliberties.2
-                days = 1
+        completion_reward = { 
+            add_ideas = {#Adds extra compliance gain in non-core territories
+                ITA_ethiopian_italianization_program
             }
 		}
     }
