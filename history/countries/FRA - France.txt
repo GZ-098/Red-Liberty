@@ -250,7 +250,7 @@ create_country_leader = {
 	desc = "POLITICS_FRENCH_REPUBLIC_DESC"
 	picture = "french_republic.dds"
 	expire = "1965.1.1"
-	ideology = liberal
+	ideology = liberalism_subtype
 	traits = {
 	}
 }
