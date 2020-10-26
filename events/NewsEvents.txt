@@ -28,5 +28,22 @@ news_event = {
 	option = {
 		name = "Alright" 
 	}
+} 
+
+news_event = {
+	id = redliberties.2
+	title = "The Second Italo-Ethiopian War!"
+	desc = redliberties.2.d
+	picture = GFX_news_event_second_italo_ethiopian_war  
+
+	is_triggered_only = yes
+
+	has_war_with = ETH
+	
+	timeout_days = 10
+	
+	option = {
+		name = "May God Bless the Soldiers" 
+	}
 }
 	

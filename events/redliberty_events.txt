@@ -1,6 +1,45 @@
 add_namespace = redliberty
 add_namespace = italy_events 
 add_namespace = ethiopia_events 
+add_namespace = uk_events
+####################
+##	 UK events ## 
+################### 
+
+#The Italians Have Invaded Ethiopia
+country_event = {
+	id = uk_events.1
+	title = uk_events.1.t
+	desc = uk_events.1.d
+	picture = GFX_report_event_italo_ethiopian_war
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+	option = { 
+		ai_chance = { factor = 35 }
+		name = "The Italians Have Become too Militaristic"
+		remove_from_faction = ITA
+		add_opinion_modifier = {
+    		target = ITA
+    		modifier = faction_traitor
+		}
+		ITA = {
+			country_event = { id = italy_events.4 days = 1 }
+		}
+	} 
+
+	option = { 
+		ai_chance = { factor = 35 }
+		name = "It's Better That we Keep Them"
+		remove_from_faction = ITA
+		add_opinion_modifier = {
+    		target = ITA
+    		modifier = small_decrease
+		}
+	} 
+} 
 ####################
 ##	 Ethiopia events ## 
 ################### 
@@ -100,6 +139,27 @@ country_event = {
 		name = "We Have Lost Again..."
 		add_war_support = -0.30
 		add_political_power = -20
+	} 
+} 
+
+#The British Have Kicked us out of the Entente!
+country_event = {
+	id = italy_events.4
+	title = italy_events.4.t
+	desc = italy_events.4.d
+	picture = GFX_report_event_italo_ethiopian_war
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+	option = { 
+		ai_chance = { factor = 100 }
+		name = "We will Remember!"
+		add_opinion_modifier = {
+    		target = ENG
+    		modifier = large_decrease
+		}
 	} 
 }
 ####################

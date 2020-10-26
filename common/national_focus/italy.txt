@@ -157,14 +157,36 @@ focus_tree = {
     } 
 
 	focus = {
-        id = ITA_begin_border_skirmushes_on_the_ethiopian_border
-        icon = GFX_ITA_begin_border_skirmushes_on_the_ethiopian_border
-        x = 2
-        y = 7
+        id = ITA_claim_yugoslav_land
+        icon = GFX_ITA_claim_yugoslav_land
+        x = 1
+        y = 1
         cost = 1
         available = { }
         bypass = { }
         mutually_exclusive = { }  
+        relative_position_id = ITA_begin_to_expand_italys_influence
+        prerequisite = { focus = ITA_begin_to_expand_italys_influence }
+        available_if_capitulated = yes
+        search_filters = { }
+	    ai_will_do = {
+            factor = 15 }
+        completion_reward = {
+			add_stability = 0.10
+			add_political_power = 30
+		}
+    } 
+
+	focus = {
+        id = ITA_begin_border_skirmushes_on_the_ethiopian_border
+        icon = GFX_ITA_begin_border_skirmushes_on_the_ethiopian_border
+        x = -1
+        y = 1
+        cost = 1
+        available = { }
+        bypass = { }
+        mutually_exclusive = { }  
+        relative_position_id = ITA_begin_to_expand_italys_influence
         prerequisite = { focus = ITA_begin_to_expand_italys_influence }
         available_if_capitulated = yes
         search_filters = { }
@@ -189,6 +211,66 @@ focus_tree = {
 					on_cancel = ethiopia_events.2
 				}
 			}
+		}
+    } 
+
+	focus = {
+        id = ITA_expand_our_african_holdings
+        icon = GFX_ITA_expand_our_african_holdings
+        x = -1
+        y = 2
+        cost = 1
+        available = { }
+        bypass = { }
+        mutually_exclusive = { }  
+        relative_position_id = ITA_begin_to_expand_italys_influence
+        prerequisite = { focus = ITA_begin_border_skirmushes_on_the_ethiopian_border }
+        available_if_capitulated = yes
+        search_filters = { }
+	    ai_will_do = {
+            factor = 15 }
+        completion_reward = {
+            ENG = {
+                country_event = { id = uk_events.1 days = 1}
+            } 
+            create_wargoal = {
+                type = annex_everything
+                target = ETH
+            } 
+            news_event = {
+                id = redliberties.2
+                days = 1
+            }
+		}
+    }
+
+	focus = {
+        id = ITA_setup_a_collaboration_government_in_libya
+        icon = GFX_ITA_setup_a_collaboration_government_in_libya
+        x = -1
+        y = 3
+        cost = 1
+        available = { }
+        bypass = { }
+        mutually_exclusive = { }  
+        relative_position_id = ITA_begin_to_expand_italys_influence
+        prerequisite = { focus = ITA_expand_our_african_holdings }
+        available_if_capitulated = yes
+        search_filters = { }
+	    ai_will_do = {
+            factor = 15 }
+        completion_reward = {
+            ENG = {
+                country_event = { id = uk_events.1 days = 1}
+            } 
+            create_wargoal = {
+                type = annex_everything
+                target = ETH
+            } 
+            news_event = {
+                id = redliberties.2
+                days = 1
+            }
 		}
     }
  
