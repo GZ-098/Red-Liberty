@@ -92,7 +92,7 @@ create_country_leader = {
 	desc = "POLITICS_AKMET_DESC"
 	picture = "Portrait_KAZ_Baitursynov.dds"
 	expire = "1953.3.1"
-	ideology = conservative 
+	ideology = conservatism_subtype 
 	traits = {
 		
 	}
