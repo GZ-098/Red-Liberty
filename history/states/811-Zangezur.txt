@@ -1,0 +1,24 @@
+
+state={
+	id=811
+	name="STATE_811"
+
+	history={
+		owner = ARM
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+
+		}
+		add_core_of = AZR
+		add_core_of = ARM
+
+	}
+
+	provinces={
+		6642 4660 
+	}
+	manpower=137871
+	buildings_max_level_factor=1.000
+	state_category=pastoral 
+}
