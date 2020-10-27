@@ -1,23 +1,22 @@
 
 state={
-	id=810
-	name="STATE_810"
+	id=813
+	name="STATE_813"
 
 	history={
-		owner = AZR
+		owner = ARM
 		buildings = {
 			infrastructure = 2
 
 		}
 		add_core_of = AZR
-		add_core_of = ARM
 
 	}
 
 	provinces={
-		1467 9715 
+		12434 4473
 	}
-	manpower=125159
+	manpower=0
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=enclave
 }
