@@ -36,6 +36,8 @@ news_event = {
 	desc = redliberties.2.d
 	picture = GFX_news_event_second_italo_ethiopian_war  
 
+	major = yes
+
 	is_triggered_only = yes
 
 	has_war_with = ETH
@@ -44,6 +46,25 @@ news_event = {
 	
 	option = {
 		name = "May God Bless the Soldiers" 
+	}
+} 
+
+news_event = {
+	id = redliberties.3
+	title = "The Breakup of Austria-Hungary"
+	desc = redliberties.3.d
+	picture = GFX_news_event_austro_hungarian_split
+
+	major = yes
+
+	is_triggered_only = yes
+
+	has_war_with = ETH
+	
+	timeout_days = 10
+	
+	option = {
+		name = "The Sick Man of Europe is Finally Dead" 
 	}
 }
 	

@@ -1,4 +1,5 @@
 HEZ = "countries/Hedjaz.txt"
+HSR = "countries/Hungarian Socialist Republic.txt"
 USA = "countries/United States of America.txt"
 GER = "countries/German Empire.txt"
 AHE = "countries/Austro-Hungarian Empire.txt"

@@ -1,4 +1,8 @@
-#reload countrycolors
+#reload countrycolors 
+HSR = {
+	color = rgb { 188 5 5 }
+	color_ui = rgb { 225 225 225 }
+}
 HEZ = {
 	color = rgb { 67 183 79 }
 	color_ui = rgb { 225 225 225 }

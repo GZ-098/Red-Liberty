@@ -7,11 +7,11 @@ add_namespace = ahe_events
 ##	 AHE events ## 
 ################### 
 
-#Collapse of AHE
+#Communist uprising in Hungary 
 country_event = {
-	id = ahe_events.1
-	title = ahe_events.1.t
-	desc = ahe_events.1.d
+	id = ahe_events.2
+	title = ahe_events.2.t
+	desc = ahe_events.2.d
 	picture = GFX_report_event_winning_in_ethiopia
 
 	is_triggered_only = yes
@@ -19,149 +19,101 @@ country_event = {
 	fire_only_once = yes 
 
 	option = { 
+		ai_chance = { factor = 100 }
+		name = "Hungary will Never fall to Communism!"
+		HSR = {
+			transfer_state = 45 
+			transfer_state = 764 
+			transfer_state = 82 
+			transfer_state = 83 
+			transfer_state = 84 
+			transfer_state = 76 
+			transfer_state = 154 
+			declare_war_on = {
+    			target = HUN
+    			type = annex_everything
+			}
+		} 
+		declare_war_on = {
+    		target = HSR
+    		type = annex_everything
+		}
+	} 
+
+	option = { 
+		ai_chance = { factor = 100 }
+		name = "The Revolution to Free the People!" 
+		HSR = { change_tag_from = HUN }
+		HSR = {
+			transfer_state = 45 
+			transfer_state = 764 
+			transfer_state = 82 
+			transfer_state = 83 
+			transfer_state = 84 
+			transfer_state = 76 
+			transfer_state = 154 
+			declare_war_on = {
+    			target = HUN
+    			type = annex_everything
+			}
+		} 
+		declare_war_on = {
+    		target = HSR
+    		type = annex_everything
+		}
+	} 
+} 
+
+#Collapse of AHE
+country_event = {
+	id = ahe_events.1
+	title = ahe_events.1.t
+	desc = ahe_events.1.d
+	picture = GFX_report_event_austro_hungarian_split
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+
+
+	option = { 
+		ai_chance = { factor = 0 }
+		name = "The Union was Doomed from the Beginning" 
+		add_political_power = 20
+		HUN = { 
+			transfer_state = 103
+			transfer_state = 109
+			transfer_state = 83 
+			transfer_state = 84 
+			transfer_state = 76 
+			transfer_state = 82 
+			transfer_state = 764 
+			transfer_state = 45 
+			transfer_state = 155 
+			transfer_state = 154 
+			transfer_state = 43 
+			transfer_state = 664 
+			transfer_state = 70 
+			transfer_state = 71 
+			transfer_state = 73 
+		} 
+		hidden_effect = {
+			news_event = { id = redliberties.3 days = 1 }
+			HUN = {
+				country_event = { id = ahe_events.2 days = 90 }
+			}
+		}		
+	} 
+
+	option = { 
 		ai_chance = { factor = 0 }
 		name = "Switch to the Hungarians" 
 		HUN = { change_tag_from = AHE }
-		hidden_effect = {
-		HUN = { 
-			transfer_state = 80
-			transfer_state = 83 
-			transfer_state = 84 
-			transfer_state = 76 
-			transfer_state = 82 
-			transfer_state = 764 
-			transfer_state = 45 
-			transfer_state = 155 
-			transfer_state = 154 
-			transfer_state = 43 
-			transfer_state = 664 
-			transfer_state = 70 
-			transfer_state = 71 
-			transfer_state = 72 
-			transfer_state = 88 
-			transfer_state = 73 
-			transfer_state = 89 
-			transfer_state = 91 
-		} 
-		BOS = {
-			transfer_state = 104
-		} 
-		SER = {
-			transfer_state = 105
-		} 
-		CRO = {
-			transfer_state = 798 
-			transfer_state = 163 
-			transfer_state = 103 
-			transfer_state = 109
-		} 
-		CZE = {
-			transfer_state = 9 
-			transfer_state = 75
-		}			
-		}
-
-	} 
-
-	option = { 
-		ai_chance = { factor = 0 }
-		name = "Switch to the Serbians" 
-		SER = { change_tag_from = AHE }
-		hidden_effect = {
-		HUN = { 
-			transfer_state = 80
-			transfer_state = 83 
-			transfer_state = 84 
-			transfer_state = 76 
-			transfer_state = 82 
-			transfer_state = 764 
-			transfer_state = 45 
-			transfer_state = 155 
-			transfer_state = 154 
-			transfer_state = 43 
-			transfer_state = 664 
-			transfer_state = 70 
-			transfer_state = 71 
-			transfer_state = 72 
-			transfer_state = 88 
-			transfer_state = 73 
-			transfer_state = 89 
-			transfer_state = 91 
-		} 
-		BOS = {
-			transfer_state = 104
-		} 
-		SER = {
-			transfer_state = 105
-		} 
-		CRO = {
-			transfer_state = 798 
-			transfer_state = 163 
-			transfer_state = 103 
-			transfer_state = 109
-		} 
-		CZE = {
-			transfer_state = 9 
-			transfer_state = 75
-		}			
-		}
-
-	} 
-
- 
-
-	option = { 
-		ai_chance = { factor = 0 }
-		name = "Switch to the Croations" 
-		CRO = { change_tag_from = AHE }
-		hidden_effect = {
-		HUN = { 
-			transfer_state = 80
-			transfer_state = 83 
-			transfer_state = 84 
-			transfer_state = 76 
-			transfer_state = 82 
-			transfer_state = 764 
-			transfer_state = 45 
-			transfer_state = 155 
-			transfer_state = 154 
-			transfer_state = 43 
-			transfer_state = 664 
-			transfer_state = 70 
-			transfer_state = 71 
-			transfer_state = 72 
-			transfer_state = 88 
-			transfer_state = 73 
-			transfer_state = 89 
-			transfer_state = 91 
-		} 
-		BOS = {
-			transfer_state = 104
-		} 
-		SER = {
-			transfer_state = 105
-		} 
-		CRO = {
-			transfer_state = 798 
-			transfer_state = 163 
-			transfer_state = 103 
-			transfer_state = 109
-		} 
-		CZE = {
-			transfer_state = 9 
-			transfer_state = 75
-		}			
-		}
-
-	} 
-
-	option = { 
-		ai_chance = { factor = 0 }
-		name = "Stick with Austria" 
 		add_political_power = 20
-		hidden_effect = {
 		HUN = { 
-			transfer_state = 80
+			transfer_state = 103
+			transfer_state = 109
 			transfer_state = 83 
 			transfer_state = 84 
 			transfer_state = 76 
@@ -174,31 +126,15 @@ country_event = {
 			transfer_state = 664 
 			transfer_state = 70 
 			transfer_state = 71 
-			transfer_state = 72 
-			transfer_state = 88 
 			transfer_state = 73 
-			transfer_state = 89 
-			transfer_state = 91 
 		} 
-		BOS = {
-			transfer_state = 104
-		} 
-		SER = {
-			transfer_state = 105
-		} 
-		CRO = {
-			transfer_state = 798 
-			transfer_state = 163 
-			transfer_state = 103 
-			transfer_state = 109
-		} 
-		CZE = {
-			transfer_state = 9 
-			transfer_state = 75
-		}			
-		}
-
-	} 
+		hidden_effect = {
+			news_event = { id = redliberties.3 days = 1 }
+			HUN = {
+				country_event = { id = ahe_events.2 days = 89 }
+			}
+		}		
+	}
 } 
 ####################
 ##	 UK events ## 
@@ -258,7 +194,7 @@ country_event = {
 		name = "Ethiopia Stands Strong!"
 		add_political_power = 20 
 		add_stability = 0.15 
-		add_war_support = 0.10
+		add_war_support = 0.10 
 	} 
 } 
 
@@ -357,6 +293,28 @@ country_event = {
 		add_opinion_modifier = {
     		target = ENG
     		modifier = large_decrease
+		}
+	} 
+} 
+
+#The Roman Vision Speech
+country_event = {
+	id = italy_events.5
+	title = italy_events.5.t
+	desc = italy_events.5.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+	option = { 
+		ai_chance = { factor = 100 }
+		name = "We will Remember!"
+		add_opinion_modifier = {
+			add_ideas = {#Reduces war justifacation time, adds 10% extra war support, and 0.05 plus political power
+				ITA_roman_goal
+			}
 		}
 	} 
 }

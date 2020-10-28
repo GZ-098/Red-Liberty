@@ -1,5 +1,17 @@
 spriteTypes = {
-	
+
+	spriteType = {
+		name = "GFX_news_event_austro_hungarian_split"
+		texturefile = "gfx/event_gfx/news_event_austro_hungarian_split.dds"
+	} 
+	spriteType = {
+		name = "GFX_report_event_austro_hungarian_split"
+		texturefile = "gfx/event_gfx/report_event_austro_hungarian_split.dds"
+	} 
+	spriteType = {
+		name = "GFX_report_event_roman_speech"
+		texturefile = "gfx/event_gfx/report_event_roman_speech.dds"
+	} 	
 	spriteType = {
 		name = "GFX_news_event_second_italo_ethiopian_war"
 		texturefile = "gfx/event_gfx/news_event_second_italo_ethiopian_war.dds"
