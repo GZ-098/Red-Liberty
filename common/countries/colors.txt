@@ -744,3 +744,8 @@ ORE = {
 	color = rgb { 119 201 212 }
 	color_ui = rgb { 119 201 212 }
 }
+
+TMY = {
+	color = rgb { 152 251 152 }
+	color_ui = rgb { 114 183 114 }
+}
