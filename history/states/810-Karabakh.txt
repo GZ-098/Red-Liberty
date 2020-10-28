@@ -4,7 +4,7 @@ state={
 	name="STATE_810"
 
 	history={
-		owner = AZR
+		owner = ARM
 		buildings = {
 			infrastructure = 2
 
