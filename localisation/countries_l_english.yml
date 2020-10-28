@@ -2856,3 +2856,6 @@
  KAZ_conservatism_DEF:0 "Alash Orda"
  KAZ_DEF:0 "Alash Orda"
  KAZ_ADJ:0 "Kazakh"
+ TMY:0 "Talyshstan"
+ TMY_DEF:0 "Talyshstan"
+ TMY_ADJ:0 "Talysh"
