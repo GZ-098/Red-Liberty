@@ -1,0 +1,244 @@
+on_actions = {
+	#### PEACE/WAR VICTORY ON_CAPITULATION BLOCK ####
+	#### PUT YOUR SHIT HERE
+	# At the end of each global block, set the skip_default_capitulation GLOBAL flag
+	# Otherwise shit will just get annexed
+	# Really
+	# It will.
+
+	# FROM = winner
+	# ROOT = country being capitulated/loser
+
+	on_capitulation = {
+		effect = {
+			log = "[GetDateText]: FROM: [From.GetName] ROOT: [Root.GetName] on_capitulation"
+
+			FROM = {
+				save_global_event_target_as = winning_country
+			}
+			ROOT = {
+				save_global_event_target_as = losing_country
+			}
+
+			log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_capitulation"
+
+			if = {
+				limit = {
+					event_target:losing_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:losing_country
+						}
+					}
+				}
+				set_global_flag = losing_country_multiple
+			}
+
+			if = {
+				limit = {
+					event_target:winning_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:winning_country
+						}
+					}
+				}
+				set_global_flag = winning_country_multiple
+			}
+
+			#Annexation block
+			#This if block will only fire if FROM (capitulator) and ROOT (country being capitulated)
+			#That is to say, if one side has completely lost (nobody left to fight on)
+			if = {
+				limit = {
+					NOT = {
+						ROOT = {
+							is_in_faction = yes
+							any_other_country = {
+								is_in_faction_with = PREV
+								has_capitulated = no
+							}
+						}
+					}
+				}
+				set_global_flag = war_won
+				
+				### DANUBIAN WARS
+
+				### AUSTRIA FALLS
+				if = {
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = ITA
+								original_tag = CZE
+								original_tag = POL
+								original_tag = SER
+							}
+							has_country_flag = danubian_war_participant
+						}
+						ROOT = {
+							original_tag = AHE
+							has_country_flag = danubian_war_participant
+						}
+					}
+
+					FROM = {
+						white_peace = {
+							tag = ROOT
+							message = EXAMPLE
+						}
+						if = {
+							limit = {
+								ITA = {
+									has_war_with = AHE
+								}
+							}
+							ITA = {
+								transfer_state = 39
+								transfer_state = 163
+								transfer_state = 736
+								transfer_state = 798
+							}
+						}
+						POL = {
+							transfer_state = 88
+							if = {
+								limit = {
+									NOT = {
+										UKR = {
+											has_war_with = AHE
+										}
+									}
+								}
+								POL = {
+									transfer_state = 89
+									transfer_state = 91
+								}
+							}
+							white_peace = {
+								tag = AHE
+								message = EXAMPLE
+							}
+						}
+						SER = {
+							transfer_state = 105
+							if = {
+								limit = {
+									NOT = {
+										ITA = {
+											has_war_with = AHE
+										}
+									}
+								}
+								SER = {
+									transfer_state = 163
+									transfer_state = 798
+								}
+							}
+							white_peace = {
+								tag = AHE
+								message = EXAMPLE
+							}
+						}
+						if = {
+							limit = {
+								country_exists = CZE
+								CZE = {
+									has_war_with = AHE
+								}
+							}
+							if = {
+								limit = {
+									NOT = {
+										GER = {
+											owns_state = 69
+										}
+									}
+								}
+								CZE = {
+									transfer_state = 69
+								}
+							}
+							CZE = {
+								transfer_state = 72
+								transfer_state = 74
+								transfer_state = 75
+								white_peace = {
+									tag = AHE
+									message = EXAMPLE
+								}
+							}
+						}
+						if = {
+							limit = {
+								UKR = {
+									has_war_with = AHE
+								}
+							}
+							UKR = {
+								transfer_state = 89
+								transfer_state = 91
+								white_peace = {
+									tag = AHE
+									message = EXAMPLE
+								}
+							}
+						}
+						if = {
+							limit = {
+								ROM = {
+									has_war_with = AHE
+								}
+							}
+							ROM = {
+								transfer_state = 80
+								white_peace = {
+									tag = AHE
+									message = EXAMPLE
+								}
+							}
+						}
+						clr_country_flag = danubian_war_participant
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				
+				### ROMANIAN INTERVENTION
+				
+				if = {
+					limit = {
+						FROM = {
+							original_tag = ROM
+							has_country_flag = danubian_war_participant
+						}
+						ROOT = {
+							owns_state = 76
+							owns_state = 82
+							owns_state = 83
+							owns_state = 84
+							has_country_flag = danubian_war_participant
+						}
+					}
+
+					FROM = {
+						white_peace = {
+							tag = HSR
+							message = EXAMPLE
+						}
+						white_peace = {
+							tag = HUN
+							message = EXAMPLE
+						}
+						ROM = {
+							transfer_state = 76
+							transfer_state = 82
+							transfer_state = 83
+							transfer_state = 84
+						}
+						clr_country_flag = danubian_war_participant
+					}
+					set_global_flag = skip_default_capitulation
+				}
+			}
+		}
+	}
+}
