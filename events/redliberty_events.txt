@@ -84,7 +84,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 		name = "Time to Take Back our Rightful Land!" 
 		declare_war_on = {
-    		target = POL
+    		target = AHE
     		type = take_state_focus 
 			generator = { 88 }
 		}		
@@ -273,13 +273,13 @@ country_event = {
 				country_event = { id = danubian_war_events.1 days = 10 }
 			} 
 			ITA ={
-				country_event = { id = danubian_war_events.2 days = 10 }
+				country_event = { id = danubian_war_events.1 days = 10 }
 			} 
 			ROM ={
-				country_event = { id = danubian_war_events.3 days = 10 }
+				country_event = { id = danubian_war_events.4 days = 10 }
 			} 
 			POL ={
-				country_event = { id = danubian_war_events.4 days = 10 }
+				country_event = { id = danubian_war_events.3 days = 10 }
 			} 
 			UKR ={
 				country_event = { id = danubian_war_events.5 days = 10 }
@@ -307,13 +307,13 @@ country_event = {
 				country_event = { id = danubian_war_events.1 days = 10 }
 			} 
 			ITA ={
-				country_event = { id = danubian_war_events.2 days = 10 }
+				country_event = { id = danubian_war_events.1 days = 10 }
 			} 
 			ROM ={
-				country_event = { id = danubian_war_events.3 days = 10 }
+				country_event = { id = danubian_war_events.4 days = 10 }
 			} 
 			POL ={
-				country_event = { id = danubian_war_events.4 days = 10 }
+				country_event = { id = danubian_war_events.3 days = 10 }
 			} 
 			UKR ={
 				country_event = { id = danubian_war_events.5 days = 10 }
