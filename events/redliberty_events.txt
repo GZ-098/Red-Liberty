@@ -8,6 +8,13 @@ add_namespace = danubian_war_events
 ##	 Danubian War events ## 
 ################### 
 
+IF = {
+	AHE = {
+		has_capitulated = yes
+	} 
+	country_event = { id = danubian_war_events.7 days = 1 }
+}
+
 #Ukrainian Intervetion
 country_event = {
 	id = danubian_war_events.5
@@ -202,11 +209,11 @@ country_event = {
 	}
 } 
 
-#Serbia Revolt
+#Serbia Attacks
 country_event = {
-	id = ahe_events.5
-	title = ahe_events.5.t
-	desc = ahe_events.5.d
+	id = ahe_events.6
+	title = ahe_events.6.t
+	desc = ahe_events.6.d
 	picture = GFX_report_event_revolutions
 
 	is_triggered_only = yes
@@ -215,28 +222,28 @@ country_event = {
 
 	option = { 
 		ai_chance = { factor = 1 }
-		name = "Things are Getting Worse" 
+		name = "The Old Rival is Coming Back" 
 		add_political_power = 20 
-		CZE = {
+		SER = {
 			transfer_state = 9	
 			declare_war_on = {
     			target = AHE
     			type = take_state_focus 
-				generator = { 75 }
+				generator = { 105 }
 			}
 		} 		
 	} 
 
 	option = { 
 		ai_chance = { factor = 0 }
-		name = "Switch to the Czechs" 
-		CZE = { change_tag_from = AHE } 
-		CZE = {
+		name = "Switch to the Serbs" 
+		SER = { change_tag_from = AHE } 
+		SER = {
 			transfer_state = 9 
 			declare_war_on = {
     			target = AHE
     			type = take_state_focus 
-				generator = { 75 }
+				generator = { 105 }
 			}
 		} 	
 	}
