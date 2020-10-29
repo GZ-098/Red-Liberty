@@ -12,7 +12,7 @@ IF = {
 	AHE = {
 		has_capitulated = yes
 	} 
-	country_event = { id = danubian_war_events.7 days = 1 }
+	country_event = { id = danubian_war_events.6 days = 1 }
 }
 
 #Ukrainian Intervetion
@@ -211,9 +211,9 @@ country_event = {
 
 #Serbia Attacks
 country_event = {
-	id = ahe_events.6
-	title = ahe_events.6.t
-	desc = ahe_events.6.d
+	id = ahe_events.7
+	title = ahe_events.7.t
+	desc = ahe_events.7.d
 	picture = GFX_report_event_revolutions
 
 	is_triggered_only = yes
@@ -393,7 +393,8 @@ country_event = {
 			} 
 			AHE = {
 				country_event = { id = ahe_events.5 days = 10 } 
-				country_event = { id = ahe_events.6 days = 10 }
+				country_event = { id = ahe_events.6 days = 10 } 
+				country_event = { id = ahe_events.7 days = 10 }
 			}
 		}		
 	} 
