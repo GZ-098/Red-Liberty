@@ -8,6 +8,123 @@ add_namespace = danubian_war_events
 ##	 Danubian War events ## 
 ################### 
 
+#Ukrainian Intervetion
+country_event = {
+	id = danubian_war_events.5
+	title = danubian_war_events.5.t
+	desc = danubian_war_events.5.d
+	picture = GFX_report_event_austro_hungarian_split
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+	option = { 
+		ai_chance = { factor = 50 }
+		name = "Time to Take Back our Rightful Land!" 
+		declare_war_on = {
+    		target = AHE
+    		type = take_state_focus 
+			generator = { 91 }
+		}		
+	} 
+
+	option = { 
+		ai_chance = { factor = 25 }
+		name = "Best That we Remain Nuetral" 
+		add_political_power = 50  	
+	}
+} 
+
+#Romanian Intervetion
+country_event = {
+	id = danubian_war_events.4
+	title = danubian_war_events.4.t
+	desc = danubian_war_events.4.d
+	picture = GFX_report_event_austro_hungarian_split
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+	option = { 
+		ai_chance = { factor = 50 }
+		name = "Time to Take Back our Rightful Land!" 
+		declare_war_on = {
+    		target = HSR
+    		type = take_state_focus 
+			generator = { 82 83 84 76 80 }
+		}	
+		declare_war_on = {
+    		target = HUN
+    		type = take_state_focus 
+			generator = { 82 83 84 76 80 }
+		}		
+	} 
+
+	option = { 
+		ai_chance = { factor = 25 }
+		name = "Best That we Remain Nuetral" 
+		add_political_power = 50  	
+	}
+}  
+
+#Polish Intervetion
+country_event = {
+	id = danubian_war_events.3
+	title = danubian_war_events.3.t
+	desc = danubian_war_events.3.d
+	picture = GFX_report_event_austro_hungarian_split
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+	option = { 
+		ai_chance = { factor = 50 }
+		name = "Time to Take Back our Rightful Land!" 
+		declare_war_on = {
+    		target = POL
+    		type = take_state_focus 
+			generator = { 88 }
+		}		
+	} 
+
+	option = { 
+		ai_chance = { factor = 25 }
+		name = "Best That we Remain Nuetral" 
+		add_political_power = 50  	
+	}
+} 
+
+#German Intervetion
+country_event = {
+	id = danubian_war_events.2
+	title = danubian_war_events.2.t
+	desc = danubian_war_events.2.d
+	picture = GFX_report_event_austro_hungarian_split
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+	option = { 
+		ai_chance = { factor = 50 }
+		name = "The Sudantenland was Always German!" 
+		declare_war_on = {
+    		target = AHE
+    		type = take_state_focus 
+			generator = { 69 }
+		}		
+	} 
+
+	option = { 
+		ai_chance = { factor = 25 }
+		name = "Best That we Remain Nuetral" 
+		add_political_power = 50  	
+	}
+}   
+
 #Italian Intervetion
 country_event = {
 	id = danubian_war_events.1
@@ -20,17 +137,22 @@ country_event = {
 	fire_only_once = yes 
 
 	option = { 
-		ai_chance = { factor = 1 }
+		ai_chance = { factor = 50 }
 		name = "This Will be a Great Time to Strike!" 
 		declare_war_on = {
     		target = AHE
     		type = take_state_focus 
-			generator = { 71 }
-		}		
+			generator = { 39 736 163 798 }
+		}	
+		declare_war_on = {
+    		target = HUN
+    		type = take_state_focus 
+			generator = { 103 }
+		}	
 	} 
 
 	option = { 
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 25 }
 		name = "Best That we Remain Nuetral" 
 		add_political_power = 50  	
 	}
