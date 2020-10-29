@@ -23,7 +23,11 @@ country_event = {
     		target = AHE
     		type = take_state_focus 
 			generator = { 91 }
-		}		
+		}
+		set_country_flag = danubian_war_participant
+		add_ideas = {
+			DAN_danubian_war_participant
+		}
 	} 
 
 	option = { 
@@ -92,6 +96,9 @@ country_event = {
 			generator = { 88 }
 		}
 		set_country_flag = danubian_war_participant
+		add_ideas = {
+			DAN_danubian_war_participant
+		}
 	} 
 
 	option = { 

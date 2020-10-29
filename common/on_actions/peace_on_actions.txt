@@ -82,10 +82,6 @@ on_actions = {
 					}
 
 					FROM = {
-						white_peace = {
-							tag = ROOT
-							message = EXAMPLE
-						}
 						if = {
 							limit = {
 								ITA = {
@@ -96,7 +92,11 @@ on_actions = {
 								transfer_state = 39
 								transfer_state = 163
 								transfer_state = 736
-								transfer_state = 798
+								#transfer_state = 798
+							}
+							white_peace = {
+								tag = AHE
+								message = EXAMPLE
 							}
 						}
 						POL = {
@@ -125,7 +125,8 @@ on_actions = {
 								limit = {
 									NOT = {
 										ITA = {
-											has_war_with = AHE
+											owns_state = 163
+											owns_state = 798
 										}
 									}
 								}

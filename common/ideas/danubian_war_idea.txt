@@ -1,0 +1,24 @@
+ideas = {
+
+	country = {
+	
+		DAN_danubian_war_participant = {
+			
+			removal_cost = -1 
+		
+			#picture = new_imperial_economic_plan
+			
+			allowed_civil_war = {	 
+				always = yes	
+			}	
+			
+			allowed = {
+				has_war_with = AHE
+			}
+				
+			modifier = {
+				ai_call_ally_desire_factor = -1000
+			}
+		}
+	}
+}
