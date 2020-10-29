@@ -377,7 +377,7 @@ country_event = {
 
 	option = { 
 		ai_chance = { factor = 1 }
-		name = "Off to do some war crimes!" 
+		name = "Off for some war crimes!" 
 		add_political_power = 20 
 		hidden_effect = { 
 			HUN ={
