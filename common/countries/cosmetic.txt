@@ -351,3 +351,7 @@ KAZ_russia = {
 	color = rgb { 95 135 80 }
 	color_ui = rgb { 77 133 56 }
 }
+
+SLO_HUN_communist = {
+	color = rgb { 188 5 5 }
+}

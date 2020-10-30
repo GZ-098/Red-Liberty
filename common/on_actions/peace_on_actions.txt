@@ -82,70 +82,18 @@ on_actions = {
 					}
 
 					FROM = {
-						if = {
-							limit = {
-								ITA = {
-									has_war_with = AHE
-								}
-							}
-							ITA = {
-								transfer_state = 39
-								transfer_state = 163
-								transfer_state = 736
-								#transfer_state = 798
-							}
-							white_peace = {
-								tag = AHE
-								message = EXAMPLE
-							}
-						}
-						POL = {
-							transfer_state = 88
-							if = {
-								limit = {
-									NOT = {
-										UKR = {
-											has_war_with = AHE
-										}
-									}
-								}
-								POL = {
-									transfer_state = 89
-									transfer_state = 91
-								}
-							}
-							white_peace = {
-								tag = AHE
-								message = EXAMPLE
-							}
-						}
-						SER = {
-							transfer_state = 105
-							if = {
-								limit = {
-									NOT = {
-										ITA = {
-											owns_state = 163
-											owns_state = 798
-										}
-									}
-								}
-								SER = {
-									transfer_state = 163
-									transfer_state = 798
-								}
-							}
-							white_peace = {
-								tag = AHE
-								message = EXAMPLE
-							}
-						}
+						danubian_wars_peace_italy = yes
+						
+						danubian_wars_peace_poland = yes
+						
+						danubian_wars_peace_serbia = yes
+						
 						if = {
 							limit = {
 								country_exists = CZE
-								CZE = {
-									has_war_with = AHE
-								}
+								#CZE = {
+								#	has_war_with = AHE
+								#}
 							}
 							if = {
 								limit = {
@@ -212,6 +160,10 @@ on_actions = {
 							has_country_flag = danubian_war_participant
 						}
 						ROOT = {
+							OR = {
+								original_tag = HUN
+								original_tag = HSR
+							}
 							owns_state = 76
 							owns_state = 82
 							owns_state = 83
@@ -221,6 +173,22 @@ on_actions = {
 					}
 
 					FROM = {
+						ROM = {
+							transfer_state = 76
+							transfer_state = 82
+							transfer_state = 83
+							transfer_state = 84
+						}
+						if = {
+							limit = {
+								ROM = {
+									controls_state = 43
+								}
+							}
+							ROM = {
+								transfer_state = 764
+							}
+						}
 						white_peace = {
 							tag = HSR
 							message = EXAMPLE
@@ -229,11 +197,40 @@ on_actions = {
 							tag = HUN
 							message = EXAMPLE
 						}
-						ROM = {
-							transfer_state = 76
-							transfer_state = 82
-							transfer_state = 83
-							transfer_state = 84
+						clr_country_flag = danubian_war_participant
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				
+				
+				
+				### HSR BEATS SLOVAKS
+				
+				if = {
+					limit = {
+						FROM = {
+							original_tag = HSR
+							has_country_flag = danubian_war_participant
+						}
+						ROOT = {
+							original_tag = SLO
+							has_country_flag = danubian_war_participant
+						}
+					}
+
+					FROM = {
+						white_peace = {
+							tag = ROOT
+							message = EXAMPLE
+						}
+						SLO = {
+							transfer_state = 70
+							transfer_state = 71
+							
+							set_cosmetic_tag = SLO_HUN_communist
+						}
+						HSR = {
+							puppet = SLO
 						}
 						clr_country_flag = danubian_war_participant
 					}

@@ -49,7 +49,7 @@ country_event = {
 	fire_only_once = yes 
 
 	option = { 
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 100 }
 		name = "Time to Take Back our Rightful Land!" 
 		declare_war_on = {
     		target = HSR
@@ -70,7 +70,7 @@ country_event = {
 	} 
 
 	option = { 
-		ai_chance = { factor = 25 }
+		ai_chance = { factor = 0 }
 		name = "Best That we remain Neutral" 
 		add_political_power = 50  	
 	}
@@ -88,7 +88,7 @@ country_event = {
 	fire_only_once = yes 
 
 	option = { 
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 100 }
 		name = "Time to Take Back our Rightful Land!" 
 		declare_war_on = {
     		target = AHE
@@ -102,7 +102,7 @@ country_event = {
 	} 
 
 	option = { 
-		ai_chance = { factor = 25 }
+		ai_chance = { factor = 0 }
 		name = "Best That we Remain Nuetral" 
 		add_political_power = 50  	
 	}
@@ -144,7 +144,7 @@ country_event = {
 	fire_only_once = yes 
 
 	option = { 
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 100 }
 		name = "This Will be a Great Time to Strike!" 
 		declare_war_on = {
     		target = AHE
@@ -155,7 +155,7 @@ country_event = {
 	} 
 
 	option = { 
-		ai_chance = { factor = 25 }
+		ai_chance = { factor = 0 }
 		name = "Best That we Remain Nuetral" 
 		add_political_power = 50  	
 	}
@@ -181,13 +181,31 @@ country_event = {
 		name = "The Slovaks have Rebelled and we Have to Stop That" 
 		add_political_power = 20 
 		SLO = {
-			transfer_state = 70	
+			transfer_state = 70
+			70 = {
+				add_core_of = SLO
+			}
+			70 = {
+				add_core_of = SLO
+			}
+			664 = {
+				add_core_of = SLO
+			}
 			declare_war_on = {
     			target = HUN
     			type = take_state_focus 
 				generator = { 71 }
 			}
-		} 		
+			load_oob = SLO_danubian_war
+			
+			set_country_flag = danubian_war_participant
+		}
+		HSR = {
+			declare_war_on = {
+    			target = SLO
+    			type = annex_everything
+			}
+		}
 	} 
 
 	option = { 
@@ -269,7 +287,9 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			CZE = {
-				transfer_state = 9	
+				transfer_state = 9
+				
+				load_oob = CZE_danubian_war
 			}
 			AHE = {
 				declare_war_on = {
@@ -312,21 +332,6 @@ country_event = {
 			CRO = {
 				transfer_state = 103
 				transfer_state = 109
-			}
-			GER = {
-				remove_from_faction = AHE
-			}
-			ITA ={
-				country_event = { id = danubian_war_events.1 days = 10 }
-			} 
-			ROM ={
-				country_event = { id = danubian_war_events.4 days = 10 }
-			} 
-			POL ={
-				country_event = { id = danubian_war_events.3 days = 10 }
-			} 
-			UKR ={
-				country_event = { id = danubian_war_events.5 days = 10 }
 			}
 		}
 	}
@@ -372,6 +377,21 @@ country_event = {
 			BOS = {
 				transfer_state = 104	
 			}
+			GER = {
+				remove_from_faction = AHE
+			}
+			ITA ={
+				country_event = { id = danubian_war_events.1 days = 7 }
+			} 
+			ROM ={
+				country_event = { id = danubian_war_events.4 days = 10 }
+			} 
+			POL ={
+				country_event = { id = danubian_war_events.3 days = 15 }
+			} 
+			UKR ={
+				country_event = { id = danubian_war_events.5 days = 15 }
+			}
 		}
 	}
 
@@ -387,6 +407,10 @@ country_event = {
 				country_event = { id = ahe_events.5 days = 10 } 
 				country_event = { id = ahe_events.6 days = 13 } 
 				country_event = { id = ahe_events.7 days = 17 }
+				declare_war_on = {
+					target = BOS
+					type = annex_everything
+				}
 			}
 		}		
 	} 
@@ -426,7 +450,19 @@ country_event = {
 				transfer_state = 154
 				
 				set_country_flag = danubian_war_participant
+				
+				load_oob = HSR_danubian_war
 			}
+			
+			every_state = {
+				limit = {
+					is_core_of = HUN
+					NOT = { is_core_of = HUN }
+					NOT = { is_claimed_by = HUN }
+				}
+				add_core_of = HSA
+			}
+			
 			AHE = {
 				country_event = { id = ahe_events.3 days = 10}				
 			}
@@ -488,6 +524,8 @@ country_event = {
 				transfer_state = 73
 				
 				set_country_flag = danubian_war_participant
+				
+				load_oob = HSR_danubian_war
 			}
 			AHE = {
 				end_puppet = UKR
