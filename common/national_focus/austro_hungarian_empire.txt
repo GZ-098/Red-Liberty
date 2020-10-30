@@ -23,24 +23,7 @@ focus_tree = {
 			factor = 1
 		} 
 		completion_reward = { 
-			HUN = { 
-			transfer_state = 103
-			transfer_state = 83
-			transfer_state = 45
-			transfer_state = 103  
-			transfer_state = 109 
-			transfer_state = 155 
-			transfer_state = 619 
-			transfer_state = 764 
-			transfer_state = 82 
-			transfer_state = 84 
-			transfer_state = 76 
-			transfer_state = 73 
-			transfer_state = 71 
-			transfer_state = 664 
-			transfer_state = 70 
-			transfer_state = 43 
-			transfer_state = 154
+			
 		}
 	} 
 }

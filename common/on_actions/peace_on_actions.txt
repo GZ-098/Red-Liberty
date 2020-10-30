@@ -82,6 +82,8 @@ on_actions = {
 					}
 
 					FROM = {
+						white_peace = ROOT
+					
 						danubian_wars_peace_italy = yes
 						
 						danubian_wars_peace_poland = yes
@@ -236,7 +238,36 @@ on_actions = {
 					}
 					set_global_flag = skip_default_capitulation
 				}
+				
+				### AUSTRIA BEATS CZECHS
+				
+				if = {
+					limit = {
+						FROM = {
+							original_tag = AHE
+							has_country_flag = danubian_war_participant
+						}
+						ROOT = {
+							original_tag = CZE
+							has_country_flag = danubian_war_participant
+						}
+					}
+
+					FROM = {
+						white_peace = {
+							tag = ROOT
+							message = EXAMPLE
+						}
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+						clr_country_flag = danubian_war_participant
+					}
+					set_global_flag = skip_default_capitulation
+				}
 			}
+			clr_global_flag = skip_default_capitulation
 		}
 	}
 }

@@ -123,6 +123,9 @@ country_event = {
 		ai_chance = { factor = 50 }
 		name = "The Sudantenland was Always German!" 
 		transfer_state = 69
+		69 = {
+			add_core_of = GER
+		}
 	} 
 
 	option = { 
