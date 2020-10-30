@@ -82,83 +82,58 @@ on_actions = {
 					}
 
 					FROM = {
-						white_peace = ROOT
+						#white_peace = ROOT
 					
 						danubian_wars_peace_italy = yes
 						
 						danubian_wars_peace_poland = yes
 						
-						danubian_wars_peace_serbia = yes
+						if = {
+							limit = {
+								SER = {
+									has_war_with = AHE
+								}
+							}
+							danubian_wars_peace_serbia = yes
+						}
 						
 						if = {
 							limit = {
 								country_exists = CZE
-								#CZE = {
-								#	has_war_with = AHE
-								#}
 							}
-							if = {
-								limit = {
-									NOT = {
-										GER = {
-											owns_state = 69
-										}
-									}
-								}
-								CZE = {
-									transfer_state = 69
-								}
-							}
-							CZE = {
-								transfer_state = 72
-								transfer_state = 74
-								transfer_state = 75
-								white_peace = {
-									tag = AHE
-									message = EXAMPLE
-								}
-							}
+							danubian_wars_peace_czechia = yes
 						}
+						
 						if = {
 							limit = {
 								UKR = {
 									has_war_with = AHE
 								}
 							}
-							UKR = {
-								transfer_state = 89
-								transfer_state = 91
-								white_peace = {
-									tag = AHE
-									message = EXAMPLE
-								}
-							}
+							danubian_wars_peace_ukraine = yes
 						}
+						
 						if = {
 							limit = {
 								ROM = {
 									has_war_with = AHE
 								}
 							}
-							ROM = {
-								transfer_state = 80
-								white_peace = {
-									tag = AHE
-									message = EXAMPLE
-								}
-							}
+							danubian_wars_peace_romania = yes
 						}
-						clr_country_flag = danubian_war_participant
 					}
 					set_global_flag = skip_default_capitulation
 				}
 				
-				### ROMANIAN INTERVENTION
+				### ROMANIAN/CZECH INTERVENTION
 				
 				if = {
 					limit = {
 						FROM = {
-							original_tag = ROM
+							OR = {
+								original_tag = ROM
+								original_tag = CZE
+							}
 							has_country_flag = danubian_war_participant
 						}
 						ROOT = {
@@ -190,6 +165,34 @@ on_actions = {
 							ROM = {
 								transfer_state = 764
 							}
+						}
+						if = {
+							limit = {
+								CZE = {
+									OR = {
+										has_war_with = HUN
+										has_war_with = HSR
+									}
+								}
+							}
+							white_peace = {
+								tag = ROOT
+								message = EXAMPLE
+							}
+							CZE = {
+								transfer_state = 70
+								transfer_state = 71
+								transfer_state = 73
+								transfer_state = 664
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									country_exists = CRO
+								}
+							}
+							release = CRO
 						}
 						white_peace = {
 							tag = HSR
@@ -229,7 +232,7 @@ on_actions = {
 							transfer_state = 70
 							transfer_state = 71
 							
-							set_cosmetic_tag = SLO_HUN_communist
+							set_cosmetic_tag = SLO_HUN_communism
 						}
 						HSR = {
 							puppet = SLO

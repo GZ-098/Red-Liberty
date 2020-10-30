@@ -47,3 +47,71 @@ danubian_wars_peace_serbia = {
 		}
 	}
 }
+
+danubian_wars_peace_czechia = {
+	CZE = {
+		white_peace = {
+			tag = AHE
+			message = EXAMPLE
+		}
+		transfer_state = 72
+		transfer_state = 74
+		transfer_state = 75
+		if = {
+			limit = {
+				NOT = {
+					GER = {
+						owns_state = 69
+					}
+				}
+			}
+			CZE = {
+				transfer_state = 69
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					CZE = {
+						has_war_with = HUN
+						has_war_with = HSR
+					}
+				}
+			}
+			clr_country_flag = danubian_war_participant
+		}
+	}
+}
+
+danubian_wars_peace_ukraine = {
+	UKR = {
+		white_peace = {
+			tag = AHE
+			message = EXAMPLE
+		}
+		transfer_state = 89
+		transfer_state = 91
+		clr_country_flag = danubian_war_participant
+	}
+}
+
+danubian_wars_peace_romania = {
+	ROM = {
+		white_peace = {
+			tag = AHE
+			message = EXAMPLE
+		}
+		transfer_state = 80
+		if = {
+			limit = {
+				NOT = {
+					ROM = {
+						has_war_with = HUN
+						has_war_with = HSR
+					}
+				}
+			}
+			clr_country_flag = danubian_war_participant
+		}
+	}
+}
