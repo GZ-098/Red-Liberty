@@ -25,8 +25,7 @@ focus_tree = {
 		completion_reward = { 
 			
 		}
-	} 
-}
+	}
 	#Focus for Canceling Ancient Treaties
 	focus = {
 		id = AHE_canceling_ancient_treaties
