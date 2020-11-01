@@ -118,7 +118,7 @@ focus_tree = {
 
 	focus = {
         id = ITA_begin_to_refill_lost_ranks
-        icon = GFX_ITA_the_one_man_dictator
+        icon = GFX_ITA_begin_to_refill_lost_ranks
         x = 12
         y = 6
         cost = 1
@@ -131,10 +131,97 @@ focus_tree = {
 	    ai_will_do = {
             factor = 15 }
         completion_reward = {
-			add_stability = 0.10
 			add_political_power = 30
 		}
     } 
+
+	focus = {
+        id = ITA_refill_GCF_seats
+        icon = GFX_ITA_refill_GCF_seats
+        x = 1
+        y = 1
+        cost = 1
+        available = { }
+        bypass = { }
+        mutually_exclusive = { } 
+        relative_position_id = ITA_begin_to_refill_lost_ranks
+        prerequisite = { focus = ITA_begin_to_refill_lost_ranks }
+        available_if_capitulated = yes
+        search_filters = { }
+	    ai_will_do = { factor = 15 }        
+        completion_reward = {
+            add_political_power = 67
+		}
+    } 
+
+	focus = {
+        id = ITA_expand_the_number_of_seats
+        icon = GFX_ITA_expand_the_number_of_seats
+        x = 1
+        y = 2
+        cost = 1
+        available = { }
+        bypass = { }
+        mutually_exclusive = { } 
+        relative_position_id = ITA_begin_to_refill_lost_ranks
+        prerequisite = { focus = ITA_refill_GCF_seats }
+        available_if_capitulated = yes
+        search_filters = { }
+	    ai_will_do = { factor = 15 }        
+        completion_reward = {
+            add_timed_ideas = {#Add 0.20% extra political power
+                idea = ITA_court_packing 
+                days = 25
+            } 
+            country_event = { id = italy_events.6 days = 25 }
+		}
+    }
+
+	focus = {
+        id = ITA_hire_new_blackshirts
+        icon = GFX_ITA_hire_new_blackshirts
+        x = -1
+        y = 1
+        cost = 1
+        available = { }
+        bypass = { }
+        mutually_exclusive = { } 
+        relative_position_id = ITA_begin_to_refill_lost_ranks
+        prerequisite = { focus = ITA_begin_to_refill_lost_ranks }
+        available_if_capitulated = yes
+        search_filters = { }
+	    ai_will_do = {
+            factor = 15 }
+        completion_reward = {
+			add_timed_idea = {#Adds 10% extra weekly manpower
+                idea = ITA_new_black_shirt_conscription 
+                days = 110
+            }
+		}
+    } 
+
+	focus = {
+        id = ITA_train_the_new_blackshirts
+        icon = GFX_ITA_train_the_new_blackshirts
+        x = -1
+        y = 2
+        cost = 1
+        available = { }
+        bypass = { }
+        mutually_exclusive = { } 
+        relative_position_id = ITA_begin_to_refill_lost_ranks
+        prerequisite = { focus = ITA_begin_to_refill_lost_ranks }
+        available_if_capitulated = yes
+        search_filters = { }
+	    ai_will_do = {
+            factor = 15 }
+        completion_reward = {
+			add_timed_idea = {#Adds 0.05 extra army exp
+                idea = ITA_blackshirt_training 
+                days = 110
+            }
+		}
+    }
 
 	focus = {
         id = ITA_begin_to_expand_italys_influence
