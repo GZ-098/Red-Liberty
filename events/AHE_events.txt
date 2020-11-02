@@ -454,7 +454,7 @@ country_event = {
 		}
 	}
 
-	option = { 
+	option = {
 		ai_chance = { factor = 1 }
 		name = "Off for some war crimes!" 
 		add_political_power = 20 
@@ -516,10 +516,9 @@ country_event = {
 			every_state = {
 				limit = {
 					is_core_of = HUN
-					NOT = { is_core_of = HUN }
 					NOT = { is_claimed_by = HUN }
 				}
-				add_core_of = HSA
+				add_core_of = HSR
 			}
 			
 			AHE = {
@@ -528,7 +527,7 @@ country_event = {
 		}
 	}
 
-	option = { 
+	option = {
 		ai_chance = { factor = 100 }
 		name = "Hungary will Never fall to Communism!"
 		declare_war_on = {
@@ -537,7 +536,7 @@ country_event = {
 		}
 	} 
 
-	option = { 
+	option = {
 		ai_chance = { factor = 0 }
 		name = "The Revolution to Free the People!" 
 		HSR = { change_tag_from = HUN }
@@ -563,9 +562,6 @@ country_event = {
 		hidden_effect = {
 			news_event = { id = redliberties.3 days = 1 }
 			HUN = {
-				country_event = { id = ahe_events.2 days = 30 }
-			}
-			HUN = { 
 				transfer_state = 103
 				transfer_state = 109
 				transfer_state = 83 
@@ -586,6 +582,10 @@ country_event = {
 				
 				load_oob = HSR_danubian_war
 			}
+			HUN = {
+				country_event = { id = ahe_events.2 days = 30 }
+			}
+			
 			AHE = {
 				end_puppet = UKR
 				end_puppet = SER
@@ -600,14 +600,14 @@ country_event = {
 		}
 	}
 
-	option = { 
+	option = {
 		ai_chance = { factor = 1 }
 		name = "The Union was doomed from the beginning." 
 		add_political_power = 20
 		set_country_flag = danubian_war_participant
 	} 
 
-	option = { 
+	option = {
 		ai_chance = { factor = 0 }
 		name = "For a free Hungary!" 
 		HUN = { change_tag_from = AHE }
