@@ -15,7 +15,7 @@ puppet = SER
 
 puppet = ROM 
 
-#country_event = { id = ahe_events.1 days = 154 }
+country_event = { id = ahe_events.1 days = 154 }
 
 #Politics for 1936.1.1
 set_politics = {
