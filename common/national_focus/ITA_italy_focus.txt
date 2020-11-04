@@ -10,10 +10,10 @@ focus_tree = {
 	#Focus for Begin the Revisions
 	focus = {
 		id = ITA_begin_the_revisions
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 20
 		y = 2
-		cost = 1
+		cost = 50
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
@@ -31,7 +31,7 @@ focus_tree = {
 	#Focus for Purge the Leftist Off the Grand Council of Fascism
 	focus = {
 		id = ITA_purge_the_leftist_off_the_grand_council_of_fascism
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 20
 		y = 3
 		cost = 1
@@ -51,7 +51,7 @@ focus_tree = {
 	#Focus for Purge the Unloyal Blackshirts
 	focus = {
 		id = ITA_purge_the_unloyal_blackshirts
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 20
 		y = 4
 		cost = 1
@@ -71,7 +71,7 @@ focus_tree = {
 	#Focus for The One Man Dictator
 	focus = {
 		id = ITA_the_one_man_dictator
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 20
 		y = 5
 		cost = 1
@@ -90,7 +90,7 @@ focus_tree = {
 	#Focus for Begin to Expand Italy's Influence
 	focus = {
 		id = ITA_begin_to_expand_italys_influence
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 18
 		y = 6
 		cost = 1
@@ -98,7 +98,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_the_one_man_dictator }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 30
 		}
 		completion_reward = {
 			add_stability = 0.10
@@ -109,7 +109,7 @@ focus_tree = {
 	#Focus for Begin Border Skirmishes on the Ethiopian Border
 	focus = {
 		id = ITA_begin_border_skirmishes_on_the_ethiopian_border
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 17
 		y = 7
 		cost = 1
@@ -117,7 +117,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_begin_to_expand_italys_influence }
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
 		ai_will_do = {
-			factor = 1
+			factor = 20
 		}
 		completion_reward = {
 			start_border_war = {
@@ -143,7 +143,7 @@ focus_tree = {
 	#Focus for Claim Austrian Land
 	focus = {
 		id = ITA_claim_austrian_land
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 19
 		y = 7
 		cost = 1
@@ -151,7 +151,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_begin_to_expand_italys_influence }
 		search_filters = { FOCUS_FILTER_ANNEXATION } 
 		ai_will_do = {
-			factor = 1
+			factor = 15
 		}
 		completion_reward = {
 			add_state_claim = 39
@@ -165,7 +165,7 @@ focus_tree = {
 	#Focus for Begin to Refill Lost Ranks
 	focus = {
 		id = ITA_begin_to_refill_lost_ranks
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 22
 		y = 6
 		cost = 1
@@ -173,7 +173,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_the_one_man_dictator }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 15
 		}
 		completion_reward = {
 			add_political_power = 30
@@ -183,7 +183,7 @@ focus_tree = {
 	#Focus for Hire New Blackshirts
 	focus = {
 		id = ITA_hire_new_blackshirts
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 21
 		y = 7
 		cost = 1
@@ -204,7 +204,7 @@ focus_tree = {
 	#Focus for Train the New Blackshirts
 	focus = {
 		id = ITA_train_the_new_blackshirts
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 21
 		y = 8
 		cost = 1
@@ -225,7 +225,7 @@ focus_tree = {
 	#Focus for Give Orders to the Blackshirts
 	focus = {
 		id = ITA_give_orders_to_the_blackshirts
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 21
 		y = 9
 		cost = 10
@@ -240,7 +240,7 @@ focus_tree = {
 	#Focus for Refill Grand Council Seats
 	focus = {
 		id = ITA_refill_grand_council_seats
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 23
 		y = 7
 		cost = 1
@@ -258,7 +258,7 @@ focus_tree = {
 	#Focus for Expand the Number of Seats
 	focus = {
 		id = ITA_expand_the_number_of_seats
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 23
 		y = 8
 		cost = 1
@@ -283,7 +283,7 @@ focus_tree = {
 	#Focus for Force New Laws Through
 	focus = {
 		id = ITA_force_new_laws_through
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 23
 		y = 9
 		cost = 10
@@ -298,7 +298,7 @@ focus_tree = {
 	#Focus for The Italian Ranks are Full
 	focus = {
 		id = ITA_the_italian_ranks_are_full
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 22
 		y = 10
 		cost = 10
@@ -318,7 +318,7 @@ focus_tree = {
 	#Focus for Lay Claim to French Lands
 	focus = {
 		id = ITA_lay_claim_to_french_lands
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 19
 		y = 8
 		cost = 1
@@ -326,7 +326,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_claim_austrian_land }
 		search_filters = { FOCUS_FILTER_ANNEXATION } 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		completion_reward = {
 			add_state_claim = 735
@@ -339,7 +339,7 @@ focus_tree = {
 	#Focus for Claim Lands in Africa
 	focus = {
 		id = ITA_claim_lands_in_africa
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 19
 		y = 9
 		cost = 1
@@ -347,7 +347,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_lay_claim_to_french_lands }
 		search_filters = { FOCUS_FILTER_ANNEXATION } 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		completion_reward = {
 			add_state_claim = 446
@@ -360,7 +360,7 @@ focus_tree = {
 	#Focus for Expand our African Holdings
 	focus = {
 		id = ITA_expand_our_african_holdings
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 17
 		y = 8
 		cost = 1
@@ -368,7 +368,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_begin_border_skirmishes_on_the_ethiopian_border }
 		search_filters = { FOCUS_FILTER_ANNEXATION } 
 		ai_will_do = {
-			factor = 1
+			factor = 20
 		}
 		completion_reward = {
 			ENG = {
@@ -387,7 +387,7 @@ focus_tree = {
 	#Focus for Italianize the Ethiopians
 	focus = {
 		id = ITA_italianize_the_ethiopians
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 17
 		y = 9
 		cost = 1
@@ -395,7 +395,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_expand_our_african_holdings }
 		search_filters = { FOCUS_FILTER_MANPOWER } 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		completion_reward = {
 			add_ideas = { ITA_ethiopian_italianization_program }
@@ -405,7 +405,7 @@ focus_tree = {
 	#Focus for The Roman Vision Speech
 	focus = {
 		id = ITA_the_roman_vision_speech
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 18
 		y = 10
 		cost = 1
@@ -431,7 +431,7 @@ focus_tree = {
 	#Focus for Expand Italy's Scope
 	focus = {
 		id = ITA_expand_italys_scope
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 20
 		y = 11
 		cost = 10
@@ -451,7 +451,7 @@ focus_tree = {
 	#Focus for Prepare Border Defenses on the French Border
 	focus = {
 		id = ITA_prepare_border_defenses_on_the_french_border
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 22
 		y = 13
 		cost = 10
@@ -466,7 +466,7 @@ focus_tree = {
 	#Focus for Sow the Seeds for Civil War
 	focus = {
 		id = ITA_sow_the_seeds_for_civil_war
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 18
 		y = 13
 		cost = 10
@@ -481,7 +481,7 @@ focus_tree = {
 	#Focus for Demand Austrian Compliance
 	focus = {
 		id = ITA_demand_austrian_compliance
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 16
 		y = 13
 		cost = 10
@@ -496,7 +496,7 @@ focus_tree = {
 	#Focus for Influence German Politics
 	focus = {
 		id = ITA_influence_german_politics
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 17
 		y = 12
 		cost = 10
@@ -508,7 +508,7 @@ focus_tree = {
 	#Focus for Influence French Politics
 	focus = {
 		id = ITA_influence_french_politics
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 23
 		y = 12
 		cost = 10
@@ -523,7 +523,7 @@ focus_tree = {
 	#Focus for Destabilize Germany
 	focus = {
 		id = ITA_destabilize_germany
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 16
 		y = 14
 		cost = 10
@@ -538,7 +538,7 @@ focus_tree = {
 	#Focus for Prepare Anti-Air Defenses
 	focus = {
 		id = ITA_prepare_antiair_defenses
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 24
 		y = 13
 		cost = 10
@@ -553,7 +553,7 @@ focus_tree = {
 	#Focus for Embargo France
 	focus = {
 		id = ITA_embargo_france
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 22
 		y = 14
 		cost = 10
@@ -568,7 +568,7 @@ focus_tree = {
 	#Focus for Rally the People for War
 	focus = {
 		id = ITA_rally_the_people_for_war
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 24
 		y = 14
 		cost = 10
@@ -583,7 +583,7 @@ focus_tree = {
 	#Focus for Cut Off Diplomatic Ties
 	focus = {
 		id = ITA_cut_off_diplomatic_ties
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 22
 		y = 15
 		cost = 10
@@ -598,7 +598,7 @@ focus_tree = {
 	#Focus for Increase Propaganda Output
 	focus = {
 		id = ITA_increase_propaganda_output
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 24
 		y = 15
 		cost = 10
@@ -613,7 +613,7 @@ focus_tree = {
 	#Focus for The War to End France
 	focus = {
 		id = ITA_the_war_to_end_france
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 23
 		y = 16
 		cost = 10
@@ -633,7 +633,7 @@ focus_tree = {
 	#Focus for Back Hitler's Efforts
 	focus = {
 		id = ITA_back_hitlers_efforts
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 18
 		y = 14
 		cost = 10
@@ -648,7 +648,7 @@ focus_tree = {
 	#Focus for Light the Fuse
 	focus = {
 		id = ITA_light_the_fuse
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 17
 		y = 15
 		cost = 10
@@ -668,7 +668,7 @@ focus_tree = {
 	#Focus for Send Equipment to the German Fascists
 	focus = {
 		id = ITA_send_equipment_to_the_german_fascists
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 17
 		y = 16
 		cost = 10
@@ -683,7 +683,7 @@ focus_tree = {
 	#Focus for Italy to Rule Europe
 	focus = {
 		id = ITA_italy_to_rule_europe
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 20
 		y = 17
 		cost = 10
@@ -703,7 +703,7 @@ focus_tree = {
 	#Focus for The war Against Democracies
 	focus = {
 		id = ITA_the_war_against_democracies
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 20
 		y = 18
 		cost = 10
@@ -718,7 +718,7 @@ focus_tree = {
 	#Focus for The Great Fall of Bolshavism
 	focus = {
 		id = ITA_the_great_fall_of_bolshavism
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_goal_unknown  
 		x = 20
 		y = 19
 		cost = 10
