@@ -13,7 +13,7 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 20
 		y = 2
-		cost = 50
+		cost = 5
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
@@ -34,7 +34,7 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 20
 		y = 3
-		cost = 1
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_begin_the_revisions }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -54,7 +54,7 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 20
 		y = 4
-		cost = 1
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_purge_the_leftist_off_the_grand_council_of_fascism }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -74,7 +74,7 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 20
 		y = 5
-		cost = 1
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_purge_the_unloyal_blackshirts }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -146,7 +146,7 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 19
 		y = 7
-		cost = 1
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_begin_to_expand_italys_influence }
 		search_filters = { FOCUS_FILTER_ANNEXATION } 
@@ -168,12 +168,12 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 22
 		y = 6
-		cost = 1
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_the_one_man_dictator }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 15
+			factor = 30
 		}
 		completion_reward = {
 			add_political_power = 30
@@ -186,12 +186,12 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 21
 		y = 7
-		cost = 1
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_begin_to_refill_lost_ranks }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 20
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -207,12 +207,12 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 21
 		y = 8
-		cost = 1
+		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_hire_new_blackshirts }
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
 		ai_will_do = {
-			factor = 1
+			factor = 25
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -228,12 +228,15 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 21
 		y = 9
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_train_the_new_blackshirts }
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
 		ai_will_do = {
-			factor = 1
+			factor = 20
+		} 
+		completion_reward = {
+			unlock_decision_category_tooltip = ITA_orders_of_the_black_shirts
 		}
 	}
 
@@ -243,12 +246,12 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 23
 		y = 7
-		cost = 1
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_begin_to_refill_lost_ranks }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 20
 		}
 		completion_reward = {
 			add_political_power = 67
@@ -261,12 +264,12 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 23
 		y = 8
-		cost = 1
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_refill_grand_council_seats }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 20
 		}
 		completion_reward = {
 			add_timed_ideas = {
@@ -286,22 +289,25 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 23
 		y = 9
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_expand_the_number_of_seats }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 20
+		} 
+		completion_reward = {
+			unlock_decision_category_tooltip = ITA_passing_new_laws
 		}
 	}
 
 	#Focus for The Italian Ranks are Full
 	focus = {
 		id = ITA_the_italian_ranks_are_full
-		icon = GFX_goal_unknown  
+		icon = GFX_ITA_the_italian_ranks_are_full 
 		x = 22
 		y = 10
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = ITA_give_orders_to_the_blackshirts 
@@ -311,7 +317,10 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 20
+		} 
+		completion_reward = {
+			add_political_power = 100
 		}
 	}
 
@@ -321,7 +330,7 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 19
 		y = 8
-		cost = 1
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_claim_austrian_land }
 		search_filters = { FOCUS_FILTER_ANNEXATION } 
@@ -342,7 +351,7 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 19
 		y = 9
-		cost = 1
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_lay_claim_to_french_lands }
 		search_filters = { FOCUS_FILTER_ANNEXATION } 
@@ -363,7 +372,7 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 17
 		y = 8
-		cost = 1
+		cost = 6
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_begin_border_skirmishes_on_the_ethiopian_border }
 		search_filters = { FOCUS_FILTER_ANNEXATION } 
@@ -390,7 +399,7 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 17
 		y = 9
-		cost = 1
+		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_expand_our_african_holdings }
 		search_filters = { FOCUS_FILTER_MANPOWER } 
@@ -408,7 +417,7 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 18
 		y = 10
-		cost = 1
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = ITA_italianize_the_ethiopians 
@@ -434,7 +443,7 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 20
 		y = 11
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = ITA_the_italian_ranks_are_full 
@@ -444,7 +453,11 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 20
+		} 
+		completion_reward = {
+			add_war_support = 0.25 
+			add_political_power = 40
 		}
 	}
 
@@ -454,12 +467,46 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 22
 		y = 13
-		cost = 10
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_influence_french_politics }
 		search_filters = { FOCUS_FILTER_STABILITY } 
 		ai_will_do = {
-			factor = 1
+			factor = 20
+		} 
+		completion_reward = {
+			158 = { 
+            	add_building_construction = {
+                	type = bunker 
+                	level = 2
+                	instant_build = yes
+                	province = 11891
+            	} 
+            	add_building_construction = {
+                	type = bunker 
+                	level = 2
+                	instant_build = yes
+                	province = 11721
+            	} 
+            	add_building_construction = {
+                	type = bunker 
+                	level = 2
+                	instant_build = yes
+                	province = 9738
+            	} 
+            	add_building_construction = {
+                	type = bunker 
+                	level = 2
+                	instant_build = yes
+                	province = 6780
+            	} 
+            	add_building_construction = {
+                	type = bunker 
+                	level = 2
+                	instant_build = yes
+                	province = 611
+            	}
+			}		
 		}
 	}
 
@@ -469,12 +516,15 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 18
 		y = 13
-		cost = 10
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_influence_german_politics }
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
 		ai_will_do = {
-			factor = 1
+			factor = 10
+		} 
+		completion_reward = {
+			unlock_decision_category_tooltip = ITA_destabalisation_missions
 		}
 	}
 
@@ -484,12 +534,20 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 16
 		y = 13
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_influence_german_politics }
 		search_filters = { FOCUS_FILTER_ANNEXATION } 
 		ai_will_do = {
-			factor = 1
+			factor = 10
+		} 
+		completion_reward = {
+			AHE = {
+				completion_reward = { 
+					#Italy demands for Austria to become their puppet
+					country_event = { id = ahe_events.7 days = 1 }
+				}
+			}
 		}
 	}
 
@@ -499,10 +557,20 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 17
 		y = 12
-		cost = 10
+		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_expand_italys_scope }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 20
+		} 
+		completion_reward = {
+			GER = {
+				add_ideas = {
+					ITA_fascist_influence
+				}
+			}
+		}
 	}
 
 	#Focus for Influence French Politics
@@ -511,12 +579,19 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 23
 		y = 12
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_expand_italys_scope }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 20
+		} 
+		completion_reward = {
+			FRA = {
+				add_ideas = {
+					ITA_fascist_influence 
+				}
+			}
 		}
 	}
 
@@ -526,12 +601,17 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 16
 		y = 14
-		cost = 10
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_demand_austrian_compliance }
 		search_filters = { FOCUS_FILTER_STABILITY } 
 		ai_will_do = {
-			factor = 1
+			factor = 10
+		} 
+		completion_reward = {
+			GER = {
+				add_stability = -0.1
+			}
 		}
 	}
 
@@ -541,12 +621,106 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 24
 		y = 13
-		cost = 10
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_influence_french_politics }
 		search_filters = { FOCUS_FILTER_STABILITY } 
 		ai_will_do = {
-			factor = 1
+			factor = 20
+		} 
+		completion_reward = {
+158 = {
+                if = {
+                    limit = { 
+                    OR = { 
+                            ITA = { controls_state = 158 }
+                           # any_other_country = {
+                                #is_in_faction_with = ITA
+                               # controls_state = 158
+
+                            #} 
+                        }
+                    }
+
+add_extra_state_shared_building_slots = 1                    
+					add_building_construction = {
+                        type = anti_air_building  
+                        level = 1
+                        instant_build = yes
+                    }
+
+                }
+
+            } 
+159 = {
+                if = {
+                    limit = { 
+                    OR = { 
+                            ITA = { controls_state = 159 }
+                           # any_other_country = {
+                                #is_in_faction_with = ITA
+                               # controls_state = 158
+
+                            #} 
+                        }
+                    }
+
+add_extra_state_shared_building_slots = 1                    
+					add_building_construction = {
+                        type = anti_air_building  
+                        level = 1
+                        instant_build = yes
+                    }
+
+                }
+
+            } 
+162 = {
+                if = {
+                    limit = { 
+                    OR = { 
+                            ITA = { controls_state = 162 }
+                           # any_other_country = {
+                                #is_in_faction_with = ITA
+                               # controls_state = 158
+
+                            #} 
+                        }
+                    }
+
+add_extra_state_shared_building_slots = 1                    
+					add_building_construction = {
+                        type = anti_air_building  
+                        level = 1
+                        instant_build = yes
+                    }
+
+                }
+
+            } 
+2 = {
+                if = {
+                    limit = { 
+                    OR = { 
+                            ITA = { controls_state = 2 }
+                           # any_other_country = {
+                                #is_in_faction_with = ITA
+                               # controls_state = 158
+
+                            #} 
+                        }
+                    }
+
+add_extra_state_shared_building_slots = 1                    
+					add_building_construction = {
+                        type = anti_air_building  
+                        level = 1
+                        instant_build = yes
+                    }
+
+                }
+
+            }
 		}
 	}
 
@@ -562,6 +736,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_CHI_INFLATION } 
 		ai_will_do = {
 			factor = 1
+		} 
+		completion_reward = {
+			FRA = {
+				add_opinion_modifier = { target = ITA modifier = embargo }
+				add_opinion_modifier = { target = ITA modifier = sanctions_relations }  
+			}
 		}
 	}
 
@@ -571,12 +751,17 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 24
 		y = 14
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_prepare_antiair_defenses }
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
 		ai_will_do = {
-			factor = 1
+			factor = 20
+		} 
+		completion_reward = {
+			add_ideas = {
+				ITA_preparing_the_people_for_war
+			}
 		}
 	}
 
@@ -586,12 +771,17 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 22
 		y = 15
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_embargo_france }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
-			factor = 1
+			factor = 20
+		} 
+		completion_reward = {
+			FRA = {
+				country_event = { id = redliberty.10 days = 1 }
+			}
 		}
 	}
 
@@ -601,12 +791,17 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 24
 		y = 15
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_rally_the_people_for_war }
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
 		ai_will_do = {
-			factor = 1
+			factor = 20
+		} 
+		completion_reward = {
+			add_ideas = {
+				ITA_extra_propaganda_output
+			}
 		}
 	}
 
@@ -616,7 +811,7 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 23
 		y = 16
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = ITA_cut_off_diplomatic_ties 
@@ -626,7 +821,13 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION } 
 		ai_will_do = {
-			factor = 1
+			factor = 20
+		} 
+		completion_reward = {
+			create_wargoal = {
+				target = FRA 
+				type = annex_everything
+			}
 		}
 	}
 
@@ -636,12 +837,19 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 18
 		y = 14
-		cost = 10
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_sow_the_seeds_for_civil_war }
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
 		ai_will_do = {
-			factor = 1
+			factor = 10
+		} 
+		completion_reward = {
+			GER = {
+				add_ideas = {
+					ITA_increasing_fascist_activism
+				}
+			}
 		}
 	}
 
@@ -661,7 +869,12 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE } 
 		ai_will_do = {
-			factor = 1
+			factor = 15
+		} 
+		completion_reward = {
+			GER = {
+				country_event = { id = redliberty.9 days = 1 }
+			}
 		}
 	}
 
@@ -671,13 +884,14 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 17
 		y = 16
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_light_the_fuse }
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
 		ai_will_do = {
-			factor = 1
-		}
+			factor = 15
+		} 
+		#Come back to this after you get the triggering of the German civil war done
 	}
 
 	#Focus for Italy to Rule Europe
@@ -686,7 +900,7 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 20
 		y = 17
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = ITA_send_equipment_to_the_german_fascists 
@@ -696,7 +910,12 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_STABILITY } 
 		ai_will_do = {
-			factor = 1
+			factor = 50
+		} 
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			create_faction = "Unione degli Alleati Italiani"
+			add_political_power = 100
 		}
 	}
 
@@ -706,12 +925,17 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 20
 		y = 18
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_italy_to_rule_europe }
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
 		ai_will_do = {
-			factor = 1
+			factor = 50
+		} 
+		completion_reward = {
+			add_ideas = {
+				ITA_war_against_democracies
+			}
 		}
 	}
 
@@ -721,12 +945,18 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 20
 		y = 19
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_the_war_against_democracies }
 		search_filters = { FOCUS_FILTER_ANNEXATION } 
 		ai_will_do = {
-			factor = 1
+			factor = 50
+		} 
+		completion_reward = {
+			create_wargoal = {
+				target = SOV 
+				type = annex_everything
+			}
 		}
 	}
 
