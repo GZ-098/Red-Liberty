@@ -1,0 +1,202 @@
+ITA_orders_of_the_black_shirts = {
+	
+	ITA_attack_anti_fascist_meetings = {
+	
+		icon = generic_political_discourse
+		
+		visible = {
+			always = yes
+		}
+		
+		cost = 100 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 120
+		
+		complete_effect = { 
+			add_timed_idea = {
+				days = 60 
+				idea = ITA_anti_fascists_attacked
+			}
+			revolutionary_socialism_drift = -0.02 
+			democratic_socialism_drift = -0.02 
+			liberalism_drift = -0.02 
+			conservatism_drift = -0.02 	
+			partisan_effect = -0.15		
+		}
+	}
+	
+	ITA_rome_parades = {
+	
+		icon = eng_propaganda_campaigns
+		
+		visible = {
+			always = yes
+		}
+		
+		cost = 100  
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 120
+		
+		complete_effect = { 
+			add_timed_idea = {
+				days = 60 
+				idea = ITA_rome_parades
+			}
+		}
+	} 
+
+	ITA_enforce_taxes = {
+	
+		icon = ger_mefo_bills
+		
+		visible = {
+			always = yes
+		}
+		
+		cost = 100 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 120
+		
+		complete_effect = { 
+			add_timed_idea = {
+				days = 60 
+				idea = ITA_enforcing_taxes
+			}
+		}
+	} 
+
+	ITA_train_malitia_forces = {
+	
+		icon = ger_military_buildup
+		
+		visible = {
+			always = yes
+		}
+		
+		cost = 100 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 120
+		
+		complete_effect = { 
+			add_timed_idea = {
+				days = 60 
+				idea = ITA_training_malitia_forces
+			}
+		}
+	}
+} 
+
+ITA_passing_new_laws = {
+	
+	ITA_pass_new_conscription_laws = {
+	
+		icon = ger_military_buildup
+		
+		visible = {
+			always = yes
+		}
+		
+		cost = 100 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 120
+		
+		complete_effect = { 
+			add_timed_idea = {
+				days = 60 
+				idea = ITA_passing_new_laws
+			}
+		}
+	} 
+
+	ITA_pass_new_economic_laws = {
+	
+		icon = ger_mefo_bills
+		
+		visible = {
+			always = yes
+		}
+		
+		cost = 50 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 120
+		
+		complete_effect = { 
+			add_timed_idea = {
+				days = 60 
+				idea = ITA_new_economic_groups
+			}
+		}
+	} 
+
+	ITA_increase_military_spending = {
+	
+		icon = ger_military_buildup
+		
+		visible = {
+			always = yes
+		}
+		
+		cost = 150 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 240
+		
+		complete_effect = { 
+			add_timed_idea = {
+				days = 120 
+				idea = ITA_increased_military_build_up
+			}
+		}
+	} 
+
+	ITA_fund_industrial_spending = {
+	
+		icon = generic_construction
+		
+		visible = {
+			always = yes
+		}
+		
+		cost = 150 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 240
+		
+		complete_effect = { 
+			add_timed_idea = {
+				days = 120 
+				idea = ITA_increased_industrilization_spending
+			}
+		}
+	}
+}

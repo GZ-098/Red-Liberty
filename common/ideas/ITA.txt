@@ -3,7 +3,161 @@ ideas = {
 
 } 
 
-	country = {  
+	country = { 
+
+      	ITA_increased_industrilization_spending = {
+			removal_cost = -1 
+			
+			picture = ITA_increased_industrilization_spending
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+			production_speed_industrial_complex_factor = 0.15 
+			consumer_goods_factor = -0.15 
+			production_speed_buildings_factor = -0.10 
+			}
+		} 
+
+      	ITA_increased_military_build_up = {
+			removal_cost = -1 
+			
+			picture = ITA_increased_military_build_up
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+			production_speed_arms_factory_factor = 0.15 
+			consumer_goods_factor = -0.15 
+			production_speed_buildings_factor = -0.10 
+			training_time_army_factor = -0.10 
+			}
+		} 
+
+      	ITA_new_economic_groups = {
+			removal_cost = -1 
+			
+			picture = ITA_new_economic_groups
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+			trade_laws_cost_factor = -0.25 
+			economy_cost_factor = -0.25 
+			}
+		}
+
+      	ITA_passing_new_laws = {
+			removal_cost = -1 
+			
+			picture = ITA_passing_new_laws
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+			conscription = 0.10 
+			non_core_manpower = 0.10 
+			}
+		}
+
+      	ITA_training_malitia_forces = {
+			removal_cost = -1 
+			
+			picture = ITA_training_malitia_forces
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+			conscription = 0.1 
+			army_core_attack_factor = 0.25 
+			army_core_defence_factor = 0.25 
+			training_time_factor = -0.15 
+			}
+		}
+
+      	ITA_anti_fascists_attacked = {
+			removal_cost = -1 
+			
+			picture = ITA_anti_fascists_attacked
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+			revolutionary_socialism_drift = -0.02 
+			democratic_socialism_drift = -0.02 
+			liberalism_drift = -0.02 
+			conservatism_drift = -0.02 	
+			partisan_effect = -0.15	
+			}
+		}
+
+      	ITA_enforcing_taxes = {
+			removal_cost = -1 
+			
+			picture = ITA_enforcing_taxes
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+			political_power_gain = 0.1 
+			stability_weekly = 0.02 
+			consumer_goods_factor = -0.05
+			}
+		}
+
+      	ITA_rome_parades = {
+			removal_cost = -1 
+			
+			picture = ITA_rome_parades
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+			empowered_nationalism_drift = 0.05 
+			political_power_gain = 0.10 
+			conscription = 0.05 
+			}
+		} 
 
        	ITA_court_packing = {
 			removal_cost = -1 

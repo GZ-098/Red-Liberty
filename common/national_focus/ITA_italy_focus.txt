@@ -327,7 +327,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 20
 		} 
-		completion_reward = {
+		completion_reward = { 
+			remove_ideas = {
+				ITA_purged_blackshirts_2 
+				ITA_purged_council_2
+			}
 			add_political_power = 100
 		}
 	}

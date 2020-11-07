@@ -1,0 +1,23 @@
+ITA_orders_of_the_black_shirts = {
+
+	icon = generic_political_actions
+	
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		has_completed_focus = ITA_give_orders_to_the_blackshirts
+	}
+} 
+
+ITA_passing_new_laws = {
+
+	icon = usa_congress
+	
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		has_completed_focus = ITA_force_new_laws_through
+	}
+}
