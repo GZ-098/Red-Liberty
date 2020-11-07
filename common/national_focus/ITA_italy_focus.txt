@@ -222,7 +222,7 @@ focus_tree = {
 			add_timed_idea = {
 							idea = ITA_blackshirt_training
 							days = 110
-						}
+						} 
 		}
 	}
 
@@ -282,10 +282,6 @@ focus_tree = {
 		completion_reward = {
 			add_timed_ideas = {
 							idea = ITA_court_packing
-							days = 25
-						}
-					country_event = {
-							id = italy_events.6
 							days = 25
 						}
 		}

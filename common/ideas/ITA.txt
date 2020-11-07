@@ -5,6 +5,42 @@ ideas = {
 
 	country = { 
 
+      	ITA_fascist_influence = {
+			removal_cost = -1 
+			
+			picture = ITA_fascist_influence
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				empowered_nationalism_drift = 0.1
+			}
+		}
+
+      	ITA_ethiopian_italianization_program = {
+			removal_cost = -1 
+			
+			picture = ITA_ethiopian_italianization_program
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				enemy_partisan_effect = -0.15 
+				compliance_gain = 0.15 
+				non_core_manpower = 0.15
+			}
+		}
+
       	ITA_increased_industrilization_spending = {
 			removal_cost = -1 
 			

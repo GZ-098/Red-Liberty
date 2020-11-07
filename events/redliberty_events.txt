@@ -185,28 +185,6 @@ country_event = {
 		}
 	} 
 } 
-
-#The Court has Been Packed
-country_event = {
-	id = italy_events.6
-	title = italy_events.6.t
-	desc = italy_events.6.d
-	picture = GFX_report_event_court_packing
-
-	is_triggered_only = yes
-
-	fire_only_once = yes 
-
-	option = { 
-		ai_chance = { factor = 100 }
-		name = "We will Remember!"
-		add_opinion_modifier = {
-			add_ideas = {#Reduces war justifacation time, adds 10% extra war support, and 0.05 plus political power
-				ITA_roman_goal
-			}
-		}
-	} 
-}
 ####################
 ##	 US events   ##
 ###################
