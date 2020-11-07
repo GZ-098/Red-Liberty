@@ -4,6 +4,124 @@ ideas = {
 } 
 
 	country = {  
+
+       	ITA_court_packing = {
+			removal_cost = -1 
+			
+			picture = ITA_court_packing
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain = 0.10 
+				political_advisor_cost_factor = -0.2 
+				trade_laws_cost_factor = -0.2 
+				mobilization_laws_cost_factor = -0.2 
+				economy_cost_factor = -0.2
+			}
+		}  
+
+       	ITA_purged_blackshirts = {
+			removal_cost = -1 
+			
+			picture = ITA_purged_blackshirts
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain = -0.15 
+				conscription = -0.1 
+				army_core_attack_factor = -0.15 
+				army_core_defence_factor = -0.15 
+			}
+		} 
+
+       	ITA_purged_blackshirts_2 = {
+			removal_cost = -1 
+			
+			picture = ITA_purged_blackshirts
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain = -0.1
+				conscription = -0.05
+				army_core_attack_factor = -0.1
+				army_core_defence_factor = -0.1 
+			}
+		}	 
+
+       	ITA_blackshirt_training = {
+			removal_cost = -1 
+			
+			picture = ITA_blackshirt_training
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				conscription = 0.05 
+				training_time_army_factor = -0.15 
+			}
+		}
+
+       	ITA_purged_council = {
+			removal_cost = -1 
+			
+			picture = ITA_purged_council
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain = -0.15 
+				political_advisor_cost_factor = 0.15 
+				economy_cost_factor = 0.15 
+				join_faction_tension = 0.5 
+			}
+		} 
+
+       	ITA_purged_council_2 = {
+			removal_cost = -1 
+			
+			picture = ITA_purged_council
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain = -0.1
+				political_advisor_cost_factor = 0.1
+				economy_cost_factor = 0.1 
+			}
+		}			
 	}
 
 	#Military

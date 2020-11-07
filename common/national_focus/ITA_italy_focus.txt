@@ -83,7 +83,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.10
-					add_political_power = 30
+			add_political_power = 30
 		}
 	}
 
@@ -195,9 +195,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_timed_idea = {
-							idea = ITA_new_black_shirt_conscription
-							days = 110
-						}
+				idea = ITA_new_black_shirt_conscription
+				days = 110
+			} 
+			swap_ideas = {
+				remove_idea = ITA_purged_blackshirts
+				add_idea = ITA_purged_blackshirts_2
+			}
 		}
 	}
 
@@ -254,7 +258,11 @@ focus_tree = {
 			factor = 20
 		}
 		completion_reward = {
-			add_political_power = 67
+			add_political_power = 67 
+			swap_ideas = {
+				remove_idea = ITA_purged_council 
+				add_idea = ITA_purged_council_2
+			}
 		}
 	}
 
