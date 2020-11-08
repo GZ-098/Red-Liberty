@@ -232,7 +232,7 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 21
 		y = 9
-		cost = 5
+		cost = 12
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_train_the_new_blackshirts }
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
@@ -293,7 +293,7 @@ focus_tree = {
 		icon = GFX_goal_unknown  
 		x = 23
 		y = 9
-		cost = 5
+		cost = 12
 		available_if_capitulated = yes
 		prerequisite = { focus = ITA_expand_the_number_of_seats }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
@@ -525,7 +525,14 @@ focus_tree = {
 		x = 18
 		y = 13
 		cost = 7
-		available_if_capitulated = yes
+		available_if_capitulated = yes 
+		bypass = {
+			IF = {
+				GER = {
+					has_government = empowered_nationalism
+				}
+			}
+		}
 		prerequisite = { focus = ITA_influence_german_politics }
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
 		ai_will_do = {
@@ -846,7 +853,14 @@ add_extra_state_shared_building_slots = 1
 		x = 18
 		y = 14
 		cost = 7
-		available_if_capitulated = yes
+		available_if_capitulated = yes 
+		bypass = {
+			IF = {
+				GER = {
+					has_government = empowered_nationalism
+				}
+			}
+		}
 		prerequisite = { focus = ITA_sow_the_seeds_for_civil_war }
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
 		ai_will_do = {
@@ -868,7 +882,8 @@ add_extra_state_shared_building_slots = 1
 		x = 17
 		y = 15
 		cost = 10
-		available_if_capitulated = yes
+		available_if_capitulated = yes 
+
 		prerequisite = { 
 			focus = ITA_back_hitlers_efforts 
 		}

@@ -20,4 +20,16 @@ ITA_passing_new_laws = {
 	visible = {
 		has_completed_focus = ITA_force_new_laws_through
 	}
+} 
+
+ITA_destabalisation_missions = {
+
+	icon = generic_operation
+	
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		has_completed_focus = ITA_sow_the_seeds_for_civil_war
+	}
 }
