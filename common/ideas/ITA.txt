@@ -5,6 +5,42 @@ ideas = {
 
 	country = { 
 
+      	ITA_preparing_the_people_for_war = {
+			removal_cost = -1 
+			
+			picture = ITA_preparing_the_people_for_war
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				conversion_cost_civ_to_mil_factor = 0.20
+			}
+		}
+
+      	ITA_extra_propaganda_output = {
+			removal_cost = -1 
+			
+			picture = ITA_extra_propaganda_output
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				war_support_weekly = 0.05
+
+			}
+		}
+
       	ITA_fascist_influence = {
 			removal_cost = -1 
 			

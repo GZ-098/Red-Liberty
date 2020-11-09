@@ -551,6 +551,13 @@ focus_tree = {
 		y = 13
 		cost = 5
 		available_if_capitulated = yes
+		bypass = {
+			IF = {
+				NOT = {
+					country_exists = AHE
+				}
+			}
+		}
 		prerequisite = { focus = ITA_influence_german_politics }
 		search_filters = { FOCUS_FILTER_ANNEXATION } 
 		ai_will_do = {
@@ -617,7 +624,14 @@ focus_tree = {
 		x = 16
 		y = 14
 		cost = 7
-		available_if_capitulated = yes
+		available_if_capitulated = yes 
+		bypass = {
+			IF = {
+				GER = {
+					has_government = empowered_nationalism
+				}
+			}
+		}
 		prerequisite = { focus = ITA_demand_austrian_compliance }
 		search_filters = { FOCUS_FILTER_STABILITY } 
 		ai_will_do = {
@@ -795,7 +809,7 @@ add_extra_state_shared_building_slots = 1
 		} 
 		completion_reward = {
 			FRA = {
-				country_event = { id = redliberty.10 days = 1 }
+				country_event = { id = redliberty.9 days = 1 }
 			}
 		}
 	}
@@ -877,7 +891,7 @@ add_extra_state_shared_building_slots = 1
 
 	#Focus for Light the Fuse
 	focus = {
-		id = ITA_light_the_fuse
+		id = ITA_spread_mussolinis_fascism
 		icon = GFX_goal_unknown  
 		x = 17
 		y = 15
@@ -896,7 +910,10 @@ add_extra_state_shared_building_slots = 1
 		} 
 		completion_reward = {
 			GER = {
-				country_event = { id = redliberty.9 days = 1 }
+				add_popularity = {
+    				ideology = empowered_nationalism
+    				popularity = 0.11
+				}
 			}
 		}
 	}
@@ -909,12 +926,18 @@ add_extra_state_shared_building_slots = 1
 		y = 16
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = ITA_light_the_fuse }
+		prerequisite = { focus = ITA_spread_mussolinis_fascism }
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
 		ai_will_do = {
 			factor = 15
 		} 
-		#Come back to this after you get the triggering of the German civil war done
+		completion_reward = {
+			send_equipment = {
+    			equipment = infantry_equipment
+    			amount = 1000
+    			target = GER_fascist_civil_war
+			}
+		}
 	}
 
 	#Focus for Italy to Rule Europe

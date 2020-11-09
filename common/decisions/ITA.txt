@@ -248,7 +248,7 @@ ITA_destabilizatiaon_missions = {
 			base = 10
 		}
 
-		days_remove = 55
+		days_remove = 70
 		
 		complete_effect = { 
 			GER = {
@@ -256,6 +256,63 @@ ITA_destabilizatiaon_missions = {
 				add_popularity = {
     				ideology = empowered_nationalism
     				popularity = 0.11
+				}
+			}
+		}
+	} 
+
+	ITA_infratrait_the_german_government = {
+	
+		icon = generic_prepare_civil_war
+		
+		visible = {
+			always = yes
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+		
+		cost = 60 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 100
+		
+		complete_effect = { 
+			GER = {
+				add_political_power = -125
+			}
+		}
+	} 
+
+	ITA_help_out_fascists = {
+	
+		icon = generic_prepare_civil_war
+		
+		visible = {
+			always = yes
+		} 
+
+		modifier = {
+			political_power_gain = -0.2
+		}
+		
+		cost = 60 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 100
+		
+		complete_effect = { 
+			GER = {
+				add_popularity = {
+    				ideology = empowered_nationalism
+    				popularity = 0.16
 				}
 			}
 		}

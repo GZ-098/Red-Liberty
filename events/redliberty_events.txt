@@ -311,5 +311,32 @@ country_event = {
 		ai_chance = { factor = 100 }
 		name = "Old wisdom and new knowledge make a healthy body politic"
 	}
+} 
+
+#The Italians cut-off diplomatic ties with France
+country_event = {
+	id = redliberty.9
+	title = redliberty.9.t
+	desc = redliberty.9.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+	option = { 
+		ai_chance = { factor = 100 }
+		name = "Old wisdom and new knowledge make a healthy body politic"
+		add_opinion_modifier = {
+    		target = ITA
+    		modifier = large_decrease
+		}
+		ITA = {
+			add_opinion_modifier = {
+    			target = FRA
+    			modifier = large_decrease
+			}
+		}
+	}
 }
 
