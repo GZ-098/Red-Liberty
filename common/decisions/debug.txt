@@ -1,0 +1,21 @@
+debug_category = {
+	
+	debug_start_gcw = {
+	
+		icon = generic_political_discourse
+		
+		visible = {
+			is_debug = yes
+		}
+		
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+		
+		complete_effect = {
+			start_german_civil_war = yes
+		}
+	}
+}

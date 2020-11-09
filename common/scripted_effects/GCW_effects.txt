@@ -1,0 +1,69 @@
+start_german_civil_war = {
+	create_dynamic_country = {
+		original_tag = GER
+		save_event_target_as = goebbels_germany
+		every_state = {
+			limit = { #set up Vichy continental holdings
+				OR = {
+					state = 51
+					state = 55
+					state = 56
+					state = 57
+					state = 58
+					state = 59
+					state = 797
+				}
+			}
+			add_core_of = PREV
+			event_target:goebbels_germany = { transfer_state = PREV }
+		}
+		every_state = { #set up cores
+			limit = {
+				is_core_of = GER
+				NOT = {
+					is_controlled_by = event_target:vichy_france
+				}
+			}
+			add_core_of = PREV
+		}
+		set_rule = {
+			can_join_factions = no 
+			can_create_factions = no
+			can_not_declare_war = yes
+		}
+		set_capital = 26
+		set_politics = {
+			ruling_party = empowered_nationalism
+			elections_allowed = no
+		}
+		set_popularities = {
+			empowered_nationalism = 100
+		}
+		
+		set_cosmetic_tag = GER_goebbels
+		
+		create_country_leader = {
+			name = "Joeseph Goebbels"
+			#desc = ""
+			#picture = ""
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				
+			}
+		}
+			
+		set_country_flag = GER_goebbels_germany
+			
+		GER = {
+			transfer_units_fraction = {
+				target = event_target:goebbels_germany
+				size = 0.9
+				stockpile_ratio = 0.7
+				army_ratio = 0.5
+				navy_ratio = 0.85
+				air_ratio = 1.0
+			}
+		}
+	}
+}

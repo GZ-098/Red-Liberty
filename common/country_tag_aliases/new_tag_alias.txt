@@ -1,0 +1,4 @@
+GBR = {
+	original_tag = GER
+	has_country_flag = GER_goebbels_germany
+}
