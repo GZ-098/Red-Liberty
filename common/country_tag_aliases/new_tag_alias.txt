@@ -2,3 +2,8 @@ GBR = {
 	original_tag = GER
 	has_country_flag = GER_goebbels_germany
 }
+
+CGR = {
+	original_tag = GER
+	has_country_flag = GER_communist_germany
+}

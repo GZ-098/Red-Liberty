@@ -1,9 +1,9 @@
-start_german_civil_war = {
+start_german_civil_war_GBR = {
 	create_dynamic_country = {
 		original_tag = GER
 		save_event_target_as = goebbels_germany
 		every_state = {
-			limit = { #set up Vichy continental holdings
+			limit = {
 				OR = {
 					state = 51
 					state = 55
@@ -21,7 +21,7 @@ start_german_civil_war = {
 			limit = {
 				is_core_of = GER
 				NOT = {
-					is_controlled_by = event_target:vichy_france
+					is_controlled_by = event_target:goebbels_germany
 				}
 			}
 			add_core_of = PREV
@@ -56,14 +56,126 @@ start_german_civil_war = {
 		set_country_flag = GER_goebbels_germany
 			
 		GER = {
-			transfer_units_fraction = {
-				target = event_target:goebbels_germany
-				size = 0.9
-				stockpile_ratio = 0.7
-				army_ratio = 0.5
-				navy_ratio = 0.85
-				air_ratio = 1.0
+			#transfer_units_fraction = {
+			#	target = event_target:goebbels_germany
+			#	size = 0.9
+			#	stockpile_ratio = 0.7
+			#	army_ratio = 0.5
+			#	navy_ratio = 0.85
+			#	air_ratio = 1.0
+			#}
+		}
+	}
+}
+
+start_german_civil_war_CGR = {
+	create_dynamic_country = {
+		original_tag = GER
+		save_event_target_as = communist_germany
+		every_state = {
+			limit = {
+				OR = {
+					state = 50
+					state = 52
+					state = 53
+					state = 54
+				}
 			}
+			add_core_of = PREV
+			event_target:communist_germany = { transfer_state = PREV }
+		}
+		every_state = { #set up cores
+			limit = {
+				is_core_of = GER
+				NOT = {
+					is_controlled_by = event_target:communist_germany
+				}
+			}
+			add_core_of = PREV
+		}
+		set_rule = {
+			can_join_factions = no 
+			can_create_factions = no
+			can_not_declare_war = yes
+		}
+		set_capital = 26
+		set_politics = {
+			ruling_party = revolutionary_socialism
+			elections_allowed = no
+		}
+		set_popularities = {
+			revolutionary_socialism = 100
+		}
+		
+		set_cosmetic_tag = GER_communist
+			
+		set_country_flag = GER_communist_germany
+			
+		GER = {
+			#transfer_units_fraction = {
+			#	target = event_target:communist_germany
+			#	size = 0.9
+			#	stockpile_ratio = 0.7
+			#	army_ratio = 0.5
+			#	navy_ratio = 0.85
+			#	air_ratio = 1.0
+			#}
+		}
+	}
+}
+
+start_german_civil_war_RGR = {
+	create_dynamic_country = {
+		original_tag = GER
+		save_event_target_as = republican_germany
+		every_state = {
+			limit = {
+				OR = {
+					state = 28
+					state = 42
+					state = 60
+					state = 65
+				}
+			}
+			add_core_of = PREV
+			event_target:republican_germany = { transfer_state = PREV }
+		}
+		every_state = { #set up cores
+			limit = {
+				is_core_of = GER
+				NOT = {
+					is_controlled_by = event_target:republican_germany
+				}
+			}
+			add_core_of = PREV
+		}
+		set_rule = {
+			can_join_factions = no 
+			can_create_factions = no
+			can_not_declare_war = yes
+		}
+		set_capital = 26
+		set_politics = {
+			ruling_party = conservatism
+			elections_allowed = no
+		}
+		set_popularities = {
+			conservatism = 100
+		}
+		
+		set_cosmetic_tag = GER_republican
+			
+		set_country_flag = GER_republican_germany
+			
+		GER = {
+			#transfer_units_fraction = {
+			#	target = event_target:communist_germany
+			#	size = 0.9
+			#	stockpile_ratio = 0.7
+			#	army_ratio = 0.5
+			#	navy_ratio = 0.85
+			#	air_ratio = 1.0
+			#}
 		}
 	}
 }
