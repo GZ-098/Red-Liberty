@@ -22,7 +22,7 @@ ITA_passing_new_laws = {
 	}
 } 
 
-ITA_destabalisation_missions = {
+ITA_destabilizatiaon_missions = {
 
 	icon = generic_operation
 	

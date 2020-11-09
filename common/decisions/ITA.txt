@@ -201,4 +201,67 @@ ITA_passing_new_laws = {
 	}
 } 
 
+ITA_destabilizatiaon_missions = {
+	
+	ITA_spread_propaganda = {
+	
+		icon = generic_prepare_civil_war
+		
+		visible = {
+			always = yes
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+		
+		cost = 60 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 55
+		
+		complete_effect = { 
+			GER = {
+				add_war_support = -0.12
+			}
+		}
+	} 
+
+	ITA_foster_decent = {
+	
+		icon = generic_prepare_civil_war
+		
+		visible = {
+			always = yes
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+		
+		cost = 60 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 55
+		
+		complete_effect = { 
+			GER = {
+				add_stability = -0.12 
+				add_popularity = {
+    				ideology = empowered_nationalism
+    				popularity = 0.11
+				}
+			}
+		}
+	}
+} 
+
+
+
 
