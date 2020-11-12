@@ -1,0 +1,62 @@
+spritetypes = {
+	
+	SpriteType = {
+		name = "GFX_NEE_the_unlikeliest_champion_focus"
+		texturefile = "gfx/interface/goals/NEE/unlikely_champion.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_NEE_freedom_for_all_focus"
+		texturefile = "gfx/interface/goals/NEE/freedom_for_all.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_NEE_bread_and_roses_focus"
+		texturefile = "gfx/interface/goals/NEE/bread_and_roses.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_NEE_the_worker_unchained_focus"
+		texturefile = "gfx/interface/goals/NEE/the_worker_unchained.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_NEE_wobbly_shops_focus"
+		texturefile = "gfx/interface/goals/NEE/wobbly_shops.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_NEE_insistent_eccentricity_focus"
+		texturefile = "gfx/interface/goals/NEE/insistent_eccentricity.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_NEE_out_of_the_ghettos_focus"
+		texturefile = "gfx/interface/goals/NEE/out_of_the_ghettos.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_NEE_state_cosmicism_focus"
+		texturefile = "gfx/interface/goals/NEE/state_cosmicism.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_NEE_the_cosmic_league_focus"
+		texturefile = "gfx/interface/goals/NEE/the_cosmic_league.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_NEE_crack_down_on_puritanism_focus"
+		texturefile = "gfx/interface/goals/NEE/crack_down_on_puritanism.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_NEE_uncaring_not_unkind_focus"
+		texturefile = "gfx/interface/goals/NEE/uncaring_not_unkind.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_NEE_even_death_may_die_focus"
+		texturefile = "gfx/interface/goals/NEE/even_death_may_die.png"
+	}
+}

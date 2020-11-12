@@ -1,0 +1,697 @@
+shared_focus = {
+    id = NEE_abandon_ship
+	
+    x = 10
+	
+	cost = 3
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_the_left_prevails
+	
+    y = 1
+	x = -7
+	
+	cost = 3
+	relative_position_id = NEE_abandon_ship
+	prerequisite = { focus = NEE_abandon_ship }
+	mutually_exclusive = {
+		focus = NEE_the_center_holds
+		focus = NEE_the_right_reacts
+	}
+    completion_reward = {
+        set_politics = {
+			ruling_party = democratic_socialism
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_the_center_holds
+	
+    y = 1
+	
+	cost = 3
+	relative_position_id = NEE_abandon_ship
+	prerequisite = { focus = NEE_abandon_ship }
+	mutually_exclusive = {
+		focus = NEE_the_left_prevails
+		focus = NEE_the_right_reacts
+	}
+    completion_reward = {
+        set_politics = {
+			ruling_party = liberalism
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_the_right_reacts
+	
+    y = 1
+	x = 7
+	
+	cost = 3
+	relative_position_id = NEE_abandon_ship
+	prerequisite = { focus = NEE_abandon_ship }
+	mutually_exclusive = {
+		focus = NEE_the_left_prevails
+		focus = NEE_the_center_holds
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_the_unlikeliest_champion
+	icon = GFX_NEE_the_unlikeliest_champion_focus
+	
+    y = 1
+	
+	cost = 3
+	relative_position_id = NEE_the_left_prevails
+	prerequisite = { focus = NEE_the_left_prevails }
+    completion_reward = {
+        create_country_leader = {
+			name = "H. P. Lovecraft"
+			#desc = ""
+			#picture = ""
+			expire = "1965.1.1"
+			ideology = democratic_socialist_subtype
+			traits = {
+				
+			}
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_peoples_republic
+	#icon = GFX_NEE_socialist_cabinet_focus
+	
+	y = 1
+	
+	cost = 4
+	relative_position_id = NEE_the_unlikeliest_champion
+	prerequisite = { focus = NEE_the_unlikeliest_champion }
+    completion_reward = {
+        add_popularity = {
+			ideology = democratic_socialism
+			popularity = 0.1
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_workers_unchained
+	icon = GFX_NEE_the_worker_unchained_focus
+	
+	y = 1
+	x = -1
+	
+	cost = 4
+	relative_position_id = NEE_peoples_republic
+	prerequisite = { focus = NEE_peoples_republic }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_wobbly_shops
+	icon = GFX_NEE_wobbly_shops_focus
+	
+	y = 1
+	
+	cost = 4
+	relative_position_id = NEE_workers_unchained
+	prerequisite = { focus = NEE_workers_unchained }
+    completion_reward = {
+        add_popularity = {
+			ideology = democratic_socialism
+			popularity = 0.05
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_freedom_for_all
+	icon = GFX_NEE_freedom_for_all_focus
+	
+	y = 1
+	x = 1
+	
+	cost = 4
+	relative_position_id = NEE_peoples_republic
+	prerequisite = { focus = NEE_peoples_republic }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_bread_and_roses
+	icon = GFX_NEE_bread_and_roses_focus
+	
+	y = 1
+	
+	cost = 4
+	relative_position_id = NEE_freedom_for_all
+	prerequisite = { focus = NEE_freedom_for_all }
+    completion_reward = {
+        357 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_insistent_eccentricities
+	icon = GFX_NEE_insistent_eccentricity_focus
+	
+	y = 1
+	x = -1
+	
+	cost = 4
+	relative_position_id = NEE_bread_and_roses
+	prerequisite = { focus = NEE_bread_and_roses }
+	prerequisite = { focus = NEE_wobbly_shops }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_obsessive_desegregation
+	#icon = GFX_NEE_insistent_eccentricity_focus
+	
+	y = 1
+	x = -2
+	
+	cost = 4
+	relative_position_id = NEE_insistent_eccentricities
+	prerequisite = { focus = NEE_insistent_eccentricities }
+    completion_reward = {
+        add_ideas = {
+			NEE_obsessive_desgregation_idea
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_out_of_the_ghettos
+	icon = GFX_NEE_out_of_the_ghettos_focus
+	
+	y = 1
+	x = -1
+	
+	cost = 4
+	relative_position_id = NEE_obsessive_desegregation
+	prerequisite = { focus = NEE_obsessive_desegregation }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_unlocking_the_closets
+	#icon = GFX_NEE_insistent_eccentricity_focus
+	
+	y = 1
+	x = 1
+	
+	cost = 4
+	relative_position_id = NEE_obsessive_desegregation
+	prerequisite = { focus = NEE_obsessive_desegregation }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_adjectives_not_nouns
+	#icon = GFX_NEE_insistent_eccentricity_focus
+	
+	y = 1
+	x = -1
+	
+	cost = 4
+	relative_position_id = NEE_unlocking_the_closets
+	prerequisite = {
+		focus = NEE_out_of_the_ghettos
+	}
+	prerequisite = {
+	focus = NEE_unlocking_the_closets
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_state_cosmicism
+	icon = GFX_NEE_state_cosmicism_focus
+	
+	y = 1
+	x = 2
+	
+	cost = 4
+	relative_position_id = NEE_insistent_eccentricities
+	prerequisite = { focus = NEE_insistent_eccentricities }
+    completion_reward = {
+        add_ideas = {
+			NEE_state_cosmicism_idea
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_the_cosmic_league
+	icon = GFX_NEE_the_cosmic_league_focus
+	
+	y = 1
+	x = -1
+	
+	cost = 4
+	relative_position_id = NEE_state_cosmicism
+	prerequisite = { focus = NEE_state_cosmicism }
+    completion_reward = {
+        swap_ideas = {
+			remove_idea = NEE_state_cosmicism_idea
+			add_idea = NEE_state_cosmicism_idea_1
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_crack_down_on_puritans
+	icon = GFX_NEE_crack_down_on_puritanism_focus
+	
+	y = 1
+	x = 1
+	
+	cost = 4
+	relative_position_id = NEE_state_cosmicism
+	prerequisite = { focus = NEE_state_cosmicism }
+    completion_reward = {
+        add_stability = -0.075
+		add_political_power = 50
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_uncaring_not_unkind
+	icon = GFX_NEE_uncaring_not_unkind_focus
+	
+	y = 1
+	x = -1
+	
+	cost = 4
+	relative_position_id = NEE_crack_down_on_puritans
+	prerequisite = { focus = NEE_the_cosmic_league }
+	prerequisite = { focus = NEE_crack_down_on_puritans }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_death_of_the_author
+	#icon = GFX_NEE_state_cosmicism_focus
+	
+	y = 1
+	x = -2
+	
+	cost = 4
+	relative_position_id = NEE_uncaring_not_unkind
+	prerequisite = { focus = NEE_uncaring_not_unkind }
+	prerequisite = { focus = NEE_adjectives_not_nouns }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_even_death_may_die
+	icon = GFX_NEE_even_death_may_die_focus
+	
+	y = 1
+	
+	cost = 4
+	relative_position_id = NEE_death_of_the_author
+	prerequisite = { focus = NEE_death_of_the_author }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_the_right_man_in_the_right_place
+	#icon = GFX_NEE_even_death_may_die_focus
+	
+	y = 1
+	
+	cost = 4
+	relative_position_id = NEE_the_center_holds
+	prerequisite = { focus = NEE_the_center_holds }
+    completion_reward = {
+        create_country_leader = {
+			name = "Franklin Delano Roosevelt"
+			#desc = ""
+			#picture = ""
+			expire = "1965.1.1"
+			ideology = liberalism_subtype
+			traits = {
+				
+			}
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_commonwealth_of_new_england
+	#icon = GFX_NEE_even_death_may_die_focus
+	
+	y = 1
+	
+	cost = 4
+	relative_position_id = NEE_the_right_man_in_the_right_place
+	prerequisite = { focus = NEE_the_right_man_in_the_right_place }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_new_deal_for_new_england
+	#icon = GFX_NEE_even_death_may_die_focus
+	
+	y = 1
+	x = -1
+	
+	cost = 4
+	relative_position_id = NEE_commonwealth_of_new_england
+	prerequisite = { focus = NEE_commonwealth_of_new_england }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_wpa
+	#icon = GFX_NEE_even_death_may_die_focus
+	
+	y = 1
+	
+	cost = 4
+	relative_position_id = NEE_new_deal_for_new_england
+	prerequisite = { focus = NEE_new_deal_for_new_england }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_bill_of_political_rights
+	#icon = GFX_NEE_even_death_may_die_focus
+	
+	y = 1
+	x = 1
+	
+	cost = 4
+	relative_position_id = NEE_commonwealth_of_new_england
+	prerequisite = { focus = NEE_commonwealth_of_new_england }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_and_of_economic_rights
+	#icon = GFX_NEE_even_death_may_die_focus
+	
+	y = 1
+	
+	cost = 4
+	relative_position_id = NEE_bill_of_political_rights
+	prerequisite = { focus = NEE_bill_of_political_rights }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_begone_dixiecrats
+	#icon = GFX_NEE_even_death_may_die_focus
+	
+	y = 1
+	x = 1
+	
+	cost = 4
+	relative_position_id = NEE_wpa
+	prerequisite = { focus = NEE_wpa }
+	prerequisite = { focus = NEE_and_of_economic_rights }
+    completion_reward = {
+		add_popularity = {
+			ideology = conservatism
+			popularity = -0.05
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_sundown_for_sundown_towns
+	#icon = GFX_NEE_even_death_may_die_focus
+	
+	y = 1
+	x = -2
+	
+	cost = 4
+	relative_position_id = NEE_begone_dixiecrats
+	prerequisite = { focus = NEE_begone_dixiecrats }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_smash_segregation
+	#icon = GFX_NEE_even_death_may_die_focus
+	
+	y = 1
+	
+	cost = 4
+	relative_position_id = NEE_begone_dixiecrats
+	prerequisite = { focus = NEE_begone_dixiecrats }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_for_the_union_makes_us_strong
+	#icon = GFX_NEE_even_death_may_die_focus
+	
+	y = 1
+	x = 2
+	
+	cost = 4
+	relative_position_id = NEE_begone_dixiecrats
+	prerequisite = { focus = NEE_begone_dixiecrats }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_housing_act
+	#icon = GFX_NEE_even_death_may_die_focus
+	
+	y = 1
+	x = -1
+	
+	cost = 4
+	relative_position_id = NEE_smash_segregation
+	prerequisite = { focus = NEE_sundown_for_sundown_towns }
+	prerequisite = { focus = NEE_smash_segregation }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_watch_the_banks
+	#icon = GFX_NEE_even_death_may_die_focus
+	
+	y = 1
+	x = 1
+	
+	cost = 4
+	relative_position_id = NEE_smash_segregation
+	prerequisite = { focus = NEE_for_the_union_makes_us_strong }
+	prerequisite = { focus = NEE_smash_segregation }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_liberty_past_and_future
+	#icon = GFX_NEE_even_death_may_die_focus
+	
+	y = 1
+	x = 1
+	
+	cost = 4
+	relative_position_id = NEE_housing_act
+	prerequisite = { focus = NEE_housing_act }
+	prerequisite = { focus = NEE_watch_the_banks }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}

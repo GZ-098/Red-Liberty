@@ -1,0 +1,64 @@
+ideas = {
+	
+	country = {
+	
+       	NEE_obsessive_desgregation_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				tag = NEE
+			} 
+			available = {
+				tag = NEE
+			}
+			
+			allowed_civil_war = { 
+				always = no
+			}
+			
+			modifier = {  
+				conscription_factor = 0.15
+				army_org_factor = -0.05
+			}
+		}
+		
+		NEE_state_cosmicism_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				tag = NEE
+			} 
+			available = {
+				tag = NEE
+			}
+			
+			allowed_civil_war = { 
+				always = no
+			}
+			
+			modifier = {  
+				political_power_gain = 0.15
+			}
+		}
+		
+		NEE_state_cosmicism_idea_1 = {
+			removal_cost = -1
+			
+			allowed = {
+				tag = NEE
+			} 
+			available = {
+				tag = NEE
+			}
+			
+			allowed_civil_war = { 
+				always = no
+			}
+			
+			modifier = {  
+				political_power_gain = 0.15
+				conscription_factor = 0.05
+			}
+		}
+	}
+}

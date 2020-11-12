@@ -729,6 +729,11 @@ RUS = {
 	color_ui = rgb { 77 133 56 }
 }
 
+NEE = {
+	color = rgb { 56 107 80 }
+	color_ui = rgb { 209 165 33 }
+}
+
 NRR = {
 	color = rgb { 106 183 186 }
 	color_ui = rgb { 106 183 186 }

@@ -1,8 +1,11 @@
 ﻿l_english:
  revolutionary_socialism:0 "Revolutionary Socialism"
  democratic_socialism:0 "Democratic Socialism"
+ democratic_socialism_noun:0 "Democratic Socialism"
  liberalism:0 "Liberalism"
+ liberalism_noun:0 "Liberalism"
  conservatism:0 "Conservatism"
+ conservatism_noun:0 "Conservatism"
  autocratic_despotism:0 "Autocratic Despotism"
  empowered_nationalism:0 "Empowered Nationalism"
 
@@ -26,16 +29,17 @@
  ENG_labour:0 "Labour" 
  ENG_labour_long:0 "Labour"
  
-AFG_empowered_nationalism_party:0 "Saqqawists"
-AFG_autocratic_despotism_party:0 "Barakzai Dynasty"
+ AFG_empowered_nationalism_party:0 "Saqqawists"
+ AFG_autocratic_despotism_party:0 "Barakzai Dynasty"
 
-KAZ_conservatism_party:0 "Alash Party"
+ KAZ_conservatism_party:0 "Alash Party"
 
-KYR_empowered_nationalism_party:0 "Basmachi"
+ KYR_empowered_nationalism_party:0 "Basmachi"
 
-AZR_empowered_nationalism_party:0 "National Committee of Azerbaijan"
-AZR_autocratic_despotism_party:0 "Military Junta"
-AZR_conservatism_party:0 "Ittihad"
-AZR_liberalism_party:0 "Musavat"
-AZR_democratic_socialism_party:0 "Hummet"
-AZR_revolutionary_socialism_party:0 "Bolsheviks"
+ AZR_empowered_nationalism_party:0 "National Committee of Azerbaijan"
+ AZR_autocratic_despotism_party:0 "Military Junta"
+ AZR_conservatism_party:0 "Ittihad"
+ AZR_liberalism_party:0 "Musavat"
+ AZR_democratic_socialism_party:0 "Hummet"
+ AZR_revolutionary_socialism_party:0 "Bolsheviks"
+ 

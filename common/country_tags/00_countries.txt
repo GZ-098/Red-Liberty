@@ -215,3 +215,5 @@ NRR = "countries/North Russian Republic.txt"
 SCH = "countries/Semirechye Cossack Host.txt"
 ORE = "countries/Orenburg Cossack Host.txt"
 TMY = "countries/Talyshstan.txt"
+
+NEE = "countries/New England.txt"

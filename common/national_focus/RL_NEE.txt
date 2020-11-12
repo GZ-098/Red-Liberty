@@ -1,0 +1,16 @@
+focus_tree = {
+	id = NEE_initial_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NEE
+		}
+	}
+	continuous_focus_position = {
+		x = 25
+		y = 1625
+	}
+	default = no
+	shared_focus = NEE_abandon_ship
+}
