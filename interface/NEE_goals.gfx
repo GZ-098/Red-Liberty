@@ -31,8 +31,13 @@ spritetypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_out_of_the_ghettos_focus"
-		texturefile = "gfx/interface/goals/NEE/out_of_the_ghettos.png"
+		name = "GFX_NEE_obsessive_desegregation_focus"
+		texturefile = "gfx/interface/goals/NEE/obsessive_desegregation.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_NEE_the_closet_focus"
+		texturefile = "gfx/interface/goals/NEE/the_closet.png"
 	}
 	
 	SpriteType = {
@@ -42,7 +47,7 @@ spritetypes = {
 	
 	SpriteType = {
 		name = "GFX_NEE_the_cosmic_league_focus"
-		texturefile = "gfx/interface/goals/NEE/the_cosmic_league.png"
+		texturefile = "gfx/interface/goals/NEE/the_cosmic_league_alt.png"
 	}
 	
 	SpriteType = {
