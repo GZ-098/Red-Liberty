@@ -61,6 +61,11 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_NEE_death_of_the_author_focus"
+		texturefile = "gfx/interface/goals/NEE/death_of_the_author.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_NEE_even_death_may_die_focus"
 		texturefile = "gfx/interface/goals/NEE/even_death_may_die.png"
 	}

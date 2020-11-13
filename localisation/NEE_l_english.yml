@@ -32,6 +32,7 @@
  NEE_crack_down_on_puritans:0 "Crack down on Puritanism"
  NEE_uncaring_not_unkind:0 "Uncaring, but not Unkind"
  NEE_death_of_the_author:0 "[Root.GetDeathOfAuthorName]"
+ NEE_death_of_the_author_partial:0 "????? of the ??????"
  NEE_death_of_the_author_unhidden:0 "Death of the Author"
  NEE_even_death_may_die:0 "[Root.GetDeathName]"
  NEE_even_death_may_die_unhidden:0 "Even Death May Die..."

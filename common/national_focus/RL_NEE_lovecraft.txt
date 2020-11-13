@@ -402,7 +402,7 @@ shared_focus = {
 
 shared_focus = {
     id = NEE_death_of_the_author
-	#icon = GFX_NEE_state_cosmicism_focus
+	icon = GFX_NEE_death_of_the_author_focus
 	
 	y = 1
 	x = -2
