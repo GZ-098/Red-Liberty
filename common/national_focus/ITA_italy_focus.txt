@@ -984,7 +984,7 @@ add_extra_state_shared_building_slots = 1
 			}
 		}
 	}
-#test
+#test alhfaj;lshai
 	#Focus for The Great Fall of Bolshavism
 	focus = {
 		id = ITA_the_great_fall_of_bolshavism
