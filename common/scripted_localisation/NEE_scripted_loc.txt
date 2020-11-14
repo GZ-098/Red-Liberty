@@ -1,0 +1,42 @@
+defined_text = {
+	name = GetDeathOfAuthorName
+	
+	text = { 
+        trigger = {
+			AND = {
+				has_completed_focus = NEE_adjectives_not_nouns
+				has_completed_focus = NEE_uncaring_not_unkind
+			}
+        }
+        localization_key = "NEE_death_of_the_author_unhidden"
+    }
+	
+	text = { 
+        trigger = {
+			OR = {
+				has_completed_focus = NEE_adjectives_not_nouns
+				has_completed_focus = NEE_uncaring_not_unkind
+			}
+        }
+        localization_key = "NEE_death_of_the_author_partial"
+    }
+	
+	text = {
+		localization_key = "question_marks_yay"
+    }
+}
+
+defined_text = {
+	name = GetDeathName
+	
+	text = { 
+        trigger = {
+			has_completed_focus = NEE_death_of_the_author
+        }
+        localization_key = "NEE_even_death_may_die_unhidden"
+    }
+	
+	text = {
+		localization_key = "question_marks_yay"
+    }
+}

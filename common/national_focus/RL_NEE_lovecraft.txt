@@ -236,7 +236,7 @@ shared_focus = {
 
 shared_focus = {
     id = NEE_obsessive_desegregation
-	#icon = GFX_NEE_insistent_eccentricity_focus
+	icon = GFX_NEE_obsessive_desegregation_focus
 	
 	y = 1
 	x = -2
@@ -257,7 +257,7 @@ shared_focus = {
 
 shared_focus = {
     id = NEE_out_of_the_ghettos
-	icon = GFX_NEE_out_of_the_ghettos_focus
+	#icon = GFX_NEE_out_of_the_ghettos_focus
 	
 	y = 1
 	x = -1
@@ -276,7 +276,7 @@ shared_focus = {
 
 shared_focus = {
     id = NEE_unlocking_the_closets
-	#icon = GFX_NEE_insistent_eccentricity_focus
+	icon = GFX_NEE_the_closet_focus
 	
 	y = 1
 	x = 1
@@ -402,10 +402,12 @@ shared_focus = {
 
 shared_focus = {
     id = NEE_death_of_the_author
-	#icon = GFX_NEE_state_cosmicism_focus
+	icon = GFX_NEE_death_of_the_author_focus
 	
 	y = 1
 	x = -2
+	
+	dynamic = yes
 	
 	cost = 4
 	relative_position_id = NEE_uncaring_not_unkind
@@ -425,6 +427,8 @@ shared_focus = {
 	icon = GFX_NEE_even_death_may_die_focus
 	
 	y = 1
+	
+	dynamic = yes
 	
 	cost = 4
 	relative_position_id = NEE_death_of_the_author
