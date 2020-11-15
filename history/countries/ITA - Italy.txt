@@ -273,10 +273,11 @@ create_country_leader = {
 	}
 }
 
+#Syndi version
 create_country_leader = {
-	name = "Palmiro Togliatti"
+	name = "Benito Mussolini"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "GFX_portrait_ita_palmiro_togliatti"
+	picture = "ita_syndi_mussolini.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
