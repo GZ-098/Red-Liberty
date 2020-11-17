@@ -218,4 +218,5 @@ TMY = "countries/Talyshstan.txt"
 
 NEE = "countries/New England.txt"
 
-SCH = "countries/Sichuan.txt"
+SZC = "countries/Sichuan.txt"
+GUD = "countries/Guangdong.txt"
