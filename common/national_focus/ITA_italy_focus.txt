@@ -947,7 +947,7 @@ focus_tree = {
 			factor = 10
 		}
 	}
-#test
+
 	#Focus for Prepare for the Liberation of Europe
 	focus = {
 		id = ITA_prepare_for_the_liberation_of_europe
