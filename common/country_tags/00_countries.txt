@@ -217,3 +217,5 @@ ORE = "countries/Orenburg Cossack Host.txt"
 TMY = "countries/Talyshstan.txt"
 
 NEE = "countries/New England.txt"
+
+SCH = "countries/Sichuan.txt"
