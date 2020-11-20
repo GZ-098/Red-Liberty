@@ -27,7 +27,7 @@ focus_tree = {
 	focus = {
 		id = ITA_begin_the_revisions
 		icon = GFX_goal_unknown
-		cost = 1.00
+		cost = 5
 		mutually_exclusive = {
 			focus = ITA_begin_to_weaken_fascism
 		}
@@ -50,7 +50,7 @@ focus_tree = {
 	focus = {
 		id = ITA_purge_the_leftist_off_the_grand_council_of_fascism
 		icon = GFX_goal_unknown
-		cost = 1.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_begin_the_revisions
 		}
@@ -71,7 +71,7 @@ focus_tree = {
 	focus = {
 		id = ITA_purge_the_unloyal_blackshirts
 		icon = GFX_goal_unknown
-		cost = 1.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_purge_the_leftist_off_the_grand_council_of_fascism
 		}
@@ -92,7 +92,7 @@ focus_tree = {
 	focus = {
 		id = ITA_the_one_man_dictator
 		icon = GFX_goal_unknown
-		cost = 1.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_purge_the_unloyal_blackshirts
 		}
@@ -112,7 +112,7 @@ focus_tree = {
 	focus = {
 		id = ITA_begin_to_expand_italys_influence
 		icon = GFX_goal_unknown
-		cost = 1.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_the_one_man_dictator
 		}
@@ -132,7 +132,7 @@ focus_tree = {
 	focus = {
 		id = ITA_begin_border_skirmishes_on_the_ethiopian_border
 		icon = GFX_goal_unknown
-		cost = 1.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_begin_to_expand_italys_influence
 		}
@@ -167,7 +167,7 @@ focus_tree = {
 	focus = {
 		id = ITA_claim_austrian_land
 		icon = GFX_goal_unknown
-		cost = 1.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_begin_to_expand_italys_influence
 		}
@@ -190,7 +190,7 @@ focus_tree = {
 	focus = {
 		id = ITA_begin_to_refill_lost_ranks
 		icon = GFX_goal_unknown
-		cost = 1.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_the_one_man_dictator
 		}
@@ -209,7 +209,7 @@ focus_tree = {
 	focus = {
 		id = ITA_hire_new_blackshirts
 		icon = GFX_goal_unknown
-		cost = 1.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_begin_to_refill_lost_ranks
 		}
@@ -231,7 +231,7 @@ focus_tree = {
 	focus = {
 		id = ITA_train_the_new_blackshirts
 		icon = GFX_goal_unknown
-		cost = 1.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_hire_new_blackshirts
 		}
@@ -253,7 +253,7 @@ focus_tree = {
 	focus = {
 		id = ITA_give_orders_to_the_blackshirts
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_train_the_new_blackshirts
 		}
@@ -264,12 +264,15 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
+		completion_reward = {
+			unlock_decision_category_tooltip = ITA_orders_of_the_black_shirts
+		}
 
 	}
 	focus = {
 		id = ITA_refill_grand_council_seats
 		icon = GFX_goal_unknown
-		cost = 1.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_begin_to_refill_lost_ranks
 		}
@@ -288,7 +291,7 @@ focus_tree = {
 	focus = {
 		id = ITA_expand_the_number_of_seats
 		icon = GFX_goal_unknown
-		cost = 1.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_refill_grand_council_seats
 		}
@@ -300,12 +303,8 @@ focus_tree = {
 					factor = 1
 				}
 			completion_reward = {
-					add_timed_ideas = {
+					add_timed_idea = {
 							idea = ITA_court_packing
-							days = 25
-						}
-					country_event = {
-							id = italy_events.6
 							days = 25
 						}
 				}
@@ -314,7 +313,7 @@ focus_tree = {
 	focus = {
 		id = ITA_force_new_laws_through
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_expand_the_number_of_seats
 		}
@@ -325,12 +324,15 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
+		completion_reward = {
+			unlock_decision_category_tooltip = ITA_passing_new_laws
+		}
 
 	}
 	focus = {
 		id = ITA_the_italian_ranks_are_full
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_give_orders_to_the_blackshirts
 		}
@@ -343,7 +345,8 @@ focus_tree = {
 			search_filters = { FOCUS_FILTER_POLITICAL }
 			ai_will_do = {
 					factor = 1
-				}
+				} 
+
 
 	}
 	focus = {
@@ -569,7 +572,7 @@ focus_tree = {
 	focus = {
 		id = ITA_rebuild_lost_socialist_parties
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_bring_back_mussolinis_socialist_roots
 		}
@@ -604,7 +607,7 @@ focus_tree = {
 	focus = {
 		id = ITA_begin_italys_rebirth
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_disband_the_grand_council_of_fascism
 		}
@@ -656,7 +659,7 @@ focus_tree = {
 	focus = {
 		id = ITA_lay_claim_to_french_lands
 		icon = GFX_goal_unknown
-		cost = 1.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_claim_austrian_land
 		}
@@ -678,7 +681,7 @@ focus_tree = {
 	focus = {
 		id = ITA_claim_lands_in_africa
 		icon = GFX_goal_unknown
-		cost = 1.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_lay_claim_to_french_lands
 		}
@@ -700,7 +703,7 @@ focus_tree = {
 	focus = {
 		id = ITA_expand_our_african_holdings
 		icon = GFX_goal_unknown
-		cost = 1.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_begin_border_skirmishes_on_the_ethiopian_border
 		}
@@ -728,7 +731,7 @@ focus_tree = {
 	focus = {
 		id = ITA_italianize_the_ethiopians
 		icon = GFX_goal_unknown
-		cost = 1.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_expand_our_african_holdings
 		}
@@ -747,7 +750,7 @@ focus_tree = {
 	focus = {
 		id = ITA_the_roman_vision_speech
 		icon = GFX_goal_unknown
-		cost = 1.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_italianize_the_ethiopians
 		}
@@ -772,7 +775,7 @@ focus_tree = {
 	focus = {
 		id = ITA_expand_italys_scope
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_the_italian_ranks_are_full
 		}
@@ -786,12 +789,25 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.13
+		}
 
 	}
 	focus = {
 		id = ITA_prepare_border_defenses_on_the_french_border
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
+		bypass = {
+			IF = {
+				NOT = {
+					ITA = {
+						controls_state = 158
+					}
+				}
+			}
+		}
 		prerequisite = {
 			focus = ITA_influence_french_politics
 		}
@@ -802,12 +818,52 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
+		completion_reward = {
+			158 = {
+				add_building_construction = {
+    				type = bunker
+    				level = 2
+    				instant_build = yes
+    				province = 11891
+				}
+				add_building_construction = {
+    				type = bunker
+    				level = 2
+    				instant_build = yes
+    				province = 11721
+				}
+				add_building_construction = {
+    				type = bunker
+    				level = 1
+    				instant_build = yes
+    				province = 11721
+				}
+				add_building_construction = {
+    				type = bunker
+    				level = 1
+    				instant_build = yes
+    				province = 9738
+				}
+				add_building_construction = {
+    				type = bunker
+    				level = 1
+    				instant_build = yes
+    				province = 6780
+				}
+				add_building_construction = {
+    				type = bunker
+    				level = 1
+    				instant_build = yes
+    				province = 611
+				}
+			}
+		}
 
 	}
 	focus = {
 		id = ITA_fascist_influence_in_germany
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_influence_german_politics
 		}
@@ -818,12 +874,18 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
-
+		completion_reward = {
+			GER = {
+				add_ideas = {
+					ITA_fascist_influence
+				}
+			}
+		}
 	}
 	focus = {
 		id = ITA_demand_austrian_compliance
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_influence_german_politics
 		}
@@ -834,25 +896,34 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
+		completion_reward = {
+			AHE = {
+				country_event = { id = ahe_events.8 days = 1 }
+			}
+		}
 
 	}
 	focus = {
 		id = ITA_influence_german_politics
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_expand_italys_scope
 		}
 		x = 17
 		y = 12
-			available_if_capitulated = yes
-			search_filters = { FOCUS_FILTER_POLITICAL }
-
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			GER = {
+				add_political_power = -50
+			}
+		}
 	}
 	focus = {
 		id = ITA_influence_french_politics
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_expand_italys_scope
 		}
@@ -863,12 +934,17 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
+		completion_reward = {
+			FRA = {
+				add_political_power = -50
+			}
+		}
 
 	}
 	focus = {
 		id = ITA_destabilize_germany
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_demand_austrian_compliance
 		}
@@ -879,12 +955,28 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
+		completion_reward = {
+			unlock_decision_category_tooltip = ITA_destabilizatiaon_missions
+		}
 
 	}
 	focus = {
 		id = ITA_prepare_antiair_defenses
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
+		bypass = {
+			IF = {
+				NOT = {
+					ITA = {
+						controls_state = 2
+						controls_state = 158
+						controls_state = 159
+						controls_state = 161
+						controls_state = 162
+					}
+				}
+			}
+		}
 		prerequisite = {
 			focus = ITA_influence_french_politics
 		}
@@ -894,13 +986,50 @@ focus_tree = {
 			search_filters = { FOCUS_FILTER_STABILITY }
 			ai_will_do = {
 					factor = 1
-				}
+				} 
+		completion_reward = { 
+			158 = {
+				add_building_construction = {
+    				type = anti_air_building
+    				level = 1
+    				instant_build = yes
+				}		
+			} 
+			161 = {
+				add_building_construction = {
+    				type = anti_air_building
+    				level = 1
+    				instant_build = yes
+				}		
+			}
+			162 = {
+				add_building_construction = {
+    				type = anti_air_building
+    				level = 1
+    				instant_build = yes
+				}		
+			}
+			2 = {
+				add_building_construction = {
+    				type = anti_air_building
+    				level = 1
+    				instant_build = yes
+				}		
+			}
+			159 = {
+				add_building_construction = {
+    				type = anti_air_building
+    				level = 1
+    				instant_build = yes
+				}		
+			}
+		}
 
 	}
 	focus = {
 		id = ITA_embargo_france
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_prepare_border_defenses_on_the_french_border
 		}
@@ -910,13 +1039,18 @@ focus_tree = {
 			search_filters = { FOCUS_FILTER_CHI_INFLATION }
 			ai_will_do = {
 					factor = 1
-				}
-
+			}
+		completion_reward = {
+			FRA = {
+				add_opinion_modifier = { target = ITA modifier = embargo }
+				add_opinion_modifier = { target = ITA modifier = sanctions_relations } 
+			}
+		}
 	}
 	focus = {
 		id = ITA_rally_the_people_for_war
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_prepare_antiair_defenses
 		}
@@ -927,12 +1061,17 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
+		completion_reward = {
+			add_ideas = {
+				ITA_rally_call
+			}
+		}
 
 	}
 	focus = {
 		id = ITA_cut_off_diplomatic_ties
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_embargo_france
 		}
@@ -943,12 +1082,23 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
-
+		completion_reward = {
+			add_opinion_modifier = {
+    			target = FRA
+    			modifier = large_decrease
+			}
+			FRA = {
+				add_opinion_modifier = {
+    				target = ITA
+    				modifier = large_decrease
+				}
+			}
+		}
 	}
 	focus = {
 		id = ITA_increase_propaganda_output
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_rally_the_people_for_war
 		}
@@ -959,12 +1109,15 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
+		add_ideas = {
+			ITA_propaganda_output
+		}
 
 	}
 	focus = {
 		id = ITA_the_war_to_end_france
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_cut_off_diplomatic_ties
 		}
@@ -978,12 +1131,19 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
+		completion_reward ={
+			create_wargoal = {
+				type = annex_everything 
+				target = FRA
+				days = 0
+			}
+		}
 
 	}
 	focus = {
 		id = ITA_back_hitlers_efforts
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_fascist_influence_in_germany
 		}
@@ -993,13 +1153,16 @@ focus_tree = {
 			search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 			ai_will_do = {
 					factor = 1
-				}
+				} 
+		completion_reward = {
+			unlock_decision_category_tooltip = ITA_support_the_nazis
+		}
 
 	}
 	focus = {
 		id = ITA_cutoff_ties_with_the_german_empire
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_back_hitlers_efforts
 		}
@@ -1012,13 +1175,32 @@ focus_tree = {
 			search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE }
 			ai_will_do = {
 					factor = 1
+				} 
+		completion_reward = {
+			add_opinion_modifier = {
+    			target = GER
+    			modifier = large_decrease
+			}
+			GER = {
+				add_opinion_modifier = {
+    				target = ITA
+    				modifier = large_decrease
 				}
+			}
+		}
 
 	}
 	focus = {
 		id = ITA_send_equipment_to_the_german_fascists
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
+		available = {
+			IF = {
+				GER = {
+					has_civil_war = no
+				}
+			}
+		}
 		prerequisite = {
 			focus = ITA_cutoff_ties_with_the_german_empire
 		}
@@ -1034,12 +1216,9 @@ focus_tree = {
 	focus = {
 		id = ITA_italy_to_rule_europe
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
-			focus = ITA_send_equipment_to_the_german_fascists
-		}
-		prerequisite = {
-			focus = ITA_the_war_to_end_france
+			focus = ITA_send_equipment_to_the_german_fascists focus = ITA_the_war_to_end_france
 		}
 		x = 20
 		y = 17
@@ -1048,12 +1227,19 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
-
+		completion_reward = {
+			add_war_support = 0.1
+			add_political_power = 25
+			set_rule = {
+    			can_create_factions = yes
+			}
+			create_faction = "Asse Italiano"
+		}
 	}
 	focus = {
 		id = ITA_the_war_against_democracies
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_italy_to_rule_europe
 		}
@@ -1064,23 +1250,35 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
+		add_ideas = {
+			ITA_war_against_democracies
+		}
 
 	}
 	focus = {
 		id = ITA_the_great_fall_of_bolshavism
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
+		available = {
+			IF = {
+				country_exists = SOV
+			}
+		}
 		prerequisite = {
 			focus = ITA_the_war_against_democracies
 		}
 		x = 20
 		y = 19
-			available_if_capitulated = yes
-			search_filters = { FOCUS_FILTER_ANNEXATION }
-			ai_will_do = {
-					factor = 1
-				}
-
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		ai_will_do = {
+			factor = 1
+		}
+		create_wargoal = {
+			type = puppet 
+			target = SOV
+			days = 0
+		}
 	}
 	focus = {
 		id = ITA_send_diplomatic_missions_to_the_nordic_countries
@@ -1293,7 +1491,7 @@ focus_tree = {
 	focus = {
 		id = ITA_increase_military_spending
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_prepare_for_the_liberation_of_europe
 			focus = ITA_send_diplomatic_missions_to_the_nordic_countries
@@ -1305,7 +1503,7 @@ focus_tree = {
 	focus = {
 		id = ITA_invite_austria
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_intervene_in_the_balkans
 		}
@@ -1316,7 +1514,7 @@ focus_tree = {
 	focus = {
 		id = ITA_begin_to_spread_the_revolution
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_draft_a_new_constitution
 		}
@@ -1331,7 +1529,7 @@ focus_tree = {
 	focus = {
 		id = ITA_spread_to_france
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_begin_to_spread_the_revolution
 		}
@@ -1342,7 +1540,7 @@ focus_tree = {
 	focus = {
 		id = ITA_spread_to_the_balkans
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_begin_to_spread_the_revolution
 		}
@@ -1353,7 +1551,7 @@ focus_tree = {
 	focus = {
 		id = ITA_send_arms_to_the_communists
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_spread_to_france
 		}
@@ -1364,7 +1562,7 @@ focus_tree = {
 	focus = {
 		id = ITA_border_skirmush_on_the_border
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_spread_to_france
 		}
@@ -1375,7 +1573,7 @@ focus_tree = {
 	focus = {
 		id = ITA_help_titos_efforts
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_spread_to_the_balkans
 		}
@@ -1386,7 +1584,7 @@ focus_tree = {
 	focus = {
 		id = ITA_destabalize_france
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_border_skirmush_on_the_border
 		}
@@ -1400,7 +1598,7 @@ focus_tree = {
 	focus = {
 		id = ITA_boost_socialist_popularity_in_serbia
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_help_titos_efforts
 		}
@@ -1411,7 +1609,7 @@ focus_tree = {
 	focus = {
 		id = ITA_send_help_to_the_hungarian_socialists
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_help_titos_efforts
 		}
@@ -1422,7 +1620,7 @@ focus_tree = {
 	focus = {
 		id = ITA_prepare_defenses_on_the_german_border
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_increase_military_spending
 			focus = ITA_invite_austria
@@ -1434,7 +1632,7 @@ focus_tree = {
 	focus = {
 		id = ITA_invite_the_balkan_countries
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_send_help_to_the_hungarian_socialists
 		}
@@ -1448,7 +1646,7 @@ focus_tree = {
 	focus = {
 		id = ITA_trigger_a_rebellion
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_destabalize_france
 		}
@@ -1459,7 +1657,7 @@ focus_tree = {
 	focus = {
 		id = ITA_prepare_anti_air_defenses
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_prepare_defenses_on_the_german_border
 		}
@@ -1470,7 +1668,7 @@ focus_tree = {
 	focus = {
 		id = ITA_prepare_for_permenat_world_revolution
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_invite_the_balkan_countries
 		}
@@ -1484,7 +1682,7 @@ focus_tree = {
 	focus = {
 		id = ITA_a_greater_italy
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_prepare_for_permenat_world_revolution
 			focus = ITA_prepare_anti_air_defenses
@@ -1496,7 +1694,7 @@ focus_tree = {
 	focus = {
 		id = ITA_buget_managment 
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_a_greater_italy
 		}
@@ -1507,7 +1705,7 @@ focus_tree = {
 	focus = {
 		id = ITA_taxes_managment
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_a_greater_italy
 		}
@@ -1518,7 +1716,7 @@ focus_tree = {
 	focus = {
 		id = ITA_occupation_managment
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = ITA_a_greater_italy
 		}
