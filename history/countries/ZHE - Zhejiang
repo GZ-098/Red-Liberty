@@ -15,12 +15,12 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 9
-	conservatism = 5
-	autocratic_despotism = 85
-	empowered_nationalism = 0 
+	revolutionary_socialism = 2
+	democratic_socialism = 1
+	liberalism = 16
+	conservatism = 4
+	autocratic_despotism = 73
+	empowered_nationalism = 4 
 }
 
 create_country_leader = {
