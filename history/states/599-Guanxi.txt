@@ -10,8 +10,9 @@ state= {
 	}
 
 	history= {
-		owner = YUN
-		add_core_of = GXC
+		owner = GUD
+		add_core_of = GUD
+		add_core_of = CHI
 		add_core_of = YUN
 		buildings = {
 			infrastructure = 3
