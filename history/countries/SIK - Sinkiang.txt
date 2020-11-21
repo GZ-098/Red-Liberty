@@ -6,15 +6,7 @@ set_technology = {
 	infantry_weapons = 1
 	
 }
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
-	add_ideas = {
-		PRC_government_corruption
-		CHI_ineffective_bureaucracy_warlord
-	}
-}
+
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -86,27 +78,26 @@ if = {
 }
 
 set_politics = {
-	ruling_party = revolutionary_socialism
+	ruling_party = autocratic_despotism
 	last_election = "1932.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	revolutionary_socialism = 0
+	democratic_socialism = 1
+	liberalism = 1
+	autocratic_despotism = 92 
+	empowered_nationalism = 2 
 }
 
 create_country_leader = {
-	name = "Sheng Shicai"
+	name = "Jin Shuren"
 	desc = "POLITICS_SHENG_SHICAI_DESC"
 	picture = "gfx/leaders/SIK/Portrait_Sinkiang_Sheng_Shicai.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = autocratic_despotism
 	traits = {
 		#
 	}
