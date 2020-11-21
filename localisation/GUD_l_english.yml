@@ -1,0 +1,13 @@
+l_english:
+ GUD_autocratic_despotism:0 "Guangdong Clique"
+ GUD_autocratic_despotism_DEF:0 "the Guangdong Clique"
+ GUD_autocratic_despotism_ADJ:0 "Guangdong" 
+ GUD_conservatism:0 "Guangdong Clique"
+ GUD_conservatism_DEF:0 "the Guangdong Clique"
+ GUD_conservatism_ADJ:0 "Guangdong" 
+ GUD_revolutionary_socialism:0 "Republic of China"
+ GUD_revolutionary_socialism_DEF:0 "the Republic of China"
+ GUD_revolutionary_socialism_ADJ:0 "Anarchist Chinese"
+ GUD_empowered_nationalism:0 "Republic of China"
+ GUD_empowered_nationalism_DEF:0 "the Republic of China"
+ GUD_empowered_nationalism_ADJ:0 "Kuomintang"
