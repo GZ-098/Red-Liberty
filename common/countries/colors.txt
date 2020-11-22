@@ -1,4 +1,8 @@
 #reload countrycolors 
+ITF = {
+	color = rgb { 218 160 25 }
+	color_ui = rgb { 225 225 225 }
+}
 HSR = {
 	color = rgb { 188 5 5 }
 	color_ui = rgb { 225 225 225 }

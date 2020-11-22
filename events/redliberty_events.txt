@@ -205,6 +205,100 @@ country_event = {
 		}
 	} 
 } 
+
+#Fascists Protests 
+country_event = {
+	id = italy_events.7
+	title = italy_events.7.t
+	desc = italy_events.7.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+	option = { 
+		ai_chance = { factor = 50 }
+		name = "Best that we Hold Off"
+		add_popularity = {
+    		ideology = revolutionary_socialism
+    		popularity = -0.05
+		}
+		add_popularity = {
+    		ideology = empowered_nationalism
+    		popularity = -0.05
+		}
+	} 
+
+	option = { 
+		ai_chance = { factor = 100 }
+		name = "Best That we Stick to Course"
+		add_popularity = {
+    		ideology = revolutionary_socialism
+    		popularity = 0.04
+		}
+		add_stability = -0.07
+	} 
+} 
+
+#Fascists Leave Government 
+country_event = {
+	id = italy_events.8
+	title = italy_events.8.t
+	desc = italy_events.8.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+	option = { 
+		ai_chance = { factor = 100 }
+		name = "Fucking Butthurt Fascists"
+		add_stability = -0.12
+		add_war_support = -0.6
+		add_political_power = -45
+	} 
+} 
+
+#Fascists Leave Government 
+country_event = {
+	id = italy_events.9
+	title = italy_events.9.t
+	desc = italy_events.9.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			ITF = {
+				transfer_state = 115
+				transfer_state = 156
+				transfer_state = 117
+				transfer_state = 157
+				transfer_state = 160
+				transfer_state = 114
+				transfer_state = 736
+				load_oob = "ITF_civil_war"
+			}
+			ITA = {
+				load_oob = "ITA_civil_war"
+			}
+		}
+	} 
+
+	option = { 
+		ai_chance = { factor = 100 }
+		name = "Comrades Rise up in Arms!"
+		add_war_support = 0.25
+		set_politics = {
+			ruling_party = revolutionary_socialism
+		}
+	} 
+} 
 ####################
 ##	 US events   ##
 ###################

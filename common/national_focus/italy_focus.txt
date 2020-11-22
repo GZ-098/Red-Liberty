@@ -83,16 +83,16 @@ focus_tree = {
 		}
 		x = 20
 		y = 4
-			available_if_capitulated = yes
-			search_filters = { FOCUS_FILTER_POLITICAL }
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					add_stability = -0.05
-					add_political_power = -20
-					add_ideas = { ITA_purged_blackshirts }
-				}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_political_power = -20
+			add_ideas = { ITA_purged_blackshirts }
+		}
 
 	}
 	focus = {
@@ -399,8 +399,9 @@ focus_tree = {
 					factor = 15
 				}
 		completion_reward = {
-			add_ideas = {
-				ITA_italain_peoples_party
+			add_timed_idea = {
+				idea = ITA_italain_peoples_party
+				days = 100
 			}
 		}
 	}
@@ -440,8 +441,9 @@ focus_tree = {
 					factor = 15
 				}
 		completion_reward = {
-			add_ideas = {
-				ITA_liberal_party
+			add_timed_idea = {
+				idea = ITA_liberal_party
+				days = 100
 			}
 		}
 	}
@@ -551,7 +553,7 @@ focus_tree = {
 					factor = 10
 				}
 		completion_reward = {
-			country_event = {}
+			country_event = { id = italy_events.6 days = 1 }
 		}
 
 	}
@@ -572,6 +574,12 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			add_popularity = {
+    			ideology = revolutionary_socialism
+    			popularity = 0.05
+			}
+		}
 
 	}
 	focus = {
@@ -588,6 +596,13 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			add_stability = -0.5
+			add_popularity = {
+    			ideology = revolutionary_socialism
+    			popularity = 0.05
+			}			
+		}
 
 	}
 	focus = {
@@ -604,6 +619,12 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			add_political_power = 30
+			add_ideas = {
+				ITA_socialist_mussolini
+			}
+		}
 
 	}
 	focus = {
@@ -620,6 +641,12 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			add_political_power = 30
+			add_ideas = {
+				ITA_socialist_black_shirts
+			}
+		}
 
 	}
 	focus = {
@@ -639,6 +666,13 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			add_political_power = 30
+			add_timed_idea = {
+				idea = ITA_rebuilding_socialist_parties
+			}
+			country_event = { id = italy_events.7 days = 1 }
+		}
 
 	}
 	focus = {
@@ -655,6 +689,11 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			add_political_power = 30
+			add_stability = -0.04
+			country_event = { id = italy_events.9 days = 1 }
+		}
 
 	}
 	focus = {
@@ -671,6 +710,9 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			country_event = { id = italy_events.10 days = 1 }
+		}
 
 	}
 	focus = {

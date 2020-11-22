@@ -217,7 +217,7 @@ ORE = "countries/Orenburg Cossack Host.txt"
 TMY = "countries/Talyshstan.txt"
 
 NEE = "countries/New England.txt"
-
+ITF = "countries/Italian Union of Fascists.txt"
 SZC = "countries/Sichuan.txt"
 GUD = "countries/Guangdong.txt"
 ZHE = "countries/Zhejiang.txt"
