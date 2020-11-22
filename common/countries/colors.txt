@@ -763,3 +763,13 @@ SZC = {
 	color = rgb { 154 115 56 }
 	color_ui = rgb { 149 123 56 }
 }
+
+ZHE = {
+	color = rgb { 71 113 97 }
+	color_ui = rgb { 71 113 97 }
+}
+
+GUD = {
+	color = rgb { 255 120 71 }
+	color_ui = rgb { 255 120 71 }
+}

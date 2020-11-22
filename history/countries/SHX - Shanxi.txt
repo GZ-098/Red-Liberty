@@ -106,19 +106,19 @@ if = {
 }
 
 set_politics = {
-	ruling_party = revolutionary_socialism
+	ruling_party = autocratic_despotism
 	last_election = "1932.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	revolutionary_socialism = 2
+	democratic_socialism = 8
+	liberalism = 3 
+	conservatism = 12 
+	autocratic_despotism = 70 
+	empowered_nationalism = 5 
 }
 
 create_country_leader = {
@@ -126,7 +126,7 @@ create_country_leader = {
 	desc = "POLITICS_YAN XISHAN_DESC"
 	picture = "GFX_portrait_shanxi_portrait_yan_xishan"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = autocratic_despotism
 	traits = {
 		#
 	}

@@ -49,15 +49,15 @@ set_politics = {
 	ruling_party = autocratic_despotism
 	last_election = "1932.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 0
-	conservatism = 15
-	autocratic_despotism = 75
-	empowered_nationalism = 0 
+	revolutionary_socialism = 4
+	democratic_socialism = 7
+	liberalism = 16
+	conservatism = 10
+	autocratic_despotism = 42
+	empowered_nationalism = 20 
 }
 
 create_country_leader = {

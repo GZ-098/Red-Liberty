@@ -57,27 +57,27 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = revolutionary_socialism
+	ruling_party = autocratic_despotism
 	last_election = "1932.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
+	conservatism = 2
+	revolutionary_socialism = 6
+	democratic_socialism = 0
+	liberalism = 0
 	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	autocratic_despotism = 82 
+	empowered_nationalism = 10 
 }
 
 create_country_leader = {
-	name = "Anandyn Amar"
+	name = "Regency Council"
 	desc = "POLITICS_ANANDYN_AMAR_DESC"
 	picture = GFX_portrait_mon_anandyn_amar
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = autocratic_despotism
 	traits = {
 		#
 	}

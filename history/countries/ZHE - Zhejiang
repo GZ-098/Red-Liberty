@@ -1,0 +1,35 @@
+capital = 596
+
+oob = "ZHE_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+
+set_politics = {
+	ruling_party = autocratic_despotism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	revolutionary_socialism = 2
+	democratic_socialism = 1
+	liberalism = 16
+	conservatism = 4
+	autocratic_despotism = 73
+	empowered_nationalism = 4 
+}
+
+create_country_leader = {
+	name = "Li Liejun"
+	desc = ""
+	picture = "GFX_portrait_xsm_ma_bufang"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
