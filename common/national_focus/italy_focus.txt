@@ -22,6 +22,12 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			add_popularity = {
+				ideology = empowered_nationalism
+				popularity = -0.07
+			}
+		}
 
 	}
 	focus = {
@@ -346,11 +352,17 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				} 
+		completion_reward = {
+			remove_ideas = {
+				ITA_purged_council
+				ITA_purged_blackshirts
+			}
+		}
 
 
 	}
 	focus = {
-		id = ITA_introduce_less_extreme_parties_to_the_parliment
+		id = ITA_introduce_conservative_parties_to_parliment
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
@@ -366,14 +378,18 @@ focus_tree = {
 			ai_will_do = {
 					factor = 20
 				}
-
+		completion_reward = {
+			add_ideas = {
+				ITA_conservative_parties_in_parliment
+			}
+		}
 	}
 	focus = {
 		id = ITA_revive_the_italian_peoples_party
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = ITA_introduce_less_extreme_parties_to_the_parliment
+			focus = ITA_introduce_conservative_parties_to_parliment
 		}
 		x = 32
 		y = 4
@@ -382,7 +398,11 @@ focus_tree = {
 			ai_will_do = {
 					factor = 15
 				}
-
+		completion_reward = {
+			add_ideas = {
+				ITA_italain_peoples_party
+			}
+		}
 	}
 	focus = {
 		id = ITA_bring_back_christian_values
@@ -398,14 +418,19 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
-
+		completion_reward = {
+			add_timed_idea = {
+				idea = ITA_reenstating_christian_values
+				days = 100
+			}
+		}
 	}
 	focus = {
 		id = ITA_revive_the_italian_liberal_party
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = ITA_introduce_less_extreme_parties_to_the_parliment
+			focus = ITA_introduce_conservative_parties_to_parliment
 		}
 		x = 34
 		y = 4
@@ -414,7 +439,11 @@ focus_tree = {
 			ai_will_do = {
 					factor = 15
 				}
-
+		completion_reward = {
+			add_ideas = {
+				ITA_liberal_party
+			}
+		}
 	}
 	focus = {
 		id = ITA_increase_the_influence_of_classical_liberal_values
@@ -430,7 +459,12 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
-
+		completion_reward = {
+			add_timed_idea = {
+				idea = ITA_reenstating_liberal_values 
+				days = 100
+			}
+		}
 	}
 	focus = {
 		id = ITA_coalition_building_with_the_fascists
@@ -449,6 +483,12 @@ focus_tree = {
 			ai_will_do = {
 					factor = 20
 				}
+		completion_reward = {
+			add_timed_idea = {
+				idea = ITA_coalition_building_with_the_fascists 
+				days = 55
+			}
+		}
 
 	}
 	focus = {
@@ -465,6 +505,9 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			unlock_decision_category_tooltip = ITA_restricting_blackshirts
+		}
 
 	}
 	focus = {
@@ -481,12 +524,19 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
-
+		completion_reward = {
+			unlock_decision_category_tooltip = ITA_reduce_influence_of_the_grand_council
+		}
 	}
 	focus = {
 		id = ITA_hold_the_elections
 		icon = GFX_goal_unknown
 		cost = 5.00
+		available = {
+			IF = {
+				conservatism > 0.45
+			}
+		}
 		prerequisite = {
 			focus = ITA_reduce_the_influence_of_the_grand_council_of_fascism
 		}
@@ -500,6 +550,9 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			country_event = {}
+		}
 
 	}
 	focus = {
