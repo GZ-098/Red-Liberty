@@ -32,7 +32,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_begin_the_revisions
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_begin_the_revisions
 		cost = 5
 		mutually_exclusive = {
 			focus = ITA_begin_to_weaken_fascism
@@ -76,7 +76,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_purge_the_unloyal_blackshirts
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_purge_the_unloyal_blackshirts
 		cost = 5
 		prerequisite = {
 			focus = ITA_purge_grand_council
@@ -97,7 +97,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_the_one_man_dictator
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_the_one_man_dictator
 		cost = 5
 		prerequisite = {
 			focus = ITA_purge_the_unloyal_blackshirts
