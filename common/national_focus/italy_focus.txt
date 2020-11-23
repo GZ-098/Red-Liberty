@@ -531,8 +531,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_hold_the_elections
-		icon = GFX_ITA_hold_the_elections
+		id = ITA_hold_the_election
+		icon = GFX_ITA_hold_the_election
 		cost = 5.00
 		available = {
 			IF = {
