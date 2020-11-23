@@ -719,6 +719,13 @@ focus_tree = {
 		id = ITA_the_aftermath_of_fascism
 		icon = GFX_goal_unknown
 		cost = 5.00
+		available = {
+			IF = {
+				ITA = {
+					has_civil_war = no
+				}
+			}
+		}
 		prerequisite = {
 			focus = ITA_hold_the_elections
 			focus = ITA_begin_italys_rebirth
@@ -730,6 +737,10 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			add_political_power = 67
+			add_stability = 0.12
+		}
 
 	}
 	focus = {
@@ -749,6 +760,11 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			add_ideas = {
+				ITA_unionized_workers
+			}
+		}
 
 	}
 	focus = {
@@ -1389,6 +1405,14 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			SWE = {
+				country_event = { id = italy_events.15 days = 1 }
+			}
+			FIN = {
+				country_event = { id = italy_events.16 days = 1 }
+			}
+		}
 
 	}
 	focus = {
@@ -1405,6 +1429,29 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			115 = {
+				add_building_construction = {
+    				type = arms_factory
+    				level = 2
+    				instant_build = yes
+				}
+			}
+			114 = {
+				add_building_construction = {
+    				type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+			}	
+			160 = {
+				add_building_construction = {
+    				type = arms_factory
+    				level = 3
+    				instant_build = yes
+				}
+			}		
+		}
 
 	}
 	focus = {
@@ -1424,12 +1471,17 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			add_ideas = {
+				ITA_busted_unions
+			}
+		}
 
 	}
 	focus = {
 		id = ITA_improve_italian_industry
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 7.00
 		prerequisite = {
 			focus = ITA_bust_unions
 			focus = ITA_encourage_worker_unions
@@ -1441,7 +1493,22 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
-
+		completion_reward = {
+			2 = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
+			158 = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = ITA_the_freedom_of_speech_is_fundamental
@@ -1460,6 +1527,11 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			add_ideas = {
+				ITA_free_speech
+			}
+		}
 
 	}
 	focus = {
@@ -1479,6 +1551,11 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			add_ideas = {
+				ITA_restricted_speech
+			}
+		}
 
 	}
 	focus = {
@@ -1496,6 +1573,9 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			country_event = { id = italy_events.10 days = 1 }
+		}
 
 	}
 	focus = {
@@ -1512,6 +1592,11 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			SWI = {
+				country_event = { id = italy_events.13 days = 1 }
+			}
+		}
 
 	}
 	focus = {
@@ -1528,6 +1613,10 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			add_war_support = 0.15
+			add_stability = 0.12
+		}
 
 	}
 	focus = {
@@ -1581,7 +1670,15 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
-
+		completion_reward = {
+			set_rule = {
+    			can_create_factions = yes
+			}
+			create_faction = "Unione degli Stati Democratici"
+			add_ideas = {
+				ITA_last_bastion_of_democracy
+			}
+		}
 	}
 	focus = {
 		id = ITA_increase_military_spending
@@ -1619,7 +1716,15 @@ focus_tree = {
 		}
 		x = 37
 		y = 14
-
+		completion_reward = {
+			set_rule = {
+    			can_create_factions = yes
+			}
+			create_faction = "Coalizione rivoluzionaria europea"
+			add_ideas = {
+				ITA_revolutionary_actions
+			}
+		}
 	}
 	focus = {
 		id = ITA_spread_to_france

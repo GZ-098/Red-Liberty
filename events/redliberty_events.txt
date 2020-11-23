@@ -283,9 +283,17 @@ country_event = {
 				transfer_state = 114
 				transfer_state = 736
 				load_oob = "ITF_civil_war"
+				declare_war_on = {
+    				target = ITA
+    				type = annex_everything
+				}
 			}
 			ITA = {
 				load_oob = "ITA_civil_war"
+				declare_war_on = {
+    				target = ITF
+    				type = annex_everything
+				}
 			}
 		}
 	} 
@@ -299,6 +307,170 @@ country_event = {
 		}
 	} 
 } 
+
+#Creation of a New Constitution 
+country_event = {
+	id = italy_events.10
+	title = italy_events.10.t
+	desc = italy_events.10.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 50 }
+		name = "Larger Government Interference"
+		add_ideas = {
+			ITA_increased_government_power
+		}
+		add_popularity = {
+    		ideology = revolutionary_socialism
+    		popularity = 0.02
+		}
+		country_event = { id = italy_events.11 days = 0 }
+	} 
+
+	option = { 
+		ai_chance = { factor = 50 }
+		name = "Decreased Governmnet Influence"
+		add_ideas = {
+			ITA_decreased_government_power
+		}
+		add_popularity = {
+    		ideology = conservatism
+    		popularity = 0.02
+		}
+		country_event = { id = italy_events.11 days = 0 }
+	} 
+}
+
+country_event = {
+	id = italy_events.11
+	title = italy_events.11.t
+	desc = italy_events.11.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 50 }
+		name = "Representative Democracy"
+		add_ideas = {
+			ITA_representative_democracy
+		}
+		add_popularity = {
+    		ideology = conservatism
+    		popularity = 0.02
+		}
+		country_event = { id = italy_events.12 days = 0 }
+	} 
+
+	option = { 
+		ai_chance = { factor = 50 }
+		name = "Direct Democracy"
+		add_ideas = {
+			ITA_direct_democracy
+		}
+		add_popularity = {
+    		ideology = revolutionary_socialism
+    		popularity = 0.02
+		}
+		country_event = { id = italy_events.12 days = 0 }
+	} 
+}
+
+country_event = {
+	id = italy_events.12
+	title = italy_events.12.t
+	desc = italy_events.12.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 50 }
+		name = "Decentralized Power"
+		add_ideas = {
+			ITA_decentralized_power
+		}
+		add_popularity = {
+    		ideology = conservatism
+    		popularity = 0.02
+		}
+	} 
+
+	option = { 
+		ai_chance = { factor = 50 }
+		name = "Centralized Power"
+		add_ideas = {
+			ITA_centralized_power
+		}
+		add_popularity = {
+    		ideology = revolutionary_socialism
+    		popularity = 0.02
+		}
+	} 
+}
+
+#Italy Demands for Switzerland to Break Nuetrality 
+country_event = {
+	id = italy_events.13
+	title = italy_events.13.t
+	desc = italy_events.13.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Best That we Bend Our Knees..."
+		ITA = { add_to_faction = SWI }
+	} 
+
+	option = { 
+		ai_chance = { factor = 50 }
+		name = "Switzerland Stands Independent!"
+		ITA = {
+			country_event = { id = italy_events.14 days = 1 }
+		}
+	} 
+}
+
+#Switzerland Rejects Our Demands
+country_event = {
+	id = italy_events.14
+	title = italy_events.14.t
+	desc = italy_events.14.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 60 }
+		name = "Best That we Take Our Losses and Move on"
+		add_political_power = -10
+	} 
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Time to Flex Our Muscle"
+		create_wargoal = {
+			type = puppet 
+			target = SWI
+			days = 0
+		}
+	} 
+}
 ####################
 ##	 US events   ##
 ###################
