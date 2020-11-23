@@ -54,8 +54,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ITA_purge_the_leftist_off_the_grand_council_of_fascism
-		icon = GFX_goal_unknown
+		id = ITA_purge_grand_council
+		icon = GFX_ITA_purge_grand_council
 		cost = 5
 		prerequisite = {
 			focus = ITA_begin_the_revisions
@@ -79,7 +79,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = ITA_purge_the_leftist_off_the_grand_council_of_fascism
+			focus = ITA_purge_grand_council
 		}
 		x = 20
 		y = 4
@@ -117,7 +117,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_begin_to_expand_italys_influence
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_begin_to_expand_italys_influence
 		cost = 5
 		prerequisite = {
 			focus = ITA_the_one_man_dictator
@@ -362,8 +362,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ITA_introduce_conservative_parties_to_parliment
-		icon = GFX_goal_unknown
+		id = ITA_invite_the_moderates_in
+		icon = GFX_ITA_invite_the_moderates_in
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_begin_to_weaken_fascism
@@ -389,7 +389,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = ITA_introduce_conservative_parties_to_parliment
+			focus = ITA_invite_the_moderates_in
 		}
 		x = 32
 		y = 4
@@ -431,7 +431,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = ITA_introduce_conservative_parties_to_parliment
+			focus = ITA_invite_the_moderates_in
 		}
 		x = 34
 		y = 4
@@ -532,7 +532,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_hold_the_elections
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_hold_the_elections
 		cost = 5.00
 		available = {
 			IF = {
@@ -606,8 +606,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ITA_bring_back_mussolinis_socialist_roots
-		icon = GFX_goal_unknown
+		id = ITA_returning_to_worker
+		icon = GFX_ITA_returning_to_worker
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_stir_unrest
@@ -654,7 +654,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = ITA_bring_back_mussolinis_socialist_roots
+			focus = ITA_returning_to_worker
 		}
 		prerequisite = {
 			focus = ITA_expand_socialist_influences_in_the_blackshirts
@@ -697,8 +697,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ITA_begin_italys_rebirth
-		icon = GFX_goal_unknown
+		id = ITA_italy_rebirth
+		icon = GFX_ITA_italy_rebirth
 		cost = 5
 		prerequisite = {
 			focus = ITA_disband_the_grand_council_of_fascism
@@ -728,7 +728,7 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = ITA_hold_the_elections
-			focus = ITA_begin_italys_rebirth
+			focus = ITA_italy_rebirth
 		}
 		x = 35
 		y = 9
@@ -885,7 +885,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_expand_italys_scope
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_expand_italys_scope
 		cost = 5
 		prerequisite = {
 			focus = ITA_the_italian_ranks_are_full

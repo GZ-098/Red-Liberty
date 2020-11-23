@@ -1,0 +1,27 @@
+spritetypes = {
+	
+	SpriteType = {
+		name = "GFX_ITA_hold_election"
+		texturefile = "gfx/interface/goals/ITA/ITA_hold_election.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_italy_rebirth"
+		texturefile = "gfx/interface/goals/ITA/ITA_italy_rebirth.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_purge_grand_council"
+		texturefile = "gfx/interface/goals/ITA/ITA_purge_grand_council.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_returning_to_worker"
+		texturefile = "gfx/interface/goals/ITA/ITA_returning_to_worker.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_expand_italys_scope"
+		texturefile = "gfx/interface/goals/ITA/ITA_expand_italys_scope.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_invite_the_moderates_in"
+		texturefile = "gfx/interface/goals/ITA/ITA_invite_the_moderates_in.tga"
+	}
+}
