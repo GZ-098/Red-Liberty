@@ -36,4 +36,16 @@ spritetypes = {
 		name = "GFX_ITA_the_one_man_dictator"
 		texturefile = "gfx/interface/goals/ITA/ITA_the_one_man_dictator.tga"
 	}
+	SpriteType = {
+		name = "GFX_ITA_begin_to_refill_lost_ranks"
+		texturefile = "gfx/interface/goals/ITA/ITA_begin_to_refill_lost_ranks.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_hire_new_blackshirts"
+		texturefile = "gfx/interface/goals/ITA/ITA_hire_new_blackshirts.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_refill_grand_council_seats"
+		texturefile = "gfx/interface/goals/ITA/ITA_refill_grand_council_seats.tga"
+	}
 }

@@ -195,7 +195,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_begin_to_refill_lost_ranks
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_begin_to_refill_lost_ranks
 		cost = 5
 		prerequisite = {
 			focus = ITA_the_one_man_dictator
@@ -214,7 +214,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_hire_new_blackshirts
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_hire_new_blackshirts
 		cost = 5
 		prerequisite = {
 			focus = ITA_begin_to_refill_lost_ranks
@@ -277,7 +277,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_refill_grand_council_seats
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_refill_grand_council_seats
 		cost = 5
 		prerequisite = {
 			focus = ITA_begin_to_refill_lost_ranks
