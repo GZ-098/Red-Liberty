@@ -1,0 +1,487 @@
+﻿
+GER_INF_01 = {
+	name = "Regular Infantry Divisions"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Infanterie-Division"
+	
+	ordered = {
+		1 = { "%d. Infanterie-Division" }
+		2 = { "%d. Infanterie-Division" }
+		3 = { "%d. Infanterie-Division" }
+		4 = { "%d. Infanterie-Division" }
+		5 = { "%d. Infanterie-Division" }
+		6 = { "%d. Infanterie-Division" }
+		7 = { "%d. Infanterie-Division" }
+		8 = { "%d. Infanterie-Division" }
+		9 = { "%d. Infanterie-Division" }
+		10 = { "%d. Infanterie-Division" }
+		11 = { "%d. Infanterie-Division" }
+		12 = { "%d. Infanterie-Division" }
+		13 = { "%d. Infanterie-Division" }
+		14 = { "%d. Infanterie-Division" }
+		15 = { "%d. Infanterie-Division" }
+		16 = { "%d. Infanterie-Division" }
+		17 = { "%d. Infanterie-Division" }
+		18 = { "%d. Infanterie-Division" }
+		19 = { "%d. Infanterie-Division" }
+		20 = { "%d. Infanterie-Division" }
+		21 = { "%d. Infanterie-Division" }
+		22 = { "%d. Infanterie-Division" }
+		23 = { "%d. Infanterie-Division (1. Kgl. Sächs.)" }
+		24 = { "%d. Infanterie-Division (2. Kgl. Sächs.)" }
+		25 = { "%d. Infanterie-Division (Großherz. Hess.)" }
+		26 = { "%d. Infanterie-Division (1. Kgl. Württ.)" }
+		27 = { "%d. Infanterie-Division (2. Kgl. Württ.)" }
+		28 = { "%d. Infanterie-Division (1. Großherz. Bad.)" }
+		29 = { "%d. Infanterie-Division (2. Großherz. Bad.)" }
+		30 = { "%d. Infanterie-Division" }
+		31 = { "%d. Infanterie-Division" }
+		32 = { "%d. Infanterie-Division (3. Kgl. Sächs.)" }
+		33 = { "%d. Infanterie-Division" }
+		34 = { "%d. Infanterie-Division" }
+		35 = { "%d. Infanterie-Division" }
+		36 = { "%d. Infanterie-Division" }
+		37 = { "%d. Infanterie-Division" }
+		38 = { "%d. Infanterie-Division (Fürst. Thür.)" }
+		39 = { "%d. Infanterie-Division" }
+		40 = { "%d. Infanterie-Division (4. Kgl. Sächs.)" }
+		41 = { "%d. Infanterie-Division" }
+		42 = { "%d. Infanterie-Division" }
+		101 = { "1. Kgl. Bayer. Infanterie-Division" }
+		102 = { "2. Kgl. Bayer. Infanterie-Division" }
+		103 = { "3. Kgl. Bayer. Infanterie-Division" }
+		104 = { "4. Kgl. Bayer. Infanterie-Division" }
+		105 = { "5. Kgl. Bayer. Infanterie-Division" }
+		106 = { "6. Kgl. Bayer. Infanterie-Division" }
+		43 = { "%d. Infanterie-Division" }
+		44 = { "%d. Infanterie-Division" }
+		45 = { "%d. Infanterie-Division" }
+		46 = { "%d. Infanterie-Division" }
+		47 = { "%d. Infanterie-Division" }
+		48 = { "%d. Infanterie-Division" }
+		49 = { "%d. Infanterie-Division" }
+		50 = { "%d. Infanterie-Division" }
+		51 = { "%d. Infanterie-Division" }
+		52 = { "%d. Infanterie-Division" }
+		53 = { "%d. Infanterie-Division (5. Kgl. Sächs.)" }
+		54 = { "%d. Infanterie-Division (3. Kgl. Württ.)" }
+		55 = { "%d. Infanterie-Division" }
+		56 = { "%d. Infanterie-Division" }
+		107 = { "7. Kgl. Bayer. Infanterie-Division" }
+		108 = { "8. Kgl. Bayer. Infanterie-Division" }
+		
+		# This list is of divisions formed by men aged 20-23 on their "Active" service.
+		# Württembergian, Saxon, Grand Ducal Hessian infantry divisions included their territorial designations in their name when referred to outside of their territories.
+		# 38th Division recruited mostly from various Thuringian principalities and duchies that were technically independant of Prussia, with some battalions from Prussian Saxony. Territorial designation for variety's sake.
+		# The Bavarians de jure had an entirely separate army and air force, hence their numbering starting at 101.
+		# Divisions 1-42 and the six Bavarian divisions were part of the standing army in 1914. The rest were formed from newly-raised units and/or spare units left over from restructuring.
+		# While the army of 1914 had 48 standing divisions of 12 battalions each (576 battalions total), the army of 1936 has 61 infantry divisions of 9 battalions each (549 total).
+		# After the reserve list has been exhausted, additional units should be raised from this list.
+	}
+}
+
+GER_INF_02 = {
+	name = "Guard Infantry Divisions"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" "motorized" "mechanized"}
+
+	fallback_name = "%d. Garde-Infanterie-Division"
+
+	ordered = {
+		1 = { "%d. Garde-Infanterie-Division" }
+		2 = { "%d. Garde-Infanterie-Division" }
+		3 = { "%d. Garde-Infanterie-Division" }
+		11 = { "1. Garde-Reserve-Division" }
+		12 = { "2. Garde-Reserve-Division" }
+		13 = { "Garde-Ersatz-Division" }
+		4 = { "%d. Garde-Infanterie-Division" }
+		5 = { "%d. Garde-Infanterie-Division" }
+		6 = { "%d. Garde-Infanterie-Division" }
+		7 = { "%d. Garde-Infanterie-Division" }
+		8 = { "%d. Garde-Infanterie-Division" }
+		9 = { "%d. Garde-Infanterie-Division" }
+		10 = { "%d. Garde-Infanterie-Division" }
+
+		# The first and second divisions were part of the standing army in 1914. The rest were formed on mobilization or formed from newly-raised units and/or spare units left over from restructuring.
+	}
+}
+
+GER_INF_03 = {
+	name = "Reserve Infantry Divisions"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Reserve-Division"
+	
+	ordered = {
+		1 = { "%d. Reserve-Division" }
+		2 = { "%d. Erstaz-Division" }
+		3 = { "%d. Reserve-Division" }
+		4 = { "%d. Erstaz-Division" }
+		5 = { "%d. Reserve-Division" }
+		6 = { "%d. Reserve-Division" }
+		7 = { "%d. Reserve-Division" }
+		8 = { "Kgl. Württ. %d. Erstaz-Division" }
+		9 = { "%d. Reserve-Division" }
+		10 = { "%d. Erstaz-Division" }
+		11 = { "%d. Reserve-Division" }
+		12 = { "%d. Reserve-Division" }
+		13 = { "%d. Reserve-Division" }
+		14 = { "%d. Reserve-Division" }
+		15 = { "%d. Reserve-Division" }
+		16 = { "%d. Reserve-Division" }
+		17 = { "%d. Reserve-Division" }
+		18 = { "%d. Reserve-Division" }
+		19 = { "%d. Erstaz-Division" }
+		100 = { "Kgl. Bayer. Erstaz-Division" }
+		101 = { "1. Kgl. Bayer. Reserve-Division" }
+		102 = { "2. Kgl. Bayer. Reserve-Division" }
+		20 = { "%d. Reserve-Division" }
+		21 = { "%d. Reserve-Division" }
+		22 = { "%d. Reserve-Division" }
+		23 = { "Kgl. Sächs. %d. Reserve-Division" }
+		24 = { "Kgl. Sächs. %d. Reserve-Division" }
+		25 = { "%d. Reserve-Division" }
+		26 = { "Kgl. Württ. %d. Reserve-Division" }
+		27 = { "Kgl. Württ. %d. Reserve-Division" }
+		28 = { "Großherz. Bad. %d. Reserve-Division" }
+		29 = { "Großherz. Bad. %d. Reserve-Division" }
+		103 = { "3. Kgl. Bayer. Reserve-Division" }
+		30 = { "%d. Reserve-Division" }
+		31 = { "%d. Reserve-Division" }
+		32 = { "%d. Reserve-Division" }
+		33 = { "%d. Reserve-Division" }
+		34 = { "%d. Reserve-Division" }
+		35 = { "%d. Reserve-Division" }
+		36 = { "%d. Reserve-Division" }
+		37 = { "%d. Reserve-Division" }
+		38 = { "%d. Reserve-Division" }
+		39 = { "%d. Reserve-Division" }
+		40 = { "%d. Reserve-Division" }
+		41 = { "%d. Reserve-Division" }
+		42 = { "%d. Reserve-Division" }
+		43 = { "%d. Reserve-Division" }
+		44 = { "%d. Reserve-Division" }
+		45 = { "%d. Reserve-Division" }
+		46 = { "%d. Reserve-Division" }
+		47 = { "%d. Reserve-Division" }
+		48 = { "%d. Reserve-Division" }
+		49 = { "%d. Reserve-Division" }
+		50 = { "%d. Reserve-Division" }
+		51 = { "%d. Reserve-Division" }
+		52 = { "%d. Reserve-Division" }
+		53 = { "Kgl. Sächs. %d. Reserve-Division" }
+		54 = { "Kgl. Württ. %d. Reserve-Division" }
+		
+		# Reserve divisions were raised from men aged 24-28 on their "Reserve" service.
+		# These divisions would be raised on the outbreak of war, up until number 54. After that, additional units would be raised as regular divisions.
+	}
+}
+
+GER_ARM_01 = {
+	name = "Armored Divisions"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "%d. Panzer-Division"
+
+	ordered = {
+		100 = { "Garde-Panzer-Division" }
+		1 = { "%d. Panzer-Division" }
+		101 = { "Bayerische Panzer-Division" }
+		2 = { "%d. Panzer-Division (Kgl. Sächs.)" }
+		3 = { "%d. Panzer-Division" }
+		4 = { "%d. Panzer-Division" }
+		5 = { "%d. Panzer-Division" }
+		6 = { "%d. Panzer-Division" }
+		7 = { "%d. Panzer-Division" }
+		8 = { "%d. Panzer-Division" }
+		9 = { "%d. Panzer-Division" }
+		
+		# The idea of Germany without "Panzer-Divisione" is anathema to me.
+		# Divisions up to number 4 can be formed from existing units in 1936. Additional divisions would be the result of further reform.
+	}
+}
+
+GER_MOT_01 = {
+	name = "Motorized Cavalry Divisions"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	fallback_name = "%d. Motorschützen-Division"
+
+	ordered = {
+		1 = { "%d. Motorschützen-Division" }
+		2 = { "%d. Motorschützen-Division" }
+		3 = { "%d. Motorschützen-Division" }
+		
+		# Due to shortages of horses in the First Weltkrieg, many cavalry divisions were converted to "Schützen" divisions and used as infantry. This is where I got the name from.
+		# This namelist would be used for cavalry converted prewar.
+	}
+}
+
+GER_MOT_02 = {
+	name = "Motorized Infantry Divisions"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	fallback_name = "%d. Infanterie-Division (mot.)"
+	
+	ordered = {
+		1 = { "%d. Infanterie-Division (mot.)" }
+		2 = { "%d. Infanterie-Division (mot.)" }
+		3 = { "%d. Infanterie-Division (mot.)" }
+		4 = { "%d. Infanterie-Division (mot.)" }
+		5 = { "%d. Infanterie-Division (mot.)" }
+		6 = { "%d. Infanterie-Division (mot.)" }
+		7 = { "%d. Infanterie-Division (mot.)" }
+		8 = { "%d. Infanterie-Division (mot.)" }
+		9 = { "%d. Infanterie-Division (mot.)" }
+		10 = { "%d. Infanterie-Division (mot.)" }
+		11 = { "%d. Infanterie-Division (mot.)" }
+		12 = { "%d. Infanterie-Division (mot.)" }
+		13 = { "%d. Infanterie-Division (mot.)" }
+		14 = { "%d. Infanterie-Division (mot.)" }
+		15 = { "%d. Infanterie-Division (mot.)" }
+		16 = { "%d. Infanterie-Division (mot.)" }
+		17 = { "%d. Infanterie-Division (mot.)" }
+		18 = { "%d. Infanterie-Division (mot.)" }
+		19 = { "%d. Infanterie-Division (mot.)" }
+		20 = { "%d. Infanterie-Division (mot.)" }
+		21 = { "%d. Infanterie-Division (mot.)" }
+		22 = { "%d. Infanterie-Division (mot.)" }
+		23 = { "%d. Infanterie-Division (1. Kgl. Sächs. mot.)" }
+		24 = { "%d. Infanterie-Division (2. Kgl. Sächs. mot.)" }
+		25 = { "%d. Infanterie-Division (Großherz. Hess. mot.)" }
+		26 = { "%d. Infanterie-Division (1. Kgl. Württ. mot.)" }
+		27 = { "%d. Infanterie-Division (2. Kgl. Württ. mot.)" }
+		28 = { "%d. Infanterie-Division (1. Großherz. Bad. mot.)" }
+		29 = { "%d. Infanterie-Division (2. Großherz. Bad. mot.)" }
+		30 = { "%d. Infanterie-Division (mot.)" }
+		31 = { "%d. Infanterie-Division (mot.)" }
+		32 = { "%d. Infanterie-Division (3. Kgl. Sächs. mot.)" }
+		33 = { "%d. Infanterie-Division (mot.)" }
+		34 = { "%d. Infanterie-Division (mot.)" }
+		35 = { "%d. Infanterie-Division (mot.)" }
+		36 = { "%d. Infanterie-Division (mot.)" }
+		37 = { "%d. Infanterie-Division (mot.)" }
+		38 = { "%d. Infanterie-Division (Fürst. Thür. mot.)" }
+		39 = { "%d. Infanterie-Division (mot.)" }
+		40 = { "%d. Infanterie-Division (4. Kgl. Sächs. mot.)" }
+		41 = { "%d. Infanterie-Division (mot.)" }
+		42 = { "%d. Infanterie-Division (mot.)" }
+		101 = { "1. Kgl. Bayer. Infanterie-Division (mot.)" }
+		102 = { "2. Kgl. Bayer. Infanterie-Division (mot.)" }
+		103 = { "3. Kgl. Bayer. Infanterie-Division (mot.)" }
+		104 = { "4. Kgl. Bayer. Infanterie-Division (mot.)" }
+		105 = { "5. Kgl. Bayer. Infanterie-Division (mot.)" }
+		106 = { "6. Kgl. Bayer. Infanterie-Division (mot.)" }
+		43 = { "%d. Infanterie-Division (mot.)" }
+		44 = { "%d. Infanterie-Division (mot.)" }
+		45 = { "%d. Infanterie-Division (mot.)" }
+		46 = { "%d. Infanterie-Division (mot.)" }
+		47 = { "%d. Infanterie-Division (mot.)" }
+		48 = { "%d. Infanterie-Division (mot.)" }
+		49 = { "%d. Infanterie-Division (mot.)" }
+		50 = { "%d. Infanterie-Division (mot.)" }
+		51 = { "%d. Infanterie-Division (mot.)" }
+		52 = { "%d. Infanterie-Division (mot.)" }
+		53 = { "%d. Infanterie-Division (5. Kgl. Sächs. mot.)" }
+		54 = { "%d. Infanterie-Division (mot.)" }
+		55 = { "%d. Infanterie-Division (mot.)" }
+		56 = { "%d. Infanterie-Division (mot.)" }
+		107 = { "7. Kgl. Bayer. Infanterie-Division (mot.)" }
+		108 = { "8. Kgl. Bayer. Infanterie-Division (mot.)" }
+		
+		# This namelist would be used for standing infantry divisions motorized during or after the war.
+	}
+}
+
+GER_MEC_01 = {
+	name = "Mechanized Cavalry Divisions"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" }
+
+	fallback_name = "%d. Panzerschützen. Division"
+
+	ordered = {
+		1 = { "%d. Panzerschützen-Division" }
+		2 = { "%d. Panzerschützen-Division" }
+		3 = { "%d. Panzerschützen-Division" }
+	}
+}
+
+GER_MOB_01 = {
+	name = "Cavalry Divisions"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	fallback_name = "%d. Kavallerie-Division"
+
+	# Names with numbers (only one number per entry)
+	ordered = {
+		100 = { "Garde-Kavallerie-Division" }
+		1 = { "%d. Kavallerie-Division" }
+		101 = { "Bayerische Kavallerie-Division" }
+		8 = { "%d. Kavallerie-Division (Kgl. Sächs.)" }
+		2 = { "%d. Kavallerie-Division" }
+		3 = { "%d. Kavallerie-Division" }
+		4 = { "%d. Kavallerie-Division" }
+		5 = { "%d. Kavallerie-Division" }
+		6 = { "%d. Kavallerie-Division" }
+		7 = { "%d. Kavallerie-Division" }
+		9 = { "%d. Kavallerie-Division" }
+		
+		# After von Mackensen's retirement, kürassier and other heavy cavalry regiments would be enlarged and converted to tank regiments, dragoons and horse jaegers being enlarged and converted to motorized/mechanized infantry, and hussars and uhlans converted to armored car/light tank recon battalions.
+	}
+}
+
+GER_MTNINF_01 = {
+	name = "Mountain Divisions"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers"  }
+
+	fallback_name = "%d. Alpenjäger-Division"
+
+	# Names with numbers (only one number per entry)
+	ordered = {
+		100 = { "Kgl. Bayer. Alpenjäger-Division" }
+		101 = { "Kgl. Württ. Alpenjäger-Division" }
+		102 = { "Reserve-Alpenjäger-Division" }
+	
+		# First two divisions are "Active", part of the reforms after von Mackensen's retirement.
+	}
+}
+
+GER_MAR_01 = {
+	name = "Marine Divisions"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "marine"  }
+
+	fallback_name = "%d. Marine-Division"
+
+	# Names with numbers (only one number per entry)
+	ordered =
+	{
+		1 = { "%d. Marine-Division" }
+		2 = { "%d. Marine-Division" }
+		3 = { "%d. Marine-Division" }
+		
+		# First division is "Active", part of the reforms after von Mackensen's retirement. These would be infantry units trained for contested landings.
+		# In the First Weltkrieg the seebataillone were rapidly expanded into two Marine-Divisione which held the extreme right flank of the Western Front in Flanders.
+	}
+}
+
+GER_PAR_01 = {
+	name = "Paratrooper Divisions"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper"  }
+
+	fallback_name = "%d. Fallschirmjäger-Division"
+
+	ordered =
+	{
+		1 = { "%d. Fallschirmjäger-Division" }
+		2 = { "%d. Fallschirmjäger-Division" }
+		3 = { "%d. Fallschirmjäger-Division" }
+		4 = { "%d. Fallschirmjäger-Division" }
+		5 = { "%d. Fallschirmjäger-Division" }
+		
+		# First division is "Active", part of the reforms after von Mackensen's retirement.
+	}
+}
+
+GER_MILINF_01 = {
+	name = "Militia Divisions"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "militia"  }
+
+	fallback_name = "%d. Landwehr-Division"
+
+	# Names with numbers (only one number per entry)
+	ordered = {
+		1 = { "%d. Landwehr-Division" }
+		2 = { "%d. Landwehr-Division" }
+		3 = { "%d. Landwehr-Division" }
+		4 = { "%d. Landwehr-Division" }
+		101 = { "Bayerische Landwehr-Division" }
+
+	}
+}
+
+GER_GAR_01 = {
+	name = "Overseas Garrison"
+
+	for_countries = { GER }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "Marine-Festungsbrigade %s"
+
+	ordered = {
+		1 = { "Marine-Festungsbrigade %s" }
+		2 = { "Marine-Festungsbrigade %s" }
+		3 = { "Marine-Festungsbrigade %s" }
+		4 = { "Marine-Festungsbrigade %s" }
+		5 = { "Marine-Festungsbrigade %s" }
+		6 = { "Marine-Festungsbrigade %s" }
+		7 = { "Marine-Festungsbrigade %s" }
+		8 = { "Marine-Festungsbrigade %s" }
+		9 = { "Marine-Festungsbrigade %s" }
+		10 = { "Marine-Festungsbrigade %s" }
+
+		# These units represent the seebataillone which are scattered across German colonial posessions. While technically "naval infantry" and part of the German Navy, they are not "marines" in the modern sense.
+	}
+}

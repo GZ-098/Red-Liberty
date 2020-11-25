@@ -266,7 +266,7 @@ ideas = {
 			
 			modifier = {
 				political_power_gain = -0.15 
-				conscription = -0.1 
+				conscription_factor = -0.1 
 				army_core_attack_factor = -0.15 
 				army_core_defence_factor = -0.15 
 			}
@@ -286,7 +286,7 @@ ideas = {
 			
 			modifier = {
 				political_power_gain = -0.1
-				conscription = -0.05
+				conscription_factor = -0.05
 				army_core_attack_factor = -0.1
 				army_core_defence_factor = -0.1 
 			}
