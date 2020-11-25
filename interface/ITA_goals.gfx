@@ -48,4 +48,16 @@ spritetypes = {
 		name = "GFX_ITA_refill_grand_council_seats"
 		texturefile = "gfx/interface/goals/ITA/ITA_refill_grand_council_seats.tga"
 	}
+	SpriteType = {
+		name = "GFX_ITA_expand_african_influence"
+		texturefile = "gfx/interface/goals/ITA/ITA_expand_african_influence.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_begin_border_skirmishes_on_the_ethiopian_border"
+		texturefile = "gfx/interface/goals/ITA/ITA_begin_border_skirmishes_on_the_ethiopian_border.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_expand_our_african_holdings"
+		texturefile = "gfx/interface/goals/ITA/ITA_expand_our_african_holdings.tga"
+	}
 }

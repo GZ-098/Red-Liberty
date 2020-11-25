@@ -116,8 +116,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ITA_begin_to_expand_italys_influence
-		icon = GFX_ITA_begin_to_expand_italys_influence
+		id = ITA_expand_african_influence
+		icon = GFX_ITA_expand_african_influence
 		cost = 5
 		prerequisite = {
 			focus = ITA_the_one_man_dictator
@@ -137,10 +137,10 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_begin_border_skirmishes_on_the_ethiopian_border
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_begin_border_skirmishes_on_the_ethiopian_border
 		cost = 5
 		prerequisite = {
-			focus = ITA_begin_to_expand_italys_influence
+			focus = ITA_expand_african_influence
 		}
 		x = 17
 		y = 7
@@ -175,7 +175,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = ITA_begin_to_expand_italys_influence
+			focus = ITA_expand_african_influence
 		}
 		x = 19
 		y = 7
@@ -236,7 +236,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_train_the_new_blackshirts
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_train_the_new_blackshirts
 		cost = 5
 		prerequisite = {
 			focus = ITA_hire_new_blackshirts
@@ -813,7 +813,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_expand_our_african_holdings
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_expand_our_african_holdings
 		cost = 5
 		prerequisite = {
 			focus = ITA_begin_border_skirmishes_on_the_ethiopian_border
