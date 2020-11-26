@@ -48,7 +48,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = revolutionary_socialism
+	ruling_party = autocratic_despotism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
