@@ -172,7 +172,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_claim_austrian_land
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_claim_austrian_land
 		cost = 5
 		prerequisite = {
 			focus = ITA_expand_african_influence
@@ -769,7 +769,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_lay_claim_to_french_lands
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_lay_claim_to_french_lands
 		cost = 5
 		prerequisite = {
 			focus = ITA_claim_austrian_land
@@ -791,7 +791,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_claim_lands_in_africa
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_claim_lands_in_africa
 		cost = 5
 		prerequisite = {
 			focus = ITA_lay_claim_to_french_lands
@@ -841,7 +841,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_italianize_the_ethiopians
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_italianize_the_ethiopians
 		cost = 5
 		prerequisite = {
 			focus = ITA_expand_our_african_holdings
@@ -860,7 +860,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_the_roman_vision_speech
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_the_roman_vision_speech
 		cost = 5
 		prerequisite = {
 			focus = ITA_italianize_the_ethiopians
