@@ -25,11 +25,11 @@ country_event = {
 
 	option = {
 		
-		name = "OK"
+		name = "Terrible News"
 		ai_chance = { factor = 10 }
-		add_political_power = -0.10
+		add_political_power = -0.1
 		add_stability = -0.1
-				
+		set_country_flag = Inukai_ded
 	}
 
 }
