@@ -86,7 +86,13 @@ if = {
 	}
 	add_ideas = MTG_naval_treaty_adherent
 }
+add_ideas = {
+	japanese_democracy
+	military_influence
+	echoes_of_the_depression
 
+
+}
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
