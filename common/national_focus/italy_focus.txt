@@ -258,7 +258,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_give_orders_to_the_blackshirts
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_give_orders_to_the_blackshirts
 		cost = 5
 		prerequisite = {
 			focus = ITA_train_the_new_blackshirts
@@ -296,7 +296,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_expand_the_number_of_seats
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_expand_the_number_of_seats
 		cost = 5
 		prerequisite = {
 			focus = ITA_refill_grand_council_seats
@@ -318,7 +318,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_force_new_laws_through
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_force_new_laws_through
 		cost = 5
 		prerequisite = {
 			focus = ITA_expand_the_number_of_seats
@@ -337,7 +337,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_the_italian_ranks_are_full
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_the_italian_ranks_are_full
 		cost = 5
 		prerequisite = {
 			focus = ITA_give_orders_to_the_blackshirts

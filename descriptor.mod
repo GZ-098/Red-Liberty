@@ -1,4 +1,4 @@
-version="1.9.3"
+version="1.10.3"
 tags={
 	"Alternative History"
 	"Events"
@@ -16,4 +16,4 @@ replace_path = "common/ai_focuses"
 replace_path = "history/states"
 replace_path = "map"
 name="Red Liberty"
-supported_version="1.10.2"
+supported_version="1.10.3"

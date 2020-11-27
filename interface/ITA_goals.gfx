@@ -80,4 +80,28 @@ spritetypes = {
 		name = "GFX_ITA_the_roman_vision_speech"
 		texturefile = "gfx/interface/goals/ITA/ITA_the_roman_vision_speech.tga"
 	}
+	SpriteType = {
+		name = "GFX_ITA_the_roman_vision_speech"
+		texturefile = "gfx/interface/goals/ITA/ITA_the_roman_vision_speech.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_train_the_new_blackshirts"
+		texturefile = "gfx/interface/goals/ITA/ITA_train_the_new_blackshirts.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_expand_the_number_of_seats"
+		texturefile = "gfx/interface/goals/ITA/ITA_expand_the_number_of_seats.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_give_orders_to_the_blackshirts"
+		texturefile = "gfx/interface/goals/ITA/ITA_give_orders_to_the_blackshirts.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_force_new_laws_through"
+		texturefile = "gfx/interface/goals/ITA/ITA_force_new_laws_through.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_the_italian_ranks_are_full"
+		texturefile = "gfx/interface/goals/ITA/ITA_the_italian_ranks_are_full.tga"
+	}
 }
