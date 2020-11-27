@@ -27,7 +27,7 @@ focus_tree = {
 		mutually_exclusive = { focus = jap_showa_democracy_liberal }
 		mutually_exclusive = { focus = jap_nihon_democracy_socialist }
 		mutually_exclusive = { focus = jap_nationalist }
-		cost = 1
+		cost = 5
 		
 		available = {
 			has_country_flag = Inukai_ded
@@ -62,7 +62,7 @@ focus_tree = {
 		mutually_exclusive = { focus = jap_taisho_democracy_conservative }
 		mutually_exclusive = { focus = jap_nihon_democracy_socialist }
 		mutually_exclusive = { focus = jap_nationalist }
-		cost = 1
+		cost = 5
 		
 		available = {
 			has_country_flag = Inukai_ded
@@ -95,7 +95,7 @@ focus_tree = {
 		mutually_exclusive = { focus = jap_showa_democracy_liberal }
 		mutually_exclusive = { focus = jap_taisho_democracy_conservative }
 		mutually_exclusive = { focus = jap_nationalist }
-		cost = 1
+		cost = 5
 		
 		available = {
 			has_country_flag = Inukai_ded
@@ -128,7 +128,7 @@ focus_tree = {
 		mutually_exclusive = { focus = jap_nihon_democracy_socialist }
 		mutually_exclusive = { focus = jap_taisho_democracy_conservative }
 		mutually_exclusive = { focus = jap_showa_democracy_liberal }
-		cost = 1
+		cost = 5
 		
 		available = {
 			has_country_flag = Inukai_ded
