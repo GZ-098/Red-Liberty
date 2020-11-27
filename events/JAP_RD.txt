@@ -30,6 +30,16 @@ country_event = {
 		add_political_power = -0.1
 		add_stability = -0.1
 		set_country_flag = Inukai_ded
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Ichiro Hatoyama"
+			#desc = ""None yet"
+			picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			expire = "1989.1.1"
+			ideology = conservatism_subtype
+			traits = {
+			}
+		}	
 	}
 
 }
