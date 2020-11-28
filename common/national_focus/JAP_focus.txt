@@ -22,7 +22,7 @@ focus_tree = {
 	focus = {
 		id = jap_taisho_democracy_conservative
 		icon = GFX_goal_unknown
-		x=3
+		x=2
 		y=1
 		mutually_exclusive = { focus = jap_showa_democracy_liberal }
 		mutually_exclusive = { focus = jap_nihon_democracy_socialist }
@@ -57,7 +57,7 @@ focus_tree = {
 	focus = {
 		id = jap_showa_democracy_liberal
 		icon = GFX_goal_unknown
-		x=5
+		x=7
 		y=1
 		mutually_exclusive = { focus = jap_taisho_democracy_conservative }
 		mutually_exclusive = { focus = jap_nihon_democracy_socialist }
@@ -90,7 +90,7 @@ focus_tree = {
 	focus = {
 		id = jap_nihon_democracy_socialist
 		icon = GFX_goal_unknown
-		x=7
+		x=13
 		y=1
 		mutually_exclusive = { focus = jap_showa_democracy_liberal }
 		mutually_exclusive = { focus = jap_taisho_democracy_conservative }
@@ -120,10 +120,14 @@ focus_tree = {
 			
 		}
 	}
+	
+	# from this point on the Military government tree for nationalist
+	# =================================================
+	
 	focus = {
 		id = jap_nationalist
 		icon = GFX_goal_unknown
-		x=9
+		x=20
 		y=1
 		mutually_exclusive = { focus = jap_nihon_democracy_socialist }
 		mutually_exclusive = { focus = jap_taisho_democracy_conservative }
@@ -151,6 +155,392 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			
+		}
+	}
+	
+	
+	focus = {
+		id = jap_nationalist_military_government
+		icon = GFX_goal_unknown
+		x=0
+		y=1
+		relative_position_id = jap_nationalist
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist }
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = jap_nationalist_send_in_the_troops
+		icon = GFX_goal_unknown
+		x= -1
+		y= 1
+		relative_position_id = jap_nationalist_military_government
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_military_government }
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = jap_nationalist_arrest_agitators
+		icon = GFX_goal_unknown
+		x= 1
+		y= 1
+		relative_position_id = jap_nationalist_military_government
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_military_government }
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = jap_nationalist_military_stability
+		icon = GFX_goal_unknown
+		x= -1
+		y= 1
+		relative_position_id = jap_nationalist_send_in_the_troops
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_send_in_the_troops }
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = jap_nationalist_imperial_support
+		icon = GFX_goal_unknown
+		x= 1
+		y= 1
+		relative_position_id = jap_nationalist_send_in_the_troops
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_send_in_the_troops  }
+		prerequisite = {  focus = jap_nationalist_arrest_agitators }
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = jap_nationalist_national_unity
+		icon = GFX_goal_unknown
+		x= 1
+		y= 1
+		relative_position_id = jap_nationalist_arrest_agitators
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_arrest_agitators }
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = jap_nationalist_the_government_mandate
+		icon = GFX_goal_unknown
+		x= 0
+		y= 1
+		relative_position_id = jap_nationalist_imperial_support
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_national_unity }
+		prerequisite = { focus = jap_nationalist_imperial_support }
+		prerequisite = { focus = jap_nationalist_military_stability }
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	# from this point on the new mandate tree for nationalist
+	# =================================================
+	
+	focus = {
+		id = jap_nationalist_new_mandate
+		icon = GFX_goal_unknown
+		x= 7
+		y= 0
+		relative_position_id = jap_nationalist_military_government
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist }
+		
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+	
+	
+	
+	focus = {
+		id = jap_nationalist_imperial_cult
+		icon = GFX_goal_unknown
+		x= -1
+		y= 1
+		relative_position_id = jap_nationalist_new_mandate
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_new_mandate }
+		
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = jap_nationalist_militarized_society
+		icon = GFX_goal_unknown
+		x= 1
+		y= 1
+		relative_position_id = jap_nationalist_new_mandate
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_new_mandate }
+		
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = jap_nationalist_ideological_doctrine
+		icon = GFX_goal_unknown
+		x= -1
+		y= 1
+		relative_position_id = jap_nationalist_imperial_cult
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_imperial_cult }
+		
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = jap_nationalist_national_fanaticism
+		icon = GFX_goal_unknown
+		x= 1
+		y= 1
+		relative_position_id = jap_nationalist_imperial_cult
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_imperial_cult }
+		prerequisite = { focus = jap_nationalist_militarized_society }
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = jap_nationalist_a_military_economy
+		icon = GFX_goal_unknown
+		x= 1
+		y= 1
+		relative_position_id = jap_nationalist_militarized_society
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_militarized_society }
+		
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
 		}
 	}
 }
