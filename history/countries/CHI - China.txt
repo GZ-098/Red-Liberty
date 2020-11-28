@@ -42,6 +42,7 @@ if = {
 }
 
 save_global_event_target_as = WTT_current_china_leader
+give_military_access = JAP
 
 set_convoys = 40
 
