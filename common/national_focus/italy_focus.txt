@@ -973,7 +973,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_fascist_influence_in_germany
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_fascist_influence_in_germany
 		cost = 5
 		prerequisite = {
 			focus = ITA_influence_german_politics
@@ -995,7 +995,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_demand_austrian_compliance
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_demand_austrian_compliance
 		cost = 5
 		prerequisite = {
 			focus = ITA_influence_german_politics
@@ -1016,7 +1016,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_influence_german_politics
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_influence_german_politics
 		cost = 5
 		prerequisite = {
 			focus = ITA_expand_italys_scope
@@ -1033,7 +1033,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_influence_french_politics
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_influence_french_politics
 		cost = 5
 		prerequisite = {
 			focus = ITA_expand_italys_scope
@@ -1073,7 +1073,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_prepare_antiair_defenses
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_prepare_antiair_defenses
 		cost = 5
 		bypass = {
 			IF = {

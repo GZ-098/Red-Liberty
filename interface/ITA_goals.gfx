@@ -104,4 +104,20 @@ spritetypes = {
 		name = "GFX_ITA_the_italian_ranks_are_full"
 		texturefile = "gfx/interface/goals/ITA/ITA_the_italian_ranks_are_full.tga"
 	}
+	SpriteType = {
+		name = "GFX_ITA_influence_german_politics"
+		texturefile = "gfx/interface/goals/ITA/ITA_influence_german_politics.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_influence_french_politics"
+		texturefile = "gfx/interface/goals/ITA/ITA_influence_french_politics.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_demand_austrian_compliance"
+		texturefile = "gfx/interface/goals/ITA/ITA_demand_austrian_compliance.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_prepare_antiair_defenses"
+		texturefile = "gfx/interface/goals/ITA/ITA_prepare_antiair_defenses.tga"
+	}
 }
