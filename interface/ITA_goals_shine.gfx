@@ -816,7 +816,7 @@ spritetypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
-#test
+
 		animation = {
 			animationmaskfile = "gfx/interface/goals/ITA/ITA_the_italian_ranks_are_full.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
