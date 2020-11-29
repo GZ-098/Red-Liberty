@@ -359,7 +359,179 @@ focus_tree = {
 	
 	
 	
+	focus = {
+		id = jap_nationalist_taisho_is_ded
+		icon = GFX_goal_unknown
+		x= -1
+		y= 1
+		relative_position_id = jap_nationalist_the_government_mandate
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_the_government_mandate }
+		mutually_exclusive = { focus = jap_nationalist_ballot_by_bullet }
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
 	
+	
+	
+	focus = {
+		id = jap_nationalist_ballot_by_bullet
+		icon = GFX_goal_unknown
+		x= 2
+		y= 0
+		relative_position_id = jap_nationalist_taisho_is_ded
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_the_government_mandate }
+		mutually_exclusive = { focus = jap_nationalist_taisho_is_ded }
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = jap_nationalist_democracy_has_failed
+		icon = GFX_goal_unknown
+		x= -1
+		y= 1
+		relative_position_id = jap_nationalist_taisho_is_ded
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_taisho_is_ded }
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = jap_nationalist_in_defense_of_the_kokutai
+		icon = GFX_goal_unknown
+		x= 1
+		y= 1
+		relative_position_id = jap_nationalist_taisho_is_ded
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_taisho_is_ded }
+		prerequisite = { focus = jap_nationalist_ballot_by_bullet }
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+	
+	
+		focus = {
+		id = jap_nationalist_party_of_the_public_order
+		icon = GFX_goal_unknown
+		x= 1
+		y= 1
+		relative_position_id = jap_nationalist_ballot_by_bullet
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_ballot_by_bullet }
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+	
+	
+		focus = {
+		id = jap_nationalist_the_imperial_rule_assistance_associtiaton
+		icon = GFX_goal_unknown
+		x= 1
+		y= 1
+		relative_position_id = jap_nationalist_democracy_has_failed
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_democracy_has_failed }
+		prerequisite = { focus = jap_nationalist_in_defense_of_the_kokutai }
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
 	
 	# from this point on the new mandate tree for nationalist
 	# =================================================
