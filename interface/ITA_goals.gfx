@@ -120,4 +120,20 @@ spritetypes = {
 		name = "GFX_ITA_prepare_antiair_defenses"
 		texturefile = "gfx/interface/goals/ITA/ITA_prepare_antiair_defenses.tga"
 	}
+	SpriteType = {
+		name = "GFX_ITA_fascist_influence_in_germany"
+		texturefile = "gfx/interface/goals/ITA/ITA_fascist_influence_in_germany.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_prepare_border_defenses_on_the_french_border"
+		texturefile = "gfx/interface/goals/ITA/ITA_prepare_border_defenses_on_the_french_border.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_destabilize_germany"
+		texturefile = "gfx/interface/goals/ITA/ITA_destabilize_germany.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_back_hitlers_efforts"
+		texturefile = "gfx/interface/goals/ITA/ITA_back_hitlers_efforts.tga"
+	}
 }

@@ -1054,7 +1054,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_destabilize_germany
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_destabilize_germany
 		cost = 5
 		prerequisite = {
 			focus = ITA_demand_austrian_compliance
@@ -1253,7 +1253,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_back_hitlers_efforts
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_back_hitlers_efforts
 		cost = 5
 		prerequisite = {
 			focus = ITA_fascist_influence_in_germany
