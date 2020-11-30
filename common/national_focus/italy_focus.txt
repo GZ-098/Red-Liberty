@@ -1139,7 +1139,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_embargo_france
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_embargo_france
 		cost = 5
 		prerequisite = {
 			focus = ITA_prepare_border_defenses_on_the_french_border
@@ -1160,7 +1160,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_rally_the_people_for_war
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_rally_the_people_for_war
 		cost = 5
 		prerequisite = {
 			focus = ITA_prepare_antiair_defenses
@@ -1181,7 +1181,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_cut_off_diplomatic_ties
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_cut_off_diplomatic_ties
 		cost = 5
 		prerequisite = {
 			focus = ITA_embargo_france
@@ -1208,7 +1208,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_increase_propaganda_output
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_increase_propaganda_output
 		cost = 5
 		prerequisite = {
 			focus = ITA_rally_the_people_for_war

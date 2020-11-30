@@ -136,4 +136,24 @@ spritetypes = {
 		name = "GFX_ITA_back_hitlers_efforts"
 		texturefile = "gfx/interface/goals/ITA/ITA_back_hitlers_efforts.tga"
 	}
+	SpriteType = {
+		name = "GFX_ITA_embargo_france"
+		texturefile = "gfx/interface/goals/ITA/ITA_embargo_france.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_embargo_france"
+		texturefile = "gfx/interface/goals/ITA/ITA_embargo_france.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_rally_the_people_for_war"
+		texturefile = "gfx/interface/goals/ITA/ITA_rally_the_people_for_war.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_cut_off_diplomatic_ties"
+		texturefile = "gfx/interface/goals/ITA/ITA_cut_off_diplomatic_ties.tga"
+	}
+	SpriteType = {
+		name = "GFX_ITA_increase_propaganda_output"
+		texturefile = "gfx/interface/goals/ITA/ITA_increase_propaganda_output.tga"
+	}
 }
