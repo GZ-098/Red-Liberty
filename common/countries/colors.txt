@@ -777,3 +777,13 @@ GUD = {
 	color = rgb { 255 120 71 }
 	color_ui = rgb { 255 120 71 }
 }
+
+FLA = {
+	color = rgb { 209 199 13 }
+	color_ui = rgb { 255 242 0 }
+}
+
+WLA = {
+	color = rgb { 117 0 26 }
+	color_ui = rgb { 144 0 32 }
+}

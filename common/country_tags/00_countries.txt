@@ -221,3 +221,6 @@ ITF = "countries/Italian Union of Fascists.txt"
 SZC = "countries/Sichuan.txt"
 GUD = "countries/Guangdong.txt"
 ZHE = "countries/Zhejiang.txt"
+
+FLA = "countries/Flanders.txt"
+WLA = "countries/Wallonia.txt"

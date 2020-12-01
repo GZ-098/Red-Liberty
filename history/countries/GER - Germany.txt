@@ -8,7 +8,8 @@ puppet = POL
 
 puppet = LIT 
 
-puppet = BEL 
+puppet = FLA
+puppet = WLA
 
 # Starting tech
 set_technology = {
