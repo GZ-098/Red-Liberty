@@ -1,7 +1,7 @@
 spritetypes = {
 	
 	SpriteType = {
-		name = "GFX_ITA_invite_the_moderates_in"
+		name = "GFX_ITA_invite_the_moderates_in_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_invite_the_moderates_in.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -33,7 +33,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_expand_italys_scope"
+		name = "GFX_ITA_expand_italys_scope_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_expand_italys_scope.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -65,7 +65,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_returning_to_worker"
+		name = "GFX_ITA_returning_to_worker_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_returning_to_worker.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -97,7 +97,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_purge_grand_council"
+		name = "GFX_ITA_purge_grand_council_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_purge_grand_council.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -129,7 +129,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_italy_rebirth"
+		name = "GFX_ITA_italy_rebirth_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_italy_rebirth.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -161,7 +161,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_hold_election"
+		name = "GFX_ITA_hold_election_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_hold_election.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -193,11 +193,11 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_begin_the_revisions"
-		texturefile = "gfx/interface/goals/ITA/ITA_begin_the_revisions.tga"
+		name = "GFX_ITA_begin_the_revisions_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_begin_the_revisions.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_begin_the_revisions.tga"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_begin_the_revisions.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -210,7 +210,7 @@ spritetypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ITA/ITA_begin_the_revisions.tga"
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_begin_the_revisions.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -225,7 +225,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_purge_the_unloyal_blackshirts"
+		name = "GFX_ITA_purge_the_unloyal_blackshirts_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_purge_the_unloyal_blackshirts.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -257,7 +257,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_the_one_man_dictator"
+		name = "GFX_ITA_the_one_man_dictator_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_the_one_man_dictator.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -289,7 +289,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_begin_to_refill_lost_ranks"
+		name = "GFX_ITA_begin_to_refill_lost_ranks_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_begin_to_refill_lost_ranks.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -321,7 +321,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_hire_new_blackshirts"
+		name = "GFX_ITA_hire_new_blackshirts_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_hire_new_blackshirts.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -353,7 +353,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_refill_grand_council_seats"
+		name = "GFX_ITA_refill_grand_council_seats_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_refill_grand_council_seats.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -385,7 +385,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_expand_african_influence"
+		name = "GFX_ITA_expand_african_influence_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_expand_african_influence.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -417,7 +417,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_begin_border_skirmishes_on_the_ethiopian_border"
+		name = "GFX_ITA_begin_border_skirmishes_on_the_ethiopian_border_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_begin_border_skirmishes_on_the_ethiopian_border.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -449,7 +449,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_expand_our_african_holdings"
+		name = "GFX_ITA_expand_our_african_holdings_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_expand_our_african_holdings.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -481,7 +481,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_claim_austrian_land"
+		name = "GFX_ITA_claim_austrian_land_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_claim_austrian_land.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -513,7 +513,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_claim_lands_in_africa"
+		name = "GFX_ITA_claim_lands_in_africa_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_claim_lands_in_africa.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -545,7 +545,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_lay_claim_to_french_lands"
+		name = "GFX_ITA_lay_claim_to_french_lands_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_lay_claim_to_french_lands.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -577,7 +577,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_italianize_the_ethiopians"
+		name = "GFX_ITA_italianize_the_ethiopians_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_italianize_the_ethiopians.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -609,7 +609,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_the_roman_vision_speech"
+		name = "GFX_ITA_the_roman_vision_speech_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_the_roman_vision_speech.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -641,7 +641,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_the_roman_vision_speech"
+		name = "GFX_ITA_the_roman_vision_speech_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_the_roman_vision_speech.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -673,7 +673,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_train_the_new_blackshirts"
+		name = "GFX_ITA_train_the_new_blackshirts_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_train_the_new_blackshirts.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -705,7 +705,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_expand_the_number_of_seats"
+		name = "GFX_ITA_expand_the_number_of_seats_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_expand_the_number_of_seats.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -737,7 +737,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_give_orders_to_the_blackshirts"
+		name = "GFX_ITA_give_orders_to_the_blackshirts_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_give_orders_to_the_blackshirts.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -769,7 +769,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_force_new_laws_through"
+		name = "GFX_ITA_force_new_laws_through_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_force_new_laws_through.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -801,7 +801,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_the_italian_ranks_are_full"
+		name = "GFX_ITA_the_italian_ranks_are_full_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_the_italian_ranks_are_full.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -833,7 +833,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_influence_german_politics"
+		name = "GFX_ITA_influence_german_politics_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_influence_german_politics.tga"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -865,7 +865,7 @@ spritetypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_demand_austrian_compliance"
+		name = "GFX_ITA_demand_austrian_compliance_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_demand_austrian_compliance.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -896,136 +896,136 @@ spritetypes = {
 		legacy_lazy_load = no
 	}
 
-SpriteType = {
-	name = "GFX_ITA_prepare_antiair_defenses"
-	texturefile = "gfx/interface/goals/ITA/ITA_prepare_antiair_defenses.tga"
-	effectFile = "gfx/FX/buttonstate.lua"
-	animation = {
-		animationmaskfile = "gfx/interface/goals/ITA/ITA_prepare_antiair_defenses.tga"
-		animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-		animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-		animationlooping = no			# yes or no ;)
-		animationtime = 0.75				# in seconds
-		animationdelay = 0			# in seconds
-		animationblendmode = "add"       #add, multiply, overlay
-		animationtype = "scrolling"      #scrolling, rotating, pulsing
-		animationrotationoffset = { x = 0.0 y = 0.0 }
-		animationtexturescale = { x = 1.0 y = 1.0 } 
-	}
+	SpriteType = {
+		name = "GFX_ITA_prepare_antiair_defenses_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_prepare_antiair_defenses.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_prepare_antiair_defenses.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
 
-	animation = {
-		animationmaskfile = "gfx/interface/goals/ITA/ITA_prepare_antiair_defenses.tga"
-		animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-		animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-		animationlooping = no			# yes or no ;)
-		animationtime = 0.75				# in seconds
-		animationdelay = 0			# in seconds
-		animationblendmode = "add"       #add, multiply, overlay
-		animationtype = "scrolling"      #scrolling, rotating, pulsing
-		animationrotationoffset = { x = 0.0 y = 0.0 }
-		animationtexturescale = { x = 1.0 y = 1.0 } 
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_prepare_antiair_defenses.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
 	}
-	legacy_lazy_load = no
-}
-
-SpriteType = {
-	name = "GFX_ITA_fascist_influence_in_germany"
-	texturefile = "gfx/interface/goals/ITA/ITA_fascist_influence_in_germany.tga"
-	effectFile = "gfx/FX/buttonstate.lua"
-	animation = {
-		animationmaskfile = "gfx/interface/goals/ITA/ITA_fascist_influence_in_germany.tga"
-		animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-		animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-		animationlooping = no			# yes or no ;)
-		animationtime = 0.75				# in seconds
-		animationdelay = 0			# in seconds
-		animationblendmode = "add"       #add, multiply, overlay
-		animationtype = "scrolling"      #scrolling, rotating, pulsing
-		animationrotationoffset = { x = 0.0 y = 0.0 }
-		animationtexturescale = { x = 1.0 y = 1.0 } 
-	}
-
-	animation = {
-		animationmaskfile = "gfx/interface/goals/ITA/ITA_fascist_influence_in_germany.tga"
-		animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-		animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-		animationlooping = no			# yes or no ;)
-		animationtime = 0.75				# in seconds
-		animationdelay = 0			# in seconds
-		animationblendmode = "add"       #add, multiply, overlay
-		animationtype = "scrolling"      #scrolling, rotating, pulsing
-		animationrotationoffset = { x = 0.0 y = 0.0 }
-		animationtexturescale = { x = 1.0 y = 1.0 } 
-	}
-	legacy_lazy_load = no
-}
-
-SpriteType = {
-	name = "GFX_ITA_prepare_border_defenses_on_the_french_border"
-	texturefile = "gfx/interface/goals/ITA/ITA_prepare_border_defenses_on_the_french_border.tga"
-	effectFile = "gfx/FX/buttonstate.lua"
-	animation = {
-		animationmaskfile = "gfx/interface/goals/ITA/ITA_prepare_border_defenses_on_the_french_border.tga"
-		animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-		animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-		animationlooping = no			# yes or no ;)
-		animationtime = 0.75				# in seconds
-		animationdelay = 0			# in seconds
-		animationblendmode = "add"       #add, multiply, overlay
-		animationtype = "scrolling"      #scrolling, rotating, pulsing
-		animationrotationoffset = { x = 0.0 y = 0.0 }
-		animationtexturescale = { x = 1.0 y = 1.0 } 
-	}
-
-	animation = {
-		animationmaskfile = "gfx/interface/goals/ITA/ITA_prepare_border_defenses_on_the_french_border.tga"
-		animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-		animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-		animationlooping = no			# yes or no ;)
-		animationtime = 0.75				# in seconds
-		animationdelay = 0			# in seconds
-		animationblendmode = "add"       #add, multiply, overlay
-		animationtype = "scrolling"      #scrolling, rotating, pulsing
-		animationrotationoffset = { x = 0.0 y = 0.0 }
-		animationtexturescale = { x = 1.0 y = 1.0 } 
-	}
-	legacy_lazy_load = no
-}
-
-SpriteType = {
-	name = "GFX_ITA_destabilize_germany"
-	texturefile = "gfx/interface/goals/ITA/ITA_destabilize_germany.tga"
-	effectFile = "gfx/FX/buttonstate.lua"
-	animation = {
-		animationmaskfile = "gfx/interface/goals/ITA/ITA_destabilize_germany.tga"
-		animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-		animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-		animationlooping = no			# yes or no ;)
-		animationtime = 0.75				# in seconds
-		animationdelay = 0			# in seconds
-		animationblendmode = "add"       #add, multiply, overlay
-		animationtype = "scrolling"      #scrolling, rotating, pulsing
-		animationrotationoffset = { x = 0.0 y = 0.0 }
-		animationtexturescale = { x = 1.0 y = 1.0 } 
-	}
-
-	animation = {
-		animationmaskfile = "gfx/interface/goals/ITA/ITA_destabilize_germany.tga"
-		animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-		animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-		animationlooping = no			# yes or no ;)
-		animationtime = 0.75				# in seconds
-		animationdelay = 0			# in seconds
-		animationblendmode = "add"       #add, multiply, overlay
-		animationtype = "scrolling"      #scrolling, rotating, pulsing
-		animationrotationoffset = { x = 0.0 y = 0.0 }
-		animationtexturescale = { x = 1.0 y = 1.0 } 
-	}
-	legacy_lazy_load = no
-}
 
 	SpriteType = {
-		name = "GFX_ITA_back_hitlers_efforts"
+		name = "GFX_ITA_fascist_influence_in_germany_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_fascist_influence_in_germany.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_fascist_influence_in_germany.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_fascist_influence_in_germany.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_prepare_border_defenses_on_the_french_border_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_prepare_border_defenses_on_the_french_border.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_prepare_border_defenses_on_the_french_border.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_prepare_border_defenses_on_the_french_border.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_destabilize_germany_shine"
+		texturefile = "gfx/interface/goals/ITA/ITA_destabilize_germany.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_destabilize_germany.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ITA/ITA_destabilize_germany.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_back_hitlers_efforts_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_back_hitlers_efforts.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1057,7 +1057,7 @@ SpriteType = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_embargo_france"
+		name = "GFX_ITA_embargo_france_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_embargo_france.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1089,7 +1089,7 @@ SpriteType = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_rally_the_people_for_war"
+		name = "GFX_ITA_rally_the_people_for_war_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_rally_the_people_for_war.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1121,7 +1121,7 @@ SpriteType = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_cut_off_diplomatic_ties"
+		name = "GFX_ITA_cut_off_diplomatic_ties_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_cut_off_diplomatic_ties.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1153,7 +1153,7 @@ SpriteType = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_increase_propaganda_output"
+		name = "GFX_ITA_increase_propaganda_output_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_increase_propaganda_output.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1183,9 +1183,9 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	} 
-#######################################
+	
 	SpriteType = {
-		name = "GFX_ITA_cutoff_ties_with_the_german_empire"
+		name = "GFX_ITA_cutoff_ties_with_the_german_empire_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_cutoff_ties_with_the_german_empire.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1215,9 +1215,9 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	}
-############################################
+	
 	SpriteType = {
-		name = "GFX_ITA_send_equipment_to_the_german_fascists"
+		name = "GFX_ITA_send_equipment_to_the_german_fascists_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_send_equipment_to_the_german_fascists.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1247,9 +1247,9 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	}
-######################################
+	
 	SpriteType = {
-		name = "GFX_ITA_italy_to_rule_europe"
+		name = "GFX_ITA_italy_to_rule_europe_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_italy_to_rule_europe.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1279,9 +1279,9 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	}
-#######################################
+
 	SpriteType = {
-		name = "GFX_ITA_the_war_to_end_france"
+		name = "GFX_ITA_the_war_to_end_france_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_the_war_to_end_france.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1311,9 +1311,9 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	} 
-#######################################
+
 	SpriteType = {
-		name = "GFX_ITA_the_war_against_democracies"
+		name = "GFX_ITA_the_war_against_democracies_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_the_war_against_democracies.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1343,9 +1343,9 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	}
-##############################################
+
 	SpriteType = {
-		name = "GFX_ITA_the_great_fall_of_bolshavism"
+		name = "GFX_ITA_the_great_fall_of_bolshavism_shine"
 		texturefile = "gfx/interface/goals/ITA/ITA_the_great_fall_of_bolshavism.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
