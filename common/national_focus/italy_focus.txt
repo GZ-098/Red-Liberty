@@ -1227,7 +1227,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_the_war_to_end_france
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_the_war_to_end_france
 		cost = 5
 		prerequisite = {
 			focus = ITA_cut_off_diplomatic_ties
@@ -1272,7 +1272,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_cutoff_ties_with_the_german_empire
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_cutoff_ties_with_the_german_empire
 		cost = 5
 		prerequisite = {
 			focus = ITA_back_hitlers_efforts
@@ -1303,7 +1303,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_send_equipment_to_the_german_fascists
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_send_equipment_to_the_german_fascists
 		cost = 5
 		available = {
 			IF = {
@@ -1326,7 +1326,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_italy_to_rule_europe
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_italy_to_rule_europe
 		cost = 5
 		prerequisite = {
 			focus = ITA_send_equipment_to_the_german_fascists focus = ITA_the_war_to_end_france
@@ -1349,7 +1349,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_the_war_against_democracies
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_the_war_against_democracies
 		cost = 5
 		prerequisite = {
 			focus = ITA_italy_to_rule_europe
@@ -1368,7 +1368,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_the_great_fall_of_bolshavism
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_the_great_fall_of_bolshavism
 		cost = 5
 		available = {
 			IF = {

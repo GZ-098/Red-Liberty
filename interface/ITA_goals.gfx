@@ -156,4 +156,34 @@ spritetypes = {
 		name = "GFX_ITA_increase_propaganda_output"
 		texturefile = "gfx/interface/goals/ITA/ITA_increase_propaganda_output.tga"
 	}
+###################################
+	SpriteType = {
+		name = "GFX_ITA_cutoff_ties_with_the_german_empire"
+		texturefile = "gfx/interface/goals/ITA/ITA_cutoff_ties_with_the_german_empire.tga"
+	}
+###################################
+	SpriteType = {
+		name = "GFX_ITA_send_equipment_to_the_german_fascists"
+		texturefile = "gfx/interface/goals/ITA/ITA_send_equipment_to_the_german_fascists.tga"
+	}
+###################################
+	SpriteType = {
+		name = "GFX_ITA_italy_to_rule_europe"
+		texturefile = "gfx/interface/goals/ITA/ITA_italy_to_rule_europe.tga"
+	}
+###################################
+	SpriteType = {
+		name = "GFX_ITA_the_war_to_end_france"
+		texturefile = "gfx/interface/goals/ITA/ITA_the_war_to_end_france.tga"
+	}
+###################################
+	SpriteType = {
+		name = "GFX_ITA_the_war_against_democracies"
+		texturefile = "gfx/interface/goals/ITA/ITA_the_war_against_democracies.tga"
+	}
+###################################
+	SpriteType = {
+		name = "GFX_ITA_the_great_fall_of_bolshavism"
+		texturefile = "gfx/interface/goals/ITA/ITA_the_great_fall_of_bolshavism.tga"
+	}
 }
