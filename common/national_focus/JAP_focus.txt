@@ -454,8 +454,8 @@ focus_tree = {
 		y= 1
 		relative_position_id = jap_nationalist_taisho_is_ded
 		cost = 1 #place holder time
-		prerequisite = { focus = jap_nationalist_taisho_is_ded }
-		prerequisite = { focus = jap_nationalist_ballot_by_bullet }
+		prerequisite = { focus = jap_nationalist_taisho_is_ded focus = jap_nationalist_ballot_by_bullet }
+		
 		
 		bypass = {
 		}
@@ -532,6 +532,39 @@ focus_tree = {
 			}
 		}
 	}
+
+
+
+	focus = {
+		id = jap_nationalist_tokohai_party
+		icon = GFX_goal_unknown
+		x= 2
+		y= 0
+		relative_position_id = jap_nationalist_the_imperial_rule_assistance_associtiaton
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_party_of_the_public_order }
+		prerequisite = { focus = jap_nationalist_in_defense_of_the_kokutai }
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+
+
+
 	
 	# from this point on the new mandate tree for nationalist
 	# =================================================
@@ -715,4 +748,645 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = jap_nationalist_a_true_imperial_army
+		icon = GFX_goal_unknown
+		x= 1
+		y= 1
+		relative_position_id = jap_nationalist_ideological_doctrine
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_ideological_doctrine }
+		prerequisite = { focus = jap_nationalist_national_fanaticism }
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+
+	focus = {
+		id = jap_nationalist_a_true_imperial_japan
+		icon = GFX_goal_unknown
+		x= 1
+		y= 1
+		relative_position_id = jap_nationalist_national_fanaticism
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_national_fanaticism }
+		prerequisite = { focus = jap_nationalist_a_military_economy }
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+
+
+	focus = {
+		id = jap_nationalist_the_ultimate_sacrifice
+		icon = GFX_goal_unknown
+		x= 1
+		y= 1
+		relative_position_id = jap_nationalist_a_true_imperial_army
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_a_true_imperial_army }
+		prerequisite = { focus = jap_nationalist_a_true_imperial_japan }
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+
+
+
+# end
+	# =================================================
+
+
+	focus = {
+		id = jap_nationalist_our_agenda
+		icon = GFX_goal_unknown
+		x= 1
+		y= 1
+		relative_position_id = jap_nationalist_the_imperial_rule_assistance_associtiaton
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_the_imperial_rule_assistance_associtiaton }
+		prerequisite = { focus = jap_nationalist_tokohai_party }
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+
+
+	
+	focus = {
+		id = jap_nationalist_the_zaibatsu_issue
+		icon = GFX_goal_unknown
+		x= -2
+		y= 1
+		relative_position_id = jap_nationalist_our_agenda
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_our_agenda }
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+
+
+	focus = {
+		id = jap_nationalist_empower_the_military
+		icon = GFX_goal_unknown
+		x= 0
+		y= 1
+		relative_position_id = jap_nationalist_our_agenda
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_our_agenda }
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+
+
+	focus = {
+		id = jap_nationalist_return_to_tradition
+		icon = GFX_goal_unknown
+		x= 2
+		y= 1
+		relative_position_id = jap_nationalist_our_agenda
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_our_agenda }
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+#follows the zaibatsu issue path
+#==============================
+	
+	focus = {
+		id = jap_nationalist_the_bureaucratic_reforms
+		icon = GFX_goal_unknown
+		x= 0
+		y= 1
+		relative_position_id = jap_nationalist_the_zaibatsu_issue
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_the_zaibatsu_issue }
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+
+
+	focus = {
+		id = jap_nationalist_nationalization_programs
+		icon = GFX_goal_unknown
+		x= 0
+		y= 2
+		relative_position_id = jap_nationalist_the_zaibatsu_issue
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_the_bureaucratic_reforms }
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+#follows the empower the military path
+#===============================
+	focus = {
+		id = jap_nationalist_expand_the_budget
+		icon = GFX_goal_unknown
+		x= 0
+		y= 1
+		relative_position_id = jap_nationalist_empower_the_military
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_empower_the_military }
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+
+
+	focus = {
+		id = jap_nationalist_end_the_rivalry
+		icon = GFX_goal_unknown
+		x= 0
+		y= 2
+		relative_position_id = jap_nationalist_empower_the_military
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_expand_the_budget }
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+#From here return to tradition path
+#======================
+	focus = {
+		id = jap_nationalist_national_shinto
+		icon = GFX_goal_unknown
+		x= 0
+		y= 1
+		relative_position_id = jap_nationalist_return_to_tradition
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_return_to_tradition }
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	}
+
+	focus = {
+		id = jap_nationalist_a_true_showa_era
+		icon = GFX_goal_unknown
+		x= 0
+		y= 2
+		relative_position_id = jap_nationalist_return_to_tradition
+		cost = 1 #place holder time
+		prerequisite = { focus = jap_nationalist_national_shinto }
+		
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+			# rn nothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				
+			}
+		}
+	
+
+	}
+		#end==================================
+
+		focus = {
+			id = jap_nationalist_our_power_secured
+			icon = GFX_goal_unknown
+			x= 0
+			y= 1
+			relative_position_id = jap_nationalist_end_the_rivalry
+			cost = 1 #place holder time
+			prerequisite = { focus = jap_nationalist_nationalization_programs }
+			prerequisite = { focus = jap_nationalist_end_the_rivalry }
+			prerequisite = { focus = jap_nationalist_a_true_showa_era }
+			bypass = {
+			}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+			
+				# rn nothing
+			}
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					
+				}
+			}
+		
+	
+		}
+#On the march focus
+#==========================
+		focus = {
+			id = jap_nationalist_on_the_march
+			icon = GFX_goal_unknown
+			x= 6
+			y= 0
+			relative_position_id = jap_nationalist_new_mandate
+			cost = 1 #place holder time
+			prerequisite = { focus = jap_nationalist }			
+
+
+			bypass = {
+			}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+			
+				# rn nothing
+			}
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					
+				}
+			}
+		
+	
+		}
+
+
+
+		focus = {
+			id = jap_nationalist_proclaim_the_pan_asian_dream
+			icon = GFX_goal_unknown
+			x= -1
+			y= 1
+			relative_position_id = jap_nationalist_on_the_march
+			cost = 1 #place holder time
+			prerequisite = { focus = jap_nationalist_on_the_march }			
+
+
+			bypass = {
+			}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+			
+				# rn nothing
+			}
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					
+				}
+			}
+		
+	
+		}
+
+
+
+
+		focus = {
+			id = jap_nationalist_declare_nihon_superiority
+			icon = GFX_goal_unknown
+			x= 1
+			y= 1
+			relative_position_id = jap_nationalist_on_the_march
+			cost = 1 #place holder time
+			prerequisite = { focus = jap_nationalist_on_the_march }			
+
+
+			bypass = {
+			}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+			
+				# rn nothing
+			}
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					
+				}
+			}
+		
+	
+		}
+
+
+
+		focus = {
+			id = jap_nationalist_nanshi_ron
+			icon = GFX_goal_unknown
+			x= -1
+			y= 1
+			relative_position_id = jap_nationalist_proclaim_the_pan_asian_dream
+			cost = 1 #place holder time
+			prerequisite = { focus = jap_nationalist_proclaim_the_pan_asian_dream }			
+			prerequisite = { focus = jap_nationalist_declare_nihon_superiority }	
+
+			bypass = {
+			}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+			
+				# rn nothing
+			}
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					
+				}
+			}
+		
+	
+		}
+
+
+
+
+		focus = {
+			id = jap_nationalist_seek_asian_allies
+			icon = GFX_goal_unknown
+			x= 1
+			y= 1
+			relative_position_id = jap_nationalist_proclaim_the_pan_asian_dream
+			cost = 1 #place holder time
+			prerequisite = { focus = jap_nationalist_proclaim_the_pan_asian_dream }			
+			prerequisite = { focus = jap_nationalist_declare_nihon_superiority }	
+
+			bypass = {
+			}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+			
+				# rn nothing
+			}
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					
+				}
+			}
+		
+	
+		}
+
+
+
+		focus = {
+			id = jap_nationalist_hokushin_ron
+			icon = GFX_goal_unknown
+			x= 3
+			y= 1
+			relative_position_id = jap_nationalist_proclaim_the_pan_asian_dream
+			cost = 1 #place holder time
+			prerequisite = { focus = jap_nationalist_proclaim_the_pan_asian_dream }			
+			prerequisite = { focus = jap_nationalist_declare_nihon_superiority }	
+
+			bypass = {
+			}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+			
+				# rn nothing
+			}
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					
+				}
+			}
+		
+	
+		}
+
+
+
+		focus = {
+			id = jap_nationalist_mobilize_the_kwantung_army
+			icon = GFX_goal_unknown
+			x= 0
+			y= 1
+			relative_position_id = jap_nationalist_seek_asian_allies
+			cost = 1 #place holder time
+			prerequisite = { focus = jap_nationalist_seek_asian_allies }			
+		
+
+			bypass = {
+			}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+			
+				# rn nothing
+			}
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					
+				}
+			}
+		
+	
+		}
 }
