@@ -77,8 +77,10 @@ ideas = {
 			traits = { conservative_debater }
 
 			do_effect = {
-				NOT = {
-					has_government = democratic
+				GER = {
+					NOT = {
+						has_government = conservatism
+					}					
 				}
 			}
 			
@@ -950,13 +952,13 @@ ideas = {
 			}
 	
 			allowed_civil_war = {
-				has_government = fascism
+				has_government = empowered_nationalism
 			}
 			
 			removal_cost = -1
 			
 			modifier = {
-				fascism_drift = 0.2
+				empowered_nationalism_drift = 0.2
 			}
 
 		}

@@ -6,8 +6,10 @@ set_research_slots = 4
 set_stability = 0.6
 set_war_support = 0.7
 add_ideas = {
-	victor_emmanuel
-	vittoria_mutilata
+	ITA_missing_manpower
+	ITA_complete_economic_failure
+	ITA_leftists_in_the_blackshirts
+	ITA_leftists_in_the_grand_council_of_fascism
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation

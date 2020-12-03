@@ -1,9 +1,85 @@
 ideas = {
 	political_advisor = { 
 
-} 
+ 	} 
 
 	country = { 
+
+		#Starting nat spirits
+		ITA_missing_manpower = {
+			removal_cost = -1 
+			
+			picture = ITA_missing_manpower
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				weekly_manpower = -0.05
+				production_speed_buildings_factor = -0.10
+				army_attack_factor = -0.08
+				army_defence_factor = -0.08 
+				conscription = -0.12
+			}
+		}
+		ITA_complete_economic_failure = {
+			removal_cost = -1 
+			
+			picture = ITA_economic_troubles
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_factory_max_efficiency_factor = -0.15
+				min_export = 0.20
+				production_speed_buildings_factor = -0.25
+			}
+		}
+		ITA_leftists_in_the_blackshirts = {
+			removal_cost = -1 
+			
+			picture = ITA_leftists_in_the_blackshirts
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				revolutionary_socialism_drift = 0.03
+				political_power_gain = -0.025
+			}
+		}
+		ITA_leftists_in_the_grand_council_of_fascism = {
+			removal_cost = -1 
+			
+			picture = ITA_leftists_in_the_blackshirts
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				revolutionary_socialism_drift = 0.03
+				political_power_gain = -0.025
+			}
+		}
+		#Starting nat spirits
 
       	ITA_preparing_the_people_for_war = {
 			removal_cost = -1 
@@ -351,26 +427,26 @@ ideas = {
 	}
 
 	#Military
-	army_chief = {  
+	army_chief = { 
 
-}
+	}
 	navy_chief = { 
 
-}
+	}
 	air_chief = { 
 
-}
+	}
 	high_command = { 
 
-}
+	}
 	#Manufacturers
 	tank_manufacturer = { 
 
-}
+	}	
 	naval_manufacturer = {  
 
-}
+	}
 	aircraft_manufacturer = {  
 
+	} 
 }
-
