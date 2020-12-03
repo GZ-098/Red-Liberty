@@ -387,7 +387,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Inukai Tsuyoshi"
-	#desc = "None yet"
+	desc = "inukai_tsuyoshi_desc"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	expire = "1989.1.1"
 	ideology = conservatism_subtype
@@ -401,7 +401,7 @@ set_party_name = {
 }
 create_country_leader = {
 	name = "Hitoshi Yamakawa"
-	#desc = "None yet"
+	desc = "hitoshi_yamakawa_desc"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	expire = "1989.1.1"
 	ideology = marxism
@@ -415,7 +415,16 @@ set_party_name = {
 }
 create_country_leader = {
 	name = "Kato Shidzue"
-	#desc = "None yet"
+	desc = "kato_shidzue_desc"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	expire = "1989.1.1"
+	ideology = democratic_socialist_subtype
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Abe Isoo"
+	desc = "abe_isoo_desc"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	expire = "1989.1.1"
 	ideology = democratic_socialist_subtype
@@ -443,7 +452,7 @@ set_party_name = {
 }
 create_country_leader = {
 	name = "Konoe Fumimaro"
-	#desc = "None yet"
+	desc = "konoe_fumimaro_desc"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	expire = "1989.1.1"
 	ideology = fascism_ideology
@@ -458,13 +467,19 @@ set_party_name = {
 }
 create_country_leader = {
 	name = "Saito Takao"
-	#desc = ""None yet"
+	desc = "saito_takao_desc"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	expire = "1989.1.1"
 	ideology = liberalism_subtype
 	traits = {
 	}
 }
+
+
+
+
+
+
 set_party_name = { 
     ideology = liberalism 
     long_name = "Rikken Minseito"
