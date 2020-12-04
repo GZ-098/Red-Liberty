@@ -29,7 +29,7 @@ ideas = {
 		ITA_complete_economic_failure = {
 			removal_cost = -1 
 			
-			picture = ITA_economic_troubles
+			picture = ITA_complete_economic_failure
 			
 			available = {
 			}
@@ -65,7 +65,7 @@ ideas = {
 		ITA_leftists_in_the_grand_council_of_fascism = {
 			removal_cost = -1 
 			
-			picture = ITA_leftists_in_the_blackshirts
+			picture = ITA_ITA_leftists_in_the_grand_council_of_fascism
 			
 			available = {
 			}
