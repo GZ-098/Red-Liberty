@@ -115,20 +115,8 @@ if = {
 	add_political_power = 1198
 	
 	#white_peace = ETH
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		remove_ideas = MTG_naval_treaty_adherent
-	}
 	#adding ministers
 	add_ideas = {
-		ITA_giovanni_marinelli
-		ITA_giacomo_acerbo
-		emilio_de_bono
-		vittorio_ambrosio
-		fiat
-		beretta
 
 		#laws
 		partial_economic_mobilisation
@@ -256,9 +244,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ferruccio Parri"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "GFX_portrait_italy_ferruccio_parri"
+	picture = "GFX_portrait_italy_ferruccio_parri.tga"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = demsoc
 	traits = {
 		
 	}
@@ -267,7 +255,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Victor Emmanuel III"
 	desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
-	picture = "GFX_portrait_italy_victor_emmanuel_iii"
+	picture = "GFX_portrait_italy_victor_emmanuel_iii.tga"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
