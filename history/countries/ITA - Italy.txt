@@ -253,6 +253,29 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Alcide De Gasperi"
+	desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
+	picture = "GFX_portrait_italy_alcide_de_gasperi.tga"
+	expire = "1965.1.1"
+	ideology = contard
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Luigi Facta"
+	desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
+	picture = "GFX_portrait_italy_luigi_facta.tga"
+	expire = "1965.1.1"
+	ideology = contard
+	traits = {
+
+	}
+}
+
+
+create_country_leader = {
 	name = "Victor Emmanuel III"
 	desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
 	picture = "GFX_portrait_italy_victor_emmanuel_iii.tga"

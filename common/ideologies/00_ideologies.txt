@@ -121,6 +121,10 @@ ideologies = {
 		
 		types = {  
 
+		liberal = {
+
+		}
+
 		liberalism_subtype = {
 		}
 
@@ -178,6 +182,10 @@ ideologies = {
 	conservatism = {
 	
 		types = { 
+
+			contard = {
+				
+			}
 
 			conservatism_subtype = {
 			}
