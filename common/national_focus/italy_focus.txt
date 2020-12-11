@@ -727,7 +727,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = {
-			focus = ITA_hold_the_elections
+			focus = ITA_hold_the_election
 			focus = ITA_italy_rebirth
 		}
 		x = 35

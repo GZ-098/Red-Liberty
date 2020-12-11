@@ -300,7 +300,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Pietro Badoglio"
-	picture = "Portrait_Italy_Pietro_Badoglio.dds"
+	picture = "Portrait_Italy_Pietro_Badoglio.tga"
 	traits = { defensive_doctrine old_guard politically_connected inflexible_strategist }
 	skill = 1
 	attack_skill = 1
