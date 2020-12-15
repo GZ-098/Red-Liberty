@@ -1,0 +1,96 @@
+on_actions = {
+
+	on_capitulation = {
+		
+		effect = {
+		
+			set_global_flag = skip_default_capitulation
+			
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = AHE
+					}
+					ITA = {
+						has_war_with = AHE
+					}
+					AHE = {
+						has_country_flag = danubian_war_participant
+					}
+				}
+				danubian_wars_peace_italy = yes
+			}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = AHE
+					}
+					POL = {
+						has_war_with = AHE
+					}
+					AHE = {
+						has_country_flag = danubian_war_participant
+					}
+				}
+				danubian_wars_peace_poland = yes
+			}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = AHE
+					}
+					SER = {
+						has_war_with = AHE
+					}
+					AHE = {
+						has_country_flag = danubian_war_participant
+					}
+				}
+				danubian_wars_peace_serbia = yes
+			}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = AHE
+					}
+					CZE = {
+						has_war_with = AHE
+					}
+					AHE = {
+						has_country_flag = danubian_war_participant
+					}
+				}
+				danubian_wars_peace_czechia = yes
+			}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = AHE
+					}
+					UKR = {
+						has_war_with = AHE
+					}
+					AHE = {
+						has_country_flag = danubian_war_participant
+					}
+				}
+				danubian_wars_peace_ukraine = yes
+			}	
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = AHE
+					}
+					ROM = {
+						has_war_with = AHE
+					}
+					AHE = {
+						has_country_flag = danubian_war_participant
+					}
+				}
+				danubian_wars_peace_romania = yes
+			}
+			clr_global_flag = skip_default_capitulation
+		}
+	}
+}

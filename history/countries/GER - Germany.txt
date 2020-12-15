@@ -146,7 +146,7 @@ add_ideas = {
 	faith_in_the_kaiser
 	the_loss_of_a_generation
 	limited_exports
-	limited_conscription
+	volunteer_only
 	partial_economic_mobilisation
 }
 
