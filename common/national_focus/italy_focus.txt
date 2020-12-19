@@ -379,8 +379,9 @@ focus_tree = {
 					factor = 20
 				}
 		completion_reward = {
-			add_ideas = {
-				ITA_conservative_parties_in_parliment
+			add_timed_idea = {
+				idea = ITA_conservative_parties_in_parliment
+				days = 100
 			}
 		}
 	}
@@ -486,13 +487,13 @@ focus_tree = {
 					factor = 20
 				}
 		completion_reward = {
-			add_timed_idea = {
-				idea = ITA_coalition_building_with_the_fascists 
-				days = 55
+			country_event = {
+				id = italy_events.15
+				days = 1 
 			}
 		}
-
 	}
+
 	focus = {
 		id = ITA_restrict_the_blackshirts
 		icon = GFX_goal_unknown
@@ -668,9 +669,6 @@ focus_tree = {
 				}
 		completion_reward = {
 			add_political_power = 30
-			add_timed_idea = {
-				idea = ITA_rebuilding_socialist_parties
-			}
 			country_event = { id = italy_events.7 days = 1 }
 		}
 

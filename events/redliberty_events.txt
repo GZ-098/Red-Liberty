@@ -274,27 +274,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			ITF = {
-				transfer_state = 115
-				transfer_state = 156
-				transfer_state = 117
-				transfer_state = 157
-				transfer_state = 160
-				transfer_state = 114
-				transfer_state = 736
-				load_oob = "ITF_civil_war"
-				declare_war_on = {
-    				target = ITA
-    				type = annex_everything
-				}
-			}
-			ITA = {
-				load_oob = "ITA_civil_war"
-				declare_war_on = {
-    				target = ITF
-    				type = annex_everything
-				}
-			}
+
 		}
 	} 
 
@@ -302,9 +282,6 @@ country_event = {
 		ai_chance = { factor = 100 }
 		name = "Comrades Rise up in Arms!"
 		add_war_support = 0.25
-		set_politics = {
-			ruling_party = revolutionary_socialism
-		}
 	} 
 } 
 

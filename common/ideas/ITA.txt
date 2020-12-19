@@ -423,7 +423,136 @@ ideas = {
 				political_advisor_cost_factor = 0.1
 				economy_cost_factor = 0.1 
 			}
-		}			
+		}	
+		
+		ITA_conservative_parties_in_parliment = {
+			removal_cost = -1 
+			
+			picture = ITA_conservative_parties_in_parliment
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				conservatism_drift = 0.1
+			}
+		}
+
+		ITA_italain_peoples_party = {
+			removal_cost = -1 
+			
+			picture = ITA_italain_peoples_party
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				stability_weekly = 0.05
+				conservatism_drift = 0.05
+			}
+		}
+
+		ITA_liberal_party = {
+			removal_cost = -1 
+			
+			picture = ITA_liberal_party
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				stability_weekly = 0.05
+				conservatism_drift = 0.05
+			}
+		}
+
+		ITA_reenstating_christian_values = {
+			removal_cost = -1 
+			
+			picture = ITA_reenstating_christian_values
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				stability_weekly = 0.03
+				political_power_gain = 0.1
+				political_advisor_cost_factor = 0.25
+			}
+		}
+
+		ITA_reenstating_liberal_values = {
+			removal_cost = -1 
+			
+			picture = ITA_reenstating_liberal_values
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain = 0.13
+				trade_laws_cost_factor = 0.25
+			}
+		}
+
+		ITA_socialist_mussolini = {
+			removal_cost = -1 
+			
+			picture = ITA_socialist_mussolini
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				revolutionary_socialism_drift = 0.1
+				revolutionary_socialism_acceptance = 45
+				economy_cost_factor = 0.3
+			}
+		}
+
+		ITA_socialist_black_shirts = {
+			removal_cost = -1 
+			
+			picture = ITA_socialist_black_shirts
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				revolutionary_socialism_drift = 0.05
+				army_chief_cost_factor = 0.15
+				war_support_weekly = 0.01
+				resistance_target = -0.1
+			}
+		}
 	}
 
 	#Military
