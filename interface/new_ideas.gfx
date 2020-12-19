@@ -39,4 +39,131 @@ spriteTypes = {
 		name = "GFX_idea_SCH_cossacks"
 		texturefile = "gfx/interface/ideas/ORE/ORE_cossacks.tga"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_ITA_missing_manpower"
+		texturefile = "gfx/interface/ideas/ITA/ITA_missing_manpower.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_complete_economic_failure"
+		texturefile = "gfx/interface/ideas/ITA/ITA_complete_economic_failure.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_leftists_in_the_blackshirts"
+		texturefile = "gfx/interface/ideas/ITA/ITA_leftists_in_the_blackshirts.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_leftists_in_the_grand_council_of_fascism"
+		texturefile = "gfx/interface/ideas/ITA/ITA_leftists_in_the_grand_council_of_fascism.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_IDE_fighting_for_our_people"
+		texturefile = "gfx/interface/ideas/IDE/IDE_fighting_for_our_people.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NRR_starving_army"
+		texturefile = "gfx/interface/ideas/NRR_starving_army.dds"
+	}  
+	spriteType = {
+		name = "GFX_idea_NRR_northern_isolation"
+		texturefile = "gfx/interface/ideas/NRR_northern_isolation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NRR_one_common_enemy"
+		texturefile = "gfx/interface/ideas/NRR_one_common_enemy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ALT_the_center_of_asia"
+		texturefile = "gfx/interface/ideas/ALT_the_center_of_asia.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ALT_peasant_army"
+		texturefile = "gfx/interface/ideas/ALT_peasant_army.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_ALT_the_first_step"
+		texturefile = "gfx/interface/ideas/ALT_the_first_step.dds"
+	}   
+	spriteType = {
+		name = "GFX_idea_RUS_siberian_wasteland"
+		texturefile = "gfx/interface/ideas/RUS_siberian_wasteland.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_RUS_mixed_ideologies"
+		texturefile = "gfx/interface/ideas/RUS_mixed_ideologies.dds"
+	}   
+	spriteType = {
+		name = "GFX_idea_RUS_scheming_generals"
+		texturefile = "gfx/interface/ideas/RUS_scheming_generals.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_RUS_ill_cordinated_army"
+		texturefile = "gfx/interface/ideas/RUS_ill_cordinated_army.dds"
+	}   
+	spriteType = {
+		name = "GFX_idea_ENG_a_unstable_coalition"
+		texturefile = "gfx/interface/ideas/ENG_a_unstable_coalition.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_polarized_politics"
+		texturefile = "gfx/interface/ideas/ENG_polarized_politics.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_ENG_extremist_militant_groups"
+		texturefile = "gfx/interface/ideas/ENG_extremist_militant_groups.dds"
+	} 
+	spriteType = {
+		name = "GFX_idea_FRA_a_falling_democracy"
+		texturefile = "gfx/interface/ideas/FRA_a_falling_democracy.dds"
+	}  
+	
+	spriteType = {
+		name = "GFX_idea_embarrassment_on_the_italian_front"
+		texturefile = "gfx/interface/ideas/embarrassment_on_the_italian_front.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_economic_downturn"
+		texturefile = "gfx/interface/ideas/economic_downturn.dds"
+	} 
+	
+	spriteType = {
+		name = "GFX_idea_ethnic_division"
+		texturefile = "gfx/interface/ideas/ethnic_division.dds"
+	} 
+	
+	spriteType = {
+		name = "GFX_idea_new_imperial_economic_plan"
+		texturefile = "gfx/interface/ideas/new_imperial_economic_plan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GER_the_loss_of_a_generation3"
+		texturefile = "gfx/interface/ideas/GER_the_loss_of_a_generation3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GER_the_loss_of_a_generation2"
+		texturefile = "gfx/interface/ideas/GER_the_loss_of_a_generation2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GER_the_loss_of_a_generation"
+		texturefile = "gfx/interface/ideas/GER_the_loss_of_a_generation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GER_faith_in_the_kaiser"
+		texturefile = "gfx/interface/ideas/GER_faith_in_the_kaiser.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GER_unpaid_war_expenses2"
+		texturefile = "gfx/interface/ideas/GER_unpaid_war_expenses2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GER_unpaid_war_expenses"
+		texturefile = "gfx/interface/ideas/GER_unpaid_war_expenses.dds"
+	}
 }
