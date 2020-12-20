@@ -741,6 +741,7 @@ focus_tree = {
 		}
 
 	}
+	
 	focus = {
 		id = ITA_encourage_worker_unions
 		icon = GFX_goal_unknown
