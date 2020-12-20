@@ -1,0 +1,286 @@
+shared_focus = {
+    id = JAP_inukai_govt
+	
+    x = 8
+	y = 0
+	
+	cost = 2
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = JAP_sino_japanese_friendship
+	
+    x = -2
+	y = 1
+	
+	cost = 2
+	relative_position_id = JAP_inukai_govt
+	prerequisite = { focus = JAP_inukai_govt }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = JAP_bipartisanship
+	
+    x = 0
+	y = 1
+	
+	cost = 2
+	relative_position_id = JAP_inukai_govt
+	prerequisite = { focus = JAP_inukai_govt }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = JAP_sideline_extremists
+	
+    x = 2
+	y = 1
+	
+	cost = 2
+	relative_position_id = JAP_inukai_govt
+	prerequisite = { focus = JAP_inukai_govt }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = JAP_socio_economic_stability
+	
+    x = 0
+	y = 1
+	
+	cost = 2
+	relative_position_id = JAP_bipartisanship
+	prerequisite = { focus = JAP_sino_japanese_friendship }
+	prerequisite = { focus = JAP_bipartisanship }
+	prerequisite = { focus = JAP_sideline_extremists }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = JAP_state_funeral
+	
+    x = 0
+	y = 1
+	
+	cost = 2
+	relative_position_id = JAP_socio_economic_stability
+	prerequisite = { focus = JAP_socio_economic_stability }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = JAP_snap_elections
+	
+    x = 0
+	y = 1
+	
+	cost = 2
+	relative_position_id = JAP_state_funeral
+	prerequisite = { focus = JAP_state_funeral }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = JAP_seiyukai_platform
+	
+    x = -2
+	y = 1
+	
+	cost = 2
+	relative_position_id = JAP_state_funeral
+	prerequisite = { focus = JAP_state_funeral }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = JAP_minseito_platform
+	
+    x = 0
+	y = 1
+	
+	cost = 2
+	relative_position_id = JAP_state_funeral
+	prerequisite = { focus = JAP_state_funeral }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = JAP_ronoto_platform
+	
+    x = 2
+	y = 1
+	
+	cost = 2
+	relative_position_id = JAP_state_funeral
+	prerequisite = { focus = JAP_state_funeral }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = JAP_the_results
+	
+    x = 0
+	y = 1
+	
+	cost = 2
+	relative_position_id = JAP_minseito_platform
+	prerequisite = { focus = JAP_seiyukai_platform }
+	prerequisite = { focus = JAP_minseito_platform }
+	prerequisite = { focus = JAP_ronoto_platform }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = JAP_status_quo
+	
+    x = -1
+	y = 1
+	
+	cost = 2
+	relative_position_id = JAP_the_results
+	mutually_exclusive = {
+		focus = JAP_july_crisis
+	}
+	prerequisite = { focus = JAP_the_results }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = JAP_picking_a_cabinet
+	
+    x = -1
+	y = 1
+	
+	cost = 2
+	relative_position_id = JAP_status_quo
+	prerequisite = { focus = JAP_status_quo }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = JAP_july_crisis
+	
+    x = 1
+	y = 1
+	
+	cost = 2
+	relative_position_id = JAP_the_results
+	mutually_exclusive = {
+		focus = JAP_status_quo
+	}
+	prerequisite = { focus = JAP_the_results }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = JAP_constitutional_amendment
+	
+    x = -1
+	y = 1
+	
+	cost = 2
+	relative_position_id = JAP_july_crisis
+	mutually_exclusive = {
+		focus = JAP_konoe_govt
+	}
+	prerequisite = { focus = JAP_july_crisis }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = JAP_konoe_govt
+	
+    x = 1
+	y = 1
+	
+	cost = 2
+	relative_position_id = JAP_july_crisis
+	mutually_exclusive = {
+		focus = JAP_constitutional_amendment
+	}
+	prerequisite = { focus = JAP_july_crisis }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
