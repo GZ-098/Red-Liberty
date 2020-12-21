@@ -40,13 +40,13 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ORE/ORE_cossacks.tga"
 	}
 	
+
+#########################################
+#Italian nat spirts
+#########################################
 	spriteType = {
-		name = "GFX_idea_ITA_missing_manpower"
-		texturefile = "gfx/interface/ideas/ITA/ITA_missing_manpower.tga"
-	}
-	spriteType = {
-		name = "GFX_idea_ITA_complete_economic_failure"
-		texturefile = "gfx/interface/ideas/ITA/ITA_complete_economic_failure.tga"
+		name = "GFX_idea_ITA_preparing_the_people_for_war"
+		texturefile = "gfx/interface/ideas/ITA/ITA_preparing_the_people_for_war.tga"
 	}
 	spriteType = {
 		name = "GFX_idea_ITA_leftists_in_the_blackshirts"
@@ -56,6 +56,21 @@ spriteTypes = {
 		name = "GFX_idea_ITA_leftists_in_the_grand_council_of_fascism"
 		texturefile = "gfx/interface/ideas/ITA/ITA_leftists_in_the_grand_council_of_fascism.tga"
 	}
+	spriteType = {
+		name = "GFX_idea_ITA_missing_manpower"
+		texturefile = "gfx/interface/ideas/ITA/ITA_missing_manpower.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_complete_economic_failure"
+		texturefile = "gfx/interface/ideas/ITA/ITA_complete_economic_failure.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_complete_economic_failure"
+		texturefile = "gfx/interface/ideas/ITA/ITA_complete_economic_failure.tga"
+	}	
+#########################################
+#Italian nat spirts
+#########################################
 	spriteType = {
 		name = "GFX_idea_IDE_fighting_for_our_people"
 		texturefile = "gfx/interface/ideas/IDE/IDE_fighting_for_our_people.dds"
