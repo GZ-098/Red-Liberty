@@ -1,6 +1,6 @@
 focus_tree = {
 
-	id = japrd_focus
+	id = japan_paths
 	
 	country = {
 	

@@ -218,7 +218,7 @@ shared_focus = {
 	relative_position_id = JAP_status_quo
 	prerequisite = { focus = JAP_status_quo }
     completion_reward = {
-        
+        load_focus_tree = japan_paths
     }
 	ai_will_do = {
 		factor = 10
@@ -258,7 +258,7 @@ shared_focus = {
 	}
 	prerequisite = { focus = JAP_july_crisis }
     completion_reward = {
-        
+        load_focus_tree = japan_paths
     }
 	ai_will_do = {
 		factor = 10
@@ -278,7 +278,8 @@ shared_focus = {
 	}
 	prerequisite = { focus = JAP_july_crisis }
     completion_reward = {
-        
+        load_focus_tree = japan_paths
+		complete_national_focus = jap_nationalist
     }
 	ai_will_do = {
 		factor = 10
