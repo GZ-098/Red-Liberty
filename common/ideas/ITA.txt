@@ -81,6 +81,168 @@ ideas = {
 		}
 		#Starting nat spirits
 
+		ITA_centralized_power = {
+			removal_cost = -1 
+			
+			picture = ITA_centralized_power
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				defensive_war_stability_factor = 0.10
+				army_speed_factor = -0.1
+			}
+		}
+
+		ITA_decentralized_power = {
+			removal_cost = -1 
+			
+			picture = ITA_decentralized_power
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				defensive_war_stability_factor = -0.10
+				army_speed_factor = 0.2
+			}
+		}
+
+		ITA_roman_goal = {
+			removal_cost = -1 
+			
+			picture = ITA_roman_goal
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				justify_war_goal_time = -0.15
+				weekly_war_support_factor = 0.1
+				political_power_gain = 0.05
+			}
+		}
+
+		ITA_direct_democracy = {
+			removal_cost = -1 
+			
+			picture = ITA_direct_democracy
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				revolutionary_socialism_drift = 0.1
+				drift_defence_factor = -0.2
+			}
+		}
+
+		ITA_direct_democracy = {
+			removal_cost = -1 
+			
+			picture = ITA_direct_democracy
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				revolutionary_socialism_drift = 0.1
+				drift_defence_factor = -0.2
+			}
+		}
+
+		ITA_representative_democracy = {
+			removal_cost = -1 
+			
+			picture = ITA_representative_democracy
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				conservatism_drift = 0.05
+				drift_defence_factor = 0.40
+			}
+		}
+
+		ITA_decreased_government_power = {
+			removal_cost = -1 
+			
+			picture = ITA_decreased_government_power
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = -0.15
+			}
+		}
+
+		ITA_increased_government_power = {
+			removal_cost = -1 
+			
+			picture = ITA_increased_government_power
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain = -0.25
+				stability_factor = 0.15
+			}
+		}
+
+		ITA_war_against_democracies = {
+			removal_cost = -1 
+			
+			picture = ITA_war_against_democracies
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				justify_war_goal_time = -0.35
+			}
+		}
+
       	ITA_preparing_the_people_for_war = {
 			removal_cost = -1 
 			

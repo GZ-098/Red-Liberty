@@ -1360,9 +1360,12 @@ focus_tree = {
 			ai_will_do = {
 					factor = 1
 				}
+		completion_reward = {
 		add_ideas = {
 			ITA_war_against_democracies
+		}			
 		}
+
 
 	}
 	focus = {
@@ -1384,10 +1387,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
 		create_wargoal = {
 			type = puppet 
 			target = SOV
 			days = 0
+		}			
 		}
 	}
 	focus = {

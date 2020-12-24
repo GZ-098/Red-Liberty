@@ -178,11 +178,9 @@ country_event = {
 	option = { 
 		ai_chance = { factor = 100 }
 		name = "We will Remember!"
-		add_opinion_modifier = {
 			add_ideas = {#Reduces war justifacation time, adds 10% extra war support, and 0.05 plus political power
 				ITA_roman_goal
 			}
-		}
 	} 
 } 
 
@@ -442,9 +440,8 @@ country_event = {
 		ai_chance = { factor = 40 }
 		name = "Time to Flex Our Muscle"
 		create_wargoal = {
-			type = puppet 
+			type = puppet_wargoal_focus  
 			target = SWI
-			days = 0
 		}
 	} 
 }
