@@ -1,0 +1,54 @@
+add_namespace = japan
+
+country_event = { # intro event
+	id = japan.1
+	title = "Tenno Haika..."
+	desc = japan.1.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Banzai!"
+	}
+}
+
+country_event = { # from japan to china
+	id = japan.2
+	title = "Our Relationship With Japan"
+	desc = japan.2.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "What do you think about the Treaty?"
+		ai_chance = { factor = 1 }
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.01
+		}
+	}
+}
+
+country_event = { # inukai dies
+	id = japan.3
+	title = "An Overdue Farewell"
+	desc = japan.3.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "What do you think about the Treaty?"
+		ai_chance = { factor = 1 }
+	}
+}
+
