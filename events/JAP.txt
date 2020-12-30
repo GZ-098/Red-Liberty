@@ -39,7 +39,7 @@ country_event = { # from japan to china
 
 country_event = { # inukai dies
 	id = japan.3
-	title = "An Overdue Farewell"
+	title = "Overslept"
 	desc = japan.3.desc
 	
 	is_triggered_only = yes
@@ -47,8 +47,283 @@ country_event = { # inukai dies
 	fire_only_once = yes
 	
 	option = {
-		name = "What do you think about the Treaty?"
+		name = "He isn’t breathing."
+		add_stability = -0.15
+		set_country_flag = inukai_ded
 		ai_chance = { factor = 1 }
 	}
 }
 
+country_event = { # inukai dies
+	id = japan.4
+	title = "An Overdue Farewell"
+	desc = japan.4.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "Meifuku o inoru."
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = japan.5
+	title = "Into the Unknown"
+	desc = japan.5.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "A post-Inukai Japan begins to take shape."
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = japan.6
+	title = "Vote Seiyukai!"
+	desc = japan.6.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "Maybe the past didn’t go anywhere..."
+		add_popularity = {
+			ideology = democratic_socialism
+			popularity = -0.05
+		}
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = japan.7
+	title = "Vote Minseito!"
+	desc = japan.7.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "Sounds rosy!"
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = japan.8
+	title = "Vote Ronoto!"
+	desc = japan.8.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "Incisive."
+		add_popularity = {
+			ideology = conservatism
+			popularity = -0.05
+		}
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = japan.9
+	title = "And the Winner is..."
+	desc = japan.9.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "The ball is in the Liberals’ court now…"
+		set_politics = {
+			ruling_party = liberalism
+			last_election = "1933.2.25"
+			election_frequency = 24
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+		country_event = {
+			id = japan.10
+			days = 1
+		}
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = japan.10
+	title = "The Coalition"
+	desc = japan.10.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "Dear Ichiro-san..."
+		set_country_flag = JAP_status_quo_upheld
+		complete_national_focus = JAP_status_quo
+		ai_chance = { factor = 33 }
+	}
+	
+	option = {
+		name = "Dear Abe-san..."
+		set_country_flag = JAP_july_crisis
+		ai_chance = { factor = 64 }
+	}
+}
+
+country_event = {
+	id = japan.11
+	title = "The July Crisis"
+	desc = japan.11.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "That’s ridiculous. His Majesty would never agree to that."
+		add_stability = -0.1
+		country_event = {
+			id = japan.13
+			days = 1
+		}
+		ai_chance = { factor = 70 }
+	}
+	
+	option = {
+		name = "I'm listening..."
+		add_political_power = -50
+		country_event = {
+			id = japan.12
+			days = 1
+		}
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = {
+	id = japan.12
+	title = "A Petition to His Imperial Majesty"
+	desc = japan.12.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "Approved."
+		set_country_flag = JAP_allowed_amendment
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "Denied."
+		country_event = {
+			id = japan.13
+			days = 1
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = japan.13
+	title = "A Petition to His Imperial Majesty"
+	desc = japan.13.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "Approved."
+		ai_chance = { factor = 100 }
+		set_country_flag = JAP_allowed_konoe
+	}
+}
+
+country_event = {
+	id = japan.14
+	title = "A Crisis Averted"
+	desc = japan.14.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "That was my idea, Saito-sama."
+		load_focus_tree = japan_paths
+		add_political_power = 25
+		add_popularity = {
+			ideology = empowered_nationalism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = democratic_socialism
+			popularity = 0.02
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = japan.15
+	title = "The Rising Sun"
+	desc = japan.15.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "Unruly children will need disciplining."
+		load_focus_tree = japan_paths
+		complete_national_focus = jap_nationalist
+		add_political_power = 50
+		add_stability = -0.15
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = japan.16
+	title = "The Masterstroke"
+	desc = japan.16.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "They’ll have to look elsewhere for a Prime Minister."
+		add_stability = 0.1
+		add_popularity = {
+			ideology = liberalism
+			popularity = -0.03
+		}
+		ai_chance = { factor = 100 }
+	}
+}

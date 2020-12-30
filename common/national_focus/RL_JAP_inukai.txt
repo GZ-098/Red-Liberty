@@ -20,7 +20,7 @@ shared_focus = {
     x = -2
 	y = 1
 	
-	cost = 5
+	cost = 4
 	relative_position_id = JAP_inukai_govt
 	prerequisite = { focus = JAP_inukai_govt }
     completion_reward = {
@@ -45,7 +45,15 @@ shared_focus = {
 	relative_position_id = JAP_inukai_govt
 	prerequisite = { focus = JAP_inukai_govt }
     completion_reward = {
-        stability_factor = 0.1
+        add_stability = 0.1
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.01
+		}
     }
 	ai_will_do = {
 		factor = 10
@@ -58,7 +66,7 @@ shared_focus = {
     x = 2
 	y = 1
 	
-	cost = 5
+	cost = 4
 	relative_position_id = JAP_inukai_govt
 	prerequisite = { focus = JAP_inukai_govt }
     completion_reward = {
@@ -72,7 +80,7 @@ shared_focus = {
 			popularity = -0.03
 		}
 		add_popularity = {
-			ideology = despotism
+			ideology = autocratic_despotism
 			popularity = -0.01
 		}
 		add_popularity = {
@@ -91,7 +99,7 @@ shared_focus = {
     x = 0
 	y = 1
 	
-	cost = 5
+	cost = 4
 	relative_position_id = JAP_bipartisanship
 	prerequisite = { focus = JAP_sino_japanese_friendship }
 	prerequisite = { focus = JAP_bipartisanship }
@@ -111,12 +119,16 @@ shared_focus = {
     x = 0
 	y = 1
 	
+	available = {
+		has_country_flag = inukai_ded
+	}
+	
 	cost = 1
 	relative_position_id = JAP_socio_economic_stability
 	prerequisite = { focus = JAP_socio_economic_stability }
     completion_reward = {
         country_event = {
-			id = japan.3
+			id = japan.4
 			days = 1
 		}
     }
@@ -139,6 +151,10 @@ shared_focus = {
 			ideology = conservatism
 			popularity = -0.05
 		}
+		country_event = {
+			id = japan.5
+			days = 1
+		}
     }
 	ai_will_do = {
 		factor = 10
@@ -152,10 +168,13 @@ shared_focus = {
 	y = 1
 	
 	cost = 1
-	relative_position_id = JAP_state_funeral
-	prerequisite = { focus = JAP_state_funeral }
+	relative_position_id = JAP_snap_elections
+	prerequisite = { focus = JAP_snap_elections }
     completion_reward = {
-        
+        country_event = {
+			id = japan.6
+			days = 1
+		}
     }
 	ai_will_do = {
 		factor = 10
@@ -169,10 +188,13 @@ shared_focus = {
 	y = 1
 	
 	cost = 1
-	relative_position_id = JAP_state_funeral
-	prerequisite = { focus = JAP_state_funeral }
+	relative_position_id = JAP_snap_elections
+	prerequisite = { focus = JAP_snap_elections }
     completion_reward = {
-        
+        country_event = {
+			id = japan.7
+			days = 1
+		}
     }
 	ai_will_do = {
 		factor = 10
@@ -186,10 +208,13 @@ shared_focus = {
 	y = 1
 	
 	cost = 1
-	relative_position_id = JAP_state_funeral
-	prerequisite = { focus = JAP_state_funeral }
+	relative_position_id = JAP_snap_elections
+	prerequisite = { focus = JAP_snap_elections }
     completion_reward = {
-        
+        country_event = {
+			id = japan.8
+			days = 1
+		}
     }
 	ai_will_do = {
 		factor = 10
@@ -208,7 +233,10 @@ shared_focus = {
 	prerequisite = { focus = JAP_minseito_platform }
 	prerequisite = { focus = JAP_ronoto_platform }
     completion_reward = {
-        
+        country_event = {
+			id = japan.9
+			days = 1
+		}
     }
 	ai_will_do = {
 		factor = 10
@@ -225,6 +253,12 @@ shared_focus = {
 	relative_position_id = JAP_the_results
 	mutually_exclusive = {
 		focus = JAP_july_crisis
+	}
+	available = {
+		NOT = {
+			has_country_flag = JAP_july_crisis
+		}
+		has_country_flag = JAP_status_quo_upheld
 	}
 	prerequisite = { focus = JAP_the_results }
     completion_reward = {
@@ -245,7 +279,14 @@ shared_focus = {
 	relative_position_id = JAP_status_quo
 	prerequisite = { focus = JAP_status_quo }
     completion_reward = {
-        load_focus_tree = japan_paths
+        add_popularity = {
+			ideology = conservatism
+			popularity = 0.05
+		}
+		country_event = {
+			id = japan.16
+			days = 1
+		}
     }
 	ai_will_do = {
 		factor = 10
@@ -258,14 +299,20 @@ shared_focus = {
     x = 1
 	y = 1
 	
-	cost = 2
+	cost = 1
 	relative_position_id = JAP_the_results
 	mutually_exclusive = {
 		focus = JAP_status_quo
 	}
 	prerequisite = { focus = JAP_the_results }
+	available = {
+		has_country_flag = JAP_july_crisis
+	}
     completion_reward = {
-        
+        country_event = {
+			id = japan.11
+			days = 1
+		}
     }
 	ai_will_do = {
 		factor = 10
@@ -283,9 +330,19 @@ shared_focus = {
 	mutually_exclusive = {
 		focus = JAP_konoe_govt
 	}
+	available = {
+		has_country_flag = JAP_allowed_amendment
+	}
 	prerequisite = { focus = JAP_july_crisis }
     completion_reward = {
-        load_focus_tree = japan_paths
+		add_popularity = {
+			ideology = empowered_nationalism
+			popularity = -0.05
+		}
+		country_event = {
+			id = japan.14
+			days = 1
+		}
     }
 	ai_will_do = {
 		factor = 10
@@ -304,9 +361,21 @@ shared_focus = {
 		focus = JAP_constitutional_amendment
 	}
 	prerequisite = { focus = JAP_july_crisis }
+	available = {
+		NOT = {
+			has_country_flag = JAP_allowed_amendment
+		}
+		has_country_flag = JAP_allowed_konoe
+	}
     completion_reward = {
-        load_focus_tree = japan_paths
-		complete_national_focus = jap_nationalist
+		country_event = {
+			id = japan.15
+			days = 1
+		}
+		add_popularity = {
+			ideology = empowered_nationalism
+			popularity = 0.1
+		}
     }
 	ai_will_do = {
 		factor = 10
