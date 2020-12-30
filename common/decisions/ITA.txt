@@ -319,6 +319,39 @@ ITA_destabilizatiaon_missions = {
 	}
 } 
 
+ITA_balkan_intervention = {
+	
+	ITA_demand_for_the_control_of_greek_islands = {
+	
+		icon = decision_generic_ignite_civil_war
+		
+		visible = {
+			always = yes
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+		
+		cost = 60 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 25
+		
+		complete_effect = { 
+			GRE = {
+				country_event = {
+					id = italy_events.15
+					days = 1 
+				}
+			}
+		}
+	} 
+} 
+
 
 
 

@@ -445,6 +445,142 @@ country_event = {
 		}
 	} 
 }
+
+#Italian Demands to Greece
+country_event = {
+	id = italy_events.15
+	title = italy_events.15.t
+	desc = italy_events.15.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 60 }
+		name = "It's Only Scraps of Land"
+		ITA = {
+			transfer_state = 182
+			transfer_state = 187
+			country_event = {
+				id = italy_events.16
+				days = 1
+			}
+		}
+	} 
+	
+	option = {
+		ai_chance = {factor = 60}
+		name = "We Can't so Easily Submit!"
+		ITA = {
+			country_event = {
+				id = italy_events.17
+				days = 1 
+			}
+		}
+	}
+}
+
+#Greece Accepts Italian Demands
+country_event = {
+	id = redliberty.16
+	title = redliberty.16.t
+	desc = redliberty.16.d
+	picture = GFX_report_event_norman_thomas_elected 
+
+	is_triggered_only = yes 
+	
+	option = { 
+		ai_chance = { factor = 100 }
+		name = "Perfect"
+	}
+} 
+
+#Greece Rejects Our Demands
+country_event = {
+	id = italy_events.17
+	title = italy_events.17.t
+	desc = italy_events.17.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 60 }
+		name = "We Can Come Back at a Later Time"
+		add_political_power = -10
+		GRE = {
+			country_event = {
+				id = italy_events.20
+				days = 1 
+			}
+		}
+	} 
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Greek Resistance is not Acceptable"
+		create_wargoal = {
+			type = take_state_focus
+			target = GRE
+			generator = { 182 187 }
+		}
+		GRE = {
+			country_event = {
+				id = italy_events.19
+				days = 1 
+			}
+		}
+	} 
+}
+
+#Info dump about balkan intervention
+country_event = {
+	id = italy_events.18
+	title = italy_events.18.t
+	desc = italy_events.18.d
+	picture = GFX_report_event_norman_thomas_elected 
+
+	is_triggered_only = yes 
+	
+	option = { 
+		ai_chance = { factor = 100 }
+		name = "Big Money Move Time"
+	}
+} 
+
+#Italy Attacks Greece
+country_event = {
+	id = italy_events.19
+	title = italy_events.19.t
+	desc = italy_events.19.d
+	picture = GFX_report_event_norman_thomas_elected 
+
+	is_triggered_only = yes 
+	
+	option = { 
+		ai_chance = { factor = 100 }
+		name = "Time to Defend Greece!"
+	}
+} 
+
+#Italy Backs Down
+country_event = {
+	id = italy_events.20
+	title = italy_events.20.t
+	desc = italy_events.20.d
+	picture = GFX_report_event_norman_thomas_elected 
+
+	is_triggered_only = yes 
+	
+	option = { 
+		ai_chance = { factor = 100 }
+		name = "Good"
+	}
+} 
 ####################
 ##	 US events   ##
 ###################

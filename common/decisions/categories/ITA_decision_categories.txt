@@ -30,6 +30,19 @@ ITA_destabilizatiaon_missions = {
 		original_tag = ITA
 	}
 	visible = {
-		has_completed_focus = ITA_sow_the_seeds_for_civil_war
+		has_completed_focus = ITA_destabilize_germany
+	}
+}
+
+ITA_balkan_intervention = {
+
+	icon = decision_category_ger_military_buildup
+	
+	allowed = {
+		has_completed_focus = ITA_intervene_in_the_balkans
+		original_tag = ITA
+	}
+	visible = {
+		has_completed_focus = ITA_intervene_in_the_balkans
 	}
 }

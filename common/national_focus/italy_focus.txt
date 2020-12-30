@@ -1625,7 +1625,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_intervene_in_the_balkans
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_intervene_in_the_balkans
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_demand_for_switzerland_to_break_neutrality
@@ -1637,6 +1637,12 @@ focus_tree = {
 			ai_will_do = {
 					factor = 10
 				}
+		completion_reward = {
+			country_event = {
+				id = italy_events.18
+				days = 1 
+			}
+		}
 
 	}
 	focus = {
