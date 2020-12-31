@@ -1411,10 +1411,10 @@ focus_tree = {
 				}
 		completion_reward = {
 			SWE = {
-				country_event = { id = italy_events.15 days = 1 }
+				country_event = { id = italy_events.39 days = 1 }
 			}
 			FIN = {
-				country_event = { id = italy_events.16 days = 1 }
+				country_event = { id = italy_events.40 days = 1 }
 			}
 		}
 
@@ -1624,8 +1624,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ITA_intervene_in_the_balkans
-		icon = GFX_ITA_intervene_in_the_balkans
+		id = ITA_expand_membership_in_u_d_s_d
+		icon = GFX_ITA_expand_membership_in_u_d_s_d
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_demand_for_switzerland_to_break_neutrality
@@ -1638,9 +1638,35 @@ focus_tree = {
 					factor = 10
 				}
 		completion_reward = {
-			country_event = {
-				id = italy_events.18
-				days = 1 
+			GRE = {
+				country_event = {
+					id = italy_events.15
+					days = 1 
+				}
+			}
+			TUR = {
+				country_event = {
+					id = italy_events.16
+					days = 1 
+				}
+			}
+			BUL = {
+				country_event = {
+					id = italy_events.17
+					days = 1 
+				}
+			}
+			SER = {
+				country_event = {
+					id = italy_events.18
+					days = 1 
+				}
+			}
+			ROM = {
+				country_event = {
+					id = italy_events.19
+					days = 1 
+				}
 			}
 		}
 
@@ -1704,13 +1730,21 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_invite_austria
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_invite_austria
 		cost = 5
 		prerequisite = {
-			focus = ITA_intervene_in_the_balkans
+			focus = ITA_expand_membership_in_u_d_s_d
 		}
 		x = 29
 		y = 17
+		completion_reward = {
+			AUS = {
+				country_event = {
+					id = italy_events.35
+					days = 1 
+				}
+			}
+		}
 
 	}
 	focus = {

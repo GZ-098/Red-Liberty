@@ -446,7 +446,7 @@ country_event = {
 	} 
 }
 
-#Italian Demands to Greece
+#Italy invites us to the U.D.S.D GRE
 country_event = {
 	id = italy_events.15
 	title = italy_events.15.t
@@ -459,45 +459,178 @@ country_event = {
 
 	option = { 
 		ai_chance = { factor = 60 }
-		name = "It's Only Scraps of Land"
+		name = "We Will Only Grow More Powerful"
 		ITA = {
-			transfer_state = 182
-			transfer_state = 187
+			add_to_faction = GRE
 			country_event = {
-				id = italy_events.16
-				days = 1
-			}
-		}
-	} 
-	
-	option = {
-		ai_chance = {factor = 60}
-		name = "We Can't so Easily Submit!"
-		ITA = {
-			country_event = {
-				id = italy_events.17
+				id = italy_events.20
 				days = 1 
 			}
 		}
-	}
+		hidden_effects = {
+			news_event = {
+				id = italy_events.21
+				days = 1 
+			}
+		}
+	} 
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Our Country Musn't get Entangled"
+		ITA = {
+			country_event = {
+				id = italy_events.22
+				days = 1 
+			}
+		}
+	} 
 }
 
-#Greece Accepts Italian Demands
+#Greece accepts to join
 country_event = {
-	id = redliberty.16
-	title = redliberty.16.t
-	desc = redliberty.16.d
-	picture = GFX_report_event_norman_thomas_elected 
+	id = italy_events.20
+	title = italy_events.20.t
+	desc = italy_events.20.d
+	picture = GFX_report_event_roman_speech
 
-	is_triggered_only = yes 
-	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
 	option = { 
-		ai_chance = { factor = 100 }
-		name = "Perfect"
-	}
-} 
+		ai_chance = { factor = 40 }
+		name = "We Grow Stronger"
+	} 
+}
 
-#Greece Rejects Our Demands
+#Greece accepts to join the U.D.S.D
+news_event = {
+	id = italy_events.21
+	title = italy_events.21.t
+	desc = italy_events.21.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Italian Influence has Expanded"
+	} 
+}
+
+#Greece rejects to join
+country_event = {
+	id = italy_events.22
+	title = italy_events.22.t
+	desc = italy_events.22.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "We Will Remember..."
+	} 
+}
+
+#Italy invites us to the U.D.S.D TUR
+country_event = {
+	id = italy_events.16
+	title = italy_events.16.t
+	desc = italy_events.16.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 60 }
+		name = "We Will Only Grow More Powerful"
+		ITA = {
+			add_to_faction = TUR
+			country_event = {
+				id = italy_events.23
+				days = 1 
+			}
+		}
+		hidden_effects = {
+			news_event = {
+				id = italy_events.24
+				days = 1 
+			}
+		}
+	} 
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Our Country Musn't get Entangled"
+		ITA = {
+			country_event = {
+				id = italy_events.25
+				days = 1 
+			}
+		}
+	} 
+}
+
+#Turkey accepts to join
+country_event = {
+	id = italy_events.23
+	title = italy_events.23.t
+	desc = italy_events.23.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "We Grow Stronger"
+	} 
+}
+
+#Turkey accepts to join the U.D.S.D
+news_event = {
+	id = italy_events.24
+	title = italy_events.24.t
+	desc = italy_events.24.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Italian Influence has Expanded"
+	} 
+}
+
+#Turkey rejects to join
+country_event = {
+	id = italy_events.25
+	title = italy_events.25.t
+	desc = italy_events.25.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "We Will Remember..."
+	} 
+}
+
+#Italy invites us to the U.D.S.D BUL
 country_event = {
 	id = italy_events.17
 	title = italy_events.17.t
@@ -510,11 +643,17 @@ country_event = {
 
 	option = { 
 		ai_chance = { factor = 60 }
-		name = "We Can Come Back at a Later Time"
-		add_political_power = -10
-		GRE = {
+		name = "We Will Only Grow More Powerful"
+		ITA = {
+			add_to_faction = BUL
 			country_event = {
-				id = italy_events.20
+				id = italy_events.26
+				days = 1 
+			}
+		}
+		hidden_effects = {
+			news_event = {
+				id = italy_events.27
 				days = 1 
 			}
 		}
@@ -522,65 +661,350 @@ country_event = {
 
 	option = { 
 		ai_chance = { factor = 40 }
-		name = "Greek Resistance is not Acceptable"
-		create_wargoal = {
-			type = take_state_focus
-			target = GRE
-			generator = { 182 187 }
-		}
-		GRE = {
+		name = "Our Country Musn't get Entangled"
+		ITA = {
 			country_event = {
-				id = italy_events.19
+				id = italy_events.28
 				days = 1 
 			}
 		}
 	} 
 }
 
-#Info dump about balkan intervention
+
+
+#Bulgaria accepts to join
+country_event = {
+	id = italy_events.26
+	title = italy_events.20.t
+	desc = italy_events.20.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "We Grow Stronger"
+	} 
+}
+
+#Bulgaria accepts to join the U.D.S.D
+news_event = {
+	id = italy_events.27
+	title = italy_events.21.t
+	desc = italy_events.21.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Italian Influence has Expanded"
+	} 
+}
+
+#Bulgaria rejects to join
+country_event = {
+	id = italy_events.28
+	title = italy_events.22.t
+	desc = italy_events.22.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "We Will Remember..."
+	} 
+}
+
+#Italy invites us to the U.D.S.D SER
 country_event = {
 	id = italy_events.18
 	title = italy_events.18.t
 	desc = italy_events.18.d
-	picture = GFX_report_event_norman_thomas_elected 
+	picture = GFX_report_event_roman_speech
 
-	is_triggered_only = yes 
-	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
 	option = { 
-		ai_chance = { factor = 100 }
-		name = "Big Money Move Time"
-	}
-} 
+		ai_chance = { factor = 60 }
+		name = "We Will Only Grow More Powerful"
+		ITA = {
+			add_to_faction = SER
+			country_event = {
+				id = italy_events.29
+				days = 1 
+			}
+		}
+		hidden_effects = {
+			news_event = {
+				id = italy_events.30
+				days = 1 
+			}
+		}
+	} 
 
-#Italy Attacks Greece
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Our Country Musn't get Entangled"
+		ITA = {
+			country_event = {
+				id = italy_events.31
+				days = 1 
+			}
+		}
+	} 
+}
+
+
+
+#Serbia accepts to join
 country_event = {
-	id = italy_events.19
-	title = italy_events.19.t
-	desc = italy_events.19.d
-	picture = GFX_report_event_norman_thomas_elected 
+	id = italy_events.29
+	title = italy_events.29.t
+	desc = italy_events.29.d
+	picture = GFX_report_event_roman_speech
 
-	is_triggered_only = yes 
-	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
 	option = { 
-		ai_chance = { factor = 100 }
-		name = "Time to Defend Greece!"
-	}
-} 
+		ai_chance = { factor = 40 }
+		name = "We Grow Stronger"
+	} 
+}
 
-#Italy Backs Down
+#Serbia accepts to join the U.D.S.D
+news_event = {
+	id = italy_events.30
+	title = italy_events.30.t
+	desc = italy_events.30.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Italian Influence has Expanded"
+	} 
+}
+
+#Serbia rejects to join
 country_event = {
-	id = italy_events.20
-	title = italy_events.20.t
-	desc = italy_events.20.d
-	picture = GFX_report_event_norman_thomas_elected 
+	id = italy_events.31
+	title = italy_events.31.t
+	desc = italy_events.31.d
+	picture = GFX_report_event_roman_speech
 
-	is_triggered_only = yes 
-	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
 	option = { 
-		ai_chance = { factor = 100 }
-		name = "Good"
-	}
-} 
+		ai_chance = { factor = 40 }
+		name = "We Will Remember..."
+	} 
+}
+
+#Italy invites us to the U.D.S.D ROM
+country_event = {
+	id = italy_events.18
+	title = italy_events.18.t
+	desc = italy_events.18.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 60 }
+		name = "We Will Only Grow More Powerful"
+		ITA = {
+			add_to_faction = BUL
+			country_event = {
+				id = italy_events.32
+				days = 1 
+			}
+		}
+		hidden_effects = {
+			news_event = {
+				id = italy_events.33
+				days = 1 
+			}
+		}
+	} 
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Our Country Musn't get Entangled"
+		ITA = {
+			country_event = {
+				id = italy_events.34
+				days = 1 
+			}
+		}
+	} 
+}
+
+
+
+#Romania accepts to join
+country_event = {
+	id = italy_events.32
+	title = italy_events.32.t
+	desc = italy_events.32.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "We Grow Stronger"
+	} 
+}
+
+#Romania accepts to join the U.D.S.D
+news_event = {
+	id = italy_events.33
+	title = italy_events.33.t
+	desc = italy_events.33.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Italian Influence has Expanded"
+	} 
+}
+
+#Romania rejects to join
+country_event = {
+	id = italy_events.34
+	title = italy_events.34.t
+	desc = italy_events.34.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "We Will Remember..."
+	} 
+}
+
+#Italy invites us to the U.D.S.D AUS
+country_event = {
+	id = italy_events.35
+	title = italy_events.35.t
+	desc = italy_events.35.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 60 }
+		name = "We Will Only Grow More Powerful"
+		ITA = {
+			add_to_faction = BUL
+			country_event = {
+				id = italy_events.36
+				days = 1 
+			}
+		}
+		hidden_effects = {
+			news_event = {
+				id = italy_events.37
+				days = 1 
+			}
+		}
+	} 
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Our Country Musn't get Entangled"
+		ITA = {
+			country_event = {
+				id = italy_events.38
+				days = 1 
+			}
+		}
+	} 
+}
+
+
+
+#Austria accepts to join
+country_event = {
+	id = italy_events.36
+	title = italy_events.36.t
+	desc = italy_events.36.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "We Grow Stronger"
+	} 
+}
+
+#Austria accepts to join the U.D.S.D
+news_event = {
+	id = italy_events.37
+	title = italy_events.37.t
+	desc = italy_events.37.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Italian Influence has Expanded"
+	} 
+}
+
+#Austria rejects to join
+country_event = {
+	id = italy_events.38
+	title = italy_events.38.t
+	desc = italy_events.38.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "We Will Remember..."
+	} 
+}
 ####################
 ##	 US events   ##
 ###################
