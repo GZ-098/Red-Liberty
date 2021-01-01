@@ -1005,6 +1005,309 @@ country_event = {
 		name = "We Will Remember..."
 	} 
 }
+
+#Diplomatic Mission to Sweden
+country_event = {
+	id = italy_events.39
+	title = italy_events.39.t
+	desc = italy_events.39.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 70 }
+		name = "A Strong Alliance is a Strong Defense"
+		give_guarantee = ITA 
+		give_military_access = ITA
+		add_opinion_modifier = {
+			target = ITA
+			modifier = large_increase
+		}
+		ITA = {
+			give_guarantee = SWE
+			give_military_access = SWE
+			add_opinion_modifier = {
+				target = SWE
+				modifier = large_increase
+			}
+			country_event = {
+				id = italy_events.41
+				days = 1 
+			}
+		}
+	} 
+	option = { 
+		ai_chance = { factor = 30 }
+		name = "We Musn't be to Hasty"
+		give_military_access = ITA
+		add_opinion_modifier = {
+			target = ITA
+			modifier = medium_increase
+		}
+		ITA = {
+			give_military_access = SWE
+			add_opinion_modifier = {
+				target = SWE
+				modifier = medium_increase
+			}
+			country_event = {
+				id = italy_events.42
+				days = 1 
+			}
+		}
+	} 
+
+	option = { 
+		ai_chance = { factor = 15 }
+		name = "Breaking Nuetrality is Off Limits"
+		ITA = {
+			country_event = {
+				id = italy_events.43
+				days = 1 
+			}
+		}
+	} 
+}
+
+#Sweden Fully Accepts Diplomatic Mission
+country_event = {
+	id = italy_events.41
+	title = italy_events.41.t
+	desc = italy_events.41.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Our Influence has Grown Largly"
+	} 
+}
+
+#Sweden Partially Accepts Diplomatic Mission
+country_event = {
+	id = italy_events.42
+	title = italy_events.42.t
+	desc = italy_events.42.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "At Least we Have a Stepping Stone"
+	} 
+}
+
+#Sweden Reject Diplomatic Mission
+country_event = {
+	id = italy_events.43
+	title = italy_events.43.t
+	desc = italy_events.43.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Maybe it was Never Meant to be"
+	} 
+}
+
+#Diplomatic Mission to Finland
+country_event = {
+	id = italy_events.40
+	title = italy_events.40.t
+	desc = italy_events.40.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 50 }
+		name = "Finland Can Not Stand Alone"
+		give_guarantee = ITA 
+		give_military_access = ITA
+		add_opinion_modifier = {
+			target = ITA
+			modifier = large_increase
+		}
+		ITA = {
+			give_guarantee = FIN
+			give_military_access = FIN
+			add_opinion_modifier = {
+				target = FIN
+				modifier = large_increase
+			}
+			country_event = {
+				id = italy_events.44
+				days = 1 
+			}
+		}
+	} 
+	option = { 
+		ai_chance = { factor = 30 }
+		name = "We Musn't be to Hasty"
+		give_military_access = ITA
+		add_opinion_modifier = {
+			target = ITA
+			modifier = medium_increase
+		}
+		ITA = {
+			give_military_access = FIN
+			add_opinion_modifier = {
+				target = FIN
+				modifier = medium_increase
+			}
+			country_event = {
+				id = italy_events.45
+				days = 1 
+			}
+		}
+	} 
+
+	option = { 
+		ai_chance = { factor = 20 }
+		name = "Finland Doesn't Need Help!"
+		ITA = {
+			country_event = {
+				id = italy_events.46
+				days = 1 
+			}
+		}
+	} 
+}
+
+#Finland Fully Accepts Diplomatic Mission
+country_event = {
+	id = italy_events.44
+	title = italy_events.44.t
+	desc = italy_events.44.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Another Front Against Authoritarianism"
+	} 
+}
+
+#Finland Partialy Accepts Diplomatic Mission
+country_event = {
+	id = italy_events.45
+	title = italy_events.45.t
+	desc = italy_events.45.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "At Least we Got Something out of it"
+	} 
+}
+
+#Finland Rejects Diplomatic Mission
+country_event = {
+	id = italy_events.46
+	title = italy_events.46.t
+	desc = italy_events.46.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "The Stuborn Fins Always Worsen Their Situation..."
+	} 
+}
+
+country_event = {
+	id = italy_events.47
+	title = italy_events.47.t
+	desc = italy_events.47.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "We Must Escape German Influence"
+		ITA = {
+			add_to_faction = AUS
+			country_event = {
+				id = italy_events.48
+				days = 1 
+			}
+		}
+	} 
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Nien! We Will Never Fall Under German Influence!"
+		ITA = {
+			country_event = {
+				id = italy_events.49
+				days = 1 
+			}
+		}
+	} 
+}
+
+#Austira Accepts Allience 
+country_event = {
+	id = italy_events.47
+	title = italy_events.47.t
+	desc = italy_events.47.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Our Influence Grows"
+	} 
+}
+
+#Austira Rejects Allience 
+country_event = {
+	id = italy_events.48
+	title = italy_events.48.t
+	desc = italy_events.48.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "They Will Get Annexed by the Germans Anyway"
+	} 
+}
+
 ####################
 ##	 US events   ##
 ###################

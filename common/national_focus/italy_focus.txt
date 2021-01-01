@@ -1726,6 +1726,11 @@ focus_tree = {
 		}
 		x = 32
 		y = 17
+		completion_reward = {
+			add_ideas = {
+				ITA_increased_military_spending
+			}
+		}
 
 	}
 	focus = {
@@ -1738,14 +1743,11 @@ focus_tree = {
 		x = 29
 		y = 17
 		completion_reward = {
-			AUS = {
-				country_event = {
-					id = italy_events.35
-					days = 1 
-				}
+			country_event = {
+				id = italy_events.47
+				days = 1 
 			}
 		}
-
 	}
 	focus = {
 		id = ITA_begin_to_spread_the_revolution
