@@ -5,9 +5,33 @@ oob = "JAP_1936"
 set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8
 
+country_event = { # intro event
+	id = japan.1
+	days = 1
+}
 country_event = { # inukai dies
 	id = japan.3
 	days = 140
+}
+country_event = { # inukai flavor
+	id = japan_flavor.1
+	days = 15
+}
+country_event = { # saito flavor
+	id = japan_flavor.2
+	days = 30
+}
+country_event = { # konoe flavor
+	id = japan_flavor.3
+	days = 50
+}
+country_event = { # ichiro flavor
+	id = japan_flavor.4
+	days = 85
+}
+country_event = { # abe isoo flavor
+	id = japan_flavor.5
+	days = 119
 }
 
 set_research_slots = 4
@@ -245,7 +269,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Inukai Tsuyoshi"
 	desc = "inukai_tsuyoshi_desc"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	picture = "Portrait_JAP_Inukai_Tsuyoshi.tga"
 	expire = "1989.1.1"
 	ideology = conservatism_subtype
 	traits = {

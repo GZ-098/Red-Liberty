@@ -1,19 +1,4 @@
 ﻿l_english:
- JAP:0 "Empire of Japan"
- JAP_DEF:0 "Empire of Japan"
- JAP_ADJ:0 "Japanese" 
- #Events loc
- japanrd.1.d:0 "Nibba ded"
- #end
- #politics
- inukai_tsuyoshi_desc:0 "Inukai Tsuyoshi is very old; the oldest person to hold the office of Prime Minister by no small margin. This grants him much respect in Japanese culture and politics, but has also led to serious concerns about his health. Born into a samurai family and making his first impression as a reporter, Inukai has been involved in politics for more than fifty years. A staunch moderate and civic conservative operating a compromise cabinet of both Seiyukai and Minseito members, Inukai has maintained the stability (and civility) of Japanese politics for years through compromise and cooperation, despite pressure from the military and a growing leftist movement. Now in his eighties and rarely making public appearances, many wonder what whether Inukai will die or resign, and what will happen next.""
- hitoshi_yamakawa_desc:0 ""
- kato_shidzue_desc:0 "A dark horse within the Nihon Ronoto, Kato is one of the most influential and powerful women in the world. The youngest and first ever female Prime Minister to take office, Kato was chosen due to her remarkably high popularity among women, who now have the ability to vote. It was this very ability which has given the Ronoto their victory, and Kato, a feminist inspired by the American Margaret Sanger, has leveraged this fact to assemble a cabinet of socialists and feminists, including several women, to enact her radically progressive plans. If she succeeds, the Ronoto may forever be the party of the Japanese woman."
- saito_takao_desc:0 "Saito Takao, one of the most prominent progressives in modern Japan, has been a rising star in the Minseito party for years. A staunch enemy of nationalist militarist Konoe, and occasional liaison with the leftist Ronoto party, it came as little surprise that Saito and his allies pushed for forming a coalition with the socialists after the 1936 elections. Although not a socialist himself, Saito is more than willing to work with them for social reform and opposition to militarism. Now that he himself is Prime Minister, with or without Ronoto allies, it is his turn to leave his mark on Japan."
- konoe_fumimaro_desc:0 "Fumimaro Konoe is one of the most powerful aristocrats in Japan, and the head of the Tohokai faction, an unofficial political bloc representing the military, aristocracy, and nationalists. Disillusioned with the Western concept of liberal democracy after the Great War, and horrified by the progressive, leftist, and populist vision gaining popularity in Japan, Konoe developed a vision of an authoritarian, nationalist state headed by the military and the Emperor. After the incredibly dangerous formation of the Minseito-Ronoto coalition that threatened to destroy Japan, Konoe rapidly organized the Tohokai and military into bringing down the government and putting himself into power. Now, Konoe’s radical vision is a national reality."
- showa_desc:0 "The Emperor of Japan and one of the most powerful men in the world, His Imperial Majesty is one of the supreme motivating forces in Japanese politics. Although not directly involved with most political affairs, his endorsement is needed for the survival of any government. With the dismissal of the last Diet and the next one still being elected, Showa is effectively the head of state."
-
-
  #end
  jap_taisho_democracy_conservative:0 "Taisho Democracy"
  jap_taisho_democracy_conservative_desc:0 "After Inukai’s death, the Seiyukai and Minseito form a status-quo coalition against leftism to preserve Japanese constitutional democracy."
