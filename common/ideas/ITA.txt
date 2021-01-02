@@ -81,6 +81,24 @@ ideas = {
 		}
 		#Starting nat spirits
 
+		ITA_increased_military_spending = {
+			removal_cost = -1 
+			
+			picture = ITA_increased_military_spending
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				conscription_factor = 0.20
+				production_speed_arms_factory_factor = 0.35
+			}
+		}
+
 		ITA_centralized_power = {
 			removal_cost = -1 
 			
