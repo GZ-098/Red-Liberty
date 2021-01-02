@@ -47,26 +47,54 @@ give_military_access = JAP
 set_convoys = 40
 
 set_politics = {
-	ruling_party = autocratic_despotism
+	ruling_party = martial_despotism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	revolutionary_socialism = 4
-	democratic_socialism = 7
-	liberalism = 16
-	conservatism = 10
-	autocratic_despotism = 42
-	empowered_nationalism = 20 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 10
+	proletarian_dictatorship = 0
+	libertarian_socialism = 2
+	social_democracy = 24
+	progressive_liberalism = 0
+	market_libertarianism = 16
+	national_conservatism = 14
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 4
+	martial_despotism = 30
+	ultranational_statism = 0
 }
 
 create_country_leader = {
-	name = "Yuan Keding"
+	name = "Rongyao"
 	#desc = ""
 	#picture = ""
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = social_democracy_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Rongyao"
+	#desc = ""
+	#picture = ""
+	expire = "1965.1.1"
+	ideology = market_libertarianism_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Rongyao"
+	#desc = ""
+	#picture = ""
+	expire = "1965.1.1"
+	ideology = martial_despotism_subtype
 	traits = {
 		
 	}

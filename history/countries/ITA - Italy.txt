@@ -10,6 +10,7 @@ add_ideas = {
 	ITA_complete_economic_failure
 	ITA_leftists_in_the_blackshirts
 	ITA_leftists_in_the_grand_council_of_fascism
+	
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
@@ -113,29 +114,24 @@ if = {
 set_convoys = 200
 
 set_politics = {
-	ruling_party = empowered_nationalism
+	ruling_party = ultranational_statism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	revolutionary_socialism = 4
-	democratic_socialism = 6
-	liberalism = 3
-	conservatism = 2
-	autocratic_despotism = 5
-	empowered_nationalism = 80
-}
-
-create_country_leader = {
-	name = "Benito Mussolini"
-	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "benito.png"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 13
+	proletarian_dictatorship = 1
+	libertarian_socialism = 8
+	social_democracy = 14
+	progressive_liberalism = 11
+	market_libertarianism = 0
+	national_conservatism = 18
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 0
+	martial_despotism = 1
+	ultranational_statism = 34
 }
 
 create_country_leader = {
@@ -143,53 +139,47 @@ create_country_leader = {
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "GFX_portrait_italy_ferruccio_parri.tga"
 	expire = "1965.1.1"
-	ideology = demsoc
+	ideology = libertarian_socialism_subtype
 	traits = {
 		
 	}
 }
-
 create_country_leader = {
 	name = "Alcide De Gasperi"
 	desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
 	picture = "GFX_portrait_italy_alcide_de_gasperi.tga"
 	expire = "1965.1.1"
-	ideology = contard
+	ideology = national_conservatism_subtype
 	traits = {
 
 	}
 }
-
 create_country_leader = {
 	name = "Luigi Facta"
 	desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
 	picture = "GFX_portrait_italy_luigi_facta.tga"
 	expire = "1965.1.1"
-	ideology = contard
+	ideology = national_conservatism_subtype
 	traits = {
 
 	}
 }
-
-
 create_country_leader = {
 	name = "Victor Emmanuel III"
 	desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
 	picture = "GFX_portrait_italy_victor_emmanuel_iii.tga"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = martial_despotism_subtype
 	traits = {
 
 	}
 }
-
-#Syndi version
 create_country_leader = {
 	name = "Benito Mussolini"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "ita_syndi_mussolini.dds"
+	picture = "benito.png"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = ultranational_statism_subtype
 	traits = {
 		
 	}

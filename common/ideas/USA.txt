@@ -1,6 +1,27 @@
 ideas = {
 
 	country = {
+	
+		USA_red_liberty = {
+			
+			removal_cost = -1 
+			
+			allowed_civil_war = {	 
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			modifier = {
+				
+			}
+		}
 		
 		USA_the_great_depression = {
 			

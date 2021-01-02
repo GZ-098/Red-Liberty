@@ -170,59 +170,27 @@ if = {
 
 	add_to_tech_sharing_group = commonwealth_research
 }
-1936.1.1 = { 
+
 set_politics = {
-	ruling_party = democratic_socialism
+	ruling_party = social_democracy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	revolutionary_socialism = 27
-	democratic_socialism = 29
-	liberalism = 11
-	conservatism = 13
-	autocratic_despotism = 2
-	empowered_nationalism = 18
-} 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 10
+	proletarian_dictatorship = 0
+	libertarian_socialism = 17
+	social_democracy = 24
+	progressive_liberalism = 16
+	market_libertarianism = 0
+	national_conservatism = 14
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 0
+	martial_despotism = 4
+	ultranational_statism = 15
 }
-
-set_party_name = { 
-    ideology = democratic_socialism 
-    long_name = ENG_labour_long
-    name = ENG_labour
-} 
-
-set_party_name = { 
-    ideology = liberalism 
-    long_name = ENG_liberal_party_long
-    name = ENG_liberal_party
-} 
-
-set_party_name = { 
-    ideology = conservatism 
-    long_name = ENG_tories_long
-    name = ENG_tories
-} 
-
-set_party_name = { 
-    ideology = revolutionary_socialism 
-    long_name = ENG_communist_party_of_great_britian_long
-    name = ENG_communist_party_of_great_britian
-} 
-
-set_party_name = { 
-    ideology = autocratic_despotism 
-    long_name = ENG_high_tories_long
-    name = ENG_high_tories
-} 
-
-set_party_name = { 
-    ideology = empowered_nationalism 
-    long_name = ENG_british_union_of_fascist_long
-    name = ENG_british_union_of_fascist
-}
-
 
 create_faction = Entente
 add_to_faction = ENG
@@ -243,10 +211,10 @@ give_guarantee = BEL
 
 create_country_leader = {
 	name = "Clement Attlee"
-	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+	desc = "POLITICS_CLEMENT_ATTLEE_DESC"
 	picture = "Portrait_ENG_Clement_Attlee.tga"
 	expire = "1965.1.1"
-	ideology = democratic_socialist_subtype
+	ideology = social_democracy_subtype
 	traits = {
 		
 	}
@@ -257,9 +225,9 @@ create_country_leader = {
 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
 	picture = "Portrait_Britain_Winston_Churchill.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = national_conservatism_subtype
 	traits = {
-		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
+		
 	}
 }
 
@@ -271,54 +239,20 @@ create_country_leader = {
 	expire = "1938.1.1"
 	ideology = liberalism
 	traits = {
-		conservative_grandee
+		national_conservatism_subtype
 	}
 }
-
-#create_country_leader = {
-#	name = "Neville Chamberlain"
-#	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
-#	picture = "Portrait_Britain_Neville_Chamberlain.dds"
-#	expire = "1965.1.1"
-#	ideology = liberalism
-#	traits = {
-#		
-#	}
-#}
 
 create_country_leader = {
 	name = "Oswald Mosley"
 	desc = "POLITICS_OSWALD_MOSLEY_DESC"
 	picture = "Portrait_Britain_Oswald_Mosley.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = ultranational_statism_subtype
 	traits = {
-		champion_of_peace_1
-		economic_reformer
+		
 	}
 }
-
-create_country_leader = {
-	name = "Harry Pollitt"
-	desc = "POLITICS_HARRY_POLLITT_DESC"
-	picture = "portrait_eng_harry_pollitt.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		staunch_stalinist
-	}
-}
-
-#create_country_leader = {
-#	name = "Rajani Palme Dutt"
-#	desc = "POLITICS_PALME_DUTT_DESC"
-#	picture = "Portrait_Britain_Palme_Dutt.dds"
-#	expire = "1965.1.1"
-#	ideology = leninism
-#	traits = {
-#		
-#	}
-#}
 
 create_field_marshal = {
 	name = "Alan Brooke" # Aristocrat

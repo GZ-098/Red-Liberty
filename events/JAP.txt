@@ -333,6 +333,7 @@ country_event = {
 	id = japan_flavor.1
 	title = "The Statesman"
 	desc = japan_flavor.1.desc
+	picture = GFX_report_event_inukai_takeru
 	
 	is_triggered_only = yes
 	

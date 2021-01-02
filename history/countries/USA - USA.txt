@@ -95,22 +95,28 @@ set_convoys = 500
 
 
 set_politics = {
-	ruling_party = democratic_socialism
+	ruling_party = libertarian_socialism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 20
-	revolutionary_socialism = 3
-	democratic_socialism = 42
-	liberalism = 35
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 35
+	social_democracy = 0
+	progressive_liberalism = 25
+	market_libertarianism = 0
+	national_conservatism = 25
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 0
+	martial_despotism = 0
+	ultranational_statism = 15
 }
 
 add_ideas = {
+	USA_red_liberty
 	USA_the_great_depression
 	USA_pacifism
 
@@ -131,7 +137,7 @@ create_country_leader = {
 	desc = "POLITICS_NORMAN_THOMAS_DESC"
 	picture = "gfx/leaders/norman.dds"
 	expire = "1947.1.1"
-	ideology = democratic_socialist_subtype
+	ideology = libertarian_socialism_subtype
 	traits = {
 		dislikes_germany
 	}

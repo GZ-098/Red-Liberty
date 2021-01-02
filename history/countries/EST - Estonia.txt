@@ -36,19 +36,24 @@ if = {
 set_convoys = 5
 
 set_politics = {
-	ruling_party = conservatism
+	ruling_party = national_conservatism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 5
+	social_democracy = 15
+	progressive_liberalism = 20
+	market_libertarianism = 0
+	national_conservatism = 35
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 10
+	martial_despotism = 15
+	ultranational_statism = 0
 }
 
 create_country_leader = {
@@ -56,7 +61,7 @@ create_country_leader = {
 	desc = "POLITICS_KONSTANTIN_PATS_DESC"
 	picture = "Portrait_EST_Konstantin_Pats.dds"
 	expire = "1965.1.1"
-	ideology = conservatism_subtype
+	ideology = national_conservatism_subtype
 	traits = {
 		#
 	}

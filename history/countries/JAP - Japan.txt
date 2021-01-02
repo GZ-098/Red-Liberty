@@ -251,26 +251,50 @@ if = {
 }
 
 set_politics = {
-	ruling_party = conservatism
+	ruling_party = national_conservatism
 	last_election = "1933.2.25" # or smth
 	election_frequency = 24
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 29
-	revolutionary_socialism = 4
-	democratic_socialism = 22
-	liberalism = 28
-	autocratic_despotism = 6
-	empowered_nationalism = 11
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 1
+	libertarian_socialism = 8
+	social_democracy = 14
+	progressive_liberalism = 11
+	market_libertarianism = 18
+	national_conservatism = 34
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 9
+	martial_despotism = 1
+	ultranational_statism = 4
 }
 
 create_country_leader = {
-	name = "Hitoshi Yamakawa"
-	desc = "hitoshi_yamakawa_desc"
+	name = "Iwasa Sakutaro"
+	desc = ""
+	picture = ""
+	expire = "1989.1.1"
+	ideology = insurrectionary_anarchism_subtype
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Kanson Arahata"
+	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	expire = "1989.1.1"
-	ideology = marxism
+	ideology = revolutionary_autocracy_subtype
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Kanson Arahata"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	expire = "1989.1.1"
+	ideology = proletarian_dictatorship_subtype
 	traits = {
 	}
 }
@@ -279,7 +303,7 @@ create_country_leader = {
 	desc = "kato_shidzue_desc"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	expire = "1989.1.1"
-	ideology = democratic_socialist_subtype
+	ideology = libertarian_socialism_subtype
 	traits = {
 	}
 }
@@ -288,7 +312,7 @@ create_country_leader = {
 	desc = "abe_isoo_desc"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	expire = "1989.1.1"
-	ideology = democratic_socialist_subtype
+	ideology = libertarian_socialism_subtype
 	traits = {
 	}
 }
@@ -297,7 +321,16 @@ create_country_leader = {
 	desc = "saito_takao_desc"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	expire = "1989.1.1"
-	ideology = liberalism_subtype
+	ideology = progressive_liberalism_subtype
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Saito Takao"
+	desc = "saito_takao_desc"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	expire = "1989.1.1"
+	ideology = market_libertarianism_subtype
 	traits = {
 	}
 }
@@ -306,16 +339,16 @@ create_country_leader = {
 	desc = "POLITICS_INUKAI_TSUYOSHI_DESC"
 	picture = "Portrait_JAP_Inukai_Tsuyoshi.tga"
 	expire = "1989.1.1"
-	ideology = conservatism_subtype
+	ideology = national_conservatism_subtype
 	traits = {
 	}
 }
 create_country_leader = {
-	name = "Sadao Araki"
-	#desc = "None yet"
+	name = "Showa"
+	desc = "POLITICS_SHOWA_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	expire = "1989.1.1"
-	ideology = despotism
+	ideology = reactionary_theocracy_subtype
 	traits = {
 	}
 }
@@ -324,9 +357,29 @@ create_country_leader = {
 	desc = "konoe_fumimaro_desc"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	expire = "1989.1.1"
-	ideology = fascism_ideology
-			
+	ideology = authoritarian_republicanism_subtype
 	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Ikki Kita"
+	#desc = "None yet"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	expire = "1989.1.1"
+	ideology = martial_despotism_subtype
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Konoe Fumimaro"
+	desc = "konoe_fumimaro_desc"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	expire = "1989.1.1"
+	ideology = ultranational_statism_subtype
+	traits = {
+		
 	}
 }
 

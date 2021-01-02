@@ -61,19 +61,25 @@ if = {
 }
 
 set_politics = {
-	ruling_party = conservatism
+	ruling_party = national_conservatism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	conservatism = 50
-	revolutionary_socialism = 0
-	democratic_socialism = 20
-	liberalism = 30
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 10
+	proletarian_dictatorship = 0
+	libertarian_socialism = 14
+	social_democracy = 17
+	progressive_liberalism = 12
+	market_libertarianism = 0
+	national_conservatism = 28
+	reactionary_theocracy = 15
+	authoritarian_republicanism = 0
+	martial_despotism = 4
+	ultranational_statism = 0
 }
 
 create_country_leader = {
@@ -81,7 +87,7 @@ create_country_leader = {
 	desc = "POLITICS_SKVORTSOV_DESC"
 	picture = "Portrait_KAZ_Nikolay_Skvortsov.dds"
 	expire = "1953.3.1"
-	ideology = stalinism
+	ideology = revolutionary_autocracy_subtype
 	traits = {
 		
 	}
@@ -92,7 +98,7 @@ create_country_leader = {
 	desc = "POLITICS_AKMET_DESC"
 	picture = "Portrait_KAZ_Baitursynov.dds"
 	expire = "1953.3.1"
-	ideology = conservatism_subtype 
+	ideology = national_conservatism_subtype 
 	traits = {
 		
 	}

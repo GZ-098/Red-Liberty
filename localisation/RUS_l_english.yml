@@ -3,5 +3,18 @@
  RUS_DEF:0 "the Russian State"
  RUS_ADJ:0 "Russian"
  
+ RUS_insurrectionary_anarchism_party:0 "--"
+ RUS_revolutionary_autocracy_party:0 "--"
+ RUS_proletarian_dictatorship_party:0 "--"
+ RUS_libertarian_socialism_party:0 "--"
+ RUS_social_democracy_party:0 "--"
+ RUS_progressive_liberalism_party:0 "--"
+ RUS_market_libertarianism_party:0 "--"
+ RUS_national_conservatism_party:0 "--"
+ RUS_reactionary_theocracy_party:0 "--"
+ RUS_authoritarian_republicanism_party:0 "--"
+ RUS_martial_despotism_party:0 "Kolchakovskaya Klika"
+ RUS_ultranational_statism_party:0 "--"
+ 
  RUS_white_movement:0 "White Movement"
  

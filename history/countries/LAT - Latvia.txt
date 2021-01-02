@@ -99,19 +99,24 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = liberalism
+	ruling_party = progressive_liberalism
 	last_election = "1932.11.8"
 	election_frequency = 0
 	elections_allowed = no
 }
 set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 10
+	social_democracy = 15
+	progressive_liberalism = 35
+	market_libertarianism = 0
+	national_conservatism = 20
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 10
+	martial_despotism = 10
+	ultranational_statism = 0
 }
 
 create_country_leader = {
@@ -119,7 +124,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_LAT_Margers_Skujenieks.tga"
 	expire = "1965.1.1"
-	ideology = liberalism_subtype
+	ideology = progressive_liberalism_subtype
 	traits = {
 		#
 	}

@@ -84,18 +84,24 @@ if = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = revolutionary_socialism
+	ruling_party = revolutionary_autocracy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	revolutionary_socialism = 69
-	democratic_socialism = 17
-	liberalism = 4 
-	conservatism = 3 
-	autocratic_despotism = 3
-	empowered_nationalism = 4
+	insurrectionary_anarchism = 10
+	revolutionary_autocracy = 35
+	proletarian_dictatorship = 5
+	libertarian_socialism = 25
+	social_democracy = 25
+	progressive_liberalism = 0
+	market_libertarianism = 0
+	national_conservatism = 0
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 0
+	martial_despotism = 0
+	ultranational_statism = 0
 }
 
 add_ideas = {
@@ -108,7 +114,7 @@ create_country_leader = {
 	#desc = ""
 	picture = "Portrait_SOV_Nikolai_Bukharin.tga"
 	expire = "1953.3.1"
-	ideology = stalinism
+	ideology = revolutionary_autocracy_subtype
 	traits = {
 		
 	}

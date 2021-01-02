@@ -17,12 +17,9 @@ ideas = {
 			}
 			
 			modifier = {
-				revolutionary_socialism_drift = 0.05  
-				autocratic_despotism_drift = 0.05 
-				empowered_nationalism_drift = 0.05
-				liberalism_drift = -0.05 
-				conservatism_drift = -0.05 
-				democratic_socialism_drift = -0.05 
+				revolutionary_autocracy_drift = 0.01
+				proletarian_dictatorship_drift = 0.01
+				ultranational_statism_drift = 0.01
 				political_power_gain = -0.15 
 			}
 		} 
