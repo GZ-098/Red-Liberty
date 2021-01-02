@@ -265,21 +265,6 @@ set_popularities = {
 	empowered_nationalism = 11
 }
 
-
-create_country_leader = {
-	name = "Inukai Tsuyoshi"
-	desc = "inukai_tsuyoshi_desc"
-	picture = "Portrait_JAP_Inukai_Tsuyoshi.tga"
-	expire = "1989.1.1"
-	ideology = conservatism_subtype
-	traits = {
-	}
-}
-set_party_name = { 
-    ideology = conservatism 
-    long_name = "Rikken Seiyukai"
-    name = "Rikken Seiyukai"
-}
 create_country_leader = {
 	name = "Hitoshi Yamakawa"
 	desc = "hitoshi_yamakawa_desc"
@@ -288,11 +273,6 @@ create_country_leader = {
 	ideology = marxism
 	traits = {
 	}
-}
-set_party_name = { 
-    ideology = revolutionary_socialism 
-    long_name = "Nihon Kyosan-to"
-    name = "Nihon Kyosan-to"
 }
 create_country_leader = {
 	name = "Kato Shidzue"
@@ -312,10 +292,23 @@ create_country_leader = {
 	traits = {
 	}
 }
-set_party_name = { 
-    ideology = democratic_socialism 
-    long_name = "Nihon Ronoto"
-    name = "Nihon Ronoto"
+create_country_leader = {
+	name = "Saito Takao"
+	desc = "saito_takao_desc"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	expire = "1989.1.1"
+	ideology = liberalism_subtype
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Inukai Tsuyoshi"
+	desc = "POLITICS_INUKAI_TSUYOSHI_DESC"
+	picture = "Portrait_JAP_Inukai_Tsuyoshi.tga"
+	expire = "1989.1.1"
+	ideology = conservatism_subtype
+	traits = {
+	}
 }
 create_country_leader = {
 	name = "Sadao Araki"
@@ -326,11 +319,6 @@ create_country_leader = {
 	traits = {
 	}
 }
-set_party_name = { 
-    ideology = autocratic_despotism 
-    long_name = "Kodoha"
-    name = "Kodoha"
-}
 create_country_leader = {
 	name = "Konoe Fumimaro"
 	desc = "konoe_fumimaro_desc"
@@ -340,31 +328,6 @@ create_country_leader = {
 			
 	traits = {
 	}
-}
-set_party_name = { 
-    ideology = empowered_nationalism 
-    long_name = "Tohokai/Taisei Yukosankai"
-    name = "Tohokai/Taisei Yukosankai"
-}
-create_country_leader = {
-	name = "Saito Takao"
-	desc = "saito_takao_desc"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	expire = "1989.1.1"
-	ideology = liberalism_subtype
-	traits = {
-	}
-}
-
-
-
-
-
-
-set_party_name = { 
-    ideology = liberalism 
-    long_name = "Rikken Minseito"
-    name = "Rikken Minseito"
 }
 
 create_corps_commander = {

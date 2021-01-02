@@ -1,5 +1,6 @@
 ﻿l_english:
  revolutionary_socialism:0 "Revolutionary Socialism"
+ revolutionary_socialism_noun:0 "Revolutionary Socialism"
  democratic_socialism:0 "Democratic Socialism"
  democratic_socialism_noun:0 "Democratic Socialism"
  liberalism:0 "Liberalism"
@@ -7,7 +8,9 @@
  conservatism:0 "Conservatism"
  conservatism_noun:0 "Conservatism"
  autocratic_despotism:0 "Autocratic Despotism"
+ autocratic_despotism_noun:0 "Autocratic Despotism"
  empowered_nationalism:0 "Empowered Nationalism"
+ empowered_nationalism_noun:0 "Empowered Nationalism"
 
  revolutionary_socialism_drift:0 "Revolutionary Socialism Drift"
  democratic_socialism_drift:0 "Democratic Socialism Drift"
