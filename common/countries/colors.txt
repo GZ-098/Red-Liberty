@@ -787,3 +787,8 @@ WLA = {
 	color = rgb { 117 0 26 }
 	color_ui = rgb { 144 0 32 }
 }
+
+BAY = {
+	color = rgb { 158 40 40 }
+	color_ui = rgb { 158 40 40 }
+}
