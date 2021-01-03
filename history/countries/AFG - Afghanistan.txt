@@ -8,67 +8,25 @@ set_technology = {
 	basic_light_tank = 1
 }
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = construction_effort_2
-	complete_national_focus = production_effort_2
-	complete_national_focus = infrastructure_effort
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "AFG_1939"
-	set_technology = {
-		early_fighter = 1
-		CAS1 = 1
-		gw_artillery = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_silos = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
-
 set_politics = {
-	ruling_party = empowered_nationalism
+	ruling_party = reactionary_theocracy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	conservatism = 0
-	revolutionary_socialism = 0
-	empowered_nationalism = 65
-	democratic_socialism = 0
-	autocratic_despotism = 35
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 0
+	social_democracy = 0
+	progressive_liberalism = 5
+	market_libertarianism = 0
+	national_conservatism = 15
+	reactionary_theocracy = 55
+	authoritarian_republicanism = 0
+	martial_despotism = 25
+	ultranational_statism = 0
 }
 
 # Mohammad Hashim Khan (Prime Minister) other potential candidate
@@ -77,7 +35,7 @@ create_country_leader = {
 	desc = "POLITICS_HABIBULLAH_DESC"
 	picture = "Portrait_Habibullah.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = reactionary_theocracy_subtype
 	traits = {
 		#
 	}
@@ -90,23 +48,5 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-	}
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
 	}
 }

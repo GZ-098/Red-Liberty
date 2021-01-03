@@ -3,7 +3,7 @@
  USA_DEF:0 "United States of America"
  USA_ADJ:0 "American"
 
- USA_insurrectionary_anarchism_party:0 "CPUSA"
+ USA_insurrectionary_anarchism_party:0 "--"
  USA_revolutionary_autocracy_party:0 "CPUSA"
  USA_proletarian_dictatorship_party:0 "CPUSA"
  USA_libertarian_socialism_party:0 "SPA"
@@ -12,7 +12,7 @@
  USA_market_libertarianism_party:0 "RP"
  USA_national_conservatism_party:0 "DP"
  USA_reactionary_theocracy_party:0 "--"
- USA_authoritarian_republicanism_party:0 "SWP"
+ USA_authoritarian_republicanism_party:0 "--"
  USA_martial_despotism_party:0 "--"
  USA_ultranational_statism_party:0 "AFP"
 
