@@ -9,6 +9,10 @@ if = {
 	}
 }
 
+set_country_flag = social_democracy_coalition
+set_country_flag = market_libertarian_coalition
+set_country_flag = despotist_coalition
+
 set_stability = 0.2
 set_war_support = 0.5
 # Starting tech

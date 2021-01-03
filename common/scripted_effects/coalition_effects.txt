@@ -1,0 +1,14 @@
+clear_all_coalitions = {
+	clr_country_flag = anarchism_coalition
+	clr_country_flag = rev_autocracy_coalition
+	clr_country_flag = proletarian_coalition
+	clr_country_flag = libertarian_socialism_coalition
+	clr_country_flag = social_democracy_coalition
+	clr_country_flag = progressive_coalition
+	clr_country_flag = market_libertarian_coalition
+	clr_country_flag = conservative_coalition
+	clr_country_flag = theocracy_coalition
+	clr_country_flag = authoritarian_coalition
+	clr_country_flag = despotist_coalition
+	clr_country_flag = ultranationalist_coalition
+}

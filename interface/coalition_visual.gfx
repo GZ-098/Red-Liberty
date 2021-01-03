@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_pol_party_colour_bg_coalition"
+		texturefile = "gfx/interface/pol_party_colour_bg_coalition.dds"
+		legacy_lazy_load = no
+	}
+}

@@ -47,11 +47,11 @@ shared_focus = {
     completion_reward = {
         add_stability = 0.1
 		add_popularity = {
-			ideology = conservatism
+			ideology = national_conservatism
 			popularity = 0.01
 		}
 		add_popularity = {
-			ideology = liberalism
+			ideology = progressive_liberalism
 			popularity = 0.01
 		}
     }
@@ -72,19 +72,19 @@ shared_focus = {
     completion_reward = {
         add_political_power = 15
 		add_popularity = {
-			ideology = empowered_nationalism
+			ideology = ultranational_statism
 			popularity = -0.03
 		}
 		add_popularity = {
-			ideology = democratic_socialism
+			ideology = libertarian_socialism
 			popularity = -0.03
 		}
 		add_popularity = {
-			ideology = autocratic_despotism
+			ideology = authoritarian_republicanism
 			popularity = -0.01
 		}
 		add_popularity = {
-			ideology = revolutionary_socialism
+			ideology = social_democracy
 			popularity = -0.01
 		}
     }
@@ -105,7 +105,7 @@ shared_focus = {
 	prerequisite = { focus = JAP_bipartisanship }
 	prerequisite = { focus = JAP_sideline_extremists }
     completion_reward = {
-        stability_factor = 0.05
+        add_stability = 0.05
 		add_political_power = 20
     }
 	ai_will_do = {
@@ -148,7 +148,7 @@ shared_focus = {
 	prerequisite = { focus = JAP_state_funeral }
     completion_reward = {
         add_popularity = {
-			ideology = conservatism
+			ideology = national_conservatism
 			popularity = -0.05
 		}
 		country_event = {
@@ -280,7 +280,7 @@ shared_focus = {
 	prerequisite = { focus = JAP_status_quo }
     completion_reward = {
         add_popularity = {
-			ideology = conservatism
+			ideology = national_conservatism
 			popularity = 0.05
 		}
 		country_event = {
@@ -336,7 +336,7 @@ shared_focus = {
 	prerequisite = { focus = JAP_july_crisis }
     completion_reward = {
 		add_popularity = {
-			ideology = empowered_nationalism
+			ideology = authoritarian_republicanism
 			popularity = -0.05
 		}
 		country_event = {
@@ -373,8 +373,12 @@ shared_focus = {
 			days = 1
 		}
 		add_popularity = {
-			ideology = empowered_nationalism
+			ideology = authoritarian_republicanism
 			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = ultranational_statism
+			popularity = 0.05
 		}
     }
 	ai_will_do = {

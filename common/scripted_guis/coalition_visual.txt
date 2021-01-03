@@ -1,0 +1,101 @@
+scripted_gui = {
+
+	### Coalition ###
+
+	coalition_anarchism_icon = {
+		window_name = "anarchismVisual"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			has_country_flag = anarchism_coalition
+		}
+	}
+	coalition_rev_autocracy_icon = {
+		window_name = "rev_autocracyVisual"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			has_country_flag = rev_autocracy_coalition
+		}
+	}
+	coalition_proletarian_dictatorship_icon = {
+		window_name = "prole_dictatorshipVisual"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			has_country_flag = proletarian_coalition
+		}
+	}
+	coalition_lib_socialism_icon = {
+		window_name = "lib_socialismVisual"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			has_country_flag = libertarian_socialism_coalition
+		}
+	}
+	coalition_social_democracy_icon = {
+		window_name = "soc_democracyVisual"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			has_country_flag = social_democracy_coalition
+		}
+	}
+	coalition_prog_liberal_icon = {
+		window_name = "prog_liberalVisual"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			has_country_flag = progressive_coalition
+		}
+	}
+	coalition_mar_liberal_icon = {
+		window_name = "mar_liberalVisual"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			has_country_flag = market_libertarian_coalition
+		}
+	}
+	coalition_nat_conservative_icon = {
+		window_name = "nat_conservativeVisual"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			has_country_flag = conservative_coalition
+		}
+	}
+	coalition_reac_theocracy_icon = {
+		window_name = "reac_theocracyVisual"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			has_country_flag = theocracy_coalition
+		}
+	}
+	coalition_auth_democrat_icon = {
+		window_name = "auth_democratVisual"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			has_country_flag = authoritarian_coalition
+		}
+	}
+	coalition_martial_despotist_icon = {
+		window_name = "martial_despotistVisual"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			has_country_flag = despotist_coalition
+		}
+	}
+	coalition_ultranationalist_icon = {
+		window_name = "ultranationalistVisual"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			has_country_flag = ultranationalist_coalition
+		}
+	}
+}

@@ -2,8 +2,12 @@ capital = 282
 
 oob = "JAP_1936"
 
-set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
+set_stability = 0.5 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8
+
+set_country_flag = progressive_coalition
+set_country_flag = market_libertarian_coalition
+set_country_flag = conservative_coalition
 
 country_event = { # intro event
 	id = japan.1
@@ -106,9 +110,10 @@ if = {
 	add_ideas = MTG_naval_treaty_adherent
 }
 add_ideas = {
-	japanese_democracy
-	military_influence
-	echoes_of_the_depression
+	JAP_japanese_democracy
+	JAP_military_influence
+	JAP_echoes_of_the_depression
+	JAP_twenty_one_demands
 }
 
 set_technology = {

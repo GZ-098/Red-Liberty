@@ -1,0 +1,87 @@
+ideas = {
+
+	country = {
+		
+		JAP_japanese_democracy = {
+			picture = GFX_unknown_idea
+			allowed = {
+				tag = JAP
+			}
+			available = {
+			
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = 0.1
+			}
+		}
+		
+		JAP_military_influence = {
+			picture = GFX_unknown_idea
+			allowed = {
+				tag = JAP
+			}
+			available = {
+			
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				army_org_factor = 0.05
+				planning_speed = 0.1
+				political_power_gain = -1
+			}
+		}
+		
+		JAP_echoes_of_the_depression = {
+			picture = GFX_unknown_idea
+			allowed = {
+				tag = JAP
+			}
+			available = {
+			
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.1
+			}
+		}
+		
+		JAP_twenty_one_demands = {
+			picture = GFX_unknown_idea
+			allowed = {
+				tag = JAP
+			}
+			available = {
+			
+			}
+			cancel = {
+				
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.03
+			}
+		}
+	}
+}

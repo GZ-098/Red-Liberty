@@ -28,12 +28,12 @@ country_event = { # from japan to china
 		name = "What do you think about the Treaty?"
 		ai_chance = { factor = 1 }
 		add_popularity = {
-			ideology = liberalism
-			popularity = 0.01
+			ideology = market_libertarianism
+			popularity = 0.02
 		}
 		add_popularity = {
-			ideology = conservatism
-			popularity = 0.01
+			ideology = social_democracy
+			popularity = 0.02
 		}
 	}
 }
@@ -97,8 +97,12 @@ country_event = {
 	option = {
 		name = "Maybe the past didn’t go anywhere..."
 		add_popularity = {
-			ideology = democratic_socialism
-			popularity = -0.05
+			ideology = libertarian_socialism
+			popularity = -0.02
+		}
+		add_popularity = {
+			ideology = social_democracy
+			popularity = -0.03
 		}
 		ai_chance = { factor = 1 }
 	}
@@ -116,7 +120,7 @@ country_event = {
 	option = {
 		name = "Sounds rosy!"
 		add_popularity = {
-			ideology = liberalism
+			ideology = market_libertarianism
 			popularity = 0.05
 		}
 		ai_chance = { factor = 1 }
@@ -135,8 +139,16 @@ country_event = {
 	option = {
 		name = "Incisive."
 		add_popularity = {
-			ideology = conservatism
-			popularity = -0.05
+			ideology = national_conservatism
+			popularity = -0.04
+		}
+		add_popularity = {
+			ideology = authoritarian_republicanism
+			popularity = -0.02
+		}
+		add_popularity = {
+			ideology = ultranational_statism
+			popularity = -0.01
 		}
 		ai_chance = { factor = 1 }
 	}
@@ -154,15 +166,24 @@ country_event = {
 	option = {
 		name = "The ball is in the Liberals’ court now..."
 		set_politics = {
-			ruling_party = liberalism
+			ruling_party = progressive_liberalism
 			last_election = "1933.2.25"
 			election_frequency = 24
 			elections_allowed = yes
 		}
 		add_popularity = {
-			ideology = liberalism
-			popularity = 0.05
+			ideology = progressive_liberalism
+			popularity = 0.03
 		}
+		add_popularity = {
+			ideology = market_libertarianism
+			popularity = 0.02
+		}
+		
+		clear_all_coalitions = yes
+		set_country_flag = progressive_coalition
+		set_country_flag = market_libertarian_coalition
+		
 		country_event = {
 			id = japan.10
 			days = 1
@@ -184,12 +205,23 @@ country_event = {
 		name = "Dear Ichiro-san..."
 		set_country_flag = JAP_status_quo_upheld
 		complete_national_focus = JAP_status_quo
+		set_country_flag = conservative_coalition
 		ai_chance = { factor = 33 }
 	}
 	
 	option = {
 		name = "Dear Abe-san..."
 		set_country_flag = JAP_july_crisis
+		add_popularity = {
+			ideology = social_democracy
+			popularity = 0.04
+		}
+		add_popularity = {
+			ideology = libertarian_socialism
+			popularity = 0.01
+		}
+		set_country_flag = libertarian_socialism_coalition
+		set_country_flag = social_democracy_coalition
 		ai_chance = { factor = 64 }
 	}
 }
@@ -279,12 +311,16 @@ country_event = {
 		load_focus_tree = japan_paths
 		add_political_power = 25
 		add_popularity = {
-			ideology = empowered_nationalism
+			ideology = progressive_liberalism
 			popularity = 0.02
 		}
 		add_popularity = {
-			ideology = democratic_socialism
-			popularity = 0.02
+			ideology = social_democracy
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = libertarian_socialism
+			popularity = 0.01
 		}
 		ai_chance = { factor = 100 }
 	}
@@ -301,8 +337,21 @@ country_event = {
 	
 	option = {
 		name = "Unruly children will need disciplining."
+		set_politics = {
+			ruling_party = authoritarian_republicanism
+			last_election = "1933.2.25"
+			election_frequency = 24
+			elections_allowed = no
+		}
+		
+		clear_all_coalitions = yes
+		set_country_flag = authoritarian_coalition
+		set_country_flag = despotist_coalition
+		set_country_flag = ultranationalist_coalition
+		
 		load_focus_tree = japan_paths
 		complete_national_focus = jap_nationalist
+		
 		add_political_power = 50
 		add_stability = -0.15
 		ai_chance = { factor = 100 }
@@ -320,10 +369,16 @@ country_event = {
 	
 	option = {
 		name = "They’ll have to look elsewhere for a Prime Minister."
-		add_stability = 0.1
+		add_stability = 0.05
 		add_popularity = {
-			ideology = liberalism
+			ideology = progressive_liberalism
 			popularity = -0.03
+		}
+		set_politics = {
+			ruling_party = national_conservatism
+			last_election = "1933.2.25"
+			election_frequency = 24
+			elections_allowed = yes
 		}
 		ai_chance = { factor = 100 }
 	}

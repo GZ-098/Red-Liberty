@@ -11,6 +11,11 @@ if = {
 	}
 }
 
+set_country_flag = libertarian_socialism_coalition
+set_country_flag = social_democracy_coalition
+set_country_flag = progressive_coalition
+set_country_flag = market_libertarian_coalition
+
 load_oob = "ENG_Motorized"
 
 set_research_slots = 4
