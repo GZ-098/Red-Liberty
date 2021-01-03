@@ -1251,7 +1251,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = { 
-		ai_chance = { factor = 40 }
+		ai_chance = { factor = 80 }
 		name = "We Must Escape German Influence"
 		ITA = {
 			add_to_faction = AUS
@@ -1263,31 +1263,14 @@ country_event = {
 	} 
 
 	option = { 
-		ai_chance = { factor = 40 }
-		name = "Nien! We Will Never Fall Under German Influence!"
+		ai_chance = { factor = 10 }
+		name = "Nien! We Will Never Fall Under Italian Influence!"
 		ITA = {
 			country_event = {
 				id = italy_events.49
 				days = 1 
 			}
 		}
-	} 
-}
-
-#Austira Accepts Allience 
-country_event = {
-	id = italy_events.47
-	title = italy_events.47.t
-	desc = italy_events.47.d
-	picture = GFX_report_event_roman_speech
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	option = { 
-		ai_chance = { factor = 40 }
-		name = "Our Influence Grows"
 	} 
 }
 
@@ -1305,6 +1288,197 @@ country_event = {
 	option = { 
 		ai_chance = { factor = 40 }
 		name = "They Will Get Annexed by the Germans Anyway"
+	} 
+}
+
+#Austira Accepts Allience 
+country_event = {
+	id = italy_events.49
+	title = italy_events.49.t
+	desc = italy_events.49.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Our Influence Grows"
+	} 
+}
+
+#Austira Accepts Allience 
+country_event = {
+	id = italy_events.50
+	title = italy_events.50.t
+	desc = italy_events.50.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "We Won't Even Have a Chance..."
+		ITA = {
+			transfer_state = 44
+			country_event = {
+				id = italy_events.51
+			}
+		}
+	} 
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "We Shall Never Surrender!"
+		ITA = {
+			create_wargoal = { type = annex_everything target = ALB }
+			country_event = {
+				id = italy_events.52
+			}
+		}
+	} 
+}
+
+#Albania surrenders
+country_event = {
+	id = italy_events.51
+	title = italy_events.51.t
+	desc = italy_events.51.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Our Dream is Getting Closer"
+	} 
+}
+
+#Albania resists
+country_event = {
+	id = italy_events.52
+	title = italy_events.52.t
+	desc = italy_events.52.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "War it is Then"
+	} 
+}
+
+#ITA wins against FRA
+country_event = {
+	id = italy_events.53
+	title = italy_events.53.t
+	desc = italy_events.53.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "The Capitalist System is Crumbeling!"
+		army_experience = 50
+	} 
+}
+
+#ITA looses against FRA
+country_event = {
+	id = italy_events.54
+	title = italy_events.54.t
+	desc = italy_events.54.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Major Reforms are Needed..."
+		army_experience = 75
+	} 
+}
+
+#ITA cancels conflict
+country_event = {
+	id = italy_events.55
+	title = italy_events.55.t
+	desc = italy_events.55.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "We Will Come Back Another Time"
+		army_experience = 25
+	} 
+}
+
+#FRA wins against ITA
+country_event = {
+	id = italy_events.56
+	title = italy_events.56.t
+	desc = italy_events.56.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Socialism Could Never Win"
+		army_experience = 50
+	} 
+}
+
+#FRA looses against ITA
+country_event = {
+	id = italy_events.57
+	title = italy_events.57.t
+	desc = italy_events.57.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "How Could this Happen?"
+		army_experience = 30
+	} 
+}
+
+#FRA cancels conflict
+country_event = {
+	id = italy_events.58
+	title = italy_events.58.t
+	desc = italy_events.58.d
+	picture = GFX_report_event_roman_speech
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "We Can't Waste Time on Them"
 	} 
 }
 
