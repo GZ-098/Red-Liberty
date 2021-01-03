@@ -79,7 +79,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_BAY_Ernst_Toller.tga"
 	expire = "1965.1.1"
-	ideology = proletarian_dictatorship
+	ideology = proletarian_dictatorship_subtype
 	traits = {
 	}
 }
