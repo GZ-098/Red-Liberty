@@ -11,6 +11,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_USA_red_liberty"
+		texturefile = "gfx/interface/ideas/USA/USA_red_liberty.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_USA_pacifism"
 		texturefile = "gfx/interface/ideas/USA/USA_pacifism.tga"
 	}
