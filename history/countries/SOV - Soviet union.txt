@@ -1,13 +1,13 @@
 ﻿capital = 219
 
-oob = ""
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "SOV_1936_naval_mtg"
-	else = {
-		set_naval_oob = "SOV_1936_naval_legacy"
-	}
-}
+oob = "SOV"
+#if = {
+#	limit = { has_dlc = "Man the Guns" }
+#		set_naval_oob = "SOV_1936_naval_mtg"
+#	else = {
+#		set_naval_oob = "SOV_1936_naval_legacy"
+#	}
+#}
 
 set_country_flag = rev_autocracy_coalition
 set_country_flag = proletarian_coalition

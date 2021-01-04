@@ -17,9 +17,8 @@ puppet = ROM
 
 country_event = { id = ahe_events.1 days = 154 }
 
-#Politics for 1936.1.1
 set_politics = {
-	ruling_party = autocratic_despotism
+	ruling_party = martial_despotism
 	last_election = "1932.11.8"
 	election_frequency = 0
 	elections_allowed = no
@@ -32,13 +31,18 @@ add_ideas = {
 }
 
 set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 10
-	conservatism = 0 
-	autocratic_despotism = 75 
-	empowered_nationalism = 0 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 5
+	proletarian_dictatorship = 0
+	libertarian_socialism = 12
+	social_democracy = 24
+	progressive_liberalism = 0
+	market_libertarianism = 0
+	national_conservatism = 14
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 6
+	martial_despotism = 25
+	ultranational_statism = 14
 }
 
 create_country_leader = {
@@ -46,7 +50,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_AHE_Karl_I.tga"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = martial_despotism_subtype
 	traits = {
 		#
 	}

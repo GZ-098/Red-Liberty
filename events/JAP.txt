@@ -51,6 +51,7 @@ country_event = { # inukai dies
 		name = "He isn’t breathing."
 		add_stability = -0.15
 		set_country_flag = inukai_ded
+		kill_country_leader = yes
 		ai_chance = { factor = 1 }
 	}
 }
@@ -322,6 +323,7 @@ country_event = {
 			ideology = libertarian_socialism
 			popularity = 0.01
 		}
+		complete_national_focus = jap_showa_democracy_liberal
 		ai_chance = { factor = 100 }
 	}
 }
@@ -380,6 +382,7 @@ country_event = {
 			election_frequency = 24
 			elections_allowed = yes
 		}
+		complete_national_focus = jap_taisho_democracy_conservative
 		ai_chance = { factor = 100 }
 	}
 }

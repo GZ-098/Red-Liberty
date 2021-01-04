@@ -1,0 +1,75 @@
+SOV_revolution_category = {
+	
+	SOV_declare_soviet_union = {
+	
+		icon = ger_mefo_bills
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			OR = {
+				KAZ = {
+					exists = no
+				}
+				UKR = {
+					exists = no
+				}
+				BLR = {
+					exists = no
+				}
+			}
+		}
+		
+		cost = 15
+		
+		complete_effect = {
+			
+		}
+	}
+	
+	SOV_spread_revolution_asia = {
+	
+		icon = ger_mefo_bills
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			RUS = {
+				exists = no
+			}
+		}
+		
+		fire_only_once = yes
+		
+		days_remove = 30
+		
+		target_trigger = {
+               FROM = {
+                    OR = {
+                         tag = KAZ
+                         tag = KYR
+                         tag = ALT
+						 tag = MON
+                    }
+               }
+          }
+		
+		cost = 30
+		
+		remove_effect = {
+			SOV = {
+				declare_war_on = {
+					target = FROM
+					type = annex_everything
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

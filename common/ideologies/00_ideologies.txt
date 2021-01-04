@@ -22,6 +22,7 @@ ideologies = {
 		
 		rules = {
 			can_send_volunteers = yes
+			can_puppet = no
 		}
 		
 		modifiers = {
@@ -48,7 +49,7 @@ ideologies = {
 			can_create_collaboration_government = no
 			can_force_government = yes
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
 		}
 		
 		can_host_government_in_exile = yes
@@ -81,7 +82,7 @@ ideologies = {
 			can_create_collaboration_government = no
 			can_force_government = yes
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
 		}
 		
 		can_host_government_in_exile = yes
@@ -111,7 +112,7 @@ ideologies = {
 			can_create_collaboration_government = no
 			can_force_government = yes
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
 		}
 		
 		can_host_government_in_exile = yes
@@ -141,7 +142,7 @@ ideologies = {
 			can_create_collaboration_government = no
 			can_force_government = yes
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
 		}
 		
 		can_host_government_in_exile = yes
@@ -171,7 +172,7 @@ ideologies = {
 			can_create_collaboration_government = no
 			can_force_government = yes
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
 		}
 		
 		can_host_government_in_exile = yes
@@ -201,7 +202,7 @@ ideologies = {
 			can_create_collaboration_government = no
 			can_force_government = yes
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
 		}
 		
 		can_host_government_in_exile = yes
@@ -231,7 +232,7 @@ ideologies = {
 			can_create_collaboration_government = no
 			can_force_government = yes
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
 		}
 		
 		can_host_government_in_exile = yes
@@ -261,7 +262,7 @@ ideologies = {
 			can_create_collaboration_government = yes
 			can_force_government = yes
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
 		}
 		
 		modifiers = {
@@ -289,7 +290,7 @@ ideologies = {
 			can_create_collaboration_government = yes
 			can_force_government = yes
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
 		}
 		
 		modifiers = {
@@ -311,13 +312,14 @@ ideologies = {
 			"FACTION_NAME_DESPOTIST_1"
 		}
 		
-		color = { 117 117 113 }
+		#color = { 117 117 113 }
+		color = { 89 89 86 }
 		
 		rules = {
 			can_create_collaboration_government = yes
 			can_force_government = yes
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
 		}
 		
 		modifiers = {
@@ -345,7 +347,7 @@ ideologies = {
 			can_create_collaboration_government = yes
 			can_force_government = yes
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
 		}
 		
 		modifiers = {

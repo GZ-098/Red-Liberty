@@ -3,8 +3,9 @@ state={
 	id=589
 	name="STATE_589"
 	resources={
-		steel=8
+		steel=8.000
 	}
+
 	history={
 		owner = KAZ
 		add_core_of = KAZ
@@ -20,7 +21,7 @@ state={
 	}
 
 	provinces={
-		1239 1668 4764 7332 7405 10290 
+		1239 1287 1668 4764 7332 7350 7405 10161 10218 10290 10292 10653 
 	}
 	manpower=535191
 	buildings_max_level_factor=1.000

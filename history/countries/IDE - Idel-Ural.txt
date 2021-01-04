@@ -37,19 +37,25 @@ set_convoys = 50
 set_stability = 0.75
 
 set_politics = {
-	ruling_party = conservatism
+	ruling_party = national_conservatism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 
 }
 set_popularities = {
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 5
-	conservatism = 75
-	autocratic_despotism = 10 
-	empowered_nationalism = 0 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 10
+	social_democracy = 10
+	progressive_liberalism = 5
+	market_libertarianism = 15
+	national_conservatism = 45
+	reactionary_theocracy = 15
+	authoritarian_republicanism = 0
+	martial_despotism = 0
+	ultranational_statism = 0
 }
 
 create_country_leader = {
@@ -57,7 +63,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_IDE_Sadri_Maksudi_Arsal.tga"
 	expire = "1953.3.1"
-	ideology = conservatism_subtype
+	ideology = national_conservatism_subtype
 	traits = {
 		
 	}

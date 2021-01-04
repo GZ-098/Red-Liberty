@@ -1,7 +1,7 @@
-l_english:
+﻿l_english:
  AHE:0 "Austro-Hungarian Empire"
  AHE_DEF:0 "Austro-Hungarian Empire"
- AHE_ADJ:0 "Citizen of Austria-Hungary"
+ AHE_ADJ:0 "Austro-Hungarian"
 
  AHE_farewell_hungary:0 "Farewell Hungary..." 
  AHE_farewell_hungary_desc:0 "The process is over; we are no longer Austria-Hungary farewell old friend." 

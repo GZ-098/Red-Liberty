@@ -1,0 +1,9 @@
+SOV_revolution_category = {
+	
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		original_tag = SOV
+	}
+}

@@ -1,0 +1,17 @@
+###INITIAL TREE
+focus_tree = {
+	id = SOV_initial_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	continuous_focus_position = {
+		x = -2500
+		y = 125
+	}
+	default = no
+	shared_focus = SOV_state_of_the_union
+}

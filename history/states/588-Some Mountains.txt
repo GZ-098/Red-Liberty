@@ -7,7 +7,8 @@ state={
 	}
 
 	history={
-		owner = KAZ
+		owner = SCH
+		add_core_of = SCH
 		add_core_of = KAZ
 		buildings = {
 			infrastructure = 4
@@ -21,7 +22,7 @@ state={
 	}
 
 	provinces={
-		1287 4867 7350 10161 10218 10292 10584 10653 12594 13151 
+		1749 1818 1864 4674 4867 7890 10584 10610 12427 12564 12594 12635 13151 
 	}
 	manpower=659223
 	buildings_max_level_factor=1.000

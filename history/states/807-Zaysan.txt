@@ -9,13 +9,15 @@ state={
 		add_core_of = KAZ
 		buildings = {
 			infrastructure = 2
+
 		}
+
 	}
 
 	provinces={
-		1749 1818 1864 4674 7784 7890 10610 10680 12427 12529 12564 12635 12662 13149 13197 
+		4651 4845 7784 7795 7856 10547 10550 10619 10680 12529 12662 13148 13149 13197 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category=rural
 }

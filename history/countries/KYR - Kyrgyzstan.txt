@@ -9,61 +9,32 @@ set_technology = {
 
 set_convoys = 5
 
-1939.1.1 = {
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-
-		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
 set_politics = {
-	ruling_party = empowered_nationalism
+	ruling_party = ultranational_statism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	conservatism = 0
-	revolutionary_socialism = 0
-	democratic_socialism = 10
-	liberalism = 0
-	conservatism = 0 
-	autocratic_despotism = 30
-	empowered_nationalism = 60
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 0
+	social_democracy = 24
+	progressive_liberalism = 0
+	market_libertarianism = 0
+	national_conservatism = 14
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 6
+	martial_despotism = 16
+	ultranational_statism = 40
 }
 create_country_leader = {
 	name = "Enver Pasha"
 	desc = "POLITICS_ENVER_DESC"
 	picture = "Portrait_KYR_ENVER.dds"
 	expire = "1953.3.1"
-	ideology = fascism_ideology  
+	ideology = ultranational_statism_subtype
 	traits = {
 		
 	}
