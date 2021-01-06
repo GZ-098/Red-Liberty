@@ -13,6 +13,9 @@ set_research_slots = 4
 set_stability = 0.75
 set_war_support = 0
 
+set_country_flag = libertarian_socialism_coalition
+set_country_flag = social_democracy_coalition
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -104,15 +107,15 @@ set_popularities = {
 	insurrectionary_anarchism = 0
 	revolutionary_autocracy = 0
 	proletarian_dictatorship = 0
-	libertarian_socialism = 35
-	social_democracy = 0
-	progressive_liberalism = 25
-	market_libertarianism = 0
-	national_conservatism = 25
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 0
+	libertarian_socialism = 25
+	social_democracy = 10
+	progressive_liberalism = 17
+	market_libertarianism = 8
+	national_conservatism = 23
+	reactionary_theocracy = 2
+	authoritarian_republicanism = 5
 	martial_despotism = 0
-	ultranational_statism = 15
+	ultranational_statism = 10
 }
 
 add_ideas = {
