@@ -1,0 +1,20 @@
+state={
+	id=820
+	name="STATE_820"
+	
+	history={
+		owner = BUL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = BUL
+		add_core_of = TUR
+	}
+	
+	provinces={
+		922 3893 11842 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = town
+}

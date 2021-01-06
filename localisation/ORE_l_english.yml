@@ -1,5 +1,8 @@
 ﻿l_english:
  ORE:0 "Orenburg Cossack Host"
  ORE_DEF:0 "the Orenburg Cossack Host"
- ORE_ADJ:0 "Cossack" 
+ ORE_ADJ:0 "Cossack"
+ 
+ ORE_fervent_anti_communists:0 "Fervent Anti-Communism"
+ ORE_cossacks:0 "Cossacks"
  

@@ -1,6 +1,8 @@
 ﻿l_english:
  FRA:0 "French Republic"
  FRA_DEF:0 "France"
- FRA_ADJ:0 "Fremch"
+ FRA_ADJ:0 "French"
+ 
+ FRA_a_falling_democracy:0 "A Falling Democracy"
  
  

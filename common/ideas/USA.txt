@@ -20,6 +20,8 @@ ideas = {
 				
 			modifier = {
 				stability_factor = -0.05
+				libertarian_socialism_drift = 0.01
+				ultranational_statism_drift = 0.01
 			}
 		}
 		

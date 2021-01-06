@@ -139,7 +139,7 @@ create_country_leader = {
 	expire = "1947.1.1"
 	ideology = libertarian_socialism_subtype
 	traits = {
-		dislikes_germany
+		
 	}
 }
 

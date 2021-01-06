@@ -21,6 +21,7 @@ bookmarks = {
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic_socialism
 			ideas = {
+				USA_red_liberty
 				USA_the_great_depression
 				USA_pacifism
 			}
