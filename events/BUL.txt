@@ -1,0 +1,15 @@
+add_namespace = bulgaria
+
+country_event = { # intro event
+	id = bulgaria.1
+	title = ""
+	desc = bulgaria.1.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+	}
+}

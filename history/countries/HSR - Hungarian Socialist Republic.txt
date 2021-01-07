@@ -18,70 +18,25 @@ set_technology = {
 	fuel_silos = 1
 }
 
-
-1939.1.1 = {
-
-	add_political_power = 1198
-
-	
-	
-	oob = "HSR_1939"
-	set_technology = {
-		fighter1 = 1
-		early_bomber = 1
-		tactical_bomber1 = 1
-		gwtank = 1
-		basic_light_tank = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		interwar_antiair = 1
-		tech_engineers = 1
-		tech_mountaineers = 1
-		motorised_infantry = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		fuel_refining = 1
-	}
-}
-
 set_politics = {
-	ruling_party = revolutionary_socialism
+	ruling_party = proletarian_dictatorship
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 0
-	revolutionary_socialism = 100
-	democratic_socialism = 0
-	liberalism = 0 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	insurrectionary_anarchism = 14
+	revolutionary_autocracy = 5
+	proletarian_dictatorship = 25
+	libertarian_socialism = 12
+	social_democracy = 24
+	progressive_liberalism = 14
+	market_libertarianism = 0
+	national_conservatism = 0
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 6
+	martial_despotism = 0
+	ultranational_statism = 0
 }
 
 
@@ -105,74 +60,4 @@ create_country_leader = {
 	traits = {
 		#
 	}
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = fascism
-		last_election = "1939.5.29"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-		conservatism = 27
-		fascism = 70
-		communism = 3
-	}
-}
-
-
-create_corps_commander = {
-	name = "Géza Lakatos"
-	gfx = GFX_Portrait_hungary_geza_lakatos
-	traits = {  }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Iván Hindy"
-	gfx = GFX_Portrait_hungary_ivan_hindy
-	traits = {  trickster }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "Károly Beregfy"
-	gfx = GFX_Portrait_hungary_karoly_beregfy
-	traits = { }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Lajos Veress"
-	gfx = GFX_Portrait_hungary_lajos_veress
-	traits = { armor_officer }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_field_marshal = {
-	name = "Ferenc Feketehalmy-Czeydner"
-	gfx = GFX_Portrait_hungary_ferenc_feketehalmy_czeydner
-	traits = { }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
 }

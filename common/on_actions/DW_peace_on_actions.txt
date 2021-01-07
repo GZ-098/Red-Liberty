@@ -11,17 +11,34 @@ on_actions = {
 					ROOT = {
 						original_tag = AHE
 					}
+					FROM = {
+						OR = {
+							tag = ITA
+							tag = CZE
+							tag = HUN
+							tag = SER
+						}
+					}
 					ITA = {
 						has_war_with = AHE
 					}
 					has_global_flag = danubian_war_start
 				}
 				danubian_wars_peace_italy = yes
+				danubian_wars_peace_austria_hungary = yes
 			}
 			if = {
 				limit = {
 					ROOT = {
 						original_tag = AHE
+					}
+					FROM = {
+						OR = {
+							tag = ITA
+							tag = CZE
+							tag = HUN
+							tag = SER
+						}
 					}
 					POL = {
 						has_war_with = AHE
@@ -29,11 +46,20 @@ on_actions = {
 					has_global_flag = danubian_war_start
 				}
 				danubian_wars_peace_poland = yes
+				danubian_wars_peace_austria_hungary = yes
 			}
 			if = {
 				limit = {
 					ROOT = {
 						original_tag = AHE
+					}
+					FROM = {
+						OR = {
+							tag = ITA
+							tag = CZE
+							tag = HUN
+							tag = SER
+						}
 					}
 					SER = {
 						has_war_with = AHE
@@ -41,11 +67,20 @@ on_actions = {
 					has_global_flag = danubian_war_start
 				}
 				danubian_wars_peace_serbia = yes
+				danubian_wars_peace_austria_hungary = yes
 			}
 			if = {
 				limit = {
 					ROOT = {
 						original_tag = AHE
+					}
+					FROM = {
+						OR = {
+							tag = ITA
+							tag = CZE
+							tag = HUN
+							tag = SER
+						}
 					}
 					CZE = {
 						has_war_with = AHE
@@ -53,11 +88,20 @@ on_actions = {
 					has_global_flag = danubian_war_start
 				}
 				danubian_wars_peace_czechia = yes
+				danubian_wars_peace_austria_hungary = yes
 			}
 			if = {
 				limit = {
 					ROOT = {
 						original_tag = AHE
+					}
+					FROM = {
+						OR = {
+							tag = ITA
+							tag = CZE
+							tag = HUN
+							tag = SER
+						}
 					}
 					UKR = {
 						has_war_with = AHE
@@ -65,11 +109,20 @@ on_actions = {
 					has_global_flag = danubian_war_start
 				}
 				danubian_wars_peace_ukraine = yes
+				danubian_wars_peace_austria_hungary = yes
 			}	
 			if = {
 				limit = {
 					ROOT = {
 						original_tag = AHE
+					}
+					FROM = {
+						OR = {
+							tag = ITA
+							tag = CZE
+							tag = HUN
+							tag = SER
+						}
 					}
 					ROM = {
 						has_war_with = AHE
@@ -77,11 +130,20 @@ on_actions = {
 					has_global_flag = danubian_war_start
 				}
 				danubian_wars_peace_romania = yes
+				danubian_wars_peace_austria_hungary = yes
 			}
 			if = {
 				limit = {
 					ROOT = {
 						original_tag = AHE
+					}
+					FROM = {
+						OR = {
+							tag = ITA
+							tag = CZE
+							tag = HUN
+							tag = SER
+						}
 					}
 					KRA = {
 						has_war_with = AHE
@@ -89,11 +151,20 @@ on_actions = {
 					has_global_flag = danubian_war_start
 				}
 				danubian_wars_peace_krakow = yes
+				danubian_wars_peace_austria_hungary = yes
 			}
 			if = {
 				limit = {
 					ROOT = {
 						original_tag = AHE
+					}
+					FROM = {
+						OR = {
+							tag = ITA
+							tag = CZE
+							tag = HUN
+							tag = SER
+						}
 					}
 					WUK = {
 						has_war_with = AHE
@@ -101,12 +172,20 @@ on_actions = {
 					has_global_flag = danubian_war_start
 				}
 				danubian_wars_peace_west_ukraine = yes
+				danubian_wars_peace_austria_hungary = yes
 			}
 			
 			if = {
 				limit = {
 					ROOT = {
 						original_tag = BUL
+					}
+					FROM = {
+						OR = {
+							tag = SER
+							tag = ROM
+							tag = TUR
+						}
 					}
 					SER = {
 						has_war_with = BUL
@@ -128,6 +207,13 @@ on_actions = {
 					ROOT = {
 						original_tag = BUL
 					}
+					FROM = {
+						OR = {
+							tag = SER
+							tag = ROM
+							tag = TUR
+						}
+					}
 					TUR = {
 						has_war_with = BUL
 					}
@@ -147,6 +233,13 @@ on_actions = {
 				limit = {
 					ROOT = {
 						original_tag = BUL
+					}
+					FROM = {
+						OR = {
+							tag = SER
+							tag = ROM
+							tag = TUR
+						}
 					}
 					ROM = {
 						has_war_with = BUL

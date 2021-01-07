@@ -1,3 +1,38 @@
+danubian_wars_peace_austria_hungary = {
+	if = {
+		limit = {
+			HUN = {
+				exists = yes
+			}
+			AHE = {
+				has_war_with = HUN
+			}
+		}
+		AHE = {
+			white_peace = {
+				tag = HUN
+				message = "The war was hard but the peace was won, for better or worse"
+			}
+		}
+	}
+	if = {
+		limit = {
+			HSR = {
+				exists = yes
+			}
+			AHE = {
+				has_war_with = HSR
+			}
+		}
+		AHE = {
+			white_peace = {
+				tag = HSR
+				message = "The war was hard but the peace was won, for better or worse"
+			}
+		}
+	}
+}
+
 danubian_wars_peace_italy = {
 	ITA = {
 		white_peace = {
@@ -100,8 +135,7 @@ danubian_wars_peace_krakow = {
 			tag = AHE
 			message = "The war was hard but the peace was won, for better or worse"
 		}
-		transfer_state = 89
-		transfer_state = 91
+		transfer_state = 88
 	}
 }
 
@@ -125,14 +159,19 @@ danubian_wars_peace_romania = {
 		transfer_state = 80
 		if = {
 			limit = {
-				NOT = {
-					ROM = {
-						has_war_with = HUN
-						has_war_with = HSR
+				AHE = {
+					OR = {
+						owns_state = 76
+						owns_state = 82
+						owns_state = 83
+						owns_state = 84
 					}
 				}
 			}
-			clr_country_flag = danubian_war_participant
+			transfer_state = 76
+			transfer_state = 82
+			transfer_state = 83
+			transfer_state = 84
 		}
 	}
 }

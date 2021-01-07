@@ -18,7 +18,7 @@ ideologies = {
 		war_impact_on_world_tension = 1.2		#anarkiddie more threatening
 		faction_impact_on_world_tension = 1.5
 		
-		ai_communist = yes # uses the commie AI behaviour
+		ai_neutral = yes
 		
 		rules = {
 			can_send_volunteers = yes
@@ -61,7 +61,7 @@ ideologies = {
 			
 		}
 		
-		ai_communist = yes # uses the commie AI behaviour
+		ai_neutral = yes
 	}
 	
 	proletarian_dictatorship = {
@@ -91,7 +91,7 @@ ideologies = {
 			
 		}
 		
-		ai_communist = yes # uses the commie AI behaviour
+		ai_neutral = yes
 	}
 	
 	libertarian_socialism = {
@@ -121,7 +121,7 @@ ideologies = {
 			
 		}
 		
-		ai_democratic = yes # uses the democratic AI behaviour
+		ai_neutral = yes
 	}
 	
 	social_democracy = {
@@ -151,7 +151,7 @@ ideologies = {
 			
 		}
 		
-		ai_democratic = yes # uses the democratic AI behaviour
+		ai_neutral = yes
 	}
 	
 	progressive_liberalism = {
@@ -181,7 +181,7 @@ ideologies = {
 			
 		}
 		
-		ai_democratic = yes # uses the democratic AI behaviour
+		ai_neutral = yes
 	}
 	
 	market_libertarianism = {
@@ -211,7 +211,7 @@ ideologies = {
 			
 		}
 		
-		ai_democratic = yes # uses the democratic AI behaviour
+		ai_neutral = yes
 	}
 	
 	national_conservatism = {
@@ -241,7 +241,7 @@ ideologies = {
 			
 		}
 		
-		ai_democratic = yes # uses the democratic AI behaviour
+		ai_neutral = yes
 	}
 	
 	reactionary_theocracy = {
@@ -269,7 +269,7 @@ ideologies = {
 			
 		}
 		
-		ai_neutral = yes # uses the neutral AI behaviour
+		ai_neutral = yes
 	}
 	
 	authoritarian_republicanism = {
@@ -297,7 +297,7 @@ ideologies = {
 			
 		}
 		
-		ai_neutral = yes # uses the neutral AI behaviour
+		ai_neutral = yes
 	}
 	
 	martial_despotism = {
@@ -326,7 +326,7 @@ ideologies = {
 			
 		}
 		
-		ai_fascist = yes # uses the fascist AI behaviour
+		ai_neutral = yes
 	}
 	
 	ultranational_statism = {
@@ -354,6 +354,6 @@ ideologies = {
 			
 		}
 		
-		ai_fascist = yes # uses the fascist AI behaviour
+		ai_neutral = yes
 	}
 }
