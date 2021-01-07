@@ -13,7 +13,8 @@ ideologies = {
 		}
 		
 		#color = { 128 5 5 }
-		color = { 74 4 4 }
+		#color = { 74 4 4 }
+		color = { 0 0 0 }
 		
 		war_impact_on_world_tension = 1.2		#anarkiddie more threatening
 		faction_impact_on_world_tension = 1.5
@@ -43,7 +44,8 @@ ideologies = {
 		}
 		
 		#color = { 173 24 24 }
-		color = { 145 20 20 }
+		#color = { 145 20 20 }
+		color = { 60 15 15 }
 		
 		rules = {
 			can_create_collaboration_government = no
@@ -76,7 +78,8 @@ ideologies = {
 			"FACTION_NAME_PROLETARIAN_1"
 		}
 		
-		color = { 125 91 133 }
+		#color = { 125 91 133 }
+		color = { 125 0 5 }
 		
 		rules = {
 			can_create_collaboration_government = no
@@ -106,7 +109,8 @@ ideologies = {
 			"FACTION_NAME_SOCIALIST_1"
 		}
 		
-		color = { 207 8 68 }
+		#color = { 207 8 68 }
+		color = { 230 5 25 }
 		
 		rules = {
 			can_create_collaboration_government = no
@@ -136,7 +140,8 @@ ideologies = {
 			"FACTION_NAME_SOCIAL_DEMOCRAT_1"
 		}
 		
-		color = { 185 56 194 }
+		#color = { 185 56 194 }
+		color = { 180 75 160 }
 		
 		rules = {
 			can_create_collaboration_government = no
@@ -166,7 +171,8 @@ ideologies = {
 			"FACTION_NAME_LIBERAL_1"
 		}
 		
-		color = { 137 175 196 }
+		#color = { 137 175 196 }
+		color = { 95 180 200 }
 		
 		rules = {
 			can_create_collaboration_government = no
@@ -196,7 +202,8 @@ ideologies = {
 			"FACTION_NAME_MARKET_LIBERAL_1"
 		}
 		
-		color = { 169 196 137 }
+		#color = { 169 196 137 }
+		color = { 110 170 120 }
 		
 		rules = {
 			can_create_collaboration_government = no
@@ -226,7 +233,8 @@ ideologies = {
 			"FACTION_NAME_CONSERVATIVE_1"
 		}
 		
-		color = { 209 200 98 }
+		#color = { 209 200 98 }
+		color = { 245 240 140 }
 		
 		rules = {
 			can_create_collaboration_government = no
@@ -256,7 +264,8 @@ ideologies = {
 			"FACTION_NAME_THEOCRATIC_1"
 		}
 		
-		color = { 233 235 218 }
+		#color = { 233 235 218 }
+		color = { 255 255 255 }
 		
 		rules = {
 			can_create_collaboration_government = yes
@@ -284,7 +293,8 @@ ideologies = {
 			"FACTION_NAME_AUTHORITARIAN_1"
 		}
 		
-		color = { 195 196 187 }
+		#color = { 195 196 187 }
+		color = { 135 135 135 }
 		
 		rules = {
 			can_create_collaboration_government = yes
@@ -313,7 +323,8 @@ ideologies = {
 		}
 		
 		#color = { 117 117 113 }
-		color = { 89 89 86 }
+		#color = { 89 89 86 }
+		color = { 50 50 50 }
 		
 		rules = {
 			can_create_collaboration_government = yes
@@ -341,7 +352,8 @@ ideologies = {
 			"FACTION_NAME_ULTRANATIONALIST_1"
 		}
 		
-		color = { 130 76 26 }
+		#color = { 130 76 26 }
+		color = { 60 45 20 }
 		
 		rules = {
 			can_create_collaboration_government = yes

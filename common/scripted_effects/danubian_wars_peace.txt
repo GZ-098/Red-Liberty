@@ -31,6 +31,21 @@ danubian_wars_peace_austria_hungary = {
 			}
 		}
 	}
+	if = {
+		limit = {
+			OR = {
+				HUN = {
+					exists = no
+				}
+				HSR = {
+					exists = no
+				}
+			}
+			AHE = {
+				release = HUN
+			}
+		}
+	}
 }
 
 danubian_wars_peace_italy = {
@@ -82,7 +97,7 @@ danubian_wars_peace_serbia = {
 		if = {
 			limit = {
 				CRO = {
-					exist = no
+					exists = no
 				}
 			}
 			SER = {
