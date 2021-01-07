@@ -792,3 +792,11 @@ BAY = {
 	color = rgb { 158 40 40 }
 	color_ui = rgb { 158 40 40 }
 }
+
+WUK = {
+	color = rgb { 47 127 143 }
+}
+
+KRA = {
+	color = rgb { 176 109 138 }
+}

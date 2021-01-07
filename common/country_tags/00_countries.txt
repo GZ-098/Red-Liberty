@@ -224,3 +224,6 @@ ZHE = "countries/Zhejiang.txt"
 
 FLA = "countries/Flanders.txt"
 WLA = "countries/Wallonia.txt"
+
+WUK = "countries/West Ukraine.txt"
+KRA = "countries/Krakow.txt"

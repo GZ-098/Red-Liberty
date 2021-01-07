@@ -15,7 +15,7 @@ puppet = SER
 
 puppet = ROM 
 
-country_event = { id = ahe_events.1 days = 154 }
+country_event = { id = danubian_war.1 days = 154 }
 
 set_politics = {
 	ruling_party = martial_despotism

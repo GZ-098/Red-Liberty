@@ -14,9 +14,7 @@ on_actions = {
 					ITA = {
 						has_war_with = AHE
 					}
-					AHE = {
-						has_country_flag = danubian_war_participant
-					}
+					has_global_flag = danubian_war_start
 				}
 				danubian_wars_peace_italy = yes
 			}
@@ -28,9 +26,7 @@ on_actions = {
 					POL = {
 						has_war_with = AHE
 					}
-					AHE = {
-						has_country_flag = danubian_war_participant
-					}
+					has_global_flag = danubian_war_start
 				}
 				danubian_wars_peace_poland = yes
 			}
@@ -42,9 +38,7 @@ on_actions = {
 					SER = {
 						has_war_with = AHE
 					}
-					AHE = {
-						has_country_flag = danubian_war_participant
-					}
+					has_global_flag = danubian_war_start
 				}
 				danubian_wars_peace_serbia = yes
 			}
@@ -56,9 +50,7 @@ on_actions = {
 					CZE = {
 						has_war_with = AHE
 					}
-					AHE = {
-						has_country_flag = danubian_war_participant
-					}
+					has_global_flag = danubian_war_start
 				}
 				danubian_wars_peace_czechia = yes
 			}
@@ -70,9 +62,7 @@ on_actions = {
 					UKR = {
 						has_war_with = AHE
 					}
-					AHE = {
-						has_country_flag = danubian_war_participant
-					}
+					has_global_flag = danubian_war_start
 				}
 				danubian_wars_peace_ukraine = yes
 			}	
@@ -84,12 +74,109 @@ on_actions = {
 					ROM = {
 						has_war_with = AHE
 					}
-					AHE = {
-						has_country_flag = danubian_war_participant
-					}
+					has_global_flag = danubian_war_start
 				}
 				danubian_wars_peace_romania = yes
 			}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = AHE
+					}
+					KRA = {
+						has_war_with = AHE
+					}
+					has_global_flag = danubian_war_start
+				}
+				danubian_wars_peace_krakow = yes
+			}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = AHE
+					}
+					WUK = {
+						has_war_with = AHE
+					}
+					has_global_flag = danubian_war_start
+				}
+				danubian_wars_peace_west_ukraine = yes
+			}
+			
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = BUL
+					}
+					SER = {
+						has_war_with = BUL
+					}
+					has_global_flag = danubian_war_start
+					SER = {
+						white_peace = {
+							tag = BUL
+							message = "The war was hard but the peace was won, for better or worse"
+						}
+						transfer_state = 106
+						transfer_state = 801
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = BUL
+					}
+					TUR = {
+						has_war_with = BUL
+					}
+					has_global_flag = danubian_war_start
+					TUR = {
+						white_peace = {
+							tag = BUL
+							message = "The war was hard but the peace was won, for better or worse"
+						}
+						transfer_state = 820
+						transfer_state = 821
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = BUL
+					}
+					ROM = {
+						has_war_with = BUL
+					}
+					has_global_flag = danubian_war_start
+					ROM = {
+						white_peace = {
+							tag = BUL
+							message = "The war was hard but the peace was won, for better or worse"
+						}
+						transfer_state = 77
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = BUL
+					}
+					AHE = {
+						owns_state = 88
+					}
+					has_global_flag = danubian_war_start
+					KRA = {
+						transfer_state = 88
+					}
+				}
+			}
+			
 			clr_global_flag = skip_default_capitulation
 		}
 	}
