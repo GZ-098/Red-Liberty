@@ -58,11 +58,6 @@ if = {
 	}
 }
 
-country_event = {
-    id = redliberty.7
-   days = 38
-}
-
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
@@ -96,6 +91,10 @@ if = {
 
 set_convoys = 500
 
+#country_event = { # curtis dies
+#    id = redliberty.7
+#   days = 38
+#}
 
 set_politics = {
 	ruling_party = libertarian_socialism
@@ -129,10 +128,32 @@ add_ideas = {
 	free_trade
 }
 
+complete_national_focus = USA_the_year_1936
+
 # DIPLOMACY
 set_autonomy = {
 	target = PHI
 	autonomous_state =  autonomy_puppet
+}
+
+create_country_leader = {
+	name = "No Leadership"
+	expire = "1965.1.1"
+	ideology = insurrectionary_anarchism_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Earl Browder"
+	desc = "POLITICS_EARL_BROWDER_DESC"
+	picture = "portrait_USA_earl_browder.dds"
+	expire = "1965.1.1"
+	ideology = proletarian_dictatorship_subtype
+	traits = {
+		
+	}
 }
 
 create_country_leader = {
@@ -147,22 +168,44 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "William Dudley Pelley"
-	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
-	picture = "Portrait_USA_William_Dudley_Pelley.dds"
+	name = "Quentin Roosevelt"
+	desc = "POLITICS_QUENTIN_ROOSEVELT_DESC"
+	#picture = "portrait_USA_earl_browder.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = progressive_liberalism_subtype
 	traits = {
 		
 	}
 }
 
 create_country_leader = {
-	name = "Earl Browder"
-	desc = "POLITICS_EARL_BROWDER_DESC"
-	picture = "portrait_USA_earl_browder.dds"
+	name = "William Dudley Pelley"
+	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
+	picture = "Portrait_USA_William_Dudley_Pelley.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = reactionary_theocracy_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Huey Long"
+	desc = "POLITICS_HUEY_LONG_DESC"
+	#picture = "Portrait_USA_William_Dudley_Pelley.dds"
+	expire = "1965.1.1"
+	ideology = authoritarian_republicanism_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Charles Lindbergh"
+	desc = "POLITICS_CHARLES_LINDBERGH_DESC"
+	#picture = "Portrait_USA_William_Dudley_Pelley.dds"
+	expire = "1965.1.1"
+	ideology = ultranational_statism_subtype
 	traits = {
 		
 	}

@@ -43,7 +43,7 @@ ideas = {
 				
 			modifier = {
 				political_power_gain = -0.5
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.2
 				production_speed_industrial_complex_factor = -0.15
 				production_speed_arms_factory_factor = -0.15
 				production_factory_efficiency_gain_factor = -0.05
@@ -69,8 +69,9 @@ ideas = {
 				
 			modifier = {
 				war_support_factor = -0.1
-				stability_factor = 0.1
+				stability_factor = 0.15
 				mobilization_speed = -0.25
+				conscription_factor = -0.15
 			}
 		}
 	} 

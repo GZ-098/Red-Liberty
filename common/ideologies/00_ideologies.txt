@@ -352,8 +352,8 @@ ideologies = {
 			"FACTION_NAME_ULTRANATIONALIST_1"
 		}
 		
-		#color = { 130 76 26 }
-		color = { 60 45 20 }
+		color = { 130 76 26 }
+		#color = { 60 45 20 }
 		
 		rules = {
 			can_create_collaboration_government = yes

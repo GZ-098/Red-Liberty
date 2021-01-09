@@ -1,0 +1,321 @@
+shared_focus = {
+    id = USA_the_year_1936
+	icon = GFX_USA_the_year_1936
+	
+    x = 8
+	
+	cost = 0
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_continue_the_work
+	icon = GFX_USA_continue_the_work
+	
+    x = -2
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_the_year_1936
+	mutually_exclusive = {
+		focus = USA_prepare_the_campaign
+	}
+	prerequisite = { focus = USA_the_year_1936 }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_cut_mil_budget
+	icon = GFX_USA_cut_mil_budget
+	
+    x = -1
+	y = 1
+	
+	cost = 3
+	relative_position_id = USA_continue_the_work
+	prerequisite = { focus = USA_continue_the_work }
+    completion_reward = {
+        delete_unit_template_and_units = {
+			division_template = "Organized Reserve"
+			disband = yes
+		}
+		# add event about macarthur arguing with thomas?
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_rural_electrification
+	icon = GFX_USA_rural_electrification
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_cut_mil_budget
+	prerequisite = { focus = USA_cut_mil_budget }
+    completion_reward = {
+        # some infrastructure, event about congress passing rural elec act
+		374 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		382 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		383 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_increase_corp_taxes
+	icon = GFX_USA_increase_corp_taxes
+	
+    x = 1
+	y = 1
+	
+	cost = 3
+	relative_position_id = USA_continue_the_work
+	prerequisite = { focus = USA_continue_the_work }
+    completion_reward = {
+        add_political_power = 50
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_increase_wpa_spending
+	icon = GFX_USA_increase_wpa_spending
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_increase_corp_taxes
+	prerequisite = { focus = USA_increase_corp_taxes }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_social_security
+	icon = GFX_USA_social_security
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_rural_electrification
+	prerequisite = { focus = USA_rural_electrification }
+	prerequisite = { focus = USA_increase_wpa_spending }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_a_new_america
+	icon = GFX_USA_a_new_america
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_social_security
+	prerequisite = { focus = USA_social_security }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_prepare_the_campaign
+	icon = GFX_USA_prepare_the_campaign
+	
+    x = 2
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_the_year_1936
+	mutually_exclusive = {
+		focus = USA_continue_the_work
+	}
+	prerequisite = { focus = USA_the_year_1936 }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_campaign_east_coast
+	icon = GFX_USA_campaign_east_coast
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_prepare_the_campaign
+	prerequisite = { focus = USA_prepare_the_campaign }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_campaign_great_lakes
+	icon = GFX_USA_campaign_great_lakes
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_prepare_the_campaign
+	prerequisite = { focus = USA_prepare_the_campaign }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_reaching_new_heights
+	icon = GFX_USA_reaching_new_heights
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_campaign_great_lakes
+	prerequisite = { focus = USA_campaign_great_lakes }
+	prerequisite = { focus = USA_campaign_east_coast }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_campaign_west_coast
+	icon = GFX_USA_campaign_west_coast
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_reaching_new_heights
+	prerequisite = { focus = USA_reaching_new_heights }
+    completion_reward = {
+        country_event = {
+			id = united_states.4
+			days = 1
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_campaign_rockies
+	icon = GFX_USA_campaign_rockies
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_reaching_new_heights
+	prerequisite = { focus = USA_reaching_new_heights }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_not_so_solid_south
+	icon = GFX_USA_not_so_solid_south
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_campaign_rockies
+	prerequisite = { focus = USA_campaign_west_coast }
+	prerequisite = { focus = USA_campaign_rockies }
+    completion_reward = {
+        country_event = {
+			id = united_states.7
+			days = 1
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}

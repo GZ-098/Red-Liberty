@@ -10,10 +10,10 @@ focus_tree = {
 	}
 	continuous_focus_position = {
 		x = 25
-		y = 125
+		y = -1250
 	}
 	default = no
-	shared_focus = USA_the_thomas_admin
+	shared_focus = USA_the_year_1936
 }
 
 focus_tree = {
