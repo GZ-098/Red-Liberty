@@ -5,6 +5,7 @@ debug_category = {
 		is_debug = yes
 	}
 	visible = {
-		is_debug = yes
+		#is_debug = yes
+		always = no
 	}
 }

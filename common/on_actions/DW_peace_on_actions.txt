@@ -187,10 +187,14 @@ on_actions = {
 							tag = TUR
 						}
 					}
-					SER = {
-						has_war_with = BUL
-					}
 					has_global_flag = danubian_war_start
+				}
+				if = {
+					limit = {
+						SER = {
+							has_war_with = BUL
+						}
+					}
 					SER = {
 						white_peace = {
 							tag = BUL
@@ -200,24 +204,12 @@ on_actions = {
 						transfer_state = 801
 					}
 				}
-			}
-			
-			if = {
-				limit = {
-					ROOT = {
-						original_tag = BUL
-					}
-					FROM = {
-						OR = {
-							tag = SER
-							tag = ROM
-							tag = TUR
+				if = {
+					limit = {
+						TUR = {
+							has_war_with = BUL
 						}
 					}
-					TUR = {
-						has_war_with = BUL
-					}
-					has_global_flag = danubian_war_start
 					TUR = {
 						white_peace = {
 							tag = BUL
@@ -227,24 +219,12 @@ on_actions = {
 						transfer_state = 821
 					}
 				}
-			}
-			
-			if = {
-				limit = {
-					ROOT = {
-						original_tag = BUL
-					}
-					FROM = {
-						OR = {
-							tag = SER
-							tag = ROM
-							tag = TUR
+				if = {
+					limit = {
+						ROM = {
+							has_war_with = BUL
 						}
 					}
-					ROM = {
-						has_war_with = BUL
-					}
-					has_global_flag = danubian_war_start
 					ROM = {
 						white_peace = {
 							tag = BUL

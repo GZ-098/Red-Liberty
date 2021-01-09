@@ -1,5 +1,39 @@
 spritetypes = {
 	
+	### INTRO TREE ###
+	
+	SpriteType = {
+		name = "GFX_USA_the_year_1936"
+		texturefile = "gfx/interface/goals/USA/USA_the_year_1936.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_continue_the_work"
+		texturefile = "gfx/interface/goals/USA/USA_continue_the_work.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_cut_mil_budget"
+		texturefile = "gfx/interface/goals/USA/USA_cut_mil_buget.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_increase_corp_taxes"
+		texturefile = "gfx/interface/goals/USA/USA_increase_corp_taxes.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_prepare_the_campaign"
+		texturefile = "gfx/interface/goals/USA/USA_prepare_the_campaign.png"
+	}
+	
+	### THOMAS 2ND TERM ###
+	
+	SpriteType = {
+		name = "GFX_USA_socialist_cabinet_focus"
+		texturefile = "gfx/interface/goals/USA/USA_a_socialist_cabinet.png"
+	}
+	
 	SpriteType = {
 		name = "GFX_USA_socialist_cabinet_focus"
 		texturefile = "gfx/interface/goals/USA/USA_a_socialist_cabinet.png"

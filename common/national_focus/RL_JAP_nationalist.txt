@@ -1,0 +1,36 @@
+shared_focus = {
+    id = JAP_spiders_web
+	icon = GFX_JAP_spiders_web
+	
+    x = 8
+	y = 0
+	
+	cost = 2
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = JAP_send_troops
+	icon = GFX_JAP_send_troops
+	
+    x = -1
+	y = 1
+	
+	cost = 4
+	relative_position_id = JAP_spiders_web
+	prerequisite = { focus = JAP_spiders_web }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+

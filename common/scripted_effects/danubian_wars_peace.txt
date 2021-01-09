@@ -41,9 +41,21 @@ danubian_wars_peace_austria_hungary = {
 					exists = no
 				}
 			}
-			AHE = {
-				release = HUN
+		}
+		AHE = {
+			release = HUN
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				CZE = {
+					exists = no
+				}
 			}
+		}
+		AHE = {
+			release = CZE
 		}
 	}
 }

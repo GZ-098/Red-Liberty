@@ -309,7 +309,7 @@ country_event = {
 	
 	option = {
 		name = "That was my idea, Saito-sama."
-		load_focus_tree = japan_paths
+		load_focus_tree = JAP_showa_democracy_tree
 		add_political_power = 25
 		add_popularity = {
 			ideology = progressive_liberalism
@@ -323,7 +323,6 @@ country_event = {
 			ideology = libertarian_socialism
 			popularity = 0.01
 		}
-		complete_national_focus = jap_showa_democracy_liberal
 		ai_chance = { factor = 100 }
 	}
 }
@@ -351,8 +350,7 @@ country_event = {
 		set_country_flag = despotist_coalition
 		set_country_flag = ultranationalist_coalition
 		
-		load_focus_tree = japan_paths
-		complete_national_focus = jap_nationalist
+		load_focus_tree = JAP_nationalist_tree
 		
 		add_political_power = 50
 		add_stability = -0.15

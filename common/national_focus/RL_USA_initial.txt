@@ -28,7 +28,7 @@ shared_focus = {
 	}
 	prerequisite = { focus = USA_the_year_1936 }
     completion_reward = {
-        
+        custom_effect_tooltip = USA_continue_the_work_tt
     }
 	
 	ai_will_do = {
@@ -111,6 +111,7 @@ shared_focus = {
 	prerequisite = { focus = USA_continue_the_work }
     completion_reward = {
         add_political_power = 50
+		# add event about undistributed profits tax
     }
 	
 	ai_will_do = {
@@ -190,7 +191,7 @@ shared_focus = {
 	}
 	prerequisite = { focus = USA_the_year_1936 }
     completion_reward = {
-        
+        custom_effect_tooltip = USA_prepare_the_campaign_tt
     }
 	
 	ai_will_do = {
@@ -228,7 +229,10 @@ shared_focus = {
 	relative_position_id = USA_prepare_the_campaign
 	prerequisite = { focus = USA_prepare_the_campaign }
     completion_reward = {
-        
+        country_event = {
+			id = united_states.3
+			days = 1
+		}
     }
 	
 	ai_will_do = {
