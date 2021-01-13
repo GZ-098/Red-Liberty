@@ -9,6 +9,9 @@ set_country_flag = progressive_coalition
 set_country_flag = market_libertarian_coalition
 set_country_flag = conservative_coalition
 
+set_variable = { JAP_socialist_influence = 21 }
+set_variable = { JAP_liberal_influence = 79 }
+
 country_event = { # intro event
 	id = japan.1
 	days = 1

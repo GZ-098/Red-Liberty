@@ -6,6 +6,7 @@
  USA_congress_voting_none:0 "There is currently no important legislation being considered."
  
  USA_congress_voting_debug_bill_example:0 "§YCongress§! is currently considering the §YDebug Act§!, which currently expects the support of §G[?USA.representatives_support]§! Representatives and §G[?USA.senators_support]§! Senators.\n\n§G[?republican_supporting_reps]§! Republican Representative(s) support this bill.\n§G[?democrat_supporting_reps]§! Democratic Representative(s) support this bill.\n§G[?socialist_supporting_reps]§! Socialist Representative(s) support this bill.\n§G[?fascist_supporting_reps]§! Fascist Representative(s) support the bill.\n§G[?communist_supporting_reps]§! Communist Representative(s) support the bill.\n\n§G[?republican_supporting_senators]§! Republican Senator(s) support the bill.\n§G[?democrat_supporting_senators]§! Democratic Senator(s) support the bill.\n§G[?socialist_supporting_senators]§! Socialist Senator(s) support the bill.\n§G[?fascist_supporting_senators]§! Fascist Senator(s) support the bill.\n§G[?communist_supporting_senators]§! Communist Senator(s) support the bill."
+ USA_congress_voting_social_security:0 "§YCongress§! is currently considering the §YSocial Security Act§!, which currently expects the support of §G[?USA.representatives_support]§! Representatives and §G[?USA.senators_support]§! Senators.\n\n§G[?republican_supporting_reps]§! Republican Representative(s) support this bill.\n§G[?democrat_supporting_reps]§! Democratic Representative(s) support this bill.\n§G[?socialist_supporting_reps]§! Socialist Representative(s) support this bill.\n§G[?fascist_supporting_reps]§! Fascist Representative(s) support the bill.\n§G[?communist_supporting_reps]§! Communist Representative(s) support the bill.\n\n§G[?republican_supporting_senators]§! Republican Senator(s) support the bill.\n§G[?democrat_supporting_senators]§! Democratic Senator(s) support the bill.\n§G[?socialist_supporting_senators]§! Socialist Senator(s) support the bill.\n§G[?fascist_supporting_senators]§! Fascist Senator(s) support the bill.\n§G[?communist_supporting_senators]§! Communist Senator(s) support the bill."
  
  not_working:0 "\nWHY IS ONLY THIS LINE IN PARTICULAR NOT WORKING"
  
@@ -13,6 +14,8 @@
  
  start_vote:0 "Start Voting"
  start_vote_tt:0 "The current bill will be voted on in congress."
+ vote_will_fail_tt:0 "Currently, the current bill §RDOES NOT§! have enough votes to pass"
+ vote_will_pass_tt:0 "Currently, the current bill §GDOES§! have enough votes to pass"
  
  USA_bill_timer:0 "Hold the Vote"
  USA_bill_timer_pass_criteria:0 "§YA vote has been held on this Bill§!"
@@ -32,14 +35,16 @@
  dems_talking:0 "The Democrats are willing to negotiate."
  dems_fully_support:0 "The Democrats don't fully support this bill."
  
+ communists_fully_support:0 "The Communists don't fully support this bill."
+ 
  USA_congress_socialist_rep_count:0 "\n§R[?representatives_socialist]§! Representative(s) support the §RSocialist Party of America§!."
  USA_congress_socialist_senator_count:0 "\n§R[?senators_socialist]§! Senator(s) support the §RSocialist Party of America§!."
  
- USA_congress_fascist_rep_count:0 "\n§g[?representatives_fascist]§! Representative(s) support the §gNational League of Fascists§!."
- USA_congress_fascist_senator_count:0 "\n§g[?senators_fascist]§! Senator(s) support the §gNational League of Fascists§!."
+ USA_congress_fascist_rep_count:0 "\n§g[?representatives_fascist]§! Representative(s) support the §gAmerica First Party§!."
+ USA_congress_fascist_senator_count:0 "\n§g[?senators_fascist]§! Senator(s) support the §gAmerica First Party§!."
  
- USA_congress_communist_rep_count:0 "\n§R[?representatives_communist]§! Representative(s) support the §RCommunist Party of America§!."
- USA_congress_communist_senator_count:0 "\n§R[?senators_communist]§! Senator(s) support the §RCommunist Party of America§!."
+ USA_congress_communist_rep_count:0 "\n§R[?representatives_communist]§! Representative(s) support the §RCommunist Party USA§!."
+ USA_congress_communist_senator_count:0 "\n§R[?senators_communist]§! Senator(s) support the §RCommunist Party USA§!."
  
  USA_govt_controlled_by_republicans:0 "Currently, §YCongress§! is controlled by the §RRepublican Party§!."
  USA_govt_controlled_by_democrats:0 "Currently, Congress is controlled by the §CDemocratic Party§!."
@@ -52,4 +57,10 @@
  us_bill.1.t_passed:0 "The Debug Act - Passed"
  us_bill.1.a:0 "A great victory."
  USA_debug_act_effect:0 "If passed, the §YDebug Act§! will provide the following bonus:\nStability: §G+2%§!\n\n"
+ 
+ start_social_security_act:0 "The Social Security Act"
+ social_security_passed:0 "We have passed the Social Security Act."
+ us_bill.2.t_passed:0 "The Social Security Act - Passed"
+ us_bill.2.a:0 "Finally, the people can rest easy."
+ USA_social_security_act_effect:0 "If passed, the §YSocial Security Act§! will provide the following bonus:\nModify §YThe Great Depression§! by\nDaily Political Power Gain: §G+0.10§!\nConsumer Goods Factories: §Y-5.0%§!\n§YCivilian Factory§! construction speed: §G+5.00%§!\n\n"
  

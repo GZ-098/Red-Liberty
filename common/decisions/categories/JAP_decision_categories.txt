@@ -1,0 +1,10 @@
+JAP_liberal_socialist_influence_category = {
+	icon = usa_congress
+	
+	allowed = {
+		tag = JAP
+	}
+	visible = {
+		always = yes
+	}
+}

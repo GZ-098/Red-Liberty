@@ -5,8 +5,15 @@
  
  POLITICS_NORMAN_THOMAS_DESC:0 "A Princeton graduate and Presbyterian minister, Norman Thomas made his first impression in politics with his pacifist, anti-war activism during the Great War, a position that drew him to the Socialist Party of America, who had delivered on their promises to keep America out of it. He gained popularity as an SPA journalist and was elected governor of New York in 1924. When Eugene V. Debs died in 1926, Thomas became the new head of the party as its leading non-immigrant member. He lost his first bid for president to Herbert Hoover in 1928, but after the Stock Market crash in 1929, Hoover’s popularity plummeted, and in 1932 President Norman Thomas and the SPA won the Presidency in a landslide. For all of his term, Norman Thomas has set about fixing the Great Depression with large amounts of government spending, public works projects, bureaucratic expansion, and worker-led recovery efforts. His recovery policies have been hindered and watered down by political resistance from the center and right wing, but where they have been enacted, have been both successful and popular."
  
+ USA_red_liberty:0 "Red Liberty"
  USA_red_liberty_desc:0 "After the election of President Eugene V. Debs in 1912, the Socialist Party of America became (and has remained) a major player in US politics. Though they have not been able to fully implement their agenda due to liberal and right-wing resistance, America has been changed by their radical pro-worker policies. Radical left-wing ideas are popular and normalized, which has in turn fostered greater radicalism on the right."
- USA_the_great_depression_desc:0 "After the Wall Street Crash of 1929, the American economy took a nosedive. While it took time for the effects to be felt by the workers, when reality hit, it hit hard. Massive levels of unemployment, currency deflation, and the bank collapses that erased the life savings of millions all caused economic damage unprecedented in history. Tens of millions live in poverty, and many feel they have woken up from the American Dream."
+ USA_the_great_depression_1:0 "The Great Depression"
+ USA_the_great_depression_2:0 "The Great Depression"
+ USA_the_great_depression_3:0 "The Great Depression"
+ USA_the_great_depression_1_desc:0 "After the Wall Street Crash of 1929, the American economy took a nosedive. While it took time for the effects to be felt by the workers, when reality hit, it hit hard. Massive levels of unemployment, currency deflation, and the bank collapses that erased the life savings of millions all caused economic damage unprecedented in history. Tens of millions live in poverty, and many feel they have woken up from the American Dream."
+ USA_the_great_depression_2_desc:0 "After the Wall Street Crash of 1929, the American economy took a nosedive. While it took time for the effects to be felt by the workers, when reality hit, it hit hard. Massive levels of unemployment, currency deflation, and the bank collapses that erased the life savings of millions all caused economic damage unprecedented in history. Tens of millions live in poverty, and many feel they have woken up from the American Dream."
+ USA_the_great_depression_3_desc:0 "After the Wall Street Crash of 1929, the American economy took a nosedive. While it took time for the effects to be felt by the workers, when reality hit, it hit hard. Massive levels of unemployment, currency deflation, and the bank collapses that erased the life savings of millions all caused economic damage unprecedented in history. Tens of millions live in poverty, and many feel they have woken up from the American Dream."
+ USA_pacifism:0 "Widespread Pacifism"
  USA_pacifism_desc:0 "One of the most popular campaign promises of Eugene Debs was to keep America out of conflict. This promise he absolutely delivered on. The USA stayed out of the Great War, and hasn’t seen any real military conflict in decades. The military’s numbers and funding are low, and jingoism is not an ideal many Americans live by. Most Americans are glad that the country is at peace, and desire for it to stay that way."
 
  USA_insurrectionary_anarchism_party:0 "--"
@@ -24,10 +31,6 @@
  USA_authoritarian_republicanism_party:0 "AFP"
  USA_martial_despotism_party:0 "AFP"
  USA_ultranational_statism_party:0 "AFP"
-
- USA_red_liberty:0 "Red Liberty"
- USA_the_great_depression:0 "The Great Depression"
- USA_pacifism:0 "Widespread Pacifism"
  
  USA_the_year_1936:0 "The Year 1936"
  USA_continue_the_work:0 "Continue the Work"

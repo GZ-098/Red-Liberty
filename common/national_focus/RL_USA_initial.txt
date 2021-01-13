@@ -150,7 +150,8 @@ shared_focus = {
 	prerequisite = { focus = USA_rural_electrification }
 	prerequisite = { focus = USA_increase_wpa_spending }
     completion_reward = {
-        
+        unlock_decision_tooltip = start_social_security_act
+		custom_effect_tooltip = USA_social_security_act_effect
     }
 	
 	ai_will_do = {
@@ -165,11 +166,16 @@ shared_focus = {
     x = 0
 	y = 1
 	
+	available = {
+		has_country_flag = social_security_passed
+	}
+	
 	cost = 5
 	relative_position_id = USA_social_security
 	prerequisite = { focus = USA_social_security }
     completion_reward = {
-        
+        add_stability = 0.05
+		add_political_power = 50
     }
 	
 	ai_will_do = {
