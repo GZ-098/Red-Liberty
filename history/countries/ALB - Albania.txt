@@ -9,54 +9,35 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = revolutionary_socialism
+	ruling_party = martial_despotism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 0
+	social_democracy = 20
+	progressive_liberalism = 16
+	market_libertarianism = 2
+	national_conservatism = 14
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 27
+	martial_despotism = 17
+	ultranational_statism = 4
 }
 
 set_convoys = 5
 
-#Victor Emmanuel III of Italy after 39
 create_country_leader = {
-	name = "King Zog"
-	desc = "POLITICS_KING_ZOG_DESC"
-	picture = "Portrait_Albania_King_Zog.dds"
+	name = "Vilhelm I"
+	#desc = ""
+	#picture = ""
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = martial_despotism_subtype
 	traits = {
 		#
 	}
 }
-
-create_country_leader = {
-	name = "Enver Hoxha"
-	desc = "POLITICS_KING_ZOG_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		staunch_stalinist
-	}
-}
-
-create_field_marshal = {
-	name = "Xhemal Aranitasi"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { }
-	skill = 2
-	attack_skill = 1
-    defense_skill = 3
-    planning_skill = 2
-    logistics_skill = 1
-}
-

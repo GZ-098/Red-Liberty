@@ -49,7 +49,7 @@ guiTypes = {
 				spriteType = "GFX_ideology_unknown"
 				position = { x = 158 y = 0 }
 				Orientation = "UPPER_LEFT"
-				scale = 0.85
+				#scale = 0.85
 				frame = 1
 			}
 			

@@ -18,13 +18,38 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_rural_electrification"
+		texturefile = "gfx/interface/goals/USA/USA_rural_electrification.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_increase_corp_taxes"
 		texturefile = "gfx/interface/goals/USA/USA_increase_corp_taxes.png"
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_increase_wpa_spending"
+		texturefile = "gfx/interface/goals/USA/USA_increase_wpa_spending.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_social_security"
+		texturefile = "gfx/interface/goals/USA/USA_social_security.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_a_new_america"
+		texturefile = "gfx/interface/goals/USA/USA_new_america.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_prepare_the_campaign"
 		texturefile = "gfx/interface/goals/USA/USA_prepare_the_campaign.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_campaign_great_lakes"
+		texturefile = "gfx/interface/goals/USA/USA_campaign_great_lakes.png"
 	}
 	
 	### THOMAS 2ND TERM ###

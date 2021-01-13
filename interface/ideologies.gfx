@@ -1,6 +1,11 @@
 spriteTypes = {	
 	spriteType = {
-		name = "GFX_ideology_libertarian_socialism_group" 
-		texturefile = "gfx/interface/ideologies/libertarian_socialism_group.tga"
-	} 
+		name = "GFX_ideology_libertarian_socialism_group"
+		texturefile = "gfx/interface/ideologies/libertarian_socialism_group.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_insurrectionary_anarchism_group" 
+		texturefile = "gfx/interface/ideologies/insurrectionary_anarchism_group.png"
+	}
 }
