@@ -1,0 +1,25 @@
+state={
+	id=823
+	name="STATE_823"
+	
+	history={
+		owner = JAP
+		buildings = {
+			9974 = {
+				naval_base  = 3
+				coastal_bunker = 1
+				bunker = 1
+				infrastructure = 3 
+			}
+		}
+		add_core_of = BUL
+		add_core_of = GRE
+	}
+	
+	provinces={
+		9974 10058
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category = rural
+}
