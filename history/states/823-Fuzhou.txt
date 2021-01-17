@@ -1,25 +1,29 @@
+
 state={
 	id=823
 	name="STATE_823"
-	
+
 	history={
 		owner = JAP
 		buildings = {
-			9974 = {
-				naval_base  = 3
+			infrastructure = 4
+			4196 = {
+				naval_base = 3
 				coastal_bunker = 1
 				bunker = 1
-				infrastructure = 3 
+
 			}
 		}
-		add_core_of = BUL
-		add_core_of = GRE
+		victory_points = {
+			4196 3 
+		}
+		add_core_of = CHI
 	}
-	
+
 	provinces={
-		9974 10058
+		4196 
 	}
-	manpower=1000
+	manpower=3000000
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }
