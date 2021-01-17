@@ -17,7 +17,7 @@ country_event = { # intro event
 
 country_event = { # east coast campaign
 	id = united_states.2
-	title = ""
+	title = "The Red Apple"
 	desc = united_states.2.desc
 	
 	is_triggered_only = yes
@@ -25,7 +25,12 @@ country_event = { # east coast campaign
 	fire_only_once = yes
 
 	option = {
-		name = ""
+		name = "A municipal revolution."
+		add_popularity = {
+			ideology = libertarian_socialism
+			popularity = 0.01
+		}
+		add_political_power = 10
 	}
 }
 
@@ -94,7 +99,15 @@ country_event = { # midwest campaign
 	fire_only_once = yes
 
 	option = {
-		name = ""
+		name = "One step at a time..."
+		add_popularity = {
+			ideology = libertarian_socialism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = national_conservatism
+			popularity = -0.01
+		}
 	}
 }
 

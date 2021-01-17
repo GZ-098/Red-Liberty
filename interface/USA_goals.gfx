@@ -52,6 +52,31 @@ spritetypes = {
 		texturefile = "gfx/interface/goals/USA/USA_campaign_great_lakes.png"
 	}
 	
+	SpriteType = {
+		name = "GFX_USA_campaign_east_coast"
+		texturefile = "gfx/interface/goals/USA/USA_campaign_east_coast.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_reaching_new_heights"
+		texturefile = "gfx/interface/goals/USA/USA_reaching_new_heights.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_campaign_rockies"
+		texturefile = "gfx/interface/goals/USA/USA_campaign_rockies.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_campaign_west_coast"
+		texturefile = "gfx/interface/goals/USA/USA_campaign_west_coast.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_not_so_solid_south"
+		texturefile = "gfx/interface/goals/USA/USA_campaign_south.png"
+	}
+	
 	### THOMAS 2ND TERM ###
 	
 	SpriteType = {

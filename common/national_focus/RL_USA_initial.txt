@@ -216,7 +216,10 @@ shared_focus = {
 	relative_position_id = USA_prepare_the_campaign
 	prerequisite = { focus = USA_prepare_the_campaign }
     completion_reward = {
-        
+        country_event = {
+			id = united_states.2
+			days = 1
+		}
     }
 	
 	ai_will_do = {
