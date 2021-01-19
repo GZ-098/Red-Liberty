@@ -1,0 +1,20 @@
+
+state={
+	id=825
+	name="STATE_825"
+	
+	history={
+		owner = YUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = YUN
+	}
+	
+	provinces={
+		1367 1395 2091 4925 7256 8026 10132 12274 12705 12767 
+	}
+	manpower=10000000
+	buildings_max_level_factor=1.000
+	state_category = large_town
+}

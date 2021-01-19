@@ -1,5 +1,6 @@
 add_namespace = united_states
 add_namespace = united_states_flavor
+add_namespace = united_states_thomas
 
 country_event = { # intro event
 	id = united_states.1
