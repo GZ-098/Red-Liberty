@@ -1482,6 +1482,23 @@ country_event = {
 	} 
 }
 
+#Info that new options for spreading communism to the Balkans are available
+country_event = {
+	id = italy_events.59
+	title = italy_events.59.t
+	desc = italy_events.59.d
+	picture = GFX_filler
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Our Revolution will Spread!"
+	} 
+}
+
 ####################
 ##	 US events   ##
 ###################
