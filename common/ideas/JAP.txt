@@ -3,7 +3,6 @@ ideas = {
 	country = {
 		
 		JAP_japanese_democracy = {
-			picture = GFX_unknown_idea
 			allowed = {
 				tag = JAP
 			}
@@ -23,7 +22,6 @@ ideas = {
 		}
 		
 		JAP_military_influence = {
-			picture = GFX_unknown_idea
 			allowed = {
 				tag = JAP
 			}
@@ -44,7 +42,6 @@ ideas = {
 		}
 		
 		JAP_echoes_of_the_depression = {
-			picture = GFX_unknown_idea
 			allowed = {
 				tag = JAP
 			}
@@ -65,7 +62,6 @@ ideas = {
 		}
 		
 		JAP_twenty_one_demands = {
-			picture = GFX_unknown_idea
 			allowed = {
 				tag = JAP
 			}

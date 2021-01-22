@@ -25,6 +25,11 @@
  
  inukai_ded:0 "Inukai has died"
  
+ JAP_japanese_democracy:0 "Japanese Democracy"
+ JAP_military_influence:0 "Military Influence"
+ JAP_echoes_of_the_depression:0 "Echoes of the Showa Economic Crisis"
+ JAP_twenty_one_demands:0 "Legacy of the Twenty-One Demands"
+ 
  JAP_liberal_socialist_influence_category:0 "The Coalition"
  JAP_liberal_socialist_influence_category_desc:0 "oh god libtards versus socialists what they gonna do\n\n§RSocialist Influence: [?JAP_socialist_influence]§!\n§YLiberal Influence: [?JAP_liberal_influence]§!"
  JAP_deregulate_corps:0 "§YDeregulate Corporations§!"

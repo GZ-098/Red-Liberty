@@ -55,10 +55,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ORE/ORE_cossacks.tga"
 	}
 	
-
-#########################################
-#Italian nat spirts
-#########################################
+	### ITA ###
+	
 	spriteType = {
 		name = "GFX_idea_ITA_preparing_the_people_for_war"
 		texturefile = "gfx/interface/ideas/ITA/ITA_preparing_the_people_for_war.tga"
@@ -82,10 +80,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ITA_complete_economic_failure"
 		texturefile = "gfx/interface/ideas/ITA/ITA_complete_economic_failure.tga"
-	}	
-#########################################
-#Italian nat spirts
-#########################################
+	}
+	
+	### IDE ###
+
 	spriteType = {
 		name = "GFX_idea_IDE_fighting_for_our_people"
 		texturefile = "gfx/interface/ideas/IDE/IDE_fighting_for_our_people.dds"
@@ -195,5 +193,27 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_GER_unpaid_war_expenses"
 		texturefile = "gfx/interface/ideas/GER_unpaid_war_expenses.dds"
+	}
+	
+	### JAP ###
+	
+	spriteType = {
+		name = "GFX_idea_JAP_japanese_democracy"
+		texturefile = "gfx/interface/ideas/JAP/taisho_democracy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_JAP_military_influence"
+		texturefile = "gfx/interface/ideas/JAP/mil_vs_nav_death_battle.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_JAP_echoes_of_the_depression"
+		texturefile = "gfx/interface/ideas/JAP/echos_of_the_time_when_we_got_sad.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_JAP_twenty_one_demands"
+		texturefile = "gfx/interface/ideas/JAP/i_am_being_held_in_a_basment_by_a_military_officer_please_send_help.png"
 	}
 }
