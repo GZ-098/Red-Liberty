@@ -1,14 +1,12 @@
 shared_focus = {
-    id = USA_the_thomas_admin
+    id = USA_the_second_thomas_admin
+	icon = GFX_USA_the_second_thomas_admin
 	
-    x = 9
+    x = 8
 	
 	cost = 2
     completion_reward = {
-        country_event = {
-			id = redliberty.2
-			days = 1
-		}
+        
     }
 	
 	ai_will_do = {
@@ -17,23 +15,74 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_socialist_cabinet
-	icon = GFX_USA_socialist_cabinet_focus
+    id = USA_our_mandate
+	icon = GFX_USA_our_mandate
+	
+    x = 0
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_the_second_thomas_admin
+	prerequisite = { focus = USA_the_second_thomas_admin }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_butter_em_up
+	icon = GFX_USA_butter_em_up
+	
+    x = -4
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_our_mandate
+	prerequisite = { focus = USA_our_mandate }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_robinson_patman_act
+	icon = GFX_USA_robinson_patman_act
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_butter_em_up
+	prerequisite = { focus = USA_butter_em_up }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_bonneville_project
+	icon = GFX_USA_bonneville_project
 	
     x = 1
 	y = 1
 	
-	cost = 4
-	relative_position_id = USA_the_thomas_admin
-	mutually_exclusive = {
-		focus = USA_liberal_cabinet
-	}
-	prerequisite = { focus = USA_the_thomas_admin }
+	cost = 5
+	relative_position_id = USA_butter_em_up
+	prerequisite = { focus = USA_butter_em_up }
     completion_reward = {
-        country_event = {
-			id = redliberty.4
-			days = 1
-		}
+        
     }
 	
 	ai_will_do = {
@@ -42,45 +91,18 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_liberal_cabinet
-	icon = GFX_USA_liberal_cabinet_focus
-	
-	x = -1
-	y = 1
-	
-	cost = 4
-	relative_position_id = USA_the_thomas_admin
-	mutually_exclusive = {
-		focus = USA_socialist_cabinet
-	}
-	prerequisite = { focus = USA_the_thomas_admin }
-    completion_reward = {
-        country_event = {
-			id = redliberty.3
-			days = 1
-		}
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_plans_for_presidency
-	icon = GFX_USA_plans_for_presidency_focus
+    id = USA_farm_tenant_act
+	icon = GFX_USA_farm_tenant_act
 	
     x = 1
 	y = 1
 	
-	cost = 4
-	relative_position_id = USA_liberal_cabinet
-	prerequisite = { focus = USA_liberal_cabinet focus = USA_socialist_cabinet }
+	cost = 5
+	relative_position_id = USA_robinson_patman_act
+	prerequisite = { focus = USA_robinson_patman_act }
+	prerequisite = { focus = USA_bonneville_project }
     completion_reward = {
-        country_event = {
-			id = redliberty.5
-			days = 1
-		}
+        
     }
 	
 	ai_will_do = {
@@ -89,25 +111,17 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_review_the_constitution
-	icon = GFX_USA_review_the_constitution_focus
+    id = USA_strengthen_executive_branch
+	icon = GFX_USA_strengthen_executive_branch
 	
+    x = 0
 	y = 1
 	
-	cost = 4
-	relative_position_id = USA_plans_for_presidency
-	prerequisite = { focus = USA_plans_for_presidency }
+	cost = 5
+	relative_position_id = USA_our_mandate
+	prerequisite = { focus = USA_our_mandate }
     completion_reward = {
-        country_event = {
-			id = redliberty.6
-			days = 1
-		}
-		hidden_effect = {
-			load_focus_tree = {
-				tree = USA_RL_Thomas_tree
-				keep_completed = yes
-			}
-		}
+        
     }
 	
 	ai_will_do = {
@@ -116,21 +130,18 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_accept_our_limitations
+    id = USA_pack_the_court
+	icon = GFX_USA_pack_the_court
 	
-	x = -1
+    x = -1
 	y = 1
 	
-	allow_branch = {
-		has_completed_focus = USA_review_the_constitution
-	}
-	
-	cost = 2
-	relative_position_id = USA_review_the_constitution
+	cost = 10
+	relative_position_id = USA_strengthen_executive_branch
+	prerequisite = { focus = USA_strengthen_executive_branch }
 	mutually_exclusive = {
-		focus = USA_we_cannot_be_impeded
+		focus = USA_accept_the_rulings
 	}
-	prerequisite = { focus = USA_review_the_constitution }
     completion_reward = {
         
     }
@@ -141,54 +152,18 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_toe_the_line
+    id = USA_accept_the_rulings
+	icon = GFX_USA_accept_the_rulings
 	
-	x = -1
+    x = 1
 	y = 1
 	
-	cost = 4
-	relative_position_id = USA_accept_our_limitations
-	prerequisite = { focus = USA_accept_our_limitations }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_deals_and_compromises
-	
-	x = -1
-	y = 1
-	
-	cost = 4
-	relative_position_id = USA_toe_the_line
-	prerequisite = { focus = USA_toe_the_line }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_liberal_path
-	
-	x = -3
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_deals_and_compromises
+	cost = 10
+	relative_position_id = USA_strengthen_executive_branch
+	prerequisite = { focus = USA_strengthen_executive_branch }
 	mutually_exclusive = {
-		focus = USA_conservative_path
-		focus = USA_moderate_path
+		focus = USA_pack_the_court
 	}
-	prerequisite = { focus = USA_deals_and_compromises }
     completion_reward = {
         
     }
@@ -199,239 +174,17 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_liberal_coalition
+    id = USA_court_tamed
+	icon = GFX_USA_court_tamed
 	
+    x = 1
 	y = 1
 	
-	cost = 7
-	relative_position_id = USA_liberal_path
-	prerequisite = { focus = USA_liberal_path }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_convince_liberals
-	
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_liberal_coalition
-	prerequisite = { focus = USA_liberal_coalition }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_finish_the_deal
-	
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_convince_liberals
-	prerequisite = { focus = USA_convince_liberals }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_moderate_path
-	
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_deals_and_compromises
-	mutually_exclusive = {
-		focus = USA_conservative_path
-		focus = USA_liberal_path
-	}
-	prerequisite = { focus = USA_deals_and_compromises }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_coalition_with_both
-	
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_moderate_path
-	prerequisite = { focus = USA_moderate_path }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_this_isnt_working
-	
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_coalition_with_both
-	prerequisite = { focus = USA_coalition_with_both }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_liberal_focus
-	
-	x = -1
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_this_isnt_working
-	mutually_exclusive = {
-		focus = USA_conservative_focus
-	}
-	prerequisite = { focus = USA_this_isnt_working }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_conservative_focus
-	
-	x = 1
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_this_isnt_working
-	mutually_exclusive = {
-		focus = USA_liberal_focus
-	}
-	prerequisite = { focus = USA_this_isnt_working }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_conservative_path
-	
-	x = 3
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_deals_and_compromises
-	mutually_exclusive = {
-		focus = USA_conservative_path
-		focus = USA_moderate_path
-	}
-	prerequisite = { focus = USA_deals_and_compromises }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_conservative_coalition
-	
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_conservative_path
-	prerequisite = { focus = USA_conservative_path }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_convince_conservatives
-	
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_conservative_coalition
-	prerequisite = { focus = USA_conservative_coalition }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_just_few_more_weeks
-	
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_convince_conservatives
-	prerequisite = { focus = USA_convince_conservatives }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_ready_for_the_vote
-	
-	x = -3
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_just_few_more_weeks
+	cost = 10
+	relative_position_id = USA_pack_the_court
 	prerequisite = {
-		focus = USA_just_few_more_weeks
-		focus = USA_liberal_focus
-		focus = USA_conservative_focus
-		focus = USA_finish_the_deal
+		focus = USA_pack_the_court
+		focus = USA_accept_the_rulings
 	}
     completion_reward = {
         
@@ -443,19 +196,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_bill_passes
+    id = USA_reorganization
+	icon = GFX_USA_reorganization
 	
-	x = -2
+    x = 4
 	y = 1
 	
-	cost = 7
-	relative_position_id = USA_ready_for_the_vote
-	mutually_exclusive = {
-		focus = USA_bill_fails
-	}
-	prerequisite = {
-		focus = USA_ready_for_the_vote
-	}
+	cost = 5
+	relative_position_id = USA_our_mandate
+	prerequisite = { focus = USA_our_mandate }
     completion_reward = {
         
     }
@@ -466,19 +215,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_keep_the_coalition
+    id = USA_totally_not_brownlow_commitee
+	icon = GFX_USA_totally_not_brownlow_commitee
 	
-	x = -1
+    x = -1
 	y = 1
 	
-	cost = 7
-	relative_position_id = USA_bill_passes
-	mutually_exclusive = {
-		focus = USA_end_of_coalition
-	}
-	prerequisite = {
-		focus = USA_bill_passes
-	}
+	cost = 5
+	relative_position_id = USA_reorganization
+	prerequisite = { focus = USA_reorganization }
     completion_reward = {
         
     }
@@ -489,19 +234,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_end_of_coalition
+    id = USA_secure_funding
+	icon = GFX_USA_secure_funding
 	
-	x = 1
+    x = 1
 	y = 1
 	
-	cost = 7
-	relative_position_id = USA_bill_passes
-	mutually_exclusive = {
-		focus = USA_keep_the_coalition
-	}
-	prerequisite = {
-		focus = USA_bill_passes
-	}
+	cost = 5
+	relative_position_id = USA_reorganization
+	prerequisite = { focus = USA_reorganization }
     completion_reward = {
         
     }
@@ -512,17 +253,16 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_towards_brighter_future
+    id = USA_reorg_act
+	icon = GFX_USA_reorg_act
 	
-	x = 1
+    x = 1
 	y = 1
 	
-	cost = 7
-	relative_position_id = USA_keep_the_coalition
-	prerequisite = {
-		focus = USA_keep_the_coalition
-		focus = USA_end_of_coalition
-	}
+	cost = 5
+	relative_position_id = USA_totally_not_brownlow_commitee
+	prerequisite = { focus = USA_totally_not_brownlow_commitee }
+	prerequisite = { focus = USA_secure_funding }
     completion_reward = {
         
     }
@@ -533,19 +273,17 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_bill_fails
+    id = USA_second_bill_of_rights
+	icon = GFX_USA_second_bill_of_rights
 	
-	x = 1
+    x = 0
 	y = 1
 	
-	cost = 7
-	relative_position_id = USA_ready_for_the_vote
-	mutually_exclusive = {
-		focus = USA_bill_passes
-	}
-	prerequisite = {
-		focus = USA_ready_for_the_vote
-	}
+	cost = 5
+	relative_position_id = USA_court_tamed
+	prerequisite = { focus = USA_farm_tenant_act }
+	prerequisite = { focus = USA_court_tamed }
+	prerequisite = { focus = USA_reorg_act }
     completion_reward = {
         
     }
@@ -556,15 +294,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_clean_up_our_mess
+    id = USA_right_to_learn
+	icon = GFX_USA_right_to_learn
 	
+    x = -4
 	y = 1
 	
-	cost = 7
-	relative_position_id = USA_bill_fails
-	prerequisite = {
-		focus = USA_bill_fails
-	}
+	cost = 10
+	relative_position_id = USA_second_bill_of_rights
+	prerequisite = { focus = USA_second_bill_of_rights }
     completion_reward = {
         
     }
@@ -575,15 +313,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_regain_party_confidence
+    id = USA_assess_school_resources
+	icon = GFX_USA_assess_school_resources
 	
+    x = -1
 	y = 1
 	
-	cost = 7
-	relative_position_id = USA_clean_up_our_mess
-	prerequisite = {
-		focus = USA_clean_up_our_mess
-	}
+	cost = 5
+	relative_position_id = USA_right_to_learn
+	prerequisite = { focus = USA_right_to_learn }
     completion_reward = {
         
     }
@@ -594,15 +332,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_try_again
+    id = USA_work_with_teachers_unions
+	icon = GFX_USA_work_with_teachers_unions
 	
-	y = 1
+    x = 0
+	y = 2
 	
-	cost = 7
-	relative_position_id = USA_regain_party_confidence
-	prerequisite = {
-		focus = USA_regain_party_confidence
-	}
+	cost = 5
+	relative_position_id = USA_assess_school_resources
+	prerequisite = { focus = USA_assess_school_resources }
     completion_reward = {
         
     }
@@ -613,19 +351,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_some_changes
+    id = USA_compulsory_education
+	icon = GFX_USA_compulsory_education
 	
-	x = -1
-	y = 1
+    x = 0
+	y = 2
 	
-	cost = 7
-	relative_position_id = USA_try_again
-	prerequisite = {
-		focus = USA_try_again
-	}
-	mutually_exclusive = {
-		focus = USA_bill_is_ded
-	}
+	cost = 5
+	relative_position_id = USA_right_to_learn
+	prerequisite = { focus = USA_right_to_learn }
     completion_reward = {
         
     }
@@ -636,19 +370,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_bill_is_ded
+    id = USA_invest_in_higher_education
+	icon = GFX_USA_invest_in_higher_education
 	
-	x = 1
+    x = 1
 	y = 1
 	
-	cost = 7
-	relative_position_id = USA_try_again
-	prerequisite = {
-		focus = USA_try_again
-	}
-	mutually_exclusive = {
-		focus = USA_some_changes
-	}
+	cost = 5
+	relative_position_id = USA_right_to_learn
+	prerequisite = { focus = USA_right_to_learn }
     completion_reward = {
         
     }
@@ -659,19 +389,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_appease_opposition
+    id = USA_federal_education_grants
+	icon = GFX_USA_federal_education_grants
 	
-	x = -1
-	y = 1
+    x = 0
+	y = 2
 	
-	cost = 7
-	relative_position_id = USA_some_changes
-	prerequisite = {
-		focus = USA_some_changes
-	}
-	mutually_exclusive = {
-		focus = USA_stay_the_course
-	}
+	cost = 5
+	relative_position_id = USA_invest_in_higher_education
+	prerequisite = { focus = USA_invest_in_higher_education }
     completion_reward = {
         
     }
@@ -682,19 +408,17 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_stay_the_course
+    id = USA_644_schooling
+	icon = GFX_USA_644_schooling
 	
-	x = 1
+    x = 1
 	y = 1
 	
-	cost = 7
-	relative_position_id = USA_some_changes
-	prerequisite = {
-		focus = USA_some_changes
-	}
-	mutually_exclusive = {
-		focus = USA_appease_opposition
-	}
+	cost = 5
+	relative_position_id = USA_work_with_teachers_unions
+	prerequisite = { focus = USA_work_with_teachers_unions }
+	prerequisite = { focus = USA_compulsory_education }
+	prerequisite = { focus = USA_federal_education_grants }
     completion_reward = {
         
     }
@@ -705,17 +429,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_convince_opposition
+    id = USA_right_to_work
+	icon = GFX_USA_right_to_work
 	
-	x = 1
+    x = 0
 	y = 1
 	
-	cost = 7
-	relative_position_id = USA_appease_opposition
-	prerequisite = {
-		focus = USA_appease_opposition
-		focus = USA_stay_the_course
-	}
+	cost = 10
+	relative_position_id = USA_second_bill_of_rights
+	prerequisite = { focus = USA_second_bill_of_rights }
     completion_reward = {
         
     }
@@ -726,15 +448,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_second_round
+    id = USA_workplace_democracy
+	icon = GFX_USA_workplace_democracy
 	
+    x = -1
 	y = 1
 	
-	cost = 7
-	relative_position_id = USA_convince_opposition
-	prerequisite = {
-		focus = USA_convince_opposition
-	}
+	cost = 10
+	relative_position_id = USA_right_to_work
+	prerequisite = { focus = USA_right_to_work }
     completion_reward = {
         
     }
@@ -745,19 +467,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_the_bill_passes
+    id = USA_end_child_labor
+	icon = GFX_USA_end_child_labor
 	
-	x = -1
-	y = 1
+    x = 0
+	y = 2
 	
-	cost = 7
-	relative_position_id = USA_second_round
-	prerequisite = {
-		focus = USA_second_round
-	}
-	mutually_exclusive = {
-		focus = USA_its_over
-	}
+	cost = 10
+	relative_position_id = USA_workplace_democracy
+	prerequisite = { focus = USA_workplace_democracy }
     completion_reward = {
         
     }
@@ -768,19 +486,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_its_over
+    id = USA_6_hour_day
+	icon = GFX_USA_6_hour_day
 	
-	x = 1
-	y = 1
+    x = 0
+	y = 2
 	
-	cost = 7
-	relative_position_id = USA_second_round
-	prerequisite = {
-		focus = USA_second_round
-	}
-	mutually_exclusive = {
-		focus = USA_the_bill_passes
-	}
+	cost = 10
+	relative_position_id = USA_right_to_work
+	prerequisite = { focus = USA_right_to_work }
     completion_reward = {
         
     }
@@ -791,15 +505,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_keep_the_coalition_again
+    id = USA_ensure_fair_competition
+	icon = GFX_USA_ensure_fair_competition
 	
+    x = 1
 	y = 1
 	
-	cost = 7
-	relative_position_id = USA_the_bill_passes
-	prerequisite = {
-		focus = USA_the_bill_passes
-	}
+	cost = 10
+	relative_position_id = USA_right_to_work
+	prerequisite = { focus = USA_right_to_work }
     completion_reward = {
         
     }
@@ -810,15 +524,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_a_better_america
+    id = USA_end_wage_descrimination
+	icon = GFX_USA_end_wage_descrimination
 	
-	y = 1
+    x = 0
+	y = 2
 	
-	cost = 7
-	relative_position_id = USA_keep_the_coalition_again
-	prerequisite = {
-		focus = USA_keep_the_coalition_again
-	}
+	cost = 10
+	relative_position_id = USA_ensure_fair_competition
+	prerequisite = { focus = USA_ensure_fair_competition }
     completion_reward = {
         
     }
@@ -829,21 +543,17 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_we_cannot_be_impeded
+    id = USA_economic_equality_act
+	icon = GFX_USA_economic_equality_act
 	
-	x = 1
+    x = 1 
 	y = 1
 	
-	allow_branch = {
-		has_completed_focus = USA_review_the_constitution
-	}
-	
-	cost = 7
-	relative_position_id = USA_review_the_constitution
-	mutually_exclusive = {
-		focus = USA_accept_our_limitations
-	}
-	prerequisite = { focus = USA_review_the_constitution }
+	cost = 10
+	relative_position_id = USA_end_child_labor
+	prerequisite = { focus = USA_end_child_labor }
+	prerequisite = { focus = USA_6_hour_day }
+	prerequisite = { focus = USA_end_wage_descrimination }
     completion_reward = {
         
     }
@@ -854,14 +564,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_who_cares
+    id = USA_right_to_life
+	icon = GFX_USA_right_to_life
 	
-	x = 1
+    x = 4
 	y = 1
 	
-	cost = 2
-	relative_position_id = USA_we_cannot_be_impeded
-	prerequisite = { focus = USA_we_cannot_be_impeded }
+	cost = 10
+	relative_position_id = USA_second_bill_of_rights
+	prerequisite = { focus = USA_second_bill_of_rights }
     completion_reward = {
         
     }
@@ -872,14 +583,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_all_in
+    id = USA_food_stamp_plan
+	icon = GFX_USA_food_stamp_plan
 	
-	x = 1
+    x = -1
 	y = 1
 	
-	cost = 2
-	relative_position_id = USA_who_cares
-	prerequisite = { focus = USA_who_cares }
+	cost = 10
+	relative_position_id = USA_right_to_life
+	prerequisite = { focus = USA_right_to_life }
     completion_reward = {
         
     }
@@ -890,13 +602,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_congress_complains
+    id = USA_unemployment_compensation
+	icon = GFX_USA_unemployment_compensation
 	
-	y = 1
+    x = 0
+	y = 2
 	
-	cost = 2
-	relative_position_id = USA_all_in
-	prerequisite = { focus = USA_all_in }
+	cost = 10
+	relative_position_id = USA_food_stamp_plan
+	prerequisite = { focus = USA_food_stamp_plan }
     completion_reward = {
         
     }
@@ -907,17 +621,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_we_have_majority
+    id = USA_lower_healthcare_costs
+	icon = GFX_USA_lower_healthcare_costs
 	
-	x = -1
-	y = 1
+    x = 0
+	y = 2
 	
-	cost = 2
-	relative_position_id = USA_congress_complains
-	prerequisite = { focus = USA_congress_complains }
-	mutually_exclusive = {
-		focus = USA_game_of_politics
-	}
+	cost = 10
+	relative_position_id = USA_right_to_life
+	prerequisite = { focus = USA_right_to_life }
     completion_reward = {
         
     }
@@ -928,13 +640,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_a_new_america
+    id = USA_housing_act
+	icon = GFX_USA_housing_act
 	
+    x = 1
 	y = 1
 	
-	cost = 2
-	relative_position_id = USA_we_have_majority
-	prerequisite = { focus = USA_we_have_majority }
+	cost = 10
+	relative_position_id = USA_right_to_life
+	prerequisite = { focus = USA_right_to_life }
     completion_reward = {
         
     }
@@ -945,13 +659,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_more_to_do
+    id = USA_maternity_insurance
+	icon = GFX_USA_maternity_insurance
 	
-	y = 1
+    x = 0
+	y = 2
 	
-	cost = 2
-	relative_position_id = USA_a_new_america
-	prerequisite = { focus = USA_a_new_america }
+	cost = 10
+	relative_position_id = USA_housing_act
+	prerequisite = { focus = USA_housing_act }
     completion_reward = {
         
     }
@@ -962,17 +678,17 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_game_of_politics
+    id = USA_social_security_numbah_2
+	icon = GFX_USA_social_security_numbah_2
 	
-	x = 1
+    x = 1
 	y = 1
 	
-	cost = 2
-	relative_position_id = USA_congress_complains
-	prerequisite = { focus = USA_congress_complains }
-	mutually_exclusive = {
-		focus = USA_we_have_majority
-	}
+	cost = 10
+	relative_position_id = USA_unemployment_compensation
+	prerequisite = { focus = USA_unemployment_compensation }
+	prerequisite = { focus = USA_lower_healthcare_costs }
+	prerequisite = { focus = USA_maternity_insurance }
     completion_reward = {
         
     }
@@ -983,13 +699,17 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_through_the_house
+    id = USA_america_reborn
+	icon = GFX_USA_america_reborn
 	
+    x = 4
 	y = 1
 	
-	cost = 2
-	relative_position_id = USA_game_of_politics
-	prerequisite = { focus = USA_game_of_politics }
+	cost = 10
+	relative_position_id = USA_644_schooling
+	prerequisite = { focus = USA_644_schooling }
+	prerequisite = { focus = USA_economic_equality_act }
+	prerequisite = { focus = USA_social_security_numbah_2 }
     completion_reward = {
         
     }
@@ -1000,241 +720,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_into_the_senate
+    id = USA_one_more_thing
+	icon = GFX_USA_one_more_thing
 	
+    x = 0
 	y = 1
 	
-	cost = 2
-	relative_position_id = USA_through_the_house
-	prerequisite = { focus = USA_through_the_house }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_a_round_of_voting
-	
-	y = 1
-	
-	cost = 2
-	relative_position_id = USA_into_the_senate
-	prerequisite = { focus = USA_into_the_senate }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_a_socialist_future
-	
-	x = -2
-	y = 1
-	
-	cost = 2
-	relative_position_id = USA_a_round_of_voting
-	prerequisite = { focus = USA_a_round_of_voting }
-	mutually_exclusive = {
-		focus = USA_more_politics
-	}
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_forwards
-	
-	y = 1
-	
-	cost = 2
-	relative_position_id = USA_a_socialist_future
-	prerequisite = { focus = USA_a_socialist_future }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_more_politics
-	
-	x = 1
-	y = 1
-	
-	cost = 2
-	relative_position_id = USA_a_round_of_voting
-	prerequisite = { focus = USA_a_round_of_voting }
-	mutually_exclusive = {
-		focus = USA_a_socialist_future
-	}
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_come_to_terms
-	
-	x = -1
-	y = 1
-	
-	cost = 2
-	relative_position_id = USA_more_politics
-	prerequisite = { focus = USA_more_politics }
-	mutually_exclusive = {
-		focus = USA_another_round
-	}
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_another_round
-	
-	x = 1
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_more_politics
-	prerequisite = { focus = USA_more_politics }
-	mutually_exclusive = {
-		focus = USA_come_to_terms
-	}
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_convincing_the_house
-	
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_another_round
-	prerequisite = { focus = USA_another_round }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_convincing_the_senate
-	
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_convincing_the_house
-	prerequisite = { focus = USA_convincing_the_house }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_more_voting
-	
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_convincing_the_senate
-	prerequisite = { focus = USA_convincing_the_senate }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_delayed_future
-	
-	x = -1
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_more_voting
-	prerequisite = { focus = USA_more_voting }
-	mutually_exclusive = {
-		focus = USA_bill_ded_again
-	}
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_has_finally_arrived
-	
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_delayed_future
-	prerequisite = { focus = USA_delayed_future }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_bill_ded_again
-	
-	x = 1
-	y = 1
-	
-	cost = 7
-	relative_position_id = USA_more_voting
-	prerequisite = { focus = USA_more_voting }
-	mutually_exclusive = {
-		focus = USA_delayed_future
-	}
+	cost = 10
+	relative_position_id = USA_america_reborn
+	prerequisite = { focus = USA_america_reborn }
     completion_reward = {
         
     }

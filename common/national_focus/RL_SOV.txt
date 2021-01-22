@@ -15,3 +15,20 @@ focus_tree = {
 	default = no
 	shared_focus = SOV_state_of_the_union
 }
+
+focus_tree = {
+	id = SOV_civil_war_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 11
+			tag = SOV
+		}
+	}
+	continuous_focus_position = {
+		x = -2500
+		y = 125
+	}
+	default = no
+	shared_focus = SOV_and_the_battle_is_going_again
+}
