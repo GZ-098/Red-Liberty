@@ -1,0 +1,11 @@
+on_actions = {
+	
+	on_new_term_election = { # elections go here, in chronological order
+		random_events = {
+			100 = us_election_pres.1 # 1932 election
+			100 = us_election_pres.100
+			100 = us_election_pres.200
+			100 = us_election_pres.300
+		}
+	}
+}
