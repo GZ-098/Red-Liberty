@@ -509,7 +509,10 @@ focus_tree = {
 					factor = 10
 				}
 		completion_reward = {
-			unlock_decision_category_tooltip = ITA_restricting_blackshirts
+			country_event = {
+				id = italy_events.60
+				days = 1 
+			}
 		}
 
 	}
@@ -528,7 +531,10 @@ focus_tree = {
 					factor = 10
 				}
 		completion_reward = {
-			unlock_decision_category_tooltip = ITA_reduce_influence_of_the_grand_council
+			country_event = {
+				id = italy_events.61
+				days = 1
+			}
 		}
 	}
 	focus = {
@@ -1803,7 +1809,12 @@ focus_tree = {
 		}
 		x = 40
 		y = 15
-
+		completion_reward = {
+			country_event = {
+				id = italy_events.59
+				days = 1 
+			}
+		}
 	}
 	focus = {
 		id = ITA_send_arms_to_the_communists
@@ -1861,8 +1872,22 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_spread_to_the_balkans
 		}
+		bypass = {
+			IF = {
+				NOT = {
+					country_exists = SER
+				}
+			}
+		}
 		x = 40
 		y = 16
+		completion_reward = {
+			SER = {
+				add_ideas = {
+					ITA_italian_funding_tito
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -1877,6 +1902,11 @@ focus_tree = {
 		}
 		x = 37
 		y = 17
+		completion_reward = {
+			FRA = {
+				add_stability = -0.1
+			}
+		}
 
 	}
 	focus = {
@@ -2011,9 +2041,34 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_destabalize_france
 		}
+		available = {
+			IF = {
+				FRA = {
+					country_exists = FRA
+					revolutionary_autocracy > 0.4
+					stability < 0.55
+				}
+			}
+		}
+		bypass = {
+			IF = {
+				FRA = {
+					is_in_faction_with = ITA
+				}
+			}
+		}
 		x = 37
 		y = 18
-
+		completion_reward = {
+			FRA = {
+				start_civil_war = {
+					ideology = revolutionary_autocracy
+					size = 0.5
+					only_own_territory = yes
+					keep_political_leader = yes
+				}				
+			}
+		}
 	}
 	focus = {
 		id = ITA_prepare_anti_air_defenses
@@ -2080,6 +2135,11 @@ focus_tree = {
 		}
 		x = 37
 		y = 19
+		completion_reward = {
+			add_ideas = {
+				ITA_permanent_revolution
+			}
+		}
 
 	}
 	focus = {

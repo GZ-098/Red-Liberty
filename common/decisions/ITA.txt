@@ -319,6 +319,349 @@ ITA_destabilizatiaon_missions = {
 	}
 } 
 
+ITA_spread_revolution_to_balkans = {
+
+	#Actions in Serbia
+	
+	ITA_communist_influence_serbia = {
+	
+		icon = decision_eng_propaganda_campaigns
+		
+		available = {
+			country_exists = SER
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+		
+		cost = 60 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 70
+		
+		complete_effect = { 
+			SER = {
+				add_popularity = {
+					ideology = revolutionary_autocracy
+					popularity = 0.1
+				}
+			}
+		}
+	} 
+
+	ITA_communist_rebellion_serbia = {
+	
+		icon = decision_generic_ignite_civil_war
+		
+		available = {
+			country_exists = SER
+			SER = {
+				revolutionary_autocracy > 0.5
+			}
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+			production_factory_efficiency_gain_factor = -0.15
+		}
+		
+		cost = 60 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 55
+		
+		complete_effect = { 
+			SER = {
+				start_civil_war = {
+					ideology = revolutionary_autocracy
+					size = 0.5
+					only_own_territory = yes
+					keep_political_leader = yes
+				}				
+			}
+		}
+	}
+	
+	#Actions in Greece
+
+	ITA_communist_influence_greece = {
+	
+		icon = decision_eng_propaganda_campaigns
+		
+		available = {
+			country_exists = GRE
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+		
+		cost = 60 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 70
+		
+		complete_effect = { 
+			GRE = {
+				add_popularity = {
+					ideology = revolutionary_autocracy
+					popularity = 0.1
+				}
+			}
+		}
+	} 
+
+	ITA_communist_rebellion_greece = {
+	
+		icon = decision_generic_ignite_civil_war
+		
+		available = {
+			country_exists = GRE
+			GRE = {
+				revolutionary_autocracy > 0.5
+			}
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+			production_factory_efficiency_gain_factor = -0.15
+		}
+		
+		cost = 60 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 55
+		
+		complete_effect = { 
+			GRE = {
+				start_civil_war = {
+					ideology = revolutionary_autocracy
+					size = 0.5
+					only_own_territory = yes
+					keep_political_leader = yes
+				}				
+			}
+		}
+	}
+
+	#Actions in Albania
+
+	ITA_communist_influence_albania = {
+	
+		icon = decision_eng_propaganda_campaigns
+		
+		available = {
+			country_exists = ALB
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+		
+		cost = 60 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 70
+		
+		complete_effect = { 
+			ALB = {
+				add_popularity = {
+					ideology = revolutionary_autocracy
+					popularity = 0.1
+				}
+			}
+		}
+	} 
+
+	ITA_communist_rebellion_albania = {
+	
+		icon = decision_generic_ignite_civil_war
+		
+		available = {
+			country_exists = ALB
+			ALB = {
+				revolutionary_autocracy > 0.5
+			}
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+			production_factory_efficiency_gain_factor = -0.15
+		}
+		
+		cost = 60 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 55
+		
+		complete_effect = { 
+			SER = {
+				start_civil_war = {
+					ideology = revolutionary_autocracy
+					size = 0.5
+					only_own_territory = yes
+					keep_political_leader = yes
+				}				
+			}
+		}
+	}
+
+	#Actions in Bulgaria
+
+	ITA_communist_influence_bulgaria = {
+	
+		icon = decision_eng_propaganda_campaigns
+		
+		available = {
+			country_exists = BUL
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+		
+		cost = 60 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 70
+		
+		complete_effect = { 
+			BUL = {
+				add_popularity = {
+					ideology = revolutionary_autocracy
+					popularity = 0.1
+				}
+			}
+		}
+	} 
+
+	ITA_communist_rebellion_bulgaria = {
+	
+		icon = decision_generic_ignite_civil_war
+		
+		available = {
+			country_exists = BUL
+			BUL = {
+				revolutionary_autocracy > 0.5
+			}
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+			production_factory_efficiency_gain_factor = -0.15
+		}
+		
+		cost = 60 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 55
+		
+		complete_effect = { 
+			BUL = {
+				start_civil_war = {
+					ideology = revolutionary_autocracy
+					size = 0.5
+					only_own_territory = yes
+					keep_political_leader = yes
+				}				
+			}
+		}
+	}
+
+	#Actions in Romania
+
+	ITA_communist_influence_romania = {
+	
+		icon = decision_eng_propaganda_campaigns
+		
+		available = {
+			country_exists = ROM
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+		
+		cost = 60 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 70
+		
+		complete_effect = { 
+			ROM = {
+				add_popularity = {
+					ideology = revolutionary_autocracy
+					popularity = 0.1
+				}
+			}
+		}
+	} 
+
+	ITA_communist_rebellion_romania = {
+	
+		icon = decision_generic_ignite_civil_war
+		
+		available = {
+			country_exists = ROM
+			ROM = {
+				revolutionary_autocracy > 0.5
+			}
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+			production_factory_efficiency_gain_factor = -0.15
+		}
+		
+		cost = 60 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 55
+		
+		complete_effect = { 
+			ROM = {
+				start_civil_war = {
+					ideology = revolutionary_autocracy
+					size = 0.5
+					only_own_territory = yes
+					keep_political_leader = yes
+				}				
+			}
+		}
+	}
+} 
+
 
 
 
