@@ -1499,6 +1499,30 @@ country_event = {
 	} 
 }
 
+#Italy sending inventations to join their factions for commies
+country_event = {
+	id = italy_events.60
+	title = italy_events.60.t
+	desc = italy_events.60.d
+	picture = GFX_filler
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "We can Only Grow Stronger Together"
+		ITA = {
+			add_to_faction = ROOT
+			country_event = {
+				id = italy_events.61
+				days = 1
+			}
+		}
+	} 
+}
+
 ####################
 ##	 US events   ##
 ###################

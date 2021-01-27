@@ -1883,8 +1883,9 @@ focus_tree = {
 		y = 16
 		completion_reward = {
 			SER = {
-				add_ideas = {
-					ITA_italian_funding_tito
+				add_timed_idea = {
+					idea = ITA_italian_funding_tito
+					days = 75
 				}
 			}
 		}
@@ -1918,18 +1919,49 @@ focus_tree = {
 		}
 		x = 39
 		y = 17
+		completion_reward = {
+			SER = {
+				add_popularity = {
+					ideology = revolutionary_autocracy
+					popularity = 0.1
+				}
+			}
+		}
 
 	}
 	focus = {
 		id = ITA_send_help_to_the_hungarian_socialists
 		icon = GFX_goal_unknown
 		cost = 5
+		bypass = {
+			IF = {
+				NOT = {
+					country_exists = HSR
+				}
+			}
+		}
 		prerequisite = {
 			focus = ITA_help_titos_efforts
 		}
 		x = 41
 		y = 17
-
+		completion_reward = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 100
+				target = HSR
+			}
+			send_equipment = {
+				equipment = support_equipment
+				amount = 100
+				target = HSR
+			}
+			send_equipment = {
+				equipment = armor
+				amount = 10
+				target = HSR
+			}
+		}
 	}
 	focus = {
 		id = ITA_prepare_defenses_on_the_german_border
@@ -2032,6 +2064,79 @@ focus_tree = {
 		}
 		x = 40
 		y = 18
+		completion_reward = {
+			custom_effect_tooltip = ITA_spreading_commies
+			IF = {
+				limit = {
+					country_exsits = ALB
+					ALB = {
+						revolutionary_autocracy > 0.5
+					}
+				}
+				ALB = {
+					country_event = {
+						id = italy_events.60
+						days = 1 
+					}
+				}
+			}
+			IF = {
+				limit = {
+					country_exsits = ROM
+					ROM = {
+						revolutionary_autocracy > 0.5
+					}
+				}
+				ROM = {
+					country_event = {
+						id = italy_events.60
+						days = 1 
+					}
+				}
+			}
+			IF = {
+				limit = {
+					country_exsits = BUL
+					BUL = {
+						revolutionary_autocracy > 0.5
+					}
+				}
+				BUL = {
+					country_event = {
+						id = italy_events.60
+						days = 1 
+					}
+				}
+			}
+			IF = {
+				limit = {
+					country_exsits = GRE
+					GRE = {
+						revolutionary_autocracy > 0.5
+					}
+				}
+				GRE = {
+					country_event = {
+						id = italy_events.60
+						days = 1 
+					}
+				}
+			}
+			IF = {
+				limit = {
+					country_exsits = SER
+					SER = {
+						revolutionary_autocracy > 0.5
+					}
+				}
+				SER = {
+					country_event = {
+						id = italy_events.60
+						days = 1 
+					}
+				}
+			}
+		}
 
 	}
 	focus = {
