@@ -2066,9 +2066,9 @@ focus_tree = {
 		y = 18
 		completion_reward = {
 			custom_effect_tooltip = ITA_spreading_commies
-			IF = {
+			if = {
 				limit = {
-					country_exsits = ALB
+					country_exists = ALB
 					ALB = {
 						revolutionary_autocracy > 0.5
 					}
@@ -2080,9 +2080,9 @@ focus_tree = {
 					}
 				}
 			}
-			IF = {
+			if = {
 				limit = {
-					country_exsits = ROM
+					country_exists = ROM
 					ROM = {
 						revolutionary_autocracy > 0.5
 					}
@@ -2094,7 +2094,7 @@ focus_tree = {
 					}
 				}
 			}
-			IF = {
+			if = {
 				limit = {
 					country_exsits = BUL
 					BUL = {
@@ -2108,7 +2108,7 @@ focus_tree = {
 					}
 				}
 			}
-			IF = {
+			if = {
 				limit = {
 					country_exsits = GRE
 					GRE = {
@@ -2122,7 +2122,7 @@ focus_tree = {
 					}
 				}
 			}
-			IF = {
+			if = {
 				limit = {
 					country_exsits = SER
 					SER = {
