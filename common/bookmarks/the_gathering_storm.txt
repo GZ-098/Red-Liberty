@@ -22,7 +22,7 @@ bookmarks = {
 			ideology = democratic_socialism
 			ideas = {
 				USA_red_liberty
-				USA_the_great_depression
+				USA_the_great_depression_2
 				USA_pacifism
 			}
 			focuses = {

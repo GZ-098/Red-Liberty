@@ -1,0 +1,233 @@
+shared_focus = {
+    id = SOV_and_the_battle_is_going_again
+	icon = GFX_SOV_and_the_battle_is_going_again
+	
+    x = 8
+	y = 0
+	
+	cost = 5
+    completion_reward = {
+        add_political_power = 50
+		add_war_support = 0.1
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SOV_reinstate_conscription
+	icon = GFX_SOV_reinstate_conscription
+	
+    x = -2
+	y = 1
+	
+	cost = 8
+	relative_position_id = SOV_and_the_battle_is_going_again
+	prerequisite = { focus = SOV_and_the_battle_is_going_again }
+    completion_reward = {
+        add_ideas = {
+			limited_conscription
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SOV_call_on_vets
+	icon = GFX_SOV_call_on_vets
+	
+    x = 0
+	y = 1
+	
+	cost = 10
+	relative_position_id = SOV_reinstate_conscription
+	prerequisite = { focus = SOV_reinstate_conscription }
+    completion_reward = {
+        add_manpower = 10000
+		add_war_support = -0.05
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SOV_call_on_militias
+	icon = GFX_SOV_call_on_militias
+	
+    x = 0
+	y = 1
+	
+	cost = 10
+	relative_position_id = SOV_call_on_vets
+	prerequisite = { focus = SOV_call_on_vets }
+    completion_reward = {
+        add_manpower = 15000
+		add_war_support = -0.1
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SOV_call_on_police
+	icon = GFX_SOV_call_on_police
+	
+    x = 0
+	y = 1
+	
+	cost = 10
+	relative_position_id = SOV_call_on_militias
+	prerequisite = { focus = SOV_call_on_militias }
+    completion_reward = {
+        add_manpower = 25000
+		add_war_support = -0.15
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SOV_gun_in_every_hand
+	icon = GFX_SOV_gun_in_every_hand
+	
+    x = 2
+	y = 1
+	
+	cost = 8
+	relative_position_id = SOV_and_the_battle_is_going_again
+	prerequisite = { focus = SOV_and_the_battle_is_going_again }
+    completion_reward = {
+        add_ideas = {
+			low_economic_mobilisation
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SOV_encourage_the_soviets
+	icon = GFX_SOV_encourage_the_soviets
+	
+    x = -1
+	y = 1
+	
+	cost = 10
+	relative_position_id = SOV_gun_in_every_hand
+	prerequisite = { focus = SOV_gun_in_every_hand }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SOV_new_quotas
+	icon = GFX_SOV_new_quotas
+	
+    x = 0
+	y = 1
+	
+	cost = 10
+	relative_position_id = SOV_encourage_the_soviets
+	prerequisite = { focus = SOV_encourage_the_soviets }
+    completion_reward = {
+        add_stability = -0.05
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SOV_encourage_the_soviets_but_not_really
+	icon = GFX_SOV_encourage_the_soviets_but_not_really
+	
+    x = 0
+	y = 1
+	
+	cost = 10
+	relative_position_id = SOV_new_quotas
+	prerequisite = { focus = SOV_new_quotas }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SOV_promises_to_peasants
+	icon = GFX_SOV_promises_to_peasants
+	
+    x = 1
+	y = 1
+	
+	cost = 10
+	relative_position_id = SOV_gun_in_every_hand
+	prerequisite = { focus = SOV_gun_in_every_hand }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SOV_making_ends_meet
+	icon = GFX_SOV_making_ends_meet
+	
+    x = 0
+	y = 1
+	
+	cost = 10
+	relative_position_id = SOV_promises_to_peasants
+	prerequisite = { focus = SOV_promises_to_peasants }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SOV_painful_memories
+	icon = GFX_SOV_painful_memories
+	
+    x = 0
+	y = 1
+	
+	cost = 10
+	relative_position_id = SOV_making_ends_meet
+	prerequisite = { focus = SOV_making_ends_meet }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}

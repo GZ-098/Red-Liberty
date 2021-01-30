@@ -99,6 +99,14 @@ defined_text = {
         localization_key = "USA_congress_voting_debug_bill_example"
     }
 	
+	text = { 
+        trigger = {
+			check_variable = { bill_id = 2 }
+			has_country_flag = USA_discussing_bill
+        }
+        localization_key = "USA_congress_voting_social_security"
+    }
+	
 	text = {
 		localization_key = "USA_congress_voting_none"
     }

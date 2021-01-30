@@ -82,6 +82,23 @@ ideas = {
 			}
 		}
 		#Starting nat spirits
+		ITA_italian_funding_tito = {
+			removal_cost = -1 
+			
+			picture = ITA_increased_military_spending
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				revolutionary_autocracy_drift = 0.1
+				stability_weekly = -0.05
+			}
+		}
 
 		ITA_increased_military_spending = {
 			removal_cost = -1 

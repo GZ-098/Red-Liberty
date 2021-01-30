@@ -1,0 +1,29 @@
+
+state={
+	id=823
+	name="STATE_823"
+
+	history={
+		owner = JAP
+		buildings = {
+			infrastructure = 4
+			4196 = {
+				naval_base = 3
+				coastal_bunker = 1
+				bunker = 1
+
+			}
+		}
+		victory_points = {
+			4196 3 
+		}
+		add_core_of = CHI
+	}
+
+	provinces={
+		4196 
+	}
+	manpower=3000000
+	buildings_max_level_factor=1.000
+	state_category = town
+}

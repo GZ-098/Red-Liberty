@@ -12,12 +12,18 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	revolutionary_socialism = 1
-	democratic_socialism = 3
-	liberalism = 2
-	conservatism = 6
-	autocratic_despotism = 62
-	empowered_nationalism = 26 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 0
+	social_democracy = 10
+	progressive_liberalism = 17
+	market_libertarianism = 8
+	national_conservatism = 23
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 7
+	martial_despotism = 25
+	ultranational_statism = 10
 }
 
 create_country_leader = {
@@ -25,7 +31,7 @@ create_country_leader = {
 	#desc = ""
 	#picture = ""
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = martial_despotism_subtype
 	traits = {
 		#
 	}

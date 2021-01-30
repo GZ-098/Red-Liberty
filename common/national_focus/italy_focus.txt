@@ -509,7 +509,10 @@ focus_tree = {
 					factor = 10
 				}
 		completion_reward = {
-			unlock_decision_category_tooltip = ITA_restricting_blackshirts
+			country_event = {
+				id = italy_events.60
+				days = 1 
+			}
 		}
 
 	}
@@ -528,7 +531,10 @@ focus_tree = {
 					factor = 10
 				}
 		completion_reward = {
-			unlock_decision_category_tooltip = ITA_reduce_influence_of_the_grand_council
+			country_event = {
+				id = italy_events.61
+				days = 1
+			}
 		}
 	}
 	focus = {
@@ -1803,7 +1809,12 @@ focus_tree = {
 		}
 		x = 40
 		y = 15
-
+		completion_reward = {
+			country_event = {
+				id = italy_events.59
+				days = 1 
+			}
+		}
 	}
 	focus = {
 		id = ITA_send_arms_to_the_communists
@@ -1861,8 +1872,23 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_spread_to_the_balkans
 		}
+		bypass = {
+			IF = {
+				NOT = {
+					country_exists = SER
+				}
+			}
+		}
 		x = 40
 		y = 16
+		completion_reward = {
+			SER = {
+				add_timed_idea = {
+					idea = ITA_italian_funding_tito
+					days = 75
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -1877,6 +1903,11 @@ focus_tree = {
 		}
 		x = 37
 		y = 17
+		completion_reward = {
+			FRA = {
+				add_stability = -0.1
+			}
+		}
 
 	}
 	focus = {
@@ -1888,18 +1919,49 @@ focus_tree = {
 		}
 		x = 39
 		y = 17
+		completion_reward = {
+			SER = {
+				add_popularity = {
+					ideology = revolutionary_autocracy
+					popularity = 0.1
+				}
+			}
+		}
 
 	}
 	focus = {
 		id = ITA_send_help_to_the_hungarian_socialists
 		icon = GFX_goal_unknown
 		cost = 5
+		bypass = {
+			IF = {
+				NOT = {
+					country_exists = HSR
+				}
+			}
+		}
 		prerequisite = {
 			focus = ITA_help_titos_efforts
 		}
 		x = 41
 		y = 17
-
+		completion_reward = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 100
+				target = HSR
+			}
+			send_equipment = {
+				equipment = support_equipment
+				amount = 100
+				target = HSR
+			}
+			send_equipment = {
+				equipment = armor
+				amount = 10
+				target = HSR
+			}
+		}
 	}
 	focus = {
 		id = ITA_prepare_defenses_on_the_german_border
@@ -2002,6 +2064,79 @@ focus_tree = {
 		}
 		x = 40
 		y = 18
+		completion_reward = {
+			custom_effect_tooltip = ITA_spreading_commies
+			if = {
+				limit = {
+					country_exists = ALB
+					ALB = {
+						revolutionary_autocracy > 0.5
+					}
+				}
+				ALB = {
+					country_event = {
+						id = italy_events.60
+						days = 1 
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = ROM
+					ROM = {
+						revolutionary_autocracy > 0.5
+					}
+				}
+				ROM = {
+					country_event = {
+						id = italy_events.60
+						days = 1 
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exsits = BUL
+					BUL = {
+						revolutionary_autocracy > 0.5
+					}
+				}
+				BUL = {
+					country_event = {
+						id = italy_events.60
+						days = 1 
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exsits = GRE
+					GRE = {
+						revolutionary_autocracy > 0.5
+					}
+				}
+				GRE = {
+					country_event = {
+						id = italy_events.60
+						days = 1 
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exsits = SER
+					SER = {
+						revolutionary_autocracy > 0.5
+					}
+				}
+				SER = {
+					country_event = {
+						id = italy_events.60
+						days = 1 
+					}
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -2011,9 +2146,34 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_destabalize_france
 		}
+		available = {
+			IF = {
+				FRA = {
+					country_exists = FRA
+					revolutionary_autocracy > 0.4
+					stability < 0.55
+				}
+			}
+		}
+		bypass = {
+			IF = {
+				FRA = {
+					is_in_faction_with = ITA
+				}
+			}
+		}
 		x = 37
 		y = 18
-
+		completion_reward = {
+			FRA = {
+				start_civil_war = {
+					ideology = revolutionary_autocracy
+					size = 0.5
+					only_own_territory = yes
+					keep_political_leader = yes
+				}				
+			}
+		}
 	}
 	focus = {
 		id = ITA_prepare_anti_air_defenses
@@ -2080,6 +2240,11 @@ focus_tree = {
 		}
 		x = 37
 		y = 19
+		completion_reward = {
+			add_ideas = {
+				ITA_permanent_revolution
+			}
+		}
 
 	}
 	focus = {

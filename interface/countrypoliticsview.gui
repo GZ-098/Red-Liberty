@@ -48,7 +48,7 @@ guiTypes = {
 			spriteType = "GFX_pol_factions_strip"
 			position = { x= 19 y = 305 }
 			Orientation = "UPPER_LEFT"
-			scale = 0.8
+			#scale = 0.8
 			frame = 1
 		}			
 		

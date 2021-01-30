@@ -128,16 +128,16 @@ set_politics = {
 set_popularities = {
 	insurrectionary_anarchism = 0
 	revolutionary_autocracy = 0
-	proletarian_dictatorship = 10
-	libertarian_socialism = 3
-	social_democracy = 23
-	progressive_liberalism = 2
-	market_libertarianism = 0
-	national_conservatism = 25
+	proletarian_dictatorship = 5
+	libertarian_socialism = 5
+	social_democracy = 20
+	progressive_liberalism = 20
+	market_libertarianism = 20
+	national_conservatism = 20
 	reactionary_theocracy = 0
-	authoritarian_republicanism = 0
-	martial_despotism = 30
-	ultranational_statism = 7
+	authoritarian_republicanism = 5
+	martial_despotism = 0
+	ultranational_statism = 5
 }	
 
 
@@ -168,51 +168,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Konrad Adenauer"
-	desc = "POLITICS_KONRAD_ADENAUER_DESC"
-	picture = "Portrait_Germany_Konrad_Adenauer.dds"
+	name = "Joseph Goebbels"
+	desc = ""
+	picture = "gfx/leaders/GER/Portrait_GER_Joseph_Goebbels.png"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = ultranational_statism_subtype
 	traits = {
+		
 	}
 }
-
-create_country_leader = {
-	name = "Wilhelm Pieck"
-	desc = "POLITICS_WILHELM_PIECK_DESC"
-	picture = "Portrait_Germany_Wilhelm_Pieck.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#stalins_puppet # This will now be added in on_actions if SOV releases the country as a puppet via action or war conference
-		exiled # He left in 1933 so he should still be exiled
-	}
-}
-
-#create_country_leader = {
-#	name = "Otto Wels"
-#	desc = "POLITICS_OTTO_WELS_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1939.1.16"
-#	ideology = socialism
-#	traits = {
-#		exiled
-#		union_man
-#	}
-#}
-#
-#create_country_leader = {
-#	name = "Ernst Thälmann"
-#	desc = "POLITICS_ERNST_THALMANN_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1956.1.1"
-#	ideology = stalinism
-#	traits = {
-#		assassination_survivor
-#		stalins_puppet
-#		political_prisoner
-#	}
-#}
 
 add_namespace = {
 	name = "ger_unit_leader"

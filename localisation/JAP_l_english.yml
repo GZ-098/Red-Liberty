@@ -25,6 +25,20 @@
  
  inukai_ded:0 "Inukai has died"
  
+ JAP_japanese_democracy:0 "Taisho Democracy"
+ JAP_military_influence:0 "Military Influence"
+ JAP_echoes_of_the_depression:0 "Echoes of the Showa Economic Crisis"
+ JAP_twenty_one_demands:0 "Legacy of the Twenty-One Demands"
+ 
+ JAP_liberal_socialist_influence_category:0 "The Coalition"
+ JAP_liberal_socialist_influence_category_desc:0 "oh god libtards versus socialists what they gonna do\n\n§RSocialist Influence: [?JAP_socialist_influence]§!\n§YLiberal Influence: [?JAP_liberal_influence]§!"
+ JAP_deregulate_corps:0 "§YDeregulate Corporations§!"
+ JAP_strengthen_oversight:0 "§RStrengthen Government Oversight§!"
+ JAP_expand_welfare:0 "§RExpand Welfare§!"
+ JAP_cut_welfare:0 "§YCut Welfare§!"
+ JAP_deliver_campaign_promises:0 "§RDeliver on Campaign Promises§!"
+ JAP_default_campaign_promises:0 "§YDefault on Campaign Promises§!"
+ 
  japan.3.desc:0 "Chiyo knocked on the door a final time. Prime Minister Inukai had still not woken up, and a meeting of the Diet was to take place in only an hour. “For Inukai-sama to sleep in is normal,” Hideko, another servant, said, “but this is ridiculous!” Chiyo took a deep breath and braced herself for the act of disrespect she, only the head servant, was now forced to commit. She opened the door to Inukai’s room, stepped in, quickly bowed, and spoke. "My humblest apologies, Prime Minister, but it is nearly 10:00 in the morning..." Inukai did not respond in any way, simply lying still on the bed. Chiyo stood, frozen and still bowed, unsure of what to do next. She looked back at the doorway, where Hideko shrugged at her. Chiyo gradually rose, and slowly, near silently, approached the sleeping Prime Minister. She looked back at Hideko with widened eyes."
  japan.4.desc:0 "Thousands were present for the state-sponsored funeral of Inukai Tsuyoshi. His body had already been cremated, but speeches were given and a great procession of soldiers, politicians, aristocrats, and others was held in Tokyo. Even the Emperor himself was in attendance, although not publicly visible. Speeches were held, calling him a hero and the savior of Japanese politics. Although no one mentioned it explicitly, there was also a hanging uncertainty for what his passing would mean for Japanese politics. New elections were likely to be held, but what then?"
  japan.5.desc:0 "Several hundred Diet members slowly trickle out of the building, minds and mouths abuzz with plans for the future. The acting Prime Minister just read a decree from His Imperial Majesty disbanding the Diet. As his last act before he resigned, he called for new elections, a measure which passed unanimously. The Diet members now all plot their re-elections and create plans for the next government. Most of their districts are secure, but some, especially among the Seiyukai, are not. The next few months will see intense campaigning across Japan."

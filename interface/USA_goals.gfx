@@ -18,13 +18,63 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_rural_electrification"
+		texturefile = "gfx/interface/goals/USA/USA_rural_electrification.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_increase_corp_taxes"
 		texturefile = "gfx/interface/goals/USA/USA_increase_corp_taxes.png"
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_increase_wpa_spending"
+		texturefile = "gfx/interface/goals/USA/USA_increase_wpa_spending.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_social_security"
+		texturefile = "gfx/interface/goals/USA/USA_social_security.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_a_new_america"
+		texturefile = "gfx/interface/goals/USA/USA_new_america.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_prepare_the_campaign"
 		texturefile = "gfx/interface/goals/USA/USA_prepare_the_campaign.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_campaign_great_lakes"
+		texturefile = "gfx/interface/goals/USA/USA_campaign_great_lakes.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_campaign_east_coast"
+		texturefile = "gfx/interface/goals/USA/USA_campaign_east_coast.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_reaching_new_heights"
+		texturefile = "gfx/interface/goals/USA/USA_reaching_new_heights.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_campaign_rockies"
+		texturefile = "gfx/interface/goals/USA/USA_campaign_rockies.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_campaign_west_coast"
+		texturefile = "gfx/interface/goals/USA/USA_campaign_west_coast.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_not_so_solid_south"
+		texturefile = "gfx/interface/goals/USA/USA_campaign_south.png"
 	}
 	
 	### THOMAS 2ND TERM ###

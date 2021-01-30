@@ -1,0 +1,92 @@
+JAP_liberal_socialist_influence_category = {
+
+	JAP_strengthen_oversight = {
+	
+		icon = ger_mefo_bills
+		
+		visible = {
+			always = yes
+		}
+		
+		cost = 25
+		
+		complete_effect = {
+			
+		}
+	}
+	
+	JAP_deregulate_corps = {
+	
+		icon = ger_mefo_bills
+		
+		visible = {
+			always = yes
+		}
+		
+		cost = 25
+		
+		complete_effect = {
+			
+		}
+	}
+	
+	JAP_expand_welfare = {
+	
+		icon = ger_mefo_bills
+		
+		visible = {
+			always = yes
+		}
+		
+		cost = 25
+		
+		complete_effect = {
+			
+		}
+	}
+	
+	JAP_cut_welfare = {
+	
+		icon = ger_mefo_bills
+		
+		visible = {
+			always = yes
+		}
+		
+		cost = 25
+		
+		complete_effect = {
+			
+		}
+	}
+	
+	JAP_deliver_campaign_promises = {
+	
+		icon = ger_mefo_bills
+		
+		visible = {
+			always = yes
+		}
+		
+		cost = 50
+		
+		complete_effect = {
+			
+		}
+	}
+	
+	JAP_default_campaign_promises = {
+	
+		icon = ger_mefo_bills
+		
+		visible = {
+			always = yes
+		}
+		
+		cost = 50
+		
+		complete_effect = {
+			
+		}
+	}
+}

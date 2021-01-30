@@ -7,6 +7,7 @@ USA_congress = {
 				has_country_flag = debug_bill_passed
 				has_country_flag = USA_discussing_bill
 			}
+			is_debug = yes
 		}
 		
 		visible = {
@@ -14,6 +15,7 @@ USA_congress = {
 			NOT = {
 				has_country_flag = USA_discussing_bill
 			}
+			is_debug = yes
 		}
 		
 		cost = 0
@@ -21,6 +23,32 @@ USA_congress = {
 		complete_effect = {
 			custom_effect_tooltip = USA_debug_act_effect
 			USA_debug_example_setup = yes
+		}
+	}
+	
+	start_social_security_act = { # social security act
+		icon = ger_mefo_bills
+		available = {
+			NOT = {
+				has_country_flag = social_security_passed
+				has_country_flag = USA_discussing_bill
+			}
+			has_completed_focus = USA_social_security
+		}
+		
+		visible = {
+			original_tag = USA
+			NOT = {
+				has_country_flag = USA_discussing_bill
+			}
+			has_completed_focus = USA_social_security
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			custom_effect_tooltip = USA_social_security_act_effect
+			USA_social_security_act_setup = yes
 		}
 	}
 	
@@ -43,14 +71,23 @@ USA_congress = {
 		
 		complete_effect = {
 			custom_effect_tooltip = start_vote_tt
-			#add_days_mission_timeout = {
-			#	mission = USA_bill_timer
-			#	days = 10
-			#}
+			check_if_bill_passed = yes
 		}
 		
 		remove_effect = {
-			check_if_bill_passed = yes
+			if = {
+				limit = {
+					OR = {
+						check_variable = { senators_support < quorum_medium }
+						check_variable = { representatives_support < rep_quorum_medium }
+					}
+				}
+				custom_effect_tooltip = vote_will_fail_tt
+			}
+			else_if = {
+				custom_effect_tooltip = vote_will_pass_tt
+			}
+		
 			USA_bill_vote = yes
 		}
 	}

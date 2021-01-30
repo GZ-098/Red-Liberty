@@ -33,3 +33,16 @@ ITA_destabilizatiaon_missions = {
 		has_completed_focus = ITA_destabilize_germany
 	}
 }
+
+ITA_spread_revolution_to_balkans = {
+
+	icon = revolution_communist_balkans
+	
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		has_completed_focus = ITA_spread_to_the_balkans
+		original_tag = ITA
+	}
+}

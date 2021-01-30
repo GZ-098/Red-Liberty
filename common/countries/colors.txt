@@ -800,3 +800,7 @@ WUK = {
 KRA = {
 	color = rgb { 176 109 138 }
 }
+
+ANH = {
+	color = rgb { 214 197 45 }
+}

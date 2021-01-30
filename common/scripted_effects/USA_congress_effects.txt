@@ -68,6 +68,37 @@ USA_debug_example_setup = { # example debug act
 	USA_bill_setup = yes # always required
 }
 
+USA_social_security_act_setup = { # social security act
+	log = "[GetDateText]: [Root.GetName]: bill setup active"
+	
+	set_variable = { bill_id = 2 } # EACH BILL MUST HAVE A UNIQUE ID
+	
+	set_country_flag = USA_republican_discussing # Sets up who you can negotiate with
+	set_country_flag = USA_democrat_discussing
+	set_country_flag = USA_communist_discussing
+	set_country_flag = USA_fascist_discussing
+	
+	set_country_flag = bill_enable_mission # Gives the President penalties if they drag their feet for too long doing this
+	set_variable = { USA_bill_mission_deadline = 30 }
+	
+	set_variable = { USA_republican_bill_support = 0.4 } # percentage of congresspeople who will initially support the bill
+	set_variable = { USA_democrat_bill_support = 0.2 }
+	set_variable = { USA_communist_bill_support = 1 }
+	set_variable = { USA_socialist_bill_support = 1 }
+	set_variable = { USA_fascist_bill_support = 0.1 }
+	
+	set_variable = { average_boost_republican = 0.3 } # this shows the percentage of politicians (who are not currently supportive) who would be on average would be flipped by a compromise
+	set_variable = { average_boost_democrat = 0.2 } 
+	
+	set_variable = { republican_flip_cost = 25 } # how much pp negotiation decisions cost
+	set_variable = { democrat_flip_cost = 40 }
+	set_variable = { communist_flip_cost = 20 }
+	set_variable = { socialist_flip_cost = 20 }
+	set_variable = { fascist_flip_cost = 70 }
+	
+	USA_bill_setup = yes # always required
+}
+
 USA_bill_setup = {
 	USA_initialize_bill_support = yes
 }
@@ -468,10 +499,10 @@ USA_bill_vote = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { bill_id = # }
+			check_variable = { bill_id = 2 } # social security act
 		}
 		country_event = {
-			id = us_bill.#
+			id = us_bill.2
 			hours = 1
 		}
 	}

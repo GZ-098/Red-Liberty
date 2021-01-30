@@ -1,0 +1,10 @@
+spriteTypes = {	
+
+	### categories
+	
+
+	spriteType = {
+		name = "GFX_revolution_communist_balkans"
+		texturefile = "gfx/interface/decisions/revolution_communist_balkans.dds"
+	}
+}

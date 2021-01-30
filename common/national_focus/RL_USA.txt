@@ -17,14 +17,18 @@ focus_tree = {
 }
 
 focus_tree = {
-	id = USA_RL_Thomas_tree
+	id = USA_thomas_tree
 	country = {
 		factor = 0
+		modifier = {
+			add = 10
+			tag = USA
+		}
 	}
 	continuous_focus_position = {
 		x = 25
-		y = 125
+		y = -1250
 	}
 	default = no
-	shared_focus = USA_the_thomas_admin
+	shared_focus = USA_the_second_thomas_admin
 }
