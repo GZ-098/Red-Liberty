@@ -662,6 +662,104 @@ ITA_spread_revolution_to_balkans = {
 	}
 } 
 
+ITA_taxes_managment = {
+	ITA_increase_taxes = {
+	
+		icon = increase_taxes
+		
+		available = {
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+			production_factory_efficiency_gain_factor = -0.15
+		}
+		
+		cost = 60 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 55
+		
+		complete_effect = { 
+			ROM = {
+				start_civil_war = {
+					ideology = revolutionary_autocracy
+					size = 0.5
+					only_own_territory = yes
+					keep_political_leader = yes
+				}				
+			}
+		}
+	}
+
+	ITA_maintain_tax_levels = {
+	
+		icon = keep_tax_level
+		
+		available = {
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+			production_factory_efficiency_gain_factor = -0.15
+		}
+		
+		cost = 60 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 55
+		
+		complete_effect = { 
+			ROM = {
+				start_civil_war = {
+					ideology = revolutionary_autocracy
+					size = 0.5
+					only_own_territory = yes
+					keep_political_leader = yes
+				}				
+			}
+		}
+	}
+
+	ITA_decrease_taxes = {
+	
+		icon = lower_taxes
+		
+		available = {
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+			production_factory_efficiency_gain_factor = -0.15
+		}
+		
+		cost = 60 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 55
+		
+		complete_effect = { 
+			ROM = {
+				start_civil_war = {
+					ideology = revolutionary_autocracy
+					size = 0.5
+					only_own_territory = yes
+					keep_political_leader = yes
+				}				
+			}
+		}
+	}
+}
+
 
 
 

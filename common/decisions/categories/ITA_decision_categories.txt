@@ -46,3 +46,42 @@ ITA_spread_revolution_to_balkans = {
 		original_tag = ITA
 	}
 }
+
+ITA_taxes_managment = {
+
+	icon = decision_category_generic
+	
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		has_completed_focus = ITA_taxes_managment
+		original_tag = ITA
+	}
+}
+
+ITA_buget_managment = {
+
+	icon = buget_managment
+	
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		has_completed_focus = ITA_taxes_managment
+		original_tag = ITA
+	}
+}
+
+ITA_occupation_managment = {
+
+	icon = occupation_managment
+	
+	allowed = {
+		original_tag = ITA
+	}
+	visible = {
+		has_completed_focus = ITA_occupation_managment
+		original_tag = ITA
+	}
+}

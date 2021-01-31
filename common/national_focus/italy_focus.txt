@@ -1934,9 +1934,11 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		bypass = {
-			IF = {
-				NOT = {
-					country_exists = HSR
+			IF = { 
+				limit = {
+					NOT = {
+						country_exists = HSR
+					}					
 				}
 			}
 		}
@@ -2148,18 +2150,24 @@ focus_tree = {
 		}
 		available = {
 			IF = {
+				limit = {
+					country_exists = FRA					
 				FRA = {
-					country_exists = FRA
 					revolutionary_autocracy > 0.4
-					stability < 0.55
+					has_stability < 0.55
+				}					
 				}
+
 			}
 		}
 		bypass = {
 			IF = {
+				limit = {
 				FRA = {
 					is_in_faction_with = ITA
+				}					
 				}
+
 			}
 		}
 		x = 37
@@ -2257,7 +2265,11 @@ focus_tree = {
 		}
 		x = 34
 		y = 20
-
+		completion_reward = {
+			add_ideas = {
+				greater_italy
+			}
+		}
 	}
 	focus = {
 		id = ITA_buget_managment 
@@ -2268,7 +2280,14 @@ focus_tree = {
 		}
 		x = 34
 		y = 21
-
+		completion_reward = {
+			completion_reward = {
+				country_event = {
+					id = italy_events.64
+					days = 1
+				}
+			}
+		}
 	}
 	focus = {
 		id = ITA_taxes_managment
@@ -2279,7 +2298,12 @@ focus_tree = {
 		}
 		x = 32
 		y = 21
-
+		completion_reward = {
+			country_event = {
+				id = italy_events.63
+				days = 1
+			}
+		}
 	}
 	focus = {
 		id = ITA_occupation_managment
@@ -2290,6 +2314,11 @@ focus_tree = {
 		}
 		x = 36
 		y = 21
-
+		completion_reward = {
+			country_event = {
+				id = italy_events.65
+				days = 1
+			}
+		}
 	}
 }
