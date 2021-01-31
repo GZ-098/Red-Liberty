@@ -23,70 +23,32 @@ set_technology = {
 set_convoys = 10
 
 set_politics = {
-	ruling_party = autocratic_despotism
+	ruling_party = national_conservatism
 	last_election = "1932.11.8"
 	election_frequency = 0
 	elections_allowed = no
 }
 set_popularities = {
-	revolutionary_socialism = 5
-	democratic_socialism = 10
-	liberalism = 30
-	conservatism = 10
-	autocratic_despotism = 40
-	empowered_nationalism = 5
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 9
+	social_democracy = 24
+	progressive_liberalism = 14
+	market_libertarianism = 10
+	national_conservatism = 20
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 17
+	martial_despotism = 6
+	ultranational_statism = 0
 }
 
 create_country_leader = {
-	name = "Władysław Sikorski"
-	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
-	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
+	name = "August IV"
+	desc = ""
+	picture = ""
 	expire = "1965.1.1"
-	ideology = oligarchism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Ignacy Mościcki"
-	desc = "POLITICS_IGNACY_MOSCICKI_DESC"
-	picture = "Portrait_Poland_Ignacy_Moscicki.dds"
-	expire = "1965.1.1"
-	ideology = oligarchism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Władysław Gomułka"
-	desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
-	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Wincenty Witos"
-	desc = "POLITICS_WINCENTY_WITOS_DESC"
-	picture = "GFX_POL_wincenty_witos"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Bolesław Piasecki"
-	desc = "POLITICS_BOLESLAW_PIASECKI_DESC"
-	picture = "GFX_POL_boleslaw_piasecki"
-	expire = "1965.1.1"
-	ideology = falangism
+	ideology = national_conservatism_subtype
 	traits = {
 		#
 	}

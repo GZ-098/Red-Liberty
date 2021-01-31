@@ -1,0 +1,99 @@
+add_namespace = acw
+
+
+country_event = { # thomas is assassinated
+	id = acw.1
+	title = ""
+	desc = acw.1.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			ACW_setup_USA = yes
+		}
+	}
+
+	option = {
+		name = ""
+		country_event = {
+			id = acw.2
+			days = 2
+		}
+	}
+}
+
+country_event = { # military government is formed
+	id = acw.2
+	title = "The Great Blunder"
+	desc = acw.2.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+		set_politics = {
+			ruling_party = martial_despotism
+			last_election = "1936.11.8"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = martial_despotism
+			popularity = 0.05
+		}
+		country_event = {
+			id = acw.3
+			days = 2
+		}
+	}
+}
+
+country_event = { # vice president declares revolution
+	id = acw.3
+	title = ""
+	desc = acw.3.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+		ACW_setup_AWA = yes
+	}
+}
+
+country_event = {
+	id = acw.4
+	title = ""
+	desc = acw.4.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+		ACW_setup_CPF = yes
+	}
+}
+
+country_event = {
+	id = acw.5
+	title = ""
+	desc = acw.5.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+		ACW_setup_FRM = yes
+	}
+}

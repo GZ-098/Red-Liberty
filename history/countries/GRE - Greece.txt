@@ -58,149 +58,39 @@ if = {
 
 set_convoys = 10
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "GRE_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "GRE_1939_naval_mtg"
-		else = {
-			set_naval_oob = "GRE_1939_naval_legacy"
-		}
-	}
-	
-	set_technology = {
-		tech_support = 1		
-		tech_engineers = 1
-		early_fighter = 1
-		early_bomber = 1
-		CAS1 = 1
-		naval_bomber1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			basic_destroyer = 1
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_light_battery = 1
-			basic_depth_charges = 1
-		}
-	}
-}
-
 set_politics = {
-	ruling_party = revolutionary_socialism
+	ruling_party = national_conservatism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 5
+	social_democracy = 24
+	progressive_liberalism = 14
+	market_libertarianism = 0
+	national_conservatism = 25
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 6
+	martial_despotism = 12
+	ultranational_statism = 14
 }
 
 set_stability = 0.75
 
 create_country_leader = {
-	name = "Ioannis Metaxas"
-	desc = "POLITICS_IOANNIS_METAXAS_DESC"
-	picture = "Portrait_Greece_Ioannis_Metaxas.dds"
+	name = "Geórgios II"
+	#desc = ""
+	#picture = ""
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = national_conservatism_subtype
 	traits = {
 		#
 	}
 }
-
-create_country_leader = {
-	name = "Markos Vafiadis"
-	desc = "POLITICS_MARKOS_VAFIADIS_DESC"
-	picture = "Portrait_Greece_Markos_Vafiadis.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Konstantinos Tsaldaris"
-	desc = "POLITICS_KONSTANTINOS_TSALDARIS_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Georgios Kosmidis"
-	desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		#
-	}
-}
-
 
 create_corps_commander = {
 	name = "Markos Drakos"

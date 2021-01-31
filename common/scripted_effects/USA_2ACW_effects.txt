@@ -1,0 +1,241 @@
+ACW_setup_USA = {
+	hidden_effect = {
+		USA = {
+			if = {
+				limit = { has_template = "Infantry Division" }
+				delete_unit_template_and_units = { division_template = "Infantry Division" }
+			}
+			if = {
+				limit = { has_template = "National Guard" }
+				delete_unit_template_and_units = { division_template = "National Guard" }
+			}
+			if = {
+				limit = { has_template = "Organized Reserve" }
+				delete_unit_template_and_units = { division_template = "Organized Reserve" }
+			}
+			if = {
+				limit = { has_template = "Cavalry Division" }
+				delete_unit_template_and_units = { division_template = "Cavalry Division" }
+			}
+			if = {
+				limit = { has_template = "Garrison Division" }
+				delete_unit_template_and_units = { division_template = "Garrison Division" }
+			}
+			if = {
+				limit = { has_template = "Marine Brigade" }
+				delete_unit_template_and_units = { division_template = "Marine Brigade" }
+			}
+		}
+	}
+}
+
+ACW_setup_AWA = {
+	hidden_effect = {
+		AWA = {	
+			add_state_core = 360
+			set_state_owner = 360
+			set_province_controller = 11800
+			set_province_controller = 6845
+		
+			add_state_core = 391
+			set_state_owner = 391
+			set_province_controller = 1719
+			set_province_controller = 1866
+			
+			add_state_core = 392
+		
+			add_state_core = 393
+			set_state_owner = 393
+			set_province_controller = 6710
+		
+			add_state_core = 394
+			set_state_owner = 394
+			set_province_controller = 12357
+		
+			add_state_core = 395
+			set_state_owner = 395
+			set_province_controller = 9450
+			set_province_controller = 9682
+			set_province_controller = 12312
+			set_province_controller = 12368
+			
+			if = {
+				limit = { has_template = "Infantry Division" }
+				delete_unit_template_and_units = { division_template = "Infantry Division" }
+			}
+			if = {
+				limit = { has_template = "National Guard" }
+				delete_unit_template_and_units = { division_template = "National Guard" }
+			}
+			if = {
+				limit = { has_template = "Organized Reserve" }
+				delete_unit_template_and_units = { division_template = "Organized Reserve" }
+			}
+			if = {
+				limit = { has_template = "Cavalry Division" }
+				delete_unit_template_and_units = { division_template = "Cavalry Division" }
+			}
+			if = {
+				limit = { has_template = "Garrison Division" }
+				delete_unit_template_and_units = { division_template = "Garrison Division" }
+			}
+			if = {
+				limit = { has_template = "Marine Brigade" }
+				delete_unit_template_and_units = { division_template = "Marine Brigade" }
+			}
+			
+			load_oob = AWA
+			
+			declare_war_on = {
+				target = USA
+				type = annex_everything
+			}
+		}
+	}
+}
+
+ACW_setup_CPF = {
+	hidden_effect = {
+		CPF = {
+			add_state_core = 363
+			set_state_owner = 363
+		
+			add_state_core = 364
+			set_state_owner = 364
+		
+			add_state_core = 365
+			set_state_owner = 365
+			set_province_controller = 7583
+			set_province_controller = 9996
+			set_province_controller = 12384
+			
+			add_state_core = 366
+			transfer_state = 366
+			USA = {
+				set_province_controller = 1843
+				set_province_controller = 1913
+				set_province_controller = 9834
+				set_province_controller = 10489
+				set_province_controller = 12752
+			}
+			
+			add_state_core = 367
+			set_state_owner = 367
+			set_province_controller = 7480
+			set_province_controller = 4594
+			set_province_controller = 10520
+			set_province_controller = 11509
+			set_province_controller = 12735
+		
+			add_state_core = 371
+			transfer_state = 371
+			
+			add_state_core = 370
+			set_state_owner = 370
+			set_province_controller = 10449
+			set_province_controller = 4650
+			set_province_controller = 4464
+			set_province_controller = 7668
+			
+			add_state_core = 372
+			set_state_owner = 372
+			
+			if = {
+				limit = { has_template = "Infantry Division" }
+				delete_unit_template_and_units = { division_template = "Infantry Division" }
+			}
+			if = {
+				limit = { has_template = "National Guard" }
+				delete_unit_template_and_units = { division_template = "National Guard" }
+			}
+			if = {
+				limit = { has_template = "Organized Reserve" }
+				delete_unit_template_and_units = { division_template = "Organized Reserve" }
+			}
+			if = {
+				limit = { has_template = "Cavalry Division" }
+				delete_unit_template_and_units = { division_template = "Cavalry Division" }
+			}
+			if = {
+				limit = { has_template = "Garrison Division" }
+				delete_unit_template_and_units = { division_template = "Garrison Division" }
+			}
+			if = {
+				limit = { has_template = "Marine Brigade" }
+				delete_unit_template_and_units = { division_template = "Marine Brigade" }
+			}
+			
+			load_oob = CPF
+			
+			declare_war_on = {
+				target = USA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = AWA
+				type = annex_everything
+			}
+		}
+	}
+}
+
+ACW_setup_FRM = {
+	hidden_effect = {
+		FRM = {
+			add_state_core = 373
+			set_state_owner = 373
+			
+			add_state_core = 374
+			set_state_owner = 374
+		
+			add_state_core = 383
+			set_state_owner = 383
+			set_province_controller = 4740
+			set_province_controller = 7834
+		
+			add_state_core = 384
+			set_state_owner = 384
+			set_province_controller = 3613
+			set_province_controller = 7852
+			set_province_controller = 1683
+			set_province_controller = 12586
+			
+			add_state_core = 392
+			set_state_owner = 392
+			set_province_controller = 1770
+			set_province_controller = 12418
+			
+			if = {
+				limit = { has_template = "Infantry Division" }
+				delete_unit_template_and_units = { division_template = "Infantry Division" }
+			}
+			if = {
+				limit = { has_template = "National Guard" }
+				delete_unit_template_and_units = { division_template = "National Guard" }
+			}
+			if = {
+				limit = { has_template = "Organized Reserve" }
+				delete_unit_template_and_units = { division_template = "Organized Reserve" }
+			}
+			if = {
+				limit = { has_template = "Cavalry Division" }
+				delete_unit_template_and_units = { division_template = "Cavalry Division" }
+			}
+			if = {
+				limit = { has_template = "Garrison Division" }
+				delete_unit_template_and_units = { division_template = "Garrison Division" }
+			}
+			if = {
+				limit = { has_template = "Marine Brigade" }
+				delete_unit_template_and_units = { division_template = "Marine Brigade" }
+			}
+			
+			load_oob = CPF
+			
+			declare_war_on = {
+				target = USA
+				type = annex_everything
+			}
+		}
+	}
+}

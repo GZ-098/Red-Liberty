@@ -216,8 +216,15 @@ SCH = "countries/Semirechye Cossack Host.txt"
 ORE = "countries/Orenburg Cossack Host.txt"
 TMY = "countries/Talyshstan.txt"
 
-NEE = "countries/New England.txt"
 ITF = "countries/Italian Union of Fascists.txt"
+
+FLA = "countries/Flanders.txt"
+WLA = "countries/Wallonia.txt"
+
+WUK = "countries/West Ukraine.txt"
+KRA = "countries/Krakow.txt"
+
+### China ###
 SZC = "countries/Sichuan.txt"
 GUD = "countries/Guangdong.txt"
 ZHE = "countries/Zhejiang.txt"
@@ -226,8 +233,13 @@ QIE = "countries/Qing.txt"
 ZHI = "countries/Zhili.txt"
 HNN = "countries/Hunan.txt"
 
-FLA = "countries/Flanders.txt"
-WLA = "countries/Wallonia.txt"
+### Leftists ###
+AWA = "countries/American Worker's Army.txt"
+SEC = "countries/Seattle Commune.txt"
 
-WUK = "countries/West Ukraine.txt"
-KRA = "countries/Krakow.txt"
+### Greens ###
+FRM = "countries/Farmer's Republics.txt"
+NEE = "countries/New England.txt"
+
+### Anti-Radicals ###
+CPF = "countries/Constitutional Protection Front.txt"

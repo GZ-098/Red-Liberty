@@ -1,0 +1,28 @@
+﻿capital = 395
+
+oob = "empty"
+
+set_research_slots = 3
+
+set_politics = {
+	ruling_party = libertarian_socialism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 10
+	libertarian_socialism = 35
+	social_democracy = 10
+	progressive_liberalism = 17
+	market_libertarianism = 8
+	national_conservatism = 13
+	reactionary_theocracy = 2
+	authoritarian_republicanism = 5
+	martial_despotism = 0
+	ultranational_statism = 0
+}
+
+
