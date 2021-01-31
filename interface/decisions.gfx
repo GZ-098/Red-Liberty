@@ -7,4 +7,28 @@ spriteTypes = {
 		name = "GFX_revolution_communist_balkans"
 		texturefile = "gfx/interface/decisions/revolution_communist_balkans.dds"
 	}
+	spriteType = {
+		name = "GFX_buget_managment"
+		texturefile = "gfx/interface/decisions/buget_managment.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_generic"
+		texturefile = "gfx/interface/decisions/decision_category_generic.dds"
+	}
+	spriteType = {
+		name = "GFX_occupation_managment"
+		texturefile = "gfx/interface/decisions/occupation_managment.dds"
+	}
+	spriteType = {
+		name = "GFX_increase_taxes"
+		texturefile = "gfx/interface/decisions/increase_taxes.dds"
+	}
+	spriteType = {
+		name = "GFX_keep_tax_level"
+		texturefile = "gfx/interface/decisions/keep_tax_level.dds"
+	}
+	spriteType = {
+		name = "GFX_lower_taxes"
+		texturefile = "gfx/interface/decisions/lower_taxes.dds"
+	}
 }
