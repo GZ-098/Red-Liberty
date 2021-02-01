@@ -38,7 +38,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 11
+			add = 10
 			tag = JAP
 		}
 	}
