@@ -43,6 +43,11 @@ set_popularities = {
 	ultranational_statism = 0
 }
 
+add_ideas = {
+	POL_polish_wehrmacht
+	POL_german_industry
+}
+
 create_country_leader = {
 	name = "August IV"
 	desc = ""

@@ -1,0 +1,53 @@
+ideas = {
+	
+	country = { 
+       	
+		POL_polish_wehrmacht = {
+			removal_cost = -1 
+			
+			allowed = {
+				tag = POL
+			} 
+			
+			available = {
+				tag = POL
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				army_attack_factor = 0.05
+				conscription_factor = -0.25
+				army_org_factor = 0.15
+			}
+		}
+		
+		POL_german_industry = {
+			removal_cost = -1 
+			
+			allowed = {
+				tag = POL
+			} 
+			
+			available = {
+				tag = POL
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_industrial_complex_factor = 0.15
+			}
+			
+			targeted_modifier = {
+				tag = GER
+				cic_to_target_factor = 0.25
+			}
+		}
+	}
+}
