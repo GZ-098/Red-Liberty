@@ -12,7 +12,7 @@ HEZ = {
 	color_ui = rgb { 225 225 225 }
 }
 AHE = {
-	color = rgb { 229 229 229 }
+	color = rgb { 145 103 86 }  # { 128 89 73 }
 	color_ui = rgb { 225 225 225 }
 }
 GER = {
@@ -20,7 +20,7 @@ GER = {
 	color_ui = rgb { 138 155 116 }
 }
 ENG = {
-	color = rgb { 201 56 93 }
+	color = rgb { 171 48 48 }
 	color_ui = rgb { 255 73 121 }
 }
 SOV = {
@@ -32,7 +32,7 @@ SWE = {
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {
-	color = rgb { 57 113 228 }
+	color = rgb { 43 86 173 }
 	color_ui = rgb { 74 147 255 }
 }
 LUX = {
@@ -49,7 +49,7 @@ CZE = {	color = rgb { 54 167 156 }
 		color_ui = rgb { 70 217 203 }
 }
 POL = {
-	color = rgb { 197 92 106 }
+	color = rgb { 161 61 74 } # { 158 74 85 }
 	color_ui = rgb { 255 120 138 }
 }
 AUS = {
@@ -69,11 +69,11 @@ LAT = {
 	color_ui = rgb { 124 125 184 }
 }
 SPR = {
-	color = rgb { 242 205 94 }
+	color = rgb { 181 145 191 } # { 138 104 148 }
 	color_ui = rgb { 255 255 122 }
 }
 ITA = {
-	color = rgb { 67 127 63 }
+	color = rgb { 88 115 87 }
 	color_ui = rgb { 87 165 82 }
 }
 ROM = {
@@ -373,7 +373,7 @@ SYR = {
 }
 
 SER = {
-	color = rgb { 160 110 110 }
+	color = rgb { 63 82 92 }
 	color_ui = rgb { 160 110 110 }
 }
 
@@ -781,12 +781,12 @@ GUD = {
 }
 
 FLA = {
-	color = rgb { 209 199 13 }
+	color = rgb { 204 199 102 } # { 209 199 13 }
 	color_ui = rgb { 255 242 0 }
 }
 
 WLA = {
-	color = rgb { 117 0 26 }
+	color = rgb { 148 90 103 } # { 117 0 26 }
 	color_ui = rgb { 144 0 32 }
 }
 
