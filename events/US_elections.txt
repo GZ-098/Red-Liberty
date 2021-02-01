@@ -6,6 +6,7 @@ country_event = {
 	desc = us_election.1.desc
 	
 	trigger = {
+		tag = USA
 		date < 1936.12.31
 		date > 1936.1.1
 	}
