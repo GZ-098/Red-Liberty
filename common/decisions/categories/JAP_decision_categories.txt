@@ -6,5 +6,6 @@ JAP_liberal_socialist_influence_category = {
 	}
 	visible = {
 		always = yes
+		has_completed_focus = JAP_showa_democracy
 	}
 }

@@ -52,11 +52,22 @@ country_event = { # inukai dies
 		add_stability = -0.15
 		set_country_flag = inukai_ded
 		kill_country_leader = yes
+		
+		create_country_leader = {
+			name = "Showa"
+			desc = "POLITICS_SHOWA_EMPEROR_DESC"
+			picture = "Portrait_JAP_Showa.tga"
+			expire = "1989.1.1"
+			ideology = national_conservatism_subtype
+			traits = {
+			}
+		}
+		
 		ai_chance = { factor = 1 }
 	}
 }
 
-country_event = { # inukai dies
+country_event = { # inukai funeral
 	id = japan.4
 	title = "An Overdue Farewell"
 	desc = japan.4.desc
