@@ -203,17 +203,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_JAP_military_influence"
-		texturefile = "gfx/interface/ideas/JAP/mil_vs_nav_death_battle.png"
-	}
-	
-	spriteType = {
 		name = "GFX_idea_JAP_echoes_of_the_depression"
 		texturefile = "gfx/interface/ideas/JAP/echos_of_the_time_when_we_got_sad.png"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_JAP_twenty_one_demands"
-		texturefile = "gfx/interface/ideas/JAP/i_am_being_held_in_a_basment_by_a_military_officer_please_send_help.png"
 	}
 }

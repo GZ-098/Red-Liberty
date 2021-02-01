@@ -5,9 +5,14 @@ shared_focus = {
     x = 8
 	y = 0
 	
-	cost = 2
+	cost = 0
     completion_reward = {
-        
+        add_dynamic_modifier = {
+			modifier = JAP_civil_opposition
+		}
+		set_variable = { JAP_pp_gain = -1 }
+		set_variable = { JAP_weekly_stability = -0.03 }
+		set_variable = { JAP_weekly_war_support = -0.03 }
     }
 	
 	ai_will_do = {
@@ -22,11 +27,11 @@ shared_focus = {
     x = -1
 	y = 1
 	
-	cost = 4
+	cost = 1
 	relative_position_id = JAP_spiders_web
 	prerequisite = { focus = JAP_spiders_web }
     completion_reward = {
-        
+        add_to_variable = { JAP_weekly_stability = 0.01 }
     }
 	
 	ai_will_do = {
@@ -41,11 +46,11 @@ shared_focus = {
     x = 1
 	y = 1
 	
-	cost = 4
+	cost = 1
 	relative_position_id = JAP_spiders_web
 	prerequisite = { focus = JAP_spiders_web }
     completion_reward = {
-        
+        add_to_variable = { JAP_weekly_war_support = 0.01 }
     }
 	
 	ai_will_do = {
@@ -60,11 +65,12 @@ shared_focus = {
     x = -2
 	y = 2
 	
-	cost = 4
+	cost = 1
 	relative_position_id = JAP_spiders_web
 	prerequisite = { focus = JAP_send_troops }
+	prerequisite = { focus = JAP_arrest_agitators }
     completion_reward = {
-        
+        add_to_variable = { JAP_weekly_stability = 0.01 }
     }
 	
 	ai_will_do = {
@@ -79,11 +85,12 @@ shared_focus = {
     x = 0
 	y = 2
 	
-	cost = 4
+	cost = 1
 	relative_position_id = JAP_spiders_web
-	prerequisite = { focus = JAP_send_troops } 
+	prerequisite = { focus = JAP_send_troops }
+	prerequisite = { focus = JAP_arrest_agitators } 
     completion_reward = {
-        
+        add_to_variable = { JAP_pp_gain = 0.75 }
     }
 	
 	ai_will_do = {
@@ -98,11 +105,12 @@ shared_focus = {
     x = 2
 	y = 2
 	
-	cost = 4
+	cost = 1
 	relative_position_id = JAP_spiders_web
-	prerequisite = { focus = JAP_arrest_agitators } 
+	prerequisite = { focus = JAP_arrest_agitators }
+	prerequisite = { focus = JAP_send_troops }
     completion_reward = {
-        
+        add_to_variable = { JAP_weekly_war_support = 0.01 }
     }
 	
 	ai_will_do = {
@@ -117,13 +125,18 @@ shared_focus = {
     x = 0
 	y = 3
 	
-	cost = 4
+	cost = 2
 	relative_position_id = JAP_spiders_web
 	prerequisite = { focus = JAP_national_unity } 
 	prerequisite = {focus = JAP_imperial_support }
 	prerequisite = {focus = JAP_martial_law }
     completion_reward = {
-        
+        remove_dynamic_modifier = {
+			modifier = JAP_civil_opposition
+		}
+		clear_variable = JAP_pp_gain
+		clear_variable = JAP_weekly_stability
+		clear_variable = JAP_weekly_war_support
     }
 	
 	ai_will_do = {
@@ -135,7 +148,7 @@ shared_focus = {
     id = JAP_our_agenda
 	icon = GFX_goal_unknown
 	
-    x = -2
+    x = -3
 	y = 4
 	
 	cost = 4
@@ -154,7 +167,7 @@ shared_focus = {
     id = JAP_our_policy
 	icon = GFX_goal_unknown
 	
-    x = 2
+    x = 3
 	y = 4
 	
 	cost = 4
@@ -170,14 +183,14 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = JAP_subjaugate_the_zaibtatsu
+    id = JAP_subjugate_the_zaibatsu
 	icon = GFX_goal_unknown
 	
-    x = 1
-	y = 5
+    x = -2
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_our_policy
 	prerequisite = { focus = JAP_our_policy } 
     completion_reward = {
         
@@ -197,7 +210,7 @@ shared_focus = {
 	
 	cost = 4
 	relative_position_id = JAP_spiders_web
-	prerequisite = { focus = JAP_our_policy } 
+	prerequisite = { focus = JAP_subjugate_the_zaibatsu } 
     completion_reward = {
         
     }
@@ -211,12 +224,12 @@ shared_focus = {
     id = JAP_bureaucratic_reforms
 	icon = GFX_goal_unknown
 	
-    x = 1
-	y = 6
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
-	prerequisite = { focus = JAP_subjaugate_the_zaibtatsu } 
+	relative_position_id = JAP_subjugate_the_zaibatsu
+	prerequisite = { focus = JAP_subjugate_the_zaibatsu } 
     completion_reward = {
         
     }
@@ -230,11 +243,11 @@ shared_focus = {
     id = JAP_expand_budget
 	icon = GFX_goal_unknown
 	
-    x = 2 
-	y = 6
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_empower_the_military
 	prerequisite = { focus = JAP_empower_the_military } 
     completion_reward = {
         
@@ -249,11 +262,11 @@ shared_focus = {
     id = JAP_national_shinto
 	icon = GFX_goal_unknown
 	
-    x = 3
-	y = 6
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_return_to_tradition
 	prerequisite = { focus = JAP_return_to_tradition } 
     completion_reward = {
         
@@ -267,11 +280,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_nationalization_programs
 	
-    x = 1
-	y = 7
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_bureaucratic_reforms
 	prerequisite = { focus = JAP_bureaucratic_reforms } 
     completion_reward = {
         
@@ -285,12 +298,12 @@ shared_focus = {
 shared_focus = {
     id = JAP_end_the_rivalry
 	
-    x = 2
-	y = 7
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
-	prerequisite = { focus = JAP_bureaucratic_reforms } 
+	relative_position_id = JAP_expand_budget
+	prerequisite = { focus = JAP_expand_budget } 
     completion_reward = {
         
     }
@@ -303,11 +316,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_true_showa_era
 	
-    x = 3
-	y = 7
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_national_shinto
 	prerequisite = { focus = JAP_national_shinto } 
     completion_reward = {
         
@@ -321,13 +334,13 @@ shared_focus = {
 shared_focus = {
     id = JAP_the_rising_sun
 	
-    x = 2
-	y = 8
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_end_the_rivalry
+	prerequisite = { focus = JAP_nationalization_programs } 
 	prerequisite = { focus = JAP_end_the_rivalry } 
-	prerequisite = { focus = JAP_true_showa_era } 
 	prerequisite = { focus = JAP_true_showa_era } 
     completion_reward = {
         
@@ -341,11 +354,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_night_of_drawn_swords
 	
-    x = 0
-	y = 9
+    x = 3
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_power_secured
 	prerequisite = { focus = JAP_the_rising_sun } 
 	prerequisite = { focus = JAP_power_secured } 
     completion_reward = {
@@ -360,12 +373,15 @@ shared_focus = {
 shared_focus = {
     id = JAP_military_goverment
 	
-    x = -2
-	y = 10
+    x = -3
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
-	prerequisite = { focus = JAP_night_of_drawn_swords } 
+	relative_position_id = JAP_night_of_drawn_swords
+	prerequisite = { focus = JAP_night_of_drawn_swords }
+	mutually_exclusive = {
+		focus = JAP_showa_restoration
+	}
     completion_reward = {
         
     }
@@ -378,11 +394,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_prime_minister_tojo
 	
-    x = -2
-	y = 11
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_military_goverment
 	prerequisite = { focus = JAP_military_goverment } 
     completion_reward = {
         
@@ -396,11 +412,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_secure_the_emperor
 	
-    x = -3
-	y = 12
+    x = -1
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_prime_minister_tojo
 	prerequisite = { focus = JAP_prime_minister_tojo } 
     completion_reward = {
         
@@ -414,11 +430,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_sideline_the_diet
 	
-    x = -1
-	y = 12
+    x = 1
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_prime_minister_tojo
 	prerequisite = { focus = JAP_prime_minister_tojo } 
     completion_reward = {
         
@@ -432,11 +448,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_purge_the_privy_council
 	
-    x = -3
-	y = 13
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_secure_the_emperor
 	prerequisite = { focus = JAP_secure_the_emperor } 
     completion_reward = {
         
@@ -450,11 +466,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_empower_supreme_war_council
 	
-    x = -1
-	y = 13
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_sideline_the_diet
 	prerequisite = { focus = JAP_sideline_the_diet } 
     completion_reward = {
         
@@ -468,13 +484,13 @@ shared_focus = {
 shared_focus = {
     id = JAP_military_with_a_state
 	
-    x = -2
-	y = 14
+    x = 1
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_purge_the_privy_council
 	prerequisite = { focus = JAP_purge_the_privy_council } 
-	prerequisite = {focus = JAP_empower_supreme_war_council}
+	prerequisite = {focus = JAP_empower_supreme_war_council }
     completion_reward = {
         
     }
@@ -487,11 +503,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_bushido_spirt
 	
-    x = -3
-	y = 15
+    x = -2
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_military_with_a_state
 	prerequisite = { focus = JAP_military_with_a_state } 
     completion_reward = {
         
@@ -501,15 +517,15 @@ shared_focus = {
 		factor = 10
 	}
 }
-#tree said footing I think you ment looting
+
 shared_focus = {
-    id = JAP_permanent_war_looting
+    id = JAP_permanent_war_footing
 	
-    x = -2
-	y = 15
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_military_with_a_state
 	prerequisite = { focus = JAP_military_with_a_state } 
     completion_reward = {
         
@@ -523,11 +539,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_total_war_economy
 	
-    x = -1
-	y = 15
+    x = 2
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_military_with_a_state
 	prerequisite = { focus = JAP_military_with_a_state } 
     completion_reward = {
         
@@ -541,11 +557,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_the_divine_wind
 	
-    x = -3
-	y = 16
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_bushido_spirt
 	prerequisite = { focus = JAP_bushido_spirt } 
     completion_reward = {
         
@@ -559,12 +575,12 @@ shared_focus = {
 shared_focus = {
     id = JAP_abolish_civillans
 	
-    x = -2
-	y = 16
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
-	prerequisite = { focus = JAP_permanent_war_looting } 
+	relative_position_id = JAP_permanent_war_footing
+	prerequisite = { focus = JAP_permanent_war_footing } 
     completion_reward = {
         
     }
@@ -577,11 +593,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_war_industry_supremacy
 	
-    x = -1
-	y = 16
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_total_war_economy
 	prerequisite = { focus = JAP_total_war_economy } 
     completion_reward = {
         
@@ -595,11 +611,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_national_defense_state
 	
-    x = -2
-	y = 17
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_abolish_civillans
 	prerequisite = { focus = JAP_the_divine_wind } 
 	prerequisite = { focus = JAP_abolish_civillans }
 	prerequisite = { focus = JAP_war_industry_supremacy }
@@ -615,12 +631,15 @@ shared_focus = {
 shared_focus = {
     id = JAP_showa_restoration
 	
-    x = 2
-	y = 10
+    x = 3
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
-	prerequisite = { focus = JAP_night_of_drawn_swords } 
+	relative_position_id = JAP_night_of_drawn_swords
+	prerequisite = { focus = JAP_night_of_drawn_swords }
+	mutually_exclusive = {
+		focus = JAP_military_goverment
+	}
     completion_reward = {
         
     }
@@ -633,11 +652,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_second_coronation
 	
-    x = 2
-	y = 11
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_showa_restoration
 	prerequisite = { focus = JAP_showa_restoration } 
     completion_reward = {
         
@@ -651,11 +670,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_purge_the_military
 	
-    x = 1
-	y = 12
+    x = -1
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_second_coronation
 	prerequisite = { focus = JAP_second_coronation } 
     completion_reward = {
         
@@ -669,11 +688,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_abolish_the_diet
 	
-    x = 3
-	y = 12
+    x = 1
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_second_coronation
 	prerequisite = { focus = JAP_second_coronation } 
     completion_reward = {  
     }
@@ -686,11 +705,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_new_officers
 	
-    x = 1
-	y = 13
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_purge_the_military
 	prerequisite = { focus = JAP_purge_the_military } 
     completion_reward = {
         
@@ -704,11 +723,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_expand_privy_council
 	
-    x = 3
-	y = 13
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_abolish_the_diet
 	prerequisite = { focus = JAP_abolish_the_diet } 
     completion_reward = {
         
@@ -722,13 +741,13 @@ shared_focus = {
 shared_focus = {
     id = JAP_his_majestys_prerogative
 	
-    x = 2
-	y = 14
+    x = 1
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_new_officers
 	prerequisite = { focus = JAP_new_officers }
-	prerequisite = {focus = JAP_expand_privy_council} 
+	prerequisite = {focus = JAP_expand_privy_council } 
     completion_reward = {
         
     }
@@ -741,11 +760,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_demand_loyalty
 	
-    x = 1
-	y = 15
+    x = -2
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_his_majestys_prerogative
 	prerequisite = { focus = JAP_his_majestys_prerogative } 
     completion_reward = {
         
@@ -759,11 +778,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_social_mobilization
 	
-    x = 2
-	y = 15
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_his_majestys_prerogative
 	prerequisite = { focus = JAP_his_majestys_prerogative } 
     completion_reward = {
         
@@ -777,11 +796,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_imperial_corporations
 	
-    x = 3
-	y = 15
+    x = 2
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_his_majestys_prerogative
 	prerequisite = { focus = JAP_his_majestys_prerogative } 
     completion_reward = {
         
@@ -795,11 +814,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_the_ultimate_sacrifice
 	
-    x = 1
-	y = 16
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_demand_loyalty
 	prerequisite = { focus = JAP_demand_loyalty } 
     completion_reward = {
         
@@ -813,11 +832,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_kokutai_above_all
 	
-    x = 2
-	y = 16
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_social_mobilization
 	prerequisite = { focus = JAP_social_mobilization } 
     completion_reward = {
         
@@ -831,11 +850,11 @@ shared_focus = {
 shared_focus = {
     id = JAP_end_the_zaibatsu
 	
-    x = 3
-	y = 16
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_imperial_corporations
 	prerequisite = { focus = JAP_imperial_corporations } 
     completion_reward = {
         
@@ -849,14 +868,14 @@ shared_focus = {
 shared_focus = {
     id = JAP_a_true_imperial_japan
 	
-    x = 2
-	y = 17
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_kokutai_above_all
 	prerequisite = { focus = JAP_the_ultimate_sacrifice }
-	prerequisite = {focus = JAP_kokutai_above_all}
-	prerequisite = {focus = JAP_end_the_zaibatsu} 
+	prerequisite = {focus = JAP_kokutai_above_all }
+	prerequisite = {focus = JAP_end_the_zaibatsu } 
     completion_reward = {
         
     }
@@ -870,11 +889,11 @@ shared_focus = {
     id = JAP_empower_the_military
 	icon = GFX_goal_unknown
 	
-    x = 2
-	y = 5
+    x = 0
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_our_policy
 	prerequisite = { focus = JAP_our_policy } 
     completion_reward = {
         
@@ -889,11 +908,11 @@ shared_focus = {
     id = JAP_return_to_tradition
 	icon = GFX_goal_unknown
 	
-    x = 3
-	y = 5
+    x = 2
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_our_policy
 	prerequisite = { focus = JAP_our_policy } 
     completion_reward = {
         
@@ -904,18 +923,15 @@ shared_focus = {
 	}
 }
 
-
-
-
 shared_focus = {
     id = JAP_taisho_is_dead
 	icon = GFX_goal_unknown
 	
-    x = -3
-	y = 5
+    x = -1
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_our_agenda
 	prerequisite = { focus = JAP_our_agenda } 
     completion_reward = {
         
@@ -930,11 +946,11 @@ shared_focus = {
     id = JAP_purge_the_diet
 	icon = GFX_goal_unknown
 	
-    x = -1
-	y = 5
+    x = 1
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_our_agenda
 	prerequisite = { focus = JAP_our_agenda } 
     completion_reward = {
         
@@ -949,11 +965,11 @@ shared_focus = {
     id = JAP_defense_of_the_kokutai
 	icon = GFX_goal_unknown
 	
-    x = -2
-	y = 6
+    x = 1
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_taisho_is_dead
 	prerequisite = { focus = JAP_taisho_is_dead } 
 	prerequisite = { focus = JAP_purge_the_diet }
     completion_reward = {
@@ -969,11 +985,11 @@ shared_focus = {
     id = JAP_party_of_public_order
 	icon = GFX_goal_unknown
 	
-    x = 0
-	y = 6
+    x = 1
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_purge_the_diet
 	prerequisite = { focus = JAP_purge_the_diet } 
     completion_reward = {
         
@@ -985,35 +1001,14 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = JAP_house_of_peers_supremacy
-	icon = GFX_goal_unknown
-	
-    x = -1
-	y = 7
-	
-	cost = 4
-	relative_position_id = JAP_spiders_web
-	prerequisite = { focus = JAP_party_of_public_order } 
-	prerequisite = { focus = JAP_defense_of_the_kokutai } 
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-
-shared_focus = {
     id = JAP_democracy_failed
 	icon = GFX_goal_unknown
 	
-    x = -4
-	y = 6
+    x = -1
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_taisho_is_dead
 	prerequisite = { focus = JAP_taisho_is_dead } 
     completion_reward = {
         
@@ -1028,13 +1023,33 @@ shared_focus = {
     id = JAP_imperial_rule_assistance_association 
 	icon = GFX_goal_unknown
 	
-    x = -3
-	y = 7
+    x = 1
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
-	prerequisite = { focus = JAP_democracy_failed}
+	relative_position_id = JAP_democracy_failed
+	prerequisite = { focus = JAP_democracy_failed }
 	prerequisite = { focus = JAP_defense_of_the_kokutai } 
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = JAP_house_of_peers_supremacy
+	icon = GFX_goal_unknown
+	
+    x = 1
+	y = 1
+	
+	cost = 4
+	relative_position_id = JAP_defense_of_the_kokutai
+	prerequisite = { focus = JAP_party_of_public_order } 
+	prerequisite = { focus = JAP_defense_of_the_kokutai } 
+    completion_reward = {
+        
+    }
 	
 	ai_will_do = {
 		factor = 10
@@ -1045,11 +1060,11 @@ shared_focus = {
     id = JAP_power_secured
 	icon = GFX_goal_unknown
 	
-    x = -2
-	y = 8
+    x = 1
+	y = 1
 	
 	cost = 4
-	relative_position_id = JAP_spiders_web
+	relative_position_id = JAP_imperial_rule_assistance_association
 	prerequisite = { focus = JAP_imperial_rule_assistance_association } 
 	prerequisite = { focus = JAP_house_of_peers_supremacy } 
     completion_reward = {

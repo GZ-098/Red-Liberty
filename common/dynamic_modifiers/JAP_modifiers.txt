@@ -1,0 +1,7 @@
+JAP_civil_opposition = {
+	icon = GFX_idea_jap_militarism_showa
+
+	political_power_gain = JAP_pp_gain
+	stability_weekly = JAP_weekly_stability
+	war_support_weekly = JAP_weekly_war_support
+}
