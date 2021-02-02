@@ -47,10 +47,6 @@ shared_focus = {
 	relative_position_id = USA_continue_the_work
 	prerequisite = { focus = USA_continue_the_work }
     completion_reward = {
-        delete_unit_template_and_units = {
-			division_template = "Organized Reserve"
-			disband = yes
-		}
 		# add event about macarthur arguing with thomas?
     }
 	
