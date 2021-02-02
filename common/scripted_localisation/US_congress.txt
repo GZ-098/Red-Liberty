@@ -69,7 +69,7 @@ defined_text = {
     }
 	
 	text = {
-		localization_key = "not_working"
+		localization_key = ""
     }
 }
 

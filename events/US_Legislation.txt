@@ -82,6 +82,10 @@ country_event = { # social security act
 		name = us_bill.2.b
 		add_political_power = -100
 		add_stability = -0.05
+		add_popularity = {
+			ideology = libertarian_socialism
+			popularity = -0.05
+		}
 		trigger = { NOT = { has_country_flag = bill_passed } }
 		USA_bill_clear = yes # ALWAYS DO THIS
 	}

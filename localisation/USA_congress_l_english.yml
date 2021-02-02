@@ -8,17 +8,17 @@
  USA_congress_voting_debug_bill_example:0 "§YCongress§! is currently considering the §YDebug Act§!, which currently expects the support of §G[?USA.representatives_support]§! Representatives and §G[?USA.senators_support]§! Senators.\n\n§G[?republican_supporting_reps]§! Republican Representative(s) support this bill.\n§G[?democrat_supporting_reps]§! Democratic Representative(s) support this bill.\n§G[?socialist_supporting_reps]§! Socialist Representative(s) support this bill.\n§G[?fascist_supporting_reps]§! Fascist Representative(s) support the bill.\n§G[?communist_supporting_reps]§! Communist Representative(s) support the bill.\n\n§G[?republican_supporting_senators]§! Republican Senator(s) support the bill.\n§G[?democrat_supporting_senators]§! Democratic Senator(s) support the bill.\n§G[?socialist_supporting_senators]§! Socialist Senator(s) support the bill.\n§G[?fascist_supporting_senators]§! Fascist Senator(s) support the bill.\n§G[?communist_supporting_senators]§! Communist Senator(s) support the bill."
  USA_congress_voting_social_security:0 "§YCongress§! is currently considering the §YSocial Security Act§!, which currently expects the support of §G[?USA.representatives_support]§! Representatives and §G[?USA.senators_support]§! Senators.\n\n§G[?republican_supporting_reps]§! Republican Representative(s) support this bill.\n§G[?democrat_supporting_reps]§! Democratic Representative(s) support this bill.\n§G[?socialist_supporting_reps]§! Socialist Representative(s) support this bill.\n§G[?fascist_supporting_reps]§! Fascist Representative(s) support the bill.\n§G[?communist_supporting_reps]§! Communist Representative(s) support the bill.\n\n§G[?republican_supporting_senators]§! Republican Senator(s) support the bill.\n§G[?democrat_supporting_senators]§! Democratic Senator(s) support the bill.\n§G[?socialist_supporting_senators]§! Socialist Senator(s) support the bill.\n§G[?fascist_supporting_senators]§! Fascist Senator(s) support the bill.\n§G[?communist_supporting_senators]§! Communist Senator(s) support the bill."
  
- not_working:0 "\nWHY IS ONLY THIS LINE IN PARTICULAR NOT WORKING"
+ not_working:0 "\n§RWHY IS ONLY THIS LINE IN PARTICULAR NOT WORKING§!"
  
  USA_discussing_bill:0 "Congress is currently dicussing legislation."
  
  start_vote:0 "Start Voting"
  start_vote_tt:0 "The current bill will be voted on in congress."
- vote_will_fail_tt:0 "Currently, the current bill §RDOES NOT§! have enough votes to pass!"
- vote_will_pass_tt:0 "Currently, the current bill §GDOES§! have enough votes to pass!"
+ vote_will_fail_tt:0 "Currently, the bill §RDOES NOT§! have enough votes to pass!"
+ vote_will_pass_tt:0 "Currently, the bill §GDOES§! have enough votes to pass!"
  
  USA_bill_timer:0 "Hold the Vote"
- USA_bill_timer_pass_criteria:0 "§YA vote has been held on this Bill§!"
+ USA_bill_timer_pass_criteria:0 "§YA vote has been held on this bill.§!"
  unavaliable_already_negotiated:0 "We've haven't already struck a deal."
  mut_exclude:0 "Negotiating with some factions is not mutually exclusive."
  
@@ -34,6 +34,8 @@
  reps_fully_support:0 "The Republicans don't fully support this bill."
  dems_talking:0 "The Democrats are willing to negotiate."
  dems_fully_support:0 "The Democrats don't fully support this bill."
+ socialist_talking:0 "The Socialists are willing to negotiate."
+ socialist_fully_support:0 "The Democrats don't fully support this bill."
  
  communists_fully_support:0 "The Communists don't fully support this bill."
  

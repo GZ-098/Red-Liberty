@@ -81,7 +81,7 @@ USA_social_security_act_setup = { # social security act
 	set_country_flag = bill_enable_mission # Gives the President penalties if they drag their feet for too long doing this
 	set_variable = { USA_bill_mission_deadline = 30 }
 	
-	set_variable = { USA_republican_bill_support = 0.4 } # percentage of congresspeople who will initially support the bill
+	set_variable = { USA_republican_bill_support = 0.3 } # percentage of congresspeople who will initially support the bill
 	set_variable = { USA_democrat_bill_support = 0.2 }
 	set_variable = { USA_communist_bill_support = 1 }
 	set_variable = { USA_socialist_bill_support = 1 }
@@ -231,19 +231,17 @@ USA_bill_clear = {
 USA_republican_support_eventless = {
 	custom_effect_tooltip = negotiate_some_republican_support
 	USA = {
-		set_country_flag = republicans_negotiated
+		set_variable = { temp_senate_republican = senators_republican }
+		set_variable = { temp_senate_already_supporting = republican_supporting_senators }
 		
-		set_temp_variable = { temp_senate_republican = senators_republican }
-		set_temp_variable = { temp_senate_already_supporting = republican_supporting_senators }
-		
-		subtract_from_temp_variable = { temp_senate_republican = temp_senate_already_supporting }
+		subtract_from_variable = { temp_senate_republican = temp_senate_already_supporting }
 		log = "[GetDateText]: [Root.GetName]: calculated non-supporting republicans: [?temp_senate_republican]"
-						
-		set_temp_variable = { new_senate_support = temp_senate_republican }
+		
+		set_variable = { new_senate_support = temp_senate_republican }
 		log = "[GetDateText]: [Root.GetName]: set republican senator support: [?new_senate_support]"
 		
-		multiply_temp_variable = { new_senate_support = average_boost_republican }
-		log = "[GetDateText]: [Root.GetName]: calculated new republican support: [?new_senate_support]"
+		multiply_variable = { new_senate_support = average_boost_republican }
+		log = "[GetDateText]: [Root.GetName]: Senate - calculated new republican support: [?new_senate_support]"
 						
 		round_variable = new_senate_support
 		log = "[GetDateText]: [Root.GetName]: rounded republican senator support: [?new_senate_support]"
@@ -260,17 +258,19 @@ USA_republican_support_eventless = {
 			max = senators_republican
 		}
 		add_to_variable = { senators_support = new_senate_support }
+		log = "[GetDateText]: [Root.GetName]: added republican senator support: [?new_senate_support]"
 	}
 	
 	USA = {# representatives
-		set_temp_variable = { temp_house_republican = representatives_republican }
-		set_temp_variable = { temp_house_already_supporting = republican_supporting_reps }
+		set_variable = { temp_house_republican = representatives_republican }
+		set_variable = { temp_house_already_supporting = republican_supporting_reps }
 		
-		subtract_from_temp_variable = { temp_house_republican = temp_house_already_supporting }
+		subtract_from_variable = { temp_house_republican = temp_house_already_supporting }
 		log = "[GetDateText]: [Root.GetName]: calculated non-supporting republicans: [?temp_house_republican]"
 	
-		set_temp_variable = { new_house_support = temp_house_republican }
-		multiply_temp_variable = { new_house_support = average_boost_republican }
+		set_variable = { new_house_support = temp_house_republican }
+		multiply_variable = { new_house_support = average_boost_republican }
+		log = "[GetDateText]: [Root.GetName]: House - calculated new republican support: [?new_house_support]"
 		
 		round_variable = new_house_support
 		log = "[GetDateText]: [Root.GetName]: rounded republican representative support: [?new_house_support]"
@@ -287,28 +287,28 @@ USA_republican_support_eventless = {
 			max = representatives_republican
 		}
 		add_to_variable = { representatives_support = new_house_support }
+		log = "[GetDateText]: [Root.GetName]: added republican house support: [?new_house_support]"
 	}
 	
+	set_country_flag = republicans_negotiated
 	clear_variable = { new_senate_support }
 	clear_variable = { new_house_support }
 }
 
 USA_democrat_support_eventless = {
 	custom_effect_tooltip = negotiate_some_democrat_support
-	USA = { #senators
-		set_country_flag = democrats_negotiated
+	USA = {
+		set_variable = { temp_senate_democrat = senators_democrat }
+		set_variable = { temp_senate_already_supporting = democrat_supporting_senators }
 		
-		set_temp_variable = { temp_senate_democrat = senators_democrat }
-		set_temp_variable = { temp_senate_already_supporting = democrat_supporting_senators }
-		
-		subtract_from_temp_variable = { temp_senate_democrat = temp_senate_already_supporting }
+		subtract_from_variable = { temp_senate_democrat = temp_senate_already_supporting }
 		log = "[GetDateText]: [Root.GetName]: calculated non-supporting democrats: [?temp_senate_democrat]"
 		
-		set_temp_variable = { new_senate_support = temp_senate_democrat }
+		set_variable = { new_senate_support = temp_senate_democrat }
 		log = "[GetDateText]: [Root.GetName]: set democrat senator support: [?new_senate_support]"
 		
-		multiply_temp_variable = { new_senate_support = average_boost_democrat }
-		log = "[GetDateText]: [Root.GetName]: calculated new democrat support: [?new_senate_support]"
+		multiply_variable = { new_senate_support = average_boost_democrat }
+		log = "[GetDateText]: [Root.GetName]: Senate - calculated new democrat support: [?new_senate_support]"
 						
 		round_variable = new_senate_support
 		log = "[GetDateText]: [Root.GetName]: rounded democrat senator support: [?new_senate_support]"
@@ -325,19 +325,19 @@ USA_democrat_support_eventless = {
 			max = senators_democrat
 		}
 		add_to_variable = { senators_support = new_senate_support }
-						
-		clear_variable = { new_senate_support }
+		log = "[GetDateText]: [Root.GetName]: added democrat senator support: [?new_senate_support]"
 	}
-					
+	
 	USA = {# representatives
-		set_temp_variable = { temp_house_democrat = representatives_republican }
-		set_temp_variable = { temp_house_already_supporting = republican_supporting_reps }
+		set_variable = { temp_house_democrat = representatives_democrat }
+		set_variable = { temp_house_already_supporting = democrat_supporting_reps }
 		
-		subtract_from_temp_variable = { temp_house_democrat = temp_house_already_supporting }
+		subtract_from_variable = { temp_house_democrat = temp_house_already_supporting }
 		log = "[GetDateText]: [Root.GetName]: calculated non-supporting democrats: [?temp_house_democrat]"
 	
-		set_temp_variable = { new_house_support = temp_house_democrat }
-		multiply_temp_variable = { new_house_support = average_boost_democrat }
+		set_variable = { new_house_support = temp_house_democrat }
+		multiply_variable = { new_house_support = average_boost_democrat }
+		log = "[GetDateText]: [Root.GetName]: House - calculated new democrat support: [?new_house_support]"
 		
 		round_variable = new_house_support
 		log = "[GetDateText]: [Root.GetName]: rounded democrat representative support: [?new_house_support]"
@@ -354,8 +354,10 @@ USA_democrat_support_eventless = {
 			max = representatives_democrat
 		}
 		add_to_variable = { representatives_support = new_house_support }
+		log = "[GetDateText]: [Root.GetName]: added democrat house support: [?new_house_support]"
 	}
 	
+	set_country_flag = democrats_negotiated
 	clear_variable = { new_senate_support }
 	clear_variable = { new_house_support }
 }
@@ -368,19 +370,31 @@ USA_recalc_house = { # this will recalculate the number of representatives based
 	}
 	
 	set_variable = {
-		representatives_communist = party_popularity@revolutionary_socialism
+		representatives_communist = party_popularity@revolutionary_autocacy
+	}
+	add_to_variable = {
+		representatives_communist = party_popularity@proletarian_dictatorship
 	}
 	set_variable = {
-		representatives_socialist = party_popularity@democratic_socialism
+		representatives_socialist = party_popularity@libertarian_socialism
+	}
+	add_to_variable = {
+		representatives_socialist = party_popularity@social_democracy
 	}
 	set_variable = {
-		representatives_republican = party_popularity@democratic
+		representatives_republican = party_popularity@progressive_liberalism
+	}
+	add_to_variable = {
+		representatives_republican = party_popularity@market_libertarianism
 	}
 	set_variable = {
-		representatives_democrat = party_popularity@autocratic_despotism
+		representatives_democrat = party_popularity@national_conservatism
 	}
 	set_variable = {
-		representatives_fascist = party_popularity@empowered_nationalism
+		representatives_fascist = party_popularity@authoritarian_republicanism
+	}
+	add_to_variable = {
+		representatives_fascist = party_popularity@ultranational_statism
 	}
 	
 	#Gets seats
@@ -446,7 +460,7 @@ USA_recalc_house = { # this will recalculate the number of representatives based
 		}
 		if = {
 			limit = {
-				has_government = revolutionary_socialism
+				has_government = proletarian_dictatorship
 			}
 			add_to_variable = {
 				representatives_communist = USA_old_representatives_total
@@ -454,7 +468,7 @@ USA_recalc_house = { # this will recalculate the number of representatives based
 		}
 		else_if = {
 			limit = {
-				has_government = democratic_socialism
+				has_government = libertarian_socialism
 			}
 			add_to_variable = {
 				representatives_socialist = USA_old_representatives_total
@@ -462,7 +476,7 @@ USA_recalc_house = { # this will recalculate the number of representatives based
 		}
 		else_if = {
 			limit = {
-				has_government = democratic
+				has_government = progressive_liberalism
 			}
 			add_to_variable = {
 				representatives_republican = USA_old_representatives_total
@@ -470,7 +484,7 @@ USA_recalc_house = { # this will recalculate the number of representatives based
 		}
 		else_if = {
 			limit = {
-				has_government = autocratic_despotism
+				has_government = national_conservatism
 			}
 			add_to_variable = {
 				representatives_democrat = USA_old_representatives_total
@@ -478,7 +492,7 @@ USA_recalc_house = { # this will recalculate the number of representatives based
 		}
 		else_if = {
 			limit = {
-				has_government = empowered_nationalism
+				has_government = authoritarian_republicanism
 			}
 			add_to_variable = {
 				representatives_fascist = USA_old_representatives_total

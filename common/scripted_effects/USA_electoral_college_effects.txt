@@ -1,5 +1,5 @@
 
-# Created by Yard1, Modified by Hans
+# Created by Yard1, Modified by Wobbly
 
 #Constants
 @BONUS_POPULARITY_PRES_MULTIPLIER = 0.3
@@ -560,13 +560,30 @@ US_hold_presidential_election_in_state = {
 	divide_temp_variable = { democrat_temp_pop = total_party_pop }
 	divide_temp_variable = { afp_temp_pop = total_party_pop }
 
+	#convert to non-temp variables
+
+	set_variable = { socialist_election_pop = socialist_temp_pop }
+	set_variable = { republican_election_pop = republican_temp_pop }
+	set_variable = { democrat_election_pop = democrat_temp_pop }
+	set_variable = { afp_election_pop = afp_temp_pop }
+
 	#check which party is largest
 	
 	if = {
 		limit = {
-			check_variable = { republican_temp_pop > democrat_temp_pop }
-			check_variable = { republican_temp_pop > farmer_labor_temp_pop }
-			check_variable = { republican_temp_pop > socialist_temp_pop }
+			check_variable = { socialist_election_pop > republican_election_pop }
+			check_variable = { socialist_election_pop > democrat_election_pop }
+			check_variable = { socialist_election_pop > afp_election_pop }
+		}
+		add_to_variable = { ROOT.socialist_electoral_votes = electoral_votes }
+		log = "[This.GetName] : Voted for socialists with [?electoral_votes] electoral votes"
+		set_state_flag = voted_socialist
+	}
+	if = {
+		limit = {
+			check_variable = { republican_election_pop > democrat_election_pop }
+			check_variable = { republican_election_pop > afp_election_pop }
+			check_variable = { republican_election_pop > socialist_election_pop }
 		}
 		add_to_variable = { ROOT.republican_electoral_votes = electoral_votes }
 	    log = "[This.GetName] : Voted for republicans with [?electoral_votes] electoral votes"
@@ -574,9 +591,9 @@ US_hold_presidential_election_in_state = {
 	}
 	if = {
 		limit = {
-			check_variable = { democrat_temp_pop > republican_temp_pop }
-			check_variable = { democrat_temp_pop > farmer_labor_temp_pop }
-			check_variable = { democrat_temp_pop > socialist_temp_pop }
+			check_variable = { democrat_election_pop > republican_election_pop }
+			check_variable = { democrat_election_pop > afp_election_pop }
+			check_variable = { democrat_election_pop > socialist_election_pop }
 		}
 		add_to_variable = { ROOT.democrat_electoral_votes = electoral_votes }
 		log = "[This.GetName] : Voted for democrats with [?electoral_votes] electoral votes"
@@ -584,23 +601,13 @@ US_hold_presidential_election_in_state = {
 	}
 	if = {
 		limit = {
-			check_variable = { afp_temp_pop > republican_temp_pop }
-			check_variable = { afp_temp_pop > democrat_temp_pop }
-			check_variable = { afp_temp_pop > socialist_temp_pop }
+			check_variable = { afp_election_pop > republican_election_pop }
+			check_variable = { afp_election_pop > democrat_election_pop }
+			check_variable = { afp_election_pop > socialist_election_pop }
 		}
 		add_to_variable = { ROOT.afp_electoral_votes = electoral_votes }
 		log = "[This.GetName] : Voted for afp with [?electoral_votes] electoral votes"
 		set_state_flag = voted_afp
-	}
-	if = {
-		limit = {
-			check_variable = { socialist_temp_pop > republican_temp_pop }
-			check_variable = { socialist_temp_pop > democrat_temp_pop }
-			check_variable = { socialist_temp_pop > farmer_labor_temp_pop }
-		}
-		add_to_variable = { ROOT.socialist_electoral_votes = electoral_votes }
-		log = "[This.GetName] : Voted for socialists with [?electoral_votes] electoral votes"
-		set_state_flag = voted_socialist
 	}
 	
 	##########################################################################################
@@ -615,6 +622,10 @@ clear_election_results = {
 		set_variable = { republican_electoral_votes = 0 }
 		set_variable = { socialist_electoral_votes = 0 }
 		set_variable = { afp_electoral_votes = 0 }
+		clr_state_flag = voted_socialist
+		clr_state_flag = voted_republican
+		clr_state_flag = voted_democrat
+		clr_state_flag = voted_afp
 	}
 	set_variable = { democrat_electoral_votes = 0 }
 	set_variable = { republican_electoral_votes = 0 }
