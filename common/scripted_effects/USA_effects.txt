@@ -8,13 +8,22 @@ improve_great_depression = {
 			add_idea = USA_the_great_depression_2
 		}
 	}
-	else_if = {
+	if = {
 		limit = {
 			has_ideas = USA_the_great_depression_2
 		}
 		swap_ideas = {
 			remove_idea = USA_the_great_depression_2
 			add_idea = USA_the_great_depression_3
+		}
+	}
+	if = {
+		limit = {
+			has_ideas = USA_the_great_depression_3
+		}
+		swap_ideas = {
+			remove_idea = USA_the_great_depression_3
+			add_idea = USA_the_great_depression_4
 		}
 	}
 }

@@ -14,8 +14,8 @@
  
  start_vote:0 "Start Voting"
  start_vote_tt:0 "The current bill will be voted on in congress."
- vote_will_fail_tt:0 "Currently, the current bill §RDOES NOT§! have enough votes to pass"
- vote_will_pass_tt:0 "Currently, the current bill §GDOES§! have enough votes to pass"
+ vote_will_fail_tt:0 "Currently, the current bill §RDOES NOT§! have enough votes to pass!"
+ vote_will_pass_tt:0 "Currently, the current bill §GDOES§! have enough votes to pass!"
  
  USA_bill_timer:0 "Hold the Vote"
  USA_bill_timer_pass_criteria:0 "§YA vote has been held on this Bill§!"
