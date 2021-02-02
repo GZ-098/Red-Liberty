@@ -1,0 +1,4 @@
+can_have_elections_in_state = {
+    is_owned_and_controlled_by = ROOT
+    has_state_flag = US_election_state
+}

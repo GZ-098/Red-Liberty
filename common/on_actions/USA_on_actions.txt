@@ -1,4 +1,12 @@
 on_actions = {
+	on_startup = {
+		effect = {
+			USA = {
+				initialize_US_elections_system = yes
+			}
+		}
+	}
+
 	on_new_term_election_USA = { # elections go here, in chronological order
 		random_events = {
 			100 = us_election.1 # 1932 election

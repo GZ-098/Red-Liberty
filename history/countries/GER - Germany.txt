@@ -158,7 +158,7 @@ add_ideas = {
 
 create_country_leader = {
 	name = "Kaiser Wilhelm II"
-	desc = "POLITICS_ADOLF_HITLER_DESC"
+	desc = "POLITICS_WILHELM_II_DESC"
 	picture = "gfx/leaders/willy2.dds"
 	expire = "1965.1.1"
 	ideology = martial_despotism_subtype

@@ -1,23 +1,15 @@
 spriteTypes = {	
-
-	### categories
-	
-
 	spriteType = {
 		name = "GFX_revolution_communist_balkans"
 		texturefile = "gfx/interface/decisions/revolution_communist_balkans.dds"
 	}
 	spriteType = {
-		name = "GFX_buget_managment"
-		texturefile = "gfx/interface/decisions/buget_managment.dds"
+		name = "GFX_budget_management"
+		texturefile = "gfx/interface/decisions/budget_management.dds"
 	}
 	spriteType = {
-		name = "GFX_decision_category_generic"
-		texturefile = "gfx/interface/decisions/decision_category_generic.dds"
-	}
-	spriteType = {
-		name = "GFX_occupation_managment"
-		texturefile = "gfx/interface/decisions/occupation_managment.dds"
+		name = "GFX_occupation_management"
+		texturefile = "gfx/interface/decisions/occupation_management.dds"
 	}
 	spriteType = {
 		name = "GFX_increase_taxes"

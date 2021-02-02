@@ -1,4 +1,50 @@
 USA_congress = {
+
+	USA_hold_election_debug = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_debug = yes
+		}
+
+		visible = {
+			is_debug = yes
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			US_hold_presidential_election = yes
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	USA_clear_election_results = {
+
+		icon = generic_political_discourse
+
+		available = {
+			is_debug = yes
+		}
+
+		visible = {
+			is_debug = yes
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			clear_election_results = yes
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	
 	start_test_bill_debug = { # example bill
 		icon = ger_mefo_bills

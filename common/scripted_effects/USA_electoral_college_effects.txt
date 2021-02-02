@@ -1,0 +1,625 @@
+
+# Created by Yard1, Modified by Hans
+
+#Constants
+@BONUS_POPULARITY_PRES_MULTIPLIER = 0.3
+@PRESIDENT_INCUMBENCY_BONUS_POPULARITY = 0.05
+@MAXIMUM_UNITY = 30
+@MINIMUM_UNITY = 0.001
+@SENATE_SITTING_PRESIDENT_PENALTY = -0.1 #USED TO BE 0.05, testing is done by LAZER 2. april 2020
+@SENATE_INCUMBENCY_BONUS_MULTIPLIER_1 = 2
+@SENATE_INCUMBENCY_BONUS_MULTIPLIER_2 = 0.001
+@SENATE_OPPOSITION_BONUS_ADDER = 0.05
+@SENATE_TIEBREAKER_ADDER = 0.05
+@CAMPAIGNING_GREAT_SUCCESS_BOOST = 0.2
+@CAMPAIGNING_GOOD_SUCCESS_BOOST = 0.1
+@CAMPAIGNING_NEUTRAL_BOOST = 0.05
+@CAMPAIGNING_BAD_BOOST = 0.025
+@POPULARITY_CLAMP_MIN = 0.001
+@POPULARITY_CLAMP_MAX = 1000
+@INCUMBENCY_BONUS_CLAMP_MIN = 0.0001 #is hoi4 even precise enough to represent this?
+@INCUMBENCY_BONUS_CLAMP_MAX = 0.002
+@PULSE_POPULARITY_CLAMP_MIN = 0
+@PULSE_POPULARITY_CLAMP_MAX_FIRST = 10
+@PULSE_POPULARITY_CLAMP_MAX_SECOND = 2
+
+initialize_US_elections_system = {
+	set_variable = { USA_campaigning_multiplier = 1 }
+
+	every_owned_state = {
+		limit = { can_have_elections_in_state = yes}
+		clamp_variable = { #make sure to clamp any support variable that can change! 
+   			var = republican_popularity
+    		min = 0.001
+    		max = 1000 
+		}
+		clamp_variable = { #make sure to clamp any support variable that can change! 
+   			var = democrat_popularity
+    		min = 0.001
+    		max = 1000 
+		}
+		clamp_variable = { #make sure to clamp any support variable that can change! 
+   			var = socialist_popularity
+    		min = 0.001
+    		max = 1000 
+		}
+		clamp_variable = { #make sure to clamp any support variable that can change! 
+   			var = afp_popularity
+    		min = 0.001
+    		max = 1000 
+		}
+	}
+	
+	USA = {
+		set_variable = { democrat_electoral_votes = 0 }
+		set_variable = { republican_electoral_votes = 0 }
+		set_variable = { socialist_electoral_votes = 0 }
+		set_variable = { afp_electoral_votes = 0 }
+	}
+	
+	367 = { # Alabama, extremely conservative, pro-segregation
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.2 }
+		set_variable = { democrat_popularity = 0.8 }
+		
+		set_variable = { electoral_votes = 11 }
+	}
+	
+	377 = { # Arizona,  fairly conservative
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.35 }
+		set_variable = { democrat_popularity = 0.65 }
+		
+		set_variable = { electoral_votes = 3 }
+	}
+	
+	372 = { # Arkansas
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.3 }
+		set_variable = { democrat_popularity = 0.7 }
+		
+		set_variable = { electoral_votes = 9 }
+	}
+	
+	378 = { # California, fairly liberal state
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.4 }
+		set_variable = { socialist_popularity = 0.6 }
+		
+		set_variable = { electoral_votes = 22 }
+	}
+	
+	382 = { # Colorado, not a hot bed of radicalism, fairly republican leaning
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.8 }
+		set_variable = { democrat_popularity = 0.2 }
+		
+		set_variable = { electoral_votes = 6 }
+	}
+	
+	830 = { # Connecticut, republican stronghold
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.8 }
+		set_variable = { democrat_popularity = 0.2 }
+		
+		set_variable = { electoral_votes = 8 }
+	}
+	
+	833 = { # Delaware, slightly republican
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.8 }
+		set_variable = { democrat_popularity = 0.2 }
+		
+		set_variable = { electoral_votes = 3 }
+	}
+	
+	366 = { # Florida, a bit more liberal, but still heavily conservative
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.45 }
+		set_variable = { democrat_popularity = 0.55 }
+		
+		set_variable = { electoral_votes = 7 }
+	}
+	
+	365 = { # Georgia, like Alabama, very pro-segregation
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.5 }
+		set_variable = { democrat_popularity = 0.5 }
+		
+		set_variable = { electoral_votes = 12 }
+	}
+	
+	387 = { # Idaho, potato state
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.7 }
+		set_variable = { democrat_popularity = 0.3 }
+		
+		set_variable = { electoral_votes = 4 }
+	}
+	
+	395 = { # Illinois, core socialist state
+		set_state_flag = US_election_state
+		set_variable = { socialist_popularity = 0.75 }
+		set_variable = { democrat_popularity = 0.25 }
+		
+		set_variable = { electoral_votes = 29 }
+	}
+	
+	396 = { # Indiana, solid republican state
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.75 }
+		set_variable = { democrat_popularity = 0.25 }
+		
+		set_variable = { electoral_votes = 14 }
+	}
+	
+	392 = { # Iowa, initially favors the socialists for pro-agriculture stuff
+		set_state_flag = US_election_state
+		set_variable = { socialist_popularity = 0.65 }
+		set_variable = { republican_popularity = 0.35 }
+		
+		set_variable = { electoral_votes = 11 }
+	}
+	
+	383 = { # Kansas, same as Iowa, more republican leaning
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.55 }
+		set_variable = { socialist_popularity = 0.45 }
+		
+		set_variable = { electoral_votes = 9 }
+	}
+	
+	369 = { # Kentucky
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.65 }
+		set_variable = { democrat_popularity = 0.35 }
+		
+		set_variable = { electoral_votes = 11 }
+	}
+	
+	371 = { # Louisiana, pro segregation, very conservative, afp/democrat stronghold
+		set_state_flag = US_election_state
+		set_variable = { democrat_popularity = 0.3 }
+		set_variable = { afp_popularity = 0.7 }
+		
+		set_variable = { electoral_votes = 10 }
+	}
+	
+	827 = { # Maine, republican
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.6 }
+		set_variable = { democrat_popularity = 0.4 }
+		
+		set_variable = { electoral_votes = 5 }
+	}
+	
+	361 = { # Maryland, good establishment place
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.8 }
+		set_variable = { democrat_popularity = 0.2 }
+		
+		set_variable = { electoral_votes = 8 }
+	}
+	
+	357 = { # Massachusetts, home of many famous liberals, though old money is still holding strong
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.45 }
+		set_variable = { democrat_popularity = 0.55 }
+		
+		set_variable = { electoral_votes = 17 }
+	}
+	
+	393 = { # Michigan, strong union and anti-segregationist sentiment in Detroit
+		set_state_flag = US_election_state
+		set_variable = { socialist_popularity = 0.7 }
+		set_variable = { democrat_popularity = 0.3 }
+		
+		set_variable = { electoral_votes = 19 }
+	}
+	
+	391 = { # Minnesota, like the Midwest but more liberal, huge farmer-labor influence
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.4 }
+		set_variable = { democrat_popularity = 0.1 }
+		set_variable = { socialist_popularity = 0.5 }
+		
+		set_variable = { electoral_votes = 11 }
+	}
+	
+	370 = { # Mississippi, pro-segregation
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.4 }
+		set_variable = { democrat_popularity = 0.6 }
+		
+		set_variable = { electoral_votes = 9 }
+	}
+	
+	373 = { # Missouri, midwest, decently conservative
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.8 }
+		set_variable = { democrat_popularity = 0.2 }
+		
+		set_variable = { electoral_votes = 15 }
+	}
+	
+	388 = { # Montana, heavily unionized
+		set_state_flag = US_election_state
+		set_variable = { socialist_popularity = 0.6 }
+		set_variable = { democrat_popularity = 0.4 }
+		
+		set_variable = { electoral_votes = 4 }
+	}
+	
+	384 = { # Nebraska, basically Kansas
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.7 }
+		set_variable = { democrat_popularity = 0.3 }
+		
+		set_variable = { electoral_votes = 7 }
+	}
+	
+	379 = { # Nevada, fairly Republican
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.7 }
+		set_variable = { democrat_popularity = 0.3 }
+		
+		set_variable = { electoral_votes = 3 }
+	}
+	
+	828 = { # New Hampshire
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.45 } # Default Value
+		set_variable = { democrat_popularity = 0.55 } # Default Value
+		
+		set_variable = { electoral_votes = 4 }
+	}
+	
+	376 = { # New Mexico, swing state
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.6 }
+		set_variable = { democrat_popularity = 0.4 }
+		
+		set_variable = { electoral_votes = 3 }
+	}
+	
+	358 = { # New York, very liberal
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.45 } # Default Value
+		set_variable = { democrat_popularity = 0.55 } # Default Value
+		
+		set_variable = { electoral_votes = 47 }
+	}
+	
+	363 = { # North Carolina, conservative but not super conservative
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.6 } # Default Value
+		set_variable = { democrat_popularity = 0.4 } # Default Value
+		
+		set_variable = { electoral_votes = 13 }
+	}
+	
+	389 = { # North Dakota, heartland, pro-Democrat
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.8 } # Default Value
+		set_variable = { democrat_popularity = 0.2 } # Default Value
+		
+		set_variable = { electoral_votes = 4 }
+	}
+	
+	261 = { # Ohio, swing state
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.65 } # Default Value
+		set_variable = { democrat_popularity = 0.35 } # Default Value
+		
+		set_variable = { electoral_votes = 26 }
+	}
+	
+	374 = { # Oklahoma
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.7 } # Default Value
+		set_variable = { democrat_popularity = 0.3 } # Default Value
+		
+		set_variable = { electoral_votes = 11 }
+	}
+	
+	385 = { # Oregon
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.4 } # Default Value
+		set_variable = { democrat_popularity = 0.6 } # Default Value
+		
+		set_variable = { electoral_votes = 5 }
+	}
+	
+	360 = { # Pennsylvania, swing state 
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.6 } # Default Value
+		set_variable = { democrat_popularity = 0.4 } # Default Value
+		
+		set_variable = { electoral_votes = 36 }
+	}
+	
+	831 = { # Rhode Island
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.8 } # Default Value
+		set_variable = { democrat_popularity = 0.2 } # Default Value
+		
+		set_variable = { electoral_votes = 4 }
+	}
+	
+	364 = { # South Carolina
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.35 } # Default Value
+		set_variable = { democrat_popularity = 0.65 } # Default Value
+		
+		set_variable = { electoral_votes = 8 }
+	}
+	
+	390 = { # South Dakota, North Dakota part 2
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.8 } # Default Value
+		set_variable = { democrat_popularity = 0.2 } # Default Value
+		
+		set_variable = { electoral_votes = 4 }
+	}
+	
+	368 = { # Tennessee
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.7 } # Default Value
+		set_variable = { democrat_popularity = 0.3 } # Default Value
+		
+		set_variable = { electoral_votes = 11 }
+	}
+	
+	375 = { # Texas, Southern but not too Southern
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.2 }
+		set_variable = { democrat_popularity = 0.35 }
+		set_variable = { afp_popularity = 0.45 }
+		
+		set_variable = { electoral_votes = 23 }
+	}
+	
+	380 = { # Utah, MORMON GANG
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.25 } # Default Value
+		set_variable = { democrat_popularity = 0.75 } # Default Value
+		
+		set_variable = { electoral_votes = 4 }
+	}
+	
+	829 = { # Vermont
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.4 } # Default Value
+		set_variable = { democrat_popularity = 0.6 } # Default Value
+		
+		set_variable = { electoral_votes = 3 }
+	}
+	
+	362 = { # Virginia
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.4 } # Default Value
+		set_variable = { democrat_popularity = 0.6 } # Default Value
+		
+		set_variable = { electoral_votes = 11 }
+	}
+	
+	386 = { # Washington
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.35 } # Default Value
+		set_variable = { democrat_popularity = 0.65 } # Default Value
+		
+		set_variable = { electoral_votes = 8 }
+	}
+	
+	832 = { # West Virginia
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.45 } # Default Value
+		set_variable = { democrat_popularity = 0.55 } # Default Value
+		
+		set_variable = { electoral_votes = 8 }
+	}
+	
+	394 = { # Wisconsin
+		set_state_flag = US_election_state
+		set_variable = { socialist_popularity = 0.65 } # Default Value
+		set_variable = { republican_popularity = 0.35 } # Default Value
+		
+		set_variable = { electoral_votes = 12 }
+	}
+	
+	381 = { # Wyoming
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.8 } # Default Value
+		set_variable = { democrat_popularity = 0.2 } # Default Value
+		
+		set_variable = { electoral_votes = 3 }
+	}
+	
+	log = "US Presidential Election System Initialization Complete"
+}
+
+US_hold_presidential_election = {
+	set_variable = { democrat_electoral_votes = 0 }
+	set_variable = { republican_electoral_votes = 0 }
+	set_variable = { socialist_electoral_votes = 0 }
+	set_variable = { afp_electoral_votes = 0 }
+	
+	every_owned_state = {
+		limit = { has_state_flag = US_election_state }
+		USA_clamp_state_popularities = yes
+		
+		clamp_variable = { #make sure to clamp any support variable that can change! 
+   			var = republican_popularity
+    		min = @POPULARITY_CLAMP_MIN
+    		max = @POPULARITY_CLAMP_MAX
+		}
+		
+		clamp_variable = { #make sure to clamp any support variable that can change! 
+   			var = democrat_popularity
+    		min = @POPULARITY_CLAMP_MIN
+    		max = @POPULARITY_CLAMP_MAX
+		}
+		
+		clamp_variable = { #make sure to clamp any support variable that can change! 
+   			var = socialist_popularity
+    		min = @POPULARITY_CLAMP_MIN
+    		max = @POPULARITY_CLAMP_MAX
+		}
+		
+		clamp_variable = { #make sure to clamp any support variable that can change! 
+   			var = afp_popularity
+    		min = @POPULARITY_CLAMP_MIN
+    		max = @POPULARITY_CLAMP_MAX
+		}
+		
+		US_hold_presidential_election_in_state = yes
+	}
+
+	log = "US Presidential Election: SPA: [?socialist_electoral_votes] || DP: [?democrat_electoral_votes] || RP: [?republican_electoral_votes] || AFP: [?afp_electoral_votes]"
+}
+
+USA_clamp_state_popularities = {
+	clamp_variable = {
+		var = republican_popularity
+		min = @PULSE_POPULARITY_CLAMP_MIN
+		max = @PULSE_POPULARITY_CLAMP_MAX_FIRST
+	}
+	clamp_variable = {
+		var = democrat_popularity
+		min = @PULSE_POPULARITY_CLAMP_MIN
+		max = @PULSE_POPULARITY_CLAMP_MAX_FIRST
+	}
+	clamp_variable = {
+		var = socialist_popularity
+		min = @PULSE_POPULARITY_CLAMP_MIN
+		max = @PULSE_POPULARITY_CLAMP_MAX_FIRST
+	}
+	clamp_variable = {
+		var = afp_popularity
+		min = @PULSE_POPULARITY_CLAMP_MIN
+		max = @PULSE_POPULARITY_CLAMP_MAX_FIRST
+	}
+	if = {
+		limit = {
+			OR = {
+				check_variable = { republican_popularity > @PULSE_POPULARITY_CLAMP_MAX_SECOND }
+				check_variable = { democrat_popularity > @PULSE_POPULARITY_CLAMP_MAX_SECOND }
+				check_variable = { socialist_popularity > @PULSE_POPULARITY_CLAMP_MAX_SECOND }
+				check_variable = { afp_popularity > @PULSE_POPULARITY_CLAMP_MAX_SECOND }
+			}
+		}
+		set_temp_variable = { divisor = republican_popularity }
+		add_to_temp_variable = { divisor = democrat_popularity }
+		add_to_temp_variable = { divisor = socialist_popularity }
+		add_to_temp_variable = { divisor = afp_popularity }
+		divide_temp_variable = { divisor = @PULSE_POPULARITY_CLAMP_MAX_SECOND }
+		divide_variable = { republican_popularity = divisor }
+		divide_variable = { democrat_popularity = divisor }
+		divide_variable = { socialist_popularity = divisor }
+		divide_variable = { afp_popularity = divisor }
+	}
+	clamp_variable = {
+		var = republican_popularity
+		min = @PULSE_POPULARITY_CLAMP_MIN
+		max = @PULSE_POPULARITY_CLAMP_MAX_SECOND
+	}
+	clamp_variable = {
+		var = democrat_popularity
+		min = @PULSE_POPULARITY_CLAMP_MIN
+		max = @PULSE_POPULARITY_CLAMP_MAX_SECOND
+	}
+	clamp_variable = {
+		var = socialist_popularity
+		min = @PULSE_POPULARITY_CLAMP_MIN
+		max = @PULSE_POPULARITY_CLAMP_MAX_SECOND
+	}
+	clamp_variable = {
+		var = afp_popularity
+		min = @PULSE_POPULARITY_CLAMP_MIN
+		max = @PULSE_POPULARITY_CLAMP_MAX_SECOND
+	}
+}
+
+US_hold_presidential_election_in_state = {
+
+	#make party pop percentages
+	#convert temp party pops into percentages
+	
+	set_temp_variable = { socialist_temp_pop = socialist_popularity }
+	set_temp_variable = { republican_temp_pop = republican_popularity }
+	set_temp_variable = { democrat_temp_pop = democrat_popularity }
+	set_temp_variable = { afp_temp_pop = afp_popularity }
+	
+	add_to_temp_variable = { total_party_pop = socialist_popularity }
+	add_to_temp_variable = { total_party_pop = republican_popularity }
+	add_to_temp_variable = { total_party_pop = democrat_popularity }
+	add_to_temp_variable = { total_party_pop = afp_popularity }
+	
+	divide_temp_variable = { socialist_temp_pop = total_party_pop }
+	divide_temp_variable = { republican_temp_pop = total_party_pop }
+	divide_temp_variable = { democrat_temp_pop = total_party_pop }
+	divide_temp_variable = { afp_temp_pop = total_party_pop }
+
+	#check which party is largest
+	
+	if = {
+		limit = {
+			check_variable = { republican_temp_pop > democrat_temp_pop }
+			check_variable = { republican_temp_pop > farmer_labor_temp_pop }
+			check_variable = { republican_temp_pop > socialist_temp_pop }
+		}
+		add_to_variable = { ROOT.republican_electoral_votes = electoral_votes }
+	    log = "[This.GetName] : Voted for republicans with [?electoral_votes] electoral votes"
+		set_state_flag = voted_republican
+	}
+	if = {
+		limit = {
+			check_variable = { democrat_temp_pop > republican_temp_pop }
+			check_variable = { democrat_temp_pop > farmer_labor_temp_pop }
+			check_variable = { democrat_temp_pop > socialist_temp_pop }
+		}
+		add_to_variable = { ROOT.democrat_electoral_votes = electoral_votes }
+		log = "[This.GetName] : Voted for democrats with [?electoral_votes] electoral votes"
+		set_state_flag = voted_democrat
+	}
+	if = {
+		limit = {
+			check_variable = { afp_temp_pop > republican_temp_pop }
+			check_variable = { afp_temp_pop > democrat_temp_pop }
+			check_variable = { afp_temp_pop > socialist_temp_pop }
+		}
+		add_to_variable = { ROOT.afp_electoral_votes = electoral_votes }
+		log = "[This.GetName] : Voted for afp with [?electoral_votes] electoral votes"
+		set_state_flag = voted_afp
+	}
+	if = {
+		limit = {
+			check_variable = { socialist_temp_pop > republican_temp_pop }
+			check_variable = { socialist_temp_pop > democrat_temp_pop }
+			check_variable = { socialist_temp_pop > farmer_labor_temp_pop }
+		}
+		add_to_variable = { ROOT.socialist_electoral_votes = electoral_votes }
+		log = "[This.GetName] : Voted for socialists with [?electoral_votes] electoral votes"
+		set_state_flag = voted_socialist
+	}
+	
+	##########################################################################################
+}
+
+clear_election_results = {
+	every_owned_state = {
+		limit = {
+			can_have_elections_in_state = yes
+		}
+		set_variable = { democrat_electoral_votes = 0 }
+		set_variable = { republican_electoral_votes = 0 }
+		set_variable = { socialist_electoral_votes = 0 }
+		set_variable = { afp_electoral_votes = 0 }
+	}
+	set_variable = { democrat_electoral_votes = 0 }
+	set_variable = { republican_electoral_votes = 0 }
+	set_variable = { socialist_electoral_votes = 0 }
+	set_variable = { afp_electoral_votes = 0 }
+	
+	log = "[This.GetName] : election results cleared"
+}
