@@ -47,7 +47,10 @@ shared_focus = {
 	relative_position_id = USA_continue_the_work
 	prerequisite = { focus = USA_continue_the_work }
     completion_reward = {
-		# add event about macarthur arguing with thomas?
+		country_event = {
+			id = united_states.8
+			days = 1
+		}
     }
 	
 	ai_will_do = {
@@ -298,7 +301,10 @@ shared_focus = {
 	relative_position_id = USA_reaching_new_heights
 	prerequisite = { focus = USA_reaching_new_heights }
     completion_reward = {
-        
+        country_event = {
+			id = united_states.5
+			days = 1
+		}
     }
 	
 	ai_will_do = {
