@@ -126,18 +126,18 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	insurrectionary_anarchism = 1
+	insurrectionary_anarchism = 0
 	revolutionary_autocracy = 0
-	proletarian_dictatorship = 5
-	libertarian_socialism = 9
-	social_democracy = 21
-	progressive_liberalism = 16
-	market_libertarianism = 14
-	national_conservatism = 14
+	proletarian_dictatorship = 1
+	libertarian_socialism = 2
+	social_democracy = 25
+	progressive_liberalism = 25
+	market_libertarianism = 10
+	national_conservatism = 15
 	reactionary_theocracy = 0
 	authoritarian_republicanism = 0
-	martial_despotism = 10
-	ultranational_statism = 10
+	martial_despotism = 2
+	ultranational_statism = 20
 }	
 
 
