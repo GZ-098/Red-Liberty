@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_USA_states_gui_BG"
+		texturefile = "gfx/interface/USA/USA_states_BG.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_USA_states_gui_AL_democrat"
+		texturefile = "gfx/interface/USA/states/USA_states_AL_democrat.tga"
+	}
+}

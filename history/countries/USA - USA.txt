@@ -16,6 +16,8 @@ set_war_support = 0
 set_country_flag = libertarian_socialism_coalition
 set_country_flag = social_democracy_coalition
 
+set_country_flag = USA_election_countdown
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

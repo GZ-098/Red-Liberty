@@ -4,10 +4,26 @@ on_actions = {
 			USA = {
 				initialize_US_elections_system = yes
 			}
+			every_owned_state = {
+				limit = { can_have_elections_in_state = yes }
+				USA_update_presidential_election_race_in_state = yes
+			}
+		}
+	}
+	
+	on_monthly_USA {
+		effect = {
+			every_owned_state = {
+				limit = { can_have_elections_in_state = yes }
+				USA_clamp_state_popularities = yes
+				USA_update_presidential_election_race_in_state = yes
+				USA_calculate_president_predictions = yes
+				USA_calculate_senators = yes
+			}
 		}
 	}
 
-	on_new_term_election = { # elections go here, in chronological order
+	on_new_term_election = { # elections go here, in chronological order, stopgap measure until election system is more developed
 		random_events = {
 			100 = us_election.1 # 1932 election
 			100 = us_election.100

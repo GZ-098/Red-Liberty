@@ -1,0 +1,833 @@
+defined_text = {
+	name = Get_USA_states_gui_AL
+	text = {
+		trigger = {
+			check_variable = { republican_president_poll_pop > democrat_president_poll_pop }
+			check_variable = { republican_president_poll_pop > afp_president_poll_pop }
+			check_variable = { republican_president_poll_pop > socialist_president_poll_pop }
+		}
+		localization_key = "GFX_USA_states_gui_AL_republican"
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { democrat_president_poll_pop > republican_president_poll_pop }
+				check_variable = { democrat_president_poll_pop > afp_president_poll_pop }
+				check_variable = { democrat_president_poll_pop > socialist_president_poll_pop }
+			}
+		}
+		localization_key = "GFX_USA_states_gui_AL_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_AR
+	text = {
+		trigger = {
+			has_country_flag = USA_AR_republican
+		}
+		localization_key = "GFX_USA_states_gui_AR_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_AR_democrat
+		}
+		localization_key = "GFX_USA_states_gui_AR_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_AZ
+	text = {
+		trigger = {
+			has_country_flag = USA_AZ_republican
+		}
+		localization_key = "GFX_USA_states_gui_AZ_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_AZ_democrat
+		}
+		localization_key = "GFX_USA_states_gui_AZ_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_CA
+	text = {
+		trigger = {
+			has_country_flag = USA_CA_republican
+		}
+		localization_key = "GFX_USA_states_gui_CA_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_CA_democrat
+		}
+		localization_key = "GFX_USA_states_gui_CA_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_CO
+	text = {
+		trigger = {
+			has_country_flag = USA_CO_republican
+		}
+		localization_key = "GFX_USA_states_gui_CO_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_CO_democrat
+		}
+		localization_key = "GFX_USA_states_gui_CO_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_CT
+	text = {
+		trigger = {
+			has_country_flag = USA_CT_republican
+		}
+		localization_key = "GFX_USA_states_gui_CT_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_CT_democrat
+		}
+		localization_key = "GFX_USA_states_gui_CT_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_DE
+	text = {
+		trigger = {
+			has_country_flag = USA_DE_republican
+		}
+		localization_key = "GFX_USA_states_gui_DE_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_DE_democrat
+		}
+		localization_key = "GFX_USA_states_gui_DE_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_FL
+	text = {
+		trigger = {
+			has_country_flag = USA_FL_republican
+		}
+		localization_key = "GFX_USA_states_gui_FL_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_FL_democrat
+		}
+		localization_key = "GFX_USA_states_gui_FL_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_GA
+	text = {
+		trigger = {
+			has_country_flag = USA_GA_republican
+		}
+		localization_key = "GFX_USA_states_gui_GA_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_GA_democrat
+		}
+		localization_key = "GFX_USA_states_gui_GA_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_IA
+	text = {
+		trigger = {
+			has_country_flag = USA_IA_republican
+		}
+		localization_key = "GFX_USA_states_gui_IA_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_IA_democrat
+		}
+		localization_key = "GFX_USA_states_gui_IA_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_ID
+	text = {
+		trigger = {
+			has_country_flag = USA_ID_republican
+		}
+		localization_key = "GFX_USA_states_gui_ID_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_ID_democrat
+		}
+		localization_key = "GFX_USA_states_gui_ID_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_IL
+	text = {
+		trigger = {
+			has_country_flag = USA_IL_republican
+		}
+		localization_key = "GFX_USA_states_gui_IL_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_IL_democrat
+		}
+		localization_key = "GFX_USA_states_gui_IL_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_IN
+	text = {
+		trigger = {
+			has_country_flag = USA_IN_republican
+		}
+		localization_key = "GFX_USA_states_gui_IN_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_IN_democrat
+		}
+		localization_key = "GFX_USA_states_gui_IN_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_KS
+	text = {
+		trigger = {
+			has_country_flag = USA_KS_republican
+		}
+		localization_key = "GFX_USA_states_gui_KS_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_KS_democrat
+		}
+		localization_key = "GFX_USA_states_gui_KS_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_KY
+	text = {
+		trigger = {
+			has_country_flag = USA_KY_republican
+		}
+		localization_key = "GFX_USA_states_gui_KY_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_KY_democrat
+		}
+		localization_key = "GFX_USA_states_gui_KY_democrat"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_KY_contested
+		}
+		localization_key = "GFX_USA_states_gui_KY_contested"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_LA
+	text = {
+		trigger = {
+			has_country_flag = USA_LA_republican
+		}
+		localization_key = "GFX_USA_states_gui_LA_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_LA_democrat
+		}
+		localization_key = "GFX_USA_states_gui_LA_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_MA
+	text = {
+		trigger = {
+			has_country_flag = USA_MA_republican
+		}
+		localization_key = "GFX_USA_states_gui_MA_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_MA_democrat
+		}
+		localization_key = "GFX_USA_states_gui_MA_democrat"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_MA_contested
+		}
+		localization_key = "GFX_USA_states_gui_MA_contested"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_MD
+	text = {
+		trigger = {
+			has_country_flag = USA_MD_republican
+		}
+		localization_key = "GFX_USA_states_gui_MD_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_MD_democrat
+		}
+		localization_key = "GFX_USA_states_gui_MD_democrat"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_MD_contested
+		}
+		localization_key = "GFX_USA_states_gui_MD_contested"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_ME
+	text = {
+		trigger = {
+			has_country_flag = USA_ME_republican
+		}
+		localization_key = "GFX_USA_states_gui_ME_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_ME_democrat
+		}
+		localization_key = "GFX_USA_states_gui_ME_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_MI
+	text = {
+		trigger = {
+			has_country_flag = USA_MI_republican
+		}
+		localization_key = "GFX_USA_states_gui_MI_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_MI_democrat
+		}
+		localization_key = "GFX_USA_states_gui_MI_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_MN
+	text = {
+		trigger = {
+			has_country_flag = USA_MN_republican
+		}
+		localization_key = "GFX_USA_states_gui_MN_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_MN_democrat
+		}
+		localization_key = "GFX_USA_states_gui_MN_democrat"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_MN_socdem
+		}
+		localization_key = "GFX_USA_states_gui_MN_socdem"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_MO
+	text = {
+		trigger = {
+			has_country_flag = USA_MO_republican
+		}
+		localization_key = "GFX_USA_states_gui_MO_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_MO_democrat
+		}
+		localization_key = "GFX_USA_states_gui_MO_democrat"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_MO_contested
+		}
+		localization_key = "GFX_USA_states_gui_MO_contested"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_MS
+	text = {
+		trigger = {
+			has_country_flag = USA_MS_republican
+		}
+		localization_key = "GFX_USA_states_gui_MS_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_MS_democrat
+		}
+		localization_key = "GFX_USA_states_gui_MS_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_MT
+	text = {
+		trigger = {
+			has_country_flag = USA_MT_republican
+		}
+		localization_key = "GFX_USA_states_gui_MT_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_MT_democrat
+		}
+		localization_key = "GFX_USA_states_gui_MT_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_NC
+	text = {
+		trigger = {
+			has_country_flag = USA_NC_republican
+		}
+		localization_key = "GFX_USA_states_gui_NC_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_NC_democrat
+		}
+		localization_key = "GFX_USA_states_gui_NC_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_ND
+	text = {
+		trigger = {
+			has_country_flag = USA_ND_republican
+		}
+		localization_key = "GFX_USA_states_gui_ND_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_ND_democrat
+		}
+		localization_key = "GFX_USA_states_gui_ND_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_NE
+	text = {
+		trigger = {
+			has_country_flag = USA_NE_republican
+		}
+		localization_key = "GFX_USA_states_gui_NE_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_NE_democrat
+		}
+		localization_key = "GFX_USA_states_gui_NE_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_NH
+	text = {
+		trigger = {
+			has_country_flag = USA_NH_republican
+		}
+		localization_key = "GFX_USA_states_gui_NH_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_NH_democrat
+		}
+		localization_key = "GFX_USA_states_gui_NH_democrat"
+	}
+}
+
+defiNJd_text = {
+	name = Get_USA_states_gui_NJ
+	text = {
+		trigger = {
+			has_country_flag = USA_NJ_republican
+		}
+		localization_key = "GFX_USA_states_gui_NJ_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_NJ_democrat
+		}
+		localization_key = "GFX_USA_states_gui_NJ_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_NM
+	text = {
+		trigger = {
+			has_country_flag = USA_NM_republican
+		}
+		localization_key = "GFX_USA_states_gui_NM_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_NM_democrat
+		}
+		localization_key = "GFX_USA_states_gui_NM_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_NV
+	text = {
+		trigger = {
+			has_country_flag = USA_NV_republican
+		}
+		localization_key = "GFX_USA_states_gui_NV_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_NV_democrat
+		}
+		localization_key = "GFX_USA_states_gui_NV_democrat"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_NV_contested
+		}
+		localization_key = "GFX_USA_states_gui_NV_contested"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_NY
+	text = {
+		trigger = {
+			has_country_flag = USA_NY_republican
+		}
+		localization_key = "GFX_USA_states_gui_NY_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_NY_democrat
+		}
+		localization_key = "GFX_USA_states_gui_NY_democrat"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_NY_contested
+		}
+		localization_key = "GFX_USA_states_gui_NY_contested"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_OH
+	text = {
+		trigger = {
+			has_country_flag = USA_OH_republican
+		}
+		localization_key = "GFX_USA_states_gui_OH_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_OH_democrat
+		}
+		localization_key = "GFX_USA_states_gui_OH_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_OK
+	text = {
+		trigger = {
+			has_country_flag = USA_OK_republican
+		}
+		localization_key = "GFX_USA_states_gui_OK_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_OK_democrat
+		}
+		localization_key = "GFX_USA_states_gui_OK_democrat"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_OK_contested
+		}
+		localization_key = "GFX_USA_states_gui_OK_contested"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_OR
+	text = {
+		trigger = {
+			has_country_flag = USA_OR_republican
+		}
+		localization_key = "GFX_USA_states_gui_OR_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_OR_democrat
+		}
+		localization_key = "GFX_USA_states_gui_OR_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_PA
+	text = {
+		trigger = {
+			has_country_flag = USA_PA_republican
+		}
+		localization_key = "GFX_USA_states_gui_PA_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_PA_democrat
+		}
+		localization_key = "GFX_USA_states_gui_PA_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_RI
+	text = {
+		trigger = {
+			has_country_flag = USA_RI_republican
+		}
+		localization_key = "GFX_USA_states_gui_RI_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_RI_democrat
+		}
+		localization_key = "GFX_USA_states_gui_RI_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_SC
+	text = {
+		trigger = {
+			has_country_flag = USA_SC_republican
+		}
+		localization_key = "GFX_USA_states_gui_SC_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_SC_democrat
+		}
+		localization_key = "GFX_USA_states_gui_SC_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_SD
+	text = {
+		trigger = {
+			has_country_flag = USA_SD_republican
+		}
+		localization_key = "GFX_USA_states_gui_SD_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_SD_democrat
+		}
+		localization_key = "GFX_USA_states_gui_SD_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_TN
+	text = {
+		trigger = {
+			has_country_flag = USA_TN_republican
+		}
+		localization_key = "GFX_USA_states_gui_TN_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_TN_democrat
+		}
+		localization_key = "GFX_USA_states_gui_TN_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_TX
+	text = {
+		trigger = {
+			has_country_flag = USA_TX_republican
+		}
+		localization_key = "GFX_USA_states_gui_TX_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_TX_democrat
+		}
+		localization_key = "GFX_USA_states_gui_TX_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_UT
+	text = {
+		trigger = {
+			has_country_flag = USA_UT_republican
+		}
+		localization_key = "GFX_USA_states_gui_UT_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_UT_democrat
+		}
+		localization_key = "GFX_USA_states_gui_UT_democrat"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_UT_contested
+		}
+		localization_key = "GFX_USA_states_gui_UT_contested"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_VA
+	text = {
+		trigger = {
+			has_country_flag = USA_VA_republican
+		}
+		localization_key = "GFX_USA_states_gui_VA_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_VA_democrat
+		}
+		localization_key = "GFX_USA_states_gui_VA_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_VT
+	text = {
+		trigger = {
+			has_country_flag = USA_VT_republican
+		}
+		localization_key = "GFX_USA_states_gui_VT_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_VT_democrat
+		}
+		localization_key = "GFX_USA_states_gui_VT_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_WA
+	text = {
+		trigger = {
+			has_country_flag = USA_WA_republican
+		}
+		localization_key = "GFX_USA_states_gui_WA_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_WA_democrat
+		}
+		localization_key = "GFX_USA_states_gui_WA_democrat"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_WA_contested
+		}
+		localization_key = "GFX_USA_states_gui_WA_contested"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_WI
+	text = {
+		trigger = {
+			has_country_flag = USA_WI_republican
+		}
+		localization_key = "GFX_USA_states_gui_WI_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_WI_democrat
+		}
+		localization_key = "GFX_USA_states_gui_WI_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_WV
+	text = {
+		trigger = {
+			has_country_flag = USA_WV_republican
+		}
+		localization_key = "GFX_USA_states_gui_WV_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_WV_democrat
+		}
+		localization_key = "GFX_USA_states_gui_WV_democrat"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_gui_WY
+	text = {
+		trigger = {
+			has_country_flag = USA_WY_republican
+		}
+		localization_key = "GFX_USA_states_gui_WY_republican"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_WY_democrat
+		}
+		localization_key = "GFX_USA_states_gui_WY_democrat"
+	}
+}

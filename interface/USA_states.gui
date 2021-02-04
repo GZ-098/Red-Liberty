@@ -1,0 +1,296 @@
+guiTypes = {
+	containerWindowType = {
+		name = "USA_states_button_container"
+		position = { x = 125 y = 371 }
+
+		buttonType = {
+			name = "USA_states_button"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_goal_USA_victory"
+			pdx_tooltip = "USA_electoral_map_tt"
+		}
+	}
+	
+	containerWindowType = {
+		name = "USA_states_map_window"
+		size = { width = 710 height = 450 }
+		position = { x=-1100 y=-450 }
+		show_position = { x=-400 y=-450 }
+		
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+
+		animation_time = 300
+		moveable = yes
+		show_sound = menu_open_window
+		click_to_front = yes
+
+		orientation = center
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+		
+		iconType = {
+			name = "USA_states_gui_AL"
+			position = { x = 461 y = 264 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_AR"
+			position = { x= 584 y = 445 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_AZ"
+			position = { x= 275 y = 413 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_CA"
+			position = { x= 173 y = 291 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_CO"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_CT"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_DE"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_FL"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_GA"
+			position = { x= 719 y = 464 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_IA"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_ID"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_IN"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_IL"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_KS"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_KY"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_LA"
+			position = { x= 593 y = 512 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_MA"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_MD"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_ME"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_MI"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_MN"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_MO"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_MS"
+			position = { x= 632 y = 471 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_MT"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_NC"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_ND"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_NE"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_NH"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_NJ"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_NM"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_NV"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_NY"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_OH"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_OK"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_OR"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_PA"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_RI"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_SD"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_SC"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_SD"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_TN"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_TX"
+			position = { x= 398 y = 445 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_UT"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_VA"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_VT"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_WA"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_WI"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_WV"
+			position = { x = 65 y = 50 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_WY"
+			position = { x= 356 y = 276 }
+		}
+		
+		iconType = {
+			name = "USA_states_gui_BG"
+			position = { x = 40 y = 20 }
+			spriteType = "GFX_USA_states_gui_BG"
+		}
+		
+		buttonType = {
+			name = "button_close"
+			position = {x = -44 y = 12 }
+			spriteType = "GFX_NV_btn_close"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+			shortcut = "ESCAPE"
+			orientation = UPPER_RIGHT
+		}
+	}
+}

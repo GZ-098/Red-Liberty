@@ -23,6 +23,13 @@
 @PULSE_POPULARITY_CLAMP_MAX_FIRST = 10
 @PULSE_POPULARITY_CLAMP_MAX_SECOND = 2
 
+### SENATORS ###
+# 1 = socialist
+# 2 = republican
+# 3 = democrat
+# 4 = afp
+# 5 = communist
+
 initialize_US_elections_system = {
 	set_variable = { USA_campaigning_multiplier = 1 }
 
@@ -62,6 +69,9 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.2 }
 		set_variable = { democrat_popularity = 0.8 }
 		
+		set_variable = { senator_1 = 3 } # democrat
+		set_variable = { senator_2 = 4 } # afp
+		
 		set_variable = { electoral_votes = 11 }
 	}
 	
@@ -69,6 +79,9 @@ initialize_US_elections_system = {
 		set_state_flag = US_election_state
 		set_variable = { republican_popularity = 0.35 }
 		set_variable = { democrat_popularity = 0.65 }
+		
+		set_variable = { senator_1 = 3 } # democrat
+		set_variable = { senator_2 = 3 } # democrat
 		
 		set_variable = { electoral_votes = 3 }
 	}
@@ -78,21 +91,32 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.3 }
 		set_variable = { democrat_popularity = 0.7 }
 		
+		set_variable = { senator_1 = 4 } # afp
+		set_variable = { senator_2 = 4 } # afp
+		
 		set_variable = { electoral_votes = 9 }
 	}
 	
 	378 = { # California, fairly liberal state
 		set_state_flag = US_election_state
 		set_variable = { republican_popularity = 0.4 }
-		set_variable = { socialist_popularity = 0.6 }
+		set_variable = { democrat_popularity = 0.15 }
+		set_variable = { socialist_popularity = 0.45 }
+		
+		set_variable = { senator_1 = 1 } # socialist
+		set_variable = { senator_2 = 2 } # republican
 		
 		set_variable = { electoral_votes = 22 }
 	}
 	
 	382 = { # Colorado, not a hot bed of radicalism, fairly republican leaning
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.8 }
+		set_variable = { republican_popularity = 0.5 }
+		set_variable = { socialist_popularity = 0.3 }
 		set_variable = { democrat_popularity = 0.2 }
+		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 2 }
 		
 		set_variable = { electoral_votes = 6 }
 	}
@@ -102,6 +126,9 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.8 }
 		set_variable = { democrat_popularity = 0.2 }
 		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 2 }
+		
 		set_variable = { electoral_votes = 8 }
 	}
 	
@@ -109,6 +136,9 @@ initialize_US_elections_system = {
 		set_state_flag = US_election_state
 		set_variable = { republican_popularity = 0.8 }
 		set_variable = { democrat_popularity = 0.2 }
+		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 3 }
 		
 		set_variable = { electoral_votes = 3 }
 	}
@@ -118,6 +148,9 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.45 }
 		set_variable = { democrat_popularity = 0.55 }
 		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 3 }
+		
 		set_variable = { electoral_votes = 7 }
 	}
 	
@@ -125,6 +158,9 @@ initialize_US_elections_system = {
 		set_state_flag = US_election_state
 		set_variable = { republican_popularity = 0.5 }
 		set_variable = { democrat_popularity = 0.5 }
+		
+		set_variable = { senator_1 = 3 }
+		set_variable = { senator_2 = 3 }
 		
 		set_variable = { electoral_votes = 12 }
 	}
@@ -134,6 +170,9 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.7 }
 		set_variable = { democrat_popularity = 0.3 }
 		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 2 }
+		
 		set_variable = { electoral_votes = 4 }
 	}
 	
@@ -141,6 +180,9 @@ initialize_US_elections_system = {
 		set_state_flag = US_election_state
 		set_variable = { socialist_popularity = 0.75 }
 		set_variable = { democrat_popularity = 0.25 }
+		
+		set_variable = { senator_1 = 1 }
+		set_variable = { senator_2 = 1 }
 		
 		set_variable = { electoral_votes = 29 }
 	}
@@ -150,13 +192,20 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.75 }
 		set_variable = { democrat_popularity = 0.25 }
 		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 3 }
+		
 		set_variable = { electoral_votes = 14 }
 	}
 	
 	392 = { # Iowa, initially favors the socialists for pro-agriculture stuff
 		set_state_flag = US_election_state
-		set_variable = { socialist_popularity = 0.65 }
+		set_variable = { socialist_popularity = 0.55 }
 		set_variable = { republican_popularity = 0.35 }
+		set_variable = { democrat_popularity = 0.1 }
+		
+		set_variable = { senator_1 = 1 }
+		set_variable = { senator_2 = 2 }
 		
 		set_variable = { electoral_votes = 11 }
 	}
@@ -166,6 +215,9 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.55 }
 		set_variable = { socialist_popularity = 0.45 }
 		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 2 }
+		
 		set_variable = { electoral_votes = 9 }
 	}
 	
@@ -174,13 +226,19 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.65 }
 		set_variable = { democrat_popularity = 0.35 }
 		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 3 }
+		
 		set_variable = { electoral_votes = 11 }
 	}
 	
-	371 = { # Louisiana, pro segregation, very conservative, afp/democrat stronghold
+	371 = { # Louisiana, pro segregation, very conservative, afp stronghold
 		set_state_flag = US_election_state
 		set_variable = { democrat_popularity = 0.3 }
 		set_variable = { afp_popularity = 0.7 }
+		
+		set_variable = { senator_1 = 4 }
+		set_variable = { senator_2 = 4 }
 		
 		set_variable = { electoral_votes = 10 }
 	}
@@ -190,6 +248,9 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.6 }
 		set_variable = { democrat_popularity = 0.4 }
 		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 2 }
+		
 		set_variable = { electoral_votes = 5 }
 	}
 	
@@ -197,6 +258,9 @@ initialize_US_elections_system = {
 		set_state_flag = US_election_state
 		set_variable = { republican_popularity = 0.8 }
 		set_variable = { democrat_popularity = 0.2 }
+		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 2 }
 		
 		set_variable = { electoral_votes = 8 }
 	}
@@ -206,6 +270,9 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.45 }
 		set_variable = { democrat_popularity = 0.55 }
 		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 3 }
+		
 		set_variable = { electoral_votes = 17 }
 	}
 	
@@ -213,6 +280,9 @@ initialize_US_elections_system = {
 		set_state_flag = US_election_state
 		set_variable = { socialist_popularity = 0.7 }
 		set_variable = { democrat_popularity = 0.3 }
+		
+		set_variable = { senator_1 = 1 }
+		set_variable = { senator_2 = 1 }
 		
 		set_variable = { electoral_votes = 19 }
 	}
@@ -223,6 +293,9 @@ initialize_US_elections_system = {
 		set_variable = { democrat_popularity = 0.1 }
 		set_variable = { socialist_popularity = 0.5 }
 		
+		set_variable = { senator_1 = 1 }
+		set_variable = { senator_2 = 1 }
+		
 		set_variable = { electoral_votes = 11 }
 	}
 	
@@ -230,6 +303,9 @@ initialize_US_elections_system = {
 		set_state_flag = US_election_state
 		set_variable = { republican_popularity = 0.4 }
 		set_variable = { democrat_popularity = 0.6 }
+		
+		set_variable = { senator_1 = 3 }
+		set_variable = { senator_2 = 4 }
 		
 		set_variable = { electoral_votes = 9 }
 	}
@@ -239,6 +315,9 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.8 }
 		set_variable = { democrat_popularity = 0.2 }
 		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 3 }
+		
 		set_variable = { electoral_votes = 15 }
 	}
 	
@@ -246,6 +325,9 @@ initialize_US_elections_system = {
 		set_state_flag = US_election_state
 		set_variable = { socialist_popularity = 0.6 }
 		set_variable = { democrat_popularity = 0.4 }
+		
+		set_variable = { senator_1 = 1 }
+		set_variable = { senator_2 = 2 }
 		
 		set_variable = { electoral_votes = 4 }
 	}
@@ -255,6 +337,9 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.7 }
 		set_variable = { democrat_popularity = 0.3 }
 		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 2 }
+		
 		set_variable = { electoral_votes = 7 }
 	}
 	
@@ -262,6 +347,9 @@ initialize_US_elections_system = {
 		set_state_flag = US_election_state
 		set_variable = { republican_popularity = 0.7 }
 		set_variable = { democrat_popularity = 0.3 }
+		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 2 }
 		
 		set_variable = { electoral_votes = 3 }
 	}
@@ -271,6 +359,20 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.45 } # Default Value
 		set_variable = { democrat_popularity = 0.55 } # Default Value
 		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 3 }
+		
+		set_variable = { electoral_votes = 4 }
+	}
+	
+	359 = { # New Jersey
+		set_state_flag = US_election_state
+		set_variable = { republican_popularity = 0.45 } # Default Value
+		set_variable = { socialist_popularity = 0.55 } # Default Value
+		
+		set_variable = { senator_1 = 1 }
+		set_variable = { senator_2 = 2 }
+		
 		set_variable = { electoral_votes = 4 }
 	}
 	
@@ -279,13 +381,19 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.6 }
 		set_variable = { democrat_popularity = 0.4 }
 		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 2 }
+		
 		set_variable = { electoral_votes = 3 }
 	}
 	
 	358 = { # New York, very liberal
 		set_state_flag = US_election_state
 		set_variable = { republican_popularity = 0.45 } # Default Value
-		set_variable = { democrat_popularity = 0.55 } # Default Value
+		set_variable = { socialist_popularity = 0.55 } # Default Value
+		
+		set_variable = { senator_1 = 1 }
+		set_variable = { senator_2 = 2 }
 		
 		set_variable = { electoral_votes = 47 }
 	}
@@ -295,6 +403,9 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.6 } # Default Value
 		set_variable = { democrat_popularity = 0.4 } # Default Value
 		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 2 }
+		
 		set_variable = { electoral_votes = 13 }
 	}
 	
@@ -302,6 +413,9 @@ initialize_US_elections_system = {
 		set_state_flag = US_election_state
 		set_variable = { republican_popularity = 0.8 } # Default Value
 		set_variable = { democrat_popularity = 0.2 } # Default Value
+		
+		set_variable = { senator_1 = 3 }
+		set_variable = { senator_2 = 3 }
 		
 		set_variable = { electoral_votes = 4 }
 	}
@@ -311,6 +425,9 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.65 } # Default Value
 		set_variable = { democrat_popularity = 0.35 } # Default Value
 		
+		set_variable = { senator_1 = 1 }
+		set_variable = { senator_2 = 2 }
+		
 		set_variable = { electoral_votes = 26 }
 	}
 	
@@ -319,21 +436,31 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.7 } # Default Value
 		set_variable = { democrat_popularity = 0.3 } # Default Value
 		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 3 }
+		
 		set_variable = { electoral_votes = 11 }
 	}
 	
 	385 = { # Oregon
 		set_state_flag = US_election_state
 		set_variable = { republican_popularity = 0.4 } # Default Value
-		set_variable = { democrat_popularity = 0.6 } # Default Value
+		set_variable = { socialist_popularity = 0.6 } # Default Value
+		
+		set_variable = { senator_1 = 1 }
+		set_variable = { senator_2 = 2 }
 		
 		set_variable = { electoral_votes = 5 }
 	}
 	
 	360 = { # Pennsylvania, swing state 
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.6 } # Default Value
-		set_variable = { democrat_popularity = 0.4 } # Default Value
+		set_variable = { socialist_popularity = 0.5 }
+		set_variable = { republican_popularity = 0.4 }
+		set_variable = { democrat_popularity = 0.1 }
+		
+		set_variable = { senator_1 = 1 }
+		set_variable = { senator_2 = 1 }
 		
 		set_variable = { electoral_votes = 36 }
 	}
@@ -343,6 +470,9 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.8 } # Default Value
 		set_variable = { democrat_popularity = 0.2 } # Default Value
 		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 3 }
+		
 		set_variable = { electoral_votes = 4 }
 	}
 	
@@ -350,6 +480,9 @@ initialize_US_elections_system = {
 		set_state_flag = US_election_state
 		set_variable = { republican_popularity = 0.35 } # Default Value
 		set_variable = { democrat_popularity = 0.65 } # Default Value
+		
+		set_variable = { senator_1 = 3 }
+		set_variable = { senator_2 = 3 }
 		
 		set_variable = { electoral_votes = 8 }
 	}
@@ -359,6 +492,9 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.8 } # Default Value
 		set_variable = { democrat_popularity = 0.2 } # Default Value
 		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 2 }
+		
 		set_variable = { electoral_votes = 4 }
 	}
 	
@@ -366,6 +502,9 @@ initialize_US_elections_system = {
 		set_state_flag = US_election_state
 		set_variable = { republican_popularity = 0.7 } # Default Value
 		set_variable = { democrat_popularity = 0.3 } # Default Value
+		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 3 }
 		
 		set_variable = { electoral_votes = 11 }
 	}
@@ -376,6 +515,9 @@ initialize_US_elections_system = {
 		set_variable = { democrat_popularity = 0.35 }
 		set_variable = { afp_popularity = 0.45 }
 		
+		set_variable = { senator_1 = 3 }
+		set_variable = { senator_2 = 4 }
+		
 		set_variable = { electoral_votes = 23 }
 	}
 	
@@ -383,6 +525,9 @@ initialize_US_elections_system = {
 		set_state_flag = US_election_state
 		set_variable = { republican_popularity = 0.25 } # Default Value
 		set_variable = { democrat_popularity = 0.75 } # Default Value
+		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 3 }
 		
 		set_variable = { electoral_votes = 4 }
 	}
@@ -392,6 +537,9 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.4 } # Default Value
 		set_variable = { democrat_popularity = 0.6 } # Default Value
 		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 3 }
+		
 		set_variable = { electoral_votes = 3 }
 	}
 	
@@ -400,13 +548,20 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.4 } # Default Value
 		set_variable = { democrat_popularity = 0.6 } # Default Value
 		
+		set_variable = { senator_1 = 3 }
+		set_variable = { senator_2 = 3 }
+		
 		set_variable = { electoral_votes = 11 }
 	}
 	
 	386 = { # Washington
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.35 } # Default Value
-		set_variable = { democrat_popularity = 0.65 } # Default Value
+		set_variable = { republican_popularity = 0.33 }
+		set_variable = { democrat_popularity = 0.3 }
+		set_variable = { socialist_popularity = 0.37 }
+		
+		set_variable = { senator_1 = 1 }
+		set_variable = { senator_2 = 2 }
 		
 		set_variable = { electoral_votes = 8 }
 	}
@@ -416,6 +571,9 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.45 } # Default Value
 		set_variable = { democrat_popularity = 0.55 } # Default Value
 		
+		set_variable = { senator_1 = 1 }
+		set_variable = { senator_2 = 3 }
+		
 		set_variable = { electoral_votes = 8 }
 	}
 	
@@ -423,6 +581,9 @@ initialize_US_elections_system = {
 		set_state_flag = US_election_state
 		set_variable = { socialist_popularity = 0.65 } # Default Value
 		set_variable = { republican_popularity = 0.35 } # Default Value
+		
+		set_variable = { senator_1 = 1 }
+		set_variable = { senator_2 = 1 }
 		
 		set_variable = { electoral_votes = 12 }
 	}
@@ -432,10 +593,80 @@ initialize_US_elections_system = {
 		set_variable = { republican_popularity = 0.8 } # Default Value
 		set_variable = { democrat_popularity = 0.2 } # Default Value
 		
+		set_variable = { senator_1 = 2 }
+		set_variable = { senator_2 = 2 }
+		
 		set_variable = { electoral_votes = 3 }
 	}
 	
+	USA_calculate_senators = yes
 	log = "US Presidential Election System Initialization Complete"
+}
+
+USA_calculate_senators = {
+	every_owned_state = {
+		limit = { has_state_flag = US_election_state }
+		if = {
+			limit = {
+				check_variable = { senator_1 = 1 }
+			}
+			add_to_variable = { USA.senators_socialist = 1 }
+		}
+		if = {
+			limit = {
+				check_variable = { senator_2 = 1 }
+			}
+			add_to_variable = { USA.senators_socialist = 1 }
+		}
+		if = {
+			limit = {
+				check_variable = { senator_1 = 2 }
+			}
+			add_to_variable = { USA.senators_republican = 1 }
+		}
+		if = {
+			limit = {
+				check_variable = { senator_2 = 2 }
+			}
+			add_to_variable = { USA.senators_republican = 1 }
+		}
+		if = {
+			limit = {
+				check_variable = { senator_1 = 3 }
+			}
+			add_to_variable = { USA.senators_democrat = 1 }
+		}
+		if = {
+			limit = {
+				check_variable = { senator_2 = 3 }
+			}
+			add_to_variable = { USA.senators_democrat = 1 }
+		}
+		if = {
+			limit = {
+				check_variable = { senator_1 = 4 }
+			}
+			add_to_variable = { USA.senators_fascist = 1 }
+		}
+		if = {
+			limit = {
+				check_variable = { senator_2 = 4 }
+			}
+			add_to_variable = { USA.senators_fascist = 1 }
+		}
+		if = {
+			limit = {
+				check_variable = { senator_1 = 5 }
+			}
+			add_to_variable = { USA.senators_communist = 1 }
+		}
+		if = {
+			limit = {
+				check_variable = { senator_2 = 5 }
+			}
+			add_to_variable = { USA.senators_communist = 1 }
+		}
+	}
 }
 
 US_hold_presidential_election = {
@@ -472,7 +703,8 @@ US_hold_presidential_election = {
     		max = @POPULARITY_CLAMP_MAX
 		}
 		
-		US_hold_presidential_election_in_state = yes
+		USA_update_presidential_election_race_in_state = yes
+		USA_hold_presidential_election_in_state = yes
 	}
 
 	log = "US Presidential Election: SPA: [?socialist_electoral_votes] || DP: [?democrat_electoral_votes] || RP: [?republican_electoral_votes] || AFP: [?afp_electoral_votes]"
@@ -538,9 +770,10 @@ USA_clamp_state_popularities = {
 		min = @PULSE_POPULARITY_CLAMP_MIN
 		max = @PULSE_POPULARITY_CLAMP_MAX_SECOND
 	}
+	#log = "[This.GetName] : Clamped state popularities: SPA: [?socialist_popularity] || DP: [?democrat_popularity] || RP: [?republican_popularity] || AFP: [?afp_popularity]"
 }
 
-US_hold_presidential_election_in_state = {
+USA_update_presidential_election_race_in_state = {
 
 	#make party pop percentages
 	#convert temp party pops into percentages
@@ -566,7 +799,57 @@ US_hold_presidential_election_in_state = {
 	set_variable = { republican_election_pop = republican_temp_pop }
 	set_variable = { democrat_election_pop = democrat_temp_pop }
 	set_variable = { afp_election_pop = afp_temp_pop }
+}
 
+USA_calculate_president_predictions = {
+
+	# socialists
+	set_variable = { socialist_president_poll_pop = socialist_election_pop }
+	set_temp_variable = { error_margin_state_socialist = 1 }
+	randomize_temp_variable = {
+		var = error_margin_state_socialist
+		distribution = uniform
+		min = 0.9
+		max = 1.1
+	}
+	multiply_variable = { socialist_president_poll_pop = error_margin_state_socialist }
+	
+	# republicans
+	set_variable = { republican_president_poll_pop = republican_election_pop }
+	set_temp_variable = { error_margin_state_republican = 1 }
+	randomize_temp_variable = {
+		var = error_margin_state_republican
+		distribution = uniform
+		min = 0.9
+		max = 1.1
+	}
+	multiply_variable = { republican_president_poll_pop = error_margin_state_republican }
+	
+	# democrats
+	set_variable = { democrat_president_poll_pop = democrat_election_pop }
+	set_temp_variable = { error_margin_state_democrat = 1 }
+	randomize_temp_variable = {
+		var = error_margin_state_democrat
+		distribution = uniform
+		min = 0.9
+		max = 1.1
+	}
+	multiply_variable = { democrat_president_poll_pop = error_margin_state_democrat }
+	
+	# afp
+	set_variable = { afp_president_poll_pop = afp_election_pop }
+	set_temp_variable = { error_margin_state_afp = 1 }
+	randomize_temp_variable = {
+		var = error_margin_state_afp
+		distribution = uniform
+		min = 0.9
+		max = 1.1
+	}
+	multiply_variable = { afp_president_poll_pop = error_margin_state_afp }
+}
+
+USA_hold_presidential_election_in_state = {
+	
 	#check which party is largest
 	
 	if = {
@@ -579,7 +862,7 @@ US_hold_presidential_election_in_state = {
 		log = "[This.GetName] : Voted for socialists with [?electoral_votes] electoral votes"
 		set_state_flag = voted_socialist
 	}
-	if = {
+	else_if = {
 		limit = {
 			check_variable = { republican_election_pop > democrat_election_pop }
 			check_variable = { republican_election_pop > afp_election_pop }
@@ -589,7 +872,7 @@ US_hold_presidential_election_in_state = {
 	    log = "[This.GetName] : Voted for republicans with [?electoral_votes] electoral votes"
 		set_state_flag = voted_republican
 	}
-	if = {
+	else_if = {
 		limit = {
 			check_variable = { democrat_election_pop > republican_election_pop }
 			check_variable = { democrat_election_pop > afp_election_pop }
@@ -599,7 +882,7 @@ US_hold_presidential_election_in_state = {
 		log = "[This.GetName] : Voted for democrats with [?electoral_votes] electoral votes"
 		set_state_flag = voted_democrat
 	}
-	if = {
+	else_if = {
 		limit = {
 			check_variable = { afp_election_pop > republican_election_pop }
 			check_variable = { afp_election_pop > democrat_election_pop }
@@ -609,8 +892,6 @@ US_hold_presidential_election_in_state = {
 		log = "[This.GetName] : Voted for afp with [?electoral_votes] electoral votes"
 		set_state_flag = voted_afp
 	}
-	
-	##########################################################################################
 }
 
 clear_election_results = {

@@ -1,0 +1,251 @@
+scripted_gui = {
+
+	USA_states_gui = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "USA_states_button_container"
+		
+		triggers = {
+			USA_states_button_visible = {
+				tag = USA
+			}
+		}
+
+		effects = {
+			USA_states_button_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = USA_states_map_open }
+					}
+					ROOT = {
+						set_country_flag = USA_states_map_open
+					}
+				}
+				else = {
+					clr_country_flag = USA_states_map_open
+				}
+			}
+		}
+		
+		properties = {
+			
+		}
+	}
+	
+	USA_states_map = {
+		context_type = player_context
+		window_name = "USA_states_map_window"
+
+		ai_check = {
+			always = no
+		}
+
+		visible = {
+			has_country_flag = USA_states_map_open
+		}
+		
+		triggers = {
+			
+		}
+
+		effects = {
+			button_close_click = {
+				clr_country_flag = USA_states_map_open
+			}
+		}
+
+		properties = {
+			USA_states_gui_AL = {
+				image = "[Get_USA_states_gui_AL]"
+			}
+		
+			USA_states_gui_AR ={
+				image = "[Get_USA_states_gui_AR]"
+			}
+			
+			USA_states_gui_AZ ={
+				image = "[Get_USA_states_gui_AZ]"
+			}
+		
+			USA_states_gui_CA ={
+				image = "[Get_USA_states_gui_CA]"
+			}
+			
+			USA_states_gui_CO ={
+				image = "[Get_USA_states_gui_CO]"
+			}
+			
+			USA_states_gui_CT ={
+				image = "[Get_USA_states_gui_CT]"
+			}
+			
+			USA_states_gui_DE ={
+				image = "[Get_USA_states_gui_DE]"
+			}
+			
+			USA_states_gui_FL ={
+				image = "[Get_USA_states_gui_FL]"
+			}
+			
+			USA_states_gui_GA ={
+				image = "[Get_USA_states_gui_GA]"
+			}
+			
+			USA_states_gui_IA ={
+				image = "[Get_USA_states_gui_IA]"
+			}
+			
+			USA_states_gui_ID ={
+				image = "[Get_USA_states_gui_ID]"
+			}
+			
+			USA_states_gui_IL ={
+				image = "[Get_USA_states_gui_IL]"
+			}
+			
+			USA_states_gui_IN ={
+				image = "[Get_USA_states_gui_IN]"
+			}
+			
+			USA_states_gui_KS ={
+				image = "[Get_USA_states_gui_KS]"
+			}
+			
+			USA_states_gui_KY ={
+				image = "[Get_USA_states_gui_KY]"
+			}
+			
+			USA_states_gui_LA ={
+				image = "[Get_USA_states_gui_LA]"
+			}
+			
+			USA_states_gui_MA ={
+				image = "[Get_USA_states_gui_MA]"
+			}
+			
+			USA_states_gui_MD ={
+				image = "[Get_USA_states_gui_MD]"
+			}
+			
+			USA_states_gui_ME ={
+				image = "[Get_USA_states_gui_ME]"
+			}
+			
+			USA_states_gui_MI ={
+				image = "[Get_USA_states_gui_MI]"
+			}
+			
+			USA_states_gui_MN ={
+				image = "[Get_USA_states_gui_MN]"
+			}
+			
+			USA_states_gui_MO ={
+				image = "[Get_USA_states_gui_MO]"
+			}
+			
+			USA_states_gui_MS ={
+				image = "[Get_USA_states_gui_MS]"
+			}
+			
+			USA_states_gui_MT ={
+				image = "[Get_USA_states_gui_MT]"
+			}
+			
+			USA_states_gui_NC ={
+				image = "[Get_USA_states_gui_NC]"
+			}
+			
+			USA_states_gui_ND ={
+				image = "[Get_USA_states_gui_ND]"
+			}
+			
+			USA_states_gui_NE ={
+				image = "[Get_USA_states_gui_NE]"
+			}
+			
+			USA_states_gui_NH ={
+				image = "[Get_USA_states_gui_NH]"
+			}
+			
+			USA_states_gui_NJ ={
+				image = "[Get_USA_states_gui_NJ]"
+			}
+			
+			USA_states_gui_NM ={
+				image = "[Get_USA_states_gui_NM]"
+			}
+			
+			USA_states_gui_NV ={
+				image = "[Get_USA_states_gui_NV]"
+			}
+			
+			USA_states_gui_NY ={
+				image = "[Get_USA_states_gui_NY]"
+			}
+			
+			USA_states_gui_OH ={
+				image = "[Get_USA_states_gui_OH]"
+			}
+			
+			USA_states_gui_OK ={
+				image = "[Get_USA_states_gui_OK]"
+			}
+			
+			USA_states_gui_OR ={
+				image = "[Get_USA_states_gui_OR]"
+			}
+			
+			USA_states_gui_PA ={
+				image = "[Get_USA_states_gui_PA]"
+			}
+			
+			USA_states_gui_RI ={
+				image = "[Get_USA_states_gui_RI]"
+			}
+			
+			USA_states_gui_SC ={
+				image = "[Get_USA_states_gui_SC]"
+			}
+			
+			USA_states_gui_SD ={
+				image = "[Get_USA_states_gui_SD]"
+			}
+			
+			USA_states_gui_TN ={
+				image = "[Get_USA_states_gui_TN]"
+			}
+			
+			USA_states_gui_TX ={
+				image = "[Get_USA_states_gui_TX]"
+			}
+			
+			USA_states_gui_UT ={
+				image = "[Get_USA_states_gui_UT]"
+			}
+			
+			USA_states_gui_VA ={
+				image = "[Get_USA_states_gui_VA]"
+			}
+			
+			USA_states_gui_VT ={
+				image = "[Get_USA_states_gui_VT]"
+			}
+			
+			USA_states_gui_WA ={
+				image = "[Get_USA_states_gui_WA]"
+			}
+			
+			USA_states_gui_WI ={
+				image = "[Get_USA_states_gui_WI]"
+			}
+			
+			USA_states_gui_WV ={
+				image = "[Get_USA_states_gui_WV]"
+			}
+			
+			USA_states_gui_WY ={
+				image = "[Get_USA_states_gui_WY]"
+			}
+		}
+	}
+}
