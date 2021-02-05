@@ -7,6 +7,7 @@
  get_state_info_tt:0 "[get_state_info]"
  
  USA_states_gui_none_selected_tt:0 "§RNo State Selected§!"
+ USA_states_gui_none_selected_info_tt:0 "§RPlease select a state for additional information.§!"
  
  USA_states_gui_AL_selected_tt:0 "§YAlabama§!"
  USA_states_gui_AL_selected_info_tt:0 "Alabama is nicknamed the Yellowhammer State, after the state bird. Alabama is also known as the "Heart of Dixie" and the "Cotton State". The state tree is the longleaf pine, and the state flower is the camellia. Alabama's capital is Montgomery. The largest city by population is Birmingham, which has long been the most industrialized city."

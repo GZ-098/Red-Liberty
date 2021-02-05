@@ -338,8 +338,9 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "USA_states_gui_state_infobox"
-			position = { x = 660 y = 160 }
+			position = { x = 650 y = 160 }
 			maxWidth = 200
+			format = center
 			text = "[get_state_info]"
 		}
 		
