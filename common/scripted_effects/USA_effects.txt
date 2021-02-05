@@ -27,3 +27,12 @@ improve_great_depression = {
 		}
 	}
 }
+
+clear_state_name_and_desc = {
+	clr_country_flag = USA_states_gui_AL_selected
+	clr_country_flag = USA_states_gui_AR_selected
+	clr_country_flag = USA_states_gui_AZ_selected
+	clr_country_flag = USA_states_gui_CA_selected
+	clr_country_flag = USA_states_gui_CO_selected
+	clr_country_flag = USA_states_gui_FL_selected
+}

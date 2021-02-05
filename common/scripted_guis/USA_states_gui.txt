@@ -52,6 +52,90 @@ scripted_gui = {
 			button_close_click = {
 				clr_country_flag = USA_states_map_open
 			}
+			USA_states_gui_AL_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = USA_states_gui_AL_selected }
+					}
+					ROOT = {
+						clear_state_name_and_desc = yes
+						set_country_flag = USA_states_gui_AL_selected
+					}
+				}
+				else = {
+					clear_state_name_and_desc = yes
+				}
+			}
+			USA_states_gui_AR_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = USA_states_gui_AR_selected }
+					}
+					ROOT = {
+						clear_state_name_and_desc = yes
+						set_country_flag = USA_states_gui_AR_selected
+					}
+				}
+				else = {
+					clear_state_name_and_desc = yes
+				}
+			}
+			USA_states_gui_AZ_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = USA_states_gui_AZ_selected }
+					}
+					ROOT = {
+						clear_state_name_and_desc = yes
+						set_country_flag = USA_states_gui_AZ_selected
+					}
+				}
+				else = {
+					clear_state_name_and_desc = yes
+				}
+			}
+			USA_states_gui_CA_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = USA_states_gui_CA_selected }
+					}
+					ROOT = {
+						clear_state_name_and_desc = yes
+						set_country_flag = USA_states_gui_CA_selected
+					}
+				}
+				else = {
+					clear_state_name_and_desc = yes
+				}
+			}
+			USA_states_gui_CO_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = USA_states_gui_CO_selected }
+					}
+					ROOT = {
+						clear_state_name_and_desc = yes
+						set_country_flag = USA_states_gui_CO_selected
+					}
+				}
+				else = {
+					clear_state_name_and_desc = yes
+				}
+			}
+			USA_states_gui_FL_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = USA_states_gui_FL_selected }
+					}
+					ROOT = {
+						clear_state_name_and_desc = yes
+						set_country_flag = USA_states_gui_FL_selected
+					}
+				}
+				else = {
+					clear_state_name_and_desc = yes
+				}
+			}
 		}
 
 		properties = {

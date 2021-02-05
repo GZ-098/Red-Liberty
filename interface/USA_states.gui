@@ -13,7 +13,8 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "USA_states_map_window"
-		size = { width = 710 height = 450 }
+		#size = { width = 710 height = 450 }
+		size = { width = 910 height = 550 }
 		position = { x=-1100 y=-450 }
 		show_position = { x=-400 y=-450 }
 		
@@ -26,261 +27,320 @@ guiTypes = {
 		click_to_front = yes
 
 		orientation = center
-
+		
 		background = {
 			name = "Background"
 			quadTextureSprite = "GFX_tiled_plain_bg"
 		}
 		
-		iconType = {
-			name = "USA_states_gui_AL"
-			position = { x = 461 y = 264 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_AR"
-			position = { x= 584 y = 445 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_AZ"
-			position = { x= 275 y = 413 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_CA"
-			position = { x= 173 y = 291 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_CO"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_CT"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_DE"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_FL"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_GA"
-			position = { x= 719 y = 464 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_IA"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_ID"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_IN"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_IL"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_KS"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_KY"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_LA"
-			position = { x= 593 y = 512 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_MA"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_MD"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_ME"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_MI"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_MN"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_MO"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_MS"
-			position = { x= 632 y = 471 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_MT"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_NC"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_ND"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_NE"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_NH"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_NJ"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_NM"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_NV"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_NY"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_OH"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_OK"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_OR"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_PA"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_RI"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_SD"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_SC"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_SD"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_TN"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_TX"
-			position = { x= 398 y = 445 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_UT"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_VA"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_VT"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_WA"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_WI"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_WV"
-			position = { x = 65 y = 50 }
-		}
-		
-		iconType = {
-			name = "USA_states_gui_WY"
-			position = { x= 356 y = 276 }
-		}
-		
-		iconType = {
+		iconType = { # background
 			name = "USA_states_gui_BG"
 			position = { x = 40 y = 20 }
 			spriteType = "GFX_USA_states_gui_BG"
+		}
+		
+		##################################################
+		
+		buttonType = {
+			name = "USA_states_gui_AL"
+			quadTextureSprite = "GFX_USA_states_gui_AL"
+			position = { x = 461 y = 264 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_AZ"
+			quadTextureSprite = "GFX_USA_states_gui_AZ"
+			position = { x= 126 y = 224 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_AR"
+			quadTextureSprite = "GFX_USA_states_gui_AR"
+			position = { x= 381 y = 247 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_CA"
+			quadTextureSprite = "GFX_USA_states_gui_CA"
+			position = { x= 42 y = 123 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_CO"
+			quadTextureSprite = "GFX_USA_states_gui_CO"
+			position = { x = 208 y = 172 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_FL"
+			quadTextureSprite = "GFX_USA_states_gui_FL"
+			position = { x = 474 y = 320 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_GA"
+			quadTextureSprite = "GFX_USA_states_gui_GA"
+			position = { x = 492 y = 260 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_IA"
+			quadTextureSprite = "GFX_USA_states_gui_IA"
+			position = { x = 356 y = 140 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_ID"
+			quadTextureSprite = "GFX_USA_states_gui_ID"
+			position = { x = 129 y = 38 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_IL"
+			quadTextureSprite = "GFX_USA_states_gui_IL"
+			position = { x = 415 y = 153 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_IN"
+			quadTextureSprite = "GFX_USA_states_gui_IN"
+			position = { x = 458 y = 160 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_KS"
+			quadTextureSprite = "GFX_USA_states_gui_KS"
+			position = { x = 292 y = 194 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_KY"
+			quadTextureSprite = "GFX_USA_states_gui_KY"
+			position = { x = 446 y = 200 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_LA"
+			quadTextureSprite = "GFX_USA_states_gui_LA"
+			position = { x = 390 y = 301 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_ME"
+			quadTextureSprite = "GFX_USA_states_gui_ME"
+			position = { x = 625 y = 38 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_MI"
+			quadTextureSprite = "GFX_USA_states_gui_MI"
+			position = { x = 422 y = 79 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_MN"
+			quadTextureSprite = "GFX_USA_states_gui_MN"
+			position = { x = 349 y = 53 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_MS"
+			quadTextureSprite = "GFX_USA_states_gui_MS"
+			position = { x = 421 y = 267 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_MO"
+			quadTextureSprite = "GFX_USA_states_gui_MO"
+			position = { x = 366 y = 185 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_MT"
+			quadTextureSprite = "GFX_USA_states_gui_MT"
+			position = { x = 157 y = 40 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_NE"
+			quadTextureSprite = "GFX_USA_states_gui_NE"
+			position = { x = 272 y = 147 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_NV"
+			quadTextureSprite = "GFX_USA_states_gui_NV"
+			position = { x = 85 y = 135 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_NJ"
+			quadTextureSprite = "GFX_USA_states_gui_NJ"
+			position = { x = 595 y = 146 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_NY"
+			quadTextureSprite = "GFX_USA_states_gui_NY"
+			position = { x = 543 y = 88 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_MA"
+			quadTextureSprite = "GFX_USA_states_gui_MA"
+			position = { x = 612 y = 113 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_NH"
+			quadTextureSprite = "GFX_USA_states_gui_NH"
+			position = { x = 619 y = 78 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_NC"
+			quadTextureSprite = "GFX_USA_states_gui_NC"
+			position = { x = 508 y = 220 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_ND"
+			quadTextureSprite = "GFX_USA_states_gui_ND"
+			position = { x = 277 y = 56 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_OH"
+			quadTextureSprite = "GFX_USA_states_gui_OH"
+			position = { x = 489 y = 150 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_OR"
+			quadTextureSprite = "GFX_USA_states_gui_OR"
+			position = { x = 50 y = 62 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_PA"
+			quadTextureSprite = "GFX_USA_states_gui_PA"
+			position = { x = 536 y = 138 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_MD"
+			quadTextureSprite = "GFX_USA_states_gui_MD"
+			position = { x = 554 y = 173 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_RI"
+			quadTextureSprite = "GFX_USA_states_gui_RI"
+			position = { x = 630 y = 127 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_SC"
+			quadTextureSprite = "GFX_USA_states_gui_SC"
+			position = { x = 521 y = 253 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_SD"
+			quadTextureSprite = "GFX_USA_states_gui_SD"
+			position = { x = 274 y = 103 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_TN"
+			quadTextureSprite = "GFX_USA_states_gui_TN"
+			position = { x = 436 y = 233 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_TX"
+			quadTextureSprite = "GFX_USA_states_gui_TX"
+			position = { x= 228 y = 247 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_NM"
+			quadTextureSprite = "GFX_USA_states_gui_NM"
+			position = { x = 197 y = 232 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_OK"
+			quadTextureSprite = "GFX_USA_states_gui_OK"
+			position = { x = 279 y = 240 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_UT"
+			quadTextureSprite = "GFX_USA_states_gui_UT"
+			position = { x = 148 y = 149 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_VT"
+			quadTextureSprite = "GFX_USA_states_gui_VT"
+			position = { x = 603 y = 82 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_CT"
+			quadTextureSprite = "GFX_USA_states_gui_CT"
+			position = { x = 613 y = 128 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_DE"
+			quadTextureSprite = "GFX_USA_states_gui_DE"
+			position = { x = 594 y = 173 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_VA"
+			quadTextureSprite = "GFX_USA_states_gui_VA"
+			position = { x = 517 y = 183 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_WA"
+			quadTextureSprite = "GFX_USA_states_gui_WA"
+			position = { x = 71 y = 24 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_WV"
+			quadTextureSprite = "GFX_USA_states_gui_WV"
+			position = { x = 522 y = 179 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_WI"
+			quadTextureSprite = "GFX_USA_states_gui_WI"
+			position = { x = 395 y = 88 }
+		}
+		
+		buttonType = {
+			name = "USA_states_gui_WY"
+			quadTextureSprite = "GFX_USA_states_gui_WY"
+			position = { x= 192 y = 109 }
+		}
+		
+		instantTextBoxType = {
+			name = "USA_states_gui_state_name"
+			position = { x = 650 y = 130 }
+			format = center
+			text = "[get_state_name]"
+		}
+		
+		instantTextBoxType = {
+			name = "USA_states_gui_state_infobox"
+			position = { x = 660 y = 160 }
+			maxWidth = 200
+			text = "[get_state_info]"
 		}
 		
 		buttonType = {

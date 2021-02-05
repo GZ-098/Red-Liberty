@@ -169,7 +169,7 @@ shared_focus = {
 		has_country_flag = social_security_passed
 	}
 	
-	cost = 5
+	cost = 10
 	relative_position_id = USA_social_security
 	prerequisite = { focus = USA_social_security }
     completion_reward = {

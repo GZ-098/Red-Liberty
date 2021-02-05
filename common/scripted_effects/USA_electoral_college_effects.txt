@@ -88,8 +88,8 @@ initialize_US_elections_system = {
 	
 	372 = { # Arkansas
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.3 }
-		set_variable = { democrat_popularity = 0.7 }
+		set_variable = { democrat_popularity = 0.3 }
+		set_variable = { afp_popularity = 0.7 }
 		
 		set_variable = { senator_1 = 4 } # afp
 		set_variable = { senator_2 = 4 } # afp
@@ -156,8 +156,8 @@ initialize_US_elections_system = {
 	
 	365 = { # Georgia, like Alabama, very pro-segregation
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.5 }
-		set_variable = { democrat_popularity = 0.5 }
+		set_variable = { republican_popularity = 0.45 }
+		set_variable = { democrat_popularity = 0.55 }
 		
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 3 }
@@ -568,8 +568,9 @@ initialize_US_elections_system = {
 	
 	832 = { # West Virginia
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.45 } # Default Value
-		set_variable = { democrat_popularity = 0.55 } # Default Value
+		set_variable = { republican_popularity = 0.35 }
+		set_variable = { democrat_popularity = 0.2 }
+		set_variable = { socialist_popularity = 0.45 }
 		
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 3 }

@@ -2,7 +2,7 @@ add_namespace = us_election
 
 country_event = { # no one gets a majority
 	id = us_election.1
-	title = us_election.1.title
+	title = "Election Day"
 	desc = us_election.1.desc
 	
 	trigger = {
@@ -32,26 +32,20 @@ country_event = { # no one gets a majority
 
 country_event = { # new congress gets sworn in
 	id = us_election.2
-	title = us_election.2.title
+	title = "The 75th Congress"
 	desc = us_election.2.desc
 
 	is_triggered_only = yes
 	
 	option = {
 		name = us_election.2.a
-		set_variable = { var = senators_communist value = 1 }
-		set_variable = { var = senators_socialist value = 30 }
-		set_variable = { var = senators_republican value = 23 }
-		set_variable = { var = senators_democrat value = 25 }
-		set_variable = { var = senators_fascist value = 17 }
-		
 		USA_recalc_house = yes
 	}
 }
 
 country_event = { # house of reps votes
 	id = us_election.3
-	title = us_election.3.title
+	title = "The Vote"
 	desc = us_election.3.desc
 
 	is_triggered_only = yes
@@ -70,7 +64,7 @@ country_event = { # house of reps votes
 
 country_event = { # inaug day
 	id = us_election.4
-	title = us_election.4.title
+	title = "Inuaguration Day"
 	desc = us_election.4.desc
 
 	is_triggered_only = yes
