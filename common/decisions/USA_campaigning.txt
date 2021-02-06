@@ -1,0 +1,374 @@
+USA_election_season_category = {
+
+	USA_election_day_timer = {
+		visible = {
+			original_tag = USA
+		}
+		available = {
+			NOT = {
+				has_country_flag = USA_presidential_elections
+			}
+		}
+		activation = {
+			has_country_flag = USA_presidential_elections
+		}
+		is_good = no
+		
+		days_mission_timeout = 306
+		
+		timeout_effect = {
+			random_events = {
+				100 = us_election.1 # 1932 election
+				100 = us_election.100
+				100 = us_election.200
+				100 = us_election.300
+			}
+		}
+		priority = 10
+	}
+	
+	USA_inauguration_day_timer = {
+		visible = {
+			original_tag = USA
+		}
+		available = {
+			NOT = {
+				has_country_flag = USA_presidential_elections
+			}
+		}
+		activation = {
+			has_country_flag = USA_presidential_elections
+		}
+		is_good = no
+		
+		days_mission_timeout = 385
+		
+		timeout_effect = {
+			custom_effect_tooltip = USA_inauguration_day_tt
+			if = {
+				limit = {
+					has_country_flag = USA_thomas_elected
+				}
+				country_event = {
+					id = us_election.4
+				}
+			}
+		}
+		priority = 5
+	}
+	
+	USA_campaign_in_new_england = {
+	
+		icon = ger_mefo_bills
+		
+		available = {
+			NOT = { has_country_flag = currently_campaigning }
+		}
+		
+		visible = {
+			has_country_flag = USA_presidential_elections
+		}
+		
+		cancel_if_not_visible = yes
+		
+		highlight_states = {
+			state = 357
+		}
+		
+		cost = 15
+		
+		days_remove = 30
+		days_re_enable = 20
+		
+		complete_effect = {
+			USA_campaign_area_new_england = yes
+			set_country_flag = currently_campaigning
+			set_country_flag = USA_campaigning_for_socialists
+		}
+		
+		remove_effect = {
+			USA_campaigning_effect = yes
+			clr_country_flag = currently_campaigning
+		}
+	}
+	
+	USA_campaign_in_east_coast = {
+	
+		icon = ger_mefo_bills
+		
+		available = {
+			NOT = { has_country_flag = currently_campaigning }
+		}
+		
+		visible = {
+			has_country_flag = USA_presidential_elections
+		}
+		
+		cancel_if_not_visible = yes
+		
+		highlight_states = {
+			state = 360
+		}
+		
+		cost = 15
+		
+		days_remove = 30
+		days_re_enable = 20
+		
+		complete_effect = {
+			USA_campaign_area_east_coast = yes
+			set_country_flag = currently_campaigning
+			set_country_flag = USA_campaigning_for_socialists
+		}
+		
+		remove_effect = {
+			USA_campaigning_effect = yes
+			clr_country_flag = currently_campaigning
+		}
+	}
+	
+	USA_campaign_in_upper_south = {
+	
+		icon = ger_mefo_bills
+		
+		available = {
+			NOT = { has_country_flag = currently_campaigning }
+		}
+		
+		visible = {
+			has_country_flag = USA_presidential_elections
+		}
+		
+		cancel_if_not_visible = yes
+		
+		highlight_states = {
+			state = 363
+		}
+		
+		cost = 15
+		
+		days_remove = 30
+		days_re_enable = 20
+		
+		complete_effect = {
+			USA_campaign_area_upper_south = yes
+			set_country_flag = currently_campaigning
+			set_country_flag = USA_campaigning_for_socialists
+		}
+		
+		remove_effect = {
+			USA_campaigning_effect = yes
+			clr_country_flag = currently_campaigning
+		}
+	}
+	
+	USA_campaign_in_deep_south = {
+	
+		icon = ger_mefo_bills
+		
+		available = {
+			NOT = { has_country_flag = currently_campaigning }
+		}
+		
+		visible = {
+			has_country_flag = USA_presidential_elections
+		}
+		
+		cancel_if_not_visible = yes
+		
+		highlight_states = {
+			state = 367
+		}
+		
+		cost = 15
+		
+		days_remove = 30
+		days_re_enable = 20
+		
+		complete_effect = {
+			USA_campaign_area_deep_south = yes
+			set_country_flag = currently_campaigning
+			set_country_flag = USA_campaigning_for_socialists
+		}
+		
+		remove_effect = {
+			USA_campaigning_effect = yes
+			clr_country_flag = currently_campaigning
+		}
+	}
+	
+	USA_campaign_in_great_lakes = {
+	
+		icon = ger_mefo_bills
+		
+		available = {
+			NOT = { has_country_flag = currently_campaigning }
+		}
+		
+		visible = {
+			has_country_flag = USA_presidential_elections
+		}
+		
+		cancel_if_not_visible = yes
+		
+		highlight_states = {
+			state = 395
+		}
+		
+		cost = 15
+		
+		days_remove = 30
+		days_re_enable = 20
+		
+		complete_effect = {
+			USA_campaign_area_great_lakes = yes
+			set_country_flag = currently_campaigning
+			set_country_flag = USA_campaigning_for_socialists
+		}
+		
+		remove_effect = {
+			USA_campaigning_effect = yes
+			clr_country_flag = currently_campaigning
+		}
+	}
+	
+	USA_campaign_in_southwest = {
+	
+		icon = ger_mefo_bills
+		
+		available = {
+			NOT = { has_country_flag = currently_campaigning }
+		}
+		
+		visible = {
+			has_country_flag = USA_presidential_elections
+		}
+		
+		cancel_if_not_visible = yes
+		
+		highlight_states = {
+			state = 375
+		}
+		
+		cost = 15
+		
+		days_remove = 30
+		days_re_enable = 20
+		
+		complete_effect = {
+			USA_campaign_area_southwest = yes
+			set_country_flag = currently_campaigning
+			set_country_flag = USA_campaigning_for_socialists
+		}
+		
+		remove_effect = {
+			USA_campaigning_effect = yes
+			clr_country_flag = currently_campaigning
+		}
+	}
+	
+	USA_campaign_in_upper_great_plains = {
+	
+		icon = ger_mefo_bills
+		
+		available = {
+			NOT = { has_country_flag = currently_campaigning }
+		}
+		
+		visible = {
+			has_country_flag = USA_presidential_elections
+		}
+		
+		cancel_if_not_visible = yes
+		
+		highlight_states = {
+			state = 390
+		}
+		
+		cost = 15
+		
+		days_remove = 30
+		days_re_enable = 20
+		
+		complete_effect = {
+			USA_campaign_area_great_plains = yes
+			set_country_flag = currently_campaigning
+			set_country_flag = USA_campaigning_for_socialists
+		}
+		
+		remove_effect = {
+			USA_campaigning_effect = yes
+			clr_country_flag = currently_campaigning
+		}
+	}
+	
+	USA_campaign_in_rocky_mountains = {
+	
+		icon = ger_mefo_bills
+		
+		available = {
+			NOT = { has_country_flag = currently_campaigning }
+		}
+		
+		visible = {
+			has_country_flag = USA_presidential_elections
+		}
+		
+		cancel_if_not_visible = yes
+		
+		highlight_states = {
+			state = 380
+		}
+		
+		cost = 15
+		
+		days_remove = 30
+		days_re_enable = 20
+		
+		complete_effect = {
+			USA_campaign_area_rocky_mountains = yes
+			set_country_flag = currently_campaigning
+			set_country_flag = USA_campaigning_for_socialists
+		}
+		
+		remove_effect = {
+			USA_campaigning_effect = yes
+			clr_country_flag = currently_campaigning
+		}
+	}
+	
+	USA_campaign_in_west_coast = {
+	
+		icon = ger_mefo_bills
+		
+		available = {
+			NOT = { has_country_flag = currently_campaigning }
+		}
+		
+		visible = {
+			has_country_flag = USA_presidential_elections
+		}
+		
+		cancel_if_not_visible = yes
+		
+		highlight_states = {
+			state = 378
+		}
+		
+		cost = 15
+		
+		days_remove = 30
+		days_re_enable = 20
+		
+		complete_effect = {
+			USA_campaign_area_west_coast = yes
+			set_country_flag = currently_campaigning
+			set_country_flag = USA_campaigning_for_socialists
+		}
+		
+		remove_effect = {
+			USA_campaigning_effect = yes
+			clr_country_flag = currently_campaigning
+		}
+	}
+}

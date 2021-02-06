@@ -85,6 +85,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_USA_states_gui_ME_socialist"
+		texturefile = "gfx/interface/USA/states/USA_states_ME_socialist.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_USA_states_gui_ME_republican"
 		texturefile = "gfx/interface/USA/states/USA_states_ME_republican.tga"
 	}

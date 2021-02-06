@@ -1,0 +1,124 @@
+@CAMPAIGNING_GREAT_SUCCESS_BOOST = 0.2
+@CAMPAIGNING_GOOD_SUCCESS_BOOST = 0.1
+@CAMPAIGNING_NEUTRAL_BOOST = 0.05
+@CAMPAIGNING_BAD_BOOST = 0.025
+
+USA_campaign_area_new_england = {
+	add_to_array = { USA_campaign_states = 830 } #Connecticut
+	add_to_array = { USA_campaign_states = 827 } #Maine
+	add_to_array = { USA_campaign_states = 357 } #Massachusetts
+	add_to_array = { USA_campaign_states = 828 } #New Hampshire
+	add_to_array = { USA_campaign_states = 831 } #Rhode Island
+	add_to_array = { USA_campaign_states = 829 } #Vermont
+}
+
+USA_campaign_area_east_coast = {
+	add_to_array = { USA_campaign_states = 833 } #Delaware
+	add_to_array = { USA_campaign_states = 361 } #Maryland
+	add_to_array = { USA_campaign_states = 360 } #Pennsylvania
+	add_to_array = { USA_campaign_states = 832 } #West Virginia
+	add_to_array = { USA_campaign_states = 358 } #New York
+	add_to_array = { USA_campaign_states = 359 } #New Jersey
+}
+
+USA_campaign_area_upper_south = {
+	add_to_array = { USA_campaign_states = 369 } #Kentucky
+	add_to_array = { USA_campaign_states = 363 } #North Carolina
+	add_to_array = { USA_campaign_states = 368 } #Tennessee
+	add_to_array = { USA_campaign_states = 362 } #Virginia
+}
+
+USA_campaign_area_deep_south = {
+	add_to_array = { USA_campaign_states = 367 } #Alabama
+	add_to_array = { USA_campaign_states = 366 } #Florida
+	add_to_array = { USA_campaign_states = 365 } #Georgia
+	add_to_array = { USA_campaign_states = 370 } #Mississippi
+	add_to_array = { USA_campaign_states = 364 } #South Carolina
+	add_to_array = { USA_campaign_states = 372 } #Arkansas
+	add_to_array = { USA_campaign_states = 371 } #Louisiana
+}
+
+USA_campaign_area_southwest = {
+	add_to_array = { USA_campaign_states = 376 } #New Mexico
+	add_to_array = { USA_campaign_states = 375 } #Texas
+	add_to_array = { USA_campaign_states = 374 } #Oklahoma
+	add_to_array = { USA_campaign_states = 377 } #Arizona
+}
+
+USA_campaign_area_great_lakes = {
+	add_to_array = { USA_campaign_states = 395 } #Illinois
+	add_to_array = { USA_campaign_states = 396 } #Indiana
+	add_to_array = { USA_campaign_states = 393 } #Michigan
+	add_to_array = { USA_campaign_states = 261 } #Ohio
+	add_to_array = { USA_campaign_states = 394 } #Wisconsin
+}
+
+USA_campaign_area_great_plains = {
+	add_to_array = { USA_campaign_states = 391 } #Minnesota
+	add_to_array = { USA_campaign_states = 392 } #Iowa
+	add_to_array = { USA_campaign_states = 383 } #Kansas
+	add_to_array = { USA_campaign_states = 373 } #Missouri
+	add_to_array = { USA_campaign_states = 384 } #Nebraska
+	add_to_array = { USA_campaign_states = 389 } #North Dakota
+	add_to_array = { USA_campaign_states = 390 } #South Dakota
+}
+
+USA_campaign_area_rocky_mountains = {
+	add_to_array = { USA_campaign_states = 382 } #Colorado
+	add_to_array = { USA_campaign_states = 388 } #Montana
+	add_to_array = { USA_campaign_states = 380 } #Utah
+	add_to_array = { USA_campaign_states = 381 } #Wyoming
+	add_to_array = { USA_campaign_states = 387 } #Idaho
+	add_to_array = { USA_campaign_states = 379 } #Nevada
+}
+
+USA_campaign_area_west_coast = {
+	add_to_array = { USA_campaign_states = 378 } #California
+	add_to_array = { USA_campaign_states = 385 } #Oregon
+	add_to_array = { USA_campaign_states = 386 } #Washington
+}
+
+USA_campaigning_effect = {
+	set_temp_variable = { USA_pop_factor = 1 }
+	if = {
+		limit = { has_country_flag = USA_campaigning_for_socialists }
+		random_list = {
+			15 = {
+				add_to_temp_variable = { USA_pop_factor = @CAMPAIGNING_GREAT_SUCCESS_BOOST }
+				custom_effect_tooltip = USA_campaigning_great_success_tt
+				country_event = { id = us_campaign.1 } 
+			}
+			50 = {
+				add_to_temp_variable = { USA_pop_factor = @CAMPAIGNING_GOOD_SUCCESS_BOOST }
+				custom_effect_tooltip = USA_campaigning_good_success_tt
+				country_event = { id = us_campaign.2 }
+			}
+			20 = {
+				add_to_temp_variable = { USA_pop_factor = @CAMPAIGNING_NEUTRAL_BOOST }
+				custom_effect_tooltip = USA_campaigning_neutral_tt
+				country_event = { id = us_campaign.3 } 
+			}
+			15 = {
+				add_to_temp_variable = { USA_pop_factor = @CAMPAIGNING_BAD_BOOST }
+				custom_effect_tooltip = USA_campaigning_bad_tt
+				country_event = { id = us_campaign.4 } 
+			}
+		}
+	}
+	multiply_temp_variable = { USA_pop_factor = USA_campaigning_multiplier }
+	log = "USA_campaigning_effect: USA_pop_factor: [?USA.USA_pop_factor]"
+	for_each_scope_loop = { # THIS IS WHERE THAT ARRAY YOU SEE IN THE CAMPAIGN EVENTS COMES FROM. Why couldn't hoi4 mods have been written in a normal language like Python?
+		array = USA_campaign_states
+
+		USA_campaigning_state_boost = yes
+		log = "[This.GetName]: USA_campaigning_state_boost: SPA: [?socialist_popularity] || DP: [?democrat_popularity] || RP: [?republican_popularity] || AFP: [?afp_popularity]"
+	}
+	clear_array = USA_campaign_states
+}
+
+USA_campaigning_state_boost = {
+	if = {
+		limit = { USA = { has_country_flag = USA_campaigning_for_socialists } }
+		multiply_variable = { socialist_popularity = USA_pop_factor }
+	}
+}

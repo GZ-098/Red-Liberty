@@ -32,3 +32,20 @@ focus_tree = {
 	default = no
 	shared_focus = USA_the_second_thomas_admin
 }
+
+focus_tree = {
+	id = USA_roosevelt_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+	continuous_focus_position = {
+		x = 25
+		y = -1250
+	}
+	default = no
+	shared_focus = USA_the_roosevelt_admin
+}

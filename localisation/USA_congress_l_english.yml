@@ -2,8 +2,12 @@
  USA_congress:0 "Congress"
  USA_congress_desc:0 "The Hill has its own rules and ideas. We will have to work with them to make things happen, but there are ways to ensure that we have a sympathetic and supportive §YCongress§! to work with.\n\n§R[?representatives_republican]§! Representative(s) support the §RRepublican Party§!.\n§C[?representatives_democrat]§! Representative(s) support the §CDemocratic Party§!.[get_us_socialist_rep_count][get_us_fascist_rep_count][get_us_communist_rep_count]\nTotal Representatives: §G[?representatives_total]§!\n\n§R[?senators_republican]§! Senator(s) support the §RRepublican Party§!.\n§C[?senators_democrat]§! Senator(s) support the §CDemocratic Party§!.[get_us_socialist_senator_count][get_us_fascist_senator_count][get_us_communist_senator_count]\nTotal Senators: §G[?senators_total]§!\n\n[get_congress_voting]"
  
- USA_election_countdown_mission:0 "Election Day"
- USA_election_will_be_held:0 "The Presidential Election will be held."
+ USA_election_season_category:0 "Election Season"
+ USA_election_season_category_desc:0 "It's an election year here in America, which means that politicians will be out, campaigning in full force."
+ USA_election_day_timer:0 "Election Day"
+ USA_presidential_elections:0 "The Presidential Elections are ongoing."
+ USA_inauguration_day_timer:0 "Inauguration Day"
+ USA_inauguration_day_tt:0 "The president, whether elected or reelected, will take their oath of office."
  
  USA_congress_voting_none:0 "There is currently no important legislation being considered."
  

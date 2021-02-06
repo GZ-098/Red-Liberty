@@ -1,0 +1,11 @@
+music = {
+	name = "which side are you on"
+	file = "USA_which_side_are_you_on.ogg"
+	volume = 1
+}
+
+music = {
+	name = "solidarity_forever"
+	file = "USA_solidarity_forever.ogg"
+	volume = 1
+}

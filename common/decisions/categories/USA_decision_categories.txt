@@ -13,3 +13,10 @@ USA_congress = {
 
 	priority = 85
 }
+
+USA_election_season_category = {
+	icon = usa_congress
+	allowed = {
+		original_tag = USA
+	}
+}

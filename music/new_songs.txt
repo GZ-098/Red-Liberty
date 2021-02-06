@@ -1,0 +1,25 @@
+music_station = "radio_redliberty"
+
+music = {
+	song = "which side are you on"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+			TAG = USA
+			has_government = libertarian_socialism
+		}
+	}
+}
+
+music = {
+	song = "solidarity_forever"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+			TAG = USA
+			has_government = libertarian_socialism
+		}
+	}
+}

@@ -517,6 +517,14 @@ defined_text = {
 		}
 		localization_key = "GFX_USA_states_gui_ME_republican"
 	}
+	text = {
+		trigger = {
+			check_variable = { 827.socialist_popularity > 827.republican_popularity }
+			check_variable = { 827.socialist_popularity > 827.democrat_popularity }
+			check_variable = { 827.socialist_popularity > 827.afp_popularity }
+		}
+		localization_key = "GFX_USA_states_gui_ME_socialist"
+	}
 }
 
 defined_text = {

@@ -1,4 +1,5 @@
 add_namespace = us_election
+add_namespace = us_campaign
 
 country_event = { # no one gets a majority
 	id = us_election.1
@@ -72,6 +73,61 @@ country_event = { # inaug day
 	option = { # 
 		name = us_election.4.a
 		load_focus_tree = USA_thomas_tree
+	}
+}
+
+country_event = { #Great campaign
+	id = us_campaign.1
+	title = "Great Campaign"
+	desc = us_campaign.1.desc
+	picture = GFX_report_event_us_congress
+
+	is_triggered_only = yes
+
+	option = { #
+		name = us_campaign.1.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Good campaign
+	id = us_campaign.2
+	title = "Good Campaign"
+	desc = us_campaign.2.desc
+	picture = GFX_report_event_us_congress
+
+	is_triggered_only = yes
+
+	option = { #
+		name = us_campaign.2.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Middling campaign
+	id = us_campaign.3
+	title = "Middling Campaign"
+	desc = us_campaign.3.desc
+	picture = GFX_report_event_us_congress
+
+	is_triggered_only = yes
+
+	option = { #
+		name = us_campaign.3.a
+		ai_chance = { factor = 1 }
+	}
+}
+country_event = { #Bad campaign
+	id = us_campaign.4
+	title = "Bad Campaign"
+	desc = us_campaign.4.desc
+	picture = GFX_report_event_us_congress
+
+	is_triggered_only = yes
+
+	option = { #
+		name = us_campaign.4.a
+		ai_chance = { factor = 1 }
 	}
 }
 

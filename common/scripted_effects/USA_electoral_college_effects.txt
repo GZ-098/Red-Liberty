@@ -11,10 +11,6 @@
 @SENATE_INCUMBENCY_BONUS_MULTIPLIER_2 = 0.001
 @SENATE_OPPOSITION_BONUS_ADDER = 0.05
 @SENATE_TIEBREAKER_ADDER = 0.05
-@CAMPAIGNING_GREAT_SUCCESS_BOOST = 0.2
-@CAMPAIGNING_GOOD_SUCCESS_BOOST = 0.1
-@CAMPAIGNING_NEUTRAL_BOOST = 0.05
-@CAMPAIGNING_BAD_BOOST = 0.025
 @POPULARITY_CLAMP_MIN = 0.001
 @POPULARITY_CLAMP_MAX = 1000
 @INCUMBENCY_BONUS_CLAMP_MIN = 0.0001 #is hoi4 even precise enough to represent this?
@@ -123,8 +119,9 @@ initialize_US_elections_system = {
 	
 	830 = { # Connecticut, republican stronghold
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.8 }
+		set_variable = { republican_popularity = 0.7 }
 		set_variable = { democrat_popularity = 0.2 }
+		set_variable = { socialist_popularity = 0.1 }
 		
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 2 }
@@ -134,8 +131,9 @@ initialize_US_elections_system = {
 	
 	833 = { # Delaware, slightly republican
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.8 }
+		set_variable = { republican_popularity = 0.7 }
 		set_variable = { democrat_popularity = 0.2 }
+		set_variable = { socialist_popularity = 0.1 }
 		
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 3 }
@@ -245,8 +243,9 @@ initialize_US_elections_system = {
 	
 	827 = { # Maine, republican
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.6 }
-		set_variable = { democrat_popularity = 0.4 }
+		set_variable = { republican_popularity = 0.55 }
+		set_variable = { democrat_popularity = 0.35 }
+		set_variable = { socialist_popularity = 0.1 }
 		
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 2 }
@@ -256,8 +255,9 @@ initialize_US_elections_system = {
 	
 	361 = { # Maryland, good establishment place
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.8 }
+		set_variable = { republican_popularity = 0.7 }
 		set_variable = { democrat_popularity = 0.2 }
+		set_variable = { socialist_popularity = 0.1 }
 		
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 2 }
@@ -267,8 +267,9 @@ initialize_US_elections_system = {
 	
 	357 = { # Massachusetts, home of many famous liberals, though old money is still holding strong
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.45 }
+		set_variable = { republican_popularity = 0.4 }
 		set_variable = { democrat_popularity = 0.55 }
+		set_variable = { socialist_popularity = 0.05 }
 		
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 3 }
@@ -356,8 +357,9 @@ initialize_US_elections_system = {
 	
 	828 = { # New Hampshire
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.45 } # Default Value
-		set_variable = { democrat_popularity = 0.55 } # Default Value
+		set_variable = { republican_popularity = 0.35 }
+		set_variable = { democrat_popularity = 0.5 }
+		set_variable = { socialist_popularity = 0.15 }
 		
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 3 }
@@ -467,8 +469,9 @@ initialize_US_elections_system = {
 	
 	831 = { # Rhode Island
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.8 } # Default Value
-		set_variable = { democrat_popularity = 0.2 } # Default Value
+		set_variable = { republican_popularity = 0.7 }
+		set_variable = { democrat_popularity = 0.2 }
+		set_variable = { socialist_popularity = 0.1 }
 		
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 3 }
@@ -534,8 +537,9 @@ initialize_US_elections_system = {
 	
 	829 = { # Vermont
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.4 } # Default Value
-		set_variable = { democrat_popularity = 0.6 } # Default Value
+		set_variable = { republican_popularity = 0.35 }
+		set_variable = { democrat_popularity = 0.55 }
+		set_variable = { socialist_popularity = 0.1 }
 		
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 3 }
@@ -545,8 +549,9 @@ initialize_US_elections_system = {
 	
 	362 = { # Virginia
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.4 } # Default Value
-		set_variable = { democrat_popularity = 0.6 } # Default Value
+		set_variable = { republican_popularity = 0.35 } # Default Value
+		set_variable = { democrat_popularity = 0.55 } # Default Value
+		set_variable = { socialist_popularity = 0.1 }
 		
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 3 }

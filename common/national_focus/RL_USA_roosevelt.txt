@@ -1,0 +1,1064 @@
+shared_focus = {
+    id = USA_the_roosevelt_admin
+	icon = GFX_USA_the_roosevelt_admin
+	
+    x = 8
+	
+	cost = 2
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_republican_cabinet
+	icon = GFX_USA_republican_cabinet
+	
+    x = -1
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_the_roosevelt_admin
+	mutually_exclusive = {
+		focus = USA_bipartisan_cabinet
+	}
+	prerequisite = { focus = USA_the_roosevelt_admin }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_bipartisan_cabinet
+	icon = GFX_USA_bipartisan_cabinet
+	
+    x = 1
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_the_roosevelt_admin
+	mutually_exclusive = {
+		focus = USA_republican_cabinet
+	}
+	prerequisite = { focus = USA_the_roosevelt_admin }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_preserving_american_democracy
+	icon = GFX_USA_preserving_american_democracy
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_republican_cabinet
+	prerequisite = {
+		focus = USA_republican_cabinet
+		focus = USA_bipartisan_cabinet
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_no_radicalism_here
+	icon = GFX_USA_no_radicalism_here
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_preserving_american_democracy
+	prerequisite = {
+		focus = USA_preserving_american_democracy
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_not_from_left
+	icon = GFX_USA_not_from_left
+	
+    x = -4
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_no_radicalism_here
+	prerequisite = {
+		focus = USA_no_radicalism_here
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_investigate_unions
+	icon = GFX_USA_investigate_unions
+	
+    x = -2
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_not_from_left
+	prerequisite = {
+		focus = USA_not_from_left
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_investigate_the_afl
+	icon = GFX_USA_investigate_the_afl
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_investigate_unions
+	prerequisite = {
+		focus = USA_investigate_unions
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_investigate_the_iww
+	icon = GFX_USA_investigate_the_iww
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_investigate_the_afl
+	prerequisite = {
+		focus = USA_investigate_the_afl
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_investigate_the_cio
+	icon = GFX_USA_investigate_the_cio
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_investigate_the_afl
+	prerequisite = {
+		focus = USA_investigate_the_afl
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_sapping_their_support
+	icon = GFX_USA_sapping_their_support
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_not_from_left
+	prerequisite = {
+		focus = USA_not_from_left
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_townsend_plan
+	icon = GFX_USA_townsend_plan
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_sapping_their_support
+	prerequisite = {
+		focus = USA_sapping_their_support
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_continue_public_works
+	icon = GFX_USA_continue_public_works
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_sapping_their_support
+	prerequisite = {
+		focus = USA_sapping_their_support
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_social_security_republican
+	icon = GFX_USA_social_security_republican
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_townsend_plan
+	prerequisite = {
+		focus = USA_townsend_plan
+	}
+	prerequisite = {
+		focus = USA_continue_public_works
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_drive_a_wedge
+	icon = GFX_USA_drive_a_wedge
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_investigate_the_cio
+	prerequisite = {
+		focus = USA_investigate_the_iww
+	}
+	prerequisite = {
+		focus = USA_investigate_the_cio
+	}
+	prerequisite = {
+		focus = USA_social_security_republican
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_drastic_measures
+	icon = GFX_USA_drastic_measures
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_no_radicalism_here
+	prerequisite = {
+		focus = USA_no_radicalism_here
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_work_with_dems
+	icon = GFX_USA_work_with_dems
+	
+    x = -1
+	y = 1
+	
+	cost = 10
+	relative_position_id = USA_drastic_measures
+	prerequisite = {
+		focus = USA_drastic_measures
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_use_the_fbi
+	icon = GFX_USA_use_the_fbi
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_drastic_measures
+	prerequisite = {
+		focus = USA_drastic_measures
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_national_unity_coalition
+	icon = GFX_USA_national_unity_coalition
+	
+    x = 1
+	y = 1
+	
+	cost = 10
+	relative_position_id = USA_work_with_dems
+	prerequisite = {
+		focus = USA_work_with_dems
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_the_rebirth
+	icon = GFX_USA_the_rebirth
+	
+    x = 0
+	y = 2
+	
+	cost = 10
+	relative_position_id = USA_national_unity_coalition
+	prerequisite = {
+		focus = USA_national_unity_coalition
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_not_from_right
+	icon = GFX_USA_not_from_right
+	
+    x = 2
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_no_radicalism_here
+	prerequisite = {
+		focus = USA_no_radicalism_here
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_investigate_afp_corruption
+	icon = GFX_USA_investigate_afp_corruption
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_not_from_right
+	prerequisite = {
+		focus = USA_not_from_right
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_be_like_sherman
+	icon = GFX_USA_be_like_sherman
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_investigate_afp_corruption
+	prerequisite = {
+		focus = USA_investigate_afp_corruption
+	}
+	prerequisite = {
+		focus = USA_use_the_fbi
+	}
+	mutually_exclusive = {
+		focus = USA_be_like_grant
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_finish_reconstruction
+	icon = GFX_USA_finish_reconstruction
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_be_like_sherman
+	prerequisite = {
+		focus = USA_be_like_sherman
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_crush_the_klan
+	icon = GFX_USA_crush_the_klan
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_be_like_sherman
+	prerequisite = {
+		focus = USA_be_like_sherman
+		focus = USA_be_like_grant
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_be_like_grant
+	icon = GFX_USA_be_like_grant
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_investigate_afp_corruption
+	prerequisite = {
+		focus = USA_investigate_afp_corruption
+	}
+	mutually_exclusive = {
+		focus = USA_be_like_sherman
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_more_accurate_history
+	icon = GFX_USA_more_accurate_history
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_be_like_grant
+	prerequisite = {
+		focus = USA_be_like_sherman
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_fuck_the_south
+	icon = GFX_USA_fuck_the_south
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_crush_the_klan
+	prerequisite = {
+		focus = USA_crush_the_klan
+	}
+	prerequisite = {
+		focus = USA_finish_reconstruction
+		focus = USA_more_accurate_history
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_beacon_of_stability
+	icon = GFX_USA_beacon_of_stability
+	
+    x = 5
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_drive_a_wedge
+	prerequisite = {
+		focus = USA_drive_a_wedge
+	}
+	prerequisite = {
+		focus = USA_fuck_the_south
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_defending_democracy
+	icon = GFX_USA_defending_democracy
+	
+    x = -9
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_preserving_american_democracy
+	prerequisite = {
+		focus = USA_preserving_american_democracy
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_army_welfare
+	icon = GFX_USA_army_welfare
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_defending_democracy
+	prerequisite = {
+		focus = USA_defending_democracy
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_lessons_from_europe
+	icon = GFX_USA_lessons_from_europe
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_defending_democracy
+	prerequisite = {
+		focus = USA_defending_democracy
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_rearmament_plan
+	icon = GFX_USA_rearmament_plan
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_army_welfare
+	prerequisite = {
+		focus = USA_army_welfare
+	}
+	prerequisite = {
+		focus = USA_lessons_from_europe
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_macarthur_cos
+	icon = GFX_USA_macarthur_cos
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_rearmament_plan
+	prerequisite = {
+		focus = USA_rearmament_plan
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_finish_what_they_started
+	icon = GFX_USA_finish_what_they_started
+	
+    x = 7
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_preserving_american_democracy
+	prerequisite = {
+		focus = USA_preserving_american_democracy
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_revitalize_the_economy
+	icon = GFX_USA_revitalize_the_economy
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_finish_what_they_started
+	prerequisite = {
+		focus = USA_finish_what_they_started
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_cut_red_tape
+	icon = GFX_USA_cut_red_tape
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_revitalize_the_economy
+	prerequisite = {
+		focus = USA_revitalize_the_economy
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_lower_taxes
+	icon = GFX_USA_lower_taxes
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_cut_red_tape
+	prerequisite = {
+		focus = USA_cut_red_tape
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_reduce_regulation
+	icon = GFX_USA_reduce_regulation
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_cut_red_tape
+	prerequisite = {
+		focus = USA_cut_red_tape
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_govern_least
+	icon = GFX_USA_govern_least
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_lower_taxes
+	prerequisite = {
+		focus = USA_lower_taxes
+	}
+	prerequisite = {
+		focus = USA_reduce_regulation
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_balance_the_budget
+	icon = GFX_USA_balance_the_budget
+	
+    x = 0
+	y = 2
+	
+	cost = 5
+	relative_position_id = USA_reduce_regulation
+	prerequisite = {
+		focus = USA_reduce_regulation
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_fiscal_reform
+	icon = GFX_USA_fiscal_reform
+	
+    x = 2
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_revitalize_the_economy
+	prerequisite = {
+		focus = USA_revitalize_the_economy
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_back_on_gold_standard
+	icon = GFX_USA_back_on_gold_standard
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_fiscal_reform
+	prerequisite = {
+		focus = USA_fiscal_reform
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_buy_gold
+	icon = GFX_USA_buy_gold
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_back_on_gold_standard
+	prerequisite = {
+		focus = USA_back_on_gold_standard
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_buy_silver
+	icon = GFX_USA_buy_silver
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_back_on_gold_standard
+	prerequisite = {
+		focus = USA_back_on_gold_standard
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_bimetallism_baby
+	icon = GFX_USA_bimetallism_baby
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_buy_gold
+	prerequisite = {
+		focus = USA_buy_gold
+	}
+	prerequisite = {
+		focus = USA_buy_silver
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_economic_recovery
+	icon = GFX_USA_economic_recovery
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_balance_the_budget
+	prerequisite = {
+		focus = USA_balance_the_budget
+	}
+	prerequisite = {
+		focus = USA_bimetallism_baby
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_keep_banks_in_line
+	icon = GFX_USA_keep_banks_in_line
+	
+    x = 2
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_fiscal_reform
+	prerequisite = {
+		focus = USA_fiscal_reform
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_dont_fuck_it_up
+	icon = GFX_USA_dont_fuck_it_up
+	
+    x = 0
+	y = 2
+	
+	cost = 5
+	relative_position_id = USA_keep_banks_in_line
+	prerequisite = {
+		focus = USA_keep_banks_in_line
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
