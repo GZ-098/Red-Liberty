@@ -37,6 +37,105 @@ defined_text = {
 		localization_key = "USA_states_gui_FL_selected_tt"
 	}
 	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_GA_selected
+		}
+		localization_key = "USA_states_gui_GA_selected_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_IA_selected
+		}
+		localization_key = "USA_states_gui_IA_selected_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_KY_selected
+		}
+		localization_key = "USA_states_gui_KY_selected_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_LA_selected
+		}
+		localization_key = "USA_states_gui_LA_selected_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_MD_selected
+		}
+		localization_key = "USA_states_gui_MD_selected_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_MS_selected
+		}
+		localization_key = "USA_states_gui_MS_selected_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_MO_selected
+		}
+		localization_key = "USA_states_gui_MO_selected_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_NC_selected
+		}
+		localization_key = "USA_states_gui_NC_selected_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_OR_selected
+		}
+		localization_key = "USA_states_gui_OR_selected_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_OK_selected
+		}
+		localization_key = "USA_states_gui_OK_selected_tt"
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = USA_states_gui_RI_selected
+				has_country_flag = USA_states_gui_RI_selected_alt
+			}
+		}
+		localization_key = "USA_states_gui_RI_selected_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_SC_selected
+		}
+		localization_key = "USA_states_gui_SC_selected_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_TN_selected
+		}
+		localization_key = "USA_states_gui_TN_selected_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_TX_selected
+		}
+		localization_key = "USA_states_gui_TX_selected_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_VA_selected
+		}
+		localization_key = "USA_states_gui_VA_selected_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_WV_selected
+		}
+		localization_key = "USA_states_gui_WV_selected_tt"
+	}
+	text = {
 		localization_key = "USA_states_gui_none_selected_tt"
 	}
 }
@@ -48,6 +147,148 @@ defined_text = {
 			has_country_flag = USA_states_gui_AL_selected
 		}
 		localization_key = "USA_states_gui_AL_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_AR_selected
+		}
+		localization_key = "USA_states_gui_AR_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_CA_selected
+		}
+		localization_key = "USA_states_gui_CA_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_CO_selected
+		}
+		localization_key = "USA_states_gui_CO_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_FL_selected
+		}
+		localization_key = "USA_states_gui_FL_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_GA_selected
+		}
+		localization_key = "USA_states_gui_GA_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_IA_selected
+		}
+		localization_key = "USA_states_gui_IA_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_KY_selected
+		}
+		localization_key = "USA_states_gui_KY_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_LA_selected
+		}
+		localization_key = "USA_states_gui_LA_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_MD_selected
+		}
+		localization_key = "USA_states_gui_MD_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_MS_selected
+		}
+		localization_key = "USA_states_gui_MS_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_MO_selected
+		}
+		localization_key = "USA_states_gui_MO_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_NC_selected
+		}
+		localization_key = "USA_states_gui_NC_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_OR_selected
+		}
+		localization_key = "USA_states_gui_OR_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_OK_selected
+			NOT = {
+				has_government = libertarian_socialism
+			}
+		}
+		localization_key = "USA_states_gui_OK_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_OK_selected
+			has_government = libertarian_socialism
+		}
+		localization_key = "USA_states_gui_OK_selected_info_alternate_tt"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = USA_states_gui_RI_selected_alt
+			}
+			has_country_flag = USA_states_gui_RI_selected
+		}
+		localization_key = "USA_states_gui_RI_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = USA_states_gui_RI_selected
+			}
+			has_country_flag = USA_states_gui_RI_selected_alt
+		}
+		localization_key = "USA_states_gui_RI_selected_info_alternate_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_SC_selected
+		}
+		localization_key = "USA_states_gui_SC_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_TN_selected
+		}
+		localization_key = "USA_states_gui_TN_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_TX_selected
+		}
+		localization_key = "USA_states_gui_TX_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_VA_selected
+		}
+		localization_key = "USA_states_gui_VA_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_WV_selected
+		}
+		localization_key = "USA_states_gui_WV_selected_info_tt"
 	}
 	text = {
 		localization_key = "USA_states_gui_none_selected_info_tt"

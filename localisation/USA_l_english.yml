@@ -3,20 +3,6 @@
  USA_DEF:0 "United States of America"
  USA_ADJ:0 "American"
  
- get_state_name_tt:0 "[get_USA_states_gui_state_name]"
- get_state_info_tt:0 "[get_state_info]"
- 
- USA_states_gui_none_selected_tt:0 "§RNo State Selected§!"
- USA_states_gui_none_selected_info_tt:0 "§RPlease select a state for additional information.§!"
- 
- USA_states_gui_AL_selected_tt:0 "§YAlabama§!"
- USA_states_gui_AL_selected_info_tt:0 "Alabama is nicknamed the Yellowhammer State, after the state bird. Alabama is also known as the "Heart of Dixie" and the "Cotton State". The state tree is the longleaf pine, and the state flower is the camellia. Alabama's capital is Montgomery. The largest city by population is Birmingham, which has long been the most industrialized city."
- USA_states_gui_AR_selected_tt:0 "§YArkansas§!"
- USA_states_gui_AZ_selected_tt:0 "§YArizona§!"
- USA_states_gui_CA_selected_tt:0 "§YCalifornia§!"
- USA_states_gui_CO_selected_tt:0 "§YColorado§!"
- USA_states_gui_FL_selected_tt:0 "§YFlorida§!"
- 
  POLITICS_NORMAN_THOMAS_DESC:0 "A Princeton graduate and Presbyterian minister, Norman Thomas made his first impression in politics with his pacifist, anti-war activism during the Great War, a position that drew him to the Socialist Party of America, who had delivered on their promises to keep America out of it. He gained popularity as an SPA journalist and was elected governor of New York in 1924. When Eugene V. Debs died in 1926, Thomas became the new head of the party as its leading non-immigrant member. He lost his first bid for president to Herbert Hoover in 1928, but after the Stock Market crash in 1929, Hoover’s popularity plummeted, and in 1932 President Norman Thomas and the SPA won the Presidency in a landslide. For all of his term, Norman Thomas has set about fixing the Great Depression with large amounts of government spending, public works projects, bureaucratic expansion, and worker-led recovery efforts. His recovery policies have been hindered and watered down by political resistance from the center and right wing, but where they have been enacted, have been both successful and popular."
  
  USA_red_liberty:0 "Red Liberty"
