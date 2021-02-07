@@ -82,6 +82,63 @@ ideas = {
 			}
 		}
 		#Starting nat spirits
+		ITA_taxes_high = {
+			removal_cost = -1 
+			
+			picture = ITA_taxes_high_gfx
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = 0.50
+				stability_factor = -0.15
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+		ITA_taxes_medium = {
+			removal_cost = -1 
+			
+			picture = ITA_taxes_medium_gfx
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = 0.25
+				stability_factor = -0.10
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ITA_taxes_low = {
+			removal_cost = -1 
+			
+			picture = ITA_taxes_low_gfx
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = 0.1
+				production_speed_buildings_factor = -0.05
+				consumer_goods_factor = 0.35
+			}
+		}
+
 		ITA_italian_funding_tito = {
 			removal_cost = -1 
 			

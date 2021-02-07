@@ -675,22 +675,32 @@ ITA_taxes_managment = {
 			production_factory_efficiency_gain_factor = -0.15
 		}
 		
-		cost = 60 
+		cost = 10 
 
 		ai_will_do = {
 			base = 10
 		}
 
-		days_remove = 55
+		days_remove = 25
 		
 		complete_effect = { 
-			ROM = {
-				start_civil_war = {
-					ideology = revolutionary_autocracy
-					size = 0.5
-					only_own_territory = yes
-					keep_political_leader = yes
-				}				
+			IF = {
+				limit = {
+					has_idea = ITA_taxes_low
+				}
+				swap_ideas = {
+					remove_idea = ITA_taxes_low
+					add_idea = ITA_taxes_high
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_taxes_medium
+				}
+				swap_ideas = {
+					remove_idea = ITA_taxes_medium
+					add_idea = ITA_taxes_high
+				}
 			}
 		}
 	}
@@ -707,22 +717,32 @@ ITA_taxes_managment = {
 			production_factory_efficiency_gain_factor = -0.15
 		}
 		
-		cost = 60 
+		cost = 10 
 
 		ai_will_do = {
 			base = 10
 		}
 
-		days_remove = 55
+		days_remove = 25
 		
 		complete_effect = { 
-			ROM = {
-				start_civil_war = {
-					ideology = revolutionary_autocracy
-					size = 0.5
-					only_own_territory = yes
-					keep_political_leader = yes
-				}				
+			IF = {
+				limit = {
+					has_idea = ITA_taxes_high
+				}
+				swap_ideas = {
+					remove_idea = ITA_taxes_high
+					add_idea = ITA_taxes_medium
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_taxes_low
+				}
+				swap_ideas = {
+					remove_idea = ITA_taxes_low
+					add_idea = ITA_taxes_medium
+				}
 			}
 		}
 	}
@@ -739,28 +759,760 @@ ITA_taxes_managment = {
 			production_factory_efficiency_gain_factor = -0.15
 		}
 		
-		cost = 60 
+		cost = 10 
 
 		ai_will_do = {
-			base = 10
+			base = 25
 		}
 
-		days_remove = 55
+		days_remove = 25
 		
 		complete_effect = { 
-			ROM = {
-				start_civil_war = {
-					ideology = revolutionary_autocracy
-					size = 0.5
-					only_own_territory = yes
-					keep_political_leader = yes
-				}				
+			IF = {
+				limit = {
+					has_idea = ITA_taxes_medium
+				}
+				swap_ideas = {
+					remove_idea = ITA_taxes_medium
+					add_idea = ITA_taxes_low
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_taxes_high
+				}
+				swap_ideas = {
+					remove_idea = ITA_taxes_high
+					add_idea = ITA_taxes_low
+				}
 			}
 		}
 	}
 }
 
+ITA_buget_managment = {
+	ITA_military_focused_buget = {
+	
+		icon = ITA_military_focused_buget
+		
+		available = {
+		} 
 
+		modifier = {
+			political_power_gain = -0.1
+			production_factory_efficiency_gain_factor = -0.15
+		}
+		
+		cost = 10 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 25
+		
+		complete_effect = { 
+			IF = {
+				limit = {
+					has_idea = ITA_civ_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_civ_mil_focused
+					add_idea = ITA_mil_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_civ_focused
+					add_idea = ITA_mil_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_nav_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_nav_focused
+					add_idea = ITA_mil_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_nav_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_nav_civ_focused
+					add_idea = ITA_mil_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_focused
+					add_idea = ITA_mil_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_civ_focused
+					add_idea = ITA_mil_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_mil_focused
+					add_idea = ITA_mil_focused
+				}
+			}
+		}
+	}
+
+	ITA_civ_mil_focus = {
+	
+		icon = ITA_civ_mil_focus_gfx
+		
+		available = {
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+			production_factory_efficiency_gain_factor = -0.15
+		}
+		
+		cost = 10 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 25
+		
+		complete_effect = { 
+			IF = {
+				limit = {
+					has_idea = ITA_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_mil_focused
+					add_idea = ITA_civ_mil_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_civ_focused
+					add_idea = ITA_civ_mil_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_nav_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_nav_focused
+					add_idea = ITA_civ_mil_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_nav_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_nav_civ_focused
+					add_idea = ITA_civ_mil_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_focused
+					add_idea = ITA_civ_mil_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_civ_focused
+					add_idea = ITA_civ_mil_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_mil_focused
+					add_idea = ITA_civ_mil_focused
+				}
+			}
+		}
+	}
+
+	ITA_civ_focus = {
+	
+		icon = ITA_civ
+		
+		available = {
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+			production_factory_efficiency_gain_factor = -0.15
+		}
+		
+		cost = 10 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 25
+		
+		complete_effect = { 
+			IF = {
+				limit = {
+					has_idea = ITA_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_mil_focused
+					add_idea = ITA_civ_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_nav_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_nav_focused
+					add_idea = ITA_civ_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_nav_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_nav_civ_focused
+					add_idea = ITA_civ_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_focused
+					add_idea = ITA_civ_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_civ_focused
+					add_idea = ITA_civ_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_mil_focused
+					add_idea = ITA_civ_focused
+				}
+			}
+		}
+	}
+
+	ITA_nav_civ_focus = {
+	
+		icon = ITA_nav_civ
+		
+		available = {
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+			production_factory_efficiency_gain_factor = -0.15
+		}
+		
+		cost = 10 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 25
+		
+		complete_effect = { 
+			IF = {
+				limit = {
+					has_idea = ITA_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_mil_focused
+					add_idea = ITA_nav_civ_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_civ_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_civ_mil_focused
+					add_idea = ITA_nav_civ_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_civ_focused
+					add_idea = ITA_nav_civ_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_nav_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_nav_focused
+					add_idea = ITA_nav_civ_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_focused
+					add_idea = ITA_nav_civ_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_civ_focused
+					add_idea = ITA_nav_civ_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_mil_focused
+					add_idea = ITA_nav_civ_focused
+				}
+			}
+		}
+	}
+
+	ITA_nav_focus = {
+	
+		icon = ITA_nav
+		
+		available = {
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+			production_factory_efficiency_gain_factor = -0.15
+		}
+		
+		cost = 10 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 25
+		
+		complete_effect = { 
+			IF = {
+				limit = {
+					has_idea = ITA_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_mil_focused
+					add_idea = ITA_nav_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_civ_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_civ_mil_focused
+					add_idea = ITA_nav_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_civ_focused
+					add_idea = ITA_nav_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_nav_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_nav_civ_focused
+					add_idea = ITA_nav_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_focused
+					add_idea = ITA_nav_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_civ_focused
+					add_idea = ITA_nav_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_mil_focused
+					add_idea = ITA_nav_focused
+				}
+			}
+		}
+	}
+
+	ITA_tech_focus = {
+	
+		icon = ITA_tech
+		
+		available = {
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+			production_factory_efficiency_gain_factor = -0.15
+		}
+		
+		cost = 10 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 25
+		
+		complete_effect = { 
+			IF = {
+				limit = {
+					has_idea = ITA_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_mil_focused
+					add_idea = ITA_tech_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_civ_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_civ_mil_focused
+					add_idea = ITA_tech_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_civ_focused
+					add_idea = ITA_tech_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_nav_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_nav_civ_focused
+					add_idea = ITA_tech_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_nav_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_nav_focused
+					add_idea = ITA_tech_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_civ_focused
+					add_idea = ITA_tech_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_mil_focused
+					add_idea = ITA_tech_focused
+				}
+			}
+		}
+	}
+
+	ITA_tech_civ_focus = {
+	
+		icon = ITA_tech_civ
+		
+		available = {
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+			production_factory_efficiency_gain_factor = -0.15
+		}
+		
+		cost = 10 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 25
+		
+		complete_effect = { 
+			IF = {
+				limit = {
+					has_idea = ITA_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_mil_focused
+					add_idea = ITA_tech_civ_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_civ_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_civ_mil_focused
+					add_idea = ITA_tech_civ_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_civ_focused
+					add_idea = ITA_tech_civ_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_nav_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_nav_civ_focused
+					add_idea = ITA_tech_civ_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_nav_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_nav_focused
+					add_idea = ITA_tech_civ_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_focused
+					add_idea = ITA_tech_civ_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_mil_focused
+					add_idea = ITA_tech_civ_focused
+				}
+			}
+		}
+	}
+
+	ITA_tech_mil_focus = {
+	
+		icon = ITA_tech_mil
+		
+		available = {
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+			production_factory_efficiency_gain_factor = -0.15
+		}
+		
+		cost = 10 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 25
+		
+		complete_effect = { 
+			IF = {
+				limit = {
+					has_idea = ITA_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_mil_focused
+					add_idea = ITA_tech_mil_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_civ_mil_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_civ_mil_focused
+					add_idea = ITA_tech_mil_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_civ_focused
+					add_idea = ITA_tech_mil_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_nav_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_nav_civ_focused
+					add_idea = ITA_tech_mil_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_nav_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_nav_focused
+					add_idea = ITA_tech_mil_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_focused
+					add_idea = ITA_tech_mil_focused
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = ITA_tech_civ_focused
+				}
+				swap_ideas = {
+					remove_idea = ITA_tech_civ_focused
+					add_idea = ITA_tech_mil_focused
+				}
+			}
+		}
+	}
+}
+
+ITA_occupation = {
+	ITA_ = {
+	
+		icon = increase_taxes
+		
+		available = {
+		} 
+
+		modifier = {
+			political_power_gain = -0.1
+			production_factory_efficiency_gain_factor = -0.15
+		}
+		
+		cost = 10 
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 25
+		
+		complete_effect = { 
+			IF = {
+				limit = {
+					has_idea = ITA_taxes_low
+				}
+				swap_ideas = {
+					remove_idea = ITA_taxes_low
+					add_idea = ITA_taxes_high
+				}
+			}
+		}
+	}
+}
 
 
 
