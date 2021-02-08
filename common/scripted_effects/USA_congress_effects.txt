@@ -242,6 +242,13 @@ USA_republican_support_eventless = {
 		
 		multiply_variable = { new_senate_support = average_boost_republican }
 		log = "[GetDateText]: [Root.GetName]: Senate - calculated new republican support: [?new_senate_support]"
+		
+		randomize_variable = {
+			var = new_senate_support
+			distribution = uniform
+			min = 0.9
+			max = 1.1
+		}
 						
 		round_variable = new_senate_support
 		log = "[GetDateText]: [Root.GetName]: rounded republican senator support: [?new_senate_support]"
@@ -271,6 +278,13 @@ USA_republican_support_eventless = {
 		set_variable = { new_house_support = temp_house_republican }
 		multiply_variable = { new_house_support = average_boost_republican }
 		log = "[GetDateText]: [Root.GetName]: House - calculated new republican support: [?new_house_support]"
+		
+		randomize_variable = {
+			var = new_house_support
+			distribution = uniform
+			min = 0.9
+			max = 1.1
+		}
 		
 		round_variable = new_house_support
 		log = "[GetDateText]: [Root.GetName]: rounded republican representative support: [?new_house_support]"
@@ -309,6 +323,13 @@ USA_democrat_support_eventless = {
 		
 		multiply_variable = { new_senate_support = average_boost_democrat }
 		log = "[GetDateText]: [Root.GetName]: Senate - calculated new democrat support: [?new_senate_support]"
+		
+		randomize_variable = {
+			var = new_senate_support
+			distribution = uniform
+			min = 0.9
+			max = 1.1
+		}
 						
 		round_variable = new_senate_support
 		log = "[GetDateText]: [Root.GetName]: rounded democrat senator support: [?new_senate_support]"
@@ -339,6 +360,13 @@ USA_democrat_support_eventless = {
 		multiply_variable = { new_house_support = average_boost_democrat }
 		log = "[GetDateText]: [Root.GetName]: House - calculated new democrat support: [?new_house_support]"
 		
+		randomize_variable = {
+			var = new_house_support
+			distribution = uniform
+			min = 0.9
+			max = 1.1
+		}
+		
 		round_variable = new_house_support
 		log = "[GetDateText]: [Root.GetName]: rounded democrat representative support: [?new_house_support]"
 		
@@ -362,6 +390,23 @@ USA_democrat_support_eventless = {
 	clear_variable = { new_house_support }
 }
 
+USA_socialist_biased_allocation = {
+	set_variable = {
+		representatives_socialist = party_popularity@libertarian_socialism
+	}
+	add_to_variable = {
+		representatives_socialist = party_popularity@social_democracy
+	}
+	if = {
+		limit = {
+			has_country_flag = USA_gerrymandering_socialist
+		}
+		divide_variable = {
+			representatives_wpa = 2
+		}
+	}
+}
+
 USA_recalc_house = { # this will recalculate the number of representatives based on party popularity, in an unbiased manner which does not favor any parties
 	
 	#Sets variable to check for discrepencies
@@ -375,12 +420,14 @@ USA_recalc_house = { # this will recalculate the number of representatives based
 	add_to_variable = {
 		representatives_communist = party_popularity@proletarian_dictatorship
 	}
+	
 	set_variable = {
 		representatives_socialist = party_popularity@libertarian_socialism
 	}
 	add_to_variable = {
 		representatives_socialist = party_popularity@social_democracy
 	}
+	
 	set_variable = {
 		representatives_republican = party_popularity@progressive_liberalism
 	}
@@ -498,6 +545,174 @@ USA_recalc_house = { # this will recalculate the number of representatives based
 				representatives_fascist = USA_old_representatives_total
 			}
 		}
+	}
+}
+
+USA_recalc_house_biased = { # this will recalculate the number of representatives based on party popularity, with a bias towards certain parties
+	
+	#Sets variable to check for discrepencies
+	set_variable = {
+		USA_old_representatives_total = representatives_total
+	}
+	
+	# cpusa gets a fourth of the seats it deserves
+	set_variable = {
+		representatives_communist = party_popularity@revolutionary_autocacy
+	}
+	add_to_variable = {
+		representatives_communist = party_popularity@proletarian_dictatorship
+	}
+	divide_variable = {
+		representatives_communist = 4
+	}
+	
+	# spa gets three/fourths of the seats it deserves
+	set_variable = {
+		representatives_socialist = party_popularity@libertarian_socialism
+	}
+	add_to_variable = {
+		representatives_socialist = party_popularity@social_democracy
+	}
+	divide_variable = {
+		representatives_socialist = 1.25
+	}
+	
+	set_variable = {
+		representatives_republican = party_popularity@progressive_liberalism
+	}
+	add_to_variable = {
+		representatives_republican = party_popularity@market_libertarianism
+	}
+	
+	set_variable = {
+		representatives_democrat = party_popularity@national_conservatism
+	}
+	
+	# afp gets half of the seats it deserves
+	set_variable = {
+		representatives_fascist = party_popularity@authoritarian_republicanism
+	}
+	add_to_variable = {
+		representatives_fascist = party_popularity@ultranational_statism
+	}
+	divide_variable = {
+		representatives_fascist = 2
+	}
+	
+	#Gets seats
+	multiply_variable = {
+		representatives_communist = representatives_total
+	}
+	multiply_variable = {
+		representatives_socialist = representatives_total
+	}
+	multiply_variable = {
+		representatives_republican = representatives_total
+	}
+	multiply_variable = {
+		representatives_democrat = representatives_total
+	}
+	multiply_variable = {
+		representatives_fascist = representatives_total
+	}
+	
+	#rounds
+	round_variable = representatives_communist
+	round_variable = representatives_socialist
+	round_variable = representatives_republican
+	round_variable = representatives_democrat
+	round_variable = representatives_fascist
+	
+	#Gets new total seat value
+	set_variable = {
+		representatives_total = 0
+	}
+	add_to_variable = {
+		representatives_total = representatives_communist
+	}
+	add_to_variable = {
+		representatives_total = representatives_socialist
+	}
+	add_to_variable = {
+		representatives_total = representatives_republican
+	}
+	add_to_variable = {
+		representatives_total = representatives_democrat
+	}
+	add_to_variable = {
+		representatives_total = representatives_fascist
+	}
+	
+	#gets discrepency
+	subtract_from_variable = {
+		USA_old_representatives_total = representatives_total
+	}
+	
+	#deals with discrepency, if needed
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					USA_old_representatives_total = 0
+				}
+			}
+		}
+		set_variable = {
+			USA_partial_discrepency = USA_old_representatives_total
+		}
+		multiply_variable = {
+			USA_partial_discrepency = 0.6 #goes to tories
+		}
+		round_variable = USA_partial_discrepency
+		if = {
+			limit = {
+				check_variable = {
+					USA_partial_discrepency > 0 #positive
+				}
+			}
+			subtract_from_variable = {
+				USA_old_representatives_total = USA_partial_discrepency #remainder will be given to dems
+			}
+			add_to_variable = {
+				representatives_democrat = USA_partial_discrepency
+			}
+			add_to_variable = {
+				representatives_republican = USA_old_representatives_total
+			}
+		}
+		
+		#change to subtract, if it does not change behavior, the problem is here
+		else = { #negative discrepency, somehow too many seats
+			subtract_from_variable = {
+				USA_old_representatives_total = USA_partial_discrepency #remainder will be taken from reps
+			}
+			add_to_variable = {
+				representatives_democrat = USA_old_representatives_total
+			}
+			add_to_variable = {
+				representatives_republican = USA_partial_discrepency
+			}
+		}
+	}
+	
+	#Gets new total seat value, again
+	set_variable = {
+		representatives_total = 0
+	}
+	add_to_variable = {
+		representatives_total = representatives_communist
+	}
+	add_to_variable = {
+		representatives_total = representatives_socialist
+	}
+	add_to_variable = {
+		representatives_total = representatives_republican
+	}
+	add_to_variable = {
+		representatives_total = representatives_democrat
+	}
+	add_to_variable = {
+		representatives_total = representatives_fascist
 	}
 }
 

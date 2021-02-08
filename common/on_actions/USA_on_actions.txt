@@ -28,7 +28,20 @@ on_actions = {
 			}
 			USA = {
 				set_country_flag = USA_presidential_elections
+				set_country_flag = USA_gerrymandering_socialist
 			}
+			USA = {
+				USA_class_1_senate_prepare = yes
+			}
+		}
+	}
+	
+	on_daily_USA = {
+		effect = {
+			limit = {
+				has_country_flag = USA_discussing_bill
+			}
+			check_if_bill_passed = yes
 		}
 	}
 	

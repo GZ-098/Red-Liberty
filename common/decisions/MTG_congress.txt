@@ -71,7 +71,6 @@ USA_congress = {
 		
 		complete_effect = {
 			custom_effect_tooltip = start_vote_tt
-			check_if_bill_passed = yes
 		}
 		
 		remove_effect = {

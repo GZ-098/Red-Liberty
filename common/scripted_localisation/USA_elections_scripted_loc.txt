@@ -1,0 +1,1215 @@
+defined_text = {
+	name = GetSenateElectionsClass
+	text = {
+		trigger = {
+			has_country_flag = USA_class_1_elections
+		}
+		localization_key = "USA_class_1_elections_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_class_2_elections
+		}
+		localization_key = "USA_class_2_elections_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_class_3_elections
+		}
+		localization_key = "USA_class_3_elections_tt"
+	}
+}
+
+defined_text = {
+	name = SENATE_CONNECTICUT_ELECTION
+	text = {
+		trigger = {
+			830 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_CONNECTICUT_1
+	}
+	text = {
+		trigger = {
+			830 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_CONNECTICUT_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_MAINE_ELECTION
+	text = {
+		trigger = {
+			827 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_MAINE_1
+	}
+	text = {
+		trigger = {
+			827 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_MAINE_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_MASSACHUSETTS_ELECTION
+	text = {
+		trigger = {
+			357 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_MASSACHUSETTS_1
+	}
+	text = {
+		trigger = {
+			357 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_MASSACHUSETTS_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_NEW_HAMPSHIRE_ELECTION
+	text = {
+		trigger = {
+			828 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_NEW_HAMPSHIRE_1
+	}
+	text = {
+		trigger = {
+			828 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_NEW_HAMPSHIRE_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+defined_text = {
+	name = SENATE_RHODE_ISLAND_ELECTION
+	text = {
+		trigger = {
+			831 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_RHODE_ISLAND_1
+	}
+	text = {
+		trigger = {
+			831 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_RHODE_ISLAND_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+defined_text = {
+	name = SENATE_VERMONT_ELECTION
+	text = {
+		trigger = {
+			829 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_VERMONT_1
+	}
+	text = {
+		trigger = {
+			829 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_VERMONT_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_DELAWARE_ELECTION
+	text = {
+		trigger = {
+			833 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_DELAWARE_1
+	}
+	text = {
+		trigger = {
+			833 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_DELAWARE_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_MARYLAND_ELECTION
+	text = {
+		trigger = {
+			361 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_MARYLAND_1
+	}
+	text = {
+		trigger = {
+			361 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_MARYLAND_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_NEW_YORK_ELECTION
+	text = {
+		trigger = {
+			358 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_NEW_YORK_1
+	}
+	text = {
+		trigger = {
+			358 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_NEW_YORK_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_NEW_JERSEY_ELECTION
+	text = {
+		trigger = {
+			359 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_NEW_JERSEY_1
+	}
+	text = {
+		trigger = {
+			359 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_NEW_JERSEY_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_PENNSYLVANIA_ELECTION
+	text = {
+		trigger = {
+			360 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_PENNSYLVANIA_1
+	}
+	text = {
+		trigger = {
+			360 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_PENNSYLVANIA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_WEST_VIRGINIA_ELECTION
+	text = {
+		trigger = {
+			832 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_WEST_VIRGINIA_1
+	}
+	text = {
+		trigger = {
+			832 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_WEST_VIRGINIA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_ALABAMA_ELECTION
+	text = {
+		trigger = {
+			367 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_ALABAMA_1
+	}
+	text = {
+		trigger = {
+			367 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_ALABAMA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_ARKANSAS_ELECTION
+	text = {
+		trigger = {
+			372 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_ARKANSAS_1
+	}
+	text = {
+		trigger = {
+			372 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_ARKANSAS_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_FLORIDA_ELECTION
+	text = {
+		trigger = {
+			366 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_FLORIDA_1
+	}
+	text = {
+		trigger = {
+			366 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_FLORIDA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_GEORGIA_ELECTION
+	text = {
+		trigger = {
+			365 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_GEORGIA_1
+	}
+	text = {
+		trigger = {
+			365 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_GEORGIA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_LOUISIANA_ELECTION
+	text = {
+		trigger = {
+			371 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_LOUISIANA_1
+	}
+	text = {
+		trigger = {
+			371 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_LOUISIANA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_MISSISSIPPI_ELECTION
+	text = {
+		trigger = {
+			370 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_MISSISSIPPI_1
+	}
+	text = {
+		trigger = {
+			370 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_MISSISSIPPI_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_SOUTH_CAROLINA_ELECTION
+	text = {
+		trigger = {
+			364 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_SOUTH_CAROLINA_1
+	}
+	text = {
+		trigger = {
+			364 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_SOUTH_CAROLINA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_KENTUCKY_ELECTION
+	text = {
+		trigger = {
+			369 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_KENTUCKY_1
+	}
+	text = {
+		trigger = {
+			369 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_KENTUCKY_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_NORTH_CAROLINA_ELECTION
+	text = {
+		trigger = {
+			363 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_NORTH_CAROLINA_1
+	}
+	text = {
+		trigger = {
+			363 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_NORTH_CAROLINA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_VIRGINIA_ELECTION
+	text = {
+		trigger = {
+			362 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_VIRGINIA_1
+	}
+	text = {
+		trigger = {
+			362 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_VIRGINIA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_TENNESSEE_ELECTION
+	text = {
+		trigger = {
+			368 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_TENNESSEE_1
+	}
+	text = {
+		trigger = {
+			368 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_TENNESSEE_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_TEXAS_ELECTION
+	text = {
+		trigger = {
+			375 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_TEXAS_1
+	}
+	text = {
+		trigger = {
+			375 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_TEXAS_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_OKLAHOMA_ELECTION
+	text = {
+		trigger = {
+			374 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_OKLAHOMA_1
+	}
+	text = {
+		trigger = {
+			374 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_OKLAHOMA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_NEW_MEXICO_ELECTION
+	text = {
+		trigger = {
+			376 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_NEW_MEXICO_1
+	}
+	text = {
+		trigger = {
+			376 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_NEW_MEXICO_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_ARIZONA_ELECTION
+	text = {
+		trigger = {
+			377 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_ARIZONA_1
+	}
+	text = {
+		trigger = {
+			377 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_ARIZONA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = GetSenator_1_Elections
+	text = {
+		trigger = {
+			check_variable = { senator_1 = 1 }
+		}
+		localization_key = SOCIALIST_SENATOR
+	}
+	text = {
+		trigger = {
+			check_variable = { senator_1 = 2 }
+		}
+		localization_key = REPUBLICAN_SENATOR
+	}
+	text = {
+		trigger = {
+			check_variable = { senator_1 = 3 }
+		}
+		localization_key = DEMOCRAT_SENATOR
+	}
+	text = {
+		trigger = {
+			check_variable = { senator_1 = 4 }
+		}
+		localization_key = AFP_SENATOR
+	}
+}
+
+defined_text = {
+	name = GetSenator_2_Elections
+	text = {
+		trigger = {
+			check_variable = { senator_2 = 1 }
+		}
+		localization_key = SOCIALIST_SENATOR
+	}
+	text = {
+		trigger = {
+			check_variable = { senator_2 = 2 }
+		}
+		localization_key = REPUBLICAN_SENATOR
+	}
+	text = {
+		trigger = {
+			check_variable = { senator_2 = 3 }
+		}
+		localization_key = DEMOCRAT_SENATOR
+	}
+	text = {
+		trigger = {
+			check_variable = { senator_2 = 4 }
+		}
+		localization_key = AFP_SENATOR
+	}
+}
+
+defined_text = {
+	name = SENATE_ILLINOIS_ELECTION
+	text = {
+		trigger = {
+			395 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_ILLINOIS_1
+	}
+	text = {
+		trigger = {
+			395 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_ILLINOIS_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_INDIANA_ELECTION
+	text = {
+		trigger = {
+			396 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_INDIANA_1
+	}
+	text = {
+		trigger = {
+			396 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_INDIANA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_MICHIGAN_ELECTION
+	text = {
+		trigger = {
+			393 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_MICHIGAN_1
+	}
+	text = {
+		trigger = {
+			393 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_MICHIGAN_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_OHIO_ELECTION
+	text = {
+		trigger = {
+			261 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_OHIO_1
+	}
+	text = {
+		trigger = {
+			261 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_OHIO_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_WISCONSIN_ELECTION
+	text = {
+		trigger = {
+			394 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_WISCONSIN_1
+	}
+	text = {
+		trigger = {
+			394 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_WISCONSIN_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_MINNESOTA_ELECTION
+	text = {
+		trigger = {
+			391 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_MINNESOTA_1
+	}
+	text = {
+		trigger = {
+			391 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_MINNESOTA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_IOWA_ELECTION
+	text = {
+		trigger = {
+			392 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_IOWA_1
+	}
+	text = {
+		trigger = {
+			392 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_IOWA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_KANSAS_ELECTION
+	text = {
+		trigger = {
+			383 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_KANSAS_1
+	}
+	text = {
+		trigger = {
+			383 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_KANSAS_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_MISSOURI_ELECTION
+	text = {
+		trigger = {
+			373 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_MISSOURI_1
+	}
+	text = {
+		trigger = {
+			373 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_MISSOURI_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_NEBRASKA_ELECTION
+	text = {
+		trigger = {
+			384 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_NEBRASKA_1
+	}
+	text = {
+		trigger = {
+			384 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_NEBRASKA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_NORTH_DAKOTA_ELECTION
+	text = {
+		trigger = {
+			389 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_NORTH_DAKOTA_1
+	}
+	text = {
+		trigger = {
+			389 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_NORTH_DAKOTA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_SOUTH_DAKOTA_ELECTION
+	text = {
+		trigger = {
+			390 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_SOUTH_DAKOTA_1
+	}
+	text = {
+		trigger = {
+			390 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_SOUTH_DAKOTA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_COLORADO_ELECTION
+	text = {
+		trigger = {
+			382 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_COLORADO_1
+	}
+	text = {
+		trigger = {
+			382 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_COLORADO_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_IDAHO_ELECTION
+	text = {
+		trigger = {
+			387 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_IDAHO_1
+	}
+	text = {
+		trigger = {
+			387 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_IDAHO_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_MONTANA_ELECTION
+	text = {
+		trigger = {
+			388 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_MONTANA_1
+	}
+	text = {
+		trigger = {
+			388 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_MONTANA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_NEVADA_ELECTION
+	text = {
+		trigger = {
+			379 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_NEVADA_1
+	}
+	text = {
+		trigger = {
+			379 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_NEVADA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_UTAH_ELECTION
+	text = {
+		trigger = {
+			380 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_UTAH_1
+	}
+	text = {
+		trigger = {
+			380 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_UTAH_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_WYOMING_ELECTION
+	text = {
+		trigger = {
+			381 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_WYOMING_1
+	}
+	text = {
+		trigger = {
+			381 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_WYOMING_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_CALIFORNIA_ELECTION
+	text = {
+		trigger = {
+			378 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_CALIFORNIA_1
+	}
+	text = {
+		trigger = {
+			378 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_CALIFORNIA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_OREGON_ELECTION
+	text = {
+		trigger = {
+			385 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_OREGON_1
+	}
+	text = {
+		trigger = {
+			385 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_OREGON_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = SENATE_WASHINGTON_ELECTION
+	text = {
+		trigger = {
+			386 = {
+				has_state_flag = elections_senator_1
+			}
+		}
+		localization_key = SENATE_ELECTION_WASHINGTON_1
+	}
+	text = {
+		trigger = {
+			386 = {
+				has_state_flag = elections_senator_2
+			}
+		}
+		localization_key = SENATE_ELECTION_WASHINGTON_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = GetElectionPrediction
+	text = {
+		trigger = {
+			check_variable = { socialist_popularity > republican_popularity }
+			check_variable = { socialist_popularity > democrat_popularity }
+			check_variable = { socialist_popularity > afp_popularity }
+		}
+		localization_key = USA_Election_socialist_win
+	}
+	text = {
+		trigger = {
+			check_variable = { republican_popularity > socialist_popularity }
+			check_variable = { republican_popularity > democrat_popularity }
+			check_variable = { republican_popularity > afp_popularity }
+		}
+		localization_key = USA_Election_republican_win
+	}
+	text = {
+		trigger = {
+			check_variable = { democrat_popularity > socialist_popularity }
+			check_variable = { democrat_popularity > republican_popularity }
+			check_variable = { democrat_popularity > afp_popularity }
+		}
+		localization_key = USA_Election_democrat_win
+	}
+	text = {
+		trigger = {
+			check_variable = { afp_popularity > socialist_popularity }
+			check_variable = { afp_popularity > democrat_popularity }
+			check_variable = { afp_popularity > republican_popularity }
+		}
+		localization_key = USA_Election_afp_win
+	}
+}

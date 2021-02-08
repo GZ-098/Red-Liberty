@@ -1,0 +1,407 @@
+#Fire this every time you want the polls to update
+USA_recalculate_polls = {
+	if = {
+		limit = { has_country_flag = USA_senate_elections}
+		every_owned_state = {
+			limit = {
+				OR = { 
+					has_state_flag = elections_senator_1
+				}	
+			}
+			log = "[This.GetName]: calculate senate poll, because senator 1 is up for election"
+			USA_update_senator_1_in_state = yes
+			USA_calculate_senate_predictions = yes
+		}
+		every_owned_state = {
+			limit = {
+				has_state_flag = elections_senator_2
+			}
+			log = "[This.GetName]: calculate senate poll, because senator 2 is up for election"
+			USA_update_senator_2_in_state = yes
+			USA_calculate_senate_predictions = yes
+		}
+		every_owned_state = {
+			limit = {
+				can_have_elections_in_state = yes
+			}
+			US_update_presidential_election_race_in_state = yes
+			USA_calculate_president_predictions = yes
+		}
+	}
+}
+
+USA_class_1_senate_prepare = {
+	set_country_flag = USA_senate_elections
+	set_country_flag = USA_class_1_elections
+	#USA_recalculate_polls = yes
+	#SENATOR 1
+	377 = { #Arizona
+		set_state_flag = elections_senator_1
+	}
+	378 = { #California
+		set_state_flag = elections_senator_1
+	}
+	830 = { #Connecticut
+		set_state_flag = elections_senator_1
+	}
+	833 = { #Delaware
+		set_state_flag = elections_senator_1
+	}
+	366 = { #Florida
+		set_state_flag = elections_senator_1
+	}
+	396 = { #Indiana
+		set_state_flag = elections_senator_1
+	}
+	827 = { #Maine
+		set_state_flag = elections_senator_1
+	}
+	361 = { #Maryland
+		set_state_flag = elections_senator_1
+	}
+	357 = { #Massachusetts
+		set_state_flag = elections_senator_1
+	}
+	393 = { #Michigan
+		set_state_flag = elections_senator_1
+	}
+	391 = { #Minnesota
+		set_state_flag = elections_senator_1
+	}
+	370 = { #Mississippi
+		set_state_flag = elections_senator_1
+	}
+	373 = { #Missouri
+		set_state_flag = elections_senator_1
+	}
+	388 = { #Montana
+		set_state_flag = elections_senator_1
+	}
+	384 = { #Nebraska
+		set_state_flag = elections_senator_1
+	}
+	379 = { #Nevada
+		set_state_flag = elections_senator_1
+	}
+	359 = { #New Jersey
+		set_state_flag = elections_senator_1
+	}
+	376 = { #New Mexico
+		set_state_flag = elections_senator_1
+	}
+	358 = { #New York
+		set_state_flag = elections_senator_1
+	}
+	389 = { #North Dakota
+		set_state_flag = elections_senator_1
+	}
+	261 = { #Ohio
+		set_state_flag = elections_senator_1
+	}
+	360 = { #Pennsylvania
+		set_state_flag = elections_senator_1
+	}
+	831 = { #Rhode Island
+		set_state_flag = elections_senator_1
+	}
+	368 = { #Tennessee
+		set_state_flag = elections_senator_1
+	}
+	375 = { #Texas
+		set_state_flag = elections_senator_1
+	}
+	380 = { #Utah
+		set_state_flag = elections_senator_1
+	}
+	829 = { #Vermont
+		set_state_flag = elections_senator_1
+	}
+	362 = { #Virginia
+		set_state_flag = elections_senator_1
+	}
+	386 = { #Washington
+		set_state_flag = elections_senator_1
+	}
+	832 = { #West Virginia
+		set_state_flag = elections_senator_1
+	}
+	394 = { #Wisconsin
+		set_state_flag = elections_senator_1
+	}
+}
+
+USA_class_2_senate_prepare = {
+	set_country_flag = USA_senate_elections
+	set_country_flag = USA_class_2_elections
+	#USA_recalculate_polls = yes
+	#SENATOR 1
+	#Alabama
+	367 = {
+		set_state_flag = elections_senator_1
+	}
+	#Arkansas
+	372 = {
+		set_state_flag = elections_senator_1
+	}
+	#Colorado
+	382 = {
+		set_state_flag = elections_senator_1
+	}
+	#Georgia
+	365 = {
+		set_state_flag = elections_senator_1
+	}
+	#Idaho
+	387 = {
+		set_state_flag = elections_senator_1
+	}
+	#Illinois
+	395 = {
+		set_state_flag = elections_senator_1
+	}
+	#Iowa
+	392 = {
+		set_state_flag = elections_senator_1
+	}
+	#Kansas
+	383 = {
+		set_state_flag = elections_senator_1
+	}
+	#Kentucky
+	369 = {
+		set_state_flag = elections_senator_1
+	}
+	#Louisiana
+	371 = {
+		set_state_flag = elections_senator_1
+	}
+	#New Hampshire
+	828 = {
+		set_state_flag = elections_senator_1
+	}
+	#North Carolina
+	363 = {
+		set_state_flag = elections_senator_1
+	}
+	#Oklahoma
+	374 = {
+		set_state_flag = elections_senator_1
+	}
+	#Oregon
+	385 = {
+		set_state_flag = elections_senator_1
+	}
+	#South Carolina
+	364 = {
+		set_state_flag = elections_senator_1
+	}
+	#South Dakota
+	390 = {
+		set_state_flag = elections_senator_1
+	}
+	#Wyoming
+	381 = {
+		set_state_flag = elections_senator_1
+	}
+
+	#SENATOR 2
+	#Delaware
+	833 = {
+		set_state_flag = elections_senator_2
+	}
+	#Maine
+	827 = {
+		set_state_flag = elections_senator_2
+	}
+	#Massachusetts
+	357 = {
+		set_state_flag = elections_senator_2
+	}
+	#Michigan
+	393 = {
+		set_state_flag = elections_senator_2
+	}
+	#Minnesota
+	391 = {
+		set_state_flag = elections_senator_2
+	}
+	#Mississippi
+	370 = {
+		set_state_flag = elections_senator_2
+	}
+	#Montana
+	388 = {
+		set_state_flag = elections_senator_2
+	}
+	#Nebraska
+	384 = {
+		set_state_flag = elections_senator_2
+	}
+	#New Jersey
+	359 = {
+		set_state_flag = elections_senator_2
+	}
+	#New Mexico
+	376 = {
+		set_state_flag = elections_senator_2
+	}
+	#Rhode Island
+	831 = {
+		set_state_flag = elections_senator_2
+	}
+	#Tennessee
+	368 = {
+		set_state_flag = elections_senator_2
+	}
+	#Texas
+	375 = {
+		set_state_flag = elections_senator_2
+	}
+	#Virginia
+	362 = {
+		set_state_flag = elections_senator_2
+	}
+	#West Virginia
+	832 = {
+		set_state_flag = elections_senator_2
+	}
+}
+
+USA_class_3_senate_prepare = {
+	set_country_flag = USA_senate_elections
+	set_country_flag = USA_class_3_elections
+	#USA_recalculate_polls = yes
+	#SENATOR 2
+	#Alabama
+	367 = {
+		set_state_flag = elections_senator_2
+	}
+	#Arizona
+	377 = {
+		set_state_flag = elections_senator_2
+	}
+	#Arkansas
+	372 = {
+		set_state_flag = elections_senator_2
+	}
+	#California
+	378 = {
+		set_state_flag = elections_senator_2
+	}
+	#Colorado
+	382 = {
+		set_state_flag = elections_senator_2
+	}
+	#Connecticut
+	830 = {
+		set_state_flag = elections_senator_2
+	}
+	#Florida
+	366 = {
+		set_state_flag = elections_senator_2
+	}
+	#Georgia
+	365 = {
+		set_state_flag = elections_senator_2
+	}
+	#Idaho
+	387 = {
+		set_state_flag = elections_senator_2
+	}
+	#Illinois
+	395 = {
+		set_state_flag = elections_senator_2
+	}
+	#Indiana
+	396 = {
+		set_state_flag = elections_senator_2
+	}
+	#Iowa
+	392 = {
+		set_state_flag = elections_senator_2
+	}
+	#Kansas
+	383 = {
+		set_state_flag = elections_senator_2
+	}
+	#Kentucky
+	369 = {
+		set_state_flag = elections_senator_2
+	}
+	#Louisiana
+	371 = {
+		set_state_flag = elections_senator_2
+	}
+	#Maryland
+	361 = {
+		set_state_flag = elections_senator_2
+	}
+	#Missouri
+	373 = {
+		set_state_flag = elections_senator_2
+	}
+	#Nevada
+	379 = {
+		set_state_flag = elections_senator_2
+	}
+	#New Hampshire
+	828 = {
+		set_state_flag = elections_senator_2
+	}
+	#New York
+	358 = {
+		set_state_flag = elections_senator_2
+	}
+	#North Carolina
+	363 = {
+		set_state_flag = elections_senator_2
+	}
+	#North Dakota
+	389 = {
+		set_state_flag = elections_senator_2
+	}
+	#Ohio
+	261 = {
+		set_state_flag = elections_senator_2
+	}
+	#Oklahoma
+	374 = {
+		set_state_flag = elections_senator_2
+	}
+	#Oregon
+	385 = {
+		set_state_flag = elections_senator_2
+	}
+	#Pennsylvania
+	360 = {
+		set_state_flag = elections_senator_2
+	}
+	#South Carolina
+	364 = {
+		set_state_flag = elections_senator_2
+	}
+	#South Dakota
+	390 = {
+		set_state_flag = elections_senator_2
+	}
+	#Utah
+	380 = {
+		set_state_flag = elections_senator_2
+	}
+	#Vermont
+	829 = {
+		set_state_flag = elections_senator_2
+	}
+	#Washington
+	386 = {
+		set_state_flag = elections_senator_2
+	}
+	#Wisconsin
+	394 = {
+		set_state_flag = elections_senator_2
+	}
+	#Wyoming
+	381 = {
+		set_state_flag = elections_senator_2
+	}
+}
