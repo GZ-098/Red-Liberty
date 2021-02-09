@@ -1,0 +1,12 @@
+USA_dust_bowl_modifier = {
+	icon = GFX_population_icon
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	
+	army_speed_factor = -0.3
+	supply_consumption_factor = 0.25
+	local_org_regain = -0.15
+	local_building_slots_factor = -0.5
+	local_resources = -0.5
+}
+

@@ -1182,34 +1182,50 @@ defined_text = {
 	name = GetElectionPrediction
 	text = {
 		trigger = {
-			check_variable = { socialist_popularity > republican_popularity }
-			check_variable = { socialist_popularity > democrat_popularity }
-			check_variable = { socialist_popularity > afp_popularity }
+			check_variable = { socialist_president_poll_pop > republican_president_poll_pop }
+			check_variable = { socialist_president_poll_pop > democrat_president_poll_pop }
+			check_variable = { socialist_president_poll_pop > afp_president_poll_pop }
 		}
 		localization_key = USA_Election_socialist_win
 	}
 	text = {
 		trigger = {
-			check_variable = { republican_popularity > socialist_popularity }
-			check_variable = { republican_popularity > democrat_popularity }
-			check_variable = { republican_popularity > afp_popularity }
+			check_variable = { republican_president_poll_pop > socialist_president_poll_pop }
+			check_variable = { republican_president_poll_pop > democrat_president_poll_pop }
+			check_variable = { republican_president_poll_pop > afp_president_poll_pop }
 		}
 		localization_key = USA_Election_republican_win
 	}
 	text = {
 		trigger = {
-			check_variable = { democrat_popularity > socialist_popularity }
-			check_variable = { democrat_popularity > republican_popularity }
-			check_variable = { democrat_popularity > afp_popularity }
+			check_variable = { democrat_president_poll_pop > socialist_president_poll_pop }
+			check_variable = { democrat_president_poll_pop > republican_president_poll_pop }
+			check_variable = { democrat_president_poll_pop > afp_president_poll_pop }
 		}
 		localization_key = USA_Election_democrat_win
 	}
 	text = {
 		trigger = {
-			check_variable = { afp_popularity > socialist_popularity }
-			check_variable = { afp_popularity > democrat_popularity }
-			check_variable = { afp_popularity > republican_popularity }
+			check_variable = { afp_president_poll_pop > socialist_president_poll_pop }
+			check_variable = { afp_president_poll_pop > democrat_president_poll_pop }
+			check_variable = { afp_president_poll_pop > republican_president_poll_pop }
 		}
 		localization_key = USA_Election_afp_win
+	}
+	text = {
+		localization_key = USA_Election_unsure
+	}
+}
+
+defined_text = {
+	name = GetElectionCloseness
+	text = {
+		trigger = {
+			check_variable = { USA_state_R_v_S_poll_pop_diff < -0.1 }
+		}
+		localization_key = USA_Election_socialist_close
+	}
+	text = {
+		localization_key = USA_nothing
 	}
 }

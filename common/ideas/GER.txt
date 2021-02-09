@@ -21,6 +21,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.15 
 				conversion_cost_civ_to_mil_factor = 0.15
 				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = -0.5
 			}
 		}
 		
@@ -45,6 +46,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.25 
 				conversion_cost_civ_to_mil_factor = 0.25 
 				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
 			}
 		}  
 		
@@ -69,6 +71,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.3 
 				conversion_cost_civ_to_mil_factor = 0.3 
 				production_speed_industrial_complex_factor = -0.2
+				production_speed_arms_factory_factor = -0.2
 			}
 		}   
 

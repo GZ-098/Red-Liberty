@@ -391,7 +391,9 @@ initialize_US_elections_system = {
 	
 	358 = { # New York, very liberal
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.45 } # Default Value
+		set_variable = { afp_popularity = 0.03 }
+		set_variable = { democrat_popularity = 0.05 }
+		set_variable = { republican_popularity = 0.37 } # Default Value
 		set_variable = { socialist_popularity = 0.55 } # Default Value
 		
 		set_variable = { senator_1 = 1 }

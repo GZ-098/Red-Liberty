@@ -5,6 +5,10 @@ state={
 	manpower = 7630651
 	state_category = megalopolis
 
+	resources = {
+		oil = 4
+	}
+
 	history={
 		owner = USA
 		buildings = {

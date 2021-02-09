@@ -1,6 +1,7 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			### POLITICAL SETUP ###
 			USA = {
 				initialize_US_elections_system = yes
 			}
@@ -28,10 +29,59 @@ on_actions = {
 			}
 			USA = {
 				set_country_flag = USA_presidential_elections
-				set_country_flag = USA_gerrymandering_socialist
-			}
-			USA = {
 				USA_class_1_senate_prepare = yes
+			}
+			
+			### DUST BOWL SETUP ###
+			373 = {
+				add_dynamic_modifier = {
+					modifier = USA_dust_bowl_modifier
+				}
+			}
+			374 = {
+				add_dynamic_modifier = {
+					modifier = USA_dust_bowl_modifier
+				}
+			}
+			383 = {
+				add_dynamic_modifier = {
+					modifier = USA_dust_bowl_modifier
+				}
+			}
+			375 = {
+				add_dynamic_modifier = {
+					modifier = USA_dust_bowl_modifier
+				}
+			}
+			376 = {
+				add_dynamic_modifier = {
+					modifier = USA_dust_bowl_modifier
+				}
+			}
+			382 = {
+				add_dynamic_modifier = {
+					modifier = USA_dust_bowl_modifier
+				}
+			}
+			384 = {
+				add_dynamic_modifier = {
+					modifier = USA_dust_bowl_modifier
+				}
+			}
+			389 = {
+				add_dynamic_modifier = {
+					modifier = USA_dust_bowl_modifier
+				}
+			}
+			390 = {
+				add_dynamic_modifier = {
+					modifier = USA_dust_bowl_modifier
+				}
+			}
+			392 = {
+				add_dynamic_modifier = {
+					modifier = USA_dust_bowl_modifier
+				}
 			}
 		}
 	}
@@ -42,6 +92,18 @@ on_actions = {
 				has_country_flag = USA_discussing_bill
 			}
 			check_if_bill_passed = yes
+		}
+		effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						has_state_flag = elections_senator_1
+						has_state_flag = elections_senator_2
+					}
+				}
+				USA_check_election_vs = yes
+				USA_check_election_closeness = yes
+			}
 		}
 	}
 	

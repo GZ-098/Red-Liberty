@@ -17,44 +17,11 @@ USA_election_season_category = {
 		days_mission_timeout = 306
 		
 		timeout_effect = {
-			random_events = {
-				100 = us_election.1 # 1932 election
-				100 = us_election.100
-				100 = us_election.200
-				100 = us_election.300
+			country_event = {
+				id = us_election.1
 			}
 		}
 		priority = 10
-	}
-	
-	USA_inauguration_day_timer = {
-		visible = {
-			original_tag = USA
-		}
-		available = {
-			NOT = {
-				has_country_flag = USA_presidential_elections
-			}
-		}
-		activation = {
-			has_country_flag = USA_presidential_elections
-		}
-		is_good = no
-		
-		days_mission_timeout = 385
-		
-		timeout_effect = {
-			custom_effect_tooltip = USA_inauguration_day_tt
-			if = {
-				limit = {
-					has_country_flag = USA_thomas_elected
-				}
-				country_event = {
-					id = us_election.4
-				}
-			}
-		}
-		priority = 5
 	}
 	
 	USA_campaign_in_new_england = {
