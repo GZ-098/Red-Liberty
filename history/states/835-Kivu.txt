@@ -1,0 +1,22 @@
+
+state={
+	id=835
+	name="STATE_835"
+
+	history={
+		owner = ENG
+		add_core_of = COG
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_claim_by = BEL
+	}
+
+	provinces={
+		1181 2034 2154 4201 4941 7161 10766 12783 13176 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

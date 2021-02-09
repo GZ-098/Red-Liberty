@@ -356,3 +356,8 @@ SLO_HUN_communism = {
 	color = rgb { 188 5 5 }
 	color_ui = rgb { 188 5 5 }
 }
+
+BEL_FRA_exiled_govt = {
+	color = rgb { 43 86 173 }
+	color_ui = rgb { 74 147 255 }
+}

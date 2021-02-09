@@ -21,7 +21,7 @@ state={
 			air_base = 1
 
 		}
-		add_core_of = BEL
+		add_claim_by = BEL
 		add_core_of = WLA
 
 	}
