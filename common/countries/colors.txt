@@ -1,4 +1,10 @@
-#reload countrycolors 
+#reload countrycolors
+
+ASI = {
+	color = rgb { 109 156 166 }
+	color_ui = rgb { 109 156 166 }
+}
+
 ITF = {
 	color = rgb { 218 160 25 }
 	color_ui = rgb { 225 225 225 }
@@ -8,7 +14,7 @@ HSR = {
 	color_ui = rgb { 225 225 225 }
 }
 HEZ = {
-	color = rgb { 67 183 79 }
+	color = rgb { 75 148 55 } # { 67 183 79 }
 	color_ui = rgb { 225 225 225 }
 }
 AHE = {
