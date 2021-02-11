@@ -17,7 +17,7 @@
 @INCUMBENCY_BONUS_CLAMP_MAX = 0.002
 @PULSE_POPULARITY_CLAMP_MIN = 0
 @PULSE_POPULARITY_CLAMP_MAX_FIRST = 10
-@PULSE_POPULARITY_CLAMP_MAX_SECOND = 2
+@PULSE_POPULARITY_CLAMP_MAX_SECOND = 2 # originally 2
 
 ### SENATORS ###
 # 1 = socialist
@@ -112,16 +112,16 @@ initialize_US_elections_system = {
 		set_variable = { democrat_popularity = 0.2 }
 		
 		set_variable = { senator_1 = 2 }
-		set_variable = { senator_2 = 2 }
+		set_variable = { senator_2 = 3 }
 		
 		set_variable = { electoral_votes = 6 }
 	}
 	
 	830 = { # Connecticut, republican stronghold
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.7 }
-		set_variable = { democrat_popularity = 0.2 }
-		set_variable = { socialist_popularity = 0.1 }
+		set_variable = { republican_popularity = 0.55 }
+		set_variable = { democrat_popularity = 0.25 }
+		set_variable = { socialist_popularity = 0.2 }
 		
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 2 }
@@ -165,11 +165,12 @@ initialize_US_elections_system = {
 	
 	387 = { # Idaho, potato state
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.7 }
-		set_variable = { democrat_popularity = 0.3 }
+		set_variable = { republican_popularity = 0.3 }
+		set_variable = { democrat_popularity = 0.6 }
+		set_variable = { socialist_popularity = 0.1 }
 		
 		set_variable = { senator_1 = 2 }
-		set_variable = { senator_2 = 2 }
+		set_variable = { senator_2 = 3 }
 		
 		set_variable = { electoral_votes = 4 }
 	}
@@ -344,13 +345,13 @@ initialize_US_elections_system = {
 		set_variable = { electoral_votes = 7 }
 	}
 	
-	379 = { # Nevada, fairly Republican
+	379 = { # Nevada, somewhat conservative
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.7 }
-		set_variable = { democrat_popularity = 0.3 }
+		set_variable = { republican_popularity = 0.45 }
+		set_variable = { democrat_popularity = 0.55 }
 		
 		set_variable = { senator_1 = 2 }
-		set_variable = { senator_2 = 2 }
+		set_variable = { senator_2 = 3 }
 		
 		set_variable = { electoral_votes = 3 }
 	}
@@ -505,11 +506,12 @@ initialize_US_elections_system = {
 	
 	368 = { # Tennessee
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.7 } # Default Value
-		set_variable = { democrat_popularity = 0.3 } # Default Value
+		set_variable = { republican_popularity = 0.2 }
+		set_variable = { democrat_popularity = 0.5 }
+		set_variable = { afp_popularity = 0.3 }
 		
-		set_variable = { senator_1 = 2 }
-		set_variable = { senator_2 = 3 }
+		set_variable = { senator_1 = 3 }
+		set_variable = { senator_2 = 4 }
 		
 		set_variable = { electoral_votes = 11 }
 	}
@@ -779,6 +781,46 @@ USA_clamp_state_popularities = {
 		max = @PULSE_POPULARITY_CLAMP_MAX_SECOND
 	}
 	#log = "[This.GetName] : Clamped state popularities: SPA: [?socialist_popularity] || DP: [?democrat_popularity] || RP: [?republican_popularity] || AFP: [?afp_popularity]"
+}
+
+USA_clamp_state_popularities_alternate = {
+	set_temp_variable = { pop_total_temp = republican_popularity }
+	add_to_temp_variable = { pop_total_temp = democrat_popularity }
+	add_to_temp_variable = { pop_total_temp = socialist_popularity }
+	add_to_temp_variable = { pop_total_temp = afp_popularity }
+	if = {
+		limit = {
+			check_variable = { pop_total_temp > 1 }
+		}
+		divide_variable = { republican_popularity = pop_total_temp }
+		divide_variable = { democrat_popularity = pop_total_temp }
+		divide_variable = { socialist_popularity = pop_total_temp }
+		divide_variable = { afp_popularity = pop_total_temp }
+	}
+	
+	set_temp_variable = { pop_total_temp = republican_popularity }
+	add_to_temp_variable = { pop_total_temp = democrat_popularity }
+	add_to_temp_variable = { pop_total_temp = socialist_popularity }
+	add_to_temp_variable = { pop_total_temp = afp_popularity }
+	if = {
+		limit = {
+			check_variable = { pop_total_temp < 1 }
+		}
+		random_list = {
+			25 = {
+				add_to_variable = { socialist_popularity = 0.002 }
+			}
+			25 = {
+				add_to_variable = { republican_popularity = 0.002 }
+			}
+			25 = {
+				add_to_variable = { democrat_popularity = 0.002 }
+			}
+			25 = {
+				add_to_variable = { afp_popularity = 0.002 }
+			}
+		}
+	}
 }
 
 USA_update_presidential_election_race_in_state = {

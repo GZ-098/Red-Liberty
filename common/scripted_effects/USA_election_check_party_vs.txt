@@ -15,7 +15,7 @@ USA_check_election_vs = {
 		}
 		set_state_flag = republican_second_place
 	}
-	log = "[This.GetName] USA_check_election_vs = yes"
+	#log = "[This.GetName] USA_check_election_vs = yes"
 }
 
 USA_check_election_closeness = {
@@ -26,6 +26,6 @@ USA_check_election_closeness = {
 		}
 		set_variable = { USA_state_R_v_S_poll_pop_diff = republican_popularity }
 		subtract_from_variable = { USA_state_R_v_S_poll_pop_diff = socialist_popularity }
-		log = "[This.GetName] USA_state_R_v_S_poll_pop_diff = [?THIS.USA_state_R_v_S_poll_pop_diff]"
+		#log = "[This.GetName] USA_state_R_v_S_poll_pop_diff = [?THIS.USA_state_R_v_S_poll_pop_diff]"
 	}
 }

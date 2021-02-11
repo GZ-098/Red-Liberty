@@ -1,4 +1,10 @@
 spriteTypes = {
+
+	spriteType = {
+		name = "GFX_USA_states_button"
+		texturefile = "gfx/interface/USA/USA_congress_icon_large.dds"
+	}
+
 	spriteType = {
 		name = "GFX_USA_states_gui_BG"
 		texturefile = "gfx/interface/USA/USA_states_BG.tga"
@@ -57,6 +63,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_USA_states_gui_ID_republican"
 		texturefile = "gfx/interface/USA/states/USA_states_ID_republican.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_USA_states_gui_ID_democrat"
+		texturefile = "gfx/interface/USA/states/USA_states_ID_democrat.tga"
 	}
 	
 	spriteType = {
@@ -145,6 +156,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_USA_states_gui_NV_democrat"
+		texturefile = "gfx/interface/USA/states/USA_states_NV_democrat.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_USA_states_gui_NH_democrat"
 		texturefile = "gfx/interface/USA/states/USA_states_NH_democrat.tga"
 	}
@@ -217,6 +233,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_USA_states_gui_TN_republican"
 		texturefile = "gfx/interface/USA/states/USA_states_TN_republican.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_USA_states_gui_TN_democrat"
+		texturefile = "gfx/interface/USA/states/USA_states_TN_democrat.tga"
 	}
 	
 	spriteType = {

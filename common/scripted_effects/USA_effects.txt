@@ -42,6 +42,7 @@ clear_state_name_and_desc = {
 	clr_country_flag = USA_states_gui_MD_selected
 	clr_country_flag = USA_states_gui_MS_selected
 	clr_country_flag = USA_states_gui_MO_selected
+	clr_country_flag = USA_states_gui_MT_selected
 	clr_country_flag = USA_states_gui_NC_selected
 	clr_country_flag = USA_states_gui_OR_selected
 	clr_country_flag = USA_states_gui_OK_selected

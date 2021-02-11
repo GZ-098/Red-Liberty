@@ -80,6 +80,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_country_flag = USA_states_gui_MT_selected
+		}
+		localization_key = "USA_states_gui_MT_selected_tt"
+	}
+	text = {
+		trigger = {
 			has_country_flag = USA_states_gui_NC_selected
 		}
 		localization_key = "USA_states_gui_NC_selected_tt"
@@ -213,6 +219,12 @@ defined_text = {
 			has_country_flag = USA_states_gui_MO_selected
 		}
 		localization_key = "USA_states_gui_MO_selected_info_tt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_states_gui_MT_selected
+		}
+		localization_key = "USA_states_gui_MT_selected_info_tt"
 	}
 	text = {
 		trigger = {
@@ -445,6 +457,14 @@ defined_text = {
 		}
 		localization_key = "GFX_USA_states_gui_ID_republican"
 	}
+	text = {
+		trigger = {
+			check_variable = { 387.democrat_popularity > 387.socialist_popularity }
+			check_variable = { 387.democrat_popularity > 387.republican_popularity }
+			check_variable = { 387.democrat_popularity > 387.afp_popularity }
+		}
+		localization_key = "GFX_USA_states_gui_ID_democrat"
+	}
 }
 
 defined_text = {
@@ -641,6 +661,14 @@ defined_text = {
 		}
 		localization_key = "GFX_USA_states_gui_NV_republican"
 	}
+	text = {
+		trigger = {
+			check_variable = { 379.democrat_popularity > 379.socialist_popularity }
+			check_variable = { 379.democrat_popularity > 379.republican_popularity }
+			check_variable = { 379.democrat_popularity > 379.afp_popularity }
+		}
+		localization_key = "GFX_USA_states_gui_NV_democrat"
+	}
 }
 
 defined_text = {
@@ -816,6 +844,15 @@ defined_text = {
 			check_variable = { 368.republican_popularity > 368.afp_popularity }
 		}
 		localization_key = "GFX_USA_states_gui_TN_republican"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = { 368.democrat_popularity > 368.socialist_popularity }
+			check_variable = { 368.democrat_popularity > 368.republican_popularity }
+			check_variable = { 368.democrat_popularity > 368.afp_popularity }
+		}
+		localization_key = "GFX_USA_states_gui_TN_democrat"
 	}
 }
 
