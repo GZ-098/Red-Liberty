@@ -72,16 +72,3 @@ ITA_buget_managment = {
 		original_tag = ITA
 	}
 }
-
-ITA_occupation_managment = {
-
-	icon = occupation_managment
-	
-	allowed = {
-		original_tag = ITA
-	}
-	visible = {
-		has_completed_focus = ITA_occupation_managment
-		original_tag = ITA
-	}
-}

@@ -1479,40 +1479,5 @@ ITA_buget_managment = {
 	}
 }
 
-ITA_occupation = {
-	ITA_ = {
-	
-		icon = increase_taxes
-		
-		available = {
-		} 
-
-		modifier = {
-			political_power_gain = -0.1
-			production_factory_efficiency_gain_factor = -0.15
-		}
-		
-		cost = 10 
-
-		ai_will_do = {
-			base = 10
-		}
-
-		days_remove = 25
-		
-		complete_effect = { 
-			IF = {
-				limit = {
-					has_idea = ITA_taxes_low
-				}
-				swap_ideas = {
-					remove_idea = ITA_taxes_low
-					add_idea = ITA_taxes_high
-				}
-			}
-		}
-	}
-}
-
 
 

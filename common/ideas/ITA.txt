@@ -82,6 +82,120 @@ ideas = {
 			}
 		}
 		#Starting nat spirits
+		ITA_tech_focused = {
+			removal_cost = -1 
+			
+			picture = ITA_tech_focused_gfx
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				repair_speed_dockyard_factor = 0.2
+				production_speed_dockyard_factor = 0.3
+				production_speed_naval_base_factor = 0.3
+			}
+		}
+		ITA_nav_civ_focused = {
+			removal_cost = -1 
+			
+			picture = ITA_nav_civ_focused_gfx
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				repair_speed_dockyard_factor = 0.1
+				production_speed_dockyard_factor = 0.15
+				production_speed_naval_base_factor = 0.15
+				repair_speed_industrial_complex_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				conversion_cost_mil_to_civ_factor = -0.1
+			}
+		}
+		ITA_nav_focused = {
+			removal_cost = -1 
+			
+			picture = ITA_nav_focused_gfx
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				repair_speed_dockyard_factor = 0.2
+				production_speed_dockyard_factor = 0.3
+				production_speed_naval_base_factor = 0.3
+			}
+		}
+		ITA_civ_focused = {
+			removal_cost = -1 
+			
+			picture = ITA_civ_focused_gfx
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				repair_speed_industrial_complex_factor = 0.35
+				production_speed_industrial_complex_factor = 0.2
+				conversion_cost_mil_to_civ_factor = -0.25
+			}
+		}
+		ITA_civ_mil_focused = {
+			removal_cost = -1 
+			
+			picture = ITA_civ_mil_focused_gfx
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.10
+				production_speed_arms_factory_factor = 0.1
+				repair_speed_arms_factory_factor = 0.05
+				repair_speed_industrial_complex_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				conversion_cost_mil_to_civ_factor = -0.1
+			}
+		}
+		ITA_mil_focused = {
+			removal_cost = -1 
+			
+			picture = ITA_mil_focused_gfx
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.35
+				production_speed_arms_factory_factor = 0.2
+				repair_speed_arms_factory_factor = 0.1
+			}
+		}
 		ITA_taxes_high = {
 			removal_cost = -1 
 			
