@@ -224,6 +224,9 @@ WLA = "countries/Wallonia.txt"
 WUK = "countries/West Ukraine.txt"
 KRA = "countries/Krakow.txt"
 
+### Middle East ###
+ASI = "countries/Asir.txt"
+
 ### China ###
 SZC = "countries/Sichuan.txt"
 GUD = "countries/Guangdong.txt"

@@ -95,6 +95,7 @@ shared_focus = {
 
 shared_focus = {
     id = JAP_socio_economic_stability
+	icon = GFX_JAP_socio_economic_stability
 	
     x = 0
 	y = 1

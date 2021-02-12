@@ -14,20 +14,32 @@ country_event = { # no one gets a majority
 
 	is_triggered_only = yes
 	
+	immediate = {
+		hidden_effect = {
+			every_owned_state = {
+				limit = { can_have_elections_in_state = yes }
+				USA_hold_presidential_election_in_state = yes
+			}
+			
+			country_event = {
+				id = us_election.2
+				days = 50
+			}
+			country_event = {
+				id = us_election.3
+				days = 57
+			}
+			country_event = {
+				id = us_election.4
+				days = 79
+			}
+		}
+	}
+	
 	option = {
 		name = us_election.1.a
-		country_event = {
-			id = us_election.2
-			days = 50
-		}
-		country_event = {
-			id = us_election.3
-			days = 57
-		}
-		country_event = {
-			id = us_election.4
-			days = 79
-		}
+		clr_country_flag = USA_presidential_elections
+		clear_election_results = yes
 	}
 }
 

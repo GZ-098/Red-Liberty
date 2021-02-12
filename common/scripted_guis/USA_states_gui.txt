@@ -234,6 +234,20 @@ scripted_gui = {
 					clear_state_name_and_desc = yes
 				}
 			}
+			USA_states_gui_MT_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = USA_states_gui_MT_selected }
+					}
+					ROOT = {
+						clear_state_name_and_desc = yes
+						set_country_flag = USA_states_gui_MT_selected
+					}
+				}
+				else = {
+					clear_state_name_and_desc = yes
+				}
+			}
 			USA_states_gui_NC_click = {
 				if = {
 					limit = {

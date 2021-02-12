@@ -1,12 +1,12 @@
 guiTypes = {
 	containerWindowType = {
 		name = "USA_states_button_container"
-		position = { x = 125 y = 371 }
+		position = { x = 470 y = 242 }
 
 		buttonType = {
 			name = "USA_states_button"
 			position = { x = 0 y = 0 }
-			spriteType = "GFX_goal_USA_victory"
+			spriteType = "GFX_USA_states_button"
 			pdx_tooltip = "USA_electoral_map_tt"
 		}
 	}
@@ -14,7 +14,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "USA_states_map_window"
 		#size = { width = 710 height = 450 }
-		size = { width = 910 height = 520 }
+		size = { width = 910 height = 470 }
 		position = { x=-1100 y=-450 }
 		show_position = { x=-400 y=-450 }
 		
@@ -158,6 +158,7 @@ guiTypes = {
 		buttonType = {
 			name = "USA_states_gui_MT"
 			quadTextureSprite = "GFX_USA_states_gui_MT"
+			pdx_tooltip = "GFX_USA_states_gui_MT_tt"
 			position = { x = 157 y = 40 }
 		}
 		
@@ -342,6 +343,21 @@ guiTypes = {
 			maxWidth = 200
 			format = center
 			text = "[get_state_info]"
+		}
+		
+		buttonType = {
+			name = "button_swap_views"
+			position = { x = 30 y = 375 }
+			spriteType = "GFX_trade_filter_btn_country"
+			clicksound = click_default
+		}
+		instantTextBoxType = {
+			name = "USA_states_gui_swap_views"
+			position = { x = 15 y = 380 }
+			maxWidth = 200
+			format = center
+			text = "Swap Information View"
+			pdx_tooltip = "USA_swap_views_tt"
 		}
 		
 		buttonType = {

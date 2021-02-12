@@ -1,0 +1,9 @@
+spritetypes = {
+	
+	### INTRO TREE ###
+	
+	SpriteType = {
+		name = "GFX_JAP_socio_economic_stability"
+		texturefile = "gfx/interface/goals/JAP/JAP_socio_economic_stability.png"
+	}
+}

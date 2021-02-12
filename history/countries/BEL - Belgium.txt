@@ -19,127 +19,39 @@ set_technology = {
 	fuel_refining = 1
 }
 
-1939.1.1 = {
-	add_ideas = {
-		limited_conscription
-	}
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "BEL_1939"
-	set_technology = {
-		fighter1 = 1
-		gw_artillery = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		interwar_antiair = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		synth_oil_experiments = 1
-		fuel_refining2 = 1
-	}
-}
-
-
 set_politics = {
-	ruling_party = autocratic_despotism
+	ruling_party = martial_despotism
 	last_election = "1936.1.1"
 	election_frequency = 0
 	elections_allowed = no
 } 
 
 set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 2
+	social_democracy = 25
+	progressive_liberalism = 25
+	market_libertarianism = 10
+	national_conservatism = 15
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 20
+	martial_despotism = 3
+	ultranational_statism = 0
 } 
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = autocratic_despotism
-		last_election = "1939.4.2"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-		autocratic_despotism = 87
-		empowered_nationalism = 3 
-		revolutionary_socialism = 3 
-		democratic_socialism = 3 
-	        conservatism = 4
-	}
-}
+set_cosmetic_tag = BEL_FRA_exiled_govt
 
 set_convoys = 80
 set_stability = 0.75
 
 create_country_leader = {
-	name = "Hubert Pierlot"
-	desc = "POLITICS_HUBERT_PIERLOT_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
+	name = "Albert I"
+	#desc = ""
+	picture = "Portait_BEL_Albert_I.tga"
 	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Joseph Jacquemotte"
-	desc = "POLITICS_JOSEPH_JACQUEMOTTE_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = anarchist_communism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Léon Degrelle"
-	desc = "POLITICS_LEON_DEGRELLE_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = rexism
+	ideology = martial_despotism_subtype
 	traits = {
 		#
 	}
