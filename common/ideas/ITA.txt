@@ -82,6 +82,50 @@ ideas = {
 			}
 		}
 		#Starting nat spirits
+		ITA_tech_civ_focused = {
+			removal_cost = -1 
+			
+			picture = ITA_tech_focused_gfx
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				research_bonus = {
+                	industry = 0.1
+					synth_resources = 0.1
+					dispersed_industry_category = 0.15
+					concentrated_industry_category = 0.15
+				}
+			}
+		}
+		ITA_tech_mil_focused = {
+			removal_cost = -1 
+			
+			picture = ITA_tech_focused_gfx
+			
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				research_bonus = {
+                	armor = 0.1
+					artillery = 0.1
+					light_air = 0.1
+					infantry_tech = 0.1
+					logistics_tech = 0.15
+					land_doctrine = 0.15
+				}
+			}
+		}
 		ITA_tech_focused = {
 			removal_cost = -1 
 			
@@ -95,9 +139,12 @@ ideas = {
 			}
 			
 			modifier = {
-				repair_speed_dockyard_factor = 0.2
-				production_speed_dockyard_factor = 0.3
-				production_speed_naval_base_factor = 0.3
+				research_bonus = {
+                	electronics = 0.1
+					signal_company_tech = 0.1
+					radar_tech = 0.1
+					computing_tech = 0.1
+				}
 			}
 		}
 		ITA_nav_civ_focused = {
