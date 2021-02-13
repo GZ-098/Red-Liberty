@@ -2,6 +2,9 @@
  USA_electoral_map_tt:0 "National Polling Data"
  USA_swap_views_tt:0 "Swap between Party Popularity and Senate Control views. §R(HIGHLY WIP)§!"
  
+ stuff:0 "EC Predictions"
+ other_stuff:0 "Senate View"
+ 
  get_state_name_tt:0 "[get_USA_states_gui_state_name]"
  get_state_info_tt:0 "[get_state_info]"
  

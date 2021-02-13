@@ -1,4 +1,22 @@
 defined_text = {
+	name = get_swap_view_title
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = USA_senate_view_enabled
+			}
+		}
+		localization_key = "stuff"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_senate_view_enabled
+		}
+		localization_key = "other_stuff"
+	}
+}
+
+defined_text = {
 	name = get_state_name
 	text = {
 		trigger = {
@@ -619,11 +637,30 @@ defined_text = { # mississippi
 	name = Get_USA_states_gui_MS
 	text = {
 		trigger = {
+			NOT = {
+				has_country_flag = USA_senate_view_enabled
+			}
 			check_variable = { 370.democrat_popularity > 370.socialist_popularity }
 			check_variable = { 370.democrat_popularity > 370.republican_popularity }
 			check_variable = { 370.democrat_popularity > 370.afp_popularity }
 		}
 		localization_key = "GFX_USA_states_gui_MS_democrat"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_senate_view_enabled
+			OR = {
+				AND = {
+					check_variable = { 370.senator_1 = 3 }
+					check_variable = { 370.senator_2 = 4 }
+				}
+				AND = {
+					check_variable = { 370.senator_1 = 4 }
+					check_variable = { 370.senator_2 = 3 }
+				}
+			}
+		}
+		localization_key = "GFX_USA_states_gui_MS_split_afp_democrat"
 	}
 }
 
@@ -683,7 +720,7 @@ defined_text = {
 	}
 }
 
-defiNJd_text = {
+defined_text = {
 	name = Get_USA_states_gui_NJ
 	text = {
 		trigger = {
@@ -860,11 +897,31 @@ defined_text = {
 	name = Get_USA_states_gui_TX
 	text = {
 		trigger = {
+			NOT = {
+				has_country_flag = USA_senate_view_enabled
+			}
 			check_variable = { 375.afp_popularity > 375.socialist_popularity }
 			check_variable = { 375.afp_popularity > 375.democrat_popularity }
 			check_variable = { 375.afp_popularity > 375.republican_popularity }
 		}
 		localization_key = "GFX_USA_states_gui_TX_afp"
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = USA_senate_view_enabled
+			OR = {
+				AND = {
+					check_variable = { 375.senator_1 = 3 }
+					check_variable = { 375.senator_2 = 4 }
+				}
+				AND = {
+					check_variable = { 375.senator_1 = 4 }
+					check_variable = { 375.senator_2 = 3 }
+				}
+			}
+		}
+		localization_key = "GFX_USA_states_gui_TX_split_afp_democrat"
 	}
 }
 

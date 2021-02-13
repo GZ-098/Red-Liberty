@@ -52,6 +52,19 @@ scripted_gui = {
 			button_close_click = {
 				clr_country_flag = USA_states_map_open
 			}
+			button_swap_views_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = USA_senate_view_enabled }
+					}
+					ROOT = {
+						set_country_flag = USA_senate_view_enabled
+					}
+				}
+				else = {
+					clr_country_flag = USA_senate_view_enabled
+				}
+			}
 			USA_states_gui_AL_click = {
 				if = {
 					limit = {

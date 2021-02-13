@@ -612,7 +612,7 @@
  STATE_611:0 "South Chahar"
  STATE_612:0 "Chahar"
  STATE_613:2 "Shanghai"
- STATE_614:0 "Hebei"
+ STATE_614:0 "Baoding"
  STATE_615:0 "Shanxi"
  STATE_616:0 "Ningxia"
  STATE_617:0 "Urumqi"
@@ -837,4 +837,5 @@
  STATE_836:0 "Asir"
  STATE_837:0 "Minusinsk"
  STATE_838:0 "Vawkavysk"
+ STATE_839:0 "Tianjin"
  

@@ -356,7 +356,7 @@ guiTypes = {
 			position = { x = 15 y = 380 }
 			maxWidth = 200
 			format = center
-			text = "Swap Information View"
+			text = "[get_swap_view_title]"
 			pdx_tooltip = "USA_swap_views_tt"
 		}
 		
