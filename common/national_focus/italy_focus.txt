@@ -2280,12 +2280,214 @@ focus_tree = {
 		x = 49
 		y = 2
 		completion_reward = {
-			completion_reward = {
-				country_event = {
-					id = italy_events.64
-					days = 1
-				}
+			country_event = {
+				id = italy_events.64
+				days = 1
 			}
+		}
+	}
+	focus = {
+		id = ITA_industrial_works
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_buget_managment
+		}
+		x = 49
+		y = 3
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_the_peoples_civic_works
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_industrial_works
+		}
+		mutually_exclusive = {
+			focus = ITA_the_war_machine_of_italia
+		}
+		x = 53
+		y = 4
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_the_war_machine_of_italia
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_industrial_works
+		}
+		mutually_exclusive = {
+			focus = ITA_the_peoples_civic_works
+		}
+		x = 47
+		y = 4
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_italian_rifel_construction
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_the_war_machine_of_italia
+		}
+		mutually_exclusive = {
+			focus = ITA_shift_towards_mechanization
+		}
+		x = 45
+		y = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_hire_private_companies
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_italian_rifel_construction
+		}
+		x = 45
+		y = 6
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_encourage_private_ownership_of_amrs
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_hire_private_companies
+		}
+		x = 44
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_subsidize_purchesing_of_arms
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_encourage_private_ownership_of_amrs
+		}
+		x = 44
+		y = 8
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_open_rifel_training_centers_nation_wide
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_subsidize_purchesing_of_arms
+		}
+		x = 44
+		y = 9
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_organize_local_malitia_forceses 
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_open_rifel_training_centers_nation_wide
+		}
+		x = 44
+		y = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_search_for_better_weapons
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_hire_private_companies
+		}
+		x = 46
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_a_standardized_weapon_for_italians
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_search_for_better_weapons
+		}
+		x = 46
+		y = 8
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_increase_efficiency_of_production
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_a_standardized_weapon_for_italians
+		}
+		x = 46
+		y = 9
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_increase_efficiency_of_production
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_a_standardized_weapon_for_italians
+		}
+		x = 46
+		y = 9
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_increase_efficiency_of_production
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_a_standardized_weapon_for_italians
+		}
+		x = 46
+		y = 9
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_a_gun_famous_world_wide
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_increase_efficiency_of_production
+		}
+		x = 46
+		y = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_shift_towards_mechanization
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_the_war_machine_of_italia
+		}
+		mutually_exclusive = {
+			focus = ITA_italian_rifel_construction
+		}
+		x = 49
+		y = 5
+		completion_reward = {
 		}
 	}
 	focus = {
@@ -2294,7 +2496,7 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 		}
-		x = 44
+		x = 42
 		y = 2
 		completion_reward = {
 			country_event = {
