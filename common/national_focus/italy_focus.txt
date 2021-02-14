@@ -2440,30 +2440,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_increase_efficiency_of_production
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = ITA_a_standardized_weapon_for_italians
-		}
-		x = 46
-		y = 9
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = ITA_increase_efficiency_of_production
-		icon = GFX_goal_unknown
-		cost = 5
-		prerequisite = {
-			focus = ITA_a_standardized_weapon_for_italians
-		}
-		x = 46
-		y = 9
-		completion_reward = {
-		}
-	}
-	focus = {
 		id = ITA_a_gun_famous_world_wide
 		icon = GFX_goal_unknown
 		cost = 5
