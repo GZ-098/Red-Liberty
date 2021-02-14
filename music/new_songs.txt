@@ -1,7 +1,7 @@
-music_station = "radio_redliberty"
+music_station = "united_states_radio"
 
 music = {
-	song = "which side are you on"
+	song = "which_side_are_you_on"
 	chance = {
 		modifier = {
 			factor = 2

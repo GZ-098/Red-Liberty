@@ -49,32 +49,32 @@ set_stability = 0.2
 set_war_support = 0.1
 
 set_politics = {
-	ruling_party = authoritarian_republicanism
+	ruling_party = proletarian_dictatorship
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
 	insurrectionary_anarchism = 0
-	revolutionary_autocracy = 0
-	proletarian_dictatorship = 0
-	libertarian_socialism = 20
+	revolutionary_autocracy = 2
+	proletarian_dictatorship = 13
+	libertarian_socialism = 18
 	social_democracy = 10
 	progressive_liberalism = 17
 	market_libertarianism = 0
 	national_conservatism = 23
 	reactionary_theocracy = 12
-	authoritarian_republicanism = 13
+	authoritarian_republicanism = 0
 	martial_despotism = 5
 	ultranational_statism = 0
 }
 
 create_country_leader = {
 	name = "Lázaro Cárdenas"
-	desc = "POLITICS_LAZARO_CARDENAS_DESC"
-	picture = "Portrait_Mexico_Lazaro_Cardenas.dds"
+	#desc = ""
+	#picture = ""
 	expire = "1965.1.1"
-	ideology = moderatism
+	ideology = proletarian_dictatorship_subtype
 	traits = {
 		#
 	}
