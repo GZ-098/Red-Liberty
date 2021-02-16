@@ -6,4 +6,14 @@ spritetypes = {
 		name = "GFX_JAP_socio_economic_stability"
 		texturefile = "gfx/interface/goals/JAP/JAP_socio_economic_stability.png"
 	}
+	
+	SpriteType = {
+		name = "GFX_JAP_snap_elections"
+		texturefile = "gfx/interface/goals/JAP/JAP_snap_elections.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_the_results"
+		texturefile = "gfx/interface/goals/JAP/JAP_the_results.png"
+	}
 }
