@@ -18,6 +18,17 @@
  SOV_authoritarian_republicanism_party:0 "--"
  SOV_martial_despotism_party:0 "--"
  SOV_ultranational_statism_party:0 "--"
+ 
+ SOV_science_meter_category:0 "The SCIENCE Meter"
+ SOV_science_meter_category_desc:0 "Our current level of §YSCIENCE§! is §Y([?SOV_SCIENCE_level])§! which is [GetScienceLevel]"
+ SOV_SCIENCE_pitiful:0 "§RPitiful. Are you even trying?§!"
+ SOV_SCIENCE_low:0 "§RLow. We need to do better.§!"
+ SOV_SCIENCE_medium:0 "§YMiddling. We're getting there.§!"
+ SOV_SCIENCE_acceptable:0 "§GAcceptable. But we can do more.§!"
+ SOV_SCIENCE_high:0 "§RHigh. Are we going too far?§!"
+ SOV_SCIENCE_very_high:0 "§RVery High. Uh oh.§!"
+ SOV_science:0 "Activate Science!"
+ SOV_reduce_science:0 "Reduce Science"
 
  SOV_home_of_the_revolution:0 "Home of the Revolution"
  SOV_home_of_the_revolution_desc:0 "Russia is the first nation in the world to have her workers rise up and overthrow the oppressor classes, and we are rightfully proud of it! From Petrograd to the Volga, the workers are free! However, the task remains only half finished. Our brethren in the east still suffer under the iron heel of their reactionary-bourgeois oppressors, and the world has yet to fully embrace socialism. Forward, comrades, to victory and freedom!"

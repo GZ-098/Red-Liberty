@@ -63,7 +63,7 @@ AUS = {
 	color_ui = rgb { 255 255 255 }
 }
 LIT = {
-	color = rgb { 102 102 73 }
+	color = rgb { 130 84 140 } # { 102 102 73 }
 	color_ui = rgb { 95 95 0 }
 }
 EST = {

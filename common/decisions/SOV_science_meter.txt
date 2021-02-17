@@ -1,0 +1,50 @@
+SOV_science_meter_category = {
+	
+	SOV_science = {
+	
+		icon = ger_mefo_bills
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			add_to_variable = { SOV_SCIENCE_level = 10 }
+			clamp_variable = {
+				var = SOV_SCIENCE_level
+				min = 0
+				max = 100
+			}
+		}
+	}
+	
+	SOV_reduce_science = {
+	
+		icon = ger_mefo_bills
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			subtract_from_variable = { SOV_SCIENCE_level = 10 }
+			clamp_variable = {
+				var = SOV_SCIENCE_level
+				min = 0
+				max = 100
+			}
+		}
+	}
+}

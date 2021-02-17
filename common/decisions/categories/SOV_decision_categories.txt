@@ -7,3 +7,15 @@ SOV_revolution_category = {
 		original_tag = SOV
 	}
 }
+
+SOV_science_meter_category = {
+	
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		original_tag = SOV
+	}
+
+	scripted_gui = SOV_science_meter_gui
+}

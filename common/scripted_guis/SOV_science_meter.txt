@@ -1,0 +1,11 @@
+scripted_gui = {
+
+	SOV_science_meter_gui = {
+		context_type = decision_category
+		window_name = "SOV_science_meter_ui_window"
+		
+		properties = {
+			
+		}
+	}
+}

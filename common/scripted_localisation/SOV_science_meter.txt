@@ -1,0 +1,77 @@
+defined_text = {
+	name = GetScienceLevel
+	
+	text = { 
+        trigger = {
+			check_variable = {
+					var = SOV_SCIENCE_level
+					value = 95
+					compare = greater_than_or_equals
+				}
+        }
+        localization_key = "SOV_SCIENCE_very_high"
+    }
+	
+	text = { 
+        trigger = {
+			AND = {
+				check_variable = { SOV_SCIENCE_level < 95 }
+				check_variable = {
+					var = SOV_SCIENCE_level
+					value = 90
+					compare = greater_than_or_equals
+				}
+			}
+        }
+        localization_key = "SOV_SCIENCE_high"
+    }
+	
+	text = { 
+        trigger = {
+			AND = {
+				check_variable = { SOV_SCIENCE_level < 90 }
+				check_variable = {
+					var = SOV_SCIENCE_level
+					value = 60
+					compare = greater_than_or_equals
+				}
+			}
+        }
+        localization_key = "SOV_SCIENCE_acceptable"
+    }
+	
+	text = { 
+        trigger = {
+			AND = {
+				check_variable = { SOV_SCIENCE_level < 60 }
+				check_variable = {
+					var = SOV_SCIENCE_level
+					value = 25
+					compare = greater_than_or_equals
+				}
+			}
+        }
+        localization_key = "SOV_SCIENCE_medium"
+    }
+	
+	text = { 
+        trigger = {
+			AND = {
+				check_variable = { SOV_SCIENCE_level < 25 }
+				check_variable = {
+					var = SOV_SCIENCE_level
+					value = 10
+					compare = greater_than_or_equals
+				}
+			}
+        }
+        localization_key = "SOV_SCIENCE_low"
+    }
+	
+	text = {
+		trigger = {
+			check_variable = { SOV_SCIENCE_level < 10 }
+        }
+		localization_key = "SOV_SCIENCE_pitiful"
+    }
+}

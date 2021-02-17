@@ -37,6 +37,8 @@ set_popularities = {
 	ultranational_statism = 10
 }
 
+set_cosmetic_tag = LIT_GER_occupied
+
 create_country_leader = {
 	name = "Ludwig Beck"
 	desc = "POLITICS_LUDWIG_BECK_DESC"

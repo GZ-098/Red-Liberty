@@ -361,3 +361,8 @@ BEL_FRA_exiled_govt = {
 	color = rgb { 43 86 173 }
 	color_ui = rgb { 74 147 255 }
 }
+
+LIT_GER_occupied = {
+	color = rgb { 102 102 73 }
+	color_ui = rgb { 95 95 0 }
+}
