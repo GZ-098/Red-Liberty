@@ -1,6 +1,6 @@
 capital = 596
 
-oob = "ZHE_1936"
+oob = "empty"
 
 # Starting tech
 set_technology = {
@@ -9,26 +9,32 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = autocratic_despotism
+	ruling_party = martial_despotism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	revolutionary_socialism = 2
-	democratic_socialism = 1
-	liberalism = 16
-	conservatism = 4
-	autocratic_despotism = 73
-	empowered_nationalism = 4 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 2
+	social_democracy = 15
+	progressive_liberalism = 25
+	market_libertarianism = 1
+	national_conservatism = 15
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 10
+	martial_despotism = 32
+	ultranational_statism = 0
 }
 
 create_country_leader = {
 	name = "Li Liejun"
 	desc = ""
-	picture = "GFX_portrait_xsm_ma_bufang"
+	picture = ""
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = martial_despotism_subtype
 	traits = {
 		#
 	}

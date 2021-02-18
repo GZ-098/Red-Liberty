@@ -1,0 +1,142 @@
+ENG_recalc_parliament = { # this will recalculate the number of representatives based on party popularity, in an unbiased manner which does not favor any parties
+	
+	#Sets variable to check for discrepencies
+	set_variable = {
+		ENG_old_mps_total = mps_total
+	}
+	
+	set_variable = {
+		communist_mps = party_popularity@revolutionary_autocacy
+	}
+	add_to_variable = {
+		communist_mps = party_popularity@proletarian_dictatorship
+	}
+	
+	set_variable = {
+		labour_mps = party_popularity@libertarian_socialism
+	}
+	add_to_variable = {
+		labour_mps = party_popularity@social_democracy
+	}
+	
+	set_variable = {
+		liberal_mps = party_popularity@progressive_liberalism
+	}
+	add_to_variable = {
+		liberal_mps = party_popularity@market_libertarianism
+	}
+	
+	set_variable = {
+		conservative_mps = party_popularity@national_conservatism
+	}
+	
+	set_variable = {
+		fascist_mps = party_popularity@ultranational_statism
+	}
+	
+	#Gets seats
+	multiply_variable = {
+		communist_mps = mps_total
+	}
+	multiply_variable = {
+		labour_mps = mps_total
+	}
+	multiply_variable = {
+		liberal_mps = mps_total
+	}
+	multiply_variable = {
+		conservative_mps = mps_total
+	}
+	multiply_variable = {
+		fascist_mps = mps_total
+	}
+	
+	#rounds
+	round_variable = communist_mps
+	round_variable = labour_mps
+	round_variable = liberal_mps
+	round_variable = conservative_mps
+	round_variable = fascist_mps
+	
+	#Gets new total seat value
+	set_variable = {
+		mps_total = 0
+	}
+	add_to_variable = {
+		mps_total = communist_mps
+	}
+	add_to_variable = {
+		mps_total = labour_mps
+	}
+	add_to_variable = {
+		mps_total = liberal_mps
+	}
+	add_to_variable = {
+		mps_total = conservative_mps
+	}
+	add_to_variable = {
+		mps_total = fascist_mps
+	}
+	
+	#gets discrepency
+	subtract_from_variable = {
+		ENG_old_mps_total = mps_total
+	}
+	
+	#deals with discrepency, if needed
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					ENG_old_mps_total = 0
+				}
+			}
+		}
+		add_to_variable = {
+			mps_total = ENG_old_mps_total
+		}
+		if = {
+			limit = {
+				has_government = proletarian_dictatorship
+			}
+			add_to_variable = {
+				communist_mps = ENG_old_mps_total
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_government = libertarian_socialism
+					has_government = social_democracy
+				}
+			}
+			add_to_variable = {
+				labour_mps = ENG_old_mps_total
+			}
+		}
+		else_if = {
+			limit = {
+				has_government = progressive_liberalism
+			}
+			add_to_variable = {
+				liberal_mps = ENG_old_mps_total
+			}
+		}
+		else_if = {
+			limit = {
+				has_government = national_conservatism
+			}
+			add_to_variable = {
+				conservative_mps = ENG_old_mps_total
+			}
+		}
+		else_if = {
+			limit = {
+				has_government = ultranational_statism
+			}
+			add_to_variable = {
+				fascist_mps = ENG_old_mps_total
+			}
+		}
+	}
+}

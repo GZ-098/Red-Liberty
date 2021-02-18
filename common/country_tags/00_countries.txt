@@ -236,6 +236,9 @@ QIE = "countries/Qing.txt"
 ZHI = "countries/Zhili.txt"
 HNN = "countries/Hunan.txt"
 
+### East Indies ###
+SRW = "countries/Sarawak.txt"
+
 ### Leftists ###
 AWA = "countries/American Worker's Army.txt"
 SEC = "countries/Seattle Commune.txt"

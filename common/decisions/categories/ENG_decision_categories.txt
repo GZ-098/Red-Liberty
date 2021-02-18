@@ -1,0 +1,11 @@
+ENG_parliament = {
+	icon = ENG_parliament
+	
+	allowed = {
+		tag = ENG
+	}
+
+	scripted_gui = parliament_gui
+
+	priority = 85
+}

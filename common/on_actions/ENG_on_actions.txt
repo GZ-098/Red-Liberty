@@ -1,0 +1,14 @@
+on_actions = {
+
+	on_startup = {
+	
+		effect = {
+			ENG = {
+				set_variable = { mps_total = 615 }
+				ENG_recalc_parliament = yes
+
+				parliament_gui_initial = yes
+			}
+		}
+	}
+}

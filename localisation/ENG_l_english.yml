@@ -15,6 +15,11 @@
  ENG_authoritarian_republicanism_party:0 "--"
  ENG_martial_despotism_party:0 "--"
  ENG_ultranational_statism_party:0 "BUF"
+ 
+ parliament_gui_title:0 "The House of Commons"
+ 
+ ENG_parliament:0 "The British Parliament"
+ ENG_parliament_desc:0 "§YCPGB Seats:§! [?communist_mps]\n§YLabour Seats:§! [?labour_mps]\n§YLiberal Seats:§! [?liberal_mps]\n§YConservative Seats:§! [?conservative_mps]\n§YBUF Seats:§! [?fascist_mps]\n\nTotal Seats: [?mps_total]"
 
  ENG_a_unstable_coalition:0 "An Unstable Government"
  ENG_a_unstable_coalition_desc:0 "The Atlee Government under the Labour Party has been since it's conception, entirely unstable. A healthy distrust of their Socialistic policies and weak leadership in the face of National Crisis has led to the people of Great Britain to look elsewhere for leadership."

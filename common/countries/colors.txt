@@ -259,8 +259,8 @@ SIK = {
 	color_ui = rgb { 222 247 198 }
 }
 TIB = {
-	color = rgb { 80 115 45}
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 212 212 212 }
+	color_ui = rgb { 235 235 235 }
 }
 URG = {
 	color = rgb { 171 190 152 }
@@ -339,7 +339,7 @@ GXC = {
 }
 
 SHX = {
-	color = rgb { 82  2  15 }
+	color = rgb { 122 103 75 }
 	color_ui = rgb { 101  30  41 }
 }
 
@@ -782,7 +782,7 @@ ZHE = {
 }
 
 GUD = {
-	color = rgb { 255 120 71 }
+	color = rgb { 91 120 62 } # { 50 168 82 }
 	color_ui = rgb { 255 120 71 }
 }
 
@@ -821,4 +821,14 @@ AWA = {
 CPF = {
 	color = rgb { 153 133 104 }
 	color_ui = rgb { 153 133 104 }
+}
+
+SRW = {
+	color = rgb { 97 209 251 }
+	color_ui = rgb { 97 209 251 }
+}
+
+HNN = {
+	color = rgb { 79 140 95 }
+	color_ui = rgb { 79 140 95 }
 }
