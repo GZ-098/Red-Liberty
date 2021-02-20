@@ -2305,9 +2305,6 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_industrial_works
 		}
-		mutually_exclusive = {
-			focus = ITA_the_war_machine_of_italia
-		}
 		x = 53
 		y = 4
 		completion_reward = {
@@ -2319,9 +2316,6 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = ITA_industrial_works
-		}
-		mutually_exclusive = {
-			focus = ITA_the_peoples_civic_works
 		}
 		x = 47
 		y = 4
@@ -2463,6 +2457,339 @@ focus_tree = {
 		}
 		x = 49
 		y = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_italian_half_tracks
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_shift_towards_mechanization
+		}
+		x = 48
+		y = 6
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_infastructer_for_trucks
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_shift_towards_mechanization
+		}
+		x = 50
+		y = 6
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_italy_s_answer_to_the_model_t
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_italian_half_tracks focus = ITA_infastructer_for_trucks
+		}
+		x = 49
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_all_roads_lead_to_rome
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_italy_s_answer_to_the_model_t 
+		}
+		x = 49
+		y = 8
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_bunkers_on_every_mountian_top
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_all_roads_lead_to_rome 
+		}
+		x = 48
+		y = 9
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_moving_fortresses 
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_all_roads_lead_to_rome 
+		}
+		x = 48
+		y = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_the_terrors_of_the_night 
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_moving_fortresses 
+		}
+		x = 48
+		y = 11
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_fort_sicily
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_all_roads_lead_to_rome 
+		}
+		x = 50
+		y = 9
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_italian_light_tank_efforts
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_fort_sicily 
+		}
+		x = 50
+		y = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_italian_medium_tank_efforts
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_italian_light_tank_efforts 
+		}
+		x = 50
+		y = 11
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_tanks_to_cross_oceans
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_italian_medium_tank_efforts focus = ITA_the_terrors_of_the_night
+		}
+		x = 49
+		y = 12
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_dockyard_construction
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_organize_local_malitia_forceses 
+		}
+		prerequisite = {
+			focus = ITA_tanks_to_cross_oceans 
+		}
+		prerequisite = {
+			focus = ITA_a_gun_famous_world_wide 
+		}
+		x = 46
+		y = 13
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_the_ultimiate_port_of_venice
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_dockyard_construction 
+		}
+		x = 46
+		y = 14
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_submarine_killers
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_the_ultimiate_port_of_venice 
+		}
+		mutually_exclusive = {
+			focus = ITA_the_fastest_ships_that_have_the_biggest_guns
+		}
+		x = 44
+		y = 15
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_faster_torpeados
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_submarine_killers 
+		}
+		x = 44
+		y = 16
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_better_and_improved_depth_charges
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_faster_torpeados 
+		}
+		x = 46
+		y = 17
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_break_throughs_in_sonnar
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_faster_torpeados 
+		}
+		x = 44
+		y = 17
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_escaping_via_smoke_trails
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_better_and_improved_depth_charges 
+		}
+		prerequisite = {
+			focus = ITA_break_throughs_in_sonnar 
+		}
+		x = 45
+		y = 18
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_mines_to_fill_the_mediterranean
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_escaping_via_smoke_trails 
+		}
+		x = 45
+		y = 19
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_the_fastest_ships_that_have_the_biggest_guns
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_the_ultimiate_port_of_venice 
+		}
+		mutually_exclusive= {
+			focus = ITA_submarine_killers
+		}
+		x = 48
+		y = 15
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_the_biggest_guns
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_the_fastest_ships_that_have_the_biggest_guns 
+		}
+		x = 48
+		y = 16
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_sea_planes
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_taking_the_planes_with_us 
+		}
+		prerequisite = {
+			focus = ITA_the_biggest_guns 
+		}
+		x = 49
+		y = 17
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_shells_as_big_as_trees 
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_sea_planes 
+		}
+		x = 49
+		y = 18
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_cruisers_and_super_structers 
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_shells_as_big_as_trees 
+		}
+		x = 49
+		y = 19
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_taking_the_planes_with_us
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_the_fastest_ships_that_have_the_biggest_guns 
+		}
+		x = 50
+		y = 16
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_italy_is_armed_and_ready
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_mines_to_fill_the_mediterranean 
+		}
+		prerequisite = {
+			focus = ITA_cruisers_and_super_structers 
+		}
+		x = 47
+		y = 20
 		completion_reward = {
 		}
 	}
