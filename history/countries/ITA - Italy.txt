@@ -10,6 +10,8 @@ add_ideas = {
 	ITA_complete_economic_failure
 	ITA_leftists_in_the_blackshirts
 	ITA_leftists_in_the_grand_council_of_fascism
+	ITA_undecided_buget
+	ITA_undecided_tax_policy
 	
 	limited_exports
 	limited_conscription

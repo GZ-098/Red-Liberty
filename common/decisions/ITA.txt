@@ -686,6 +686,15 @@ ITA_taxes_managment = {
 		complete_effect = { 
 			IF = {
 				limit = {
+					has_idea = ITA_undecided_tax_policy
+				}
+				swap_ideas = {
+					remove_idea = ITA_undecided_tax_policy
+					add_idea = ITA_taxes_high
+				}
+			}
+			IF = {
+				limit = {
 					has_idea = ITA_taxes_low
 				}
 				swap_ideas = {
@@ -728,6 +737,15 @@ ITA_taxes_managment = {
 		complete_effect = { 
 			IF = {
 				limit = {
+					has_idea = ITA_undecided_tax_policy
+				}
+				swap_ideas = {
+					remove_idea = ITA_undecided_tax_policy
+					add_idea = ITA_taxes_medium
+				}
+			}
+			IF = {
+				limit = {
 					has_idea = ITA_taxes_high
 				}
 				swap_ideas = {
@@ -767,7 +785,16 @@ ITA_taxes_managment = {
 
 		days_remove = 25
 		
-		complete_effect = { 
+		complete_effect = {
+			IF = {
+				limit = {
+					has_idea = ITA_undecided_tax_policy
+				}
+				swap_ideas = {
+					remove_idea = ITA_undecided_tax_policy
+					add_idea = ITA_taxes_low
+				}
+			} 
 			IF = {
 				limit = {
 					has_idea = ITA_taxes_medium
@@ -812,6 +839,15 @@ ITA_buget_managment = {
 		days_remove = 25
 		
 		complete_effect = { 
+			IF = {
+				limit = {
+					has_idea = ITA_undecided_buget
+				}
+				swap_ideas = {
+					remove_idea = ITA_undecided_buget
+					add_idea = ITA_mil_focused
+				}
+			}
 			IF = {
 				limit = {
 					has_idea = ITA_civ_mil_focused
@@ -901,6 +937,15 @@ ITA_buget_managment = {
 		complete_effect = { 
 			IF = {
 				limit = {
+					has_idea = ITA_undecided_buget
+				}
+				swap_ideas = {
+					remove_idea = ITA_undecided_buget
+					add_idea = ITA_civ_mil_focused
+				}
+			}
+			IF = {
+				limit = {
 					has_idea = ITA_mil_focused
 				}
 				swap_ideas = {
@@ -988,6 +1033,15 @@ ITA_buget_managment = {
 		complete_effect = { 
 			IF = {
 				limit = {
+					has_idea = ITA_undecided_buget
+				}
+				swap_ideas = {
+					remove_idea = ITA_undecided_buget
+					add_idea = ITA_civ_focused
+				}
+			}
+			IF = {
+				limit = {
 					has_idea = ITA_mil_focused
 				}
 				swap_ideas = {
@@ -1064,6 +1118,15 @@ ITA_buget_managment = {
 		days_remove = 25
 		
 		complete_effect = { 
+			IF = {
+				limit = {
+					has_idea = ITA_undecided_buget
+				}
+				swap_ideas = {
+					remove_idea = ITA_undecided_buget
+					add_idea = ITA_nav_civ_focused
+				}
+			}
 			IF = {
 				limit = {
 					has_idea = ITA_mil_focused
@@ -1153,6 +1216,15 @@ ITA_buget_managment = {
 		complete_effect = { 
 			IF = {
 				limit = {
+					has_idea = ITA_undecided_buget
+				}
+				swap_ideas = {
+					remove_idea = ITA_undecided_buget
+					add_idea = ITA_nav_focused
+				}
+			}
+			IF = {
+				limit = {
 					has_idea = ITA_mil_focused
 				}
 				swap_ideas = {
@@ -1238,6 +1310,15 @@ ITA_buget_managment = {
 		days_remove = 25
 		
 		complete_effect = { 
+			IF = {
+				limit = {
+					has_idea = ITA_undecided_buget
+				}
+				swap_ideas = {
+					remove_idea = ITA_undecided_buget
+					add_idea = ITA_tech_focused
+				}
+			}
 			IF = {
 				limit = {
 					has_idea = ITA_mil_focused
@@ -1327,6 +1408,15 @@ ITA_buget_managment = {
 		complete_effect = { 
 			IF = {
 				limit = {
+					has_idea = ITA_undecided_buget
+				}
+				swap_ideas = {
+					remove_idea = ITA_mil_focused
+					add_idea = ITA_tech_civ_focused
+				}
+			}
+			IF = {
+				limit = {
 					has_idea = ITA_mil_focused
 				}
 				swap_ideas = {
@@ -1411,7 +1501,16 @@ ITA_buget_managment = {
 
 		days_remove = 25
 		
-		complete_effect = { 
+		complete_effect = {
+			IF = {
+				limit = {
+					has_idea = ITA_undecided_buget
+				}
+				swap_ideas = {
+					remove_idea = ITA_undecided_buget
+					add_idea = ITA_tech_mil_focused
+				}
+			}
 			IF = {
 				limit = {
 					has_idea = ITA_mil_focused
