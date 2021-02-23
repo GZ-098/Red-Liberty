@@ -31,8 +31,6 @@ country_event = { # far east revolt
 				add_state_core = 560
 				add_state_core = 561
 				add_state_core = 562
-				add_state_core = 563
-				add_state_core = 564
 				add_state_core = 657
 			}
 			RUS = {

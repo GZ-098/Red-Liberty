@@ -20,3 +20,10 @@ USA_election_season_category = {
 		original_tag = USA
 	}
 }
+
+USA_american_economy_category = {
+	icon = usa_congress
+	allowed = {
+		original_tag = USA
+	}
+}

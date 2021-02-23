@@ -1,0 +1,83 @@
+USA_american_economy_category = {
+	
+	USA_print_money = {
+	
+		icon = ger_mefo_bills
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			add_to_variable = { USA_inflation = 0.05 }
+			add_to_variable = { USA_inflation_change = 0.15 }
+		}
+	}
+	
+	USA_increase_interest_rates = {
+	
+		icon = ger_mefo_bills
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			add_to_variable = { USA_inflation = -0.05 }
+			add_to_variable = { USA_inflation_change = -0.15 }
+		}
+	}
+	
+	USA_implement_price_controls = {
+	
+		icon = ger_mefo_bills
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			add_to_variable = { USA_inflation = -0.1 }
+			add_to_variable = { USA_inflation_change = -0.2 }
+			add_to_variable = { USA_unemployment = 0.1 }
+			add_to_variable = { USA_unemployment_change = 0.15 }
+		}
+	}
+	
+	USA_public_works = {
+	
+		icon = ger_mefo_bills
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			add_to_variable = { USA_unemployment_change = -0.15 }
+		}
+	}
+}

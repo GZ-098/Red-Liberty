@@ -62,6 +62,7 @@
  start_social_security_act:0 "The Social Security Act"
  social_security_passed:0 "We have passed the Social Security Act."
  us_bill.2.t_passed:0 "The Social Security Act - Passed"
+ us_bill.2.t_failed:0 "The Social Security Act - Failed"
  us_bill.2.a:0 "Finally, the people can rest easy."
  USA_social_security_act_effect:0 "If passed, the §YSocial Security Act§! will provide the following bonus:\nModify §YThe Great Depression§! by\nDaily Political Power Gain: §G+0.10§!\nConsumer Goods Factories: §Y-5.0%§!\n§YCivilian Factory§! construction speed: §G+5.00%§!\n\n"
  

@@ -18,19 +18,24 @@ set_technology = {
 
 
 set_politics = {
-	ruling_party = liberalism
+	ruling_party = market_libertarianism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 7
+	social_democracy = 15
+	progressive_liberalism = 17
+	market_libertarianism = 33
+	national_conservatism = 23
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 5
+	martial_despotism = 0
+	ultranational_statism = 0
 }
 
 add_ideas = {
@@ -45,52 +50,8 @@ create_country_leader = {
 	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
 	picture = "Portrait_Switzerland_Federal_council.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = market_libertarianism_subtype
 	traits = {
 		#
 	}
-}
-
-create_country_leader = {
-	name = "Ernest Béuin"
-	desc = "POLITICS_ERNST_BEGUIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Dr. Max Leo Keller"
-	desc = "POLITICS_MAX_LEO_KELLER_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" 
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Fritz Platten"
-	desc = "POLITICS_FRITZ_PLATTEN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "Henri Guisan"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {  winter_specialist }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
 }

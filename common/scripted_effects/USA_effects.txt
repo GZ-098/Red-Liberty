@@ -1,14 +1,14 @@
 improve_great_depression = {
 	if = {
 		limit = {
-			has_ideas = USA_the_great_depression_1
+			has_ideas = USA_the_great_depression_3
 		}
 		swap_ideas = {
-			remove_idea = USA_the_great_depression_1
-			add_idea = USA_the_great_depression_2
+			remove_idea = USA_the_great_depression_3
+			add_idea = USA_the_great_depression_4
 		}
 	}
-	else_if = {
+	if = {
 		limit = {
 			has_ideas = USA_the_great_depression_2
 		}
@@ -17,13 +17,13 @@ improve_great_depression = {
 			add_idea = USA_the_great_depression_3
 		}
 	}
-	else_if = {
+	if = {
 		limit = {
-			has_ideas = USA_the_great_depression_3
+			has_ideas = USA_the_great_depression_1
 		}
 		swap_ideas = {
-			remove_idea = USA_the_great_depression_3
-			add_idea = USA_the_great_depression_4
+			remove_idea = USA_the_great_depression_1
+			add_idea = USA_the_great_depression_2
 		}
 	}
 }
@@ -53,4 +53,249 @@ clear_state_name_and_desc = {
 	clr_country_flag = USA_states_gui_TX_selected
 	clr_country_flag = USA_states_gui_VA_selected
 	clr_country_flag = USA_states_gui_WV_selected
+}
+
+USA_calc_poverty_goal = {
+	set_variable = { USA_poverty_goal = 0 }
+	
+	if = {
+		limit = { # unemployment going down
+			check_variable = { USA_unemployment_change < 0 }
+		}
+		set_variable = { USA_poverty_goal = USA_poverty }
+		subtract_from_variable = { USA_poverty_goal = 3 }
+	}
+	else_if = {
+		limit = { # unemployment going down quickly
+			check_variable = { USA_unemployment_change < -0.5 }
+		}
+		set_variable = { USA_poverty_goal = USA_poverty }
+		subtract_from_variable = { USA_poverty_goal = 5 }
+	}
+	if = {
+		limit = { # unemployment going up
+			check_variable = { USA_unemployment_change > 0 }
+		}
+		set_variable = { USA_poverty_goal = USA_poverty }
+		add_to_variable = { USA_poverty_goal = 3 }
+	}
+	else_if = {
+		limit = { # unemployment going up quickly
+			check_variable = { USA_unemployment_change > 0.5 }
+		}
+		set_variable = { USA_poverty_goal = USA_poverty }
+		add_to_variable = { USA_poverty_goal = 5 }
+	}
+	
+	if = {
+		limit = { # unemployment is low
+			check_variable = { USA_unemployment < 10 }
+		}
+		subtract_from_variable = { USA_poverty_goal = 0.5 }
+	}
+	else_if = {
+		limit = { # unemployment is high
+			check_variable = { USA_unemployment > 10 }
+		}
+		add_to_variable = { USA_poverty_goal = 0.5 }
+	}
+	
+	if = {
+		limit = {
+			AND = {
+				check_variable = { USA_inflation < -4 }
+			}
+		}
+		add_to_variable = { USA_poverty_goal = 5 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = { USA_inflation < -3 }
+			}
+		}
+		add_to_variable = { USA_poverty_goal = 3 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = { USA_inflation < -1 }
+			}
+		}
+		add_to_variable = { USA_poverty_goal = 2.5 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = { USA_inflation < 0 }
+			}
+		}
+		add_to_variable = { USA_poverty_goal = 2 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = { USA_inflation > 0 }
+				check_variable = { USA_inflation < 2.5 }
+			}
+		}
+		add_to_variable = { USA_poverty_goal = 1 }
+	}
+	if = {
+		limit = {
+			check_variable = { USA_inflation > 2.5 }
+		}
+		add_to_variable = { USA_poverty_goal = 2 }
+	}
+	if = {
+		limit = {
+			check_variable = { USA_inflation > 3 }
+		}
+		add_to_variable = { USA_poverty_goal = 3 }
+	}
+	if = {
+		limit = {
+			check_variable = { USA_inflation > 4 }
+		}
+		add_to_variable = { USA_poverty_goal = 5 }
+	}
+	
+	# keeps unemployment from reaching ridiculous levels
+	if = {
+		limit = {
+			check_variable = { USA_unemployment > 80 }
+		}
+		subtract_from_variable = { USA_unemployment_change = 0.5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { USA_unemployment > 70 }
+		}
+		subtract_from_variable = { USA_unemployment_change = 0.35 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { USA_unemployment > 60 }
+		}
+		subtract_from_variable = { USA_unemployment_change = 0.2 }
+	}
+	
+	# get the difference between poverty and target poverty
+	# positive means the goal is lower than current poverty, and that poverty should go down
+	# negative means the opposite
+	set_variable = { USA_poverty_diff = USA_poverty }
+	subtract_from_variable = { USA_poverty_diff = USA_poverty_goal }
+	
+	if = {
+		limit = {
+			check_variable = { USA_poverty_diff > 6.99 }
+		}
+		set_variable = { USA_poverty_change = -0.5 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { USA_poverty_diff < 7 }
+				check_variable = { USA_poverty_diff > 4.99 }
+			}
+		}
+		set_variable = { USA_poverty_change = -0.35 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { USA_poverty_diff < 5 }
+				check_variable = { USA_poverty_diff > 0.99 }
+			}
+		}
+		set_variable = { USA_poverty_change = -0.25 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { USA_poverty_diff < 1 }
+				check_variable = { USA_poverty_diff > 0 }
+			}
+		}
+		set_variable = { USA_poverty_change = -0.1 }
+	}
+	# if its negative
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { USA_poverty_diff > -1 }
+				check_variable = { USA_poverty_diff < 0 }
+			}
+		}
+		set_variable = { USA_poverty_change = 0.1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { USA_poverty_diff = 0 }
+		}
+		set_variable = { USA_poverty_change = 0 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { USA_poverty_diff > -5 }
+				check_variable = { USA_poverty_diff < -0.99 }
+			}
+		}
+		set_variable = { USA_poverty_change = 0.25 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { USA_poverty_diff > -7 }
+				check_variable = { USA_poverty_diff < -4.99 }
+			}
+		}
+		set_variable = { USA_poverty_change = 0.35 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { USA_poverty_diff < -6.99 }
+		}
+		set_variable = { USA_poverty_change = 0.5 }
+	}
+	
+	log = "[This.GetName] USA_poverty_diff = [?USA.USA_poverty_diff]"
+	
+	# inflation/deflation effect on unemployment
+	if = {
+		limit = {
+			AND = {
+				check_variable = { USA_inflation_change < -0.5 }
+				check_variable = { USA_inflation < 0 }
+			}
+		}
+		add_to_variable = { USA_unemployment_change = 0.1 }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = { USA_inflation_change > 0.5 }
+				check_variable = { USA_inflation > 2.5 }
+			}
+		}
+		add_to_variable = { USA_unemployment_change = 0.1 }
+	}
+	
+	# clamp variables
+	clamp_variable = {
+		var = USA_poverty
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = USA_poverty_goal
+		min = 3
+		max = 95
+	}
+	clamp_variable = {
+		var = USA_unemployment
+		min = 0
+		max = 95
+	}
 }

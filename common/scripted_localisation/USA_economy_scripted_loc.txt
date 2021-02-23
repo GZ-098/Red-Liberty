@@ -1,0 +1,127 @@
+defined_text = {
+	name = GetUnemploymentTrend
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_unemployment_change > 0 }
+        }
+        localization_key = "USA_unemployment_change_increasing"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_unemployment_change < 0 }
+        }
+        localization_key = "USA_unemployment_change_decreasing"
+    }
+}
+
+defined_text = {
+	name = GetPovertyTrend
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_poverty_change > 0 }
+        }
+        localization_key = "USA_unemployment_change_increasing"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_poverty_change < 0 }
+        }
+        localization_key = "USA_unemployment_change_decreasing"
+    }
+}
+
+defined_text = {
+	name = GetInflationTrend
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_inflation_change > 0 }
+        }
+        localization_key = "USA_unemployment_change_increasing"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_inflation_change = 0 }
+        }
+        localization_key = "USA_inflation_change_stagnant"
+    }
+	
+	text = { 
+        trigger = {
+			AND = {
+				check_variable = { USA_inflation_change < 0 }
+				NOT = {
+					check_variable = { USA_inflation < 0 }
+				}
+			}
+        }
+        localization_key = "USA_unemployment_change_decreasing"
+    }
+	
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { USA_inflation_change < 0 }
+				check_variable = { USA_inflation < 0 }
+			}
+		}
+		localization_key = "USA_unemployment_change_decreasing_bad"
+	}
+}
+
+defined_text = {
+	name = GetInflationState
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_inflation > 50 }
+        }
+        localization_key = "USA_inflation_state_hyperinflation"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_inflation > 2.5 }
+        }
+        localization_key = "USA_inflation_state_inflation"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_inflation = 0 }
+        }
+        localization_key = "USA_inflation_state_stagnation"
+    }
+	
+	text = { 
+        trigger = {
+			AND = {
+				check_variable = { USA_inflation > 0 }
+				check_variable = { USA_inflation < 2.5 }
+			}
+        }
+        localization_key = "USA_inflation_state_acceptable_inflation"
+    }
+	
+	text = { 
+        trigger = {
+			AND = {
+				check_variable = { USA_inflation < 0 }
+				check_variable = { USA_inflation > -5 }
+			}
+        }
+        localization_key = "USA_inflation_state_deflation"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_inflation < -4.99 }
+        }
+        localization_key = "USA_inflation_state_high_deflation"
+    }
+}

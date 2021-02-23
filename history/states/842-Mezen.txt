@@ -1,0 +1,22 @@
+state={
+	id=842
+	name="STATE_842"
+	
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 2
+			12530 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = SOV
+	}
+	
+	provinces={
+		87 154 180 3075 3147 6016 6105 6177 6192 9041 9099 9121 9230 10207 11089 12530 
+	}
+	manpower=20000
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

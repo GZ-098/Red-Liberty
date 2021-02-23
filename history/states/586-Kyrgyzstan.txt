@@ -10,9 +10,8 @@ state={
 	}
 
 	history={
-		owner = SCH
-		add_core_of = SCH
-		add_core_of = KAZ
+		owner = KYR
+		add_core_of = KYR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3
@@ -25,7 +24,7 @@ state={
 	}
 
 	provinces={
-		1591 1840 4224 4391 4768 4773 7711 10146 13147 
+		1591 1840 4224 4391 4768 4773 10146 13147 
 	}
 	manpower=2563404
 	buildings_max_level_factor=1.000

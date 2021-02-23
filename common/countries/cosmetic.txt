@@ -366,3 +366,8 @@ LIT_GER_occupied = {
 	color = rgb { 102 102 73 }
 	color_ui = rgb { 95 95 0 }
 }
+
+RUS_cossack_host = {
+	color = rgb { 95 135 80 }
+	color_ui = rgb { 77 133 56 }
+}

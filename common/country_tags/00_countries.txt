@@ -214,6 +214,9 @@ FER = "countries/Far Eastern Republic.txt"
 NRR = "countries/North Russian Republic.txt"
 SCH = "countries/Semirechye Cossack Host.txt"
 ORE = "countries/Orenburg Cossack Host.txt"
+TRB = "countries/Transbaikalia.txt"
+URL = "countries/Ural Cossack Host.txt"
+
 TMY = "countries/Talyshstan.txt"
 
 ITF = "countries/Italian Union of Fascists.txt"

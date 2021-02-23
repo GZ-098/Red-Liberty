@@ -832,3 +832,13 @@ HNN = {
 	color = rgb { 79 140 95 }
 	color_ui = rgb { 79 140 95 }
 }
+
+TRB = {
+	color = rgb { 180 186 140 }
+	color_ui = rgb { 180 186 140 }
+}
+
+URL = {
+	color = rgb { 209 163 115 }
+	color_ui = rgb { 209 163 115 }
+}

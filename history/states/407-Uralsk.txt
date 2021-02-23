@@ -4,8 +4,8 @@ state={
 	name="STATE_407"
 
 	history={
-		owner = RUS
-		add_core_of = KAZ
+		owner = URL
+		add_core_of = URL
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1

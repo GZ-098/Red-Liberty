@@ -35,17 +35,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	SCH_cossacks
+	
 }
 
 set_cosmetic_tag = RUS_cossack_host
-
-create_country_leader = {
-	name = "Boris Annenkov"
-	desc = ""
-	picture = "Portrait_SCH_Boris_Annenkov.dds"
-	expire = "1965.1.1"
-	ideology = martial_despotism_subtype
-	traits = {
-	}
-}

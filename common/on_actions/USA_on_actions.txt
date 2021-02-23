@@ -31,6 +31,9 @@ on_actions = {
 				set_country_flag = USA_presidential_elections
 				USA_class_1_senate_prepare = yes
 			}
+			USA = {
+				USA_calc_poverty_goal = yes
+			}
 			
 			### DUST BOWL SETUP ###
 			373 = {
@@ -107,6 +110,15 @@ on_actions = {
 		}
 	}
 	
+	on_weekly_USA = {
+		effect = {
+			add_to_variable = { USA_unemployment = USA_unemployment_change }
+			add_to_variable = { USA_poverty = USA_poverty_change }
+			add_to_variable = { USA_inflation = USA_inflation_change }
+			USA_calc_poverty_goal = yes
+		}
+	}
+	
 	on_monthly_USA {
 		effect = {
 			every_owned_state = {
@@ -116,6 +128,8 @@ on_actions = {
 				USA_calculate_senators = yes
 				USA_clamp_state_popularities = yes
 			}
+			
+			
 		}
 	}
 	
