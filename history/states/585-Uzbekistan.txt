@@ -4,21 +4,17 @@ state={
 	name="STATE_585"
 
 	history={
-		add_core_of = KYR
-		add_core_of = UZB
-		owner = KYR
+		owner = KHV
+		add_core_of = KHV
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
-
 		}
-
 	}
 
 	provinces={
-		1479 1532 1554 1576 1614 4488 4499 4618 7501 7507 10395 10420 10435 12324 12465 12471 
+		10395 10435 10485 12324 12465 
 	}
-	manpower=1033721
+	manpower=833721
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

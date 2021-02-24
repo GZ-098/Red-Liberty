@@ -216,6 +216,7 @@ SCH = "countries/Semirechye Cossack Host.txt"
 ORE = "countries/Orenburg Cossack Host.txt"
 TRB = "countries/Transbaikalia.txt"
 URL = "countries/Ural Cossack Host.txt"
+KHV = "countries/Khiva.txt"
 
 TMY = "countries/Talyshstan.txt"
 

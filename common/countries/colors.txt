@@ -842,3 +842,18 @@ URL = {
 	color = rgb { 209 163 115 }
 	color_ui = rgb { 209 163 115 }
 }
+
+KHV = {
+	color = rgb { 204 188 106 }
+	color_ui = rgb { 204 188 106 }
+}
+
+UZB = {
+	color = rgb { 196 173 81 }
+	color_ui = rgb { 95 128 73 }
+}
+
+TMS = {
+	color = rgb { 125 120 85 }
+	color_ui = rgb { 125 120 85 }
+}

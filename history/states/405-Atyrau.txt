@@ -9,7 +9,6 @@ state={
 	history={
 		owner = KYR
 		add_core_of = KYR
-		add_core_of = UZB
 		victory_points = {
 			1459 3 
 		}
@@ -20,21 +19,12 @@ state={
 			arms_factory = 2
 
 		}
-		add_core_of = SOV
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-
-			}
-
-		}
-
 	}
 
 	provinces={
 		1459 4629 7682 7775 10488 11687 
 	}
-	manpower=6275820
+	manpower=3275820
 	buildings_max_level_factor=1.000
 	state_category=city
 }
