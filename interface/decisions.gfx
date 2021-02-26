@@ -1,0 +1,61 @@
+spriteTypes = {	
+
+	### categories
+	spriteType = {
+		name = "GFX_revolution_communist_balkans"
+		texturefile = "gfx/interface/decisions/revolution_communist_balkans.dds"
+	}
+	spriteType = {
+		name = "GFX_budget_management"
+		texturefile = "gfx/interface/decisions/budget_management.dds"
+	}
+	spriteType = {
+		name = "GFX_occupation_management"
+		texturefile = "gfx/interface/decisions/occupation_management.dds"
+	}
+	spriteType = {
+		name = "GFX_increase_taxes"
+		texturefile = "gfx/interface/decisions/increase_taxes.dds"
+	}
+	spriteType = {
+		name = "GFX_keep_tax_level"
+		texturefile = "gfx/interface/decisions/keep_tax_level.dds"
+	}
+	spriteType = {
+		name = "GFX_lower_taxes"
+		texturefile = "gfx/interface/decisions/lower_taxes.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_military_focused_buget_gfx"
+		texturefile = "gfx/interface/decisions/ITA_military_focused_buget_gfx.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_civ_mil_focus_gfx"
+		texturefile = "gfx/interface/decisions/ITA_civ_mil_focus_gfx.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_civ_gfx"
+		texturefile = "gfx/interface/decisions/ITA_civ_gfx.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_nav_civ_gfx"
+		texturefile = "gfx/interface/decisions/ITA_nav_civ_gfx.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_nav_gfx"
+		texturefile = "gfx/interface/decisions/ITA_nav_gfx.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_tech_gfx"
+		texturefile = "gfx/interface/decisions/ITA_tech_gfx.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_tech_civ_gfx"
+		texturefile = "gfx/interface/decisions/ITA_tech_civ_gfx.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_tech_mil_gfx"
+		texturefile = "gfx/interface/decisions/ITA_tech_mil_gfx.dds"
+	}
+
+}

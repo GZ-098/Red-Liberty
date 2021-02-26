@@ -820,7 +820,7 @@ ITA_taxes_managment = {
 ITA_buget_managment = {
 	ITA_military_focused_buget = {
 	
-		icon = ITA_military_focused_buget
+		icon = ITA_military_focused_buget_gfx
 		
 		available = {
 		} 
@@ -1012,7 +1012,7 @@ ITA_buget_managment = {
 
 	ITA_civ_focus = {
 	
-		icon = ITA_civ
+		icon = ITA_civ_gfx
 		
 		available = {
 		} 
@@ -1099,7 +1099,7 @@ ITA_buget_managment = {
 
 	ITA_nav_civ_focus = {
 	
-		icon = ITA_nav_civ
+		icon = ITA_nav_civ_gfx
 		
 		available = {
 		} 
@@ -1195,7 +1195,7 @@ ITA_buget_managment = {
 
 	ITA_nav_focus = {
 	
-		icon = ITA_nav
+		icon = ITA_nav_gfx
 		
 		available = {
 		} 
@@ -1291,7 +1291,7 @@ ITA_buget_managment = {
 
 	ITA_tech_focus = {
 	
-		icon = ITA_tech
+		icon = ITA_tech_gfx
 		
 		available = {
 		} 
@@ -1387,7 +1387,7 @@ ITA_buget_managment = {
 
 	ITA_tech_civ_focus = {
 	
-		icon = ITA_tech_civ
+		icon = ITA_tech_civ_gfx
 		
 		available = {
 		} 
@@ -1483,7 +1483,7 @@ ITA_buget_managment = {
 
 	ITA_tech_mil_focus = {
 	
-		icon = ITA_tech_mil
+		icon = ITA_tech_mil_gfx
 		
 		available = {
 		} 
