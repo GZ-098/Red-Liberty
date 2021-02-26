@@ -1,0 +1,71 @@
+division_template = {
+	name = "Litauische Armeedivision"
+	division_names_group = GER_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Kavallerie-Division"
+	division_names_group = GER_MOB_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+
+	division = {
+		location = 6296
+		division_template = "Litauische Armeedivision"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		location = 6296
+		division_template = "Litauische Armeedivision"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		location = 3320
+		division_template = "Litauische Armeedivision"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		location = 11301
+		division_template = "Litauische Armeedivision"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		location = 9483
+		division_template = "Litauische Armeedivision"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+}

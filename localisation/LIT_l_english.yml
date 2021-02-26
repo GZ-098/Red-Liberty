@@ -3,5 +3,9 @@
  LIT_DEF:0 "Lithuania"
  LIT_ADJ:0 "Lithuanian"
  
+ LIT_GER_occupied:0 "Litauen"
+ LIT_GER_occupied_DEF:0 "Lithuania"
+ LIT_GER_occupied_ADJ:0 "Lithuanian"
+ 
  LIT_martial_despotism_party:0 "Militärverwaltung"
  
