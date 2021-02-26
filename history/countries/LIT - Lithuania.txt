@@ -1,8 +1,8 @@
 ﻿capital = 784
 
-oob = "LIT_1936"
+oob = "LIT"
 
-set_research_slots = 3
+set_research_slots = 2
 
 add_ideas = {
 	limited_conscription

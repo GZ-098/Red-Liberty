@@ -9,11 +9,9 @@ OOB = "AHE_1936"
 set_technology = {
 } 
 
-puppet = UKR 
+puppet = UKR
 
-puppet = SER 
-
-puppet = ROM 
+puppet = SER
 
 country_event = { id = danubian_war.1 days = 154 }
 

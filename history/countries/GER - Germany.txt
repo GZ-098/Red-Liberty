@@ -154,6 +154,7 @@ add_ideas = {
 	unpaid_war_expenses
 	faith_in_the_kaiser
 	the_loss_of_a_generation
+	
 	limited_exports
 	volunteer_only
 	partial_economic_mobilisation
@@ -189,7 +190,7 @@ add_namespace = {
 create_field_marshal = {
 	name = "Werner Freiherr von Fritsch"
 	picture = "Portrait_GER_Werner_Freiherr_von_Fritsch.png"
-	traits = { old_guard }
+	traits = { old_guard harsh_leader }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 2
@@ -198,14 +199,37 @@ create_field_marshal = {
 }
 
 create_field_marshal = {
-	name = "Friedrich August von Saschen"
+	name = "Friedrich August III von Saschen"
 	picture = "Portrait_GER_Friedrich_August.tga"
-	traits = { old_guard }
+	traits = { old_guard infantry_officer inspirational_leader }
 	skill = 3
 	attack_skill = 2
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Heinz Guderian"
+	picture = "Portrait_GER_Heinz_Guderian.png"
+	traits = { armor_officer career_officer brilliant_strategist panzer_leader }
+	skill = 3
+
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Karl Dönitz"
+	picture = "Portrait_GER_Karl_Donitz.png"
+	traits = { navy_career_officer seawolf }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 4
 }
 
 if = {
