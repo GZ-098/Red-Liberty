@@ -89,14 +89,21 @@ USA_congress = {
 		
 			USA_bill_vote = yes
 		}
+		
+		priority = 100
 	}
 	
 	USA_talk_with_republicans = {
 		
 		visible = {
-			original_tag = USA
-			check_variable = { bill_id > 0 }
-			check_variable = { senators_republican > 0 }
+			AND = {
+				original_tag = USA
+				check_variable = { bill_id > 0 }
+				check_variable = { senators_republican > 0 }
+				NOT = {
+					has_country_flag = USA_special_decisions_enabled
+				}
+			}
         }
 			
 		cost = republican_flip_cost
@@ -140,6 +147,9 @@ USA_congress = {
 				check_variable = { bill_id > 0 }
 				check_variable = { senators_democrat > 0 }
 				has_country_flag = USA_democrat_discussing
+				NOT = {
+					has_country_flag = USA_special_decisions_enabled
+				}
 			}
         }
 			
@@ -184,6 +194,9 @@ USA_congress = {
 				check_variable = { bill_id > 0 }
 				check_variable = { senators_socialist > 0 }
 				has_country_flag = USA_socialist_discussing
+				NOT = {
+					has_country_flag = USA_special_decisions_enabled
+				}
 			}
         }
 			
@@ -231,6 +244,9 @@ USA_congress = {
 					check_variable = { representatives_communist > 0 }
 				}
 				has_country_flag = USA_communist_discussing
+				NOT = {
+					has_country_flag = USA_special_decisions_enabled
+				}
 			}
         }
 			
@@ -278,6 +294,9 @@ USA_congress = {
 					check_variable = { representatives_fascist > 0 }
 				}
 				has_country_flag = USA_fascist_discussing
+				NOT = {
+					has_country_flag = USA_special_decisions_enabled
+				}
 			}
         }
 			

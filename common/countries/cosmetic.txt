@@ -363,8 +363,8 @@ BEL_FRA_exiled_govt = {
 }
 
 LIT_GER_occupied = {
-	color = rgb { 102 102 73 }
-	color_ui = rgb { 95 95 0 }
+	color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
 }
 
 RUS_cossack_host = {

@@ -109,8 +109,10 @@ shared_focus = {
 	relative_position_id = USA_continue_the_work
 	prerequisite = { focus = USA_continue_the_work }
     completion_reward = {
-        add_political_power = 50
-		# add event about undistributed profits tax
+        country_event = {
+			id = united_states_thomas.8
+			days = 1
+		}
     }
 	
 	ai_will_do = {
