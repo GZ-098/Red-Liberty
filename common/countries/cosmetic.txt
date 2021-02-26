@@ -371,3 +371,8 @@ RUS_cossack_host = {
 	color = rgb { 95 135 80 }
 	color_ui = rgb { 77 133 56 }
 }
+
+KHR_PER_autonomous_state = {
+	color = rgb { 71 113 97 }
+	color_ui = rgb { 92 147 126 }
+}

@@ -230,6 +230,8 @@ KRA = "countries/Krakow.txt"
 
 ### Middle East ###
 ASI = "countries/Asir.txt"
+GIL = "countries/Gilan.txt"
+KHR = "countries/Khorasan.txt"
 
 ### China ###
 SZC = "countries/Sichuan.txt"

@@ -1,0 +1,23 @@
+
+state={
+	id=848
+	name="STATE_848"
+
+	history={
+		owner = GIL
+		add_core_of = GIL
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = PER
+
+	}
+
+	provinces={
+		4901 10454 
+	}
+	manpower=800000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

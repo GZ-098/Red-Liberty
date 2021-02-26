@@ -857,3 +857,13 @@ TMS = {
 	color = rgb { 125 120 85 }
 	color_ui = rgb { 125 120 85 }
 }
+
+GIL = {
+	color = rgb { 214 191 60 }
+	color_ui = rgb { 214 191 60 }
+}
+
+KHR = {
+	color = rgb { 135 104 46 }
+	color_ui = rgb { 135 104 46 }
+}
