@@ -1,7 +1,7 @@
 ﻿##### Division Templates #####
 division_template = {
 	name = "Strelkovaya Diviziya"			# Rifle Division
-	division_names_group = SOV_INF_01
+	division_names_group = RUS_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -20,7 +20,7 @@ division_template = {
 
 division_template = {
 	name = "Gornostrelkovaya Diviziya"		# Mountain Division
-	division_names_group = SOV_MNT_01
+	division_names_group = RUS_MNT_01
 
 	regiments = {
 		mountaineers = { x = 0 y = 0 }	
@@ -38,7 +38,7 @@ division_template = {
 
 division_template = {
 	name = "Motostrelkovaya Diviziya"		# Motor Rifle Division
-	division_names_group = SOV_MOT_01
+	division_names_group = RUS_MOT_01
 											# Note: only represents Moscow Proletariat Division in 1936; after 1938-40, Motor Rifle Divisions had +1 mot regiment (3 bns) 
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -56,7 +56,7 @@ division_template = {
 
 division_template = {
 	name = "Kavaleriyskaya Diviziya" 	# Cavalry Division
-	division_names_group = SOV_CAV_01
+	division_names_group = RUS_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -65,32 +65,6 @@ division_template = {
 		cavalry = { x = 1 y = 1 }
 	}
 }
-
-division_template = {
-	name = "Mekhanizirovaniy Korpus" 				# Represents regular mechanized corps (4 existed in 1935-38); 
-	division_names_group = SOV_MEC_01
-												# Also represents groups of independent tank, mech brigades of the time, though groups are best represented by tank bge 
-													# (2x M/L tank + 1x mot), and 2x mech bge (2x L tank + 1x mot)
-	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }		
-		light_armor = { x = 1 y = 0 }		
-		light_armor = { x = 1 y = 1 }		
-		motorized = { x = 2 y = 0 }		
-		motorized = { x = 2 y = 1 }	
-	}
-}
-
-division_template = {
-	name = "Vozdushno-Desantnaya Brigada"			# Airborne Brigade
-	division_names_group = SOV_PAR_01
-
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
-	}
-}
-
 
 ##### OOB #####
 units = {
@@ -391,6 +365,17 @@ units = {
 		}
 		location = 11223
 		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 278
+		division_template = "Gornostrelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}

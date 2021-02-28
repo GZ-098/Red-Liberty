@@ -867,3 +867,8 @@ KHR = {
 	color = rgb { 135 104 46 }
 	color_ui = rgb { 135 104 46 }
 }
+
+MCA = {
+	color = rgb { 50 109 168 }
+	color_ui = rgb { 50 109 168 }
+}

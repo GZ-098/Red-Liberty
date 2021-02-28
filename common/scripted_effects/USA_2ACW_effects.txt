@@ -29,6 +29,151 @@ ACW_setup_USA = {
 	}
 }
 
+ACW_setup_MCA = {
+	hidden_effect = {
+		MCA = {	
+			add_state_core = 361
+			add_state_core = 362
+			add_state_core = 832
+			add_state_core = 833
+			
+			transfer_state = 361
+			transfer_state = 362
+			transfer_state = 832
+			transfer_state = 833
+			
+			if = {
+				limit = { has_template = "Infantry Division" }
+				delete_unit_template_and_units = { division_template = "Infantry Division" }
+			}
+			if = {
+				limit = { has_template = "National Guard" }
+				delete_unit_template_and_units = { division_template = "National Guard" }
+			}
+			if = {
+				limit = { has_template = "Organized Reserve" }
+				delete_unit_template_and_units = { division_template = "Organized Reserve" }
+			}
+			if = {
+				limit = { has_template = "Cavalry Division" }
+				delete_unit_template_and_units = { division_template = "Cavalry Division" }
+			}
+			if = {
+				limit = { has_template = "Garrison Division" }
+				delete_unit_template_and_units = { division_template = "Garrison Division" }
+			}
+			if = {
+				limit = { has_template = "Marine Brigade" }
+				delete_unit_template_and_units = { division_template = "Marine Brigade" }
+			}
+		}
+		every_unit_leader = {
+			limit = {
+				OR = {
+					has_id = 1 # macarthur
+				}
+			}
+			set_nationality = MCA
+		}
+	}
+}
+
+ACW_setup_CPF = {
+	hidden_effect = {
+		CPF = {	
+			add_state_core = 363
+			add_state_core = 364
+			add_state_core = 365
+			add_state_core = 366
+			add_state_core = 367
+			add_state_core = 368
+			add_state_core = 370
+			add_state_core = 371
+			add_state_core = 372
+			add_state_core = 375
+			
+			transfer_state = 363
+			transfer_state = 364
+			transfer_state = 365
+			transfer_state = 366
+			transfer_state = 367
+			transfer_state = 368
+			transfer_state = 370
+			transfer_state = 371
+			transfer_state = 372
+			transfer_state = 375
+			
+			if = {
+				limit = { has_template = "Infantry Division" }
+				delete_unit_template_and_units = { division_template = "Infantry Division" }
+			}
+			if = {
+				limit = { has_template = "National Guard" }
+				delete_unit_template_and_units = { division_template = "National Guard" }
+			}
+			if = {
+				limit = { has_template = "Organized Reserve" }
+				delete_unit_template_and_units = { division_template = "Organized Reserve" }
+			}
+			if = {
+				limit = { has_template = "Cavalry Division" }
+				delete_unit_template_and_units = { division_template = "Cavalry Division" }
+			}
+			if = {
+				limit = { has_template = "Garrison Division" }
+				delete_unit_template_and_units = { division_template = "Garrison Division" }
+			}
+			if = {
+				limit = { has_template = "Marine Brigade" }
+				delete_unit_template_and_units = { division_template = "Marine Brigade" }
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ACW_setup_AWA = {
 	hidden_effect = {
 		AWA = {	
@@ -94,7 +239,7 @@ ACW_setup_AWA = {
 	}
 }
 
-ACW_setup_CPF = {
+ACW_setup_CPF_old = {
 	hidden_effect = {
 		CPF = {
 			add_state_core = 363

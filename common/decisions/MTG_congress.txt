@@ -93,6 +93,32 @@ USA_congress = {
 		priority = 100
 	}
 	
+	USA_eliminate_payroll_tax = {
+		
+		visible = {
+			AND = {
+				original_tag = USA
+				check_variable = { bill_id = 2 }
+			}
+        }
+			
+		cost = 50
+		
+		fire_only_once = yes
+       		
+		available = {
+			
+		}
+				
+    	complete_effect = {
+			add_to_variable = { republican_supporting_senators = 5 }
+			add_to_variable = { senators_support = 5 }
+			
+			add_to_variable = { democrat_supporting_senators = 4 }
+			add_to_variable = { senators_support = 4 }
+		}
+	}
+	
 	USA_talk_with_republicans = {
 		
 		visible = {

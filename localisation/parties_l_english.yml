@@ -1,6 +1,7 @@
 ﻿l_english:
  insurrectionary_anarchism:0 "Insurrectionary Anarchism"
  revolutionary_autocracy:0 "Revolutionary Autocracy"
+ revolutionary_autocracy_noun:0 "Revolutionary Autocracy"
  proletarian_dictatorship:0 "Proletarian Dictatorship"
  proletarian_dictatorship_noun:0 "Proletarian Dictatorship"
  libertarian_socialism:0 "Libertarian Socialism"
@@ -14,8 +15,8 @@
  national_conservatism:0 "National Conservatism"
  national_conservatism_noun:0 "National Conservatism"
  reactionary_theocracy:0 "Reactionary Theocracy"
- authoritarian_republicanism:0 "Authoritarian Republicanism"
- authoritarian_republicanism_noun:0 "Authoritarian Republicanism"
+ authoritarian_republicanism:0 "Authoritarian Democracy"
+ authoritarian_republicanism_noun:0 "Authoritarian Democracy"
  martial_despotism:0 "Martial Despotism"
  martial_despotism_noun: "Martial Despotism"
  ultranational_statism:0 "Ultranational Statism"

@@ -48,19 +48,19 @@ country_event = { # social security act
 	
 	# different loc based on if it passes or fails
 	title = {
-		text = us_bill.2.t_passed
+		text = us_bill.2.title_passed
 		trigger = { has_country_flag = bill_passed }
 	}
 	title = { 
-		text = us_bill.2.t_failed
+		text = us_bill.2.title_failed
 		trigger = { NOT = { has_country_flag = bill_passed } }
 	}
 	desc = {
-		text = us_bill.2.d_passed
+		text = us_bill.2.desc_passed
 		trigger = { has_country_flag = bill_passed }
 	}
 	desc = {
-		text = us_bill.2.d_failed
+		text = us_bill.2.desc_failed
 		trigger = { NOT = { has_country_flag = bill_passed } }
 	}
 	

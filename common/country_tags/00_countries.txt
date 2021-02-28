@@ -246,6 +246,7 @@ HNN = "countries/Hunan.txt"
 SRW = "countries/Sarawak.txt"
 
 ### Leftists ###
+MCA = "countries/MacArthur Clique.txt"
 AWA = "countries/American Worker's Army.txt"
 SEC = "countries/Seattle Commune.txt"
 

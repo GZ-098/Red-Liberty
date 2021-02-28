@@ -8,7 +8,7 @@ improve_great_depression = {
 			add_idea = USA_the_great_depression_4
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_ideas = USA_the_great_depression_2
 		}
@@ -17,7 +17,7 @@ improve_great_depression = {
 			add_idea = USA_the_great_depression_3
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_ideas = USA_the_great_depression_1
 		}
