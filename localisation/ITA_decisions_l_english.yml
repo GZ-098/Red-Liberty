@@ -1,0 +1,15 @@
+﻿l_english:
+ ITA_taxes_managment:0 "Managment of Taxation"
+ ITA_increase_taxes:0 "Increase Taxes"
+ ITA_maintain_tax_levels:0 "Maintain Tax Levels"
+ ITA_decrease_taxes:0 "Decrease Taxes"
+ ITA_buget_managment:0 "Managment of Budget Spending"
+ ITA_military_focused_buget:0 "Military Focused Budget"
+ ITA_civ_mil_focus:0 "Civlian-Military Split Budget"
+ ITA_civ_focus:0 "Civilian Focused Budget"
+ ITA_nav_civ_focus:0 "Civilian-Naval Split Budget"
+ ITA_nav_focus:0 "Naval Focused Budget"
+ ITA_tech_focus:0 "Technologically Focused Budget"
+ ITA_tech_civ_focus:0 "Civlian Technology Focused Budget"
+ ITA_tech_mil_focus:0 "Military Technology Focused Budget"
+ 

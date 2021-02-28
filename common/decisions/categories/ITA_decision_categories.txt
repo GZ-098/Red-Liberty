@@ -49,7 +49,7 @@ ITA_spread_revolution_to_balkans = {
 
 ITA_taxes_managment = {
 
-	icon = decision_category_generic
+	icon = ITA_taxes
 	
 	allowed = {
 		original_tag = ITA
@@ -62,7 +62,7 @@ ITA_taxes_managment = {
 
 ITA_buget_managment = {
 
-	icon = buget_managment
+	icon = budget_management
 	
 	allowed = {
 		original_tag = ITA
