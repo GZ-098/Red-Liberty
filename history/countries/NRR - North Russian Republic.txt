@@ -14,18 +14,24 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = autocratic_despotism
+	ruling_party = martial_despotism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 5
-	conservatism = 0
-	autocratic_despotism = 85
-	empowered_nationalism = 0 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 0
+	social_democracy = 0
+	progressive_liberalism = 0
+	market_libertarianism = 5
+	national_conservatism = 25
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 25
+	martial_despotism = 35
+	ultranational_statism = 10
 } 
 
 add_ideas = {
@@ -33,6 +39,8 @@ add_ideas = {
 	NRR_starving_army 
 	NRR_northern_isolation
 }
+
+set_cosmetic_tag = RUS_cossack_host
 
 create_country_leader = {
 	name = "Piotr Struve"
