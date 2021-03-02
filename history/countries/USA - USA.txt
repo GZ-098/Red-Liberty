@@ -138,6 +138,7 @@ add_ideas = {
 	USA_red_liberty
 	USA_the_great_depression_2
 	USA_pacifism
+	USA_neglected_military
 
 	undisturbed_isolation
 	great_depression
@@ -295,6 +296,50 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Smedley Butler"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Smedley_Butler.tga"
+	traits = {
+		career_officer
+		offensive_doctrine
+		inspirational_leader
+		commando
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "George Van Horn Moseley"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_George_Van_Horn_Moseley.tga"
+	traits = {
+		politically_connected
+		brilliant_strategist
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Edward H. Brooks"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Edward_H_Brooks.png"
+	traits = {
+		trait_engineer
+		trait_reckless
+	}
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {

@@ -20,8 +20,6 @@ ideas = {
 				
 			modifier = {
 				stability_factor = -0.05
-				libertarian_socialism_drift = 0.01
-				ultranational_statism_drift = 0.01
 			}
 		}
 		
@@ -150,6 +148,36 @@ ideas = {
 				stability_factor = 0.15
 				mobilization_speed = -0.25
 				conscription_factor = -0.25
+			}
+		}
+		
+		USA_neglected_military = {
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {	 
+				always = yes	
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			modifier = {
+				army_org_factor = -0.1
+				naval_coordination = -0.1
+				planning_speed = -0.15
+				production_speed_arms_factory_factor = -0.2
+			}
+			
+			research_bonus = {
+                land_doctrine = -0.75
+				air_doctrine = -0.75
+				naval_doctrine = -0.75
 			}
 		}
 	} 
