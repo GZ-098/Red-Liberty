@@ -192,7 +192,11 @@ ideologies = {
 	
 	market_libertarianism = {
 	
-		types = { 
+		types = {
+			liberal_conservatism_subtype = {
+			
+			}
+		
 			market_libertarianism_subtype = {
 			
 			}

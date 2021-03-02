@@ -430,9 +430,6 @@ USA_recalc_house = { # this will recalculate the number of representatives based
 	set_variable = {
 		representatives_communist = party_popularity@revolutionary_autocacy
 	}
-	add_to_variable = {
-		representatives_communist = party_popularity@proletarian_dictatorship
-	}
 	
 	set_variable = {
 		representatives_socialist = party_popularity@libertarian_socialism
@@ -440,16 +437,21 @@ USA_recalc_house = { # this will recalculate the number of representatives based
 	add_to_variable = {
 		representatives_socialist = party_popularity@social_democracy
 	}
+	add_to_variable = {
+		representatives_socialist = party_popularity@proletarian_dictatorship
+	}
+	
+	set_variable = {
+		representatives_republican = party_popularity@market_libertarianism
+	}
 	
 	set_variable = {
 		representatives_republican = party_popularity@progressive_liberalism
 	}
 	add_to_variable = {
-		representatives_republican = party_popularity@market_libertarianism
-	}
-	set_variable = {
 		representatives_democrat = party_popularity@national_conservatism
 	}
+	
 	set_variable = {
 		representatives_fascist = party_popularity@authoritarian_republicanism
 	}

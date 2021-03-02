@@ -329,7 +329,7 @@ initialize_US_elections_system = {
 		set_variable = { democrat_popularity = 0.4 }
 		
 		set_variable = { senator_1 = 1 }
-		set_variable = { senator_2 = 2 }
+		set_variable = { senator_2 = 3 }
 		
 		set_variable = { electoral_votes = 4 }
 	}

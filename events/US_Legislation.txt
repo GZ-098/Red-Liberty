@@ -73,7 +73,10 @@ country_event = { # social security act
 	option = { # bill passes
 		name = us_bill.2.a
 		trigger = { has_country_flag = bill_passed }
-		improve_great_depression = yes
+		swap_ideas = {
+			remove_idea = USA_the_great_depression_2
+			add_idea = USA_the_great_depression_3
+		}
 		set_country_flag = social_security_passed
 		USA_bill_clear = yes # ALWAYS DO THIS
 	}

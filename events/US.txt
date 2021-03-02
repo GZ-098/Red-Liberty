@@ -26,7 +26,7 @@ country_event = { # rnc
 	fire_only_once = yes
 
 	option = {
-		name = "Quentin Roosevelt!"
+		name = "Theodore Roosevelt Jr!"
 	}
 }
 
@@ -41,6 +41,90 @@ country_event = { # dnc
 
 	option = {
 		name = "J. Lister Hill!"
+		country_event = {
+			id = united_states.5
+			days = 3
+		}
+		set_country_flag = USA_lister_candidate
+	}
+	
+	option = {
+		name = "Burton K. Wheeler!"
+		country_event = {
+			id = united_states.4
+			days = 3
+		}
+		set_country_flag = USA_wheeler_candidate
+	}
+}
+
+country_event = { # conservatives abandon democratic party
+	id = united_states.4
+	title = "A House Divided"
+	desc = united_states.4.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Conservatives always abandon democracy."
+		add_popularity = {
+			ideology = national_conservatism
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = authoritarian_republicanism
+			popularity = 0.1
+		}
+	}
+}
+
+country_event = { # liberals abandon democratic party
+	id = united_states.5
+	title = "A House Divided"
+	desc = united_states.5.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Liberals and their pipe dreams."
+		add_popularity = {
+			ideology = progressive_liberalism
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = social_democracy
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = market_libertarianism
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = { # spa convention - choosing veep
+	id = united_states.6
+	title = ""
+	desc = united_states.6.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "The Moderate."
+	}
+	
+	option = {
+		name = "The Progressive."
+	}
+	
+	option = {
+		name = "The Radical."
 	}
 }
 
