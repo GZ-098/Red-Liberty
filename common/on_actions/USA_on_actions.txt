@@ -110,7 +110,7 @@ on_actions = {
 		}
 	}
 	
-	on_weekly_USA = {
+	on_monthly_USA = {
 		effect = {
 			add_to_variable = { USA_unemployment = USA_unemployment_change }
 			add_to_variable = { USA_poverty = USA_poverty_change }

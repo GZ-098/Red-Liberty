@@ -872,3 +872,7 @@ MCA = {
 	color = rgb { 50 109 168 }
 	color_ui = rgb { 50 109 168 }
 }
+
+FER = {
+	color = rgb { 173 59 70 }
+}

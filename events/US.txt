@@ -24,9 +24,15 @@ country_event = { # rnc
 	is_triggered_only = yes
 	
 	fire_only_once = yes
+	
+	option = {
+		name = "Alf Landon!"
+		set_country_flag = USA_landon_candidate
+	}
 
 	option = {
 		name = "Theodore Roosevelt Jr!"
+		set_country_flag = USA_roosevelt_candidate
 	}
 }
 
@@ -108,7 +114,7 @@ country_event = { # liberals abandon democratic party
 
 country_event = { # spa convention - choosing veep
 	id = united_states.6
-	title = ""
+	title = "Selecting a Running Mate"
 	desc = united_states.6.desc
 	
 	is_triggered_only = yes
@@ -117,14 +123,17 @@ country_event = { # spa convention - choosing veep
 
 	option = {
 		name = "The Moderate."
+		set_country_flag = USA_moderate_veep
 	}
 	
 	option = {
 		name = "The Progressive."
+		set_country_flag = USA_progressive_veep
 	}
 	
 	option = {
 		name = "The Radical."
+		set_country_flag = USA_radical_veep
 	}
 }
 

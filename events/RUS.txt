@@ -43,6 +43,9 @@ country_event = { # far east revolt
 					}
 				}
 			}
+			FER = {
+				load_oob = FER
+			}
 		}
 	}
 
@@ -57,7 +60,25 @@ country_event = { # far east revolt
 		SOV = {
 			country_event = {
 				id = soviet.2
+				days = 2
 			}
 		}
+	}
+	
+	option = {
+		name = "Death to Kolchak!"
+		RUS = {
+			declare_war_on = {
+				target = FER
+				type = annex_everything
+			}
+		}
+		SOV = {
+			country_event = {
+				id = soviet.2
+				days = 2
+			}
+		}
+		FER = { change_tag_from = ROOT }
 	}
 }

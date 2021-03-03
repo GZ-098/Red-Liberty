@@ -17,11 +17,16 @@ country_event = { # dnc
 	id = united_states.3
 	days = 176
 }
+country_event = { # dnc
+	id = united_states.6
+	days = 185
+}
 
 set_research_slots = 4
 set_stability = 0.75
 set_war_support = 0
 
+set_country_flag = proletarian_coalition
 set_country_flag = libertarian_socialism_coalition
 set_country_flag = social_democracy_coalition
 
