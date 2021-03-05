@@ -245,14 +245,23 @@ HNN = "countries/Hunan.txt"
 ### East Indies ###
 SRW = "countries/Sarawak.txt"
 
-### Leftists ###
+### Civil War Splinters ###
 MCA = "countries/MacArthur Clique.txt"
-AWA = "countries/American Worker's Army.txt"
-SEC = "countries/Seattle Commune.txt"
-
-### Greens ###
-FRM = "countries/Farmer's Republics.txt"
+TEX = "countries/Texas.txt"
 NEE = "countries/New England.txt"
 
-### Anti-Radicals ###
+TEN = "countries/Tennessee.txt"
+POF = "countries/Pillar of Fire.txt"
+SIL = "countries/Silver Legion.txt"
+
+AWA = "countries/American Worker's Army.txt"
+AWC = "countries/American Worker's Collective.txt"
+SEC = "countries/Seattle Commune.txt"
+CTA = "countries/Constituent Assembly.txt"
+
+RND = "countries/Republic of North Dakota.txt"
+FRM = "countries/Farmer's Republics.txt"
 CPF = "countries/Constitutional Protection Front.txt"
+SOU = "countries/Southern States.txt"
+
+

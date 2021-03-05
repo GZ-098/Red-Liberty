@@ -345,20 +345,20 @@ guiTypes = {
 			text = "[get_state_info]"
 		}
 		
-		buttonType = {
-			name = "button_swap_views"
-			position = { x = 30 y = 375 }
-			spriteType = "GFX_trade_filter_btn_country"
-			clicksound = click_default
-		}
-		instantTextBoxType = {
-			name = "USA_states_gui_swap_views"
-			position = { x = 15 y = 380 }
-			maxWidth = 200
-			format = center
-			text = "[get_swap_view_title]"
-			pdx_tooltip = "USA_swap_views_tt"
-		}
+		#buttonType = {
+		#	name = "button_swap_views"
+		#	position = { x = 30 y = 375 }
+		#	spriteType = "GFX_trade_filter_btn_country"
+		#	clicksound = click_default
+		#}
+		#instantTextBoxType = {
+		#	name = "USA_states_gui_swap_views"
+		#	position = { x = 15 y = 380 }
+		#	maxWidth = 200
+		#	format = center
+		#	text = "[get_swap_view_title]"
+		#	pdx_tooltip = "USA_swap_views_tt"
+		#}
 		
 		buttonType = {
 			name = "button_close"

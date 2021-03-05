@@ -23,6 +23,7 @@ country_event = { # thomas is assassinated
 			days = 2
 		}
 		kill_country_leader = yes
+		end_puppet = PHI
 	}
 }
 
@@ -47,6 +48,15 @@ country_event = { # military government is formed
 			ideology = martial_despotism
 			popularity = 0.05
 		}
+		create_country_leader = {
+			name = "Douglas MacArthur"
+			picture = "gfx/leaders/USA/Portrait_USA_Douglas_MacArthur_Gen.tga"
+			expire = "1965.1.1"
+			ideology = martial_despotism_subtype
+			traits = {
+				
+			}
+		}
 		country_event = {
 			id = acw.3
 			days = 2
@@ -56,7 +66,7 @@ country_event = { # military government is formed
 
 country_event = { # vice president takes control of legit govt
 	id = acw.3
-	title = ""
+	title = "Formation of the Denver Government"
 	desc = acw.3.desc
 	
 	is_triggered_only = yes
@@ -72,26 +82,22 @@ country_event = { # vice president takes control of legit govt
 				elections_allowed = yes
 			}
 			set_capital = 382
+			
+			ACW_setup_MCA = yes
 		}
 	}
 
 	option = {
 		name = ""
-		hidden_effect = {
-			ACW_setup_MCA = yes
-		}
 	}
 	
 	option = {
-		name = ""
-		hidden_effect = {
-			ACW_setup_MCA = yes
-		}
+		name = "I stand with the Caesar!"
 		MCA = { change_tag_from = ROOT }
 	}
 }
 
-country_event = {
+country_event = { # collapse of the east
 	id = acw.4
 	title = ""
 	desc = acw.4.desc
@@ -102,17 +108,74 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			ACW_setup_CPF = yes
+			USA = {
+				set_country_flag = USA_TX_anarchy
+			}
+			TEN = {
+				transfer_state = 368
+			}
+			NEE = {
+				transfer_state = 357
+				transfer_state = 358
+				transfer_state = 827
+				transfer_state = 828
+				transfer_state = 829
+				transfer_state = 830
+				transfer_state = 831
+			}
+			AWC = {
+				transfer_state = 359
+				transfer_state = 360
+				transfer_state = 816
+			}
+			SOU = {
+				transfer_state = 364
+				transfer_state = 365
+				transfer_state = 366
+				transfer_state = 367
+			}
+			SIL = {
+				transfer_state = 853
+			}
+			CPF = {
+				transfer_state = 370
+				transfer_state = 371
+				transfer_state = 372
+				transfer_state = 373
+				transfer_state = 374
+				transfer_state = 375
+			}
+			TEX = {
+				transfer_state = 851
+				transfer_state = 852
+			}
+			RND = {
+				transfer_state = 389
+			}
+			FRM = {
+				transfer_state = 383
+				transfer_state = 384
+				transfer_state = 390
+				transfer_state = 392
+				transfer_state = 854
+				transfer_state = 855
+			}
+			AWA = {
+				transfer_state = 261
+				transfer_state = 369
+				transfer_state = 395
+				transfer_state = 396
+			}
+			CTA = {
+				transfer_state = 391
+				transfer_state = 393
+				transfer_state = 394
+			}
 		}
 	}
 
 	option = {
 		name = ""
-	}
-	
-	option = {
-		name = ""
-		MCA = { change_tag_from = ROOT }
 	}
 }
 

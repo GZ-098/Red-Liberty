@@ -5,22 +5,22 @@ oob = "empty"
 set_research_slots = 3
 
 set_politics = {
-	ruling_party = libertarian_socialism
+	ruling_party = revolutionary_autocracy
 	last_election = "1932.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	insurrectionary_anarchism = 0
-	revolutionary_autocracy = 0
+	insurrectionary_anarchism = 8
+	revolutionary_autocracy = 37
 	proletarian_dictatorship = 10
 	libertarian_socialism = 35
 	social_democracy = 10
-	progressive_liberalism = 17
-	market_libertarianism = 8
-	national_conservatism = 13
-	reactionary_theocracy = 2
-	authoritarian_republicanism = 5
+	progressive_liberalism = 0
+	market_libertarianism = 0
+	national_conservatism = 0
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 0
 	martial_despotism = 0
 	ultranational_statism = 0
 }

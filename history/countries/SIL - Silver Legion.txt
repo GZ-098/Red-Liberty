@@ -1,0 +1,30 @@
+﻿capital = 853
+
+oob = "empty"
+set_stability = 0.8
+set_war_support = 0.7
+
+set_technology = {
+	
+}
+
+set_politics = {
+	ruling_party = reactionary_theocracy
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 0
+	social_democracy = 0
+	progressive_liberalism = 0
+	market_libertarianism = 0
+	national_conservatism = 5
+	reactionary_theocracy = 36
+	authoritarian_republicanism = 11
+	martial_despotism = 0
+	ultranational_statism = 48
+}

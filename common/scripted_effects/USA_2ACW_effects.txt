@@ -34,13 +34,17 @@ ACW_setup_MCA = {
 		MCA = {	
 			add_state_core = 361
 			add_state_core = 362
+			add_state_core = 363
 			add_state_core = 832
 			add_state_core = 833
+			add_state_core = 853
 			
 			transfer_state = 361
 			transfer_state = 362
+			transfer_state = 363
 			transfer_state = 832
 			transfer_state = 833
+			transfer_state = 853
 			
 			if = {
 				limit = { has_template = "Infantry Division" }

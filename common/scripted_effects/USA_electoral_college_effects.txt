@@ -222,8 +222,8 @@ initialize_US_elections_system = {
 	
 	369 = { # Kentucky
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.65 }
-		set_variable = { democrat_popularity = 0.35 }
+		set_variable = { democrat_popularity = 0.65 }
+		set_variable = { republican_popularity = 0.35 }
 		
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 3 }
@@ -405,22 +405,22 @@ initialize_US_elections_system = {
 	
 	363 = { # North Carolina, conservative but not super conservative
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.6 } # Default Value
-		set_variable = { democrat_popularity = 0.4 } # Default Value
+		set_variable = { democrat_popularity = 0.6 } # Default Value
+		set_variable = { republican_popularity = 0.4 } # Default Value
 		
-		set_variable = { senator_1 = 2 }
-		set_variable = { senator_2 = 2 }
+		set_variable = { senator_1 = 3 }
+		set_variable = { senator_2 = 3 }
 		
 		set_variable = { electoral_votes = 13 }
 	}
 	
-	389 = { # North Dakota, heartland, pro-Democrat
+	389 = { # North Dakota, heartland, pro-republican, significant progressive presence
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.8 } # Default Value
-		set_variable = { democrat_popularity = 0.2 } # Default Value
+		set_variable = { republican_popularity = 0.6 } # Default Value
+		set_variable = { socialist_popularity = 0.4 } # Default Value
 		
 		set_variable = { senator_1 = 3 }
-		set_variable = { senator_2 = 3 }
+		set_variable = { senator_2 = 1 }
 		
 		set_variable = { electoral_votes = 4 }
 	}
@@ -438,10 +438,10 @@ initialize_US_elections_system = {
 	
 	374 = { # Oklahoma
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.7 } # Default Value
-		set_variable = { democrat_popularity = 0.3 } # Default Value
+		set_variable = { democrat_popularity = 0.7 } # Default Value
+		set_variable = { republican_popularity = 0.3 } # Default Value
 		
-		set_variable = { senator_1 = 2 }
+		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 3 }
 		
 		set_variable = { electoral_votes = 11 }
@@ -495,10 +495,10 @@ initialize_US_elections_system = {
 	
 	390 = { # South Dakota, North Dakota part 2
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.8 } # Default Value
-		set_variable = { democrat_popularity = 0.2 } # Default Value
+		set_variable = { socialist_popularity = 0.6 } # Default Value
+		set_variable = { republican_popularity = 0.4 } # Default Value
 		
-		set_variable = { senator_1 = 2 }
+		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 2 }
 		
 		set_variable = { electoral_votes = 4 }

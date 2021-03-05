@@ -876,3 +876,35 @@ MCA = {
 FER = {
 	color = rgb { 173 59 70 }
 }
+
+TEN = {
+	color = rgb { 130 123 77 } # { 102 96 55 }
+}
+
+AWC = {
+	color = rgb { 204 62 49 }
+}
+
+SOU = {
+	color = rgb { 138 144 156 }
+}
+
+TEX = {
+	color = rgb { 37 83 125 }
+}
+
+SIL = {
+	color = rgb { 151 164 176 }
+}
+
+FRM = {
+	color = rgb { 124 171 113 } # { 177 214 148 }
+}
+
+RND = {
+	color = rgb { 194 199 147 }
+}
+
+CTA = {
+	color = rgb { 235 64 52 }
+}
