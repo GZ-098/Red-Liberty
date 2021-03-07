@@ -2305,8 +2305,122 @@ focus_tree = {
 		prerequisite = {
 			focus = ITA_industrial_works
 		}
-		x = 53
+		x = 55
 		y = 4
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_nationolization_of_factories
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_the_peoples_civic_works
+		}
+		mutually_exclusive = {
+			focus = ITA_increase_privitazation
+		}
+		x = 58
+		y = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_establishment_of_worker_cooperatives
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_nationolization_of_factories
+		}
+		x = 58
+		y = 6
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_increase_privitazation
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_the_peoples_civic_works
+		}
+		mutually_exclusive = {
+			focus = ITA_nationolization_of_factories
+		}
+		x = 52
+		y = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_lower_regulations_for_start_ups
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_increase_privitazation
+		}
+		x = 54
+		y = 6
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_fighting_against_monopolies
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_lower_regulations_for_start_ups
+		}
+		x = 55
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_extra_barganing_power_for_unions
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_fighting_against_monopolies
+		}
+		x = 55
+		y = 8
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_building_closer_ties_with_large_cooperations
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_increase_privitazation
+		}
+		x = 52
+		y = 6
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_increase_the_presence_of_blackshirts_in_factories
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_building_closer_ties_with_large_cooperations
+		}
+		x = 52
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_the_destruction_of_unions
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_increase_the_presence_of_blackshirts_in_factories
+		}
+		x = 52
+		y = 8
 		completion_reward = {
 		}
 	}
@@ -2794,13 +2908,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_taxes_managment
+		id = ITA_managment_of_taxation
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
+			focus = ITA_buget_managment
 		}
-		x = 42
-		y = 2
+		x = 47
+		y = 3
 		completion_reward = {
 			country_event = {
 				id = italy_events.63
