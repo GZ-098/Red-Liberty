@@ -5,7 +5,13 @@
  USA_class_2_elections_tt:0 "§YClass 2 Senators§!"
  USA_class_3_elections_tt:0 "§YClass 3 Senators§!"
  
+ USA_senate_elections_occur_tt:0 "Senate elections will be held."
+ USA_senate_elections:0 "Senate elections are ongoing."
+ 
  currently_campaigning:0 "We are currently campaigning elsewhere."
+ 
+ USA_election_helpers.1.title:0 "Class I Senate Elections"
+ USA_election_helpers.11.title:0 "Presidential Elections"
  
  SOCIALIST_SENATOR:0 "§PSocialist§!"
  REPUBLICAN_SENATOR:0 "§RRepublican§!"

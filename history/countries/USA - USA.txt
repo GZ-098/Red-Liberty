@@ -353,6 +353,21 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
+	name = "Walter Krueger"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Walter_Krueger_Gen.tga"
+	traits = {
+		armor_officer
+		career_officer
+		brilliant_strategist
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
 	name = "George Van Horn Moseley"
 	portrait_path = "gfx/leaders/USA/Portrait_USA_George_Van_Horn_Moseley.tga"
 	traits = {

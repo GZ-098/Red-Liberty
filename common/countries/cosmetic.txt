@@ -376,3 +376,8 @@ KHR_PER_autonomous_state = {
 	color = rgb { 71 113 97 }
 	color_ui = rgb { 92 147 126 }
 }
+
+USA_military_govt = {
+	color = rgb { 50 109 168 }
+	color_ui = rgb { 50 109 168 }
+}

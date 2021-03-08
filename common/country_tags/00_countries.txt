@@ -1,5 +1,3 @@
-HEZ = "countries/Hedjaz.txt"
-HSR = "countries/Hungarian Socialist Republic.txt"
 USA = "countries/United States of America.txt"
 GER = "countries/German Empire.txt"
 AHE = "countries/Austro-Hungarian Empire.txt"
@@ -206,6 +204,7 @@ BRI = "countries/Brittany.txt"
 OCC = "countries/Occitania.txt"
 COR = "countries/Corsica.txt"
 
+### Russia ###
 RUS = "countries/Russian State.txt"
 IDE = "countries/Idel-Ural.txt"
 ALT = "countries/Altai.txt"
@@ -217,14 +216,13 @@ ORE = "countries/Orenburg Cossack Host.txt"
 TRB = "countries/Transbaikalia.txt"
 URL = "countries/Ural Cossack Host.txt"
 KHV = "countries/Khiva.txt"
-
 TMY = "countries/Talyshstan.txt"
 
+### Europe ###
 ITF = "countries/Italian Union of Fascists.txt"
-
+HSR = "countries/Hungarian Socialist Republic.txt"
 FLA = "countries/Flanders.txt"
 WLA = "countries/Wallonia.txt"
-
 WUK = "countries/West Ukraine.txt"
 KRA = "countries/Krakow.txt"
 
@@ -232,6 +230,7 @@ KRA = "countries/Krakow.txt"
 ASI = "countries/Asir.txt"
 GIL = "countries/Gilan.txt"
 KHR = "countries/Khorasan.txt"
+HEZ = "countries/Hedjaz.txt"
 
 ### China ###
 SZC = "countries/Sichuan.txt"
@@ -245,14 +244,24 @@ HNN = "countries/Hunan.txt"
 ### East Indies ###
 SRW = "countries/Sarawak.txt"
 
-### Civil War Splinters ###
+### Civil War Majors - WILL ALWAYS APPEAR ###
 MCA = "countries/MacArthur Clique.txt"
-TEX = "countries/Texas.txt"
 NEE = "countries/New England.txt"
+PSA = "countries/Pacific States.txt"
+ASR = "countries/American Socialist Republic.txt"
+COM = "countries/Cooperative Commonwealth.txt"
+
+### Civil War Minors ###
+TEX = "countries/Texas.txt"
 
 TEN = "countries/Tennessee.txt"
 POF = "countries/Pillar of Fire.txt"
 SIL = "countries/Silver Legion.txt"
+BLA = "countries/Black Legion.txt"
+
+DET = "countries/Detroit.txt"
+
+###
 
 AWA = "countries/American Worker's Army.txt"
 AWC = "countries/American Worker's Collective.txt"

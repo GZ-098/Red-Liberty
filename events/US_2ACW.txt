@@ -11,8 +11,13 @@ country_event = { # thomas is assassinated
 	fire_only_once = yes
 	
 	immediate = {
-		hidden_effect = {
-			ACW_setup_USA = yes
+		if = {
+			limit = { has_template = "National Guard" }
+			delete_unit_template_and_units = { division_template = "National Guard" }
+		}
+		if = {
+			limit = { has_template = "Organized Reserve" }
+			delete_unit_template_and_units = { division_template = "Organized Reserve" }
 		}
 	}
 
@@ -57,17 +62,59 @@ country_event = { # military government is formed
 				
 			}
 		}
-		country_event = {
-			id = acw.3
-			days = 2
+		hidden_effect = {
+			set_cosmetic_tag = USA_military_govt
 		}
+		load_focus_tree = USA_macarthur_initial
+		complete_focus = USA_macarthur_ascendant
 	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 country_event = { # vice president takes control of legit govt
-	id = acw.3
+	id = acw.#
 	title = "Formation of the Denver Government"
-	desc = acw.3.desc
+	desc = acw.#.desc
 	
 	is_triggered_only = yes
 	
@@ -98,9 +145,9 @@ country_event = { # vice president takes control of legit govt
 }
 
 country_event = { # collapse of the east
-	id = acw.4
+	id = acw.100
 	title = ""
-	desc = acw.4.desc
+	desc = acw.100.desc
 	
 	is_triggered_only = yes
 	
@@ -128,12 +175,6 @@ country_event = { # collapse of the east
 				transfer_state = 360
 				transfer_state = 816
 			}
-			SOU = {
-				transfer_state = 364
-				transfer_state = 365
-				transfer_state = 366
-				transfer_state = 367
-			}
 			SIL = {
 				transfer_state = 853
 			}
@@ -152,24 +193,30 @@ country_event = { # collapse of the east
 			RND = {
 				transfer_state = 389
 			}
-			FRM = {
+			COM = {
 				transfer_state = 383
 				transfer_state = 384
 				transfer_state = 390
+				transfer_state = 391
 				transfer_state = 392
 				transfer_state = 854
 				transfer_state = 855
 			}
-			AWA = {
-				transfer_state = 261
-				transfer_state = 369
-				transfer_state = 395
-				transfer_state = 396
-			}
-			CTA = {
-				transfer_state = 391
+			BLA = {
 				transfer_state = 393
+			}
+			ASR = {
 				transfer_state = 394
+				transfer_state = 395
+				transfer_state = 858
+			}
+			DET = {
+				transfer_state = 859
+			}
+			POF = {
+				transfer_state = 856
+				transfer_state = 857
+				transfer_state = 860
 			}
 		}
 	}

@@ -27,12 +27,15 @@ on_actions = {
 				set_variable = { var = representatives_democrat value = 139 }
 				set_variable = { var = representatives_fascist value = 14 }
 			}
-			USA = {
-				set_country_flag = USA_presidential_elections
-				USA_class_1_senate_prepare = yes
-			}
+			
 			USA = {
 				USA_calc_poverty_goal = yes
+			}
+			
+			USA = {
+				### 1936 ELECTIONS PREP ###
+				country_event = { id = USA_election_helpers.1 days = 30 }
+				country_event = { id = USA_election_helpers.11 days = 30 }
 			}
 			
 			### DUST BOWL SETUP ###
@@ -128,8 +131,6 @@ on_actions = {
 				USA_calculate_senators = yes
 				USA_clamp_state_popularities = yes
 			}
-			
-			
 		}
 	}
 	

@@ -897,7 +897,7 @@ SIL = {
 	color = rgb { 151 164 176 }
 }
 
-FRM = {
+COM = {
 	color = rgb { 124 171 113 } # { 177 214 148 }
 }
 
@@ -905,6 +905,18 @@ RND = {
 	color = rgb { 194 199 147 }
 }
 
-CTA = {
+ASR = {
 	color = rgb { 235 64 52 }
+}
+
+BLA = {
+	color = rgb { 99 93 92 }
+}
+
+DET = {
+	color = rgb { 94 84 52 }
+}
+
+POF = {
+	color = rgb { 212 153 70 }
 }

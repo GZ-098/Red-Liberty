@@ -29,6 +29,36 @@ defined_text = {
 }
 
 defined_text = {
+	name = get_us_farmer_labor_rep_count
+	
+	text = { 
+        trigger = {
+			check_variable = { senators_farmer_labor > 0 }
+        }
+        localization_key = "USA_congress_farmer_labor_rep_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_farmer_labor_senator_count
+	
+	text = { 
+        trigger = {
+			check_variable = { senators_farmer_labor > 0 }
+        }
+        localization_key = "USA_congress_farmer_labor_senator_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
 	name = get_us_fascist_rep_count
 	
 	text = { 

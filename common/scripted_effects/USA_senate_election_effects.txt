@@ -1,3 +1,6 @@
+@POPULARITY_CLAMP_MIN = 0.001
+@POPULARITY_CLAMP_MAX = 1000
+
 #Fire this every time you want the polls to update
 USA_recalculate_polls = {
 	if = {
@@ -404,4 +407,103 @@ USA_class_3_senate_prepare = {
 	381 = {
 		set_state_flag = elections_senator_2
 	}
+}
+
+USA_hold_senate_election = {
+	set_variable = { communist_change = 0 }
+	set_variable = { socialist_change = 0 }
+	set_variable = { republican_change = 0 }
+	set_variable = { democrat_change = 0 }
+	set_variable = { afp_change = 0 }
+	
+	every_owned_state = {
+		limit = {
+			has_state_flag = elections_senator_1
+		}
+		USA_clamp_state_popularities = yes
+		clamp_variable = {
+   			var = communist_popularity
+    		min = @POPULARITY_CLAMP_MIN
+    		max = @POPULARITY_CLAMP_MAX
+		}
+		
+		clamp_variable = {
+   			var = socialist_popularity
+    		min = @POPULARITY_CLAMP_MIN
+    		max = @POPULARITY_CLAMP_MAX
+		}
+		
+		clamp_variable = {
+   			var = republican_popularity
+    		min = @POPULARITY_CLAMP_MIN
+    		max = @POPULARITY_CLAMP_MAX
+		}
+		
+		clamp_variable = {
+   			var = democrat_popularity
+    		min = @POPULARITY_CLAMP_MIN
+    		max = @POPULARITY_CLAMP_MAX
+		}
+		
+		clamp_variable = {
+   			var = afp_popularity
+    		min = @POPULARITY_CLAMP_MIN
+    		max = @POPULARITY_CLAMP_MAX
+		}
+		
+		log = " update senate 1 race"
+		USA_update_senator_1_in_state = yes
+		
+		log = " pick senate 1 race"
+		USA_pick_senator_1_in_state = yes
+		
+		log = " clear senate 1 race"
+		USA_clear_senate_predictions = yes
+	}
+	every_owned_state = {
+		limit = {
+			has_state_flag = elections_senator_2
+		}
+		USA_clamp_state_popularities = yes
+		clamp_variable = {
+   			var = communist_popularity
+    		min = @POPULARITY_CLAMP_MIN
+    		max = @POPULARITY_CLAMP_MAX
+		}
+		
+		clamp_variable = {
+   			var = socialist_popularity
+    		min = @POPULARITY_CLAMP_MIN
+    		max = @POPULARITY_CLAMP_MAX
+		}
+		
+		clamp_variable = {
+   			var = republican_popularity
+    		min = @POPULARITY_CLAMP_MIN
+    		max = @POPULARITY_CLAMP_MAX
+		}
+		
+		clamp_variable = {
+   			var = democrat_popularity
+    		min = @POPULARITY_CLAMP_MIN
+    		max = @POPULARITY_CLAMP_MAX
+		}
+		
+		clamp_variable = {
+   			var = afp_popularity
+    		min = @POPULARITY_CLAMP_MIN
+    		max = @POPULARITY_CLAMP_MAX
+		}
+		
+		log = " update senate 2 race"
+		USA_update_senator_2_in_state = yes
+		
+		log = " pick senate 1 race"
+		USA_pick_senator_2_in_state = yes
+		
+		log = " clear senate 1 race"
+		USA_clear_senate_predictions = yes
+	}
+	set_country_flag = USA_senate_conclusion
+	US_elections_calculate_country_vars = yes
 }

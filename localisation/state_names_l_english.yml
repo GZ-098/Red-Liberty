@@ -358,7 +358,7 @@
  STATE_357:0 "Massachusetts"
  STATE_358:0 "New York"
  STATE_359:0 "New Jersey"
- STATE_360:0 "Pennsylvania"
+ STATE_360:0 "Philadelphia"
  STATE_361:0 "Maryland"
  STATE_362:0 "Virginia"
  STATE_363:0 "North Carolina"
@@ -856,4 +856,9 @@
  STATE_855:0 "Rochester"
  STATE_856:0 "East Kentucky"
  STATE_857:0 "Knoxville"
+ STATE_858:0 "Superior"
+ STATE_859:0 "Detroit"
+ STATE_860:0 "Marion"
+ STATE_861:0 "Greenville"
+ STATE_862:0 "Pittsburgh"
  

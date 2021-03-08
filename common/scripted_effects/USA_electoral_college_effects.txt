@@ -25,6 +25,7 @@
 # 3 = democrat
 # 4 = afp
 # 5 = communist
+# 6 = farmer-labor
 
 initialize_US_elections_system = {
 	set_variable = { USA_campaigning_multiplier = 1 }
@@ -676,6 +677,18 @@ USA_calculate_senators = {
 			}
 			add_to_variable = { USA.senators_communist = 1 }
 		}
+		if = {
+			limit = {
+				check_variable = { senator_1 = 6 }
+			}
+			add_to_variable = { USA.senators_famer_labor = 1 }
+		}
+		if = {
+			limit = {
+				check_variable = { senator_2 = 6 }
+			}
+			add_to_variable = { USA.senators_famer_labor = 1 }
+		}
 	}
 }
 
@@ -821,6 +834,14 @@ USA_clamp_state_popularities_alternate = {
 			}
 		}
 	}
+}
+
+USA_prepare_presidential_election = {
+	set_country_flag = USA_presidential_elections
+	#every_owned_state = {
+	#	limit = { can_have_elections_in_state = yes }
+	#}
+	#USA_recalculate_polls = yes
 }
 
 USA_update_presidential_election_race_in_state = {

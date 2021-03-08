@@ -1,5 +1,6 @@
 add_namespace = us_election
 add_namespace = us_campaign
+add_namespace = USA_election_helpers
 
 country_event = { # no one gets a majority
 	id = us_election.1
@@ -143,3 +144,245 @@ country_event = { #Bad campaign
 	}
 }
 
+#Fire prep events in ~Jan 30th of the year, and have events fire Nov 6
+
+#Class 1
+country_event = { #Show preparation and mark states for election
+	id = USA_election_helpers.1
+ 	title = USA_election_helpers.1.title
+ 	desc = USA_election_helpers.1.desc
+	#picture = GFX_report_event_iberia_big_meeting
+
+	immediate = {
+ 		hidden_effect = {
+ 			country_event = { id = USA_election_helpers.2 days = 280 } # hold the election
+ 		}
+	}
+
+	is_triggered_only = yes
+
+ 	option = {
+ 		name = "SPA! SPA! SPA!"
+ 		custom_effect_tooltip = USA_senate_elections_visible_tt
+ 		hidden_effect = {
+ 			USA_class_1_senate_prepare = yes
+			USA_recalculate_polls = yes
+ 		}
+ 	}
+	option = {
+ 		name = USA_election_helpers.1.b
+ 		custom_effect_tooltip = USA_senate_elections_visible_tt
+ 		hidden_effect = {
+ 			USA_class_1_senate_prepare = yes
+			USA_recalculate_polls = yes
+ 		}
+ 	}
+	option = {
+ 		name = USA_election_helpers.1.c
+ 		custom_effect_tooltip = USA_senate_elections_visible_tt
+ 		hidden_effect = {
+ 			USA_class_1_senate_prepare = yes
+			USA_recalculate_polls = yes
+ 		}
+ 	}
+	option = {
+ 		name = "America First!"
+ 		custom_effect_tooltip = USA_senate_elections_visible_tt
+ 		hidden_effect = {
+ 			USA_class_1_senate_prepare = yes
+			USA_recalculate_polls = yes
+ 		}
+ 	}
+}
+
+
+country_event = { #Actually hold the election
+	id = USA_election_helpers.2
+ 	title = USA_election_helpers.2.t
+ 	desc = USA_election_helpers.2.desc
+	#picture = GFX_report_event_usa_supreme_court
+
+	immediate = {
+ 		hidden_effect = { country_event = { id = USA_election_helpers.8 days = 30 } }
+	}
+
+	is_triggered_only = yes
+
+ 	option = {
+ 		name = USA_election_helpers.2.a
+ 		custom_effect_tooltip = USA_senate_elections_occur_tt
+ 		hidden_effect = {
+ 			USA_hold_senate_election = yes
+ 		}
+ 	}
+}
+
+#Class 2
+country_event = { #Prep Class II election
+	id = USA_election_helpers.3
+ 	title = USA_election_helpers.3.t
+ 	desc = USA_election_helpers.3.desc
+	picture = GFX_report_event_us_presidential_podium
+
+	immediate = {
+ 		hidden_effect = {
+ 			country_event = { id = USA_election_helpers.4 days = 280 }
+ 		}
+	}
+
+	is_triggered_only = yes
+
+ 	option = { #RDs
+ 		name = USA_election_helpers.3.a
+ 		custom_effect_tooltip = USA_senate_elections_visible_tt
+		custom_effect_tooltip = USA_can_campaign_for_RD_tt
+ 		hidden_effect = {
+ 			USA_class_2_senate_prepare = yes
+			set_country_flag = USA_campaigning_for_RD
+			USA_recalculate_polls = yes
+ 		}
+ 	}
+	option = { #NPP
+ 		name = USA_election_helpers.3.b
+ 		custom_effect_tooltip = USA_senate_elections_visible_tt
+		custom_effect_tooltip = USA_can_campaign_for_NPP_tt
+ 		hidden_effect = {
+ 			USA_class_2_senate_prepare = yes
+			set_country_flag = USA_campaigning_for_NPP
+			USA_recalculate_polls = yes
+ 		}
+ 	}
+}
+
+country_event = { #Hold Class II election
+	id = USA_election_helpers.4
+ 	title = USA_election_helpers.4.t
+ 	desc = USA_election_helpers.4.desc
+	picture = GFX_report_event_us_presidential_podium
+
+	immediate = {
+ 		hidden_effect = { country_event = { id = USA_election_helpers.8 days = 30 } }
+	}
+
+	is_triggered_only = yes
+
+ 	option = {
+ 		name = USA_election_helpers.4.a
+ 		custom_effect_tooltip = USA_senate_elections_occur_tt
+ 		hidden_effect = {
+ 			USA_hold_senate_election = yes
+ 		}
+ 	}
+}
+
+#Class 3
+country_event = { #Prep for Class III election
+	id = USA_election_helpers.6
+ 	title = USA_election_helpers.6.t
+ 	desc = USA_election_helpers.6.desc
+	picture = GFX_report_event_USA_congress_2
+
+	immediate = {
+ 		hidden_effect = {
+ 			country_event = { id = USA_election_helpers.7 days = 280 }
+ 		}
+	}
+
+	is_triggered_only = yes
+
+ 	option = { #RDs
+ 		name = USA_election_helpers.6.a
+ 		custom_effect_tooltip = USA_senate_elections_visible_tt
+ 		hidden_effect = {
+ 			USA_class_3_senate_prepare = yes
+			USA_recalculate_polls = yes
+ 		}
+ 	}
+	option = { #NPP
+ 		name = USA_election_helpers.6.b
+ 		custom_effect_tooltip = USA_senate_elections_visible_tt
+ 		hidden_effect = {
+ 			USA_class_3_senate_prepare = yes
+			USA_recalculate_polls = yes
+ 		}
+ 	}
+}
+
+country_event = { #Hold Class III election
+	id = USA_election_helpers.7
+ 	title = USA_election_helpers.7.t
+ 	desc = USA_election_helpers.7.desc
+	picture = GFX_report_event_whitehouse_color
+
+	immediate = {
+ 		hidden_effect = { country_event = { id = USA_election_helpers.8 days = 30 } }
+	}
+
+	is_triggered_only = yes
+
+ 	option = {
+ 		name = USA_election_helpers.7.a
+ 		custom_effect_tooltip = USA_senate_elections_occur_tt
+ 		hidden_effect = {
+ 			USA_hold_senate_election = yes
+ 		}
+ 	}
+}
+
+country_event = { #Clear variables after seeing conclusion
+	id = USA_election_helpers.8
+ 	title = USA_election_helpers.8.t
+ 	desc = USA_election_helpers.8.desc
+	picture = GFX_report_event_us_congress
+	immediate = {
+ 		hidden_effect = {
+ 			USA_clear_senate_election_vars = yes
+			clr_country_flag = USA_campaigning_for_RD
+			clr_country_flag = USA_campaigning_for_NPP
+			clr_country_flag = currently_campaigning
+ 		}
+	}
+
+	is_triggered_only = yes
+
+ 	option = {
+ 		name = USA_election_helpers.8.a
+ 		custom_effect_tooltip = USA_senate_elections_remove_tt
+ 	}
+}
+
+#Presidential Season Beginning
+country_event = {
+	id = USA_election_helpers.11
+ 	title = USA_election_helpers.11.title
+ 	desc = USA_election_helpers.11.desc
+	picture = GFX_report_event_generic_rally
+	is_triggered_only = yes
+
+ 	option = {
+ 		name = USA_election_helpers.11.a
+ 		custom_effect_tooltip = USA_presidential_elections_visible_tt
+ 		hidden_effect = {
+ 			USA_prepare_presidential_election = yes
+ 		}
+ 		#flag: 'USA_presidential_elections' is set in the above effect
+ 	}
+}
+
+
+#Presidential Season Ending
+country_event = {
+	id = USA_election_helpers.12
+ 	title = USA_election_helpers.12.t
+ 	desc = USA_election_helpers.12.desc
+	picture = GFX_report_event_iberia_big_meeting
+	is_triggered_only = yes
+
+ 	option = {
+ 		name = USA_election_helpers.12.a
+ 		custom_effect_tooltip = USA_presidential_elections_remove_tt
+ 		hidden_effect = {
+ 			USA_clear_presidential_election_values = yes
+ 		}
+ 	}
+}

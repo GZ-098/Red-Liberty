@@ -14,7 +14,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = national_conservatism
+	ruling_party = market_libertarianism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -24,10 +24,10 @@ set_popularities = {
 	revolutionary_autocracy = 0
 	proletarian_dictatorship = 0
 	libertarian_socialism = 0
-	social_democracy = 10
+	social_democracy = 35
 	progressive_liberalism = 10
-	market_libertarianism = 35
-	national_conservatism = 45
+	market_libertarianism = 45
+	national_conservatism = 10
 	reactionary_theocracy = 0
 	authoritarian_republicanism = 0
 	martial_despotism = 0
