@@ -1,0 +1,17 @@
+###INITIAL TREE
+focus_tree = {
+	id = GER_initial_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	continuous_focus_position = {
+		x = -2000
+		y = 500
+	}
+	default = no
+	shared_focus = GER_reichskanzlei_goebbels
+}
