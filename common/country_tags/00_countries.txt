@@ -233,6 +233,8 @@ KHR = "countries/Khorasan.txt"
 HEZ = "countries/Hedjaz.txt"
 
 ### China ###
+FNG = "countries/Fengtian.txt"
+SHD = "countries/Shandong.txt"
 SZC = "countries/Sichuan.txt"
 GUD = "countries/Guangdong.txt"
 ZHE = "countries/Zhejiang.txt"
@@ -240,6 +242,14 @@ ANH = "countries/Anhui.txt"
 QIE = "countries/Qing.txt"
 ZHI = "countries/Zhili.txt"
 HNN = "countries/Hunan.txt"
+NGX = "countries/Ningxia.txt"
+GNS = "countries/Gansu.txt"
+YUL = "countries/Yulin.txt"
+SHA = "countries/Shaanxi.txt"
+XIK = "countries/Xikang.txt"
+CHN = "countries/Chengdu.txt"
+GNN = "countries/Gannan.txt"
+GUI = "countries/Guizhou.txt"
 
 ### East Indies ###
 SRW = "countries/Sarawak.txt"

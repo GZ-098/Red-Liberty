@@ -35,13 +35,15 @@ division_template = {
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
 	}
 	support = {
 		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
 		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
 	}
 	priority = 0
-	is_locked = yes
 }
 division_template = {
 	name = "Organized Reserve"
@@ -88,12 +90,8 @@ division_template = {
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 0 y = 3 }
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
-		cavalry = { x = 1 y = 3 }
 	}
 	support = {
 		recon = { x = 0 y = 0 }      # US Cav Recon consisted of 52 ACs, 13 L Arm
@@ -116,6 +114,21 @@ division_template = {
 		engineer = { x = 0 y = 0 }   
 	}
 	priority = 2
+}
+division_template = {
+	name = "Light Armored Regiment" 		# 66th Infantry (Light Tanks)
+
+	division_names_group = USA_ARM_02
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }   
+	}
 }
 
 ###### OOB ######
@@ -146,56 +159,6 @@ units = {
 			name_order = 3
 		}
 		location = 7386 # Fort Lewis, WA
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location = 12384 # Fort McPherson, Atlanta, GA
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 6855 # Columbus, Ohio
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 6
-		}
-		location = 9450 # Chicago, IL
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 8
-		}
-		location = 6845 # Philadelphia, PA
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 9
-		}
-		location = 6732 # Boston, MA
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -360,276 +323,6 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.4
 	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 76
-		}
-		location = 9850 # Hartford, CT
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 77
-		}
-		location = 3878 # Manhattan, NYC, NY
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 78
-		}
-		location = 6882 # Newark, NJ
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 79
-		}
-		location = 6845 # Philadelphia, PA
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 80
-		}
-		location = 3823 # Richmond, VA
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 81
-		}
-		location = 10657 # Knoxville, TN
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 82
-		}
-		location = 7012 # Columbia, SC
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 83
-		}
-		location = 6855 # Fort Hayes, Columbus, OH
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 84
-		}
-		location = 1595 # Indianapolis, IN
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 85
-		}
-		location = 6710 # Detroit, MI
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 86
-		}
-		location = 9450 # Chicago, IL
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 87
-		}
-		location = 7552 # New Orleans, LA
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 88
-		}
-		location = 1866 # Minneapolis, MN
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 89
-		}
-		location = 12586 # Omaha, NE
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 90
-		}
-		location = 12782 # San Antonio, TX 
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 91
-		}
-		location = 9671 # San Francisco, CA
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 94
-		}
-		location = 6732 # Boston, MA
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 95
-		}
-		location = 10798 # Oklahoma City, OK
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 96
-		}
-		location = 3513 # Portland, OR
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 97
-		}
-		location = 3712 # Manchester, NH
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 98
-		}
-		location = 3747 # Syracuse, NY
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 99
-		}
-		location = 11800 # Pittsburgh, PA
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 100
-		}
-		location = 6971 # Huntington, WV
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 101
-		}
-		location = 12357 # Milwaukee, WI
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 102
-		}
-		location = 4569 # St. Louis, MO
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 103
-		}
-		location = 1827 # Denver, CO
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 104
-		}
-		location = 4865 # Salt Lake City, UT
-		division_template = "Organized Reserve"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
-	}
 	division = {
 		name = "Panama Canal Division"
 		location = 7617 # Fort Amador, CZ
@@ -652,12 +345,13 @@ units = {
 		start_equipment_factor = 0.2
 	}
 	
+	### cavalry ###
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 5022 # Fort Hood, TX
+		location = 10740 # Fort Bliss, TX
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.4
@@ -665,14 +359,65 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 61
 		}
-		location = 12513 # Fort Riley, KN
+		location = 3878 # New York City, NY
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 62
+		}
+		location = 6984 # Towson, MD
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 63
+		}
+		location = 10909 # Chattanooga, TN
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 64
+		}
+		location = 6696 # Louisville, KY
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 65
+		}
+		location = 9450 # Chicago, IL
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 66
+		}
+		location = 10717 # Kansas City, MO
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.4
 	}
 	
+	### muhreens ###
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -680,8 +425,31 @@ units = {
 		}
 		location = 6845 # Philadelphia, PA
 		division_template = "Marine Brigade"
-		start_experience_factor = 0.4
+		start_experience_factor = 0.35
 		start_equipment_factor = 1
+	}
+	
+	### tank regiments ###
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 66
+		}
+		location = 3957 # Fort Meade, MD
+		division_template = "Light Armored Regiment"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.9
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 68
+		}
+		location = 1527 # Peoria, IL
+		division_template = "Light Armored Regiment"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.9
 	}
 }
 	
@@ -796,7 +564,7 @@ instant_effect = {
 		
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
+			type = infantry_equipment_1
 			creator = "USA"
 		}
 		requested_factories = 2
@@ -833,19 +601,4 @@ instant_effect = {
 		progress = 0.15
 		efficiency = 50
 	}
-
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_carrier_conversion_bb
-			creator = "USA"
-			version_name = "Ranger Class"
-		}
-		name = "USS Ranger"
-		requested_factories = 4
-		progress = 0.02
-		amount = 1
-	}
-
-
 }
-#####################

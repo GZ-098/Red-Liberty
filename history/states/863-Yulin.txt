@@ -1,0 +1,19 @@
+state={
+	id=863
+	name="STATE_863"
+	
+	history={
+		owner = YUL
+		add_core_of = YUL
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	
+	provinces={
+		7314 7659 10880 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

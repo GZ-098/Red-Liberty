@@ -1,0 +1,19 @@
+state={
+	id=864
+	name="STATE_864"
+	
+	history={
+		owner = GNN
+		add_core_of = GNN
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	
+	provinces={
+		1367 2091 5048 7256 8026 12274 12767 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

@@ -258,7 +258,7 @@
 		368 = { "%dth 'Jaguars' Division" }
 		369 = { "%dth 'Corsairs' Division" }
 		370 = { "%dth Infantry Division" }
-		82 = { "%dnd Infantry Division" } # 82nd and 101st
+		82 = { "%dnd 'All American' Division" } # 82nd and 101st
 		101 = { "%dst Infantry Division" }
 	}
 }
@@ -278,11 +278,11 @@ USA_CAV_01 = {
 		61 = { "%dst Cavalry Division" }
 		62 = { "%dnd Cavalry Division" }
 		63 = { "%drd Cavalry Division" }
-		64 = { "%dth Cavalry Division" }
-		65 = { "%dth Cavalry Division" }
+		64 = { "%dth Cavalry 'Arrowhead' Div." }
+		65 = { "%dth Cavalry 'Chevaliers' Div." }
 		66 = { "%dth Cavalry Division" }
 		22 = { "%dnd Cavalry Division" }
-		23 = { "%drd Cavalry Division" }
+		23 = { "%drd 'Dixie Cavalry' Div." }
 		56 = { "%dth Cavalry Division" }
 		25 = { "%dth Cavalry Division" }
 		26 = { "%dth Cavalry Division" }
@@ -355,6 +355,19 @@ USA_ARM_01 = {
 		74 = { "%dth Armored 'Brandy Station' Div." }
 	}
 }
+USA_ARM_02 = {
+	name = "Armored Regiment"
+	for_countries = { USA }
+	can_use = { always = yes }
+	division_types = { "light_armor" "medium_armor" }
+	fallback_name = "%d Armored Regiment"
+	ordered = {
+		66 = { "%dth Infantry [Light Tanks]" }
+		67 = { "%dth Infantry [Medium Tanks]" }
+		68 = { "%dth Infantry [Light Tanks]" }
+		69 = { "%dth Infantry [Light Tanks]" }
+	}
+}
 USA_PAR_01 = {
 	name = "Airborne Division"
 	for_countries = { USA }
@@ -371,7 +384,7 @@ USA_PAR_01 = {
 		18 = { "%dth Airborne Division" }
 		21 = { "%dst Airborne Division" }
 		135 = { "%dth Airborne Division" }
-		108 = { "%dth Airborne'Golden Griffons' Division" }
+		108 = { "%dth Airborne 'Golden Griffons' Division" }
 		15 = { "%dth Airborne Division" }
 		6 = { "%dth Airborne Division" }
 		9 = { "%dth Airborne Division" }

@@ -1,6 +1,14 @@
 ﻿l_english:
- XSM:0 "Ma Clique"
+ XSM:0 "Qinghai Ma Clique"
  XSM_DEF:0 "the Ma Clique"
  XSM_ADJ:0 "Hui"
+ 
+ NGX:0 "Ningxia Ma Clique"
+ NGX_DEF:0 "the Ma Clique"
+ NGX_ADJ:0 "Hui"
+ 
+ GNS:0 "Gansu Ma Clique"
+ GNS_DEF:0 "the Ma Clique"
+ GNS_ADJ:0 "Hui"
  
  

@@ -1,5 +1,17 @@
 ﻿l_english:
- SZC:0 "Szechuan Clique"
- SZC_DEF:0 "the Szechuan Clique"
- SZC_ADJ:0 "Chinese" 
+ SZC:0 "Chongqing"
+ SZC_DEF:0 "Chongqing"
+ SZC_ADJ:0 "Chinese"
+ 
+ XIK:0 "Xikang"
+ XIK_DEF:0 "Xikang"
+ XIK_ADJ:0 "Chinese"
+ 
+ GNN:0 "Gannan"
+ GNN_DEF:0 "Gannan"
+ GNN_ADJ:0 "Chinese"
+ 
+ CHN:0 "Chengdu"
+ CHN_DEF:0 "Chengdu"
+ CHN_ADJ:0 "Chinese"
  

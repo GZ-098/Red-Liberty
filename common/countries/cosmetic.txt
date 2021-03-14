@@ -342,6 +342,11 @@ POR_empire = {
 
 #####
 
+CHI_empire_puppet = {
+	color = rgb { 191 134 44 }
+	color_ui = rgb { 191 134 44 }
+}
+
 SBR_russia = {
 	color = rgb { 95 135 80 }
 	color_ui = rgb { 77 133 56 }

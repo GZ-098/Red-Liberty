@@ -1,20 +1,23 @@
+
 state={
 	id=839
 	name="STATE_839"
-	
+
 	history={
 		owner = CHI
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
+
 		}
 		add_core_of = CHI
+
 	}
-	
+
 	provinces={
-		1084 4137 7160 7189 9969 9987 10003 10068 10119 11944 11962 11980 11996 12093 
+		4137 9969 10003 10068 10119 11944 11962 11980 11996 
 	}
 	manpower=8000000
 	buildings_max_level_factor=1.000
-	state_category = city
+	state_category=city
 }
