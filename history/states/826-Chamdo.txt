@@ -3,12 +3,11 @@ state={
 	name="STATE_826"
 	
 	history={
-		owner = XIK
+		owner = TIB
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = XIK
-		add_claim_by = TIB
+		add_core_of = TIB
 	}
 	
 	provinces={

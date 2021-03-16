@@ -1,0 +1,21 @@
+state={
+	id=865
+	name="STATE_865"
+
+	history={
+		owner = GUD
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = ANH
+
+	}
+
+	provinces={
+		1006 4053 7099 10010 10054 10093 12084 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

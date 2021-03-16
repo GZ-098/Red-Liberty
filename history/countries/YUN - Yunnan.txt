@@ -26,6 +26,10 @@ set_popularities = {
 	ultranational_statism = 0
 }
 
+create_faction = "National Protection Army"
+add_to_faction = GXC
+add_to_faction = GUI
+
 create_country_leader = {
 	name = "Tang Jiyao"
 	#desc = ""

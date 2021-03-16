@@ -1,0 +1,21 @@
+state={
+	id=867
+	name="STATE_867"
+	
+	history={
+		owner = CHN
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = CHN
+
+	}
+	
+	provinces={
+		10841 12141 12819 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

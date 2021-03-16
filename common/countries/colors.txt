@@ -334,7 +334,7 @@ PRC = {
 }
 
 GXC = {
-	color = rgb { 71 113 97 }
+	color = rgb {69 110 78 }
 	color_ui = rgb { 71 113 97 }
 }
 
@@ -813,6 +813,10 @@ ANH = {
 	color = rgb { 214 197 45 }
 }
 
+ZHI = {
+	color = rgb { 214 197 45 }
+}
+
 AWA = {
 	color = rgb { 178 34 52 }
 	color_ui = rgb { 178 34 52 }
@@ -932,7 +936,7 @@ SHD = {
 }
 
 FNG = {
-	color = rgb { 191 134 44 }
+	color = rgb { 143 117 79 }
 	color_ui = rgb { 191 134 44 }
 }
 
@@ -965,4 +969,8 @@ CHN = {
 
 GNN = {
 	color = rgb { 117 18 55 } # { 89 14 42 }
+}
+
+GUI = {
+	color = rgb { 149 176 121 }
 }
