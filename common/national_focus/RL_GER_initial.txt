@@ -1,5 +1,6 @@
 shared_focus = {
     id = GER_reichskanzlei_goebbels
+	icon = GFX_GER_reichskanzlei_goebbels
 	
     x = 8
 	y = 0
@@ -16,6 +17,7 @@ shared_focus = {
 
 shared_focus = {
     id = GER_1936_budget
+	icon = GFX_GER_1936_budget
 	
     x = 0
 	y = 1
@@ -34,6 +36,7 @@ shared_focus = {
 
 shared_focus = {
     id = GER_bare_minimum
+	icon = GFX_GER_bare_minimum
 	
     x = 0
 	y = 1
@@ -52,6 +55,7 @@ shared_focus = {
 
 shared_focus = {
     id = GER_feminist_movement
+	icon = GFX_GER_feminist_movement
 	
     x = -2
 	y = 1
@@ -74,6 +78,7 @@ shared_focus = {
 
 shared_focus = {
     id = GER_paying_little
+	icon = GFX_GER_paying_what_little_we_can
 	
     x = 0
 	y = 1
@@ -96,6 +101,7 @@ shared_focus = {
 
 shared_focus = {
     id = GER_calls_for_peace
+	icon = GFX_GER_calls_for_peace
 	
     x = 2
 	y = 1
@@ -118,6 +124,7 @@ shared_focus = {
 
 shared_focus = {
     id = GER_meeting_with_the_kaiser
+	icon = GFX_GER_meeting_with_the_kaiser
 	
     x = 0
 	y = 1

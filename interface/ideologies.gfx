@@ -53,4 +53,9 @@ spriteTypes = {
 		name = "GFX_ideology_martial_despotism_group" 
 		texturefile = "gfx/interface/ideologies/martial_despotism_group.png"
 	}
+	
+	spriteType = {
+		name = "GFX_ideology_ultranational_statism_group" 
+		texturefile = "gfx/interface/ideologies/ultranationalism_group.png"
+	}
 }

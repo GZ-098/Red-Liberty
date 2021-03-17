@@ -1,0 +1,37 @@
+spritetypes = {
+	
+	spriteType = {
+		name = "GFX_GER_reichskanzlei_goebbels"
+		texturefile = "gfx/interface/goals/GER/GER_reichskanzlei_goebbels.png"
+	}
+	
+	spriteType = {
+		name = "GFX_GER_1936_budget"
+		texturefile = "gfx/interface/goals/GER/GER_1936_budget.png"
+	}
+	
+	spriteType = {
+		name = "GFX_GER_bare_minimum"
+		texturefile = "gfx/interface/goals/GER/GER_i_sleep.png"
+	}
+	
+	spriteType = {
+		name = "GFX_GER_feminist_movement"
+		texturefile = "gfx/interface/goals/GER/GER_feminist_movement.png"
+	}
+	
+	spriteType = {
+		name = "GFX_GER_paying_what_little_we_can"
+		texturefile = "gfx/interface/goals/GER/GER_paying_what_little_we_can.png"
+	}
+	
+	spriteType = {
+		name = "GFX_GER_calls_for_peace"
+		texturefile = "gfx/interface/goals/GER/GER_the_calls_for_peace_v2.png"
+	}
+	
+	spriteType = {
+		name = "GFX_GER_meeting_with_the_kaiser"
+		texturefile = "gfx/interface/goals/GER/GER_the_big_boss.png"
+	}
+}
