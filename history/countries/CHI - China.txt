@@ -1,14 +1,14 @@
 ﻿capital = 608
 
-oob = "empty"
+oob = "CHI"
 
 set_country_flag = social_democracy_coalition
 set_country_flag = market_libertarian_coalition
 set_country_flag = despotist_coalition
 
-set_stability = 0.2
-set_war_support = 0.5
-# Starting tech
+#set_stability = 0.35
+#set_war_support = 0.2
+
 set_technology = {
 	infantry_weapons = 1
 	gwtank = 1
@@ -64,6 +64,34 @@ set_popularities = {
 	ultranational_statism = 0
 }
 
+add_ideas = {
+	CHI_beiyang_army
+	CHI_japanese_influence
+	CHI_unpopular_government
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 10000
+	producer = JAP
+}
+
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 500
+	producer = JAP
+}
+
+add_offsite_building = {
+	type = arms_factory
+	level = 2
+}
+
+add_offsite_building = {
+	type = industrial_complex
+	level = 3
+}
+
 create_country_leader = {
 	name = "Rongyao"
 	#desc = ""
@@ -95,4 +123,18 @@ create_country_leader = {
 	traits = {
 		
 	}
+}
+
+create_field_marshal = {
+	name = "Duan Zhigui"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Duan_Zhigui.tga"
+	traits = {
+		career_officer
+		politically_connected
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
 }

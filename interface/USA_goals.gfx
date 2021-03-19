@@ -80,27 +80,27 @@ spritetypes = {
 	### THOMAS 2ND TERM ###
 	
 	SpriteType = {
-		name = "GFX_USA_socialist_cabinet_focus"
-		texturefile = "gfx/interface/goals/USA/USA_a_socialist_cabinet.png"
+		name = "GFX_USA_the_second_thomas_admin"
+		texturefile = "gfx/interface/goals/USA/USA_second_thomas_admin.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_USA_socialist_cabinet_focus"
-		texturefile = "gfx/interface/goals/USA/USA_a_socialist_cabinet.png"
+		name = "GFX_USA_our_mandate"
+		texturefile = "gfx/interface/goals/USA/USA_our_mandate.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_USA_liberal_cabinet_focus"
-		texturefile = "gfx/interface/goals/USA/USA_a_liberal_cabinet.png"
+		name = "GFX_USA_butter_em_up"
+		texturefile = "gfx/interface/goals/USA/USA_butter_em_up.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_USA_plans_for_presidency_focus"
-		texturefile = "gfx/interface/goals/USA/USA_our_plans_for_this_presidency.png"
+		name = "GFX_USA_strengthen_executive_branch"
+		texturefile = "gfx/interface/goals/USA/USA_strengthen_the_executive_branch.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_USA_review_the_constitution_focus"
-		texturefile = "gfx/interface/goals/USA/USA_review_the_constitution.png"
+		name = "GFX_USA_reorganization"
+		texturefile = "gfx/interface/goals/USA/USA_reorganization.png"
 	}
 }

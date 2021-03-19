@@ -1,16 +1,13 @@
-﻿capital = 606
+﻿capital = 622
 
-oob = empty
+oob = "empty"
 
-set_stability = 0.6
+set_stability = 0.7
 set_war_support = 0.4
-# Starting tech
+
 set_technology = {
 	infantry_weapons = 1
-	mass_assault = 1
 }
-
-set_convoys = 5
 
 set_politics = {
 	ruling_party = martial_despotism
@@ -22,21 +19,21 @@ set_popularities = {
 	insurrectionary_anarchism = 0
 	revolutionary_autocracy = 0
 	proletarian_dictatorship = 0
-	libertarian_socialism = 2
-	social_democracy = 0
-	progressive_liberalism = 15
-	market_libertarianism = 10
-	national_conservatism = 15
-	reactionary_theocracy = 5
-	authoritarian_republicanism = 15
-	martial_despotism = 38
+	libertarian_socialism = 10
+	social_democracy = 24
+	progressive_liberalism = 14
+	market_libertarianism = 0
+	national_conservatism = 16
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 6
+	martial_despotism = 30
 	ultranational_statism = 0
 }
 
 create_country_leader = {
-	name = "Duan Qirui"
+	name = "Chen Shufan"
 	desc = ""
-	picture = "gfx/leaders/CHI/Portrait_CHI_Duan_Qirui.tga"
+	picture = ""
 	expire = "1965.1.1"
 	ideology = martial_despotism_subtype
 	traits = {

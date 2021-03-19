@@ -31,11 +31,11 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Yan Xishan"
+	name = "Yu Youren"
 	desc = ""
 	picture = ""
 	expire = "1965.1.1"
-	ideology = martial_despotism_subtype
+	ideology = authoritarian_republicanism_subtype
 	traits = {
 		#
 	}

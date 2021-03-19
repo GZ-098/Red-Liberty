@@ -1,0 +1,67 @@
+ideas = {
+	
+	country = {
+	
+       	CHI_beiyang_army = {
+			removal_cost = -1
+			
+			allowed = {
+				tag = CHI
+			} 
+			available = {
+				tag = CHI
+			}
+			
+			allowed_civil_war = { 
+				always = no
+			}
+			
+			modifier = {  
+				conscription_factor = 0.15
+				army_org_factor = -0.05
+			}
+		}
+		
+		CHI_japanese_influence = {
+			removal_cost = -1
+			
+			allowed = {
+				tag = CHI
+			} 
+			available = {
+				tag = CHI
+			}
+			
+			allowed_civil_war = { 
+				always = no
+			}
+			
+			modifier = {  
+				political_power_gain = -0.15
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		
+		CHI_unpopular_government = {
+			removal_cost = -1
+			
+			allowed = {
+				tag = CHI
+			} 
+			available = {
+				tag = CHI
+			}
+			
+			allowed_civil_war = { 
+				always = no
+			}
+			
+			modifier = {  
+				political_power_gain = -0.1
+				stability_factor = -0.1
+			}
+		}
+	}
+}
