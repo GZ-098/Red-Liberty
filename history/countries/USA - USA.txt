@@ -9,6 +9,12 @@ if = {
 	}
 }
 
+load_focus_tree = USA_initial_tree
+
+country_event = { # boulder dam complete
+	id = united_states_flavor.1
+	days = 91
+}
 country_event = { # rnc
 	id = united_states.2
 	days = 163

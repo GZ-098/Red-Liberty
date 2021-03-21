@@ -76,7 +76,7 @@ country_event = { # house of reps votes
 	}
 }
 
-country_event = { # inaug day
+country_event = { # thomas inaug day
 	id = us_election.4
 	title = "Inuaguration Day"
 	desc = us_election.4.desc

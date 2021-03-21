@@ -95,12 +95,42 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_robinson_patman_act"
+		texturefile = "gfx/interface/goals/USA/USA_price_discrimination_act.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_bonneville_project"
+		texturefile = "gfx/interface/goals/USA/USA_northwest_dam.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_strengthen_executive_branch"
 		texturefile = "gfx/interface/goals/USA/USA_strengthen_the_executive_branch.png"
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_pack_the_court"
+		texturefile = "gfx/interface/goals/USA/USA_pack_the_court.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_accept_the_rulings"
+		texturefile = "gfx/interface/goals/USA/USA_accept_the_rulings.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_reorganization"
 		texturefile = "gfx/interface/goals/USA/USA_reorganization.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_totally_not_brownlow_commitee"
+		texturefile = "gfx/interface/goals/USA/USA_brownlow_commitee.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_secure_funding"
+		texturefile = "gfx/interface/goals/USA/USA_secure_funding.png"
 	}
 }
