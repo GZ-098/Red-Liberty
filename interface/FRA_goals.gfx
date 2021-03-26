@@ -1,0 +1,34 @@
+spritetypes = {
+	
+	### INTRO TREE ###
+	
+	SpriteType = {
+		name = "GFX_FRA_convene_national_assembly"
+		texturefile = "gfx/interface/goals/FRA/FRA_convene_the_national_assembly.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_government_formed"
+		texturefile = "gfx/interface/goals/FRA/FRA_goverment_formed.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_mass_resignations"
+		texturefile = "gfx/interface/goals/FRA/FRA_mass_resignations.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_cooler_heads_prevail"
+		texturefile = "gfx/interface/goals/FRA/FRA_cooler_heads.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_empower_the_far_right_gamer"
+		texturefile = "gfx/interface/goals/FRA/FRA_empower_the_gamers.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_empower_the_far_right_monarch"
+		texturefile = "gfx/interface/goals/FRA/FRA_empower_the_king.png"
+	}
+}

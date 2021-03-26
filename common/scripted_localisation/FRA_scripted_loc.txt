@@ -1,0 +1,21 @@
+defined_text = {
+	name = GetFranceFarRightIcon
+	
+	text = {
+		trigger = {
+			has_completed_focus = FRA_mass_resignations
+		}
+		localization_key = "GFX_FRA_empower_the_far_right_monarch"
+    }
+	
+	text = {
+		trigger = {
+			has_completed_focus = FRA_government_formed
+		}
+		localization_key = "GFX_FRA_empower_the_far_right_gamer"
+    }
+	
+	text = {
+		localization_key = "GFX_FRA_empower_the_far_right_gamer"
+    }
+}

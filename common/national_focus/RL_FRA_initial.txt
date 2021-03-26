@@ -1,0 +1,379 @@
+shared_focus = {
+    id = FRA_convene_national_assembly
+	icon = GFX_FRA_convene_national_assembly
+	
+    x = 8
+	y = 0
+	
+	cost = 5
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_government_formed
+	icon = GFX_FRA_government_formed
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_convene_national_assembly
+	prerequisite = { focus = FRA_convene_national_assembly }
+	mutually_exclusive = {
+		focus = FRA_mass_resignations
+	}
+    completion_reward = {
+        mark_focus_tree_layout_dirty = yes
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_mass_resignations
+	icon = GFX_FRA_mass_resignations
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_convene_national_assembly
+	prerequisite = { focus = FRA_convene_national_assembly }
+	mutually_exclusive = {
+		focus = FRA_government_formed
+	}
+    completion_reward = {
+        mark_focus_tree_layout_dirty = yes
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_cooler_heads_prevail
+	icon = GFX_FRA_cooler_heads_prevail
+	
+    x = -2
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_government_formed
+	prerequisite = { focus = FRA_government_formed }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_outlaw_paramilitaries
+	icon = GFX_FRA_outlaw_paramilitaries
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_cooler_heads_prevail
+	prerequisite = { focus = FRA_cooler_heads_prevail }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_ban_extremists
+	icon = GFX_FRA_ban_extremists
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_outlaw_paramilitaries
+	prerequisite = { focus = FRA_outlaw_paramilitaries }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_restore_voting_confidence
+	icon = GFX_FRA_restore_voting_confidence
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_cooler_heads_prevail
+	prerequisite = { focus = FRA_cooler_heads_prevail }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_emergency_powers
+	icon = GFX_FRA_emergency_powers
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_restore_voting_confidence
+	prerequisite = { focus = FRA_restore_voting_confidence }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_republic_prevails
+	icon = GFX_FRA_republic_prevails
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_emergency_powers
+	prerequisite = { focus = FRA_ban_extremists }
+	prerequisite = { focus = FRA_emergency_powers }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_empower_the_far_right_neutral
+	#icon = 
+	
+    x = -1
+	y = 1
+	
+	dynamic = yes
+	
+	allow_branch = {
+		NOT = {
+			OR = {
+				has_completed_focus = FRA_government_formed
+				has_completed_focus = FRA_mass_resignations
+			}
+		}
+	}
+	
+	cost = 5
+	relative_position_id = FRA_mass_resignations
+	prerequisite = {
+		focus = FRA_government_formed
+		focus = FRA_mass_resignations
+	}
+    completion_reward = {
+        custom_effect_tooltip = FRA_FRA_empower_the_far_right_tt
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_empower_the_far_right_gamer
+	icon = GFX_FRA_empower_the_far_right_gamer
+	
+    x = 1
+	y = 1
+	
+	dynamic = yes
+	
+	allow_branch = {
+		has_completed_focus = FRA_government_formed
+	}
+	
+	cost = 5
+	relative_position_id = FRA_government_formed
+	prerequisite = {
+		focus = FRA_government_formed
+		focus = FRA_mass_resignations
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_empower_the_far_right_monarch
+	icon = GFX_FRA_empower_the_far_right_monarch
+	
+    x = 1
+	y = 1
+	
+	dynamic = yes
+	
+	allow_branch = {
+		has_completed_focus = FRA_mass_resignations
+	}
+	
+	cost = 5
+	relative_position_id = FRA_government_formed
+	prerequisite = {
+		focus = FRA_government_formed
+		focus = FRA_mass_resignations
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_masses_cant_be_trusted
+	icon = GFX_FRA_masses_cant_be_trusted
+	
+    x = 2
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_mass_resignations
+	prerequisite = { focus = FRA_mass_resignations }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_invite_revolutionaries
+	icon = GFX_FRA_invite_revolutionaries
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_masses_cant_be_trusted
+	prerequisite = { focus = FRA_masses_cant_be_trusted }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_disarm_the_army
+	icon = GFX_FRA_disarm_the_army
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_invite_revolutionaries
+	prerequisite = { focus = FRA_invite_revolutionaries }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_organize_cells
+	icon = GFX_FRA_organize_cells
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_masses_cant_be_trusted
+	prerequisite = { focus = FRA_masses_cant_be_trusted }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_preemptive_strikes
+	icon = GFX_FRA_preemptive_strikes
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_organize_cells
+	prerequisite = { focus = FRA_organize_cells }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_paris_putsch
+	icon = GFX_FRA_paris_putsch
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_preemptive_strikes
+	prerequisite = { focus = FRA_disarm_the_army }
+	prerequisite = { focus = FRA_preemptive_strikes }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}

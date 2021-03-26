@@ -105,6 +105,11 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_farm_tenant_act"
+		texturefile = "gfx/interface/goals/USA/USA_farm_tenant_act.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_strengthen_executive_branch"
 		texturefile = "gfx/interface/goals/USA/USA_strengthen_the_executive_branch.png"
 	}
@@ -120,6 +125,11 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_court_tamed"
+		texturefile = "gfx/interface/goals/USA/USA_the_court_tamed.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_reorganization"
 		texturefile = "gfx/interface/goals/USA/USA_reorganization.png"
 	}
@@ -132,5 +142,15 @@ spritetypes = {
 	SpriteType = {
 		name = "GFX_USA_secure_funding"
 		texturefile = "gfx/interface/goals/USA/USA_secure_funding.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_reorg_act"
+		texturefile = "gfx/interface/goals/USA/USA_reorg_act.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_second_bill_of_rights"
+		texturefile = "gfx/interface/goals/USA/USA_the_second_bill_of_rights.png"
 	}
 }
