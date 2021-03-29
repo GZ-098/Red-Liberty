@@ -226,6 +226,12 @@ WLA = "countries/Wallonia.txt"
 WUK = "countries/West Ukraine.txt"
 KRA = "countries/Krakow.txt"
 
+### Africa ###
+BEA = "countries/British East Africa.txt"
+BWA = "countries/British West Africa.txt"
+BSA = "countries/British South Africa.txt"
+AES = "countries/Anglo-Egyptian Sudan.txt"
+
 ### Middle East ###
 ASI = "countries/Asir.txt"
 GIL = "countries/Gilan.txt"
