@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = BRA
+		owner = UOB
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -21,10 +21,16 @@ state={
 			}
 		}
 		add_core_of = BRA
+		add_core_of = UOB
 		victory_points = {
 			12853 1 
 		}
-
+		1936.1.1 = {
+			BRA = {
+				set_province_controller = 2214
+				set_province_controller = 10874
+			}
+		}
 	}
 
 	provinces={

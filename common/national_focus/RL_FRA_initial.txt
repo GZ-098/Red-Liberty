@@ -176,7 +176,7 @@ shared_focus = {
 
 shared_focus = {
     id = FRA_empower_the_far_right_neutral
-	#icon = 
+	icon = GFX_FRA_empower_the_far_right_neutral
 	
     x = -1
 	y = 1
@@ -385,8 +385,8 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = FRA_cringe_focus
-	icon = GFX_FRA_gamer_focus
+    id = FRA_expose_meteque
+	icon = GFX_FRA_expose_meteque
 	
     x = 0
 	y = 1
@@ -394,6 +394,108 @@ shared_focus = {
 	cost = 5
 	relative_position_id = FRA_empower_the_far_right_monarch
 	prerequisite = { focus = FRA_empower_the_far_right_monarch }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_papal_reapproachment
+	icon = GFX_FRA_papal_reapproachment
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_expose_meteque
+	prerequisite = { focus = FRA_expose_meteque }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_politique_dabord
+	icon = GFX_FRA_politique_dabord
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_papal_reapproachment
+	prerequisite = { focus = FRA_papal_reapproachment }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_deal_with_the_devil
+	icon = GFX_FRA_deal_with_the_devil
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_politique_dabord
+	prerequisite = { focus = FRA_politique_dabord }
+	mutually_exclusive = {
+		focus = FRA_partner_with_moderates
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_partner_with_moderates
+	icon = GFX_FRA_partner_with_moderates
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_politique_dabord
+	prerequisite = { focus = FRA_politique_dabord }
+	mutually_exclusive = {
+		focus = FRA_deal_with_the_devil
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_establish_regency
+	icon = GFX_FRA_establish_regency
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_deal_with_the_devil
+	prerequisite = { focus = FRA_deal_with_the_devil }
+	prerequisite = { focus = FRA_partner_with_moderates }
     completion_reward = {
         
     }

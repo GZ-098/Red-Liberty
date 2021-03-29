@@ -48,8 +48,18 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_FRA_empower_the_far_right_neutral"
+		texturefile = "gfx/interface/goals/FRA/FRA_empower_the_far_right.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_FRA_empower_the_far_right_gamer"
 		texturefile = "gfx/interface/goals/FRA/FRA_empower_the_gamers.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_secure_church"
+		texturefile = "gfx/interface/goals/FRA/FRA_secure_the_church.png"
 	}
 	
 	SpriteType = {

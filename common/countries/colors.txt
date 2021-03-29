@@ -974,3 +974,37 @@ GNN = {
 GUI = {
 	color = rgb { 149 176 121 }
 }
+
+UOB = {
+	color = rgb { 148 71 71 }
+}
+
+BEA = {
+	color = rgb { 171 48 48 }
+	color_ui = rgb { 255 73 121 }
+}
+
+BWA = {
+	color = rgb { 171 48 48 }
+	color_ui = rgb { 255 73 121 }
+}
+
+BSA = {
+	color = rgb { 171 48 48 }
+	color_ui = rgb { 255 73 121 }
+}
+
+AES = {
+	color = rgb { 171 48 48 }
+	color_ui = rgb { 255 73 121 }
+}
+
+BAR = {
+	color = rgb { 171 48 48 }
+	color_ui = rgb { 255 73 121 }
+}
+
+BWI = {
+	color = rgb { 171 48 48 }
+	color_ui = rgb { 255 73 121 }
+}

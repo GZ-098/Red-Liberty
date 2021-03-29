@@ -231,6 +231,11 @@ BEA = "countries/British East Africa.txt"
 BWA = "countries/British West Africa.txt"
 BSA = "countries/British South Africa.txt"
 AES = "countries/Anglo-Egyptian Sudan.txt"
+BAR = "countries/British Arabia.txt"
+BWI = "countries/British West Indies.txt"
+
+### South America ###
+UOB = "countries/Union of Brazil.txt"
 
 ### Middle East ###
 ASI = "countries/Asir.txt"
