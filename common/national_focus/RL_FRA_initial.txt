@@ -236,6 +236,127 @@ shared_focus = {
 }
 
 shared_focus = {
+    id = FRA_secure_church
+	icon = GFX_FRA_secure_church
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_empower_the_far_right_gamer
+	prerequisite = { focus = FRA_empower_the_far_right_gamer }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_rally_veterans
+	icon = GFX_FRA_rally_veterans
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_secure_church
+	prerequisite = { focus = FRA_secure_church }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_social_dabord
+	icon = GFX_FRA_social_dabord
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_rally_veterans
+	prerequisite = { focus = FRA_rally_veterans }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_cult_of_la_rocque
+	icon = GFX_FRA_cult_of_la_rocque
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_social_dabord
+	prerequisite = { focus = FRA_social_dabord }
+	mutually_exclusive = {
+		focus = FRA_cult_of_the_fallen
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_cult_of_the_fallen
+	icon = GFX_FRA_cult_of_the_fallen
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_social_dabord
+	prerequisite = { focus = FRA_social_dabord }
+	mutually_exclusive = {
+		focus = FRA_cult_of_la_rocque
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_million_cross_march
+	icon = GFX_FRA_million_cross_march
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_cult_of_la_rocque
+	prerequisite = { focus = FRA_cult_of_la_rocque }
+	prerequisite = { focus = FRA_cult_of_the_fallen }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
     id = FRA_empower_the_far_right_monarch
 	icon = GFX_FRA_empower_the_far_right_monarch
 	
@@ -254,6 +375,25 @@ shared_focus = {
 		focus = FRA_government_formed
 		focus = FRA_mass_resignations
 	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_cringe_focus
+	icon = GFX_FRA_gamer_focus
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_empower_the_far_right_monarch
+	prerequisite = { focus = FRA_empower_the_far_right_monarch }
     completion_reward = {
         
     }

@@ -23,6 +23,31 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_FRA_outlaw_paramilitaries"
+		texturefile = "gfx/interface/goals/FRA/FRA_outlaw_paramilitaries.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_ban_extremists"
+		texturefile = "gfx/interface/goals/FRA/FRA_ban_extremist_parties.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_restore_voting_confidence"
+		texturefile = "gfx/interface/goals/FRA/FRA_restore_voting_confidence.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_emergency_powers"
+		texturefile = "gfx/interface/goals/FRA/FRA_emergency_powers.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_republic_prevails"
+		texturefile = "gfx/interface/goals/FRA/FRA_the_republic_prevails.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_FRA_empower_the_far_right_gamer"
 		texturefile = "gfx/interface/goals/FRA/FRA_empower_the_gamers.png"
 	}
@@ -30,5 +55,10 @@ spritetypes = {
 	SpriteType = {
 		name = "GFX_FRA_empower_the_far_right_monarch"
 		texturefile = "gfx/interface/goals/FRA/FRA_empower_the_king.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_masses_cant_be_trusted"
+		texturefile = "gfx/interface/goals/FRA/FRA_the_masses_cannot_be_trusted.png"
 	}
 }
