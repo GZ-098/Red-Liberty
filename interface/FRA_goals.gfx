@@ -63,6 +63,31 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_FRA_rally_veterans"
+		texturefile = "gfx/interface/goals/FRA/FRA_rally_veterans_organizations.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_social_dabord"
+		texturefile = "gfx/interface/goals/FRA/FRA_social_dabord.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_cult_of_la_rocque"
+		texturefile = "gfx/interface/goals/FRA/FRA_cult_of_de_la_rocque.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_cult_of_the_fallen"
+		texturefile = "gfx/interface/goals/FRA/FRA_cult_of_the_fallen.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_million_cross_march"
+		texturefile = "gfx/interface/goals/FRA/FRA_million_cross_march.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_FRA_empower_the_far_right_monarch"
 		texturefile = "gfx/interface/goals/FRA/FRA_empower_the_king.png"
 	}
