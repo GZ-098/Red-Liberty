@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = ITA_begin_to_weaken_fascism
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_begin_to_weaken_fascism
 		cost = 5.00
 		mutually_exclusive = {
 			focus = ITA_begin_the_revisions
@@ -566,7 +566,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_a_change_in_course
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_a_change_in_course
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_begin_to_weaken_fascism
@@ -613,7 +613,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ITA_returning_to_worker
+		id = ITA_returning_to_the_workers
 		icon = GFX_ITA_returning_to_worker
 		cost = 5.00
 		prerequisite = {
@@ -661,7 +661,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = ITA_returning_to_worker
+			focus = ITA_returning_to_the_workers
 		}
 		prerequisite = {
 			focus = ITA_expand_socialist_influences_in_the_blackshirts
