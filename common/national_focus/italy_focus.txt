@@ -2311,7 +2311,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_nationolization_of_factories
+		id = ITA_nationalization_of_factories
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
@@ -2330,10 +2330,103 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5
 		prerequisite = {
-			focus = ITA_nationolization_of_factories
+			focus = ITA_nationalization_of_factories
 		}
 		x = 58
 		y = 6
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_a_war_against_markets
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_establishment_of_worker_cooperatives
+		}
+		x = 58
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_full_commitment
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_a_war_against_markets
+		}
+		mutually_exclusive = {
+			focus = ITA_limited_intervention
+		}
+		x = 59
+		y = 8
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_limited_intervention
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_a_war_against_markets
+		}
+		mutually_exclusive = {
+			focus = ITA_full_commitment
+		}
+		x = 57
+		y = 8
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_begin_making_an_emergency_fund
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_full_commitment
+		}
+		prerequisite = {
+			focus = ITA_limited_intervention
+		}
+		x = 58
+		y = 9
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_localize_managment_of_production
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_begin_making_an_emergency_fund
+		}
+		x = 58
+		y = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_building_the_future
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_localize_managment_of_production
+		}
+		x = 58
+		y = 11
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_the_workers_mindset
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_building_the_future
+		}
+		x = 58
+		y = 12
 		completion_reward = {
 		}
 	}
@@ -2401,6 +2494,18 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = ITA_minimum_wage_laws
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_extra_barganing_power_for_unions
+		}
+		x = 54
+		y = 9
+		completion_reward = {
+		}
+	}
+	focus = {
 		id = ITA_increase_the_presence_of_blackshirts_in_factories
 		icon = GFX_goal_unknown
 		cost = 5
@@ -2421,6 +2526,118 @@ focus_tree = {
 		}
 		x = 52
 		y = 8
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_ensuring_bail_outs
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_the_destruction_of_unions
+		}
+		x = 52
+		y = 9
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_remove_child_labor_in_factories
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_ensuring_bail_outs
+			focus = ITA_minimum_wage_laws
+		}
+		x = 53
+		y = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_time_for_building
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_remove_child_labor_in_factories
+		}
+		x = 53
+		y = 11
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_hire_contractors
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_time_for_building
+		}
+		x = 53
+		y = 12
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_developments_in_technologies
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_hire_contractors
+		}
+		prerequisite = {
+			focus = ITA_the_workers_mindset
+		}
+		x = 55.5
+		y = 13
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_computing_advances
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_developments_in_technologies
+		}
+		x = 55.5
+		y = 14
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_an_even_better_wrench
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_computing_advances
+		}
+		x = 55.5
+		y = 15
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_better_factory_orginization
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_computing_advances
+		}
+		x = 55.5
+		y = 16
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ITA_a_new_factory_a_new_italy
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ITA_better_factory_orginization
+		}
+		x = 55.5
+		y = 17
 		completion_reward = {
 		}
 	}
