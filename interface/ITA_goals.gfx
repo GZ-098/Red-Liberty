@@ -34,7 +34,7 @@ spritetypes = {
 	}
 	SpriteType = {
 		name = "GFX_ITA_begin_to_weaken_fascism"
-		texturefile = "gfx/interface/goals/ITA/ITA_begin_to_weaken_fascism.dds"
+		texturefile = "gfx/interface/goals/ITA/GFX_ITA_begin_to_weaken_fascism.dds"
 	}
 	SpriteType = {
 		name = "GFX_ITA_increase_the_influence_of_classical_liberal_values"
