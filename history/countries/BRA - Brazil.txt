@@ -79,6 +79,17 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Jair Bolsonaro"
+	desc = ""
+	picture = "Portrait_ITA_Jair_Bolsonaro.png"
+	expire = "1965.1.1"
+	ideology = ultranational_statism_subtype
+	traits = {
+		
+	}
+}
+
 set_convoys = 40
 
 if = {

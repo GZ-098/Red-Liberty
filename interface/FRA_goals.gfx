@@ -96,4 +96,29 @@ spritetypes = {
 		name = "GFX_FRA_masses_cant_be_trusted"
 		texturefile = "gfx/interface/goals/FRA/FRA_the_masses_cannot_be_trusted.png"
 	}
+	
+	SpriteType = {
+		name = "GFX_FRA_invite_revolutionaries"
+		texturefile = "gfx/interface/goals/FRA/FRA_invite_revolutionaries.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_disarm_the_army"
+		texturefile = "gfx/interface/goals/FRA/FRA_disarm_the_army.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_organize_cells"
+		texturefile = "gfx/interface/goals/FRA/FRA_organize_the_cells.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_preemptive_strikes"
+		texturefile = "gfx/interface/goals/FRA/FRA_preemptive_strikes.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_paris_putsch"
+		texturefile = "gfx/interface/goals/FRA/FRA_paris_putsch.png"
+	}
 }
