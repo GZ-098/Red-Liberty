@@ -93,6 +93,35 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_FRA_expose_meteque"
+		texturefile = "gfx/interface/goals/FRA/FRA_expose_the_meteque.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_papal_reapproachment"
+		texturefile = "gfx/interface/goals/FRA/FRA_papal_rapprochement.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_politique_dabord"
+		texturefile = "gfx/interface/goals/FRA/FRA_politique_dabord.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_deal_with_the_devil"
+		texturefile = "gfx/interface/goals/FRA/FRA_deal_with_the_devil.png"
+	}
+	SpriteType = {
+		name = "GFX_FRA_partner_with_moderates"
+		texturefile = "gfx/interface/goals/FRA/FRA_partnership_with_the_moderates.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_establish_regency"
+		texturefile = "gfx/interface/goals/FRA/FRA_establish_a_regency.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_FRA_masses_cant_be_trusted"
 		texturefile = "gfx/interface/goals/FRA/FRA_the_masses_cannot_be_trusted.png"
 	}
