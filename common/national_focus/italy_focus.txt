@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = ITA_begin_to_weaken_fascism
-		icon = GFX_ITA_begin_to_weaken_fascism
+		icon = ITA_begin_to_weaken_fascism
 		cost = 5.00
 		mutually_exclusive = {
 			focus = ITA_begin_the_revisions
@@ -28,7 +28,6 @@ focus_tree = {
 				popularity = -0.07
 			}
 		}
-
 	}
 	focus = {
 		id = ITA_begin_the_revisions
@@ -1522,7 +1521,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_the_freedom_of_speech_is_fundamental
-		icon = GFX_goal_unknown
+		icon = ITA_the_freedom_of_speech_is_fundamental
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_improve_italian_industry
@@ -1546,7 +1545,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_restrict_opposing_views
-		icon = GFX_goal_unknown
+		icon = ITA_restrict_opposing_views
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_improve_italian_industry
@@ -1570,7 +1569,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_draft_a_new_constitution
-		icon = GFX_goal_unknown
+		icon = ITA_draft_a_new_constitution
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_the_freedom_of_speech_is_fundamental
@@ -1590,7 +1589,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_demand_for_switzerland_to_break_neutrality
-		icon = GFX_goal_unknown
+		icon = ITA_demand_for_switzerland_to_break_neutrality
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_lead_the_light_of_democracy
@@ -1611,7 +1610,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_strengthen_italian_moral
-		icon = GFX_goal_unknown
+		icon = ITA_strengthen_italian_moral
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_lead_the_light_of_democracy
@@ -1679,7 +1678,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_demand_for_albanian_submission
-		icon = GFX_goal_unknown
+		icon = ITA_demand_for_albanian_submission
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_begin_to_spread_the_revolution
@@ -1704,7 +1703,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_lead_the_light_of_democracy
-		icon = GFX_goal_unknown
+		icon = ITA_lead_the_light_of_democracy
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_draft_a_new_constitution
@@ -1765,7 +1764,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_begin_to_spread_the_revolution
-		icon = GFX_goal_unknown
+		icon = ITA_begin_to_spread_the_revolution
 		cost = 5
 		prerequisite = {
 			focus = ITA_draft_a_new_constitution
@@ -1788,7 +1787,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_spread_to_france
-		icon = GFX_goal_unknown
+		icon = ITA_spread_to_france
 		cost = 5
 		prerequisite = {
 			focus = ITA_begin_to_spread_the_revolution
@@ -1802,7 +1801,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_spread_to_the_balkans
-		icon = GFX_goal_unknown
+		icon = ITA_spread_to_the_balkans
 		cost = 5
 		prerequisite = {
 			focus = ITA_begin_to_spread_the_revolution

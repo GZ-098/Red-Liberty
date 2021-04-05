@@ -1,6 +1,46 @@
 spritetypes = {
 
 	SpriteType = {
+		name = "ITA_spread_to_the_balkans"
+		texturefile = "gfx/interface/goals/ITA/ITA_spread_to_the_balkans.dds"
+	}
+	SpriteType = {
+		name = "ITA_spread_to_france"
+		texturefile = "gfx/interface/goals/ITA/ITA_spread_to_france.dds"
+	}
+	SpriteType = {
+		name = "ITA_demand_for_albanian_submission"
+		texturefile = "gfx/interface/goals/ITA/ITA_demand_for_albanian_submission.dds"
+	}
+	SpriteType = {
+		name = "ITA_strengthen_italian_moral"
+		texturefile = "gfx/interface/goals/ITA/ITA_strengthen_italian_moral.dds"
+	}
+	SpriteType = {
+		name = "ITA_demand_for_switzerland_to_break_neutrality"
+		texturefile = "gfx/interface/goals/ITA/ITA_demand_for_switzerland_to_break_neutrality.dds"
+	}
+	SpriteType = {
+		name = "ITA_begin_to_spread_the_revolution"
+		texturefile = "gfx/interface/goals/ITA/ITA_begin_to_spread_the_revolution.dds"
+	}
+	SpriteType = {
+		name = "ITA_lead_the_light_of_democracy"
+		texturefile = "gfx/interface/goals/ITA/ITA_lead_the_light_of_democracy.dds"
+	}
+	SpriteType = {
+		name = "ITA_draft_a_new_constitution"
+		texturefile = "gfx/interface/goals/ITA/ITA_draft_a_new_constitution.dds"
+	}
+	SpriteType = {
+		name = "ITA_restrict_opposing_views"
+		texturefile = "gfx/interface/goals/ITA/ITA_restrict_opposing_views.dds"
+	}
+	SpriteType = {
+		name = "ITA_the_freedom_of_speech_is_fundamental"
+		texturefile = "gfx/interface/goals/ITA/ITA_the_freedom_of_speech_is_fundamental.dds"
+	}
+	SpriteType = {
 		name = "GFX_ITA_a_change_in_course"
 		texturefile = "gfx/interface/goals/ITA/ITA_a_change_in_course.dds"
 	}
@@ -33,8 +73,8 @@ spritetypes = {
 		texturefile = "gfx/interface/goals/ITA/ITA_bring_back_christian_values.dds"
 	}
 	SpriteType = {
-		name = "GFX_ITA_begin_to_weaken_fascism"
-		texturefile = "gfx/interface/goals/ITA/GFX_ITA_begin_to_weaken_fascism.dds"
+		name = "ITA_begin_to_weaken_fascism"
+		texturefile = "gfx/interface/goals/ITA/ITA_begin_to_weaken_fascism.dds"
 	}
 	SpriteType = {
 		name = "GFX_ITA_increase_the_influence_of_classical_liberal_values"
