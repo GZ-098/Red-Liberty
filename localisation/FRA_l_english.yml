@@ -16,6 +16,8 @@
  FRA_emergency_powers:0 "The Question of Emergency Powers"
  FRA_republic_prevails:0 "The Republic Prevails"
  
+ FRA_FRA_empower_the_far_right_tt:0 "wat ar dey doin ovr dere"
+ 
  FRA_empower_the_far_right_neutral:0 "Empower the Far-Right"
  FRA_empower_the_far_right_gamer:0 "Empower the Far-Right"
  FRA_secure_church:0 "Secure the Church"
@@ -26,8 +28,18 @@
  FRA_million_cross_march:0 "Million Cross March"
  
  FRA_empower_the_far_right_monarch:0 "Empower the Far-Right"
- FRA_FRA_empower_the_far_right_tt:0 "wat ar dey doin ovr dere"
+ FRA_expose_meteque:0 "Expose the Meteque"
+ FRA_papal_reapproachment:0 "Papal Rapproachment"
+ FRA_politique_dabord:0 "Politique d'abord!"
+ FRA_deal_with_the_devil:0 "Deal with the Devil"
+ FRA_partner_with_moderates:0 "Partner with the Moderates"
+ FRA_establish_regency:0 "Establish a Regency"
  
  FRA_masses_cant_be_trusted:0 "The Masses Cannot be Trusted"
+ FRA_invite_revolutionaries:0 "Invite Revolutionaries"
+ FRA_disarm_the_army:0 "Disarm the Army"
+ FRA_organize_cells:0 "Organize the Cells"
+ FRA_preemptive_strikes:0 "Preemptive Strikes"
+ FRA_paris_putsch:0 "The Paris Putsch"
  
  
