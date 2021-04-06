@@ -1,0 +1,30 @@
+add_namespace = france
+add_namespace = france_far_right
+
+country_event = {
+	id = france_far_right.1
+	title = "The Regency"
+	desc = france_far_right.1.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Montjoie Saint Denis!"
+	}
+}
+
+country_event = {
+	id = france_far_right.2
+	title = "The Million Cross March"
+	desc = france_far_right.2.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "May God save the republic, for no one else will..."
+	}
+}

@@ -348,7 +348,10 @@ shared_focus = {
 	prerequisite = { focus = FRA_cult_of_la_rocque }
 	prerequisite = { focus = FRA_cult_of_the_fallen }
     completion_reward = {
-        
+        country_event = {
+			id = france_far_right.2
+			days = 1
+		}
     }
 	
 	ai_will_do = {
@@ -497,7 +500,10 @@ shared_focus = {
 	prerequisite = { focus = FRA_deal_with_the_devil }
 	prerequisite = { focus = FRA_partner_with_moderates }
     completion_reward = {
-        
+        country_event = {
+			id = france_far_right.1
+			days = 1
+		}
     }
 	
 	ai_will_do = {
