@@ -21,7 +21,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 11
 			tag = USA
 		}
 	}
@@ -31,6 +31,8 @@ focus_tree = {
 	}
 	default = no
 	shared_focus = USA_the_second_thomas_admin
+	shared_focus = USA_fight_the_recession
+	shared_focus = USA_war_is_a_racket
 }
 
 focus_tree = {

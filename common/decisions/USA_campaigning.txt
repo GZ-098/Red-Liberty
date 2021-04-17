@@ -1,28 +1,4 @@
 USA_election_season_category = {
-
-	USA_election_day_timer = {
-		visible = {
-			original_tag = USA
-		}
-		available = {
-			NOT = {
-				has_country_flag = USA_senate_elections
-			}
-		}
-		activation = {
-			has_country_flag = USA_senate_elections
-		}
-		is_good = no
-		
-		days_mission_timeout = 306
-		
-		timeout_effect = {
-			country_event = {
-				id = us_election.1
-			}
-		}
-		priority = 10
-	}
 	
 	USA_campaign_in_new_england = {
 	

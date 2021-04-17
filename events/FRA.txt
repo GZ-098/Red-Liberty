@@ -12,6 +12,12 @@ country_event = {
 
 	option = {
 		name = "Montjoie Saint Denis!"
+		set_politics = {
+			ruling_party = ultranational_statism
+			elections_allowed = no
+			last_election = "1932.11.8"
+			election_frequency = 48
+		}
 	}
 }
 
@@ -26,5 +32,11 @@ country_event = {
 
 	option = {
 		name = "May God save the republic, for no one else will..."
+		set_politics = {
+			ruling_party = ultranational_statism
+			elections_allowed = no
+			last_election = "1932.11.8"
+			election_frequency = 48
+		}
 	}
 }

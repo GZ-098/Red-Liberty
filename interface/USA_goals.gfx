@@ -153,4 +153,21 @@ spritetypes = {
 		name = "GFX_USA_second_bill_of_rights"
 		texturefile = "gfx/interface/goals/USA/USA_the_second_bill_of_rights.png"
 	}
+	
+	### 2ND TERM RECESSION ###
+	
+	SpriteType = {
+		name = "GFX_USA_attack_oligarchs"
+		texturefile = "gfx/interface/goals/USA/USA_attack_the_oligarchs.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_cut_taxes"
+		texturefile = "gfx/interface/goals/USA/USA_cut_taxes.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_issue_subsidies"
+		texturefile = "gfx/interface/goals/USA/USA_issue_subsidies.png"
+	}
 }

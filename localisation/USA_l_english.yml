@@ -79,6 +79,18 @@
  USA_reorg_act:0 "Reorganization Act"
  USA_second_bill_of_rights:0 "The Second Bill of Rights"
  
+ ### SECOND TERM RECESSION ###
+ USA_fight_the_recession:0 "Fight the Recession"
+ USA_caution_to_the_wind:0 "Throw Caution to the Wind"
+ USA_conspiracy_of_capital:0 "A Conspiracy of Capital"
+ USA_attack_oligarchs:0 "Attack the Oligarchs"
+ USA_scale_back_regulation:0 "Scale Back Regulation"
+ USA_cut_taxes:0 "Cut Taxes"
+ USA_issue_subsidies:0 "Issue Subsidies"
+ USA_end_union_infighting:0 "End Union Infighting"
+ USA_back_on_track:0 "Back on Track"
+ 
+ 
  USA_continue_the_work_tt:0 "We will focus on enacting our agenda across America."
  USA_prepare_the_campaign_tt:0 "We will focus on campaigning across America."
  
@@ -115,6 +127,9 @@
  
  ### Work events from intro tree ###
  united_states_thomas.7.desc:0 ""When we lose the next war, and an American boy, lying in the mud with an enemy bayonet through his belly and an enemy foot on his dying throat, spits out his last curse, I want the name not to be MacArthur, but Thomas!" MacArthur screamed. The news that the Army's budget was to be cut by 51% was just too much.\n\n"You must not talk that way to the President!" Thomas yelled back. He could tolerate criticism, but MacArthur had gone too far this time.\n\n"I don't give a damn! If you will not reconsider this stupidity, then I offer to resign! I will not be responsible!"\n\n"So be it then! I accept your resignation!"\n\nMacArthur froze. He could feel a rumbling in his stomach. He quickly made an about-face and stepped out of the office, the argument clearly over. His head was swimming. He needed air. He'd barely staggered out of the front door when it hit. He doubled over, and promptly vomited on the front steps of the White House."
+ 
+ ### SECOND TERM THOMAS EVENTS ###
+ united_states_thomas.9.desc:0 "President Thomas stared down at the sheet of paper on his desk, looking over the names that had been drawn up for potential cabinet appointments.\n\nThe election results had been good, but not perfect, and had planted a seed of doubt in the president’s mind. If the Socialist Party was truly to become America’s leading party then it would need popular support. More so, at least, than it currently had.\n\nThomas stared down at the list and smiled. It was a grand who’s who of socialist mainstays, from W.E.B. Du Bois to Emma Goldman.\n\nIt was a radical list, to be sure. A more radical government had never been assembled since Lincoln’s day. But these were radical times, and it wouldn’t do to stick with stodgy liberal-capitalist political thinking. That was a dying breed, and Thomas had no wish to resuscitate it.\n\nThe cabinet he was putting together would be unconventional, and Goldman’s inclusion would definitely raise some eyebrows, but it would show the people that, without a doubt, the Socialist Party was committed to socialism and the liberation of all men and women. \n \n That was the only real way to gain popular support, Thomas decided, leaning back in his chair with a smile on his face. Appeal to the people directly, and show them that the Socialist Party had their interests at heart first and foremost, not the pleadings and mutterings of the capitalist parties."
  
  ### 1936 Election Fiasco ###
  us_election.1.a:0 "No Majority."

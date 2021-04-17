@@ -35,3 +35,16 @@
  SOV_political_turmoil:0 "Political Turmoil"
  SOV_political_turmoil_desc:0 "The Russian Communist Party is in utter turmoil! While Lenin’s theories of Democratic Centralism and practice of stocking the party’s ranks with men and women of different opinions may have worked in theory, it certainly does not work in practice. While factions are officially banned, certain party members reliably vote together on almost every issue. This has gradually let to an almost total gridlock at all levels of government as the different factions vie for dominance. From the Congress of Soviets to the Politburo itself, what started as simple ideological disputes have quickly grown into heated arguments, personal insults, and in a few cases, even fistfights and pistol-brandishing. This cannot continue forever, and tensions will inevitably come to a head in the near future..."
  
+ SOV_state_of_the_union:0 "State of the Union"
+ SOV_managing_factions:0 "Managing Factions"
+ SOV_continue_industrialization:0 "Continue Industrialization"
+ SOV_improve_education:0 "Improve Education"
+ SOV_tractor_factories:0 "Tractor Factories"
+ SOV_workplace_democracy:0 "Stregnthen Workplace Democracy"
+ SOV_unite_the_party:0 "Unite the Party"
+ SOV_appease_the_soviets:0 "Appease the Soviets"
+ SOV_consult_the_commissars:0 "Consult the Commisars"
+ SOV_cossacks_dance:0 "Cossacks Dance"
+ 
+ SOV_and_the_battle_is_going_again:0 "And the Battle is Going Again!"
+ 

@@ -14,7 +14,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "USA_states_map_window"
 		#size = { width = 710 height = 450 }
-		size = { width = 910 height = 470 }
+		size = { width = 1000 height = 470 }
 		position = { x=-1100 y=-450 }
 		show_position = { x=-400 y=-450 }
 		
@@ -30,12 +30,12 @@ guiTypes = {
 		
 		background = {
 			name = "Background"
-			quadTextureSprite = "GFX_tiled_plain_bg"
+			quadTextureSprite = "GFX_USA_states_gui_background"
 		}
 		
 		iconType = { # background
 			name = "USA_states_gui_BG"
-			position = { x = 40 y = 20 }
+			position = { x = 40 y = 70 }
 			spriteType = "GFX_USA_states_gui_BG"
 		}
 		
@@ -44,305 +44,314 @@ guiTypes = {
 		buttonType = {
 			name = "USA_states_gui_AL"
 			quadTextureSprite = "GFX_USA_states_gui_AL"
-			position = { x = 461 y = 264 }
+			position = { x = 461 y = 314 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_AZ"
 			quadTextureSprite = "GFX_USA_states_gui_AZ"
-			position = { x= 126 y = 224 }
+			position = { x= 126 y = 274 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_AR"
 			quadTextureSprite = "GFX_USA_states_gui_AR"
-			position = { x= 381 y = 247 }
+			position = { x= 381 y = 297 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_CA"
 			quadTextureSprite = "GFX_USA_states_gui_CA"
-			position = { x= 42 y = 123 }
+			position = { x= 42 y = 173 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_CO"
 			quadTextureSprite = "GFX_USA_states_gui_CO"
-			position = { x = 208 y = 172 }
+			position = { x = 208 y = 222 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_FL"
 			quadTextureSprite = "GFX_USA_states_gui_FL"
-			position = { x = 474 y = 320 }
+			position = { x = 474 y = 370 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_GA"
 			quadTextureSprite = "GFX_USA_states_gui_GA"
-			position = { x = 492 y = 260 }
+			position = { x = 492 y = 310 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_IA"
 			quadTextureSprite = "GFX_USA_states_gui_IA"
-			position = { x = 356 y = 140 }
+			position = { x = 356 y = 190 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_ID"
 			quadTextureSprite = "GFX_USA_states_gui_ID"
-			position = { x = 129 y = 38 }
+			position = { x = 129 y = 88 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_IL"
 			quadTextureSprite = "GFX_USA_states_gui_IL"
-			position = { x = 415 y = 153 }
+			position = { x = 415 y = 203 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_IN"
 			quadTextureSprite = "GFX_USA_states_gui_IN"
-			position = { x = 458 y = 160 }
+			position = { x = 458 y = 210 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_KS"
 			quadTextureSprite = "GFX_USA_states_gui_KS"
-			position = { x = 292 y = 194 }
+			position = { x = 292 y = 244 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_KY"
 			quadTextureSprite = "GFX_USA_states_gui_KY"
-			position = { x = 446 y = 200 }
+			position = { x = 446 y = 250 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_LA"
 			quadTextureSprite = "GFX_USA_states_gui_LA"
-			position = { x = 390 y = 301 }
+			position = { x = 390 y = 351 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_ME"
 			quadTextureSprite = "GFX_USA_states_gui_ME"
-			position = { x = 625 y = 38 }
+			position = { x = 625 y = 88 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_MI"
 			quadTextureSprite = "GFX_USA_states_gui_MI"
-			position = { x = 422 y = 79 }
+			position = { x = 422 y = 129 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_MN"
 			quadTextureSprite = "GFX_USA_states_gui_MN"
-			position = { x = 349 y = 53 }
+			position = { x = 349 y = 103 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_MS"
 			quadTextureSprite = "GFX_USA_states_gui_MS"
-			position = { x = 421 y = 267 }
+			position = { x = 421 y = 317 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_MO"
 			quadTextureSprite = "GFX_USA_states_gui_MO"
-			position = { x = 366 y = 185 }
+			position = { x = 366 y = 235 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_MT"
 			quadTextureSprite = "GFX_USA_states_gui_MT"
 			pdx_tooltip = "GFX_USA_states_gui_MT_tt"
-			position = { x = 157 y = 40 }
+			position = { x = 157 y = 90 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_NE"
 			quadTextureSprite = "GFX_USA_states_gui_NE"
-			position = { x = 272 y = 147 }
+			position = { x = 272 y = 197 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_NV"
 			quadTextureSprite = "GFX_USA_states_gui_NV"
-			position = { x = 85 y = 135 }
+			position = { x = 85 y = 185 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_NJ"
 			quadTextureSprite = "GFX_USA_states_gui_NJ"
-			position = { x = 595 y = 146 }
+			position = { x = 595 y = 196 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_NY"
 			quadTextureSprite = "GFX_USA_states_gui_NY"
-			position = { x = 543 y = 88 }
+			position = { x = 543 y = 138 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_MA"
 			quadTextureSprite = "GFX_USA_states_gui_MA"
-			position = { x = 612 y = 113 }
+			position = { x = 612 y = 163 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_NH"
 			quadTextureSprite = "GFX_USA_states_gui_NH"
-			position = { x = 619 y = 78 }
+			position = { x = 619 y = 128 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_NC"
 			quadTextureSprite = "GFX_USA_states_gui_NC"
-			position = { x = 508 y = 220 }
+			position = { x = 508 y = 270 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_ND"
 			quadTextureSprite = "GFX_USA_states_gui_ND"
-			position = { x = 277 y = 56 }
+			position = { x = 277 y = 106 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_OH"
 			quadTextureSprite = "GFX_USA_states_gui_OH"
-			position = { x = 489 y = 150 }
+			position = { x = 489 y = 200 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_OR"
 			quadTextureSprite = "GFX_USA_states_gui_OR"
-			position = { x = 50 y = 62 }
+			position = { x = 50 y = 112 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_PA"
 			quadTextureSprite = "GFX_USA_states_gui_PA"
-			position = { x = 536 y = 138 }
+			position = { x = 536 y = 188 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_MD"
 			quadTextureSprite = "GFX_USA_states_gui_MD"
-			position = { x = 554 y = 173 }
+			position = { x = 554 y = 223 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_RI"
 			quadTextureSprite = "GFX_USA_states_gui_RI"
-			position = { x = 630 y = 127 }
+			position = { x = 630 y = 177 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_SC"
 			quadTextureSprite = "GFX_USA_states_gui_SC"
-			position = { x = 521 y = 253 }
+			position = { x = 521 y = 303 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_SD"
 			quadTextureSprite = "GFX_USA_states_gui_SD"
-			position = { x = 274 y = 103 }
+			position = { x = 274 y = 153 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_TN"
 			quadTextureSprite = "GFX_USA_states_gui_TN"
-			position = { x = 436 y = 233 }
+			position = { x = 436 y = 283 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_TX"
 			quadTextureSprite = "GFX_USA_states_gui_TX"
-			position = { x= 228 y = 247 }
+			position = { x= 228 y = 297 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_NM"
 			quadTextureSprite = "GFX_USA_states_gui_NM"
-			position = { x = 197 y = 232 }
+			position = { x = 197 y = 282 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_OK"
 			quadTextureSprite = "GFX_USA_states_gui_OK"
-			position = { x = 279 y = 240 }
+			position = { x = 279 y = 290 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_UT"
 			quadTextureSprite = "GFX_USA_states_gui_UT"
-			position = { x = 148 y = 149 }
+			position = { x = 148 y = 199 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_VT"
 			quadTextureSprite = "GFX_USA_states_gui_VT"
-			position = { x = 603 y = 82 }
+			position = { x = 603 y = 132 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_CT"
 			quadTextureSprite = "GFX_USA_states_gui_CT"
-			position = { x = 613 y = 128 }
+			position = { x = 613 y = 178 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_DE"
 			quadTextureSprite = "GFX_USA_states_gui_DE"
-			position = { x = 594 y = 173 }
+			position = { x = 594 y = 223 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_VA"
 			quadTextureSprite = "GFX_USA_states_gui_VA"
-			position = { x = 517 y = 183 }
+			position = { x = 517 y = 233 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_WA"
 			quadTextureSprite = "GFX_USA_states_gui_WA"
-			position = { x = 71 y = 24 }
+			position = { x = 71 y = 74 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_WV"
 			quadTextureSprite = "GFX_USA_states_gui_WV"
-			position = { x = 522 y = 179 }
+			position = { x = 522 y = 229 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_WI"
 			quadTextureSprite = "GFX_USA_states_gui_WI"
-			position = { x = 395 y = 88 }
+			position = { x = 395 y = 138 }
 		}
 		
 		buttonType = {
 			name = "USA_states_gui_WY"
 			quadTextureSprite = "GFX_USA_states_gui_WY"
-			position = { x= 192 y = 109 }
+			position = { x= 192 y = 159 }
 		}
 		
 		instantTextBoxType = {
 			name = "USA_states_gui_state_name"
-			position = { x = 655 y = 120 }
+			position = { x = 700 y = 120 }
 			format = center
 			text = "[get_state_name]"
 		}
 		
 		instantTextBoxType = {
 			name = "USA_states_gui_state_infobox"
-			position = { x = 655 y = 150 }
+			position = { x = 700 y = 150 }
 			maxWidth = 200
 			format = center
 			text = "[get_state_info]"
+		}
+		
+		instantTextBoxType = {
+			name = "USA_states_gui_name"
+			position = { x = 300 y = 30 }
+			format = center
+			maxHeight = 50
+			font = hoi_24header
+			text = "The United States"
 		}
 		
 		#buttonType = {
@@ -362,7 +371,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "button_close"
-			position = {x = -44 y = 12 }
+			position = {x = -50 y = 32 }
 			spriteType = "GFX_NV_btn_close"
 			clicksound = click_close
 			pdx_tooltip = "CLOSE"

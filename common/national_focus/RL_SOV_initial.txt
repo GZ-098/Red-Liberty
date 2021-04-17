@@ -15,10 +15,29 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = SOV_managing_factions
-	icon = GFX_SOV_managing_factions
+    id = SOV_unite_the_party
+	icon = GFX_SOV_unite_the_party
 	
     x = -2
+	y = 1
+	
+	cost = 5
+	relative_position_id = SOV_state_of_the_union
+	prerequisite = { focus = SOV_state_of_the_union }
+    completion_reward = {
+        add_political_power = 100
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SOV_continue_industrialization
+	icon = GFX_SOV_continue_industrialization
+	
+    x = 2
 	y = 1
 	
 	cost = 5
@@ -35,14 +54,14 @@ shared_focus = {
 
 shared_focus = {
     id = SOV_tractor_factories
-	icon = GFX_SOV_managing_factions
+	icon = GFX_SOV_tractor_factories
 	
-    x = 2
+    x = 1
 	y = 1
 	
 	cost = 5
-	relative_position_id = SOV_state_of_the_union
-	prerequisite = { focus = SOV_state_of_the_union }
+	relative_position_id = SOV_continue_industrialization
+	prerequisite = { focus = SOV_continue_industrialization }
     completion_reward = {
         add_political_power = 50
     }
@@ -53,17 +72,56 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = SOV_unite_the_party
-	icon = GFX_SOV_unite_the_party
+    id = SOV_improve_education
+	icon = GFX_SOV_improve_education
 	
-    x = -2
+    x = -1
 	y = 1
 	
 	cost = 5
-	relative_position_id = SOV_managing_factions
-	prerequisite = { focus = SOV_managing_factions }
+	relative_position_id = SOV_continue_industrialization
+	prerequisite = { focus = SOV_continue_industrialization }
     completion_reward = {
-        add_political_power = 100
+        add_political_power = 50
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SOV_workplace_democracy
+	icon = GFX_SOV_workplace_democracy
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = SOV_tractor_factories
+	prerequisite = { focus = SOV_tractor_factories }
+	prerequisite = { focus = SOV_improve_education }
+    completion_reward = {
+        add_political_power = 50
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SOV_managing_factions
+	icon = GFX_SOV_managing_factions
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = SOV_unite_the_party
+	prerequisite = { focus = SOV_unite_the_party }
+    completion_reward = {
+        add_political_power = 50
     }
 	
 	ai_will_do = {
@@ -75,13 +133,12 @@ shared_focus = {
     id = SOV_appease_the_soviets
 	icon = GFX_SOV_appease_the_soviets
 	
-    x = 2
+    x = 1
 	y = 1
 	
 	cost = 5
-	relative_position_id = SOV_managing_factions
-	prerequisite = { focus = SOV_managing_factions }
-	prerequisite = { focus = SOV_tractor_factories }
+	relative_position_id = SOV_unite_the_party
+	prerequisite = { focus = SOV_unite_the_party }
     completion_reward = {
         add_stability = 0.05
     }
@@ -95,12 +152,13 @@ shared_focus = {
     id = SOV_consult_the_commissars
 	icon = GFX_SOV_consult_the_commissars
 	
-    x = 2
+    x = -1
 	y = 1
 	
 	cost = 5
-	relative_position_id = SOV_tractor_factories
-	prerequisite = { focus = SOV_tractor_factories }
+	relative_position_id = SOV_appease_the_soviets
+	prerequisite = { focus = SOV_appease_the_soviets }
+	prerequisite = { focus = SOV_managing_factions }
     completion_reward = {
         add_war_support = 0.05
     }
@@ -114,14 +172,13 @@ shared_focus = {
     id = SOV_cossacks_dance
 	icon = GFX_SOV_cossacks_dance
 	
-    x = 0
+    x = 2
 	y = 1
 	
 	cost = 5
-	relative_position_id = SOV_appease_the_soviets
-	prerequisite = { focus = SOV_unite_the_party }
-	prerequisite = { focus = SOV_appease_the_soviets }
+	relative_position_id = SOV_consult_the_commissars
 	prerequisite = { focus = SOV_consult_the_commissars }
+	prerequisite = { focus = SOV_workplace_democracy }
     completion_reward = {
         add_political_power = 50
     }

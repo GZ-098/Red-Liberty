@@ -345,8 +345,10 @@ shared_focus = {
 	
 	cost = 5
 	relative_position_id = FRA_cult_of_la_rocque
-	prerequisite = { focus = FRA_cult_of_la_rocque }
-	prerequisite = { focus = FRA_cult_of_the_fallen }
+	prerequisite = {
+		focus = FRA_cult_of_la_rocque
+		focus = FRA_cult_of_the_fallen
+	}
     completion_reward = {
         country_event = {
 			id = france_far_right.2

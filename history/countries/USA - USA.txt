@@ -28,6 +28,11 @@ country_event = { # dnc
 	days = 185
 }
 
+country_event = { # 1936 election
+	id = us_election.1
+	days = 306
+}
+
 set_research_slots = 4
 set_stability = 0.75
 set_war_support = 0

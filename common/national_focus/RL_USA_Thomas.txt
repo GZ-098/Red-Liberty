@@ -2,7 +2,7 @@ shared_focus = {
     id = USA_the_second_thomas_admin
 	icon = GFX_USA_the_second_thomas_admin
 	
-    x = 8
+    x = 6
 	
 	cost = 2
     completion_reward = {
@@ -25,7 +25,10 @@ shared_focus = {
 	relative_position_id = USA_the_second_thomas_admin
 	prerequisite = { focus = USA_the_second_thomas_admin }
     completion_reward = {
-        
+        country_event = {
+			id = united_states_thomas.9
+			days = 1
+		}
     }
 	
 	ai_will_do = {
@@ -299,10 +302,10 @@ shared_focus = {
     id = USA_right_to_learn
 	icon = GFX_USA_right_to_learn
 	
-    x = -4
+    x = -6
 	y = 1
 	
-	cost = 10
+	cost = 8
 	relative_position_id = USA_second_bill_of_rights
 	prerequisite = { focus = USA_second_bill_of_rights }
     completion_reward = {
@@ -321,7 +324,7 @@ shared_focus = {
     x = -1
 	y = 1
 	
-	cost = 5
+	cost = 8
 	relative_position_id = USA_right_to_learn
 	prerequisite = { focus = USA_right_to_learn }
     completion_reward = {
@@ -337,10 +340,10 @@ shared_focus = {
     id = USA_work_with_teachers_unions
 	icon = GFX_USA_work_with_teachers_unions
 	
-    x = 0
-	y = 2
+    x = -1
+	y = 1
 	
-	cost = 5
+	cost = 8
 	relative_position_id = USA_assess_school_resources
 	prerequisite = { focus = USA_assess_school_resources }
     completion_reward = {
@@ -356,12 +359,12 @@ shared_focus = {
     id = USA_compulsory_education
 	icon = GFX_USA_compulsory_education
 	
-    x = 0
-	y = 2
+    x = 1
+	y = 1
 	
-	cost = 5
-	relative_position_id = USA_right_to_learn
-	prerequisite = { focus = USA_right_to_learn }
+	cost = 8
+	relative_position_id = USA_assess_school_resources
+	prerequisite = { focus = USA_assess_school_resources }
     completion_reward = {
         
     }
@@ -378,9 +381,28 @@ shared_focus = {
     x = 1
 	y = 1
 	
-	cost = 5
+	cost = 8
 	relative_position_id = USA_right_to_learn
 	prerequisite = { focus = USA_right_to_learn }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_invest_in_childcare
+	icon = GFX_USA_invest_in_childcare
+	
+    x = 1
+	y = 1
+	
+	cost = 8
+	relative_position_id = USA_invest_in_higher_education
+	prerequisite = { focus = USA_invest_in_higher_education }
     completion_reward = {
         
     }
@@ -397,9 +419,10 @@ shared_focus = {
     x = 0
 	y = 2
 	
-	cost = 5
+	cost = 8
 	relative_position_id = USA_invest_in_higher_education
 	prerequisite = { focus = USA_invest_in_higher_education }
+	prerequisite = { focus = USA_compulsory_education }
     completion_reward = {
         
     }
@@ -416,10 +439,28 @@ shared_focus = {
     x = 1
 	y = 1
 	
-	cost = 5
+	cost = 8
 	relative_position_id = USA_work_with_teachers_unions
 	prerequisite = { focus = USA_work_with_teachers_unions }
-	prerequisite = { focus = USA_compulsory_education }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_attempt_standardization
+	icon = GFX_USA_attempt_standardization
+	
+    x = 1
+	y = 1
+	
+	cost = 8
+	relative_position_id = USA_644_schooling
+	prerequisite = { focus = USA_644_schooling }
 	prerequisite = { focus = USA_federal_education_grants }
     completion_reward = {
         
@@ -434,10 +475,10 @@ shared_focus = {
     id = USA_right_to_work
 	icon = GFX_USA_right_to_work
 	
-    x = 0
+    x = -2
 	y = 1
 	
-	cost = 10
+	cost = 8
 	relative_position_id = USA_second_bill_of_rights
 	prerequisite = { focus = USA_second_bill_of_rights }
     completion_reward = {
@@ -456,7 +497,7 @@ shared_focus = {
     x = -1
 	y = 1
 	
-	cost = 10
+	cost = 8
 	relative_position_id = USA_right_to_work
 	prerequisite = { focus = USA_right_to_work }
     completion_reward = {
@@ -475,9 +516,10 @@ shared_focus = {
     x = 0
 	y = 2
 	
-	cost = 10
+	cost = 8
 	relative_position_id = USA_workplace_democracy
 	prerequisite = { focus = USA_workplace_democracy }
+	prerequisite = { focus = USA_invest_in_childcare }
     completion_reward = {
         
     }
@@ -491,12 +533,13 @@ shared_focus = {
     id = USA_6_hour_day
 	icon = GFX_USA_6_hour_day
 	
-    x = 0
-	y = 2
+    x = 1
+	y = 1
 	
-	cost = 10
-	relative_position_id = USA_right_to_work
-	prerequisite = { focus = USA_right_to_work }
+	cost = 8
+	relative_position_id = USA_workplace_democracy
+	prerequisite = { focus = USA_workplace_democracy }
+	prerequisite = { focus = USA_ensure_fair_competition }
     completion_reward = {
         
     }
@@ -513,7 +556,7 @@ shared_focus = {
     x = 1
 	y = 1
 	
-	cost = 10
+	cost = 8
 	relative_position_id = USA_right_to_work
 	prerequisite = { focus = USA_right_to_work }
     completion_reward = {
@@ -529,12 +572,13 @@ shared_focus = {
     id = USA_end_wage_descrimination
 	icon = GFX_USA_end_wage_descrimination
 	
-    x = 0
-	y = 2
+    x = 1
+	y = 1
 	
-	cost = 10
-	relative_position_id = USA_ensure_fair_competition
-	prerequisite = { focus = USA_ensure_fair_competition }
+	cost = 8
+	relative_position_id = USA_6_hour_day
+	prerequisite = { focus = USA_6_hour_day }
+	prerequisite = { focus = USA_unemployment_compensation }
     completion_reward = {
         
     }
@@ -551,10 +595,9 @@ shared_focus = {
     x = 1 
 	y = 1
 	
-	cost = 10
+	cost = 8
 	relative_position_id = USA_end_child_labor
 	prerequisite = { focus = USA_end_child_labor }
-	prerequisite = { focus = USA_6_hour_day }
 	prerequisite = { focus = USA_end_wage_descrimination }
     completion_reward = {
         
@@ -569,10 +612,10 @@ shared_focus = {
     id = USA_right_to_life
 	icon = GFX_USA_right_to_life
 	
-    x = 4
+    x = 2
 	y = 1
 	
-	cost = 10
+	cost = 8
 	relative_position_id = USA_second_bill_of_rights
 	prerequisite = { focus = USA_second_bill_of_rights }
     completion_reward = {
@@ -591,7 +634,7 @@ shared_focus = {
     x = -1
 	y = 1
 	
-	cost = 10
+	cost = 8
 	relative_position_id = USA_right_to_life
 	prerequisite = { focus = USA_right_to_life }
     completion_reward = {
@@ -607,12 +650,13 @@ shared_focus = {
     id = USA_unemployment_compensation
 	icon = GFX_USA_unemployment_compensation
 	
-    x = 0
-	y = 2
+    x = -1
+	y = 1
 	
-	cost = 10
+	cost = 8
 	relative_position_id = USA_food_stamp_plan
 	prerequisite = { focus = USA_food_stamp_plan }
+	prerequisite = { focus = USA_ensure_fair_competition }
     completion_reward = {
         
     }
@@ -629,9 +673,28 @@ shared_focus = {
     x = 0
 	y = 2
 	
-	cost = 10
+	cost = 8
 	relative_position_id = USA_right_to_life
 	prerequisite = { focus = USA_right_to_life }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_maternity_insurance
+	icon = GFX_USA_maternity_insurance
+	
+    x = -1
+	y = 1
+	
+	cost = 8
+	relative_position_id = USA_lower_healthcare_costs
+	prerequisite = { focus = USA_lower_healthcare_costs }
     completion_reward = {
         
     }
@@ -648,7 +711,27 @@ shared_focus = {
     x = 1
 	y = 1
 	
-	cost = 10
+	cost = 8
+	relative_position_id = USA_maternity_insurance
+	prerequisite = { focus = USA_maternity_insurance }
+	prerequisite = { focus = USA_look_at_causes }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_war_on_poverty
+	icon = GFX_USA_war_on_poverty
+	
+    x = 1
+	y = 1
+	
+	cost = 8
 	relative_position_id = USA_right_to_life
 	prerequisite = { focus = USA_right_to_life }
     completion_reward = {
@@ -661,15 +744,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_maternity_insurance
-	icon = GFX_USA_maternity_insurance
+    id = USA_look_at_causes
+	icon = GFX_USA_look_at_causes
 	
     x = 0
 	y = 2
 	
-	cost = 10
-	relative_position_id = USA_housing_act
-	prerequisite = { focus = USA_housing_act }
+	cost = 8
+	relative_position_id = USA_war_on_poverty
+	prerequisite = { focus = USA_war_on_poverty }
     completion_reward = {
         
     }
@@ -680,17 +763,169 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_social_security_numbah_2
-	icon = GFX_USA_social_security_numbah_2
+    id = USA_right_to_democracy
+	icon = GFX_USA_right_to_democracy
+	
+    x = 6
+	y = 1
+	
+	cost = 8
+	relative_position_id = USA_second_bill_of_rights
+	prerequisite = { focus = USA_second_bill_of_rights }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_more_perfect_union
+	icon = GFX_USA_more_perfect_union
+	
+    x = -1
+	y = 1
+	
+	cost = 8
+	relative_position_id = USA_right_to_democracy
+	prerequisite = { focus = USA_right_to_democracy }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_gerrymandering
+	icon = GFX_USA_gerrymandering
+	
+    x = -1
+	y = 1
+	
+	cost = 8
+	relative_position_id = USA_more_perfect_union
+	prerequisite = { focus = USA_more_perfect_union }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_the_past_isnt_dead
+	icon = GFX_USA_the_past_isnt_dead
+	
+    x = 1
+	y = 1
+	
+	cost = 8
+	relative_position_id = USA_gerrymandering
+	prerequisite = { focus = USA_gerrymandering }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_erode_bases_of_power
+	icon = GFX_USA_erode_bases_of_power
+	
+    x = 1
+	y = 1
+	
+	cost = 8
+	relative_position_id = USA_right_to_democracy
+	prerequisite = { focus = USA_right_to_democracy }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_intimidate_the_intimidators
+	icon = GFX_USA_intimidate_the_intimidators
+	
+    x = -1
+	y = 1
+	
+	cost = 8
+	relative_position_id = USA_erode_bases_of_power
+	prerequisite = { focus = USA_erode_bases_of_power }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_attack_voter_suppression
+	icon = GFX_USA_attack_voter_suppression
+	
+    x = 1
+	y = 1
+	
+	cost = 8
+	relative_position_id = USA_erode_bases_of_power
+	prerequisite = { focus = USA_erode_bases_of_power }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_these_are_your_rights
+	icon = GFX_USA_these_are_your_rights
+	
+    x = 1
+	y = 1
+	
+	cost = 8
+	relative_position_id = USA_intimidate_the_intimidators
+	prerequisite = { focus = USA_intimidate_the_intimidators }
+	prerequisite = { focus = USA_attack_voter_suppression }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_voting_rights_act
+	icon = GFX_USA_voting_rights_act
 	
     x = 1
 	y = 1
 	
 	cost = 10
-	relative_position_id = USA_unemployment_compensation
-	prerequisite = { focus = USA_unemployment_compensation }
-	prerequisite = { focus = USA_lower_healthcare_costs }
-	prerequisite = { focus = USA_maternity_insurance }
+	relative_position_id = USA_the_past_isnt_dead
+	prerequisite = { focus = USA_the_past_isnt_dead }
+	prerequisite = { focus = USA_these_are_your_rights }
     completion_reward = {
         
     }
@@ -704,14 +939,15 @@ shared_focus = {
     id = USA_america_reborn
 	icon = GFX_USA_america_reborn
 	
-    x = 4
+    x = 6
 	y = 1
 	
-	cost = 10
-	relative_position_id = USA_644_schooling
-	prerequisite = { focus = USA_644_schooling }
+	cost = 8
+	relative_position_id = USA_attempt_standardization
+	prerequisite = { focus = USA_attempt_standardization }
 	prerequisite = { focus = USA_economic_equality_act }
-	prerequisite = { focus = USA_social_security_numbah_2 }
+	prerequisite = { focus = USA_housing_act }
+	prerequisite = { focus = USA_voting_rights_act }
     completion_reward = {
         
     }
@@ -728,9 +964,545 @@ shared_focus = {
     x = 0
 	y = 1
 	
-	cost = 10
+	cost = 8
 	relative_position_id = USA_america_reborn
 	prerequisite = { focus = USA_america_reborn }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_fight_the_recession
+	icon = GFX_USA_fight_the_recession
+	
+    x = 16
+	
+	available = {
+		has_country_flag = USA_1937_recession
+	}
+	
+	cost = 5
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_caution_to_the_wind
+	icon = GFX_USA_caution_to_the_wind
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_fight_the_recession
+	prerequisite = { focus = USA_fight_the_recession }
+	mutually_exclusive = { focus = USA_scale_back_regulation }
+    completion_reward = {
+        add_stability = -0.05
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_conspiracy_of_capital
+	icon = GFX_USA_conspiracy_of_capital
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_caution_to_the_wind
+	prerequisite = { focus = USA_caution_to_the_wind }
+    completion_reward = {
+        add_stability = -0.05
+		add_political_power = 25
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_attack_oligarchs
+	icon = GFX_USA_attack_oligarchs
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_conspiracy_of_capital
+	prerequisite = { focus = USA_conspiracy_of_capital }
+    completion_reward = {
+        add_stability = -0.05
+		add_political_power = 25
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_scale_back_regulation
+	icon = GFX_USA_scale_back_regulation
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_fight_the_recession
+	prerequisite = { focus = USA_fight_the_recession }
+	mutually_exclusive = { focus = USA_caution_to_the_wind }
+    completion_reward = {
+        add_political_power = -50
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_cut_taxes
+	icon = GFX_USA_cut_taxes
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_scale_back_regulation
+	prerequisite = { focus = USA_scale_back_regulation }
+    completion_reward = {
+        add_political_power = -25
+		add_popularity = {
+			ideology = libertarian_socialism
+			popularity = 0.01
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_issue_subsidies
+	icon = GFX_USA_issue_subsidies
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_cut_taxes
+	prerequisite = { focus = USA_cut_taxes }
+    completion_reward = {
+        add_popularity = {
+			ideology = libertarian_socialism
+			popularity = 0.01
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_end_union_infighting
+	icon = GFX_USA_end_union_infighting
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_caution_to_the_wind
+	prerequisite = {
+		focus = USA_caution_to_the_wind
+		focus = USA_scale_back_regulation
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_back_on_track
+	icon = GFX_USA_back_on_track
+	
+    x = 2
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_attack_oligarchs
+	prerequisite = {
+		focus = USA_attack_oligarchs
+		focus = USA_issue_subsidies
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_war_is_a_racket
+	icon = GFX_USA_war_is_a_racket
+	
+    x = 28
+	y = 0
+	
+	cost = 5
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_butler_reform_plan
+	icon = GFX_USA_butler_reform_plan
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_war_is_a_racket
+	prerequisite = { focus = USA_war_is_a_racket }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_20_division_plan
+	icon = GFX_USA_20_division_plan
+	
+    x = -5
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_butler_reform_plan
+	prerequisite = { focus = USA_butler_reform_plan }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_scrap_reserves
+	icon = GFX_USA_scrap_reserves
+	
+    x = -2
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_20_division_plan
+	prerequisite = { focus = USA_20_division_plan }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_adequate_defense
+	icon = GFX_USA_adequate_defense
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_20_division_plan
+	prerequisite = { focus = USA_20_division_plan }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_decentralize_national_guard
+	icon = GFX_USA_decentralize_national_guard
+	
+    x = 2
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_20_division_plan
+	prerequisite = { focus = USA_20_division_plan }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_make_do
+	icon = GFX_USA_make_do
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_scrap_reserves
+	prerequisite = { focus = USA_scrap_reserves }
+	prerequisite = { focus = USA_adequate_defense }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_army_of_by_for_the_people
+	icon = GFX_USA_army_of_by_for_the_people
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_adequate_defense
+	prerequisite = { focus = USA_adequate_defense }
+	prerequisite = { focus = USA_decentralize_national_guard }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_and_nothing_more
+	icon = GFX_USA_and_nothing_more
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_make_do
+	prerequisite = { focus = USA_make_do }
+	prerequisite = { focus = USA_army_of_by_for_the_people }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_ending_war_as_business
+	icon = GFX_USA_ending_war_as_business
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_butler_reform_plan
+	prerequisite = { focus = USA_butler_reform_plan }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_reclaim_american_dream
+	icon = GFX_USA_reclaim_american_dream
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_ending_war_as_business
+	prerequisite = { focus = USA_ending_war_as_business }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_dollars_and_cents
+	icon = GFX_USA_dollars_and_cents
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_ending_war_as_business
+	prerequisite = { focus = USA_ending_war_as_business }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_collective_conciousness
+	icon = GFX_USA_collective_conciousness
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_reclaim_american_dream
+	prerequisite = { focus = USA_reclaim_american_dream }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_no_more_lies
+	icon = GFX_USA_no_more_lies
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_reclaim_american_dream
+	prerequisite = { focus = USA_reclaim_american_dream }
+	prerequisite = { focus = USA_dollars_and_cents }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_the_men_who_sold_the_world
+	icon = GFX_USA_the_men_who_sold_the_world
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_dollars_and_cents
+	prerequisite = { focus = USA_dollars_and_cents }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_fight_your_own_wars
+	icon = GFX_USA_fight_your_own_wars
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_no_more_lies
+	prerequisite = { focus = USA_collective_conciousness }
+	prerequisite = { focus = USA_no_more_lies }
+	prerequisite = { focus = USA_the_men_who_sold_the_world }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_as_the_fathers_intended
+	icon = GFX_USA_as_the_fathers_intended
+	
+    x = 2
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_and_nothing_more
+	prerequisite = { focus = USA_and_nothing_more }
+	prerequisite = { focus = USA_fight_your_own_wars }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_invest_in_armor
+	icon = GFX_USA_invest_in_armor
+	
+    x = 4
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_butler_reform_plan
+	prerequisite = { focus = USA_butler_reform_plan }
     completion_reward = {
         
     }
