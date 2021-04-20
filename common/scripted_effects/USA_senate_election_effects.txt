@@ -457,8 +457,8 @@ USA_hold_senate_election = {
 		log = " pick senate 1 race"
 		USA_pick_senator_1_in_state = yes
 		
-		log = " clear senate 1 race"
-		USA_clear_senate_predictions = yes
+		#log = " clear senate 1 race"
+		#USA_clear_senate_predictions = yes
 	}
 	every_owned_state = {
 		limit = {
@@ -498,12 +498,85 @@ USA_hold_senate_election = {
 		log = " update senate 2 race"
 		USA_update_senator_2_in_state = yes
 		
-		log = " pick senate 1 race"
-		USA_pick_senator_2_in_state = yes
+		#log = " pick senate 1 race"
+		#USA_pick_senator_2_in_state = yes
 		
-		log = " clear senate 1 race"
-		USA_clear_senate_predictions = yes
+		#log = " clear senate 1 race"
+		#USA_clear_senate_predictions = yes
 	}
-	set_country_flag = USA_senate_conclusion
-	US_elections_calculate_country_vars = yes
+	
+	USA_calculate_senators = yes
+	
+	#set_country_flag = USA_senate_conclusion
+	#US_elections_calculate_country_vars = yes
+}
+
+USA_update_senator_1_in_state = {
+	if = {
+		limit = {
+			check_variable = { THIS.socialist_popularity > THIS.democrat_popularity }
+			check_variable = { THIS.socialist_popularity > THIS.republican_popularity }
+			check_variable = { THIS.socialist_popularity > THIS.afp_popularity }
+		}
+		set_state_flag = USA_change_senator_to_1
+		log = "[THIS.getstate]: socialists win senate seat"
+	}
+	if = {
+		limit = {
+			check_variable = { THIS.republican_popularity > THIS.democrat_popularity }
+			check_variable = { THIS.republican_popularity > THIS.socialist_popularity }
+			check_variable = { THIS.republican_popularity > THIS.afp_popularity }
+		}
+		set_state_flag = USA_change_senator_to_2
+		log = "[THIS.getstate]: republicans win senate seat"
+	}
+	if = {
+		limit = {
+			check_variable = { THIS.democrat_popularity > THIS.republican_popularity }
+			check_variable = { THIS.democrat_popularity > THIS.socialist_popularity }
+			check_variable = { THIS.democrat_popularity > THIS.afp_popularity }
+		}
+		set_state_flag = USA_change_senator_to_3
+		log = "[THIS.getstate]: democrats win senate seat"
+	}
+	if = {
+		limit = {
+			check_variable = { THIS.afp_popularity > THIS.republican_popularity }
+			check_variable = { THIS.afp_popularity > THIS.socialist_popularity }
+			check_variable = { THIS.afp_popularity > THIS.democrat_popularity }
+		}
+		set_state_flag = USA_change_senator_to_4
+		log = "[THIS.getstate]: afp wins senate seat"
+	}
+}
+
+USA_pick_senator_1_in_state = {
+		if = {
+			limit = {
+				has_state_flag = USA_change_senator_to_1
+			}
+			set_variable = { senator_1 = 1 }
+			log = "[THIS.GetName]: senate seat transfered to socialists"
+		}
+		else_if = {
+			limit = {
+				has_state_flag = USA_change_senator_to_2
+			}
+			set_variable = { senator_1 = 2 }
+			log = "[THIS.GetName]: senate seat transfered to republicans"
+		}
+		else_if = {
+			limit = {
+				has_state_flag = USA_change_senator_to_3
+			}
+			set_variable = { senator_1 = 3 }
+			log = "[THIS.GetName]: senate seat transfered to democrat"
+		}
+		else_if = {
+			limit = {
+				has_state_flag = USA_change_senator_to_4
+			}
+			set_variable = { senator_1 = 4 }
+			log = "[THIS.GetName]: senate seat transfered to afp"
+		}
 }

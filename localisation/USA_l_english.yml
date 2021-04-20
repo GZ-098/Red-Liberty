@@ -131,12 +131,6 @@
  ### SECOND TERM THOMAS EVENTS ###
  united_states_thomas.9.desc:0 "President Thomas stared down at the sheet of paper on his desk, looking over the names that had been drawn up for potential cabinet appointments.\n\nThe election results had been good, but not perfect, and had planted a seed of doubt in the president’s mind. If the Socialist Party was truly to become America’s leading party then it would need popular support. More so, at least, than it currently had.\n\nThomas stared down at the list and smiled. It was a grand who’s who of socialist mainstays, from W.E.B. Du Bois to Emma Goldman.\n\nIt was a radical list, to be sure. A more radical government had never been assembled since Lincoln’s day. But these were radical times, and it wouldn’t do to stick with stodgy liberal-capitalist political thinking. That was a dying breed, and Thomas had no wish to resuscitate it.\n\nThe cabinet he was putting together would be unconventional, and Goldman’s inclusion would definitely raise some eyebrows, but it would show the people that, without a doubt, the Socialist Party was committed to socialism and the liberation of all men and women. \n \n That was the only real way to gain popular support, Thomas decided, leaning back in his chair with a smile on his face. Appeal to the people directly, and show them that the Socialist Party had their interests at heart first and foremost, not the pleadings and mutterings of the capitalist parties."
  
- ### 1936 Election Fiasco ###
- us_election.1.a:0 "No Majority."
- us_election.2.a:0 ""
- us_election.3.a:0 "The House votes for Thomas."
- us_election.4.a:0 "I, Norman Matoon Thomas..."
- 
  USA_field_marshal:0 "General"
  USA_corps_commander:0 "Corps Commander"
  USA_douglas_macarthur_army_chief:0 "Douglas MacArthur"

@@ -12,7 +12,7 @@ country_event = {
 	option = { 
 		ai_chance = { factor = 1 }
 		name = "debug.1.a"
-		set_country_flag = SCIENCE_meter_active
+		USA_calculate_senators = yes
 	}
 }
 

@@ -2,7 +2,7 @@ add_namespace = us_election
 add_namespace = us_campaign
 add_namespace = USA_election_helpers
 
-country_event = { # no one gets a majority
+country_event = {
 	id = us_election.1
 	title = "Election Day"
 	desc = us_election.1.desc
@@ -24,20 +24,39 @@ country_event = { # no one gets a majority
 		}
 	}
 	
-	option = { # no clear winner
+	option = {
 		name = us_election.1.a
+		country_event = {
+			id = us_election.2
+			days = 2
+		}
+	}
+}
+
+country_event = {
+	id = us_election.2
+	title = "The Results"
+	desc = us_election.2.desc
+
+	is_triggered_only = yes
+	
+	option = { # no clear winner
+		name = us_election.2.a
 		trigger = {
-			check_variable = { ROOT.socialist_electoral_votes > 267 }
+			NOT = {
+				check_variable = { ROOT.socialist_electoral_votes > 267 }
+				check_variable = { ROOT.democrat_electoral_votes > 267 }
+			}
 		}
 		clr_country_flag = USA_presidential_elections
 		clear_election_results = yes
 		
-		country_event = {
-			id = us_election.2
+		country_event = { # new congress gets sworn in
+			id = us_election.3
 			days = 50
 		}
-		country_event = {
-			id = us_election.3
+		country_event = { # house of reps votes
+			id = us_election.4
 			days = 57
 		}
 		
@@ -45,19 +64,19 @@ country_event = { # no one gets a majority
 	}
 	
 	option = { # socialist victory
-		name = us_election.1.b
+		name = us_election.2.b
 		trigger = {
 			check_variable = { ROOT.socialist_electoral_votes > 267 }
 		}
 		clr_country_flag = USA_presidential_elections
 		clear_election_results = yes
 		
-		country_event = {
-			id = us_election.2
+		country_event = { # new congress gets sworn in
+			id = us_election.3
 			days = 50
 		}
-		country_event = {
-			id = us_election.4
+		country_event = { # thomas inaug
+			id = us_election.5
 			days = 79
 		}
 		
@@ -65,15 +84,15 @@ country_event = { # no one gets a majority
 	}
 	
 	option = { # democrat victory
-		name = us_election.1.c
+		name = us_election.2.c
 		trigger = {
 			check_variable = { ROOT.democrat_electoral_votes > 267 }
 		}
 		clr_country_flag = USA_presidential_elections
 		clear_election_results = yes
 		
-		country_event = {
-			id = us_election.2
+		country_event = { # new congress gets sworn in
+			id = us_election.3
 			days = 50
 		}
 		
@@ -82,27 +101,27 @@ country_event = { # no one gets a majority
 }
 
 country_event = { # new congress gets sworn in
-	id = us_election.2
+	id = us_election.3
 	title = "The 75th Congress"
-	desc = us_election.2.desc
+	desc = us_election.3.desc
 
 	is_triggered_only = yes
 	
 	option = {
-		name = us_election.2.a
+		name = us_election.3.a
 		USA_recalc_house = yes
 	}
 }
 
 country_event = { # house of reps votes
-	id = us_election.3
+	id = us_election.4
 	title = "The Vote"
-	desc = us_election.3.desc
+	desc = us_election.4.desc
 
 	is_triggered_only = yes
 	
-	option = { # 
-		name = us_election.3.a
+	option = { # socialist majority
+		name = us_election.4.a
 		trigger = {
 			check_variable = { representatives_socialist > representatives_republican }
 			check_variable = { representatives_socialist > representatives_democrat }
@@ -111,18 +130,44 @@ country_event = { # house of reps votes
 		
 		set_country_flag = USA_thomas_elected
 	}
+	
+	option = { # democrat majority
+		name = us_election.4.b
+		trigger = {
+			check_variable = { representatives_democrat > representatives_republican }
+			check_variable = { representatives_democrat > representatives_socialist }
+			check_variable = { representatives_democrat > representatives_fascist }
+		}
+	}
 }
 
 country_event = { # thomas inaug day
-	id = us_election.4
+	id = us_election.5
 	title = "Inuaguration Day"
-	desc = us_election.4.desc
+	desc = us_election.5.desc
 
 	is_triggered_only = yes
 	
 	option = { # 
-		name = us_election.4.a
+		name = us_election.5.a
 		load_focus_tree = USA_thomas_tree
+		country_event = {
+			id = us_election.6
+		}
+	}
+}
+
+news_event = { # thomas inaug news event
+	id = us_election.6
+	title = "President Thomas Re-elected!"
+	desc = us_election.6.desc
+
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = us_election.6.a
 	}
 }
 
@@ -201,30 +246,16 @@ country_event = { #Show preparation and mark states for election
  	option = {
  		name = "SPA! SPA! SPA!"
  		custom_effect_tooltip = USA_senate_elections_visible_tt
+		set_country_flag = USA_campaigning_socialist
  		hidden_effect = {
  			USA_class_1_senate_prepare = yes
 			USA_recalculate_polls = yes
  		}
  	}
 	option = {
- 		name = USA_election_helpers.1.b
+ 		name = "Vote Democrat!"
  		custom_effect_tooltip = USA_senate_elections_visible_tt
- 		hidden_effect = {
- 			USA_class_1_senate_prepare = yes
-			USA_recalculate_polls = yes
- 		}
- 	}
-	option = {
- 		name = USA_election_helpers.1.c
- 		custom_effect_tooltip = USA_senate_elections_visible_tt
- 		hidden_effect = {
- 			USA_class_1_senate_prepare = yes
-			USA_recalculate_polls = yes
- 		}
- 	}
-	option = {
- 		name = "America First!"
- 		custom_effect_tooltip = USA_senate_elections_visible_tt
+		set_country_flag = USA_campaigning_democrat
  		hidden_effect = {
  			USA_class_1_senate_prepare = yes
 			USA_recalculate_polls = yes
@@ -374,8 +405,8 @@ country_event = { #Clear variables after seeing conclusion
 	immediate = {
  		hidden_effect = {
  			USA_clear_senate_election_vars = yes
-			clr_country_flag = USA_campaigning_for_RD
-			clr_country_flag = USA_campaigning_for_NPP
+			clr_country_flag = USA_campaigning_democrat
+			clr_country_flag = USA_campaigning_socialist
 			clr_country_flag = currently_campaigning
  		}
 	}
