@@ -1,4 +1,22 @@
 USA_congress = {
+
+	USA_recalc_house = {
+		icon = ger_mefo_bills
+		available = {
+			is_debug = yes
+		}
+		
+		visible = {
+			original_tag = USA
+			is_debug = yes
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			USA_recalc_house = yes
+		}
+	}
 	
 	start_test_bill_debug = { # example bill
 		icon = ger_mefo_bills

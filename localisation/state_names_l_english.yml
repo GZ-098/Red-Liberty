@@ -852,7 +852,7 @@
  STATE_851:0 "South Texas"
  STATE_852:0 "Amarillo"
  STATE_853:0 "Asheville"
- STATE_854:0 "Columbia"
+ STATE_854:0 "South Iowa"
  STATE_855:0 "Rochester"
  STATE_856:0 "East Kentucky"
  STATE_857:0 "Knoxville"
@@ -867,4 +867,7 @@
  STATE_866:0 "Hengyang"
  STATE_867:0 "Ya'an"
  STATE_868:0 "East Mongolia"
+ STATE_869:0 "East Montana"
+ STATE_870:0 "East Colorado"
+ STATE_871:0 "South Jersey"
  

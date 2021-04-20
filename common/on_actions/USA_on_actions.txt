@@ -22,9 +22,9 @@ on_actions = {
 				#set_variable = { var = senators_fascist value = 3 }
 
 				set_variable = { var = representatives_communist value = 11 }
-				set_variable = { var = representatives_socialist value = 148 }
-				set_variable = { var = representatives_republican value = 123 }
-				set_variable = { var = representatives_democrat value = 139 }
+				set_variable = { var = representatives_socialist value = 168 }
+				set_variable = { var = representatives_republican value = 83 }
+				set_variable = { var = representatives_democrat value = 159 }
 				set_variable = { var = representatives_fascist value = 14 }
 			}
 			

@@ -268,30 +268,8 @@ SRW = "countries/Sarawak.txt"
 ### Civil War Majors - WILL ALWAYS APPEAR ###
 MCA = "countries/MacArthur Clique.txt"
 NEE = "countries/New England.txt"
-PSA = "countries/Pacific States.txt"
-ASR = "countries/American Socialist Republic.txt"
-COM = "countries/Cooperative Commonwealth.txt"
-
-### Civil War Minors ###
-TEX = "countries/Texas.txt"
-
-TEN = "countries/Tennessee.txt"
-POF = "countries/Pillar of Fire.txt"
-SIL = "countries/Silver Legion.txt"
-BLA = "countries/Black Legion.txt"
-
-DET = "countries/Detroit.txt"
-
-###
-
+AMS = "countries/American State.txt"
 AWA = "countries/American Worker's Army.txt"
-AWC = "countries/American Worker's Collective.txt"
-SEC = "countries/Seattle Commune.txt"
-CTA = "countries/Constituent Assembly.txt"
-
-RND = "countries/Republic of North Dakota.txt"
-FRM = "countries/Farmer's Republics.txt"
-CPF = "countries/Constitutional Protection Front.txt"
-SOU = "countries/Southern States.txt"
+CPL = "countries/Constitutional Protection League.txt"
 
 

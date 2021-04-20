@@ -446,7 +446,7 @@ USA_recalc_house = { # this will recalculate the number of representatives based
 	}
 	
 	set_variable = {
-		representatives_republican = party_popularity@progressive_liberalism
+		representatives_democrat = party_popularity@progressive_liberalism
 	}
 	add_to_variable = {
 		representatives_democrat = party_popularity@national_conservatism

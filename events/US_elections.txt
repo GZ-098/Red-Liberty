@@ -21,26 +21,63 @@ country_event = { # no one gets a majority
 				limit = { can_have_elections_in_state = yes }
 				USA_hold_presidential_election_in_state = yes
 			}
-			
-			country_event = {
-				id = us_election.2
-				days = 50
-			}
-			country_event = {
-				id = us_election.3
-				days = 57
-			}
-			country_event = {
-				id = us_election.4
-				days = 79
-			}
 		}
 	}
 	
-	option = {
+	option = { # no clear winner
 		name = us_election.1.a
+		trigger = {
+			check_variable = { ROOT.socialist_electoral_votes > 267 }
+		}
 		clr_country_flag = USA_presidential_elections
 		clear_election_results = yes
+		
+		country_event = {
+			id = us_election.2
+			days = 50
+		}
+		country_event = {
+			id = us_election.3
+			days = 57
+		}
+		
+		set_country_flag = USA_1936_election_shitshow
+	}
+	
+	option = { # socialist victory
+		name = us_election.1.b
+		trigger = {
+			check_variable = { ROOT.socialist_electoral_votes > 267 }
+		}
+		clr_country_flag = USA_presidential_elections
+		clear_election_results = yes
+		
+		country_event = {
+			id = us_election.2
+			days = 50
+		}
+		country_event = {
+			id = us_election.4
+			days = 79
+		}
+		
+		set_country_flag = USA_1936_election_socialist_victory
+	}
+	
+	option = { # democrat victory
+		name = us_election.1.c
+		trigger = {
+			check_variable = { ROOT.democrat_electoral_votes > 267 }
+		}
+		clr_country_flag = USA_presidential_elections
+		clear_election_results = yes
+		
+		country_event = {
+			id = us_election.2
+			days = 50
+		}
+		
+		set_country_flag = USA_1936_election_democrat_victory
 	}
 }
 

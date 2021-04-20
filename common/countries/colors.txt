@@ -817,16 +817,6 @@ ZHI = {
 	color = rgb { 214 197 45 }
 }
 
-AWA = {
-	color = rgb { 178 34 52 }
-	color_ui = rgb { 178 34 52 }
-}
-
-CPF = {
-	color = rgb { 153 133 104 }
-	color_ui = rgb { 153 133 104 }
-}
-
 SRW = {
 	color = rgb { 97 209 251 }
 	color_ui = rgb { 97 209 251 }
@@ -879,50 +869,6 @@ MCA = {
 
 FER = {
 	color = rgb { 173 59 70 }
-}
-
-TEN = {
-	color = rgb { 130 123 77 } # { 102 96 55 }
-}
-
-AWC = {
-	color = rgb { 204 62 49 }
-}
-
-SOU = {
-	color = rgb { 138 144 156 }
-}
-
-TEX = {
-	color = rgb { 37 83 125 }
-}
-
-SIL = {
-	color = rgb { 151 164 176 }
-}
-
-COM = {
-	color = rgb { 124 171 113 } # { 177 214 148 }
-}
-
-RND = {
-	color = rgb { 194 199 147 }
-}
-
-ASR = {
-	color = rgb { 235 64 52 }
-}
-
-BLA = {
-	color = rgb { 99 93 92 }
-}
-
-DET = {
-	color = rgb { 94 84 52 }
-}
-
-POF = {
-	color = rgb { 212 153 70 }
 }
 
 ANH = {
@@ -1007,4 +953,65 @@ BAR = {
 BWI = {
 	color = rgb { 171 48 48 }
 	color_ui = rgb { 255 73 121 }
+}
+
+###
+
+AMS = {
+	color = rgb { 153 133 104 }
+	color_ui = rgb { 153 133 104 }
+}
+
+AWA = {
+	color = rgb { 178 34 52 }
+	color_ui = rgb { 178 34 52 }
+}
+
+CPF = {
+	color = rgb { 153 133 104 }
+	color_ui = rgb { 153 133 104 }
+}
+
+TEN = {
+	color = rgb { 130 123 77 } # { 102 96 55 }
+}
+
+AWC = {
+	color = rgb { 204 62 49 }
+}
+
+SOU = {
+	color = rgb { 138 144 156 }
+}
+
+TEX = {
+	color = rgb { 37 83 125 }
+}
+
+SIL = {
+	color = rgb { 151 164 176 }
+}
+
+COM = {
+	color = rgb { 124 171 113 } # { 177 214 148 }
+}
+
+RND = {
+	color = rgb { 194 199 147 }
+}
+
+ASR = {
+	color = rgb { 235 64 52 }
+}
+
+BLA = {
+	color = rgb { 99 93 92 }
+}
+
+DET = {
+	color = rgb { 94 84 52 }
+}
+
+POF = {
+	color = rgb { 212 153 70 }
 }

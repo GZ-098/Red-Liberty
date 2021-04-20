@@ -403,6 +403,14 @@ defined_text = {
 		}
 		localization_key = "GFX_USA_states_gui_CO_republican"
 	}
+	text = {
+		trigger = {
+			check_variable = { 382.democrat_popularity > 382.socialist_popularity }
+			check_variable = { 382.democrat_popularity > 382.republican_popularity }
+			check_variable = { 382.democrat_popularity > 382.afp_popularity }
+		}
+		localization_key = "GFX_USA_states_gui_CO_democrat"
+	}
 }
 
 defined_text = {
@@ -640,6 +648,14 @@ defined_text = { # missouri
 		}
 		localization_key = "GFX_USA_states_gui_MO_republican"
 	}
+	text = {
+		trigger = {
+			check_variable = { 373.democrat_popularity > 373.socialist_popularity }
+			check_variable = { 373.democrat_popularity > 373.republican_popularity }
+			check_variable = { 373.democrat_popularity > 373.afp_popularity }
+		}
+		localization_key = "GFX_USA_states_gui_MO_democrat"
+	}
 }
 
 defined_text = { # mississippi
@@ -758,6 +774,14 @@ defined_text = {
 			check_variable = { 376.republican_popularity > 376.afp_popularity }
 		}
 		localization_key = "GFX_USA_states_gui_NM_republican"
+	}
+	text = {
+		trigger = {
+			check_variable = { 376.democrat_popularity > 376.socialist_popularity }
+			check_variable = { 376.democrat_popularity > 376.republican_popularity }
+			check_variable = { 376.democrat_popularity > 376.afp_popularity }
+		}
+		localization_key = "GFX_USA_states_gui_NM_democrat"
 	}
 }
 
@@ -975,6 +999,14 @@ defined_text = {
 
 defined_text = {
 	name = Get_USA_states_gui_VT
+	text = {
+		trigger = {
+			check_variable = { 829.republican_popularity > 829.socialist_popularity }
+			check_variable = { 829.republican_popularity > 829.democrat_popularity }
+			check_variable = { 829.republican_popularity > 829.afp_popularity }
+		}
+		localization_key = "GFX_USA_states_gui_VT_republican"
+	}
 	text = {
 		trigger = {
 			check_variable = { 829.democrat_popularity > 829.socialist_popularity }
