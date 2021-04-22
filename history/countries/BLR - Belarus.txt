@@ -80,3 +80,14 @@ set_popularities = {
 	martial_despotism = 13
 	ultranational_statism = 4
 }
+
+create_country_leader = {
+	name = "Vasil Zacharka"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype
+	traits = {
+		#
+	}
+}

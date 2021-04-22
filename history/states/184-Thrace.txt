@@ -10,18 +10,16 @@ state={
 		victory_points = {
 			11905 1 
 		}
-		owner = GRE
+		owner = BUL
 		buildings = {
 			infrastructure = 4
 
 		}
 		add_core_of = GRE
-		add_claim_by = BUL
-
 	}
 
 	provinces={
-		6990 9791 9930 
+		3526 6990 9791 9930 
 	}
 	manpower=242500
 	buildings_max_level_factor=1.000

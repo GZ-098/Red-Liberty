@@ -148,7 +148,7 @@ create_faction = central_powers
 add_to_faction = GER 
 add_to_faction = AHE
 add_to_faction = BLR
-
+add_to_faction = UKR
 
 add_ideas = {  
 	unpaid_war_expenses

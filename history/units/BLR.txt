@@ -82,26 +82,6 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 306
-		division_template = "Piachota Dzialiennie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 11234
-		division_template = "Piachota Dzialiennie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
 		location = 11370
 		division_template = "Piachota Dzialiennie"
 		start_experience_factor = 0.1
