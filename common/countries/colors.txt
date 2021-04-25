@@ -955,6 +955,16 @@ BWI = {
 	color_ui = rgb { 255 73 121 }
 }
 
+DON = {
+	color = rgb { 249 201 0 }
+	color_ui = rgb { 249 201 0 }
+}
+
+KUB = {
+	color = rgb { 139 107 140 }
+	color_ui = rgb { 139 107 140 }
+}
+
 ###
 
 AMS = {

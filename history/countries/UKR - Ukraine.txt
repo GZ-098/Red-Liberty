@@ -84,6 +84,11 @@ set_popularities = {
 	ultranational_statism = 4
 }
 
+add_ideas = {
+	UKR_unpopular_govt
+	UKR_low_industrialization
+}
+
 create_country_leader = {
 	name = "Pavlo Skoropadskyi"
 	desc = ""

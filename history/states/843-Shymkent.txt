@@ -1,19 +1,22 @@
+
 state={
 	id=843
 	name="STATE_843"
-	
+
 	history={
 		owner = KYR
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = KYR
+
 	}
-	
+
 	provinces={
-		4578 4581 4636 4638 4686 7486 7556 7597 7657 7706 7777 10148 10353 10366 10506 10601 10603 12329 12340 12397 12640 12658 
+		4300 4578 4581 4636 4638 4686 7243 7486 7556 7597 7600 7657 7706 7777 10148 10353 10366 10506 10601 10603 12329 12340 12397 12640 12658 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category=rural
 }

@@ -218,6 +218,9 @@ URL = "countries/Ural Cossack Host.txt"
 KHV = "countries/Khiva.txt"
 TMY = "countries/Talyshstan.txt"
 
+DON = "countries/Don Republic.txt"
+KUB = "countries/Kuban Republic.txt"
+
 ### Europe ###
 ITF = "countries/Italian Union of Fascists.txt"
 HSR = "countries/Hungarian Socialist Republic.txt"

@@ -145,10 +145,12 @@ set_popularities = {
 
 
 create_faction = central_powers
-add_to_faction = GER 
-add_to_faction = AHE
+add_to_faction = GER
 add_to_faction = BLR
 add_to_faction = UKR
+add_to_faction = GEO
+#add_to_faction = LAT
+#add_to_faction = EST
 
 add_ideas = {  
 	unpaid_war_expenses

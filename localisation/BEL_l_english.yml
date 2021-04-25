@@ -1,6 +1,6 @@
 ﻿l_english:
- BEL:0 "Belgium"
- BEL_DEF:0 "Belgium"
+ BEL:0 "Kingdom of Belgium"
+ BEL_DEF:0 "the Kingdom of Belgium"
  BEL_ADJ:0 "Belgian"
  
  BEL_FRA_exiled_govt:0 "Provisional Government of Belgium"

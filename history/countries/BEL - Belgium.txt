@@ -41,7 +41,7 @@ set_popularities = {
 	ultranational_statism = 0
 } 
 
-set_cosmetic_tag = BEL_FRA_exiled_govt
+#set_cosmetic_tag = BEL_FRA_exiled_govt
 
 set_convoys = 80
 set_stability = 0.75

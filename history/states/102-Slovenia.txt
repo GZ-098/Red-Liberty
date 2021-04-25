@@ -12,12 +12,12 @@ state={
 		victory_points = {
 			9627 3 
 		}
-		add_core_of = SLV
+		add_core_of = AHE
 
 	}
 
 	provinces={
-		596 3631 3654 6650 9596 9627 
+		596 599 3631 3654 6650 9596 9627 11595 
 	}
 	manpower=1144300
 	buildings_max_level_factor=1.000

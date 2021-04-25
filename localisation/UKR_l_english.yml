@@ -7,4 +7,17 @@
  UKR_foreign_influence_category:0 "The Great Game"
  UKR_foreign_influence_category_desc:0 "O §YUkraine§!, land of wheat, sunflowers, and constant foreign meddling. Two major powers vie for control over our lands: the §YGerman Empire§!, and the §YRussian Soviet Republic§!.\n\nGerman Influence: §Y[?UKR_german_influence]§!\nRussian Influence: §Y[?UKR_russian_influence]§!"
  
+ UKR_insurrectionary_anarchism_party:0 "--"
+ UKR_revolutionary_autocracy_party:0 "--"
+ UKR_proletarian_dictatorship_party:0 "--"
+ UKR_libertarian_socialism_party:0 "USDRP"
+ UKR_social_democracy_party:0 "USDRP"
+ UKR_progressive_liberalism_party:0 "--"
+ UKR_market_libertarianism_party:0 "--"
+ UKR_national_conservatism_party:0 "--"
+ UKR_reactionary_theocracy_party:0 "--"
+ UKR_authoritarian_republicanism_party:0 "--"
+ UKR_martial_despotism_party:0 "VNP"
+ UKR_ultranational_statism_party:0 "OUN"
+ 
  

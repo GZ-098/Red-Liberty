@@ -80,18 +80,6 @@ division_template = {
 		cavalry = { x = 1 y = 2 }
 	}
 }
-division_template = {
-	name = "Motorized-Division"
-	division_names_group = AUS_MOT_01
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-	}
-}
 
 ########
 # Land Units
@@ -106,7 +94,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 6631
+		location = 6675
 		division_template = "Alpenjägerdivision"
 		start_experience_factor = 0.3
 	}
@@ -115,7 +103,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 6631
+		location = 9630
 		division_template = "Alpenjägerdivision"
 		start_experience_factor = 0.3
 	}
@@ -267,7 +255,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 6626
+		location = 599
 		division_template = "Schützendivision"
 		start_experience_factor = 0.1
 	}

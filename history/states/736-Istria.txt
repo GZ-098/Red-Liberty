@@ -1,15 +1,15 @@
+
 state={
 	id=736
 	name="STATE_736"
-	
-	state_category = city
 
 	history={
 		victory_points = {
 			6626 1 
 		}
-		owner = AHE
+		owner = ITA
 		add_core_of = ITA
+		add_claim_by = AHE
 		buildings = {
 			infrastructure = 2
 			6626 = {
@@ -22,8 +22,9 @@ state={
 	}
 
 	provinces={
-		599 6626 11595 11735 
+		6626 11735 
 	}
 	manpower=1063159
 	buildings_max_level_factor=1.000
+	state_category=city
 }

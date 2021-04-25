@@ -1,0 +1,43 @@
+ideas = {
+	country = {
+
+		UKR_unpopular_govt = {
+			
+			removal_cost = -1 
+			
+			#picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		
+		UKR_low_industrialization = {
+			
+			removal_cost = -1 
+			
+			#picture = 
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.15
+				production_factory_max_efficiency_factor = -0.15
+			}
+		}
+	}
+}
