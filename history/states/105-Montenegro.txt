@@ -20,8 +20,8 @@ state={
 			}
 
 		}
-		add_core_of = MNT
-
+		add_core_of = AHE
+		add_claim_by = SER
 	}
 
 	provinces={

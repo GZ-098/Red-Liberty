@@ -17,25 +17,11 @@ state={
 		buildings = {
 			infrastructure = 7
 			arms_factory = 3
-			industrial_complex = 5
+			industrial_complex = 4
 			air_base = 6
 
 		}
 		add_core_of = AHE
-		1938.3.12 = {
-			owner = AHE
-			controller = AHE
-			add_core_of = AHE
-
-		}
-		1939.1.1 = {
-			buildings = {
-				anti_air_building = 5
-
-			}
-
-		}
-
 	}
 
 	provinces={
