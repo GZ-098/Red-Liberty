@@ -1,0 +1,176 @@
+shared_focus = {
+    id = AHE_winds_of_change
+	icon = GFX_AHE_winds_of_change
+	
+    x = 8
+	y = 0
+	
+	cost = 3
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = AHE_look_to_the_left
+	icon = GFX_AHE_look_to_the_left
+	
+    x = -2
+	y = 1
+	
+	cost = 5
+	relative_position_id = AHE_winds_of_change
+	prerequisite = { focus = AHE_winds_of_change }
+	mutually_exclusive = {
+		focus = AHE_look_to_the_right
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = AHE_rally_the_workers
+	icon = GFX_AHE_rally_the_workers
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = AHE_look_to_the_left
+	prerequisite = { focus = AHE_look_to_the_left }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = AHE_the_nationalities_question
+	icon = GFX_AHE_the_nationalities_question
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = AHE_look_to_the_left
+	prerequisite = { focus = AHE_look_to_the_left }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = AHE_state_and_nation
+	icon = GFX_AHE_state_and_nation
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = AHE_rally_the_workers
+	prerequisite = { focus = AHE_rally_the_workers }
+	prerequisite = { focus = AHE_the_nationalities_question }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = AHE_look_to_the_right
+	icon = GFX_AHE_look_to_the_right
+	
+    x = 2
+	y = 1
+	
+	cost = 5
+	relative_position_id = AHE_winds_of_change
+	prerequisite = { focus = AHE_winds_of_change }
+	mutually_exclusive = {
+		focus = AHE_look_to_the_left
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = AHE_float_coalition_idea
+	icon = GFX_AHE_float_coalition_idea
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = AHE_look_to_the_right
+	prerequisite = { focus = AHE_look_to_the_right }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = AHE_states_rights
+	icon = GFX_AHE_states_rights
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = AHE_look_to_the_right
+	prerequisite = { focus = AHE_look_to_the_right }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = AHE_from_many_one
+	icon = GFX_AHE_from_many_one
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = AHE_states_rights
+	prerequisite = { focus = AHE_float_coalition_idea }
+	prerequisite = { focus = AHE_states_rights }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}

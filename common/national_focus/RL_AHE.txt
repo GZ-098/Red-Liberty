@@ -1,0 +1,17 @@
+###INITIAL TREE
+focus_tree = {
+	id = AHE_initial_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AHE
+		}
+	}
+	continuous_focus_position = {
+		x = -2500
+		y = 125
+	}
+	default = no
+	shared_focus = AHE_winds_of_change
+}
