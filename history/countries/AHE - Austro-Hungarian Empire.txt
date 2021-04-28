@@ -1,10 +1,12 @@
 capital = 4
 set_research_slots = 3
-set_stability = 0
-set_war_support = 0
-#Starting tech
+set_stability = 0.5
+set_war_support = 0.5
 
 OOB = "AHE_1936"
+
+set_country_flag = market_libertarian_coalition
+set_country_flag = conservative_coalition
 
 set_technology = {
 	infantry_weapons = 1
@@ -42,23 +44,23 @@ add_ideas = {
 
 set_politics = {
 	ruling_party = national_conservatism
-	last_election = "1932.11.8"
-	election_frequency = 0
-	elections_allowed = no
+	last_election = "1932.10.8"
+	election_frequency = 48
+	elections_allowed = yes
 }
 set_popularities = {
 	insurrectionary_anarchism = 0
-	revolutionary_autocracy = 5
-	proletarian_dictatorship = 0
-	libertarian_socialism = 12
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 5
+	libertarian_socialism = 10
 	social_democracy = 24
-	progressive_liberalism = 0
-	market_libertarianism = 0
-	national_conservatism = 25
+	progressive_liberalism = 4
+	market_libertarianism = 6
+	national_conservatism = 27
 	reactionary_theocracy = 0
-	authoritarian_republicanism = 6
+	authoritarian_republicanism = 0
 	martial_despotism = 14
-	ultranational_statism = 14
+	ultranational_statism = 10
 }
 
 create_country_leader = {

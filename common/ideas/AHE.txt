@@ -1,10 +1,31 @@
 ideas = {
 	country = {
+	
+		AHE_ethnic_division = {
+			removal_cost = -1 
+				
+			picture = ethnic_division
+				
+			allowed = {
+				tag = AHE
+			}  
+
+			available = {
+			}
+				
+			allowed_civil_war = { 
+				always = yes
+			}
+				
+			modifier = {
+				army_core_defence_factor  = -0.1
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
 		
        	AHE_embarrassment_on_the_italian_front = {
 			removal_cost = -1 
-				
-			picture = embarrassment_on_the_italian_front
 				
 			allowed = {
 				tag = AHE
@@ -47,8 +68,6 @@ ideas = {
        	AHE_economic_downturn = {
 			removal_cost = -1 
 				
-			picture = economic_downturn
-				
 			allowed = {
 				tag = AHE
 			}  
@@ -64,29 +83,6 @@ ideas = {
 				consumer_goods_factor = 0.12 
 				industrial_capacity_factory = -0.1
 				production_speed_buildings_factor = -0.1
-			}
-		} 
-
-       	AHE_ethnic_division = {
-			removal_cost = -1 
-				
-			picture = ethnic_division
-				
-			allowed = {
-				tag = AHE
-			}  
-
-			available = {
-			}
-				
-			allowed_civil_war = { 
-				always = yes
-			}
-				
-			modifier = {
-				resistance_target = 0.10 
-				army_core_defence_factor  = -0.10 
-				non_core_manpower = -0.10
 			}
 		}
 	}
