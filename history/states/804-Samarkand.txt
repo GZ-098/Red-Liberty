@@ -4,17 +4,17 @@ state={
 	name="STATE_804"
 
 	history={
-		owner = RUS
+		owner = KYR
 		buildings = {
 			infrastructure = 3
 
 		}
-		add_core_of = RUS
+		add_core_of = KYR
 
 	}
 
 	provinces={
-		7281 10196 10224 
+		1216 1919 4629 7775 10671 12430 
 	}
 	manpower=40000
 	buildings_max_level_factor=1.000
