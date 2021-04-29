@@ -162,3 +162,38 @@ country_event = { # second thomas admin event
 		name = ""
 	}
 }
+
+country_event = { # business plot?
+	id = united_states_thomas.10
+	title = "Paranoia or Premonition?"
+	desc = united_states_thomas.10.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Let’s hope we uncover the truth behind this..."
+		hidden_effect = {
+			country_event = {
+				id = united_states_thomas.11
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = { # investigation result
+	id = united_states_thomas.11
+	title = "All for nothing?"
+	desc = united_states_thomas.11.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Good day, General Butler."
+		add_stability = -0.05
+	}
+}

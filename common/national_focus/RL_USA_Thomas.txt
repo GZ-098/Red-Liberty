@@ -1029,6 +1029,10 @@ shared_focus = {
     completion_reward = {
         add_stability = -0.05
 		add_political_power = 25
+		country_event = {
+			id = united_states_thomas.10
+			days = 1
+		}
     }
 	
 	ai_will_do = {
@@ -1047,7 +1051,6 @@ shared_focus = {
 	relative_position_id = USA_conspiracy_of_capital
 	prerequisite = { focus = USA_conspiracy_of_capital }
     completion_reward = {
-        add_stability = -0.05
 		add_political_power = 25
     }
 	

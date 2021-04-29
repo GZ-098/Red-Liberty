@@ -157,8 +157,22 @@ spritetypes = {
 	### 2ND TERM RECESSION ###
 	
 	SpriteType = {
+		name = "GFX_USA_fight_the_recession"
+		texturefile = "gfx/interface/goals/USA/USA_fight_the_recession.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_caution_to_the_wind"
+		texturefile = "gfx/interface/goals/USA/USA_throw_caution_to_the_wind.png"
+	}
+	SpriteType = {
 		name = "GFX_USA_attack_oligarchs"
 		texturefile = "gfx/interface/goals/USA/USA_attack_the_oligarchs.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_scale_back_regulation"
+		texturefile = "gfx/interface/goals/USA/USA_scale_back_regulation.png"
 	}
 	
 	SpriteType = {
