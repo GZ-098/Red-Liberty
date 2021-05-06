@@ -253,7 +253,7 @@ country_event = { #Show preparation and mark states for election
  		}
  	}
 	option = {
- 		name = "Vote Democrat!"
+ 		name = "Protect our American way of life! Vote Democrat!"
  		custom_effect_tooltip = USA_senate_elections_visible_tt
 		set_country_flag = USA_campaigning_democrat
  		hidden_effect = {

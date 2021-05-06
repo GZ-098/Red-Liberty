@@ -41,8 +41,6 @@ country_event = { # debug act
 	}
 }
 
-add_namespace = us_bill
-
 country_event = { # social security act
 	id = us_bill.2
 	
@@ -89,6 +87,47 @@ country_event = { # social security act
 			ideology = libertarian_socialism
 			popularity = -0.05
 		}
+		trigger = { NOT = { has_country_flag = bill_passed } }
+		USA_bill_clear = yes # ALWAYS DO THIS
+	}
+}
+
+country_event = { # farm tenant act
+	id = us_bill.3
+	
+	# different loc based on if it passes or fails
+	title = {
+		text = us_bill.3.title_passed
+		trigger = { has_country_flag = bill_passed }
+	}
+	title = { 
+		text = us_bill.3.title_failed
+		trigger = { NOT = { has_country_flag = bill_passed } }
+	}
+	desc = {
+		text = us_bill.3.desc_passed
+		trigger = { has_country_flag = bill_passed }
+	}
+	desc = {
+		text = us_bill.3.desc_failed
+		trigger = { NOT = { has_country_flag = bill_passed } }
+	}
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event us_bill.3"
+	}
+
+	is_triggered_only = yes
+
+	option = { # bill passes
+		name = us_bill.3.a
+		trigger = { has_country_flag = bill_passed }
+		set_country_flag = farm_tenant_act_passed
+		USA_bill_clear = yes # ALWAYS DO THIS
+	}
+	
+	option = { # bill fails
+		name = us_bill.3.b
 		trigger = { NOT = { has_country_flag = bill_passed } }
 		USA_bill_clear = yes # ALWAYS DO THIS
 	}

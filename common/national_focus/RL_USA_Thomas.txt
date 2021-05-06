@@ -107,7 +107,8 @@ shared_focus = {
 	prerequisite = { focus = USA_robinson_patman_act }
 	prerequisite = { focus = USA_bonneville_project }
     completion_reward = {
-        
+        unlock_decision_tooltip = start_USA_farm_tenant_act
+		custom_effect_tooltip = USA_farm_tenant_act_effect
     }
 	
 	ai_will_do = {
@@ -705,8 +706,8 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_housing_act
-	icon = GFX_USA_housing_act
+    id = USA_national_healthcare_act
+	icon = GFX_USA_national_healthcare_act
 	
     x = 1
 	y = 1
@@ -946,7 +947,7 @@ shared_focus = {
 	relative_position_id = USA_attempt_standardization
 	prerequisite = { focus = USA_attempt_standardization }
 	prerequisite = { focus = USA_economic_equality_act }
-	prerequisite = { focus = USA_housing_act }
+	prerequisite = { focus = USA_national_healthcare_act }
 	prerequisite = { focus = USA_voting_rights_act }
     completion_reward = {
         
@@ -1027,8 +1028,6 @@ shared_focus = {
 	relative_position_id = USA_caution_to_the_wind
 	prerequisite = { focus = USA_caution_to_the_wind }
     completion_reward = {
-        add_stability = -0.05
-		add_political_power = 25
 		country_event = {
 			id = united_states_thomas.10
 			days = 1
@@ -1044,7 +1043,7 @@ shared_focus = {
     id = USA_attack_oligarchs
 	icon = GFX_USA_attack_oligarchs
 	
-    x = 0
+    x = -1
 	y = 1
 	
 	cost = 5
@@ -1106,7 +1105,7 @@ shared_focus = {
     id = USA_issue_subsidies
 	icon = GFX_USA_issue_subsidies
 	
-    x = 0
+    x = 1
 	y = 1
 	
 	cost = 5
@@ -1147,10 +1146,52 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_back_on_track
-	icon = GFX_USA_back_on_track
+    id = USA_union_act
+	icon = GFX_USA_union_act
 	
-    x = 2
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_end_union_infighting
+	prerequisite = {
+		focus = USA_end_union_infighting
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_pension_act
+	icon = GFX_USA_pension_act
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_end_union_infighting
+	prerequisite = {
+		focus = USA_end_union_infighting
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_housing_act
+	icon = GFX_USA_housing_act
+	
+    x = 3
 	y = 1
 	
 	cost = 5
@@ -1159,6 +1200,27 @@ shared_focus = {
 		focus = USA_attack_oligarchs
 		focus = USA_issue_subsidies
 	}
+	prerequisite = { focus = USA_union_act }
+	prerequisite = { focus = USA_pension_act }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_back_on_track
+	icon = GFX_USA_back_on_track
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_housing_act
+	prerequisite = { focus = USA_housing_act }
     completion_reward = {
         
     }

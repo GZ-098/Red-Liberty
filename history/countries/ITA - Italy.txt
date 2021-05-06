@@ -119,7 +119,7 @@ set_politics = {
 	ruling_party = ultranational_statism
 	last_election = "1932.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	insurrectionary_anarchism = 0

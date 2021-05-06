@@ -137,6 +137,14 @@ defined_text = {
         localization_key = "USA_congress_voting_social_security"
     }
 	
+	text = { 
+        trigger = {
+			check_variable = { bill_id = 3 }
+			has_country_flag = USA_discussing_bill
+        }
+        localization_key = "USA_congress_voting_farm_tenant"
+    }
+	
 	text = {
 		localization_key = "USA_congress_voting_none"
     }

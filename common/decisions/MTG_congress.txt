@@ -1,22 +1,4 @@
 USA_congress = {
-
-	USA_recalc_house = {
-		icon = ger_mefo_bills
-		available = {
-			is_debug = yes
-		}
-		
-		visible = {
-			original_tag = USA
-			is_debug = yes
-		}
-		
-		cost = 0
-		
-		complete_effect = {
-			USA_recalc_house = yes
-		}
-	}
 	
 	start_test_bill_debug = { # example bill
 		icon = ger_mefo_bills
@@ -70,6 +52,32 @@ USA_congress = {
 		}
 	}
 	
+	start_USA_farm_tenant_act = {
+		icon = ger_mefo_bills
+		available = {
+			NOT = {
+				has_country_flag = farm_tenant_act_passed
+				has_country_flag = USA_discussing_bill
+			}
+			has_completed_focus = USA_farm_tenant_act
+		}
+		
+		visible = {
+			original_tag = USA
+			NOT = {
+				has_country_flag = USA_discussing_bill
+			}
+			has_completed_focus = USA_farm_tenant_act
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			custom_effect_tooltip = USA_farm_tenant_act_effect
+			USA_farm_tenant_act_setup = yes
+		}
+	}
+	
 ############## DO NOT MODIFY BELOW THIS LINE ### I'm gonna modify beyond this line if I don't get my 1 million dollars #################################
 	
 	start_vote = {
@@ -117,6 +125,7 @@ USA_congress = {
 			AND = {
 				original_tag = USA
 				check_variable = { bill_id = 2 }
+				has_country_flag = USA_special_decisions_enabled
 			}
         }
 			
@@ -143,7 +152,10 @@ USA_congress = {
 			AND = {
 				original_tag = USA
 				check_variable = { bill_id > 0 }
-				check_variable = { senators_republican > 0 }
+				OR = {
+					check_variable = { senators_republican > 0 }
+					check_variable = { representatives_republican > 0 }
+				}
 				NOT = {
 					has_country_flag = USA_special_decisions_enabled
 				}
@@ -165,21 +177,10 @@ USA_congress = {
 				tooltip = reps_fully_support
 				NOT = { check_variable = { USA_republican_bill_support = 1 } }
 			}
-			#custom_trigger_tooltip = {
-			#	tooltip = mut_exclude
-			#}
 		}
     	days_remove = 5
     	remove_effect = {
-			random_list = {
-				95 = {
-					USA_republican_support_eventless = yes
-				}
-				
-				5 = {
-					
-				}
-			}
+			USA_republican_support_eventless = yes
 		}
 	}
 	
@@ -189,8 +190,10 @@ USA_congress = {
 			AND = {
 				original_tag = USA
 				check_variable = { bill_id > 0 }
-				check_variable = { senators_democrat > 0 }
-				has_country_flag = USA_democrat_discussing
+				OR = {
+					check_variable = { senators_democrat > 0 }
+					check_variable = { representatives_democrat > 0 }
+				}
 				NOT = {
 					has_country_flag = USA_special_decisions_enabled
 				}
@@ -212,21 +215,10 @@ USA_congress = {
 				tooltip = dems_fully_support
 				NOT = { check_variable = { USA_democrat_bill_support = 1 } }
 			}
-			#custom_trigger_tooltip = {
-			#	tooltip = mut_exclude
-			#}
 		}
     	days_remove = 5
     	remove_effect = {
-		
-			random_list = {
-				95 = {
-					USA_democrat_support_eventless = yes
-				}
-				5 = {
-					
-				}
-			}
+			USA_democrat_support_eventless = yes
 		}
 	}
 	
@@ -236,8 +228,10 @@ USA_congress = {
 			AND = {
 				original_tag = USA
 				check_variable = { bill_id > 0 }
-				check_variable = { senators_socialist > 0 }
-				has_country_flag = USA_socialist_discussing
+				OR = {
+					check_variable = { senators_socialist > 0 }
+					check_variable = { representatives_socialist > 0 }
+				}
 				NOT = {
 					has_country_flag = USA_special_decisions_enabled
 				}
@@ -259,21 +253,10 @@ USA_congress = {
 				tooltip = socialist_fully_support
 				NOT = { check_variable = { USA_socialist_bill_support = 1 } }
 			}
-			#custom_trigger_tooltip = {
-			#	tooltip = mut_exclude
-			#}
 		}
     	days_remove = 5
     	remove_effect = {
 			
-			random_list = {
-				95 = {
-					
-				}
-				5 = {
-					
-				}
-			}
 		}
 	}
 	
@@ -287,7 +270,6 @@ USA_congress = {
 					check_variable = { senators_communist > 0 }
 					check_variable = { representatives_communist > 0 }
 				}
-				has_country_flag = USA_communist_discussing
 				NOT = {
 					has_country_flag = USA_special_decisions_enabled
 				}
@@ -309,21 +291,10 @@ USA_congress = {
 				tooltip = communists_fully_support
 				NOT = { check_variable = { USA_communist_bill_support = 1 } }
 			}
-			#custom_trigger_tooltip = {
-			#	tooltip = mut_exclude
-			#}
 		}
     	days_remove = 5
     	remove_effect = {
 			
-			random_list = {
-				95 = {
-					
-				}
-				5 = {
-					
-				}
-			}
 		}
 	}
 	
@@ -337,13 +308,12 @@ USA_congress = {
 					check_variable = { senators_fascist > 0 }
 					check_variable = { representatives_fascist > 0 }
 				}
-				has_country_flag = USA_fascist_discussing
 				NOT = {
 					has_country_flag = USA_special_decisions_enabled
 				}
 			}
         }
-			
+		
 		cost = fascist_flip_cost
        		
 		available = {
@@ -359,20 +329,35 @@ USA_congress = {
 				tooltip = fascists_fully_support
 				NOT = { check_variable = { USA_fascist_bill_support = 1 } }
 			}
-			#custom_trigger_tooltip = {
-			#	tooltip = mut_exclude
-			#}
 		}
     	days_remove = 5
     	remove_effect = {
 			
-			random_list = {
-				95 = {
-					
+		}
+	}
+	
+	USA_bill_executive_order = {
+		visible = {
+			original_tag = USA
+			OR = {
+				check_variable = { bill_id = 2 }
+			}
+        }
+		
+		cost = 200
+		
+		available  = {
+			
+   		}
+		
+		complete_effect = {
+			if = {
+				limit = { 
+					check_variable = { bill_id = 2 }
 				}
-				5 = {
-					
-				}
+				#country_event = {
+				#	id = 
+				#}
 			}
 		}
 	}
@@ -384,7 +369,7 @@ USA_congress = {
 		available = { #Mission is completed when the player brings the bill to a vote
 			custom_trigger_tooltip = {
 				tooltip = USA_bill_timer_pass_criteria
-				NOT = { has_country_flag = bill_enable_mission }
+				NOT = { has_country_flag = bill_enable_mission  }
 			}
 		}
 		activation = {

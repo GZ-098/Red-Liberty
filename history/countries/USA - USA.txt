@@ -37,6 +37,8 @@ set_research_slots = 4
 set_stability = 0.75
 set_war_support = 0
 
+add_political_power = 50
+
 set_country_flag = proletarian_coalition
 set_country_flag = libertarian_socialism_coalition
 set_country_flag = social_democracy_coalition

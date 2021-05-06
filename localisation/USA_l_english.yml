@@ -88,6 +88,9 @@
  USA_cut_taxes:0 "Cut Taxes"
  USA_issue_subsidies:0 "Issue Subsidies"
  USA_end_union_infighting:0 "End Union Infighting"
+ USA_union_act:0 "Union Representation Act"
+ USA_pension_act:0 "Old Age Pension Act"
+ USA_housing_act:0 "Housing Act"
  USA_back_on_track:0 "Back on Track"
  
  
@@ -115,6 +118,9 @@
  USA_increase_interest_rates:0 "Increase Interest Rates"
  USA_implement_price_controls:0 "Implement Price Controls"
  USA_public_works:0 "Increase Public Works Spending"
+ 
+ ### General USA Flavor Events
+ united_states_flavor.2.desc:0 "There is one day every year which the reactionaries of the world all despise with a passion. The one day in which the masses routinely come together as one and make the world tremble before their combined power: May Day, the day of the workers.\n\nAround the world, in Seattle, Chicago, New York, Rio de Janeiro, Buenos Aires, London, Madrid, Paris, Berlin, Warsaw, Moscow, and Tokyo, the workers spill forth from their apartments, slums, and factories to fill the streets with flowing parades, red and black banners fluttering as the air is filled with the International, the Commonwealth of Toil, and the Worker's Marseillaise.\n\nThe forces of reaction and capital cower in their gilded halls of crime, and wait out the storm that is the day of the working class."
  
  ### Thomas ###
  ### Campaign events from intro tree ###

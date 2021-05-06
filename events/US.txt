@@ -152,3 +152,18 @@ country_event = { # boulder dam
 		}
 	}
 }
+
+country_event = { # may day
+	id = united_states_flavor.2
+	title = "A Day For Labor"
+	desc = united_states_flavor.2.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Arise ye wretched of the earth!"
+		add_political_power = 5
+	}
+}
