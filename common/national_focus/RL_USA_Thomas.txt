@@ -1218,11 +1218,20 @@ shared_focus = {
     x = 0
 	y = 1
 	
+	available = {
+		count_triggers = {
+			amount = 2
+			has_country_flag = USA_union_act_passed
+			has_country_flag = USA_housing_act_passed
+			has_country_flag = USA_pension_act_passed
+		}
+	}
+	
 	cost = 5
 	relative_position_id = USA_housing_act
 	prerequisite = { focus = USA_housing_act }
     completion_reward = {
-        
+        improve_great_depression = yes
     }
 	
 	ai_will_do = {

@@ -33,6 +33,7 @@
  USA_the_great_depression_1:0 "The Great Depression"
  USA_the_great_depression_2:0 "The Great Depression"
  USA_the_great_depression_3:0 "The Great Depression"
+ USA_the_great_depression_4:0 "The Great Depression"
  USA_the_great_depression_1_desc:0 "After the Wall Street Crash of 1929, the American economy took a nosedive. While it took time for the effects to be felt by the workers, when reality hit, it hit hard. Massive levels of unemployment, currency deflation, and the bank collapses that erased the life savings of millions all caused economic damage unprecedented in history. Tens of millions live in poverty, and many feel they have woken up from the American Dream."
  USA_the_great_depression_2_desc:0 "After the Wall Street Crash of 1929, the American economy took a nosedive. While it took time for the effects to be felt by the workers, when reality hit, it hit hard. Massive levels of unemployment, currency deflation, and the bank collapses that erased the life savings of millions all caused economic damage unprecedented in history. Tens of millions live in poverty, and many feel they have woken up from the American Dream."
  USA_the_great_depression_3_desc:0 "After the Wall Street Crash of 1929, the American economy took a nosedive. While it took time for the effects to be felt by the workers, when reality hit, it hit hard. Massive levels of unemployment, currency deflation, and the bank collapses that erased the life savings of millions all caused economic damage unprecedented in history. Tens of millions live in poverty, and many feel they have woken up from the American Dream."
@@ -121,6 +122,12 @@
  
  ### General USA Flavor Events
  united_states_flavor.2.desc:0 "There is one day every year which the reactionaries of the world all despise with a passion. The one day in which the masses routinely come together as one and make the world tremble before their combined power: May Day, the day of the workers.\n\nAround the world, in Seattle, Chicago, New York, Rio de Janeiro, Buenos Aires, London, Madrid, Paris, Berlin, Warsaw, Moscow, and Tokyo, the workers spill forth from their apartments, slums, and factories to fill the streets with flowing parades, red and black banners fluttering as the air is filled with the International, the Commonwealth of Toil, and the Worker's Marseillaise.\n\nThe forces of reaction and capital cower in their gilded halls of crime, and wait out the storm that is the day of the working class."
+ 
+ ### GENERAL EVENTS THAT WILL ALWAYS HAPPEN ###
+ 
+ united_states.7.desc:0 "Bad news for the economy today! Over the past month, unemployment has suddenly jumped up a sizable amount. While still remaining lower than 1932 levels, this does not bode well for the country. Something must be done!"
+ united_states.8.desc:0 "Yet more bad news. Across the board, industrial output has fallen as well, now closer to the levels of 1934. We need to act quickly to reverse this, else we risk losing all of the hard-earned gains we have made since 1929."
+ united_states.9.desc:0 "Unfortunately, our fears have come to pass: the economy has entered a recession. Thankfully, it has not yet set us back too far, and if we act quickly, we can reverse the losses before the next election cycle!"
  
  ### Thomas ###
  ### Campaign events from intro tree ###

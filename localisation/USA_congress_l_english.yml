@@ -80,3 +80,7 @@
  farm_tenant_passed:0 "We have passed the Farm Tenant Act"
  USA_farm_tenant_act_effect:0 "If passed, the §YFarm Tenant Act§! will provide the following bonus:\n"
  
+ USA_union_act_passed:0 "We have passed the Union Representation Act"
+ USA_housing_act_passed:0 "We have passed the Housing Act"
+ USA_pension_act_passed:0 "We have passed the Old Age Pension Act"
+ 

@@ -145,6 +145,7 @@ country_event = { # thomas inaug day
 	id = us_election.5
 	title = "Inuaguration Day"
 	desc = us_election.5.desc
+	picture = GFX_report_event_norman_thomas_elected
 
 	is_triggered_only = yes
 	

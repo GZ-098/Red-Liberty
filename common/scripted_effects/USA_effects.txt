@@ -28,6 +28,42 @@ improve_great_depression = {
 	}
 }
 
+worsen_great_depression = {
+	if = {
+		limit = {
+			has_ideas = USA_the_great_depression_1
+		}
+		add_political_power = -100
+	}
+	else_if = {
+		limit = {
+			has_ideas = USA_the_great_depression_2
+		}
+		swap_ideas = {
+			remove_idea = USA_the_great_depression_2
+			add_idea = USA_the_great_depression_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_ideas = USA_the_great_depression_3
+		}
+		swap_ideas = {
+			remove_idea = USA_the_great_depression_3
+			add_idea = USA_the_great_depression_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_ideas = USA_the_great_depression_4
+		}
+		swap_ideas = {
+			remove_idea = USA_the_great_depression_4
+			add_idea = USA_the_great_depression_3
+		}
+	}
+}
+
 clear_state_name_and_desc = {
 	clr_country_flag = USA_states_gui_AL_selected
 	clr_country_flag = USA_states_gui_AR_selected

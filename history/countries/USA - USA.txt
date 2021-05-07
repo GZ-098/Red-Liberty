@@ -23,9 +23,14 @@ country_event = { # dnc
 	id = united_states.3
 	days = 176
 }
-country_event = { # dnc
+country_event = { # spa - choose veep
 	id = united_states.6
 	days = 185
+}
+
+country_event = { # 1937 recession event chain
+	id = united_states.7
+	days = 510 # around the middle of may 1937
 }
 
 country_event = { # 1936 election

@@ -1,0 +1,21 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_report_event_norman_thomas_elected"
+		texturefile = "gfx/event_gfx/USA/report_event_norman_thomas_elected.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_unemployment"
+		texturefile = "gfx/event_gfx/USA/report_event_unemployment.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_unemployment_2"
+		texturefile = "gfx/event_gfx/USA/report_event_unemployment_2.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_usa_election_generic"
+		texturefile = "gfx/event_gfx/USA/report_event_usa_election_generic.dds"
+	}  
+}
