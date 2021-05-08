@@ -71,9 +71,14 @@ country_event = { # social security act
 	option = { # bill passes
 		name = us_bill.2.a
 		trigger = { has_country_flag = bill_passed }
-		swap_ideas = {
-			remove_idea = USA_the_great_depression_2
-			add_idea = USA_the_great_depression_3
+		improve_great_depression = yes
+		add_popularity = {
+			ideology = libertarian_socialism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = social_democracy
+			popularity = 0.01
 		}
 		set_country_flag = social_security_passed
 		USA_bill_clear = yes # ALWAYS DO THIS
@@ -122,6 +127,7 @@ country_event = { # farm tenant act
 	option = { # bill passes
 		name = us_bill.3.a
 		trigger = { has_country_flag = bill_passed }
+		improve_great_depression = yes
 		set_country_flag = farm_tenant_act_passed
 		USA_bill_clear = yes # ALWAYS DO THIS
 	}
@@ -129,6 +135,7 @@ country_event = { # farm tenant act
 	option = { # bill fails
 		name = us_bill.3.b
 		trigger = { NOT = { has_country_flag = bill_passed } }
+		add_political_power = -50
 		USA_bill_clear = yes # ALWAYS DO THIS
 	}
 }

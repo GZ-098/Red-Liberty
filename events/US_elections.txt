@@ -127,7 +127,10 @@ country_event = { # house of reps votes
 			check_variable = { representatives_socialist > representatives_democrat }
 			check_variable = { representatives_socialist > representatives_fascist }
 		}
-		
+		country_event = {
+			id = us_election.5
+			days = 22
+		}
 		set_country_flag = USA_thomas_elected
 	}
 	
