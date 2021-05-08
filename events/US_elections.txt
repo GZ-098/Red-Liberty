@@ -409,6 +409,7 @@ country_event = { #Clear variables after seeing conclusion
 			clr_country_flag = USA_campaigning_democrat
 			clr_country_flag = USA_campaigning_socialist
 			clr_country_flag = currently_campaigning
+			clr_country_flag = USA_senate_elections
  		}
 	}
 

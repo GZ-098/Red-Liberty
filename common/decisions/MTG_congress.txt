@@ -1,4 +1,21 @@
 USA_congress = {
+
+	USA_failsafe = {
+	
+		available = {
+			
+		}
+		
+		visible = {
+			always = no
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			USA_calculate_senators = yes
+		}
+	}
 	
 	start_test_bill_debug = { # example bill
 		icon = ger_mefo_bills
@@ -11,11 +28,12 @@ USA_congress = {
 		}
 		
 		visible = {
-			original_tag = USA
-			NOT = {
-				has_country_flag = USA_discussing_bill
-			}
-			is_debug = yes
+			#original_tag = USA
+			#NOT = {
+			#	has_country_flag = USA_discussing_bill
+			#}
+			#is_debug = yes
+			always = no
 		}
 		
 		cost = 0
@@ -39,6 +57,7 @@ USA_congress = {
 		visible = {
 			original_tag = USA
 			NOT = {
+				has_country_flag = social_security_passed
 				has_country_flag = USA_discussing_bill
 			}
 			has_completed_focus = USA_social_security

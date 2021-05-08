@@ -131,6 +131,8 @@ USA_class_1_senate_prepare = {
 	394 = { #Wisconsin
 		set_state_flag = elections_senator_1
 	}
+	
+	USA_calculate_senators = yes
 }
 
 USA_class_2_senate_prepare = {
@@ -268,6 +270,8 @@ USA_class_2_senate_prepare = {
 	832 = {
 		set_state_flag = elections_senator_2
 	}
+	
+	USA_calculate_senators = yes
 }
 
 USA_class_3_senate_prepare = {
@@ -407,6 +411,8 @@ USA_class_3_senate_prepare = {
 	381 = {
 		set_state_flag = elections_senator_2
 	}
+	
+	USA_calculate_senators = yes
 }
 
 USA_hold_senate_election = {

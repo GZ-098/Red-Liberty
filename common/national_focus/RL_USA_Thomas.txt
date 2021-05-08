@@ -108,7 +108,10 @@ shared_focus = {
 	prerequisite = { focus = USA_bonneville_project }
     completion_reward = {
         unlock_decision_tooltip = start_USA_farm_tenant_act
-		custom_effect_tooltip = USA_farm_tenant_act_effect
+		custom_effect_tooltip = USA_bill_pass_req_tt
+		effect_tooltip = {
+			improve_great_depression = yes
+		}
     }
 	
 	ai_will_do = {
@@ -1179,7 +1182,10 @@ shared_focus = {
 		focus = USA_end_union_infighting
 	}
     completion_reward = {
-        
+        custom_effect_tooltip = USA_bill_pass_req_tt
+		effect_tooltip = {
+			improve_great_depression = yes
+		}
     }
 	
 	ai_will_do = {
@@ -1203,7 +1209,10 @@ shared_focus = {
 	prerequisite = { focus = USA_union_act }
 	prerequisite = { focus = USA_pension_act }
     completion_reward = {
-        
+        custom_effect_tooltip = USA_bill_pass_req_tt
+		effect_tooltip = {
+			improve_great_depression = yes
+		}
     }
 	
 	ai_will_do = {

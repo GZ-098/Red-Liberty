@@ -1,7 +1,7 @@
 improve_great_depression = {
 	if = {
 		limit = {
-			has_ideas = USA_the_great_depression_3
+			has_idea = USA_the_great_depression_3
 		}
 		swap_ideas = {
 			remove_idea = USA_the_great_depression_3
@@ -10,7 +10,7 @@ improve_great_depression = {
 	}
 	else_if = {
 		limit = {
-			has_ideas = USA_the_great_depression_2
+			has_idea = USA_the_great_depression_2
 		}
 		swap_ideas = {
 			remove_idea = USA_the_great_depression_2
@@ -19,7 +19,7 @@ improve_great_depression = {
 	}
 	else_if = {
 		limit = {
-			has_ideas = USA_the_great_depression_1
+			has_idea = USA_the_great_depression_1
 		}
 		swap_ideas = {
 			remove_idea = USA_the_great_depression_1
@@ -31,13 +31,13 @@ improve_great_depression = {
 worsen_great_depression = {
 	if = {
 		limit = {
-			has_ideas = USA_the_great_depression_1
+			has_idea = USA_the_great_depression_1
 		}
 		add_political_power = -100
 	}
 	else_if = {
 		limit = {
-			has_ideas = USA_the_great_depression_2
+			has_idea = USA_the_great_depression_2
 		}
 		swap_ideas = {
 			remove_idea = USA_the_great_depression_2
@@ -46,7 +46,7 @@ worsen_great_depression = {
 	}
 	else_if = {
 		limit = {
-			has_ideas = USA_the_great_depression_3
+			has_idea = USA_the_great_depression_3
 		}
 		swap_ideas = {
 			remove_idea = USA_the_great_depression_3
@@ -55,7 +55,7 @@ worsen_great_depression = {
 	}
 	else_if = {
 		limit = {
-			has_ideas = USA_the_great_depression_4
+			has_idea = USA_the_great_depression_4
 		}
 		swap_ideas = {
 			remove_idea = USA_the_great_depression_4
