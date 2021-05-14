@@ -4,11 +4,9 @@
  
  USA_congress_voting_none:0 "There is currently no important legislation being considered."
  
- USA_congress_voting_debug_bill_example:0 "§YCongress§! is currently considering the §YDebug Act§!, which currently expects the support of §G[?USA.representatives_support]§!/§Y218§! Representatives and §G[?USA.senators_support]§!/§Y48§! Senators.\n\n§G[?republican_supporting_reps]§! Republican Representative(s) support this bill.\n§G[?democrat_supporting_reps]§! Democratic Representative(s) support this bill.\n§G[?socialist_supporting_reps]§! Socialist Representative(s) support this bill.\n§G[?fascist_supporting_reps]§! Fascist Representative(s) support the bill.\n§G[?communist_supporting_reps]§! Communist Representative(s) support the bill.\n\n§G[?republican_supporting_senators]§! Republican Senator(s) support the bill.\n§G[?democrat_supporting_senators]§! Democratic Senator(s) support the bill.\n§G[?socialist_supporting_senators]§! Socialist Senator(s) support the bill.\n§G[?fascist_supporting_senators]§! Fascist Senator(s) support the bill.\n§G[?communist_supporting_senators]§! Communist Senator(s) support the bill."
- USA_congress_voting_social_security:0 "§YCongress§! is currently considering the §YSocial Security Act§!, which currently expects the support of §G[?USA.representatives_support]§!/§Y218§! Representatives and §G[?USA.senators_support]§!/§Y48§! Senators.\n\n§G[?republican_supporting_reps]§! Republican Representative(s) support this bill.\n§G[?democrat_supporting_reps]§! Democratic Representative(s) support this bill.\n§G[?socialist_supporting_reps]§! Socialist Representative(s) support this bill.\n§G[?fascist_supporting_reps]§! Fascist Representative(s) support the bill.\n§G[?communist_supporting_reps]§! Communist Representative(s) support the bill.\n\n§G[?republican_supporting_senators]§! Republican Senator(s) support the bill.\n§G[?democrat_supporting_senators]§! Democratic Senator(s) support the bill.\n§G[?socialist_supporting_senators]§! Socialist Senator(s) support the bill.\n§G[?fascist_supporting_senators]§! Fascist Senator(s) support the bill.\n§G[?communist_supporting_senators]§! Communist Senator(s) support the bill."
- USA_congress_voting_farm_tenant:0 "§YCongress§! is currently considering the §YFarm Tenant Act§!, which currently expects the support of §G[?USA.representatives_support]§!/§Y218§! Representatives and §G[?USA.senators_support]§!/§Y48§! Senators.\n\n§G[?republican_supporting_reps]§! Republican Representative(s) support this bill.\n§G[?democrat_supporting_reps]§! Democratic Representative(s) support this bill.\n§G[?socialist_supporting_reps]§! Socialist Representative(s) support this bill.\n§G[?fascist_supporting_reps]§! Fascist Representative(s) support the bill.\n§G[?communist_supporting_reps]§! Communist Representative(s) support the bill.\n\n§G[?republican_supporting_senators]§! Republican Senator(s) support the bill.\n§G[?democrat_supporting_senators]§! Democratic Senator(s) support the bill.\n§G[?socialist_supporting_senators]§! Socialist Senator(s) support the bill.\n§G[?fascist_supporting_senators]§! Fascist Senator(s) support the bill.\n§G[?communist_supporting_senators]§! Communist Senator(s) support the bill."
+ USA_congress_voting_bill:0 "§YCongress§! is currently considering major legislation, which currently expects the support of §G[?USA.representatives_support]§!/§Y218§! Representatives and §G[?USA.senators_support]§!/§Y48§! Senators.\n\n§G[?republican_supporting_reps]§! Republican Representative(s) support this bill.\n§G[?democrat_supporting_reps]§! Democratic Representative(s) support this bill.\n§G[?socialist_supporting_reps]§! Socialist Representative(s) support this bill.\n§G[?fascist_supporting_reps]§! Fascist Representative(s) support the bill.\n§G[?communist_supporting_reps]§! Communist Representative(s) support the bill.\n\n§G[?republican_supporting_senators]§! Republican Senator(s) support the bill.\n§G[?democrat_supporting_senators]§! Democratic Senator(s) support the bill.\n§G[?socialist_supporting_senators]§! Socialist Senator(s) support the bill.\n§G[?fascist_supporting_senators]§! Fascist Senator(s) support the bill.\n§G[?communist_supporting_senators]§! Communist Senator(s) support the bill."
  
- not_working:0 "\n§RWHY IS ONLY THIS LINE IN PARTICULAR NOT WORKING§!"
+ not_working:0 "\n§RIF YOU SEE THIS, SOMETHING HAS BROKEN§!"
  
  USA_discussing_bill:0 "Congress is currently dicussing legislation."
  
@@ -79,10 +77,20 @@
  USA_force_social_security:0 "Force it Through"
  
  start_USA_farm_tenant_act:0 "The Farm Tenant Act"
+ us_bill.3.title_passed:0 "The Farm Tenant Act Passes!"
  farm_tenant_passed:0 "We have passed the Farm Tenant Act"
- USA_farm_tenant_act_effect:0 "If passed, the §YFarm Tenant Act§! will provide the following bonus:\n"
  
- USA_union_act_passed:0 "We have passed the Union Representation Act"
- USA_housing_act_passed:0 "We have passed the Housing Act"
- USA_pension_act_passed:0 "We have passed the Old Age Pension Act"
+ start_USA_court_packing_act:0 "The Judicial Procedures Reform Act"
+ court_packing_plan_passed:0 "We have passed the Judicial Procedures Reform Act"
+ USA_abandon_court_packing_tt:0 "§RWe will abandon our attempts to pack the court.§!\n"
+ 
+ union_act_passed:0 "We have passed the Union Representation Act"
+ 
+ start_USA_housing_act:0 "The Housing Act"
+ housing_act_passed:0 "We have passed the Housing Act"
+ 
+ start_USA_pension_act:0 "The Old Age Pension Act"
+ pension_act_passed:0 "We have passed the Old Age Pension Act"
+ 
+ start_USA_wealth_tax_act:0 "The Redistribution of Accumulated Wealth Act"
  

@@ -59,7 +59,10 @@ USA_debug_example_setup = { # example debug act
 	#set_country_flag = USA_special_decisions_enabled # hides generic decisions in favor of special ones
 	
 	set_variable = { average_boost_republican = 0.3 } # this shows the percentage of politicians (who are not currently supportive) who would be on average would be flipped by a compromise
-	set_variable = { average_boost_democrat = 0.2 } 
+	set_variable = { average_boost_democrat = 0.2 }
+	set_variable = { average_boost_communist = 0.2 }
+	set_variable = { average_boost_socialist = 0.2 }
+	set_variable = { average_boost_fascist = 0.2 }
 	
 	set_variable = { republican_flip_cost = 25 } # how much pp negotiation decisions cost
 	set_variable = { democrat_flip_cost = 40 }
@@ -117,14 +120,29 @@ USA_farm_tenant_act_setup = { # farm tenant act
 	
 	set_variable = { bill_id = 3 } # EACH BILL MUST HAVE A UNIQUE ID
 	
+	set_country_flag = USA_republican_discussing
+	set_country_flag = USA_democrat_discussing
+	set_country_flag = USA_communist_discussing
+	set_country_flag = USA_socialist_discussing
+	set_country_flag = USA_fascist_discussing
+	
 	set_country_flag = bill_enable_mission
 	set_variable = { USA_bill_mission_deadline = 60 }
 	
 	set_variable = { USA_republican_bill_support = 0.3 } # help the farmers, but hnng more spending
 	set_variable = { USA_democrat_bill_support = 0.55 } # help the farmers
 	set_variable = { USA_communist_bill_support = 1 } # help the farmers
-	set_variable = { USA_socialist_bill_support = 0.95 } # help the farmers
+	set_variable = { USA_socialist_bill_support = 1 } # help the farmers
 	set_variable = { USA_fascist_bill_support = 0.1 }
+	
+	set_variable = { average_boost_republican = 0.3 }
+	set_variable = { average_boost_democrat = 0.2 }
+	
+	set_variable = { republican_flip_cost = 20 }
+	set_variable = { democrat_flip_cost = 30 }
+	set_variable = { communist_flip_cost = 20 }
+	set_variable = { socialist_flip_cost = 10 }
+	set_variable = { fascist_flip_cost = 100 }
 	
 	USA_bill_setup = yes # always required
 }
@@ -132,7 +150,11 @@ USA_farm_tenant_act_setup = { # farm tenant act
 USA_judicial_reform_act_setup = { # court packing plan
 	log = "[GetDateText]: [Root.GetName]: bill setup active"
 	
-	set_variable = { bill_id = 3 } # EACH BILL MUST HAVE A UNIQUE ID
+	set_variable = { bill_id = 4 } # EACH BILL MUST HAVE A UNIQUE ID
+	
+	set_country_flag = USA_democrat_discussing
+	set_country_flag = USA_communist_discussing
+	set_country_flag = USA_socialist_discussing
 	
 	set_country_flag = bill_enable_mission
 	set_variable = { USA_bill_mission_deadline = 60 }
@@ -141,7 +163,29 @@ USA_judicial_reform_act_setup = { # court packing plan
 	set_variable = { USA_democrat_bill_support = 0.15 } # DICTATORSHIP ALERT
 	set_variable = { USA_communist_bill_support = 1 } # DESTROY CAPITALIST INSTITUTIONS
 	set_variable = { USA_socialist_bill_support = 0.75 } # arent we going a bit far?
-	set_variable = { USA_fascist_bill_support = 0 } # FACKING COMMIES
+	set_variable = { USA_fascist_bill_support = 0 } # FACKING COMMIES RUINING MURICA
+	
+	set_variable = { average_boost_democrat = 0.15 }
+	set_variable = { average_boost_socialist = 0.3 }
+	
+	set_variable = { democrat_flip_cost = 100 }
+	set_variable = { socialist_flip_cost = 50 }
+	
+	if = {
+		limit = {
+			has_country_flag = USA_judicial_reform_consulting
+		}
+		add_to_variable = { USA_republican_bill_support = 0.05 }
+		add_to_variable = { USA_democrat_bill_support = 0.05 }
+	}
+	
+	if = {
+		limit = {
+			has_country_flag = USA_added_judicial_review_section
+		}
+		subtract_from_variable = { USA_republican_bill_support = 0.05 }
+		subtract_from_variable = { USA_democrat_bill_support = 0.05 }
+	}
 	
 	USA_bill_setup = yes # always required
 }
@@ -167,6 +211,103 @@ USA_reorganization_act_setup = { # reorganization act
 		add_to_variable = { USA_republican_bill_support = 0.1 }
 		add_to_variable = { USA_democrat_bill_support = 0.1 }
 	}
+	
+	USA_bill_setup = yes # always required
+}
+
+USA_union_representation_act_setup = { # union rep act
+	log = "[GetDateText]: [Root.GetName]: bill setup active"
+	
+	set_variable = { bill_id = 6 } # EACH BILL MUST HAVE A UNIQUE ID
+	
+	set_country_flag = USA_democrat_discussing
+	set_country_flag = USA_communist_discussing
+	set_country_flag = USA_socialist_discussing
+	
+	set_country_flag = bill_enable_mission
+	set_variable = { USA_bill_mission_deadline = 60 }
+	
+	set_variable = { USA_republican_bill_support = 0.15 }
+	set_variable = { USA_democrat_bill_support = 0.25 }
+	set_variable = { USA_communist_bill_support = 1 }
+	set_variable = { USA_socialist_bill_support = 0.9 }
+	set_variable = { USA_fascist_bill_support = 0 }
+	
+	USA_bill_setup = yes # always required
+}
+
+USA_pension_act_setup = { # pension act
+	log = "[GetDateText]: [Root.GetName]: bill setup active"
+	
+	set_variable = { bill_id = 7 } # EACH BILL MUST HAVE A UNIQUE ID
+	
+	set_country_flag = USA_republican_discussing
+	set_country_flag = USA_democrat_discussing
+	set_country_flag = USA_communist_discussing
+	set_country_flag = USA_socialist_discussing
+	
+	set_country_flag = bill_enable_mission
+	set_variable = { USA_bill_mission_deadline = 60 }
+	
+	set_variable = { USA_republican_bill_support = 0.35 }
+	set_variable = { USA_democrat_bill_support = 0.45 }
+	set_variable = { USA_communist_bill_support = 1 }
+	set_variable = { USA_socialist_bill_support = 1 }
+	set_variable = { USA_fascist_bill_support = 0.1 }
+	
+	USA_bill_setup = yes # always required
+}
+
+USA_housing_act_setup = { # housing act
+	log = "[GetDateText]: [Root.GetName]: bill setup active"
+	
+	set_variable = { bill_id = 8 } # EACH BILL MUST HAVE A UNIQUE ID
+	
+	set_country_flag = USA_republican_discussing
+	set_country_flag = USA_democrat_discussing
+	set_country_flag = USA_communist_discussing
+	set_country_flag = USA_socialist_discussing
+	
+	set_country_flag = bill_enable_mission
+	set_variable = { USA_bill_mission_deadline = 60 }
+	
+	set_variable = { USA_republican_bill_support = 0.15 }
+	set_variable = { USA_democrat_bill_support = 0.45 }
+	set_variable = { USA_communist_bill_support = 1 }
+	set_variable = { USA_socialist_bill_support = 1 }
+	set_variable = { USA_fascist_bill_support = 0.15 }
+	
+	set_variable = { average_boost_republican = 0.3 }
+	set_variable = { average_boost_democrat = 0.2 }
+	
+	set_variable = { republican_flip_cost = 40 }
+	set_variable = { democrat_flip_cost = 60 }
+	set_variable = { communist_flip_cost = 40 }
+	set_variable = { socialist_flip_cost = 20 }
+	set_variable = { fascist_flip_cost = 150 }
+	
+	USA_bill_setup = yes # always required
+}
+
+USA_wealth_tax_act_setup = { # wealth tax act
+	log = "[GetDateText]: [Root.GetName]: bill setup active"
+	
+	set_variable = { bill_id = 9 } # EACH BILL MUST HAVE A UNIQUE ID
+	
+	set_country_flag = USA_republican_discussing
+	set_country_flag = USA_democrat_discussing
+	set_country_flag = USA_communist_discussing
+	set_country_flag = USA_socialist_discussing
+	set_country_flag = USA_fascist_discussing
+	
+	set_country_flag = bill_enable_mission
+	set_variable = { USA_bill_mission_deadline = 75 }
+	
+	set_variable = { USA_republican_bill_support = 0 }
+	set_variable = { USA_democrat_bill_support = 0.2 }
+	set_variable = { USA_communist_bill_support = 1 }
+	set_variable = { USA_socialist_bill_support = 1 }
+	set_variable = { USA_fascist_bill_support = 0.2 } # longists like this idea
 	
 	USA_bill_setup = yes # always required
 }
@@ -813,10 +954,37 @@ USA_bill_vote = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { bill_id = 3 } # social security act
+			check_variable = { bill_id = 3 } # farm tenant act
 		}
 		country_event = {
 			id = us_bill.3
+			hours = 1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { bill_id = 7 } # pension act
+		}
+		country_event = {
+			id = us_bill.7
+			hours = 1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { bill_id = 8 } # housing act
+		}
+		country_event = {
+			id = us_bill.8
+			hours = 1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { bill_id = 9 } # wealth tax act
+		}
+		country_event = {
+			id = us_bill.9
 			hours = 1
 		}
 	}

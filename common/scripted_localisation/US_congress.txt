@@ -123,26 +123,10 @@ defined_text = {
 	
 	text = { 
         trigger = {
-			check_variable = { bill_id = 1 }
+			check_variable = { bill_id > 0 }
 			has_country_flag = USA_discussing_bill
         }
-        localization_key = "USA_congress_voting_debug_bill_example"
-    }
-	
-	text = { 
-        trigger = {
-			check_variable = { bill_id = 2 }
-			has_country_flag = USA_discussing_bill
-        }
-        localization_key = "USA_congress_voting_social_security"
-    }
-	
-	text = { 
-        trigger = {
-			check_variable = { bill_id = 3 }
-			has_country_flag = USA_discussing_bill
-        }
-        localization_key = "USA_congress_voting_farm_tenant"
+        localization_key = "USA_congress_voting_bill"
     }
 	
 	text = {

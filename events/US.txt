@@ -76,11 +76,11 @@ country_event = { # conservatives abandon democratic party
 		name = "Conservatives always abandon democracy."
 		add_popularity = {
 			ideology = national_conservatism
-			popularity = -0.1
+			popularity = -0.05
 		}
 		add_popularity = {
 			ideology = authoritarian_republicanism
-			popularity = 0.1
+			popularity = 0.05
 		}
 	}
 }
@@ -190,6 +190,7 @@ country_event = {
 		name = "We were doing so well..."
 		set_country_flag = USA_1937_recession
 		worsen_great_depression = yes
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 

@@ -199,3 +199,102 @@ country_event = { # investigation result
 		add_stability = -0.05
 	}
 }
+
+country_event = { # investigation result - alternate
+	id = united_states_thomas.12
+	title = ""
+	desc = united_states_thomas.12.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+	}
+}
+
+country_event = { # first-term legislation found unconstitutional
+	id = united_states_thomas.13
+	title = ""
+	desc = united_states_thomas.13.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "What to do, What to do?"
+	}
+}
+
+country_event = { # judicial reform suggested
+	id = united_states_thomas.14
+	title = "Judicial Reform"
+	desc = united_states_thomas.14.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Genius!"
+	}
+}
+
+country_event = { # consult congressional leaders?
+	id = united_states_thomas.15
+	title = "Congressional Consultation"
+	desc = united_states_thomas.15.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "This is an open and honest administration."
+		set_country_flag = USA_judicial_reform_consulting
+		add_political_power = -25
+	}
+	
+	option = {
+		name = "We cannot let the opposition know of our plans!"
+	}
+}
+
+country_event = { # senate judiciary hearings
+	id = united_states_thomas.16
+	title = ""
+	desc = united_states_thomas.16.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "More witnesses!"
+	}
+	
+	option = {
+		name = "Gah, enough already."
+	}
+}
+
+country_event = { # judicial review section
+	id = united_states_thomas.17
+	title = ""
+	desc = united_states_thomas.17.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Do it."
+		set_country_flag = USA_added_judicial_review_section
+	}
+	
+	option = {
+		name = "Too risky to try this now."
+	}
+}

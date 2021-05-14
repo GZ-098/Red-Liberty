@@ -66,7 +66,10 @@ shared_focus = {
 	relative_position_id = USA_butter_em_up
 	prerequisite = { focus = USA_butter_em_up }
     completion_reward = {
-		
+		add_popularity = {
+			ideology = libertarian_socialism
+			popularity = 0.01
+		}
     }
 	
 	ai_will_do = {
@@ -123,14 +126,33 @@ shared_focus = {
     id = USA_strengthen_executive_branch
 	icon = GFX_USA_strengthen_executive_branch
 	
+	select_effect = {
+		country_event = {
+			id = united_states_thomas.14
+			days = 3
+		}
+		country_event = {
+			id = united_states_thomas.15
+			days = 9
+		}
+		country_event = {
+			id = united_states_thomas.16
+			days = 19
+		}
+		country_event = {
+			id = united_states_thomas.17
+			days = 27
+		}
+	}
+	
     x = 0
 	y = 1
 	
-	cost = 5
+	cost = 8
 	relative_position_id = USA_our_mandate
 	prerequisite = { focus = USA_our_mandate }
     completion_reward = {
-        
+		unlock_decision_tooltip = start_USA_court_packing_act
     }
 	
 	ai_will_do = {
@@ -142,10 +164,14 @@ shared_focus = {
     id = USA_pack_the_court
 	icon = GFX_USA_pack_the_court
 	
+	available = {
+		has_country_flag = court_packing_plan_passed
+	}
+	
     x = -1
 	y = 1
 	
-	cost = 10
+	cost = 5
 	relative_position_id = USA_strengthen_executive_branch
 	prerequisite = { focus = USA_strengthen_executive_branch }
 	mutually_exclusive = {
@@ -164,16 +190,23 @@ shared_focus = {
     id = USA_accept_the_rulings
 	icon = GFX_USA_accept_the_rulings
 	
+	available = {
+		NOT = {
+			has_country_flag = court_packing_plan_passed
+		}
+	}
+	
     x = 1
 	y = 1
 	
-	cost = 10
+	cost = 5
 	relative_position_id = USA_strengthen_executive_branch
 	prerequisite = { focus = USA_strengthen_executive_branch }
 	mutually_exclusive = {
 		focus = USA_pack_the_court
 	}
     completion_reward = {
+		custom_effect_tooltip = USA_abandon_court_packing_tt
         add_political_power = -100
     }
 	
@@ -189,7 +222,7 @@ shared_focus = {
     x = 1
 	y = 1
 	
-	cost = 10
+	cost = 8
 	relative_position_id = USA_pack_the_court
 	prerequisite = {
 		focus = USA_pack_the_court
@@ -273,7 +306,12 @@ shared_focus = {
 	prerequisite = { focus = USA_totally_not_brownlow_commitee }
 	prerequisite = { focus = USA_secure_funding }
     completion_reward = {
-        
+		custom_effect_tooltip = USA_bill_pass_req_tt
+        effect_tooltip = {
+			add_ideas = {
+				USA_reorg_act
+			}
+		}
     }
 	
 	ai_will_do = {
@@ -309,7 +347,7 @@ shared_focus = {
     x = -6
 	y = 1
 	
-	cost = 8
+	cost = 5
 	relative_position_id = USA_second_bill_of_rights
 	prerequisite = { focus = USA_second_bill_of_rights }
     completion_reward = {
@@ -482,7 +520,7 @@ shared_focus = {
     x = -2
 	y = 1
 	
-	cost = 8
+	cost = 5
 	relative_position_id = USA_second_bill_of_rights
 	prerequisite = { focus = USA_second_bill_of_rights }
     completion_reward = {
@@ -619,7 +657,7 @@ shared_focus = {
     x = 2
 	y = 1
 	
-	cost = 8
+	cost = 5
 	relative_position_id = USA_second_bill_of_rights
 	prerequisite = { focus = USA_second_bill_of_rights }
     completion_reward = {
@@ -773,7 +811,7 @@ shared_focus = {
     x = 6
 	y = 1
 	
-	cost = 8
+	cost = 5
 	relative_position_id = USA_second_bill_of_rights
 	prerequisite = { focus = USA_second_bill_of_rights }
     completion_reward = {
@@ -992,7 +1030,10 @@ shared_focus = {
 	
 	cost = 5
     completion_reward = {
-        
+        country_event = {
+			id = united_states_thomas.10
+			days = 1
+		}
     }
 	
 	ai_will_do = {
@@ -1031,10 +1072,7 @@ shared_focus = {
 	relative_position_id = USA_caution_to_the_wind
 	prerequisite = { focus = USA_caution_to_the_wind }
     completion_reward = {
-		country_event = {
-			id = united_states_thomas.10
-			days = 1
-		}
+		
     }
 	
 	ai_will_do = {
@@ -1053,7 +1091,11 @@ shared_focus = {
 	relative_position_id = USA_conspiracy_of_capital
 	prerequisite = { focus = USA_conspiracy_of_capital }
     completion_reward = {
-		add_political_power = 25
+		unlock_decision_tooltip = start_USA_wealth_tax_act
+		custom_effect_tooltip = USA_bill_pass_req_tt
+		effect_tooltip = {
+			improve_great_depression = yes
+		}
     }
 	
 	ai_will_do = {
@@ -1115,10 +1157,7 @@ shared_focus = {
 	relative_position_id = USA_cut_taxes
 	prerequisite = { focus = USA_cut_taxes }
     completion_reward = {
-        add_popularity = {
-			ideology = libertarian_socialism
-			popularity = 0.01
-		}
+		improve_great_depression = yes
     }
 	
 	ai_will_do = {
@@ -1133,14 +1172,14 @@ shared_focus = {
     x = 1
 	y = 1
 	
-	cost = 5
+	cost = 4
 	relative_position_id = USA_caution_to_the_wind
 	prerequisite = {
 		focus = USA_caution_to_the_wind
 		focus = USA_scale_back_regulation
 	}
     completion_reward = {
-        
+		add_stability = 0.03
     }
 	
 	ai_will_do = {
@@ -1152,6 +1191,10 @@ shared_focus = {
     id = USA_union_act
 	icon = GFX_USA_union_act
 	
+	select_effect = {
+		add_political_power = 1
+	}
+	
     x = -1
 	y = 1
 	
@@ -1161,7 +1204,12 @@ shared_focus = {
 		focus = USA_end_union_infighting
 	}
     completion_reward = {
-        
+        custom_effect_tooltip = USA_bill_pass_req_tt
+		effect_tooltip = {
+			add_ideas = {
+				USA_union_representation_act
+			}
+		}
     }
 	
 	ai_will_do = {
@@ -1182,6 +1230,7 @@ shared_focus = {
 		focus = USA_end_union_infighting
 	}
     completion_reward = {
+		unlock_decision_tooltip = start_USA_pension_act
         custom_effect_tooltip = USA_bill_pass_req_tt
 		effect_tooltip = {
 			improve_great_depression = yes
@@ -1230,9 +1279,9 @@ shared_focus = {
 	available = {
 		count_triggers = {
 			amount = 2
-			has_country_flag = USA_union_act_passed
-			has_country_flag = USA_housing_act_passed
-			has_country_flag = USA_pension_act_passed
+			has_country_flag = union_act_passed
+			has_country_flag = housing_act_passed
+			has_country_flag = pension_act_passed
 		}
 	}
 	
@@ -1252,7 +1301,7 @@ shared_focus = {
     id = USA_war_is_a_racket
 	icon = GFX_USA_war_is_a_racket
 	
-    x = 28
+    x = 26
 	y = 0
 	
 	cost = 5
@@ -1276,7 +1325,7 @@ shared_focus = {
 	relative_position_id = USA_war_is_a_racket
 	prerequisite = { focus = USA_war_is_a_racket }
     completion_reward = {
-        
+        army_experience = 25
     }
 	
 	ai_will_do = {
@@ -1288,7 +1337,7 @@ shared_focus = {
     id = USA_20_division_plan
 	icon = GFX_USA_20_division_plan
 	
-    x = -5
+    x = -3
 	y = 1
 	
 	cost = 5
@@ -1314,7 +1363,9 @@ shared_focus = {
 	relative_position_id = USA_20_division_plan
 	prerequisite = { focus = USA_20_division_plan }
     completion_reward = {
-        
+        delete_unit_template_and_units = {
+			division_template = "Organized Reserve"
+		}
     }
 	
 	ai_will_do = {
@@ -1333,7 +1384,9 @@ shared_focus = {
 	relative_position_id = USA_20_division_plan
 	prerequisite = { focus = USA_20_division_plan }
     completion_reward = {
-        
+        add_ideas = {
+			USA_coastal_defense
+		}
     }
 	
 	ai_will_do = {
@@ -1424,7 +1477,7 @@ shared_focus = {
     id = USA_ending_war_as_business
 	icon = GFX_USA_ending_war_as_business
 	
-    x = 0
+    x = 3
 	y = 1
 	
 	cost = 5
@@ -1560,32 +1613,13 @@ shared_focus = {
     id = USA_as_the_fathers_intended
 	icon = GFX_USA_as_the_fathers_intended
 	
-    x = 2
+    x = 3
 	y = 1
 	
 	cost = 5
 	relative_position_id = USA_and_nothing_more
 	prerequisite = { focus = USA_and_nothing_more }
 	prerequisite = { focus = USA_fight_your_own_wars }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_invest_in_armor
-	icon = GFX_USA_invest_in_armor
-	
-    x = 4
-	y = 1
-	
-	cost = 5
-	relative_position_id = USA_butler_reform_plan
-	prerequisite = { focus = USA_butler_reform_plan }
     completion_reward = {
         
     }

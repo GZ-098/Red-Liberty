@@ -18,14 +18,14 @@ shared_focus = {
     id = USA_continue_the_work
 	icon = GFX_USA_continue_the_work
 	
-    x = -2
+    x = 0
 	y = 1
 	
 	cost = 4
 	relative_position_id = USA_the_year_1936
-	mutually_exclusive = {
-		focus = USA_prepare_the_campaign
-	}
+	#mutually_exclusive = {
+	#	focus = USA_prepare_the_campaign
+	#}
 	prerequisite = { focus = USA_the_year_1936 }
     completion_reward = {
         custom_effect_tooltip = USA_continue_the_work_tt
@@ -209,7 +209,7 @@ shared_focus = {
 	mutually_exclusive = {
 		focus = USA_continue_the_work
 	}
-	prerequisite = { focus = USA_the_year_1936 }
+	#prerequisite = { focus = USA_the_year_1936 }
     completion_reward = {
         custom_effect_tooltip = USA_prepare_the_campaign_tt
     }

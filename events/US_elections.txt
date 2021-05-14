@@ -77,7 +77,7 @@ country_event = {
 		}
 		country_event = { # thomas inaug
 			id = us_election.5
-			days = 79
+			days = 109
 		}
 		
 		set_country_flag = USA_1936_election_socialist_victory
@@ -129,7 +129,7 @@ country_event = { # house of reps votes
 		}
 		country_event = {
 			id = us_election.5
-			days = 22
+			days = 52
 		}
 		set_country_flag = USA_thomas_elected
 	}

@@ -40,12 +40,12 @@ ideas = {
 			}
 				
 			modifier = {
-				political_power_gain = -0.6
-				consumer_goods_factor = 0.25
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_arms_factory_factor = -0.2
-				production_factory_efficiency_gain_factor = -0.15
-				production_factory_max_efficiency_factor = -0.2
+				political_power_gain = -0.5
+				production_speed_buildings_factor = -0.5
+				consumer_goods_factor = 0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+				industrial_capacity_factory = -0.5
 			}
 		}
 		
@@ -67,11 +67,11 @@ ideas = {
 				
 			modifier = {
 				political_power_gain = -0.5
-				consumer_goods_factor = 0.2
-				production_speed_industrial_complex_factor = -0.15
-				production_speed_arms_factory_factor = -0.15
-				production_factory_efficiency_gain_factor = -0.1
-				production_factory_max_efficiency_factor = -0.15
+				production_speed_buildings_factor = -0.45
+				consumer_goods_factor = 0.475
+				production_factory_max_efficiency_factor = -0.225
+				production_factory_efficiency_gain_factor = -0.2225
+				industrial_capacity_factory = -0.45
 			}
 		}
 		
@@ -92,12 +92,12 @@ ideas = {
 			}
 				
 			modifier = {
-				political_power_gain = -0.4
-				consumer_goods_factor = 0.15
-				production_speed_industrial_complex_factor = -0.1
-				production_speed_arms_factory_factor = -0.15
-				production_factory_efficiency_gain_factor = -0.1
-				production_factory_max_efficiency_factor = -0.15
+				political_power_gain = -0.45
+				production_speed_buildings_factor = -0.4
+				consumer_goods_factor = 0.45
+				production_factory_max_efficiency_factor = -0.225
+				production_factory_efficiency_gain_factor = -0.2
+				industrial_capacity_factory = -0.4
 			}
 		}
 		
@@ -119,11 +119,63 @@ ideas = {
 				
 			modifier = {
 				political_power_gain = -0.4
-				consumer_goods_factor = 0.15
-				production_speed_industrial_complex_factor = -0.1
-				production_speed_arms_factory_factor = -0.1
-				production_factory_efficiency_gain_factor = -0.1
-				production_factory_max_efficiency_factor = -0.1
+				production_speed_buildings_factor = -0.4
+				consumer_goods_factor = 0.425
+				production_factory_max_efficiency_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.2
+				industrial_capacity_factory = -0.4
+			}
+		}
+		
+		USA_the_great_depression_5 = {
+			
+			removal_cost = -1 
+			
+			allowed_civil_war = {	 
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			modifier = {
+				political_power_gain = -0.35
+				production_speed_buildings_factor = -0.375
+				consumer_goods_factor = 0.4
+				production_factory_max_efficiency_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.2
+				industrial_capacity_factory = -0.4
+			}
+		}
+		
+		USA_the_great_depression_6 = {
+			
+			removal_cost = -1 
+			
+			allowed_civil_war = {	 
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			modifier = {
+				political_power_gain = -0.35
+				production_speed_buildings_factor = -0.325
+				consumer_goods_factor = 0.4
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.15
+				industrial_capacity_factory = -0.375
 			}
 		}
 		
@@ -178,6 +230,71 @@ ideas = {
                 land_doctrine = -0.75
 				air_doctrine = -0.75
 				naval_doctrine = -0.75
+			}
+		}
+		
+		USA_reorg_act = {
+			
+			removal_cost = -1 
+			
+			allowed_civil_war = {	 
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			modifier = {
+				political_power_factor = 0.15
+			}
+		}
+		
+		USA_union_representation_act = {
+			
+			removal_cost = -1 
+			
+			allowed_civil_war = {	 
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			modifier = {
+				stability_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		
+		USA_coastal_defense = {
+			
+			removal_cost = -1 
+			
+			allowed_civil_war = {	 
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.2
 			}
 		}
 	} 

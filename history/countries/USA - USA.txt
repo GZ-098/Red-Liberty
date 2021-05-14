@@ -15,6 +15,10 @@ country_event = { # boulder dam complete
 	id = united_states_flavor.1
 	days = 91
 }
+country_event = { # may day
+	id = united_states_flavor.2
+	days = 150
+}
 country_event = { # rnc
 	id = united_states.2
 	days = 163
@@ -159,7 +163,7 @@ set_popularities = {
 
 add_ideas = {
 	USA_red_liberty
-	USA_the_great_depression_2
+	USA_the_great_depression_3
 	USA_pacifism
 	USA_neglected_military
 

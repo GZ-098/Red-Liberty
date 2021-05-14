@@ -66,7 +66,10 @@ USA_congress = {
 		cost = 0
 		
 		complete_effect = {
-			custom_effect_tooltip = USA_social_security_act_effect
+			custom_effect_tooltip = USA_bill_pass_req_tt
+			effect_tooltip = {
+				improve_great_depression = yes
+			}
 			USA_social_security_act_setup = yes
 		}
 	}
@@ -84,6 +87,7 @@ USA_congress = {
 		visible = {
 			original_tag = USA
 			NOT = {
+				has_country_flag = farm_tenant_act_passed
 				has_country_flag = USA_discussing_bill
 			}
 			has_completed_focus = USA_farm_tenant_act
@@ -92,8 +96,137 @@ USA_congress = {
 		cost = 0
 		
 		complete_effect = {
-			custom_effect_tooltip = USA_farm_tenant_act_effect
+			custom_effect_tooltip = USA_bill_pass_req_tt
+			effect_tooltip = {
+				improve_great_depression = yes
+			}
 			USA_farm_tenant_act_setup = yes
+		}
+	}
+	
+	start_USA_court_packing_act = {
+		icon = ger_mefo_bills
+		available = {
+			NOT = {
+				has_country_flag = court_packing_act_passed
+				has_country_flag = USA_discussing_bill
+			}
+			has_completed_focus = USA_strengthen_executive_branch
+			NOT = {
+				has_completed_focus = USA_accept_the_rulings
+			}
+		}
+		
+		visible = {
+			original_tag = USA
+			NOT = {
+				has_country_flag = court_packing_act_passed
+				has_country_flag = USA_discussing_bill
+			}
+			has_completed_focus = USA_strengthen_executive_branch
+			NOT = {
+				has_completed_focus = USA_accept_the_rulings
+			}
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			custom_effect_tooltip = USA_bill_pass_req_tt
+			effect_tooltip = {
+				
+			}
+			USA_judicial_reform_act_setup = yes
+		}
+	}
+	
+	start_USA_pension_act = {
+		icon = ger_mefo_bills
+		available = {
+			NOT = {
+				has_country_flag = pension_act_passed
+				has_country_flag = USA_discussing_bill
+			}
+			has_completed_focus = USA_pension_act
+		}
+		
+		visible = {
+			original_tag = USA
+			NOT = {
+				has_country_flag = pension_act_passed
+				has_country_flag = USA_discussing_bill
+			}
+			has_completed_focus = USA_pension_act
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			custom_effect_tooltip = USA_bill_pass_req_tt
+			effect_tooltip = {
+				improve_great_depression = yes
+			}
+			USA_pension_act_setup = yes
+		}
+	}
+	
+	start_USA_housing_act = {
+		icon = ger_mefo_bills
+		available = {
+			NOT = {
+				has_country_flag = housing_act_passed
+				has_country_flag = USA_discussing_bill
+			}
+			has_completed_focus = USA_pension_act
+		}
+		
+		visible = {
+			original_tag = USA
+			NOT = {
+				has_country_flag = housing_act_passed
+				has_country_flag = USA_discussing_bill
+			}
+			has_completed_focus = USA_housing_act
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			custom_effect_tooltip = USA_bill_pass_req_tt
+			effect_tooltip = {
+				improve_great_depression = yes
+			}
+			USA_housing_act_setup = yes
+		}
+	}
+	
+	start_USA_wealth_tax_act = {
+		icon = ger_mefo_bills
+		available = {
+			NOT = {
+				has_country_flag = wealth_tax_act_passed
+				has_country_flag = USA_discussing_bill
+			}
+			has_completed_focus = USA_attack_oligarchs
+		}
+		
+		visible = {
+			original_tag = USA
+			NOT = {
+				has_country_flag = wealth_tax_act_passed
+				has_country_flag = USA_discussing_bill
+			}
+			has_completed_focus = USA_attack_oligarchs
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			custom_effect_tooltip = USA_bill_pass_req_tt
+			effect_tooltip = {
+				improve_great_depression = yes
+			}
+			USA_wealth_tax_act_setup = yes
 		}
 	}
 	

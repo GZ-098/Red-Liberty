@@ -21,21 +21,12 @@ state={
 
 		}
 		add_core_of = GER
-		1939.1.1 = {
-			buildings = {
-				radar_station = 1
-				synthetic_refinery = 3
-
-			}
-
-		}
-
 	}
 
 	provinces={
-		3423 9575 11531 11547 11560 
+		3423 9575 11560 
 	}
 	manpower=2027739
 	buildings_max_level_factor=1.000
-	state_category=metropolis
+	state_category = city
 }
