@@ -16,16 +16,29 @@ USA_congress = {
 	priority = 85
 }
 
+USA_thomas_tyranny_category = {
+	icon = usa_congress
+	
+	visible_when_empty = yes
+	
+	allowed = {
+		original_tag = USA
+	}
+}
+
 USA_election_season_category = {
 	icon = usa_congress
 	allowed = {
 		original_tag = USA
+		has_country_flag = USA_senate_elections
 	}
+	visible_when_empty = yes
 }
 
 USA_american_economy_category = {
 	icon = usa_congress
 	allowed = {
 		original_tag = USA
+		always = no
 	}
 }

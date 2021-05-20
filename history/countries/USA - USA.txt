@@ -10,6 +10,13 @@ if = {
 }
 
 load_focus_tree = USA_initial_tree
+complete_national_focus = USA_the_year_1936
+
+
+set_variable = { USA_thomas_rich_tyranny = 26 }
+set_variable = { USA_thomas_rich_radicalism = 19 }
+set_variable = { USA_thomas_middle_tyranny = 12 }
+
 
 country_event = { # boulder dam complete
 	id = united_states_flavor.1
@@ -17,7 +24,7 @@ country_event = { # boulder dam complete
 }
 country_event = { # may day
 	id = united_states_flavor.2
-	days = 150
+	days = 119
 }
 country_event = { # rnc
 	id = united_states.2
@@ -35,11 +42,6 @@ country_event = { # spa - choose veep
 country_event = { # 1937 recession event chain
 	id = united_states.7
 	days = 510 # around the middle of may 1937
-}
-
-country_event = { # 1936 election
-	id = us_election.1
-	days = 306
 }
 
 set_research_slots = 4
@@ -165,15 +167,12 @@ add_ideas = {
 	USA_red_liberty
 	USA_the_great_depression_3
 	USA_pacifism
-	USA_neglected_military
 
 	undisturbed_isolation
 	great_depression
 	disarmed_nation
 	free_trade
 }
-
-complete_national_focus = USA_the_year_1936
 
 # DIPLOMACY
 set_autonomy = {

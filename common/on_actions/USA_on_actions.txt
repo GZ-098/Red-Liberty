@@ -34,9 +34,34 @@ on_actions = {
 			
 			USA = {
 				### 1936 ELECTIONS PREP ###
-				country_event = { id = USA_election_helpers.1 days = 30 }
-				country_event = { id = USA_election_helpers.11 days = 30 }
+				country_event = { id = USA_election_helpers.1 days = 30 } # SENATE
+				country_event = { id = USA_election_helpers.11 days = 30 } # PRESIDENTIAL
+				
+				### 1936 ELECTION ###
+				country_event = { id = us_election.1 days = 309 }
+				
+				### 1938 ELECTIONS PREP ###
+				country_event = { id = USA_election_helpers.3 days = 760 } # SENATE
+				
+				### 1940 ELECTIONS PREP ###
+				country_event = { id = USA_election_helpers.6 days = 1491 } # SENATE
+				#country_event = { id = USA_election_helpers.11 days = 1491 } # PRESIDENTIAL
+				
+				### 1942 ELECTIONS PREP ###
+				country_event = { id = USA_election_helpers.1 days = 2221 } # SENATE
+				
+				### 1944 ELECTIONS PREP ###
+				country_event = { id = USA_election_helpers.3 days = 2952 } # SENATE
+				#country_event = { id = USA_election_helpers.11 days = 2952 } # PRESIDENTIAL
 			}
+			
+			
+			### SEGREGATION SETUP ###
+			#365 = {
+			#	add_dynamic_modifier = {
+			#		modifier = USA_segregation_modifier
+			#	}
+			#}
 			
 			### DUST BOWL SETUP ###
 			373 = {
@@ -123,7 +148,7 @@ on_actions = {
 		}
 	}
 	
-	on_monthly_USA = {
+	on_monthly_USA = { # economy stuff
 		effect = {
 			add_to_variable = { USA_unemployment = USA_unemployment_change }
 			add_to_variable = { USA_poverty = USA_poverty_change }
@@ -132,7 +157,7 @@ on_actions = {
 		}
 	}
 	
-	on_monthly_USA {
+	on_monthly_USA { # update
 		effect = {
 			every_owned_state = {
 				limit = { can_have_elections_in_state = yes }
@@ -144,7 +169,7 @@ on_actions = {
 		}
 	}
 	
-	# moved to countdown decision
+	# moved to countdown decision - moved again to on_actions above
 	#on_new_term_election = { # elections go here, in chronological order, stopgap measure until election system is more developed
 	#	random_events = {
 	#		100 = us_election.1 # 1932 election

@@ -10,3 +10,10 @@ USA_dust_bowl_modifier = {
 	local_resources = -0.5
 }
 
+USA_segregation_modifier = {
+	icon = GFX_population_icon
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	
+	local_manpower = -0.25
+}

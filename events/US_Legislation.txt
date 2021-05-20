@@ -140,6 +140,138 @@ country_event = { # farm tenant act
 	}
 }
 
+country_event = { # court packing plan
+	id = us_bill.4
+	
+	# different loc based on if it passes or fails
+	title = {
+		text = us_bill.4.title_passed
+		trigger = { has_country_flag = bill_passed }
+	}
+	title = { 
+		text = us_bill.4.title_failed
+		trigger = { NOT = { has_country_flag = bill_passed } }
+	}
+	desc = {
+		text = us_bill.4.desc_passed
+		trigger = { has_country_flag = bill_passed }
+	}
+	desc = {
+		text = us_bill.4.desc_failed
+		trigger = { NOT = { has_country_flag = bill_passed } }
+	}
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event us_bill.4"
+	}
+
+	is_triggered_only = yes
+
+	option = { # bill passes
+		name = us_bill.4.a
+		trigger = { has_country_flag = bill_passed }
+		set_country_flag = court_packing_plan_passed
+		USA_bill_clear = yes # ALWAYS DO THIS
+	}
+	
+	option = { # bill fails
+		name = us_bill.4.b
+		trigger = { NOT = { has_country_flag = bill_passed } }
+		add_political_power = -50
+		USA_bill_clear = yes # ALWAYS DO THIS
+	}
+}
+
+country_event = { # reorganization act
+	id = us_bill.5
+	
+	# different loc based on if it passes or fails
+	title = {
+		text = us_bill.5.title_passed
+		trigger = { has_country_flag = bill_passed }
+	}
+	title = { 
+		text = us_bill.5.title_failed
+		trigger = { NOT = { has_country_flag = bill_passed } }
+	}
+	desc = {
+		text = us_bill.5.desc_passed
+		trigger = { has_country_flag = bill_passed }
+	}
+	desc = {
+		text = us_bill.5.desc_failed
+		trigger = { NOT = { has_country_flag = bill_passed } }
+	}
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event us_bill.5"
+	}
+
+	is_triggered_only = yes
+
+	option = { # bill passes
+		name = us_bill.5.a
+		trigger = { has_country_flag = bill_passed }
+		add_ideas = {
+			USA_reorg_act
+		}
+		set_country_flag = reorg_act_passed
+		USA_bill_clear = yes # ALWAYS DO THIS
+	}
+	
+	option = { # bill fails
+		name = us_bill.5.b
+		trigger = { NOT = { has_country_flag = bill_passed } }
+		add_political_power = -50
+		USA_bill_clear = yes # ALWAYS DO THIS
+	}
+}
+
+country_event = { # union rep act
+	id = us_bill.6
+	
+	# different loc based on if it passes or fails
+	title = {
+		text = us_bill.6.title_passed
+		trigger = { has_country_flag = bill_passed }
+	}
+	title = { 
+		text = us_bill.6.title_failed
+		trigger = { NOT = { has_country_flag = bill_passed } }
+	}
+	desc = {
+		text = us_bill.6.desc_passed
+		trigger = { has_country_flag = bill_passed }
+	}
+	desc = {
+		text = us_bill.6.desc_failed
+		trigger = { NOT = { has_country_flag = bill_passed } }
+	}
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event us_bill.6"
+	}
+
+	is_triggered_only = yes
+
+	option = { # bill passes
+		name = us_bill.6.a
+		trigger = { has_country_flag = bill_passed }
+		add_ideas = {
+			USA_union_representation_act
+		}
+		set_country_flag = union_rep_act_passed
+		USA_bill_clear = yes # ALWAYS DO THIS
+	}
+	
+	option = { # bill fails
+		name = us_bill.6.b
+		trigger = { NOT = { has_country_flag = bill_passed } }
+		add_political_power = -50
+		USA_bill_clear = yes # ALWAYS DO THIS
+	}
+}
+
 country_event = { # pension act
 	id = us_bill.7
 	
@@ -183,7 +315,7 @@ country_event = { # pension act
 	}
 }
 
-country_event = { # pension act
+country_event = { # housing act
 	id = us_bill.8
 	
 	# different loc based on if it passes or fails

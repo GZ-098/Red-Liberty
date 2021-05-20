@@ -63,8 +63,10 @@ initialize_US_elections_system = {
 	
 	367 = { # Alabama, extremely conservative, pro-segregation
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.2 }
-		set_variable = { democrat_popularity = 0.8 }
+		set_variable = { republican_popularity = 0.15 }
+		set_variable = { democrat_popularity = 0.82 }
+		set_variable = { socialist_popularity = 0.05 }
+		set_variable = { afp_popularity = 0.45 }
 		
 		set_variable = { senator_1 = 3 } # democrat
 		set_variable = { senator_2 = 4 } # afp
@@ -76,6 +78,7 @@ initialize_US_elections_system = {
 		set_state_flag = US_election_state
 		set_variable = { republican_popularity = 0.35 }
 		set_variable = { democrat_popularity = 0.65 }
+		set_variable = { socialist_popularity = 0.2 }
 		
 		set_variable = { senator_1 = 3 } # democrat
 		set_variable = { senator_2 = 3 } # democrat
@@ -85,7 +88,7 @@ initialize_US_elections_system = {
 	
 	372 = { # Arkansas
 		set_state_flag = US_election_state
-		set_variable = { democrat_popularity = 0.3 }
+		set_variable = { democrat_popularity = 0.55 }
 		set_variable = { afp_popularity = 0.7 }
 		
 		set_variable = { senator_1 = 4 } # afp
@@ -144,8 +147,9 @@ initialize_US_elections_system = {
 	
 	366 = { # Florida, a bit more liberal, but still heavily conservative
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.45 }
-		set_variable = { democrat_popularity = 0.55 }
+		set_variable = { republican_popularity = 0.2 }
+		set_variable = { afp_popularity = 0.35 }
+		set_variable = { democrat_popularity = 0.65 }
 		
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 3 }
@@ -155,7 +159,7 @@ initialize_US_elections_system = {
 	
 	365 = { # Georgia, like Alabama, very pro-segregation
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.45 }
+		set_variable = { afp_popularity = 0.45 }
 		set_variable = { democrat_popularity = 0.55 }
 		
 		set_variable = { senator_1 = 3 }
@@ -168,7 +172,7 @@ initialize_US_elections_system = {
 		set_state_flag = US_election_state
 		set_variable = { republican_popularity = 0.3 }
 		set_variable = { democrat_popularity = 0.6 }
-		set_variable = { socialist_popularity = 0.1 }
+		set_variable = { socialist_popularity = 0.15 }
 		
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 3 }
@@ -212,8 +216,10 @@ initialize_US_elections_system = {
 	
 	383 = { # Kansas, same as Iowa, more republican leaning
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.55 }
-		set_variable = { socialist_popularity = 0.45 }
+		set_variable = { republican_popularity = 0.65 }
+		set_variable = { socialist_popularity = 0.4 }
+		set_variable = { democrat_popularity = 0.5 }
+		set_variable = { afp_popularity = 0.25 }
 		
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 2 }
@@ -224,7 +230,8 @@ initialize_US_elections_system = {
 	369 = { # Kentucky
 		set_state_flag = US_election_state
 		set_variable = { democrat_popularity = 0.65 }
-		set_variable = { republican_popularity = 0.35 }
+		set_variable = { afp_popularity = 0.35 }
+		set_variable = { republican_popularity = 0.15 }
 		
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 3 }
@@ -292,9 +299,9 @@ initialize_US_elections_system = {
 	
 	391 = { # Minnesota, like the Midwest but more liberal, huge farmer-labor influence
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.4 }
-		set_variable = { democrat_popularity = 0.1 }
-		set_variable = { socialist_popularity = 0.5 }
+		set_variable = { republican_popularity = 0.2 }
+		set_variable = { democrat_popularity = 0.3 }
+		set_variable = { socialist_popularity = 0.65 }
 		
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 1 }
@@ -304,8 +311,9 @@ initialize_US_elections_system = {
 	
 	370 = { # Mississippi, pro-segregation
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.4 }
+		set_variable = { afp_popularity = 0.4 }
 		set_variable = { democrat_popularity = 0.6 }
+		set_variable = { republican_popularity = 0.1 }
 		
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 4 }
@@ -340,6 +348,7 @@ initialize_US_elections_system = {
 		set_state_flag = US_election_state
 		set_variable = { republican_popularity = 0.7 }
 		set_variable = { democrat_popularity = 0.3 }
+		set_variable = { afp_popularity = 0.2 }
 		
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 2 }
@@ -395,9 +404,9 @@ initialize_US_elections_system = {
 	
 	358 = { # New York, very liberal
 		set_state_flag = US_election_state
-		set_variable = { afp_popularity = 0.03 }
-		set_variable = { democrat_popularity = 0.37 }
-		set_variable = { republican_popularity = 0.05 }
+		set_variable = { afp_popularity = 0.05 }
+		set_variable = { democrat_popularity = 0.35 }
+		set_variable = { republican_popularity = 0.1 }
 		set_variable = { socialist_popularity = 0.55 }
 		
 		set_variable = { senator_1 = 1 }
@@ -409,7 +418,8 @@ initialize_US_elections_system = {
 	363 = { # North Carolina, conservative but not super conservative
 		set_state_flag = US_election_state
 		set_variable = { democrat_popularity = 0.6 } # Default Value
-		set_variable = { republican_popularity = 0.4 } # Default Value
+		set_variable = { republican_popularity = 0.1 } # Default Value
+		set_variable = { afp_popularity = 0.25 }
 		
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 3 }
@@ -441,8 +451,9 @@ initialize_US_elections_system = {
 	
 	374 = { # Oklahoma
 		set_state_flag = US_election_state
-		set_variable = { democrat_popularity = 0.7 } # Default Value
-		set_variable = { republican_popularity = 0.3 } # Default Value
+		set_variable = { democrat_popularity = 0.7 }
+		set_variable = { afp_popularity = 0.35 }
+		set_variable = { socialist_popularity = 0.1 }
 		
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 3 }
@@ -452,20 +463,21 @@ initialize_US_elections_system = {
 	
 	385 = { # Oregon
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.4 } # Default Value
-		set_variable = { socialist_popularity = 0.6 } # Default Value
+		set_variable = { republican_popularity = 0.25 }
+		set_variable = { democrat_popularity = 0.3 }
+		set_variable = { socialist_popularity = 0.65 }
 		
 		set_variable = { senator_1 = 1 }
-		set_variable = { senator_2 = 2 }
+		set_variable = { senator_2 = 1 }
 		
 		set_variable = { electoral_votes = 5 }
 	}
 	
 	360 = { # Pennsylvania, swing state 
 		set_state_flag = US_election_state
-		set_variable = { socialist_popularity = 0.5 }
+		set_variable = { socialist_popularity = 0.55 }
 		set_variable = { republican_popularity = 0.4 }
-		set_variable = { democrat_popularity = 0.1 }
+		set_variable = { democrat_popularity = 0.15 }
 		
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 1 }
@@ -476,8 +488,9 @@ initialize_US_elections_system = {
 	831 = { # Rhode Island
 		set_state_flag = US_election_state
 		set_variable = { republican_popularity = 0.7 }
-		set_variable = { democrat_popularity = 0.2 }
-		set_variable = { socialist_popularity = 0.1 }
+		set_variable = { afp_popularity = 0.35 }
+		set_variable = { democrat_popularity = 0.45 }
+		set_variable = { socialist_popularity = 0.15 }
 		
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 3 }
@@ -487,8 +500,10 @@ initialize_US_elections_system = {
 	
 	364 = { # South Carolina
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.35 } # Default Value
-		set_variable = { democrat_popularity = 0.65 } # Default Value
+		set_variable = { republican_popularity = 0.05 }
+		set_variable = { democrat_popularity = 0.65 }
+		set_variable = { socialist_popularity = 0.05 }
+		set_variable = { afp_popularity = 0.25 }
 		
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 3 }
@@ -498,8 +513,8 @@ initialize_US_elections_system = {
 	
 	390 = { # South Dakota, North Dakota part 2
 		set_state_flag = US_election_state
-		set_variable = { socialist_popularity = 0.6 } # Default Value
-		set_variable = { republican_popularity = 0.4 } # Default Value
+		set_variable = { socialist_popularity = 0.6 }
+		set_variable = { republican_popularity = 0.4 }
 		
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 2 }
@@ -510,7 +525,7 @@ initialize_US_elections_system = {
 	368 = { # Tennessee
 		set_state_flag = US_election_state
 		set_variable = { republican_popularity = 0.2 }
-		set_variable = { democrat_popularity = 0.5 }
+		set_variable = { democrat_popularity = 0.55 }
 		set_variable = { afp_popularity = 0.3 }
 		
 		set_variable = { senator_1 = 3 }
@@ -590,10 +605,11 @@ initialize_US_elections_system = {
 		set_variable = { electoral_votes = 8 }
 	}
 	
-	394 = { # Wisconsin
+	394 = { # Wisconsin, cheese and socialism
 		set_state_flag = US_election_state
-		set_variable = { socialist_popularity = 0.65 } # Default Value
-		set_variable = { republican_popularity = 0.35 } # Default Value
+		set_variable = { socialist_popularity = 0.9 }
+		set_variable = { democrat_popularity = 0.2 }
+		set_variable = { republican_popularity = 0.35 }
 		
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 1 }
@@ -603,8 +619,9 @@ initialize_US_elections_system = {
 	
 	381 = { # Wyoming
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.8 } # Default Value
-		set_variable = { democrat_popularity = 0.2 } # Default Value
+		set_variable = { socialist_popularity = 0.15 }
+		set_variable = { republican_popularity = 0.8 }
+		set_variable = { democrat_popularity = 0.25 }
 		
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 2 }

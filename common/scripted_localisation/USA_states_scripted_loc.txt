@@ -1076,3 +1076,181 @@ defined_text = {
 		localization_key = "GFX_USA_states_gui_WY_republican"
 	}
 }
+
+
+defined_text = {
+	name = Get_USA_states_support_socialist
+	text = {
+		trigger = {
+			check_variable = { socialist_popularity < 0.1 }
+		}
+		localization_key = "USA_states_support_very_low"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {
+				var = socialist_popularity
+				value = 0.1
+				compare = greater_than_or_equals
+			}
+			check_variable = { socialist_popularity < 0.3 }
+		}
+		localization_key = "USA_states_support_low"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {
+				var = socialist_popularity
+				value = 0.3
+				compare = greater_than_or_equals
+			}
+			check_variable = { socialist_popularity < 0.6 }
+		}
+		localization_key = "USA_states_support_middling"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {
+				var = socialist_popularity
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = { socialist_popularity < 0.8 }
+		}
+		localization_key = "USA_states_support_high"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {
+				var = socialist_popularity
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = "USA_states_support_very_high"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_support_democrat
+	text = {
+		trigger = {
+			check_variable = { democrat_popularity < 0.1 }
+		}
+		localization_key = "USA_states_support_very_low"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {
+				var = democrat_popularity
+				value = 0.1
+				compare = greater_than_or_equals
+			}
+			check_variable = { democrat_popularity < 0.3 }
+		}
+		localization_key = "USA_states_support_low"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {
+				var = democrat_popularity
+				value = 0.3
+				compare = greater_than_or_equals
+			}
+			check_variable = { democrat_popularity < 0.6 }
+		}
+		localization_key = "USA_states_support_middling"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {
+				var = democrat_popularity
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = { democrat_popularity < 0.8 }
+		}
+		localization_key = "USA_states_support_high"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {
+				var = democrat_popularity
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = "USA_states_support_very_high"
+	}
+}
+
+defined_text = {
+	name = Get_USA_states_support_afp
+	text = {
+		trigger = {
+			check_variable = { afp_popularity > 0}
+			check_variable = { afp_popularity < 0.1 }
+		}
+		localization_key = "USA_states_support_very_low_afp"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {
+				var = afp_popularity
+				value = 0.1
+				compare = greater_than_or_equals
+			}
+			check_variable = { afp_popularity < 0.3 }
+		}
+		localization_key = "USA_states_support_low_afp"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {
+				var = afp_popularity
+				value = 0.3
+				compare = greater_than_or_equals
+			}
+			check_variable = { afp_popularity < 0.6 }
+		}
+		localization_key = "USA_states_support_middling_afp"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {
+				var = afp_popularity
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = { afp_popularity < 0.8 }
+		}
+		localization_key = "USA_states_support_high_afp"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {
+				var = afp_popularity
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = "USA_states_support_very_high_afp"
+	}
+	
+	text = {
+		localization_key = ""
+	}
+}
+

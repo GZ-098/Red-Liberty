@@ -46,21 +46,21 @@ country_event = { # dnc
 
 	option = {
 		name = "J. Lister Hill!"
-		country_event = {
-			id = united_states.5
-			days = 3
-		}
+		#country_event = {
+		#	id = united_states.5
+		#	days = 3
+		#}
 		set_country_flag = USA_lister_candidate
 	}
 	
-	option = {
-		name = "Burton K. Wheeler!"
-		country_event = {
-			id = united_states.4
-			days = 3
-		}
-		set_country_flag = USA_wheeler_candidate
-	}
+	#option = {
+	#	name = "Burton K. Wheeler!"
+	#	country_event = {
+	#		id = united_states.4
+	#		days = 3
+	#	}
+	#	set_country_flag = USA_wheeler_candidate
+	#}
 }
 
 country_event = { # conservatives abandon democratic party

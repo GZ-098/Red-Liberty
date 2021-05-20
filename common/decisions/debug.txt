@@ -1,8 +1,12 @@
 debug_category = {
-	
-	debug_start_gcw_GBR = {
+
+	debug_load_thomas_second_term = {
 	
 		icon = generic_political_discourse
+		
+		avaliable = {
+			tag = USA
+		}
 		
 		visible = {
 			is_debug = yes
@@ -15,45 +19,9 @@ debug_category = {
 		}
 		
 		complete_effect = {
-			start_german_civil_war_GBR = yes
-		}
-	}
-	
-	debug_start_gcw_CGR = {
-	
-		icon = generic_political_discourse
-		
-		visible = {
-			is_debug = yes
-		}
-		
-		cost = 0
-
-		ai_will_do = {
-			base = 0
-		}
-		
-		complete_effect = {
-			start_german_civil_war_CGR = yes
-		}
-	}
-	
-	debug_start_gcw_RGR = {
-	
-		icon = generic_political_discourse
-		
-		visible = {
-			is_debug = yes
-		}
-		
-		cost = 0
-
-		ai_will_do = {
-			base = 0
-		}
-		
-		complete_effect = {
-			start_german_civil_war_RGR = yes
+			country_event = {
+				id = us_election.5
+			}
 		}
 	}
 }

@@ -140,6 +140,70 @@ USA_congress = {
 		}
 	}
 	
+	start_USA_reorg_act = {
+		icon = ger_mefo_bills
+		available = {
+			NOT = {
+				has_country_flag = reorg_act_passed
+				has_country_flag = USA_discussing_bill
+			}
+			has_completed_focus = USA_reorg_act
+		}
+		
+		visible = {
+			original_tag = USA
+			NOT = {
+				has_country_flag = reorg_act_passed
+				has_country_flag = USA_discussing_bill
+			}
+			has_completed_focus = USA_reorg_act
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			custom_effect_tooltip = USA_bill_pass_req_tt
+			effect_tooltip = {
+				add_ideas = {
+					USA_reorg_act
+				}
+			}
+			USA_reorganization_act_setup = yes
+		}
+	}
+	
+	start_USA_union_rep_act = {
+		icon = ger_mefo_bills
+		available = {
+			NOT = {
+				has_country_flag = union_rep_act_passed
+				has_country_flag = USA_discussing_bill
+			}
+			has_completed_focus = USA_union_act
+		}
+		
+		visible = {
+			original_tag = USA
+			NOT = {
+				has_country_flag = union_rep_act_passed
+				has_country_flag = USA_discussing_bill
+			}
+			has_completed_focus = USA_union_act
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			custom_effect_tooltip = USA_bill_pass_req_tt
+			effect_tooltip = {
+				add_ideas = {
+					USA_union_representation_act
+				}
+			}
+			USA_union_representation_act_setup = yes
+		}
+	}
+	
 	start_USA_pension_act = {
 		icon = ger_mefo_bills
 		available = {
@@ -227,6 +291,80 @@ USA_congress = {
 				improve_great_depression = yes
 			}
 			USA_wealth_tax_act_setup = yes
+		}
+	}
+	
+	### MINOR LEGISLATION ###
+	
+	start_USA_national_cancer_act = {
+		icon = ger_mefo_bills
+		available = {
+			original_tag = USA
+		}
+		
+		visible = {
+			original_tag = USA
+			date > 1937.1.20
+		}
+		
+		cost = 25
+		
+		complete_effect = {
+			add_stability = 0.02
+		}
+	}
+	
+	start_USA_natural_gas_act = {
+		icon = ger_mefo_bills
+		available = {
+			original_tag = USA
+		}
+		
+		visible = {
+			original_tag = USA
+			date > 1938.1.15
+		}
+		
+		cost = 25
+		
+		complete_effect = {
+			add_stability = 0.02
+		}
+	}
+	
+	### EXECUTIVE ORDERS ###
+	
+	USA_executive_order_8802 = {
+	icon = ger_mefo_bills
+		available = {
+			has_war = yes
+		}
+		
+		visible = {
+			original_tag = USA
+		}
+		
+		cost = 100
+		
+		complete_effect = {
+			
+		}
+	}
+	
+	USA_executive_order_8807 = {
+	icon = ger_mefo_bills
+		available = {
+			has_war = yes
+		}
+		
+		visible = {
+			original_tag = USA
+		}
+		
+		cost = 100
+		
+		complete_effect = {
+			
 		}
 	}
 	
@@ -492,24 +630,25 @@ USA_congress = {
 		visible = {
 			original_tag = USA
 			OR = {
-				check_variable = { bill_id = 2 }
+				check_variable = { bill_id = 6 }
 			}
         }
 		
-		cost = 200
+		cost = 150
 		
 		available  = {
-			
+			has_country_flag = court_packing_act_passed
    		}
 		
 		complete_effect = {
 			if = {
 				limit = { 
-					check_variable = { bill_id = 2 }
+					check_variable = { bill_id = 6 }
 				}
-				#country_event = {
-				#	id = 
-				#}
+				set_country_flag = bill_passed
+				country_event = {
+					id = us_bill.6
+				}
 			}
 		}
 	}

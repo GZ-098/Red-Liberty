@@ -76,6 +76,7 @@ shared_focus = {
 				level = 1
 				instant_build = yes
 			}
+			add_to_variable = { socialist_popularity = 0.1 }
 		}
 		382 = {
 			add_building_construction = {
@@ -83,6 +84,7 @@ shared_focus = {
 				level = 1
 				instant_build = yes
 			}
+			add_to_variable = { socialist_popularity = 0.1 }
 		}
 		383 = {
 			add_building_construction = {
@@ -90,6 +92,7 @@ shared_focus = {
 				level = 1
 				instant_build = yes
 			}
+			add_to_variable = { socialist_popularity = 0.1 }
 		}
     }
 	
@@ -132,6 +135,7 @@ shared_focus = {
 	prerequisite = { focus = USA_increase_corp_taxes }
     completion_reward = {
         random_owned_state = {
+			prioritize = { 382 389 }
 			limit = {
 				is_core_of = USA
 			}
@@ -141,6 +145,7 @@ shared_focus = {
 				instant_build = yes
 			}
 			add_extra_state_shared_building_slots = 1
+			add_to_variable = { socialist_popularity = 0.1 }
 		}
     }
 	

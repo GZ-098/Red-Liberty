@@ -84,6 +84,9 @@
  court_packing_plan_passed:0 "We have passed the Judicial Procedures Reform Act"
  USA_abandon_court_packing_tt:0 "§RWe will abandon our attempts to pack the court.§!\n"
  
+ start_USA_reorg_act:0 "The Reorganization Act"
+ 
+ start_USA_union_rep_act:0 "The Union Representation Act"
  union_act_passed:0 "We have passed the Union Representation Act"
  
  start_USA_housing_act:0 "The Housing Act"
@@ -93,4 +96,18 @@
  pension_act_passed:0 "We have passed the Old Age Pension Act"
  
  start_USA_wealth_tax_act:0 "The Redistribution of Accumulated Wealth Act"
+ 
+ ### MINOR LEGISLATION ###
+ 
+ start_USA_national_cancer_act:0 "The National Cancer Act"
+ start_USA_national_cancer_act_desc:0 "The NCA shall establish the National Cancer Institute as an independent research institute within the Public Health Service. It shall be the federal government’s principal agency for conducting research and training on the cause, diagnosis, and treatment of cancer."
+ start_USA_natural_gas_act:0 "The Natural Gas Act"
+ start_USA_natural_gas_act_desc:0 "The NGA shall establish federal authority to regulate the rates charged by interstate natural gas transmission companies."
+ 
+ ### EXECUTIVE ORDERS ###
+ 
+ USA_executive_order_8802:0 "Executive Order 8802"
+ USA_executive_order_8802_desc:0 "Order 8802 shall place a complete ban on racial discrimination in industries that contribute to the war effort."
+ USA_executive_order_8807:0 "Executive Order 8807"
+ 
  

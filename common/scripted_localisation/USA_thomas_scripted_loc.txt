@@ -1,0 +1,72 @@
+defined_text = {
+	name = GetThomasOpinionRich
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_thomas_rich_tyranny > 50 }
+        }
+        localization_key = "USA_thomas_rich_tyrant"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_thomas_rich_tyranny > 25 }
+        }
+        localization_key = "USA_thomas_rich_threat"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_thomas_rich_tyranny > 15 }
+        }
+        localization_key = "USA_thomas_rich_sus"
+    }
+	
+	text = { 
+        localization_key = "USA_thomas_rich_nonthreat"
+    }
+}
+
+defined_text = {
+	name = GetThomasOpinionMiddle
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_thomas_middle_tyranny > 50 }
+        }
+        localization_key = "USA_thomas_middle_tyrant"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_thomas_middle_tyranny > 15 }
+        }
+        localization_key = "USA_thomas_middle_sus"
+    }
+	
+	text = { 
+        localization_key = "USA_thomas_middle_nonthreat"
+    }
+}
+
+defined_text = {
+	name = GetThomasRadicalism
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_thomas_rich_radicalism > 50 }
+        }
+        localization_key = "USA_thomas_rich_veryhigh_radicalism"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_thomas_rich_radicalism > 15 }
+        }
+        localization_key = "USA_thomas_rich_med_radicalism"
+    }
+	
+	text = { 
+        localization_key = "USA_thomas_rich_low_radicalism"
+    }
+}

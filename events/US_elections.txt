@@ -242,6 +242,8 @@ country_event = { #Show preparation and mark states for election
 	immediate = {
  		hidden_effect = {
  			country_event = { id = USA_election_helpers.2 days = 280 } # hold the election
+			USA_class_1_senate_prepare = yes
+			USA_recalculate_polls = yes
  		}
 	}
 
@@ -251,19 +253,29 @@ country_event = { #Show preparation and mark states for election
  		name = "SPA! SPA! SPA!"
  		custom_effect_tooltip = USA_senate_elections_visible_tt
 		set_country_flag = USA_campaigning_socialist
- 		hidden_effect = {
- 			USA_class_1_senate_prepare = yes
-			USA_recalculate_polls = yes
- 		}
+		hidden_effect = {
+			country_event = {
+				id = united_states_thomas.1
+				days = 10
+			}
+			country_event = {
+				id = united_states_thomas.2
+				days = 60
+			}
+			country_event = {
+				id = united_states_thomas.3
+				days = 90
+			}
+			country_event = {
+				id = united_states_thomas.6
+				days = 130
+			}
+		}
  	}
 	option = {
  		name = "Protect our American way of life! Vote Democrat!"
  		custom_effect_tooltip = USA_senate_elections_visible_tt
 		set_country_flag = USA_campaigning_democrat
- 		hidden_effect = {
- 			USA_class_1_senate_prepare = yes
-			USA_recalculate_polls = yes
- 		}
  	}
 }
 
@@ -304,7 +316,7 @@ country_event = { #Prep Class II election
 
 	is_triggered_only = yes
 
- 	option = { #RDs
+ 	option = {
  		name = USA_election_helpers.3.a
  		custom_effect_tooltip = USA_senate_elections_visible_tt
 		custom_effect_tooltip = USA_can_campaign_for_RD_tt
@@ -314,7 +326,7 @@ country_event = { #Prep Class II election
 			USA_recalculate_polls = yes
  		}
  	}
-	option = { #NPP
+	option = {
  		name = USA_election_helpers.3.b
  		custom_effect_tooltip = USA_senate_elections_visible_tt
 		custom_effect_tooltip = USA_can_campaign_for_NPP_tt
@@ -362,7 +374,7 @@ country_event = { #Prep for Class III election
 
 	is_triggered_only = yes
 
- 	option = { #RDs
+ 	option = {
  		name = USA_election_helpers.6.a
  		custom_effect_tooltip = USA_senate_elections_visible_tt
  		hidden_effect = {
@@ -370,7 +382,7 @@ country_event = { #Prep for Class III election
 			USA_recalculate_polls = yes
  		}
  	}
-	option = { #NPP
+	option = {
  		name = USA_election_helpers.6.b
  		custom_effect_tooltip = USA_senate_elections_visible_tt
  		hidden_effect = {
@@ -412,14 +424,13 @@ country_event = { #Clear variables after seeing conclusion
 			clr_country_flag = USA_campaigning_democrat
 			clr_country_flag = USA_campaigning_socialist
 			clr_country_flag = currently_campaigning
-			clr_country_flag = USA_senate_elections
  		}
 	}
 
 	is_triggered_only = yes
 
  	option = {
- 		name = USA_election_helpers.8.a
+ 		name = "Back to normal."
  		custom_effect_tooltip = USA_senate_elections_remove_tt
  	}
 }

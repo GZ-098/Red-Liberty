@@ -1,0 +1,4 @@
+USA_thomas_tyranny_category = {
+	
+	
+}

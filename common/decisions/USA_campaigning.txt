@@ -10,6 +10,12 @@ USA_election_season_category = {
 		
 		visible = {
 			has_country_flag = USA_senate_elections
+			NOT = {
+				OR = {
+					has_country_flag = USA_senate_conclusion
+					has_country_flag = USA_presidential_conclusion
+				}
+			}
 		}
 		
 		cancel_if_not_visible = yes
@@ -45,6 +51,12 @@ USA_election_season_category = {
 		
 		visible = {
 			has_country_flag = USA_senate_elections
+			NOT = {
+				OR = {
+					has_country_flag = USA_senate_conclusion
+					has_country_flag = USA_presidential_conclusion
+				}
+			}
 		}
 		
 		cancel_if_not_visible = yes
@@ -80,6 +92,12 @@ USA_election_season_category = {
 		
 		visible = {
 			has_country_flag = USA_senate_elections
+			NOT = {
+				OR = {
+					has_country_flag = USA_senate_conclusion
+					has_country_flag = USA_presidential_conclusion
+				}
+			}
 		}
 		
 		cancel_if_not_visible = yes
@@ -115,6 +133,12 @@ USA_election_season_category = {
 		
 		visible = {
 			has_country_flag = USA_senate_elections
+			NOT = {
+				OR = {
+					has_country_flag = USA_senate_conclusion
+					has_country_flag = USA_presidential_conclusion
+				}
+			}
 		}
 		
 		cancel_if_not_visible = yes
@@ -150,6 +174,12 @@ USA_election_season_category = {
 		
 		visible = {
 			has_country_flag = USA_senate_elections
+			NOT = {
+				OR = {
+					has_country_flag = USA_senate_conclusion
+					has_country_flag = USA_presidential_conclusion
+				}
+			}
 		}
 		
 		cancel_if_not_visible = yes
@@ -185,6 +215,12 @@ USA_election_season_category = {
 		
 		visible = {
 			has_country_flag = USA_senate_elections
+			NOT = {
+				OR = {
+					has_country_flag = USA_senate_conclusion
+					has_country_flag = USA_presidential_conclusion
+				}
+			}
 		}
 		
 		cancel_if_not_visible = yes
@@ -220,6 +256,12 @@ USA_election_season_category = {
 		
 		visible = {
 			has_country_flag = USA_senate_elections
+			NOT = {
+				OR = {
+					has_country_flag = USA_senate_conclusion
+					has_country_flag = USA_presidential_conclusion
+				}
+			}
 		}
 		
 		cancel_if_not_visible = yes
@@ -255,6 +297,12 @@ USA_election_season_category = {
 		
 		visible = {
 			has_country_flag = USA_senate_elections
+			NOT = {
+				OR = {
+					has_country_flag = USA_senate_conclusion
+					has_country_flag = USA_presidential_conclusion
+				}
+			}
 		}
 		
 		cancel_if_not_visible = yes
@@ -290,6 +338,12 @@ USA_election_season_category = {
 		
 		visible = {
 			has_country_flag = USA_senate_elections
+			NOT = {
+				OR = {
+					has_country_flag = USA_senate_conclusion
+					has_country_flag = USA_presidential_conclusion
+				}
+			}
 		}
 		
 		cancel_if_not_visible = yes

@@ -113,6 +113,24 @@
  
  ### other stuff ###
  
+ USA_thomas_tyranny_category:0 "Walking the Tightrope"
+ USA_thomas_tyranny_category_desc:0 "There are those who say that socialism has no place in America. There are those who would do anything to keep it that way. We must keep an eye on the groups most likely to fall under the influence of far-right extremism.\n\nThe §Rbourgeoisie upper-class oligarchs§!, sitting in their gilded halls of crime view the president [GetThomasOpinionRich] [GetThomasRadicalism].\n\nThe §Ymiddle class§!, ever fickle and ignorant of the plight of the worker views the president [GetThomasOpinionMiddle]\n\n§RFar-right extremist groups§! such as the KKK §Yhate us and our agenda§!, but §Glack widespread popular support§!."
+ 
+ USA_thomas_rich_nonthreat:0 "§Yas a non-threat§!"
+ USA_thomas_rich_sus:0 "§Ywith suspicion§!"
+ USA_thomas_rich_threat:0 "§Yas a threat to their power§!"
+ USA_thomas_rich_tyrant:0 "§Ras a Tyrant of the highest order§!"
+ 
+ USA_thomas_middle_nonthreat:0 "§Yas a non-threat§!"
+ USA_thomas_middle_sus:0 "§Ywith suspicion§!"
+ USA_thomas_middle_tyrant:0 "§Ras a Tyrant of the highest order§!"
+ 
+ USA_thomas_rich_low_radicalism:0 "and are §Ycontent with supporting establishment parties§!"
+ USA_thomas_rich_med_radicalism:0 "and are §Yputting their ill-gotten gains to use§!, supporting anti-socialist political groups"
+ USA_thomas_rich_high_radicalism:0 ""
+ USA_thomas_rich_veryhigh_radicalism:0 ""
+ 
+ 
  USA_american_economy_category:0 "The American Economy"
  USA_american_economy_category_desc:0 "Unemployment is at §Y[?USA_unemployment]%§!.\nUnemployment is currently [GetUnemploymentTrend], at a rate of §Y[?USA_unemployment_change]§! per month.\n\nThe Poverty Rate is §Y[?USA_poverty]%§!, with a target of §Y[?USA_poverty_goal]%§!.\nThe Poverty Rate is currently [GetPovertyTrend], at a rate of §Y[?USA_poverty_change]§! per month.\n\nInflation is at §Y[?USA_inflation]%§!, which is a state of [GetInflationState].\nInflation is currently [GetInflationTrend], at a rate of §Y[?USA_inflation_change]§! per month."
  
