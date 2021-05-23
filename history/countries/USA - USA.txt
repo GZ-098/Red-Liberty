@@ -181,7 +181,7 @@ set_autonomy = {
 }
 
 create_country_leader = {
-	name = "No Leadership"
+	name = "No Organized Leadership"
 	expire = "1965.1.1"
 	ideology = insurrectionary_anarchism_subtype
 	traits = {
@@ -278,6 +278,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Various Military Officers"
+	expire = "1965.1.1"
+	ideology = martial_despotism_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
 	name = "Charles Lindbergh"
 	desc = "POLITICS_CHARLES_LINDBERGH_DESC"
 	#picture = "Portrait_USA_William_Dudley_Pelley.dds"
@@ -311,7 +320,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "Malin Craig"
-	portrait_path = "gfx/leaders/USA/Portrait_USA_Malin_Craig.png"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Malin_Craig.tga"
 	traits = { 
 		logistics_wizard
 		organizer
@@ -326,19 +335,20 @@ create_field_marshal = {
 }
 
 create_field_marshal = {
-	name = "George Marshall"
-	portrait_path = "gfx/leaders/USA/Portrait_USA_George_Marshall.tga"
+	name = "Smedley Butler"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Smedley_Butler.tga"
 	traits = {
 		career_officer
-		politically_connected
 		offensive_doctrine
-		organizer
+		inspirational_leader
+		commando
 	}
-	skill = 4
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 4
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
 	logistics_skill = 3
+	id = 3
 }
 
 create_corps_commander = {
@@ -353,22 +363,6 @@ create_corps_commander = {
 	skill = 4
 	attack_skill = 4
 	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Smedley Butler"
-	portrait_path = "gfx/leaders/USA/Portrait_USA_Smedley_Butler.tga"
-	traits = {
-		career_officer
-		offensive_doctrine
-		inspirational_leader
-		commando
-	}
-	skill = 3
-	attack_skill = 2
-	defense_skill = 1
 	planning_skill = 3
 	logistics_skill = 3
 }
@@ -438,6 +432,20 @@ create_corps_commander = {
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Leslie McNair"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_Leslie_McNair.tga"
+	traits = {
+		old_guard
+		career_officer
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
 }
 
 if = {
