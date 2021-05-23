@@ -15,13 +15,13 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_secure_the_east
-	icon = GFX_USA_secure_the_east
+    id = USA_fight_the_left
+	icon = GFX_USA_fight_the_left
 	
-    x = 0
+    x = -1
 	y = 1
 	
-	cost = 2
+	cost = 3
 	relative_position_id = USA_macarthur_ascendant
 	prerequisite = { focus = USA_macarthur_ascendant }
     completion_reward = {
@@ -34,34 +34,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_take_the_railroads
-	icon = GFX_USA_take_the_railroads
-	
-    x = -1
-	y = 1
-	
-	cost = 2
-	relative_position_id = USA_secure_the_east
-	prerequisite = { focus = USA_secure_the_east }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_enforce_curfew
-	icon = GFX_USA_enforce_curfew
+    id = USA_fight_the_right
+	icon = GFX_USA_fight_the_right
 	
     x = 1
 	y = 1
 	
-	cost = 2
-	relative_position_id = USA_secure_the_east
-	prerequisite = { focus = USA_secure_the_east }
+	cost = 3
+	relative_position_id = USA_macarthur_ascendant
+	prerequisite = { focus = USA_macarthur_ascendant }
     completion_reward = {
         
     }

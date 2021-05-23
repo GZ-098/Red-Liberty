@@ -282,7 +282,7 @@ country_event = { # senate judiciary hearings
 
 country_event = { # judicial review section
 	id = united_states_thomas.17
-	title = ""
+	title = "The Question of Judicial Review"
 	desc = united_states_thomas.17.desc
 	
 	is_triggered_only = yes
@@ -292,6 +292,11 @@ country_event = { # judicial review section
 	option = {
 		name = "Do it."
 		set_country_flag = USA_added_judicial_review_section
+	}
+	
+	option = {
+		name = "Two-thirds it is."
+		set_country_flag = USA_added_judicial_review_section_lite
 	}
 	
 	option = {

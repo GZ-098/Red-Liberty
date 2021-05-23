@@ -1,0 +1,36 @@
+USA_macarthur_actions_category = {
+	
+	USA_macarthur_ban_kkk = {
+	
+		available = {
+			
+		}
+		
+		visible = {
+			
+		}
+		
+		cost = 25
+		
+		complete_effect = {
+			
+		}
+	}
+	
+	USA_macarthur_allow_kkk = {
+	
+		available = {
+			
+		}
+		
+		visible = {
+			
+		}
+		
+		cost = 25
+		
+		complete_effect = {
+			
+		}
+	}
+}

@@ -23,6 +23,10 @@ USA_thomas_tyranny_category = {
 	
 	allowed = {
 		original_tag = USA
+		has_country_leader = {
+			name = "Norman Thomas"
+			ruling_only = yes
+		}
 	}
 }
 
@@ -40,5 +44,19 @@ USA_american_economy_category = {
 	allowed = {
 		original_tag = USA
 		always = no
+	}
+}
+
+USA_macarthur_actions_category = {
+	icon = usa_congress
+	
+	visible_when_empty = yes
+	
+	allowed = {
+		original_tag = USA
+		has_country_leader = {
+			name = "Douglas MacArthur"
+			ruling_only = yes
+		}
 	}
 }

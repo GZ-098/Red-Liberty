@@ -1,0 +1,24 @@
+
+state={
+	id=861
+	name="STATE_861"
+
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+		}
+		victory_points = {
+			9713 10
+		}
+	}
+
+	provinces={
+		610 677 710 766 768 781 3588 3644 4331 6482 6665 6681 6745 6757 6772 9697 9713 9730 10159 11658 11698 
+	}
+	manpower = 3477248
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

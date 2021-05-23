@@ -181,6 +181,14 @@ USA_judicial_reform_act_setup = { # court packing plan
 	
 	if = {
 		limit = {
+			has_country_flag = USA_added_judicial_review_section_lite
+		}
+		subtract_from_variable = { USA_republican_bill_support = 0.02 }
+		subtract_from_variable = { USA_democrat_bill_support = 0.02 }
+	}
+	
+	if = {
+		limit = {
 			has_country_flag = USA_added_judicial_review_section
 		}
 		subtract_from_variable = { USA_republican_bill_support = 0.05 }

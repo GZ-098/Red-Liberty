@@ -275,4 +275,15 @@ AMS = "countries/American State.txt"
 AWA = "countries/American Worker's Army.txt"
 CPL = "countries/Constitutional Protection League.txt"
 
+### Left-wingers ###
+NYC = "countries/New York City.txt"
+AWC = "countries/American Worker's Collective.txt"
+
+### Right-wingers ###
+POF = "countries/Pillar of Fire.txt"
+SIL = "countries/Silver Legion.txt"
+BLA = "countries/Black Legion.txt"
+
+### Independence movements ###
+TEX = "countries/Texas.txt"
 

@@ -1,9 +1,8 @@
 add_namespace = acw
 
-
 country_event = { # thomas is assassinated
 	id = acw.1
-	title = ""
+	title = "The City Burns"
 	desc = acw.1.desc
 	
 	is_triggered_only = yes
@@ -11,10 +10,6 @@ country_event = { # thomas is assassinated
 	fire_only_once = yes
 	
 	immediate = {
-		if = {
-			limit = { has_template = "National Guard" }
-			delete_unit_template_and_units = { division_template = "National Guard" }
-		}
 		if = {
 			limit = { has_template = "Organized Reserve" }
 			delete_unit_template_and_units = { division_template = "Organized Reserve" }
@@ -28,6 +23,7 @@ country_event = { # thomas is assassinated
 			days = 2
 		}
 		kill_country_leader = yes
+		add_stability = -0.1
 		end_puppet = PHI
 	}
 }
@@ -43,6 +39,10 @@ country_event = { # military government is formed
 
 	option = {
 		name = ""
+		set_country_flag = congress_disabled
+		set_global_flag = USA_2ACW_begun
+		
+		clear_all_coalitions = yes
 		set_politics = {
 			ruling_party = martial_despotism
 			last_election = "1936.11.8"
@@ -62,15 +62,39 @@ country_event = { # military government is formed
 				
 			}
 		}
+		
+		remove_ideas = {
+			USA_red_liberty
+		}
+		
 		hidden_effect = {
 			set_cosmetic_tag = USA_military_govt
+			country_event = {
+				id = acw.3
+				days = 1
+			}
 		}
+		
 		load_focus_tree = USA_macarthur_initial
-		complete_focus = USA_macarthur_ascendant
+		unlock_national_focus = USA_macarthur_ascendant
 	}
 }
 
+news_event = { # world event
+	id = acw.3
+	title = "The End of Democracy?"
+	desc = acw.3.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	major = yes
 
+	option = {
+		name = "It happened there."
+	}
+}
 
 
 

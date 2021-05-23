@@ -862,11 +862,6 @@ KHR = {
 	color_ui = rgb { 135 104 46 }
 }
 
-MCA = {
-	color = rgb { 50 109 168 }
-	color_ui = rgb { 50 109 168 }
-}
-
 FER = {
 	color = rgb { 173 59 70 }
 }
@@ -965,7 +960,7 @@ KUB = {
 	color_ui = rgb { 139 107 140 }
 }
 
-###
+### US CIVIL WAR COLORS ###
 
 AMS = {
 	color = rgb { 153 133 104 }
@@ -1024,4 +1019,9 @@ DET = {
 
 POF = {
 	color = rgb { 212 153 70 }
+}
+
+MCA = {
+	color = rgb { 50 109 168 }
+	color_ui = rgb { 50 109 168 }
 }

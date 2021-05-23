@@ -1,19 +1,22 @@
+
 state={
 	id=849
 	name="STATE_849"
-	
+
 	history={
 		owner = IRQ
 		add_core_of = IRQ
 		buildings = {
 			infrastructure = 3
+
 		}
+
 	}
-	
+
 	provinces={
-		3795 6826 8123 10793 
+		1600 3795 6826 8123 10793 12372 
 	}
 	manpower=500000
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category=rural
 }

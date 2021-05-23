@@ -334,6 +334,23 @@ USA_congress = {
 	
 	### EXECUTIVE ORDERS ###
 	
+	USA_executive_order_7806 = { # form the National Public Employment Relations Commission
+	icon = ger_mefo_bills
+		available = {
+			has_completed_focus = USA_workplace_democracy
+		}
+		
+		visible = {
+			original_tag = USA
+		}
+		
+		cost = 50
+		
+		complete_effect = {
+			
+		}
+	}
+	
 	USA_executive_order_8802 = {
 	icon = ger_mefo_bills
 		available = {
@@ -364,7 +381,9 @@ USA_congress = {
 		cost = 100
 		
 		complete_effect = {
-			
+			add_ideas = {
+				USA_osrd
+			}
 		}
 	}
 	

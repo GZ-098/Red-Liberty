@@ -178,6 +178,7 @@ shared_focus = {
 		focus = USA_accept_the_rulings
 	}
     completion_reward = {
+		custom_effect_tooltip = court_packed_effect_tt
         add_stability = -0.05
     }
 	
@@ -367,7 +368,7 @@ shared_focus = {
     x = -1
 	y = 1
 	
-	cost = 8
+	cost = 5
 	relative_position_id = USA_right_to_learn
 	prerequisite = { focus = USA_right_to_learn }
     completion_reward = {
@@ -386,7 +387,7 @@ shared_focus = {
     x = -1
 	y = 1
 	
-	cost = 8
+	cost = 5
 	relative_position_id = USA_assess_school_resources
 	prerequisite = { focus = USA_assess_school_resources }
     completion_reward = {
@@ -405,11 +406,11 @@ shared_focus = {
     x = 1
 	y = 1
 	
-	cost = 8
+	cost = 5
 	relative_position_id = USA_assess_school_resources
 	prerequisite = { focus = USA_assess_school_resources }
     completion_reward = {
-        
+        add_political_power = 25
     }
 	
 	ai_will_do = {
@@ -424,7 +425,7 @@ shared_focus = {
     x = 1
 	y = 1
 	
-	cost = 8
+	cost = 5
 	relative_position_id = USA_right_to_learn
 	prerequisite = { focus = USA_right_to_learn }
     completion_reward = {
@@ -544,7 +545,10 @@ shared_focus = {
 	relative_position_id = USA_right_to_work
 	prerequisite = { focus = USA_right_to_work }
     completion_reward = {
-        
+        custom_effect_tooltip = USA_bill_pass_req_tt
+		effect_tooltip = {
+			improve_great_depression = yes
+		}
     }
 	
 	ai_will_do = {
@@ -584,7 +588,10 @@ shared_focus = {
 	prerequisite = { focus = USA_workplace_democracy }
 	prerequisite = { focus = USA_ensure_fair_competition }
     completion_reward = {
-        
+        custom_effect_tooltip = USA_bill_pass_req_tt
+		effect_tooltip = {
+			improve_great_depression = yes
+		}
     }
 	
 	ai_will_do = {
@@ -618,12 +625,12 @@ shared_focus = {
     x = 1
 	y = 1
 	
-	cost = 8
+	cost = 5
 	relative_position_id = USA_6_hour_day
 	prerequisite = { focus = USA_6_hour_day }
 	prerequisite = { focus = USA_unemployment_compensation }
     completion_reward = {
-        
+        add_stability = 0.03
     }
 	
 	ai_will_do = {
@@ -643,7 +650,12 @@ shared_focus = {
 	prerequisite = { focus = USA_end_child_labor }
 	prerequisite = { focus = USA_end_wage_descrimination }
     completion_reward = {
-        
+        custom_effect_tooltip = USA_bill_pass_req_tt
+		effect_tooltip = {
+			add_ideas = {
+				USA_economic_equality_act
+			}
+		}
     }
 	
 	ai_will_do = {
@@ -677,11 +689,14 @@ shared_focus = {
     x = -1
 	y = 1
 	
-	cost = 8
+	cost = 5
 	relative_position_id = USA_right_to_life
 	prerequisite = { focus = USA_right_to_life }
     completion_reward = {
-        
+        add_popularity = {
+			ideology = libertarian_socialism
+			popularity = 0.01
+		}
     }
 	
 	ai_will_do = {
@@ -759,7 +774,12 @@ shared_focus = {
 	prerequisite = { focus = USA_maternity_insurance }
 	prerequisite = { focus = USA_look_at_causes }
     completion_reward = {
-        
+		custom_effect_tooltip = USA_bill_pass_req_tt
+        effect_tooltip = {
+			add_ideas = {
+				USA_national_healthcare_act
+			}
+		}
     }
 	
 	ai_will_do = {
