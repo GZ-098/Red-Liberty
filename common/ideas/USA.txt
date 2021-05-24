@@ -233,6 +233,27 @@ ideas = {
 			}
 		}
 		
+		USA_secured_funding = {
+			
+			removal_cost = -1 
+			
+			allowed_civil_war = {	 
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
 		USA_reorg_act = {
 			
 			removal_cost = -1 

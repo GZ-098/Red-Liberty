@@ -1,4 +1,50 @@
 USA_thomas_tyranny_category = {
 	
+	USA_silver_legion_marches = {
+		visible = {
+			original_tag = USA
+		}
+		available = { #Mission is completed
+			custom_trigger_tooltip = {
+				tooltip = USA_silver_legion_stopped
+				NOT = { has_country_flag = USA_silver_legion_enabled }
+			}
+		}
+		activation = {
+			has_country_flag = USA_silver_legion_enabled
+		}
+		is_good = no
+		
+		days_mission_timeout = 45
+		
+		timeout_effect = {
+			853 = {
+				set_demilitarized_zone = yes
+			}
+			857 = {
+				set_demilitarized_zone = yes
+			}
+			860 = {
+				set_demilitarized_zone = yes
+			}
+		}
+	}
 	
+	USA_silver_legion_drop_leaflets = {
+	
+		visible = {
+			original_tag = USA
+			has_country_flag = USA_silver_legion_enabled
+		}
+		
+		cost = 15
+		
+		available = { #Mission is completed
+			has_country_flag = USA_silver_legion_enabled
+		}
+		
+		timeout_effect = {
+			
+		}
+	}
 }

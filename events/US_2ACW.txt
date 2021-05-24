@@ -63,10 +63,6 @@ country_event = { # military government is formed
 			}
 		}
 		
-		remove_ideas = {
-			USA_red_liberty
-		}
-		
 		hidden_effect = {
 			set_cosmetic_tag = USA_military_govt
 			country_event = {
@@ -96,11 +92,92 @@ news_event = { # world event
 	}
 }
 
+country_event = { # riots break out
+	id = acw.4
+	title = "Downward Spiral"
+	desc = acw.4.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
 
+	option = {
+		name = "Please Remain Calm."
+		359 = {
+			set_demilitarized_zone = yes
+		}
+		360 = {
+			set_demilitarized_zone = yes
+		}
+		378 = {
+			set_demilitarized_zone = yes
+		}
+		816 = {
+			set_demilitarized_zone = yes
+		}
+		854 = {
+			set_demilitarized_zone = yes
+		}
+		859 = {
+			set_demilitarized_zone = yes
+		}
+		862 = {
+			set_demilitarized_zone = yes
+		}
+	}
+}
 
+country_event = { # midwest
+	id = acw.5
+	title = "Midwestern Governors Declare Revolt!"
+	desc = acw.5.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
 
+	option = {
+		name = ""
+		391 = {
+			set_demilitarized_zone = yes
+		}
+		393 = {
+			set_demilitarized_zone = yes
+		}
+		394 = {
+			set_demilitarized_zone = yes
+		}
+		858 = {
+			set_demilitarized_zone = yes
+		}
+	}
+}
 
+country_event = { # constituent assembly
+	id = acw.5
+	title = "Assemble"
+	desc = acw.5.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
 
+	option = {
+		name = ""
+		391 = {
+			set_demilitarized_zone = no
+		}
+		393 = {
+			set_demilitarized_zone = no
+		}
+		394 = {
+			set_demilitarized_zone = no
+		}
+		858 = {
+			set_demilitarized_zone = no
+		}
+	}
+}
 
 
 

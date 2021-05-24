@@ -14,5 +14,18 @@ ideas = {
 				army_chief_organizational_2
 			}
 		}
-	} 
+		
+		USA_malin_craig_army_chief = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			traits = {
+				army_chief_organizational_2
+			}
+		}
+	}
 }

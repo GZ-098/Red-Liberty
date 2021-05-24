@@ -47,7 +47,10 @@ shared_focus = {
 	relative_position_id = USA_our_mandate
 	prerequisite = { focus = USA_our_mandate }
     completion_reward = {
-        
+        country_event = {
+			id = united_states_thomas.21
+			days = 1
+		}
     }
 	
 	ai_will_do = {
@@ -230,7 +233,21 @@ shared_focus = {
 		focus = USA_accept_the_rulings
 	}
     completion_reward = {
-        
+        if = {
+			limit = {
+				has_country_flag = court_packing_plan_passed
+			}
+			country_event = {
+				id = united_states_thomas.19
+				days = 1
+			}
+		}
+		else = {
+			country_event = {
+				id = united_states_thomas.18
+				days = 1
+			}
+		}
     }
 	
 	ai_will_do = {
@@ -249,7 +266,10 @@ shared_focus = {
 	relative_position_id = USA_our_mandate
 	prerequisite = { focus = USA_our_mandate }
     completion_reward = {
-        
+        country_event = {
+			id = united_states_thomas.20
+			days = 1
+		}
     }
 	
 	ai_will_do = {
@@ -268,7 +288,7 @@ shared_focus = {
 	relative_position_id = USA_reorganization
 	prerequisite = { focus = USA_reorganization }
     completion_reward = {
-        
+        add_political_power = 25
     }
 	
 	ai_will_do = {
@@ -287,7 +307,10 @@ shared_focus = {
 	relative_position_id = USA_reorganization
 	prerequisite = { focus = USA_reorganization }
     completion_reward = {
-        
+        add_timed_idea = {
+			idea = USA_secured_funding
+			days = 180
+		}
     }
 	
 	ai_will_do = {

@@ -274,6 +274,7 @@ NEE = "countries/New England.txt"
 AMS = "countries/American State.txt"
 AWA = "countries/American Worker's Army.txt"
 CPL = "countries/Constitutional Protection League.txt"
+CAS = "countries/Constituent Assembly.txt"
 
 ### Left-wingers ###
 NYC = "countries/New York City.txt"

@@ -303,3 +303,59 @@ country_event = { # judicial review section
 		name = "Too risky to try this now."
 	}
 }
+
+country_event = { # the switch in time
+	id = united_states_thomas.18
+	title = "The Switch in Time"
+	desc = united_states_thomas.18.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Interesting."
+	}
+}
+
+country_event = { # regret
+	id = united_states_thomas.19
+	title = "At What Cost?"
+	desc = united_states_thomas.19.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Was it worth it?"
+	}
+}
+
+country_event = { # shits gotten complicated
+	id = united_states_thomas.20
+	title = "A Byzantine Labyrinth"
+	desc = united_states_thomas.20.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+	}
+}
+
+country_event = { # talking with the normies
+	id = united_states_thomas.21
+	title = "Token Gestures"
+	desc = united_states_thomas.21.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+	}
+}
