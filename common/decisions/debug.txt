@@ -1,5 +1,28 @@
 debug_category = {
 
+	debug_disable = {
+	
+		icon = generic_political_discourse
+		
+		avaliable = {
+			tag = USA
+		}
+		
+		visible = {
+			is_debug = yes
+		}
+		
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+		
+		complete_effect = {
+			set_country_flag = debug_disabled
+		}
+	}
+
 	debug_load_thomas_second_term = {
 	
 		icon = generic_political_discourse
@@ -49,6 +72,29 @@ debug_category = {
 				id = acw.1
 			}
 			clr_country_flag = USA_thomas_second_term_tree_force_on
+		}
+	}
+	
+	debug_start_silver_legion = {
+	
+		icon = generic_political_discourse
+		
+		avaliable = {
+			tag = USA
+		}
+		
+		visible = {
+			is_debug = yes
+		}
+		
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+		
+		complete_effect = {
+			set_country_flag = USA_silver_legion_enabled
 		}
 	}
 }

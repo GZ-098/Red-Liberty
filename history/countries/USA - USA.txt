@@ -412,6 +412,20 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
+	name = "John L. DeWitt"
+	portrait_path = "gfx/leaders/USA/Portrait_USA_John_DeWitt.tga"
+	traits = {
+		inflexible_strategist
+		trait_cautious
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 4
+}
+
+create_corps_commander = {
 	name = "William E. Cole"
 	portrait_path = "gfx/leaders/USA/Portrait_USA_William_E_Cole.tga"
 	traits = {

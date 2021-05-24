@@ -1,11 +1,12 @@
 USA_congress = {
 	icon = usa_congress
 	allowed = {
-		AND = {
-			original_tag = USA
-			NOT = {
-				has_country_flag = congress_disabled
-			}
+		original_tag = USA
+	}
+	
+	visible = {
+		NOT = {
+			has_country_flag = congress_disabled
 		}
 	}
 
@@ -16,19 +17,26 @@ USA_congress = {
 	priority = 85
 }
 
-USA_thomas_tyranny_category = {
+USA_american_army_category = {
 	icon = usa_congress
-	
-	visible_when_empty = yes
-	
 	allowed = {
 		original_tag = USA
-		has_country_leader = {
-			name = "Norman Thomas"
-			ruling_only = yes
-		}
 	}
 }
+
+#USA_thomas_tyranny_category = {
+#	icon = usa_congress
+#	
+#	visible_when_empty = yes
+#	
+#	allowed = {
+#		original_tag = USA
+#		has_country_leader = {
+#			name = "Norman Thomas"
+#			ruling_only = yes
+#		}
+#	}
+#}
 
 USA_election_season_category = {
 	icon = usa_congress

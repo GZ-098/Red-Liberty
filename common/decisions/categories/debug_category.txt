@@ -6,5 +6,8 @@ debug_category = {
 	}
 	visible = {
 		is_debug = yes
+		NOT = {
+			has_country_flag = debug_disabled
+		}
 	}
 }
