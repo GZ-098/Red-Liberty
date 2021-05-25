@@ -854,7 +854,7 @@
  STATE_853:0 "Asheville"
  STATE_854:0 "Olympia"
  STATE_855:0 "South California"
- STATE_856:0 "Pennsylvania"
+ STATE_856:0 "South Pennsylvania"
  STATE_857:0 "Knoxville"
  STATE_858:0 "Superior"
  STATE_859:0 "Detroit"
@@ -878,4 +878,5 @@
  STATE_877:0 "Saarland"
  STATE_878:0 "Ostrheinland"
  STATE_879:0 "Al Hofuf"
+ STATE_880:0 "Scranton"
  

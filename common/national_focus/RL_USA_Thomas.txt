@@ -21,7 +21,7 @@ shared_focus = {
     x = 0
 	y = 1
 	
-	cost = 4
+	cost = 2
 	relative_position_id = USA_the_second_thomas_admin
 	prerequisite = { focus = USA_the_second_thomas_admin }
     completion_reward = {
@@ -43,7 +43,7 @@ shared_focus = {
     x = -4
 	y = 1
 	
-	cost = 5
+	cost = 4
 	relative_position_id = USA_our_mandate
 	prerequisite = { focus = USA_our_mandate }
     completion_reward = {
@@ -65,7 +65,7 @@ shared_focus = {
     x = -1
 	y = 1
 	
-	cost = 5
+	cost = 4
 	relative_position_id = USA_butter_em_up
 	prerequisite = { focus = USA_butter_em_up }
     completion_reward = {
@@ -87,7 +87,7 @@ shared_focus = {
     x = 1
 	y = 1
 	
-	cost = 5
+	cost = 4
 	relative_position_id = USA_butter_em_up
 	prerequisite = { focus = USA_butter_em_up }
     completion_reward = {
@@ -108,7 +108,7 @@ shared_focus = {
     x = 1
 	y = 1
 	
-	cost = 5
+	cost = 4
 	relative_position_id = USA_robinson_patman_act
 	prerequisite = { focus = USA_robinson_patman_act }
 	prerequisite = { focus = USA_bonneville_project }

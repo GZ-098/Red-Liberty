@@ -201,6 +201,12 @@ USA_judicial_reform_act_setup = { # court packing plan
 USA_reorganization_act_setup = { # reorganization act
 	log = "[GetDateText]: [Root.GetName]: bill setup active"
 	
+	set_country_flag = USA_republican_discussing
+	set_country_flag = USA_democrat_discussing
+	set_country_flag = USA_communist_discussing
+	set_country_flag = USA_socialist_discussing
+	set_country_flag = USA_fascist_discussing
+	
 	set_variable = { bill_id = 5 } # EACH BILL MUST HAVE A UNIQUE ID
 	
 	set_country_flag = bill_enable_mission

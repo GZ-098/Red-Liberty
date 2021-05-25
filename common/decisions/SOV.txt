@@ -48,15 +48,14 @@ SOV_revolution_category = {
 		days_remove = 30
 		
 		target_trigger = {
-               FROM = {
-                    OR = {
-                         tag = KAZ
-                         tag = KYR
-                         tag = ALT
-						 tag = MON
-                    }
-               }
-          }
+            FROM = {
+                OR = {
+                    tag = KHV
+                    tag = KYR
+                    tag = TMS
+                }
+            }
+        }
 		
 		cost = 30
 		

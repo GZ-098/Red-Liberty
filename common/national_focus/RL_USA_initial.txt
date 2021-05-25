@@ -195,6 +195,13 @@ shared_focus = {
     completion_reward = {
         add_stability = 0.05
 		add_political_power = 50
+		custom_effect_tooltip = USA_SPA_better_nationwide
+		hidden_effect = {
+			every_owned_state = {
+				limit = { can_have_elections_in_state = yes }
+				add_to_variable = { socialist_popularity = 0.05 }
+			}
+		}
     }
 	
 	ai_will_do = {

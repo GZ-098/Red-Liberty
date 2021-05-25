@@ -303,7 +303,7 @@ country_event = { # pension act
 		name = us_bill.7.a
 		trigger = { has_country_flag = bill_passed }
 		improve_great_depression = yes
-		set_country_flag = USA_pension_act_passed
+		set_country_flag = pension_act_passed
 		USA_bill_clear = yes # ALWAYS DO THIS
 	}
 	
@@ -346,7 +346,7 @@ country_event = { # housing act
 		name = us_bill.8.a
 		trigger = { has_country_flag = bill_passed }
 		improve_great_depression = yes
-		set_country_flag = USA_housing_act_passed
+		set_country_flag = housing_act_passed
 		USA_bill_clear = yes # ALWAYS DO THIS
 	}
 	

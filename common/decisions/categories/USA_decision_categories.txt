@@ -42,6 +42,8 @@ USA_election_season_category = {
 	icon = usa_congress
 	allowed = {
 		original_tag = USA
+	}
+	visible = {
 		has_country_flag = USA_senate_elections
 	}
 	visible_when_empty = yes

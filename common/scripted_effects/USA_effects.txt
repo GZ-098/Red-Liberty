@@ -1,6 +1,33 @@
 improve_great_depression = {
 	if = {
 		limit = {
+			has_idea = USA_the_great_depression_7
+		}
+		swap_ideas = {
+			remove_idea = USA_the_great_depression_7
+			add_idea = USA_the_great_depression_8
+		}
+	}
+	if = {
+		limit = {
+			has_idea = USA_the_great_depression_6
+		}
+		swap_ideas = {
+			remove_idea = USA_the_great_depression_6
+			add_idea = USA_the_great_depression_7
+		}
+	}
+	if = {
+		limit = {
+			has_idea = USA_the_great_depression_5
+		}
+		swap_ideas = {
+			remove_idea = USA_the_great_depression_5
+			add_idea = USA_the_great_depression_6
+		}
+	}
+	if = {
+		limit = {
 			has_idea = USA_the_great_depression_4
 		}
 		swap_ideas = {

@@ -70,7 +70,7 @@ focus_tree = {
 		y = -1250
 	}
 	default = no
-	#shared_focus = USA_the_lister_admin
+	shared_focus = USA_the_lister_admin
 }
 
 focus_tree = {

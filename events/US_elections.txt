@@ -95,6 +95,10 @@ country_event = {
 			id = us_election.3
 			days = 50
 		}
+		country_event = { # lister inaug
+			id = us_election.7
+			days = 109
+		}
 		
 		set_country_flag = USA_1936_election_democrat_victory
 	}
@@ -141,6 +145,10 @@ country_event = { # house of reps votes
 			check_variable = { representatives_democrat > representatives_socialist }
 			check_variable = { representatives_democrat > representatives_fascist }
 		}
+		country_event = {
+			id = us_election.7
+			days = 52
+		}
 	}
 }
 
@@ -172,6 +180,36 @@ news_event = { # thomas inaug news event
 	
 	option = {
 		name = us_election.6.a
+	}
+}
+
+country_event = { # lister inaug day
+	id = us_election.7
+	title = "Inuaguration Day"
+	desc = us_election.7.desc
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = us_election.7.a
+		load_focus_tree = USA_lister_tree
+		country_event = {
+			id = us_election.8
+		}
+	}
+}
+
+news_event = { # lister inaug news event
+	id = us_election.8
+	title = ""
+	desc = us_election.8.desc
+
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = us_election.8.a
 	}
 }
 

@@ -36,6 +36,8 @@
  USA_the_great_depression_4:0 "The Great Depression"
  USA_the_great_depression_5:0 "The Great Depression"
  USA_the_great_depression_6:0 "The Great Depression"
+ USA_the_great_depression_7:0 "The Great Depression"
+ USA_the_great_depression_8:0 "The Great Depression"
  USA_the_great_depression_1_desc:0 "After the Wall Street Crash of 1929, the American economy took a nosedive. While it took time for the effects to be felt by the workers, when reality hit, it hit hard. Massive levels of unemployment, currency deflation, and the bank collapses that erased the life savings of millions all caused economic damage unprecedented in history. Tens of millions live in poverty, and many feel they have woken up from the American Dream."
  USA_the_great_depression_2_desc:0 "After the Wall Street Crash of 1929, the American economy took a nosedive. While it took time for the effects to be felt by the workers, when reality hit, it hit hard. Massive levels of unemployment, currency deflation, and the bank collapses that erased the life savings of millions all caused economic damage unprecedented in history. Tens of millions live in poverty, and many feel they have woken up from the American Dream."
  USA_the_great_depression_3_desc:0 "After the Wall Street Crash of 1929, the American economy took a nosedive. While it took time for the effects to be felt by the workers, when reality hit, it hit hard. Massive levels of unemployment, currency deflation, and the bank collapses that erased the life savings of millions all caused economic damage unprecedented in history. Tens of millions live in poverty, and many feel they have woken up from the American Dream."
@@ -45,6 +47,10 @@
  USA_osrd:0 "Office of Scientific Research and Development"
  
  USA_dust_bowl_modifier:0 "The Dust Bowl"
+ 
+ ### POPULARITY TOOLTIPS ###
+ 
+ USA_SPA_better_nationwide:0 "The §PSPA§! looks a little better §Gnationwide§!.\n"
  
  ### INTRO TREE ###
  
@@ -206,5 +212,5 @@
  ### ADVISORS ###
  
  USA_douglas_macarthur_army_chief:0 "Douglas MacArthur"
- USA_douglas_malin_craig_chief:0 "Malin Craig"
+ USA_malin_craig_army_chief:0 "Malin Craig"
  

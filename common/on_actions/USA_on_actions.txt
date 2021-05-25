@@ -37,6 +37,11 @@ on_actions = {
 				country_event = { id = USA_election_helpers.1 days = 30 } # SENATE
 				country_event = { id = USA_election_helpers.11 days = 30 } # PRESIDENTIAL
 				
+				### 1936 PRIMARIES ###
+				country_event = { id = united_states.2 days = 163 } # RNC
+				country_event = { id = united_states.3 days = 176 } # DNC
+				country_event = { id = united_states.6 days = 185 } # SPNC
+				
 				### 1936 ELECTION ###
 				country_event = { id = us_election.1 days = 309 }
 				
@@ -46,6 +51,11 @@ on_actions = {
 				### 1940 ELECTIONS PREP ###
 				country_event = { id = USA_election_helpers.6 days = 1491 } # SENATE
 				#country_event = { id = USA_election_helpers.11 days = 1491 } # PRESIDENTIAL
+				
+				### 1940 PRIMARIES ###
+				country_event = { id = united_states.10 days = 1363 } # RNC
+				country_event = { id = united_states.11 days = 1376 } # DNC
+				country_event = { id = united_states.12 days = 1385 } # SPNC
 				
 				### 1942 ELECTIONS PREP ###
 				country_event = { id = USA_election_helpers.1 days = 2221 } # SENATE

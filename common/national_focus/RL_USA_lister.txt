@@ -1,0 +1,15 @@
+shared_focus = {
+    id = USA_the_lister_admin
+	icon = GFX_USA_the_lister_admin
+	
+    x = 8
+	
+	cost = 2
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}

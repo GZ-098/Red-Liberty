@@ -1,0 +1,21 @@
+state={
+	id=880
+	name="STATE_880"
+	
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+		add_core_of = USA
+
+	}
+	
+	provinces={
+		702 862 891 894 3697 3824 3880 3897 6869 9820 9836 11648 11785 11799 11817 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = town
+}

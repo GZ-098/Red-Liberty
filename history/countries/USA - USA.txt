@@ -26,18 +26,6 @@ country_event = { # may day
 	id = united_states_flavor.2
 	days = 119
 }
-country_event = { # rnc
-	id = united_states.2
-	days = 163
-}
-country_event = { # dnc
-	id = united_states.3
-	days = 176
-}
-country_event = { # spa - choose veep
-	id = united_states.6
-	days = 185
-}
 
 country_event = { # 1937 recession event chain
 	id = united_states.7
