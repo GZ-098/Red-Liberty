@@ -21,6 +21,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_USA_states_gui_AL_democrat_afp_split"
+		texturefile = "gfx/interface/USA/states/USA_states_AL_democrat_afp_split.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_USA_states_gui_AR_afp"
 		texturefile = "gfx/interface/USA/states/USA_states_AR_afp.tga"
 	}
@@ -28,6 +33,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_USA_states_gui_AZ_democrat"
 		texturefile = "gfx/interface/USA/states/USA_states_AZ_democrat.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_USA_states_gui_CA_republican_socialist_split"
+		texturefile = "gfx/interface/USA/states/USA_states_CA_republican_socialist_split.tga"
 	}
 	
 	spriteType = {
@@ -46,6 +56,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_USA_states_gui_CT_republican_democrat_split"
+		texturefile = "gfx/interface/USA/states/USA_states_CT_republican_democrat_split.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_USA_states_gui_CT_republican"
 		texturefile = "gfx/interface/USA/states/USA_states_CT_republican.tga"
 	}
@@ -53,6 +68,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_USA_states_gui_DE_republican"
 		texturefile = "gfx/interface/USA/states/USA_states_DE_republican.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_USA_states_gui_DE_republican_democrat_split"
+		texturefile = "gfx/interface/USA/states/USA_states_DE_republican_democrat_split.tga"
 	}
 	
 	spriteType = {
@@ -76,6 +96,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_USA_states_gui_ID_republican_democrat_split"
+		texturefile = "gfx/interface/USA/states/USA_states_ID_republican_democrat_split.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_USA_states_gui_ID_democrat"
 		texturefile = "gfx/interface/USA/states/USA_states_ID_democrat.tga"
 	}
@@ -88,6 +113,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_USA_states_gui_IN_republican"
 		texturefile = "gfx/interface/USA/states/USA_states_IN_republican.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_USA_states_gui_IN_republican_democrat_split"
+		texturefile = "gfx/interface/USA/states/USA_states_IN_republican_democrat_split.tga"
 	}
 	
 	spriteType = {
@@ -121,8 +151,18 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_USA_states_gui_ME_republican_democrat_split"
+		texturefile = "gfx/interface/USA/states/USA_states_ME_republican_democrat_split.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_USA_states_gui_MA_republican"
 		texturefile = "gfx/interface/USA/states/USA_states_MA_republican.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_USA_states_gui_MA_republican_democrat_split"
+		texturefile = "gfx/interface/USA/states/USA_states_MA_republican_democrat_split.tga"
 	}
 	
 	spriteType = {
@@ -133,6 +173,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_USA_states_gui_MD_republican"
 		texturefile = "gfx/interface/USA/states/USA_states_MD_republican.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_USA_states_gui_MD_republican_democrat_split"
+		texturefile = "gfx/interface/USA/states/USA_states_MD_republican_democrat_split.tga"
 	}
 	
 	spriteType = {
@@ -151,8 +196,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_USA_states_gui_MS_split_afp_democrat"
-		texturefile = "gfx/interface/USA/states/USA_states_MS_split_afp_democrat.tga"
+		name = "GFX_USA_states_gui_MS_split_democrat_afp"
+		texturefile = "gfx/interface/USA/states/USA_states_MS_democrat_afp_split.tga"
 	}
 	
 	spriteType = {
@@ -181,8 +226,18 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_USA_states_gui_NV_republican_democrat_split"
+		texturefile = "gfx/interface/USA/states/USA_states_NV_republican_democrat_split.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_USA_states_gui_NV_democrat"
 		texturefile = "gfx/interface/USA/states/USA_states_NV_democrat.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_USA_states_gui_NH_republican_democrat_split"
+		texturefile = "gfx/interface/USA/states/USA_states_NH_republican_democrat_split.tga"
 	}
 	
 	spriteType = {
@@ -201,8 +256,18 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_USA_states_gui_NJ_republican_socialist_split"
+		texturefile = "gfx/interface/USA/states/USA_states_NJ_republican_socialist_split.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_USA_states_gui_NM_republican"
 		texturefile = "gfx/interface/USA/states/USA_states_NM_republican.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_USA_states_gui_NM_republican_democrat_split"
+		texturefile = "gfx/interface/USA/states/USA_states_NM_republican_democrat_split.tga"
 	}
 	
 	spriteType = {
@@ -216,6 +281,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_USA_states_gui_NY_socialist_democrat_split"
+		texturefile = "gfx/interface/USA/states/USA_states_NY_socialist_democrat_split.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_USA_states_gui_NC_republican"
 		texturefile = "gfx/interface/USA/states/USA_states_NC_republican.tga"
 	}
@@ -226,13 +296,28 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_USA_states_gui_ND_socialist"
+		texturefile = "gfx/interface/USA/states/USA_states_ND_socialist.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_USA_states_gui_ND_republican"
 		texturefile = "gfx/interface/USA/states/USA_states_ND_republican.tga"
 	}
 	
 	spriteType = {
+		name = "GFX_USA_states_gui_ND_republican_socialist_split"
+		texturefile = "gfx/interface/USA/states/USA_states_ND_republican_socialist_split.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_USA_states_gui_OH_republican"
 		texturefile = "gfx/interface/USA/states/USA_states_OH_republican.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_USA_states_gui_OH_republican_socialist_split"
+		texturefile = "gfx/interface/USA/states/USA_states_OH_republican_socialist_split.tga"
 	}
 	
 	spriteType = {
@@ -261,6 +346,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_USA_states_gui_RI_republican_democrat_split"
+		texturefile = "gfx/interface/USA/states/USA_states_RI_republican_democrat_split.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_USA_states_gui_SC_democrat"
 		texturefile = "gfx/interface/USA/states/USA_states_SC_democrat.tga"
 	}
@@ -276,6 +366,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_USA_states_gui_SD_republican_socialist_split"
+		texturefile = "gfx/interface/USA/states/USA_states_SD_republican_socialist_split.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_USA_states_gui_TN_republican"
 		texturefile = "gfx/interface/USA/states/USA_states_TN_republican.tga"
 	}
@@ -286,8 +381,18 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_USA_states_gui_TN_democrat_afp_split"
+		texturefile = "gfx/interface/USA/states/USA_states_TN_democrat_afp_split.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_USA_states_gui_TX_democrat"
 		texturefile = "gfx/interface/USA/states/USA_states_TX_democrat.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_USA_states_gui_TX_democrat_afp_split"
+		texturefile = "gfx/interface/USA/states/USA_states_TX_democrat_afp_split.tga"
 	}
 	
 	spriteType = {
@@ -298,6 +403,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_USA_states_gui_TX_split_afp_democrat"
 		texturefile = "gfx/interface/USA/states/USA_states_TX_split_afp_democrat.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_USA_states_gui_UT_republican_democrat_split"
+		texturefile = "gfx/interface/USA/states/USA_states_UT_republican_democrat_split.tga"
 	}
 	
 	spriteType = {
@@ -331,8 +441,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_USA_states_gui_WV_socialist"
-		texturefile = "gfx/interface/USA/states/USA_states_WV_socialist.tga"
+		name = "GFX_USA_states_gui_WV_socialist_democrat_split"
+		texturefile = "gfx/interface/USA/states/USA_states_WV_socialist_democrat_split.tga"
 	}
 	
 	spriteType = {

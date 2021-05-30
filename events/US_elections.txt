@@ -17,10 +17,8 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			every_owned_state = {
-				limit = { can_have_elections_in_state = yes }
-				USA_hold_presidential_election_in_state = yes
-			}
+			US_hold_presidential_election = yes
+			set_country_flag = USA_presidential_conclusion
 		}
 	}
 	
@@ -49,7 +47,6 @@ country_event = {
 			}
 		}
 		clr_country_flag = USA_presidential_elections
-		clear_election_results = yes
 		
 		country_event = { # new congress gets sworn in
 			id = us_election.3

@@ -233,7 +233,7 @@ initialize_US_elections_system = {
 		set_variable = { afp_popularity = 0.35 }
 		set_variable = { republican_popularity = 0.15 }
 		
-		set_variable = { senator_1 = 2 }
+		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 3 }
 		
 		set_variable = { electoral_votes = 11 }
@@ -339,7 +339,7 @@ initialize_US_elections_system = {
 		set_variable = { democrat_popularity = 0.4 }
 		
 		set_variable = { senator_1 = 1 }
-		set_variable = { senator_2 = 3 }
+		set_variable = { senator_2 = 1 }
 		
 		set_variable = { electoral_votes = 4 }
 	}
@@ -899,7 +899,6 @@ USA_update_presidential_election_race_in_state = {
 }
 
 USA_calculate_president_predictions = {
-
 	# socialists
 	set_variable = { socialist_president_poll_pop = socialist_election_pop }
 	set_temp_variable = { error_margin_state_socialist = 1 }
@@ -943,6 +942,52 @@ USA_calculate_president_predictions = {
 		max = 1.1
 	}
 	multiply_variable = { afp_president_poll_pop = error_margin_state_afp }
+}
+
+USA_calculate_senate_predictions = {
+	# socialists
+	set_variable = { socialist_senate_poll_pop = socialist_election_pop }
+	set_temp_variable = { error_margin_state_socialist = 1 }
+	randomize_temp_variable = {
+		var = error_margin_state_socialist
+		distribution = uniform
+		min = 0.9
+		max = 1.1
+	}
+	multiply_variable = { socialist_senate_poll_pop = error_margin_state_socialist }
+	
+	# republicans
+	set_variable = { republican_senate_poll_pop = republican_election_pop }
+	set_temp_variable = { error_margin_state_republican = 1 }
+	randomize_temp_variable = {
+		var = error_margin_state_republican
+		distribution = uniform
+		min = 0.9
+		max = 1.1
+	}
+	multiply_variable = { republican_senate_poll_pop = error_margin_state_republican }
+	
+	# democrats
+	set_variable = { democrat_senate_poll_pop = democrat_election_pop }
+	set_temp_variable = { error_margin_state_democrat = 1 }
+	randomize_temp_variable = {
+		var = error_margin_state_democrat
+		distribution = uniform
+		min = 0.9
+		max = 1.1
+	}
+	multiply_variable = { democrat_senate_poll_pop = error_margin_state_democrat }
+	
+	# afp
+	set_variable = { afp_senate_poll_pop = afp_election_pop }
+	set_temp_variable = { error_margin_state_afp = 1 }
+	randomize_temp_variable = {
+		var = error_margin_state_afp
+		distribution = uniform
+		min = 0.9
+		max = 1.1
+	}
+	multiply_variable = { afp_senate_poll_pop = error_margin_state_afp }
 }
 
 USA_hold_presidential_election_in_state = {
@@ -1011,4 +1056,20 @@ clear_election_results = {
 	set_variable = { afp_electoral_votes = 0 }
 	
 	log = "[This.GetName] : election results cleared"
+}
+
+USA_clear_presidential_election_values = {
+	clear_variable = socialist_electoral_votes
+	clear_variable = democrat_electoral_votes
+	clear_variable = republican_electoral_votes
+	clear_variable = afp_electoral_votes
+	clr_country_flag = USA_presidential_conclusion
+	clr_country_flag = USA_presidential_elections
+	clr_country_flag = currently_campaigning
+	every_owned_state = {
+		limit = { can_have_elections_in_state = yes }
+		USA_clear_senate_predictions = yes
+		clr_state_flag = voted_socialsit
+		clr_state_flag = voted_democrat
+	}
 }

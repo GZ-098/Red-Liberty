@@ -1,11 +1,11 @@
 USA_check_election_vs = {
 	if = {
-		limit = {
+		limit = { # socialists in first
 			check_variable = { socialist_popularity > republican_popularity }
 			check_variable = { socialist_popularity > democrat_popularity }
 			check_variable = { socialist_popularity > afp_popularity }
 		}
-		set_state_flag = socialist_first_place
+		#set_state_flag = socialist_first_place
 	}
 	if = {
 		limit = {
@@ -13,7 +13,7 @@ USA_check_election_vs = {
 			check_variable = { republican_popularity > democrat_popularity }
 			check_variable = { republican_popularity > afp_popularity }
 		}
-		set_state_flag = republican_second_place
+		#set_state_flag = republican_second_place
 	}
 	#log = "[This.GetName] USA_check_election_vs = yes"
 }

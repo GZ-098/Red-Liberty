@@ -4,7 +4,7 @@ state={
 	name="STATE_455"
 
 	history={
-		owner = IRQ
+		owner = SYR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -13,12 +13,12 @@ state={
 		victory_points = {
 			7151 1 
 		}
-		add_core_of = IRQ
+		add_core_of = SYR
 
 	}
 
 	provinces={
-		1 1015 1544 4017 4115 4440 4562 4574 4591 4603 7001 7151 7170 7176 8101 10089 11970 11976 
+		1 1015 1544 4017 4574 4591 7001 7151 7170 7176 10089 11970 
 	}
 	manpower=932000
 	buildings_max_level_factor=1.000

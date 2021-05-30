@@ -32,6 +32,11 @@ country_event = { # 1937 recession event chain
 	days = 510 # around the middle of may 1937
 }
 
+country_event = { # appalachian insurgency
+	id = united_states.15
+	days = 610 # around the end of the year 1937
+}
+
 set_research_slots = 4
 set_stability = 0.75
 set_war_support = 0

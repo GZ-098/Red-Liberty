@@ -4,7 +4,7 @@
 #Fire this every time you want the polls to update
 USA_recalculate_polls = {
 	if = {
-		limit = { has_country_flag = USA_senate_elections}
+		limit = { has_country_flag = USA_senate_elections }
 		every_owned_state = {
 			limit = {
 				OR = { 
@@ -12,7 +12,7 @@ USA_recalculate_polls = {
 				}	
 			}
 			log = "[This.GetName]: calculate senate poll, because senator 1 is up for election"
-			USA_update_senator_1_in_state = yes
+			#USA_update_senator_1_in_state = yes
 			USA_calculate_senate_predictions = yes
 		}
 		every_owned_state = {
@@ -20,7 +20,7 @@ USA_recalculate_polls = {
 				has_state_flag = elections_senator_2
 			}
 			log = "[This.GetName]: calculate senate poll, because senator 2 is up for election"
-			USA_update_senator_2_in_state = yes
+			#USA_update_senator_2_in_state = yes
 			USA_calculate_senate_predictions = yes
 		}
 		every_owned_state = {

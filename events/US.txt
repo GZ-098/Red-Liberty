@@ -220,7 +220,7 @@ country_event = { # 1940 dnc
 	}
 }
 
-country_event = {
+country_event = { # 1940 spa convention
 	id = united_states.12
 	title = ""
 	desc = united_states.12.desc
@@ -249,6 +249,47 @@ country_event = {
 
 	option = {
 		name = ""
+	}
+}
+
+country_event = {
+	id = united_states.14
+	title = ""
+	desc = united_states.14.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+	}
+}
+
+country_event = {
+	id = united_states.15
+	title = "Appalachian Insurgency"
+	desc = united_states.15.desc
+	
+	trigger = {
+		has_government = libertarian_socialism
+	}
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "He's Insane!"
+		853 = {
+			set_demilitarized_zone = yes
+		}
+		857 = {
+			set_demilitarized_zone = yes
+		}
+		860 = {
+			set_demilitarized_zone = yes
+		}
 	}
 }
 

@@ -7,8 +7,7 @@ state={
 	}
 
 	history={
-		owner = SYR
-		add_core_of = SYR
+		owner = IRQ
 		buildings = {
 			infrastructure = 3
 
