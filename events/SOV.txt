@@ -30,6 +30,14 @@ country_event = { # far east revolt
 				target = RUS
 				type = annex_everything
 			}
+			declare_war_on = {
+				target = NRR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = URL
+				type = annex_everything
+			}
 		}
 	}
 }

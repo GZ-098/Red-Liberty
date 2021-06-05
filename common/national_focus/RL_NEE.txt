@@ -13,4 +13,6 @@ focus_tree = {
 	}
 	default = no
 	shared_focus = NEE_abandon_ship
+	shared_focus = NEE_the_left_prevails
+	shared_focus = NEE_the_center_holds
 }

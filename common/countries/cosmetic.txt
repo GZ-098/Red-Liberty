@@ -1,7 +1,7 @@
 
 MAL_UK = {
-    color = rgb { 201 56 93 }
-    color_ui = rgb { 255 73 121 }
+    color = rgb { 171 48 48 }
+	color_ui = rgb { 255 73 121 }
 }
 
 RAJ_UK = {
@@ -385,4 +385,19 @@ KHR_PER_autonomous_state = {
 USA_military_govt = {
 	color = rgb { 50 109 168 }
 	color_ui = rgb { 50 109 168 }
+}
+
+NMB_SAF = {
+	color = rgb { 195 107 160 }
+	color_ui = rgb { 198 169 248 }
+}
+
+FRA_puppet = {
+	color = rgb { 43 86 173 }
+	color_ui = rgb { 74 147 255 }
+}
+
+ENG_puppet = {
+	color = rgb { 171 48 48 }
+	color_ui = rgb { 255 73 121 }
 }

@@ -1,72 +1,72 @@
 spritetypes = {
 	
 	SpriteType = {
-		name = "GFX_NEE_the_unlikeliest_champion_focus"
+		name = "GFX_NEE_the_unlikeliest_champion"
 		texturefile = "gfx/interface/goals/NEE/unlikely_champion.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_freedom_for_all_focus"
+		name = "GFX_NEE_freedom_for_all"
 		texturefile = "gfx/interface/goals/NEE/freedom_for_all.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_bread_and_roses_focus"
+		name = "GFX_NEE_bread_and_roses"
 		texturefile = "gfx/interface/goals/NEE/bread_and_roses.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_the_worker_unchained_focus"
+		name = "GFX_NEE_the_worker_unchained"
 		texturefile = "gfx/interface/goals/NEE/the_worker_unchained.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_wobbly_shops_focus"
+		name = "GFX_NEE_wobbly_shops"
 		texturefile = "gfx/interface/goals/NEE/wobbly_shops.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_insistent_eccentricity_focus"
+		name = "GFX_NEE_insistent_eccentricity"
 		texturefile = "gfx/interface/goals/NEE/insistent_eccentricity.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_obsessive_desegregation_focus"
+		name = "GFX_NEE_obsessive_desegregation"
 		texturefile = "gfx/interface/goals/NEE/obsessive_desegregation.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_the_closet_focus"
+		name = "GFX_NEE_the_closet"
 		texturefile = "gfx/interface/goals/NEE/the_closet.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_state_cosmicism_focus"
+		name = "GFX_NEE_state_cosmicism"
 		texturefile = "gfx/interface/goals/NEE/state_cosmicism.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_the_cosmic_league_focus"
+		name = "GFX_NEE_the_cosmic_league"
 		texturefile = "gfx/interface/goals/NEE/the_cosmic_league_alt.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_crack_down_on_puritanism_focus"
+		name = "GFX_NEE_crack_down_on_puritanism"
 		texturefile = "gfx/interface/goals/NEE/crack_down_on_puritanism.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_uncaring_not_unkind_focus"
+		name = "GFX_NEE_uncaring_not_unkind"
 		texturefile = "gfx/interface/goals/NEE/uncaring_not_unkind.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_death_of_the_author_focus"
+		name = "GFX_NEE_death_of_the_author"
 		texturefile = "gfx/interface/goals/NEE/death_of_the_author.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_even_death_may_die_focus"
+		name = "GFX_NEE_even_death_may_die"
 		texturefile = "gfx/interface/goals/NEE/even_death_may_die.png"
 	}
 }

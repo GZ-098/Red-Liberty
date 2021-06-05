@@ -1,7 +1,7 @@
 spritetypes = {
 	
 	SpriteType = {
-		name = "GFX_NEE_the_unlikeliest_champion_focus_shine"
+		name = "GFX_NEE_the_unlikeliest_champion_shine"
 		texturefile = "gfx/interface/goals/NEE/unlikely_champion.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -33,7 +33,7 @@ spritetypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_freedom_for_all_focus_shine"
+		name = "GFX_NEE_freedom_for_all_shine"
 		texturefile = "gfx/interface/goals/NEE/freedom_for_all.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -65,7 +65,7 @@ spritetypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_bread_and_roses_focus_shine"
+		name = "GFX_NEE_bread_and_roses_shine"
 		texturefile = "gfx/interface/goals/NEE/bread_and_roses.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -97,7 +97,7 @@ spritetypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_the_worker_unchained_focus_shine"
+		name = "GFX_NEE_the_worker_unchained_shine"
 		texturefile = "gfx/interface/goals/NEE/the_worker_unchained.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -129,7 +129,7 @@ spritetypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_wobbly_shops_focus_shine"
+		name = "GFX_NEE_wobbly_shops_shine"
 		texturefile = "gfx/interface/goals/NEE/wobbly_shops.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -161,7 +161,7 @@ spritetypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_insistent_eccentricity_focus_shine"
+		name = "GFX_NEE_insistent_eccentricity_shine"
 		texturefile = "gfx/interface/goals/NEE/insistent_eccentricity.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -193,7 +193,7 @@ spritetypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_obsessive_desegregation_focus_shine"
+		name = "GFX_NEE_obsessive_desegregation_shine"
 		texturefile = "gfx/interface/goals/NEE/obsessive_desegregation.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -225,7 +225,7 @@ spritetypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_the_closet_focus_shine"
+		name = "GFX_NEE_the_closet_shine"
 		texturefile = "gfx/interface/goals/NEE/the_closet.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -257,7 +257,7 @@ spritetypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_state_cosmicism_focus_shine"
+		name = "GFX_NEE_state_cosmicism_shine"
 		texturefile = "gfx/interface/goals/NEE/state_cosmicism.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -289,7 +289,7 @@ spritetypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_the_cosmic_league_focus_shine"
+		name = "GFX_NEE_the_cosmic_league_shine"
 		texturefile = "gfx/interface/goals/NEE/the_cosmic_league_alt.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -321,7 +321,7 @@ spritetypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_crack_down_on_puritanism_focus_shine"
+		name = "GFX_NEE_crack_down_on_puritanism_shine"
 		texturefile = "gfx/interface/goals/NEE/crack_down_on_puritanism.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -353,7 +353,7 @@ spritetypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_uncaring_not_unkind_focus_shine"
+		name = "GFX_NEE_uncaring_not_unkind_shine"
 		texturefile = "gfx/interface/goals/NEE/uncaring_not_unkind.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -385,7 +385,7 @@ spritetypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_death_of_the_author_focus_shine"
+		name = "GFX_NEE_death_of_the_author_shine"
 		texturefile = "gfx/interface/goals/NEE/death_of_the_author.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -417,7 +417,7 @@ spritetypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_NEE_even_death_may_die_focus_shine"
+		name = "GFX_NEE_even_death_may_die_shine"
 		texturefile = "gfx/interface/goals/NEE/even_death_may_die.png"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

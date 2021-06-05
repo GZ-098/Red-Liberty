@@ -126,6 +126,20 @@ create_country_leader = {
 }
 
 create_field_marshal = {
+	name = "Duan Qirui"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Duan_Qirui.tga"
+	traits = {
+		career_officer
+		politically_connected
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
 	name = "Duan Zhigui"
 	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Duan_Zhigui.tga"
 	traits = {

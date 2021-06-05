@@ -116,7 +116,7 @@ country_event = { # new congress gets sworn in
 
 country_event = { # house of reps votes
 	id = us_election.4
-	title = "The Vote"
+	title = "House of Representatives votes on the Presidency"
 	desc = us_election.4.desc
 
 	is_triggered_only = yes
@@ -177,6 +177,40 @@ news_event = { # thomas inaug news event
 	
 	option = {
 		name = us_election.6.a
+		trigger = {
+			OR = {
+				has_government = revolutionary_autocracy
+				has_government = proletarian_dictatorship
+				has_government = libertarian_socialism
+			}
+		}
+	}
+	
+	option = {
+		name = us_election.6.b
+		trigger = {
+			OR = {
+				has_government = progressive_liberalism
+				has_government = market_libertarianism
+				has_government = national_conservatism
+				has_government = authoritarian_republicanism
+			}
+		}
+	}
+	
+	option = {
+		name = us_election.6.c
+		trigger = {
+			NOT = {
+				has_government = revolutionary_autocracy
+				has_government = proletarian_dictatorship
+				has_government = libertarian_socialism
+				has_government = progressive_liberalism
+				has_government = market_libertarianism
+				has_government = national_conservatism
+				has_government = authoritarian_republicanism
+			}
+		}
 	}
 }
 
@@ -399,7 +433,7 @@ country_event = { #Prep for Class III election
 	id = USA_election_helpers.6
  	title = USA_election_helpers.6.t
  	desc = USA_election_helpers.6.desc
-	picture = GFX_report_event_USA_congress_2
+	#picture = GFX_report_event_USA_congress_2
 
 	immediate = {
  		hidden_effect = {
@@ -431,7 +465,7 @@ country_event = { #Hold Class III election
 	id = USA_election_helpers.7
  	title = USA_election_helpers.7.t
  	desc = USA_election_helpers.7.desc
-	picture = GFX_report_event_whitehouse_color
+	#picture = GFX_report_event_whitehouse_color
 
 	immediate = {
  		hidden_effect = { country_event = { id = USA_election_helpers.8 days = 30 } }
@@ -450,9 +484,9 @@ country_event = { #Hold Class III election
 
 country_event = { #Clear variables after seeing conclusion
 	id = USA_election_helpers.8
- 	title = USA_election_helpers.8.t
+ 	title = "Election Season Ends"
  	desc = USA_election_helpers.8.desc
-	picture = GFX_report_event_us_congress
+	#picture = GFX_report_event_us_congress
 	immediate = {
  		hidden_effect = {
  			USA_clear_senate_election_vars = yes
@@ -465,7 +499,7 @@ country_event = { #Clear variables after seeing conclusion
 	is_triggered_only = yes
 
  	option = {
- 		name = "Back to normal."
+ 		name = "Until next time!"
  		custom_effect_tooltip = USA_senate_elections_remove_tt
  	}
 }

@@ -1,0 +1,105 @@
+shared_focus = {
+    id = NEE_abandon_ship
+	
+    x = 2
+	
+	cost = 3
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_the_council_of_new_england
+	
+    x = 0
+	y = 1
+	
+	cost = 3
+	relative_position_id = NEE_abandon_ship
+	prerequisite = { focus = NEE_abandon_ship }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_conscription
+	
+    x = -1
+	y = 1
+	
+	cost = 3
+	relative_position_id = NEE_the_council_of_new_england
+	prerequisite = { focus = NEE_the_council_of_new_england }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_war_economy
+	
+    x = 1
+	y = 1
+	
+	cost = 3
+	relative_position_id = NEE_the_council_of_new_england
+	prerequisite = { focus = NEE_the_council_of_new_england }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_the_problems_start
+	
+    x = 1
+	y = 1
+	
+	cost = 3
+	relative_position_id = NEE_conscription
+	prerequisite = { focus = NEE_conscription }
+	prerequisite = { focus = NEE_war_economy }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = NEE_act_normal
+	
+    x = 0
+	y = 1
+	
+	cost = 3
+	relative_position_id = NEE_the_problems_start
+	prerequisite = { focus = NEE_the_problems_start }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}

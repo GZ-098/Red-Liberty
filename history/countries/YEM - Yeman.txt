@@ -9,68 +9,34 @@ set_technology = {
 set_war_support = 0.1
 set_stability = 0.8
 set_convoys = 5
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "YEM_1939"
-	set_technology = {
-		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
 
 set_politics = {
-	ruling_party = revolutionary_socialism
-	last_election = "1932.11.8"
+	ruling_party = martial_despotism
+	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 0
+	social_democracy = 0
+	progressive_liberalism = 0
+	market_libertarianism = 0
+	national_conservatism = 0
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 0
+	martial_despotism = 100
+	ultranational_statism = 0
 }
 
 create_country_leader = {
 	name = "Imam Yahya"
-	desc = "POLITICS_IMAM_YAHYA_DESC"
-	picture = "GFX_portrait_yemen_imam_yahya"
+	desc = ""
+	picture = ""
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = martial_despotism_subtype
 	traits = {
 		#
 	}

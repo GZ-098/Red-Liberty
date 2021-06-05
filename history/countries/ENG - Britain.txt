@@ -181,6 +181,7 @@ if = {
 	}
 }
 
+puppet = IRQ
 
 if = {
 	limit = { has_dlc = "Together for Victory" }

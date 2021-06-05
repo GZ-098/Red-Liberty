@@ -20,7 +20,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = martial_despotism
+	ruling_party = national_conservatism
 	last_election = "1936.1.1"
 	election_frequency = 0
 	elections_allowed = no
@@ -34,9 +34,9 @@ set_popularities = {
 	social_democracy = 25
 	progressive_liberalism = 25
 	market_libertarianism = 10
-	national_conservatism = 15
+	national_conservatism = 20
 	reactionary_theocracy = 0
-	authoritarian_republicanism = 20
+	authoritarian_republicanism = 15
 	martial_despotism = 3
 	ultranational_statism = 0
 } 
@@ -51,7 +51,7 @@ create_country_leader = {
 	#desc = ""
 	picture = "Portait_BEL_Albert_I.tga"
 	expire = "1965.1.1"
-	ideology = martial_despotism_subtype
+	ideology = national_conservatism_subtype
 	traits = {
 		#
 	}

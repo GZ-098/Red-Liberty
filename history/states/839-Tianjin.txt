@@ -4,14 +4,14 @@ state={
 	name="STATE_839"
 
 	history={
-		owner = ZHI
+		owner = CHI
+		add_core_of = ZHI
+		add_core_of = CHI
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
 
 		}
-		add_core_of = ZHI
-
 	}
 
 	provinces={
