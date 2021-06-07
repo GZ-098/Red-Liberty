@@ -469,7 +469,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_coalition_building_with_the_fascists
-		icon = GFX_goal_unknown
+		icon = ITA_coalition_building_with_the_fascists
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_bring_back_christian_values
@@ -494,7 +494,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_restrict_the_blackshirts
-		icon = GFX_goal_unknown
+		icon = ITA_restrict_the_blackshirts
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_coalition_building_with_the_fascists
@@ -516,7 +516,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_reduce_the_influence_of_the_grand_council_of_fascism
-		icon = GFX_goal_unknown
+		icon = ITA_reduce_the_influence_of_the_grand_council_of_fascism
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_coalition_building_with_the_fascists
@@ -656,7 +656,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_rebuild_lost_socialist_parties
-		icon = GFX_goal_unknown
+		icon = ITA_rebuild_lost_socialist_parties
 		cost = 5
 		prerequisite = {
 			focus = ITA_returning_to_the_workers
@@ -679,7 +679,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_disband_the_grand_council_of_fascism
-		icon = GFX_goal_unknown
+		icon = ITA_disband_the_grand_council_of_fascism
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_rebuild_lost_socialist_parties
@@ -719,7 +719,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_the_aftermath_of_fascism
-		icon = GFX_goal_unknown
+		icon = ITA_the_aftermath_of_fascism
 		cost = 5.00
 		available = {
 			IF = {
@@ -748,7 +748,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_encourage_worker_unions
-		icon = GFX_goal_unknown
+		icon = ITA_encourage_worker_unions
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_the_aftermath_of_fascism
@@ -1464,7 +1464,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_bust_unions
-		icon = GFX_goal_unknown
+		icon = ITA_bust_unions
 		cost = 5.00
 		prerequisite = {
 			focus = ITA_the_aftermath_of_fascism
@@ -1488,7 +1488,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_improve_italian_industry
-		icon = GFX_goal_unknown
+		icon = ITA_improve_italian_industry
 		cost = 7.00
 		prerequisite = {
 			focus = ITA_bust_unions
@@ -1865,7 +1865,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_help_titos_efforts
-		icon = GFX_goal_unknown
+		icon = ITA_help_titos_efforts
 		cost = 5
 		prerequisite = {
 			focus = ITA_spread_to_the_balkans
