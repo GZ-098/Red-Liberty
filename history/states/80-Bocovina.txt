@@ -9,9 +9,7 @@ state={
 		}
 		owner = AHE
 		buildings = {
-			infrastructure = 6
-			arms_factory = 1
-
+			infrastructure = 4
 		}
 		add_core_of = AHE
 		add_claim_by = ROM

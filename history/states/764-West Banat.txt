@@ -8,9 +8,10 @@ state={
 	history={
 		owner = AHE
 		buildings = {
-			infrastructure = 6
+			infrastructure = 5
 		}
 		add_core_of = SER
+		add_core_of = AHE
 	}
 
 	provinces={
