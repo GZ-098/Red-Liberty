@@ -1,0 +1,159 @@
+shared_focus = {
+    id = WGR_proclaim_republic
+	icon = GFX_WGR_proclaim_republic
+	
+    x = 8
+	y = 0
+	
+	cost = 2
+    completion_reward = {
+        set_cosmetic_tag = WGR_peoples_republic
+		swap_ideas = {
+			add_idea = WGR_disorganized_revolt_1
+			remove_idea = WGR_disorganized_revolt
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = WGR_republican_army
+	icon = GFX_WGR_republican_army
+	
+    x = 0
+	y = 1
+	
+	cost = 2
+	relative_position_id = WGR_proclaim_republic
+	prerequisite = { focus = WGR_proclaim_republic }
+    completion_reward = {
+        swap_ideas = {
+			add_idea = WGR_disorganized_revolt_2
+			remove_idea = WGR_disorganized_revolt_1
+		}
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = WGR_raid_arsenals
+	icon = GFX_WGR_raid_arsenals
+	
+    x = -1
+	y = 1
+	
+	cost = 4
+	relative_position_id = WGR_republican_army
+	prerequisite = { focus = WGR_republican_army }
+    completion_reward = {
+        add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = GER
+		}
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = WGR_recruitment
+	
+    x = 1
+	y = 1
+	
+	cost = 4
+	relative_position_id = WGR_republican_army
+	prerequisite = { focus = WGR_republican_army }
+    completion_reward = {
+        add_manpower = 2500
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = WGR_fight_for_future
+	
+    x = -1
+	y = 1
+	
+	cost = 4
+	relative_position_id = WGR_raid_arsenals
+	prerequisite = { focus = WGR_raid_arsenals }
+    completion_reward = {
+        add_war_support = 0.075
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = WGR_chain_of_command
+	
+    x = 1
+	y = 1
+	
+	cost = 4
+	relative_position_id = WGR_raid_arsenals
+	prerequisite = { focus = WGR_raid_arsenals }
+	prerequisite = { focus = WGR_recruitment }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = WGR_maintain_discipline
+	
+    x = 1
+	y = 1
+	
+	cost = 4
+	relative_position_id = WGR_recruitment
+	prerequisite = { focus = WGR_recruitment }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = WGR_to_end_war
+	
+    x = 2
+	y = 1
+	
+	available = {
+		NOT = {
+			GER = {
+				exists = yes
+			}
+		}
+	}
+	
+	cost = 4
+	relative_position_id = WGR_fight_for_future
+	prerequisite = { focus = WGR_fight_for_future }
+	prerequisite = { focus = WGR_chain_of_command }
+	prerequisite = { focus = WGR_maintain_discipline }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}

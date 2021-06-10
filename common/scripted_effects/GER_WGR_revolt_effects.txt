@@ -1,0 +1,48 @@
+WGR_start_revolt = {
+	hidden_effect = {
+		WGR = {	
+			add_state_core = 42
+			add_state_core = 51
+			add_state_core = 878
+			
+			transfer_state = 42
+			transfer_state = 51
+			transfer_state = 878
+			
+			set_province_controller = 495
+			set_province_controller = 549
+			set_province_controller = 3398
+			set_province_controller = 9503
+			
+			inherit_technology = GER
+		}
+		
+		GER = {
+			transfer_units_fraction= {
+				target = WGR
+				size = 0.25
+				stockpile_ratio = 0.35
+				army_ratio = 0.2
+				navy_ratio = 0
+				air_ratio = 0.2
+				keep_unit_leaders_trigger = {
+					skill > 0
+				}
+			}
+			
+			dismantle_faction = yes
+			end_puppet = POL
+			end_puppet = LIT
+			
+			set_province_controller = 3488
+			set_province_controller = 3547
+			set_province_controller = 9522
+			set_province_controller = 11494
+			
+			declare_war_on = {
+				target = WGR
+				type = annex_everything
+			}
+		}
+	}
+}

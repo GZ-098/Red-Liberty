@@ -1,0 +1,19 @@
+spritetypes = {
+	
+	### INTRO TREE ###
+	
+	SpriteType = {
+		name = "GFX_WGR_proclaim_republic"
+		texturefile = "gfx/interface/goals/WGR/WGR_peoples_republic.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_WGR_republican_army"
+		texturefile = "gfx/interface/goals/WGR/WGR_army.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_WGR_raid_arsenals"
+		texturefile = "gfx/interface/goals/WGR/WGR_raid_shadow_legends.png"
+	}
+}

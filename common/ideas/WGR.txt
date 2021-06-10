@@ -1,0 +1,81 @@
+ideas = {
+	
+	country = {
+	
+       	WGR_disorganized_revolt = {
+			removal_cost = -1 
+			
+			allowed = {
+				tag = WGR
+			}
+			
+			available = {
+				
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				conscription_factor = 0.15
+				consumer_goods_factor = -0.05
+				conversion_cost_civ_to_mil_factor = -0.15
+				army_attack_factor = 0.05
+				army_defence_factor = -0.1
+				army_morale_factor = 0.2
+				army_org_factor = -0.15
+			}
+		}
+		
+		WGR_disorganized_revolt_1 = {
+			removal_cost = -1 
+			
+			allowed = {
+				tag = WGR
+			}
+			
+			available = {
+				
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				conscription_factor = 0.15
+				consumer_goods_factor = -0.05
+				conversion_cost_civ_to_mil_factor = -0.15
+				army_attack_factor = 0.05
+				army_defence_factor = -0.05
+				army_morale_factor = 0.2
+				army_org_factor = -0.1
+			}
+		}
+		
+		WGR_disorganized_revolt_2 = {
+			removal_cost = -1 
+			
+			allowed = {
+				tag = WGR
+			}
+			
+			available = {
+				
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				conscription_factor = 0.15
+				consumer_goods_factor = -0.05
+				conversion_cost_civ_to_mil_factor = -0.15
+				army_attack_factor = 0.05
+				army_morale_factor = 0.1
+			}
+		}
+	}
+}

@@ -129,8 +129,24 @@ create_field_marshal = {
 	name = "Duan Qirui"
 	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Duan_Qirui.tga"
 	traits = {
+		anhui_officer
 		career_officer
 		politically_connected
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Feng Yuxiang"
+	#portrait_path = ""
+	traits = {
+		zhili_officer
+		infantry_leader
+		aggressive_assaulter
 	}
 	skill = 3
 	attack_skill = 3
@@ -143,12 +159,27 @@ create_corps_commander = {
 	name = "Duan Zhigui"
 	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Duan_Zhigui.tga"
 	traits = {
+		anhui_officer
 		career_officer
-		politically_connected
 	}
 	skill = 2
-	attack_skill = 3
-	defense_skill = 3
+	attack_skill = 2
+	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Xu Shuzheng"
+	portrait_path = "gfx/leaders/CHI/Portrait_CHI_Xu_Shuzheng.tga"
+	traits = {
+		anhui_officer
+		politically_connected
+		career_officer
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2	
 }

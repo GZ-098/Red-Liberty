@@ -1,5 +1,16 @@
 ﻿capital = 64
 
+set_research_slots = 4
+set_convoys = 50
+set_stability = 0.7
+
+load_focus_tree = WGR_initial_tree
+
+set_country_flag = proletarian_coalition
+set_country_flag = libertarian_socialism_coalition
+set_country_flag = social_democracy_coalition
+set_country_flag = progressive_coalition
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -65,221 +76,30 @@ if = {
 	}
 }
 
-
-
-
-
-set_research_slots = 4
-set_convoys = 50
-set_stability = 0.7
-
-1939.1.1 = {
-
-	add_political_power = 1197
+add_ideas = {
+	WGR_disorganized_revolt
 	
-
-	#BUILDINGS
-	
-
-	set_technology = {
-		improved_light_tank = 1 
-		basic_medium_tank = 1 
-		CAS2 = 1
-		heavy_fighter1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		improved_infantry_weapons = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		paratroopers = 1
-		basic_heavy_cruiser = 1
-		improved_heavy_cruiser = 1
-		basic_battleship = 1
-		improved_battleship = 1
-
-		#doctrines
-		delay = 1
-		elastic_defence = 1
-		armored_spearhead = 1
-		schwerpunk = 1
-		blitzkrieg = 1
-		convoy_interdiction_ti = 1
-		unrestricted_submarine_warfare = 1
-		raider_patrols = 1
-		#air
-		formation_flying = 1		
-		dive_bombing = 1
-		direct_ground_support = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		decimetric_radar = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		construction4 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-		dispersed_industry4 = 1
-
-	}
+	partial_economic_mobilization
+	closed_economy
 }
 
 set_politics = {
-	ruling_party = conservatism
-	last_election = "1936.1.1"
+	ruling_party = libertarian_socialism
+	last_election = "1932.11.8"
 	election_frequency = 48
-	elections_allowed = yes
-
+	elections_allowed = no
 }
 set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
-}
-
-
-add_ideas = {
-}
-
-create_country_leader = {
-	name = "Klaus Klauser"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Konrad Adenauer"
-	desc = "POLITICS_KONRAD_ADENAUER_DESC"
-	picture = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
-#
-#create_country_leader = {
-#	name = "William Trieck"
-#	desc = "POLITICS_WILHELM_PIECK_DESC"
-#	picture = "Portrait_Germany_Wilhelm_Pieck.dds"
-#	expire = "1965.1.1"
-#	ideology = stalinism
-#	traits = {
-#	}
-#}
-
-#create_country_leader = {
-#	name = "Otto Wels"
-#	desc = "POLITICS_OTTO_WELS_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1939.1.16"
-#	ideology = socialism
-#	traits = {
-#		exiled
-#		union_man
-#	}
-#}
-#
-#create_country_leader = {
-#	name = "Ernst Thälmann"
-#	desc = "POLITICS_ERNST_THALMANN_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1956.1.1"
-#	ideology = stalinism
-#	traits = {
-#		assassination_survivor
-#		stalins_puppet
-#		political_prisoner
-#	}
-#}
-
-
-### Ship Variants ###
-## 1936 Start ##
-# Light Cruisers #
-create_equipment_variant = {
-	name = "Königsberg Class"
-	type = light_cruiser_1
-	parent_version = 0
-	upgrades = {
-		ship_reliability_upgrade = 2
-		ship_engine_upgrade = 2
-		ship_gun_upgrade = 2
-		ship_anti_air_upgrade = 2
-	}
-	obsolete = yes
-}
-# Heavy Cruisers #
-create_equipment_variant = {
-	name = "Deutschland Class"
-	type = heavy_cruiser_1
-	parent_version = 0
-	upgrades = {
-		ship_reliability_upgrade = 1
-		ship_engine_upgrade = 1
-		ship_armor_upgrade = 1
-		ship_gun_upgrade = 2
-	}
-}
-
-## 1939 Start ##
-1939.1.1 = {
-	# Submarines #
-	create_equipment_variant = {
-		name = "Type VIIA"
-		type = submarine_2
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 1
-			sub_engine_upgrade = 1
-			sub_stealth_upgrade = 1
-			sub_torpedo_upgrade = 1
-		}
-	}
-	# Destroyer #
-	create_equipment_variant = {
-		name = "Zerstörer 1936"
-		type = destroyer_2
-		parent_version = 0
-		upgrades = {
-			ship_torpedo_upgrade = 2
-			destroyer_engine_upgrade = 2
-			ship_ASW_upgrade = 2
-			ship_anti_air_upgrade = 2
-		}
-	}
-	# Heavy Cruisers #
-	#create_equipment_variant = {
-	#	name = "Deutschland Class"
-	#	type = heavy_cruiser_1
-	#	parent_version = 0
-	#	upgrades = {
-	#		ship_reliability_upgrade = 1
-	#		ship_engine_upgrade = 1
-	#		ship_armor_upgrade = 1
-	#		ship_gun_upgrade = 2
-	#	}
-	#	obsolete = yes
-	#}
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 15
+	libertarian_socialism = 17
+	social_democracy = 38
+	progressive_liberalism = 15
+	market_libertarianism = 10
+	national_conservatism = 5
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 0
+	martial_despotism = 0
+	ultranational_statism = 0
 }

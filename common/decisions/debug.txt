@@ -5,7 +5,7 @@ debug_category = {
 		icon = generic_political_discourse
 		
 		avaliable = {
-			tag = USA
+			
 		}
 		
 		visible = {
@@ -33,6 +33,7 @@ debug_category = {
 		
 		visible = {
 			is_debug = yes
+			tag = USA
 		}
 		
 		cost = 0
@@ -59,6 +60,7 @@ debug_category = {
 		
 		visible = {
 			is_debug = yes
+			tag = USA
 		}
 		
 		cost = 0
@@ -85,6 +87,7 @@ debug_category = {
 		
 		visible = {
 			is_debug = yes
+			tag = USA
 		}
 		
 		cost = 0
@@ -95,6 +98,34 @@ debug_category = {
 		
 		complete_effect = {
 			set_country_flag = USA_silver_legion_enabled
+		}
+	}
+	
+	debug_start_wgr_revolt = {
+	
+		icon = generic_political_discourse
+		
+		avaliable = {
+			tag = GER
+		}
+		
+		visible = {
+			is_debug = yes
+			tag = GER
+			#NOT = {
+			#	has_country_flag = WGR_revolt_started
+			#}
+		}
+		
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+		
+		complete_effect = {
+			set_country_flag = WGR_revolt_started
+			WGR_start_revolt = yes
 		}
 	}
 }

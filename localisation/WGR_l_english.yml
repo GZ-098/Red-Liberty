@@ -1,0 +1,23 @@
+﻿l_english:
+ WGR:0 "Worker's and Soldier's Revolt"
+ WGR_DEF:0 "the Worker's and Soldier's Revolt"
+ WGR_ADJ:0 "German"
+ 
+ WGR_peoples_republic:0 "People's Republic of Germany"
+ WGR_peoples_republic_DEF:0 "the People's Republic of Germany"
+ WGR_peoples_republic_ADJ:0 "German"
+ 
+ WGR_disorganized_revolt:0 "Disorganized Revolt"
+ WGR_disorganized_revolt_1:0 "Disorganized Revolt"
+ WGR_disorganized_revolt_2:0 "Organized Revolt"
+ 
+ WGR_proclaim_republic:0 "Proclaim the People's Republic"
+ WGR_republican_army:0 "A Republican Army"
+ WGR_raid_arsenals:0 "Raid Imperial Arsenals"
+ WGR_recruitment:0 "Expand Recruitment"
+ WGR_fight_for_future:0 "Fight for the Future"
+ WGR_chain_of_command:0 "Chain of Command"
+ WGR_maintain_discipline:0 "Maintain Discipline"
+ WGR_to_end_war:0 "To End War"
+ 
+ 

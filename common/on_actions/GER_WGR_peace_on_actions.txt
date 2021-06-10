@@ -1,0 +1,61 @@
+on_actions = {
+
+	on_capitulation = {
+		
+		effect = {
+		
+			set_global_flag = skip_default_capitulation
+			
+			if = {
+				limit = {
+					ROOT = { # loser
+						original_tag = WGR
+					}
+					FROM = { # winner
+						tag = GER
+					}
+				}
+				GER = { # event for winning
+					annex_country = {
+						target = WGR
+					}
+					#country_event = {
+					#
+					#}
+					every_owned_state = {
+						limit = {
+							has_core_of = WGR
+						}
+						remove_core_of = WGR
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					ROOT = { # loser
+						original_tag = GER
+					}
+					FROM = { # winner
+						tag = WGR
+					}
+				}
+				WGR = {
+					annex_country = {
+						target = GER
+					}
+					every_owned_state = {
+						limit = {
+							has_core_of = GER
+						}
+						remove_core_of = GER
+						add_core_of = WGR
+					}
+				}
+			}
+			
+			clr_global_flag = skip_default_capitulation
+			
+		}
+	}
+}

@@ -478,8 +478,8 @@ PAK = {
 	color_ui = rgb { 21 38 66 }
 }
 WGR = {
-    color = rgb { 195 236 230 } # The colors are set to be more are less what we are used to
-    color_ui = rgb { 225 255 255 }
+    color = rgb { 194 111 97 }
+    color_ui = rgb { 195 236 230 }
 }
 DDR = {
     color = rgb { 120 150 80 }

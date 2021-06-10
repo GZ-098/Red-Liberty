@@ -6,13 +6,7 @@ set_fuel_ratio = 0.8
 
 puppet = POL 
 
-puppet = LIT 
-
-puppet = FLA
-puppet = WLA
-
-set_country_flag = social_democracy_coalition
-set_country_flag = progressive_coalition
+puppet = LIT
 
 # Starting tech
 set_technology = {
