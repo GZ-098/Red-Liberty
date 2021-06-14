@@ -2,6 +2,44 @@ add_namespace = france
 add_namespace = france_far_right
 
 country_event = {
+	id = france.1
+	title = "The Germans aren't watching"
+	desc = france.1.desc
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		WGR = {
+			exists = yes
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+		start_border_war = {
+			change_state_after_war = yes
+			attacker = {
+				state = 17
+				num_provinces = 4
+				#on_win = japan_border_conflict.2
+				#on_lose = japan_border_conflict.3
+				#on_cancel = japan_border_conflict.4
+			}
+			
+			defender = {
+				state = 28
+				num_provinces = 4
+				#on_win = japan_border_conflict.3
+				#on_lose = japan_border_conflict.2
+				#on_cancel = japan_border_conflict.4
+			}
+		}
+	}
+}
+
+country_event = {
 	id = france_far_right.1
 	title = "The Regency"
 	desc = france_far_right.1.desc

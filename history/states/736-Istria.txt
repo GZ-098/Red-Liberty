@@ -7,25 +7,23 @@ state={
 		victory_points = {
 			6626 1 
 		}
-		owner = ITA
-		add_core_of = ITA
-		add_claim_by = AHE
+		owner = AHE
+		add_core_of = AHE
+		add_claim_by = ITA
 		buildings = {
 			infrastructure = 5
 			6626 = {
 				naval_base = 5
-			}
-			11735 = {
-				naval_base = 3
+
 			}
 		}
 
 	}
 
 	provinces={
-		6626 11735 
+		599 6626 11595 13234 
 	}
-	manpower=1063159
+	manpower=1053159
 	buildings_max_level_factor=1.000
 	state_category=city
 }

@@ -1,34 +1,9 @@
 ideas = {
 	
-	country = { 
-       	the_loss_of_a_generation3 = {
-			removal_cost = -1 
-			
-			picture = GER_the_loss_of_a_generation3
-			
-			allowed = {
-				tag = GER
-			} 
-			available = {
-			}
-			
-			allowed_civil_war = { 
-				always = yes
-			}
-			
-			modifier = {
-				conscription_factor = -0.05
-				production_factory_max_efficiency_factor = -0.15 
-				conversion_cost_civ_to_mil_factor = 0.15
-				production_speed_industrial_complex_factor = -0.5
-				production_speed_arms_factory_factor = -0.5
-			}
-		}
+	country = {
 		
-    	the_loss_of_a_generation2 = {
+		GER_the_loss_of_a_generation = {
 			removal_cost = -1 
-			
-			picture = GER_the_loss_of_a_generation2
 			
 			allowed = {
 				tag = GER
@@ -42,31 +17,7 @@ ideas = {
 			}
 			
 			modifier = {
-				conscription_factor = -0.1
-				production_factory_max_efficiency_factor = -0.25 
-				conversion_cost_civ_to_mil_factor = 0.25 
-				production_speed_industrial_complex_factor = -0.15
-				production_speed_arms_factory_factor = -0.15
-			}
-		}  
-		
-		the_loss_of_a_generation = {
-			removal_cost = -1 
-			
-			picture = GER_the_loss_of_a_generation
-			
-			allowed = {
-				tag = GER
-			}  
-
-			available = {
-			}
-			
-			allowed_civil_war = { 
-				always = yes
-			}
-			
-			modifier = {
+				conscription = -0.01
 				conscription_factor = -0.2
 				production_factory_max_efficiency_factor = -0.3 
 				conversion_cost_civ_to_mil_factor = 0.3 
@@ -75,10 +26,8 @@ ideas = {
 			}
 		}   
 
-		faith_in_the_kaiser = {
-			removal_cost = -1 
-			
-			picture = GER_faith_in_the_kaiser 
+		GER_faith_in_the_kaiser = {
+			removal_cost = -1
 			
 			allowed_civil_war = {
 				always = yes	
@@ -92,73 +41,69 @@ ideas = {
 				political_power_gain = 0.1
 			}
 		}    
-		
-	   new_imperial_economic_plan = { 
-		
-		removal_cost = -1 
-		
-		picture = new_imperial_economic_plan
-		
-		allowed_civil_war = {	 
-			always = yes	
-		}	
-		
-		allowed = {
-			tag = GER
-		}
-			
-		modifier = {
-			consumer_goods_factor = -0.05 
-			production_speed_industrial_complex_factor = 0.10 
-			production_speed_arms_factory_factor = 0.05 
-			production_factory_efficiency_gain_factor = 0.10
-		}
-	  }
 
-	   unpaid_war_expenses2 = { 
-		
-		removal_cost = -1 
-		
-		picture = GER_unpaid_war_expenses2
-		
-		allowed_civil_war = {	 
-			always = yes	
-		}	
-		
-		allowed = {
-			tag = GER
-		}
+		GER_unpaid_war_expenses = {
+			removal_cost = -1
 			
-		modifier = {
-			consumer_goods_factor = 0.09 
-			min_export = 0.04
-			production_speed_arms_factory_factor = -0.09
-		}
-	  }
-
-	   unpaid_war_expenses = { 
-		
-		removal_cost = -1 
-		
-		picture = GER_unpaid_war_expenses  
-		
-		allowed_civil_war = {	 
-			always = yes	
-		}	
-		
-		allowed = {
-			tag = GER
-		}
+			allowed_civil_war = {	 
+				always = yes	
+			}	
 			
-		modifier = {
-			consumer_goods_factor = 0.10  
-			min_export = 0.05 
-			production_speed_arms_factory_factor = -0.10
+			allowed = {
+				tag = GER
+			}
+				
+			modifier = {
+				consumer_goods_factor = 0.15
+				min_export = 0.05
+				production_speed_arms_factory_factor = -0.25
+			}
 		}
-	  }
-   ideas = {
+		
+		GER_paramilitary_violence = {
+			removal_cost = -1
+			
+			allowed_civil_war = {	 
+				always = yes	
+			}	
+			
+			allowed = {
+				tag = GER
+			}
+				
+			modifier = {
+				stability_factor = -0.1
+				conscription_factor = -0.05
+			}
+		}
+	}
+	
+    ideas = {
 
 	country = {
+	
+		new_imperial_economic_plan = { 
+			
+			removal_cost = -1 
+			
+			picture = new_imperial_economic_plan
+			
+			allowed_civil_war = {	 
+				always = yes	
+			}	
+			
+			allowed = {
+				tag = GER
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.05 
+				production_speed_industrial_complex_factor = 0.10 
+				production_speed_arms_factory_factor = 0.05 
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+	
 		department_of_propoganda = {
 			
 			
@@ -210,37 +155,11 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-			     resistance_damage_to_garrison = -0.1
-				 stability_factor = -0.05
-				 root_out_resistance_effectiveness_factor = 0.15
+			    resistance_damage_to_garrison = -0.1
+				stability_factor = -0.05
+				root_out_resistance_effectiveness_factor = 0.15
 				consumer_goods_factor = 0.02
 			}
-			
 		}
 	}
-
-       
-
-
-	#Military
-	army_chief = {
-	}
-	navy_chief = {
-	}
-	air_chief = {
-	}
-	high_command = {
-	}
-	#Manufacturers
-	tank_manufacturer = {
-	}
-	naval_manufacturer = {
-	}
-	aircraft_manufacturer = {
-	}
-	materiel_manufacturer = {
-	}
-	theorist = {
-	}
-}
 }

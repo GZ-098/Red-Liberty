@@ -4,9 +4,12 @@ oob = "GER_1936"
 
 set_fuel_ratio = 0.8 
 
-puppet = POL 
-
+puppet = POL
 puppet = LIT
+
+set_country_flag = conservative_coalition
+set_country_flag = despotist_coalition
+set_country_flag = ultranationalist_coalition
 
 # Starting tech
 set_technology = {
@@ -146,31 +149,19 @@ add_to_faction = GEO
 #add_to_faction = LAT
 #add_to_faction = EST
 
-add_ideas = {  
-	unpaid_war_expenses
-	faith_in_the_kaiser
-	the_loss_of_a_generation
+add_ideas = {
+	GER_the_loss_of_a_generation
+	GER_unpaid_war_expenses
+	GER_paramilitary_violence
 	
 	limited_exports
-	volunteer_only
-	partial_economic_mobilisation
-}
-
-create_country_leader = {
-	name = "Kaiser Wilhelm II"
-	desc = "POLITICS_WILHELM_II_DESC"
-	picture = "gfx/leaders/willy2.png"
-	expire = "1965.1.1"
-	ideology = martial_despotism_subtype
-	traits = {
-		popular_figurehead
-	}
+	limited_conscription
 }
 
 create_country_leader = {
 	name = "Joseph Goebbels"
 	desc = ""
-	picture = "gfx/leaders/GER/Portrait_GER_Joseph_Goebbels.png"
+	picture = "gfx/leaders/GER/Portrait_GER_Joseph_Goebbels.tga"
 	expire = "1965.1.1"
 	ideology = ultranational_statism_subtype
 	traits = {

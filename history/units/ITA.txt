@@ -236,7 +236,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		} #  "2° Reggimento 'Piemonte Cavalleria'" 
-		location = 6626 
+		location = 9613
 		division_template = "Reggimento di Cavalleria" 
 		start_experience_factor = 0.2 
 		start_equipment_factor = 0.7 
