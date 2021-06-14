@@ -10,6 +10,16 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_report_event_lovecraft"
+		texturefile = "gfx/event_gfx/USA/report_event_lovecraft.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_lovecraft_alt"
+		texturefile = "gfx/event_gfx/USA/report_event_lovecraft_alt.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_report_event_unemployment_2"
 		texturefile = "gfx/event_gfx/USA/report_event_unemployment_2.tga"
 	}

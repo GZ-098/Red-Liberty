@@ -26,6 +26,10 @@ country_event = { # may day
 	id = united_states_flavor.2
 	days = 119
 }
+country_event = { # howie boy endorses thomas
+	id = united_states_flavor.3
+	days = 156
+}
 
 country_event = { # 1937 recession event chain
 	id = united_states.7

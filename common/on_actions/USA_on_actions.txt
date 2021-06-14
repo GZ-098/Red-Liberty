@@ -38,9 +38,9 @@ on_actions = {
 				country_event = { id = USA_election_helpers.11 days = 30 } # PRESIDENTIAL
 				
 				### 1936 PRIMARIES ###
+				country_event = { id = united_states.6 days = 150 } # SPNC
 				country_event = { id = united_states.2 days = 163 } # RNC
 				country_event = { id = united_states.3 days = 176 } # DNC
-				country_event = { id = united_states.6 days = 185 } # SPNC
 				
 				### 1936 ELECTION ###
 				country_event = { id = us_election.1 days = 309 }
