@@ -1,6 +1,62 @@
 spritetypes = {
 
-
+	SpriteType = {
+		name = "ITA_a_greater_italy"
+		texturefile = "gfx/interface/goals/ITA/ITA_a_greater_italy.dds"
+	}
+	SpriteType = {
+		name = "ITA_trigger_a_rebellion"
+		texturefile = "gfx/interface/goals/ITA/ITA_trigger_a_rebellion.dds"
+	}
+	SpriteType = {
+		name = "ITA_prepare_defenses_on_the_german_border"
+		texturefile = "gfx/interface/goals/ITA/ITA_prepare_defenses_on_the_german_border.dds"
+	}
+	SpriteType = {
+		name = "ITA_boost_socialist_popularity_in_serbia"
+		texturefile = "gfx/interface/goals/ITA/ITA_boost_socialist_popularity_in_serbia.dds"
+	}
+	SpriteType = {
+		name = "ITA_destabalize_france"
+		texturefile = "gfx/interface/goals/ITA/ITA_destabalize_france.dds"
+	}
+	SpriteType = {
+		name = "ITA_increase_military_spending"
+		texturefile = "gfx/interface/goals/ITA/ITA_increase_military_spending.dds"
+	}
+	SpriteType = {
+		name = "ITA_invite_austria"
+		texturefile = "gfx/interface/goals/ITA/ITA_invite_austria.dds"
+	}
+	SpriteType = {
+		name = "ITA_border_skirmush_on_the_border"
+		texturefile = "gfx/interface/goals/ITA/ITA_border_skirmush_on_the_border.dds"
+	}
+	SpriteType = {
+		name = "ITA_send_arms_to_the_communists"
+		texturefile = "gfx/interface/goals/ITA/ITA_send_arms_to_the_communists.dds"
+	}
+	SpriteType = {
+		name = "ITA_prepare_for_the_liberation_of_europe"
+		texturefile = "gfx/interface/goals/ITA/ITA_prepare_for_the_liberation_of_europe.dds"
+	}
+	SpriteType = {
+		name = "ITA_send_diplomatic_missions_to_the_nordic_countries"
+		texturefile = "gfx/interface/goals/ITA/ITA_send_diplomatic_missions_to_the_nordic_countries.dds"
+	}
+	SpriteType = {
+		name = "ITA_expand_membership_in_u_d_s_d"
+		texturefile = "gfx/interface/goals/ITA/ITA_expand_membership_in_u_d_s_d.dds"
+	}
+	#############################################
+	SpriteType = {
+		name = "ITA_begin_to_weaken_fascism"
+		texturefile = "gfx/interface/goals/ITA/ITA_begin_to_weaken_fascism.dds"
+	}
+	SpriteType = {
+		name = "ITA_hold_the_election"
+		texturefile = "gfx/interface/goals/ITA/ITA_hold_the_election.dds"
+	}
 	SpriteType = {
 		name = "ITA_bust_unions"
 		texturefile = "gfx/interface/goals/ITA/ITA_bust_unions.dds"
@@ -105,10 +161,6 @@ spritetypes = {
 	SpriteType = {
 		name = "GFX_ITA_bring_back_christian_values"
 		texturefile = "gfx/interface/goals/ITA/ITA_bring_back_christian_values.dds"
-	}
-	SpriteType = {
-		name = "ITA_begin_to_weaken_fascism"
-		texturefile = "gfx/interface/goals/ITA/ITA_begin_to_weaken_fascism.dds"
 	}
 	SpriteType = {
 		name = "GFX_ITA_increase_the_influence_of_classical_liberal_values"
