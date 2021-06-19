@@ -1069,7 +1069,7 @@ USA_clear_presidential_election_values = {
 	every_owned_state = {
 		limit = { can_have_elections_in_state = yes }
 		USA_clear_senate_predictions = yes
-		clr_state_flag = voted_socialsit
+		clr_state_flag = voted_socialist
 		clr_state_flag = voted_democrat
 	}
 }

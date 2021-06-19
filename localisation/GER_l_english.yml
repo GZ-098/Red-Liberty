@@ -3,6 +3,8 @@
  GER_DEF:0 "German Empire"
  GER_ADJ:0 "German"
  
+ autonomy_occupied:0 "Occupied Puppet"
+ 
  central_powers:0 "Central Powers"
  
  GER_insurrectionary_anarchism_party:0 "--"

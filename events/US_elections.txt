@@ -56,6 +56,9 @@ country_event = {
 			id = us_election.4
 			days = 57
 		}
+		country_event = {
+			id = us_election.9
+		}
 		
 		set_country_flag = USA_1936_election_shitshow
 	}
@@ -76,6 +79,9 @@ country_event = {
 			id = us_election.5
 			days = 109
 		}
+		country_event = {
+			id = us_election.6
+		}
 		
 		set_country_flag = USA_1936_election_socialist_victory
 	}
@@ -95,6 +101,9 @@ country_event = {
 		country_event = { # lister inaug
 			id = us_election.7
 			days = 109
+		}
+		country_event = {
+			id = us_election.8
 		}
 		
 		set_country_flag = USA_1936_election_democrat_victory
@@ -132,6 +141,9 @@ country_event = { # house of reps votes
 			id = us_election.5
 			days = 52
 		}
+		country_event = {
+			id = us_election.6
+		}
 		set_country_flag = USA_thomas_elected
 	}
 	
@@ -145,6 +157,9 @@ country_event = { # house of reps votes
 		country_event = {
 			id = us_election.7
 			days = 52
+		}
+		country_event = {
+			id = us_election.8
 		}
 	}
 }
@@ -160,16 +175,14 @@ country_event = { # thomas inaug day
 	option = { # 
 		name = us_election.5.a
 		load_focus_tree = USA_thomas_tree
-		country_event = {
-			id = us_election.6
-		}
 	}
 }
 
-news_event = { # thomas inaug news event
+news_event = { # thomas election news event
 	id = us_election.6
 	title = "President Thomas Re-elected!"
 	desc = us_election.6.desc
+	picture = GFX_report_event_usa_election_thomas_victory
 
 	is_triggered_only = yes
 	
@@ -223,16 +236,13 @@ country_event = { # lister inaug day
 	
 	option = { # 
 		name = us_election.7.a
-		load_focus_tree = USA_lister_tree
-		country_event = {
-			id = us_election.8
-		}
+		USA_lister_pres_setup = yes
 	}
 }
 
-news_event = { # lister inaug news event
+news_event = { # lister election news event
 	id = us_election.8
-	title = ""
+	title = "Joseph Lister Hill Elected President!"
 	desc = us_election.8.desc
 
 	is_triggered_only = yes
@@ -241,6 +251,20 @@ news_event = { # lister inaug news event
 	
 	option = {
 		name = us_election.8.a
+	}
+}
+
+news_event = { # deadlocked EC news event
+	id = us_election.9
+	title = "Deadlock in the United States!"
+	desc = us_election.9.desc
+
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = "Worrisome."
 	}
 }
 
@@ -493,6 +517,8 @@ country_event = { #Clear variables after seeing conclusion
 			clr_country_flag = USA_campaigning_democrat
 			clr_country_flag = USA_campaigning_socialist
 			clr_country_flag = currently_campaigning
+			
+			USA_clear_presidential_election_values = yes
  		}
 	}
 

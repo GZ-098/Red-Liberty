@@ -1,0 +1,18 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				PER = {
+					give_resource_rights = { receiver = ENG state = 412 }
+					give_resource_rights = { receiver = ENG state = 413 }
+				}
+				ROM = {
+					give_resource_rights = { receiver = GER state = 46 }
+				}
+			}
+		}
+	}
+}

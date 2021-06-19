@@ -562,7 +562,7 @@
  STATE_561:0 "Amur"
  STATE_562:0 "Okhotsk"
  STATE_563:0 "Chita"
- STATE_564:0 "Ulan Ude"
+ STATE_564:0 "Verkhneudinsk"
  STATE_565:0 "Bodaybo"
  STATE_566:0 "Irkutsk"
  STATE_567:0 "Bratsk"
@@ -883,4 +883,7 @@
  STATE_882:0 "Pola"
  STATE_883:0 "Puglia"
  STATE_884:0 "Marche"
+ STATE_885:0 "Szeklerland"
+ STATE_886:0 "Krajina"
+ STATE_887:0 "Herzegovina"
  

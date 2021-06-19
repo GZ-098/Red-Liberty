@@ -75,6 +75,17 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Engelbert Dollfuß"
+	desc = ""
+	picture = "Portrait_AHE_Engelbert_Dolfuss.tga"
+	expire = "1965.1.1"
+	ideology = ultranational_statism_subtype
+	traits = {
+		#
+	}
+}
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	

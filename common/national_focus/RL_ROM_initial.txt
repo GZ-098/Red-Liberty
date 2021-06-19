@@ -1,0 +1,352 @@
+shared_focus = {
+    id = ROM_build_up_economy
+	icon = GFX_ROM_build_up_economy
+	
+    x = 5
+	y = 0
+	
+	cost = 5
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = ROM_focus_heavy_industry
+	icon = GFX_ROM_focus_heavy_industry
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = ROM_build_up_economy
+	prerequisite = { focus = ROM_build_up_economy }
+    completion_reward = {
+        random_owned_state = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = ROM_focus_on_agriculture
+	icon = GFX_ROM_focus_on_agriculture
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = ROM_build_up_economy
+	prerequisite = { focus = ROM_build_up_economy }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = ROM_invest_in_malaxa
+	icon = GFX_ROM_invest_in_malaxa
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = ROM_focus_heavy_industry
+	prerequisite = { focus = ROM_focus_heavy_industry }
+	prerequisite = { focus = ROM_focus_on_agriculture }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = ROM_invest_in_machine_tools
+	icon = GFX_ROM_invest_in_machine_tools
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = ROM_invest_in_malaxa
+	prerequisite = { focus = ROM_invest_in_malaxa }
+    completion_reward = {
+        add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = industry
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = ROM_build_up_cetatea_port
+	icon = GFX_ROM_build_up_cetatea_port
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = ROM_invest_in_malaxa
+	prerequisite = { focus = ROM_invest_in_malaxa }
+    completion_reward = {
+        766 = {
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				instant_build = yes
+				province = 6727
+			}
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = ROM_iasi_industrial_park
+	icon = GFX_ROM_iasi_industrial_park
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = ROM_invest_in_machine_tools
+	prerequisite = { focus = ROM_invest_in_machine_tools }
+	prerequisite = { focus = ROM_build_up_cetatea_port }
+    completion_reward = {
+        79 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = ROM_cheating_the_treaty
+	icon = GFX_ROM_cheating_the_treaty
+	
+    x = 11
+	y = 0
+	
+	cost = 5
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = ROM_away_from_prying_eyes
+	icon = GFX_ROM_away_from_prying_eyes
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = ROM_cheating_the_treaty
+	prerequisite = { focus = ROM_cheating_the_treaty }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = ROM_rapid_conversion_plans
+	icon = GFX_ROM_rapid_conversion_plans
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = ROM_cheating_the_treaty
+	prerequisite = { focus = ROM_cheating_the_treaty }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = ROM_invest_in_malaxa_military
+	icon = GFX_ROM_invest_in_malaxa_military
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = ROM_away_from_prying_eyes
+	prerequisite = { focus = ROM_away_from_prying_eyes }
+	prerequisite = { focus = ROM_rapid_conversion_plans }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = ROM_indigenous_armor
+	icon = GFX_ROM_indigenous_armor
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = ROM_invest_in_malaxa_military
+	prerequisite = { focus = ROM_invest_in_malaxa_military }
+    completion_reward = {
+        add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = armor
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = ROM_build_air_force
+	icon = GFX_ROM_build_air_force
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = ROM_invest_in_malaxa_military
+	prerequisite = { focus = ROM_invest_in_malaxa_military }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = ROM_enlarge_reserves
+	icon = GFX_ROM_enlarge_reserves
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = ROM_indigenous_armor
+	prerequisite = { focus = ROM_indigenous_armor }
+	prerequisite = { focus = ROM_build_air_force }
+    completion_reward = {
+        add_manpower = 10000
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = ROM_true_to_promise
+	icon = GFX_ROM_true_to_promise
+	
+    x = 2
+	y = 1
+	
+	cost = 5
+	relative_position_id = ROM_iasi_industrial_park
+	prerequisite = { focus = ROM_iasi_industrial_park }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = ROM_true_to_belief
+	icon = GFX_ROM_true_to_belief
+	
+    x = -2
+	y = 1
+	
+	cost = 5
+	relative_position_id = ROM_enlarge_reserves
+	prerequisite = { focus = ROM_enlarge_reserves }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = ROM_was_it_enough
+	icon = GFX_ROM_was_it_enough
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = ROM_true_to_promise
+	prerequisite = { focus = ROM_true_to_promise }
+	prerequisite = { focus = ROM_true_to_belief }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}

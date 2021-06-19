@@ -3,13 +3,17 @@ state={
 	id=79
 	name="STATE_79"
 
+	resources={
+		steel = 5
+	}
+
 	history={
 		owner = ROM
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 1
+			industrial_complex = 3
+			arms_factory = 2
 			air_base = 2
-
 		}
 		victory_points = {
 			9716 1 
@@ -26,5 +30,5 @@ state={
 	}
 	manpower=2806400
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category = city
 }

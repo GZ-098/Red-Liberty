@@ -1,0 +1,169 @@
+AHE_setup_WUK = {
+	hidden_effect = {
+		WUK = {
+			add_state_core = 89
+			add_state_core = 91
+			
+			AHE = {
+				every_owned_state = {
+					limit = { is_core_of = WUK }
+					
+					remove_core_of = AHE
+					
+					WUK = { transfer_state = PREV }
+					teleport_armies = {
+						limit = { tag = AHE }
+						to_state_array = owned_controlled_states
+					}
+				}
+			}
+			
+			load_oob = WUK_danubian_war
+		}
+	}
+}
+
+AHE_setup_CZE = {
+	hidden_effect = {
+		CZE = {
+			add_state_core = 9
+			add_state_core = 70
+			add_state_core = 71
+			add_state_core = 75
+			add_state_core = 664
+			
+			AHE = {
+				every_owned_state = {
+					limit = { is_core_of = CZE }
+					
+					remove_core_of = AHE
+					
+					CZE = { transfer_state = PREV }
+					teleport_armies = {
+						limit = { tag = AHE }
+						to_state_array = owned_controlled_states
+					}
+				}
+			}
+			
+			load_oob = CZE_danubian_war
+		}
+	}
+}
+
+AHE_setup_CRO = {
+	hidden_effect = {
+		CRO = {
+			add_state_core = 103
+			add_state_core = 109
+			add_state_core = 163
+			add_state_core = 798
+			add_state_core = 102
+			add_state_core = 887
+			
+			add_state_core = 104
+			add_state_core = 886
+			
+			AHE = {
+				every_owned_state = {
+					limit = { is_core_of = CRO }
+					
+					remove_core_of = AHE
+					
+					CRO = { transfer_state = PREV }
+					teleport_armies = {
+						limit = { tag = AHE }
+						to_state_array = owned_controlled_states
+					}
+				}
+			}
+			
+			load_oob = CRO_danubian_war
+		}
+	}
+}
+
+AHE_setup_BNT = {
+	hidden_effect = {
+		BNT = {
+			add_state_core = 82
+			add_state_core = 764
+			
+			AHE = {
+				every_owned_state = {
+					limit = { is_core_of = BNT }
+					
+					remove_core_of = AHE
+					
+					BNT = { transfer_state = PREV }
+					teleport_armies = {
+						limit = { tag = AHE }
+						to_state_array = owned_controlled_states
+					}
+				}
+			}
+			
+			load_oob = BNT_danubian_war
+		}
+	}
+}
+
+AHE_setup_HUN = {
+	hidden_effect = {
+		HUN = {
+			add_state_core = 43
+			add_state_core = 45
+			add_state_core = 73
+			add_state_core = 76
+			add_state_core = 83
+			add_state_core = 84
+			add_state_core = 154
+			add_state_core = 155
+			add_state_core = 885
+			
+			AHE = {
+				every_owned_state = {
+					limit = { is_core_of = HUN }
+					
+					remove_core_of = AHE
+					
+					HUN = { transfer_state = PREV }
+					teleport_armies = {
+						limit = { tag = AHE }
+						to_state_array = owned_controlled_states
+					}
+				}
+			}
+			
+			load_oob = HUN_danubian_war
+		}
+	}
+}
+
+AHE_setup_MNT = {
+	hidden_effect = {
+		MNT = {
+			add_state_core = 105
+			
+			AHE = {
+				every_owned_state = {
+					limit = { is_core_of = MNT }
+					
+					remove_core_of = AHE
+					
+					MNT = { transfer_state = PREV }
+					teleport_armies = {
+						limit = { tag = AHE }
+						to_state_array = owned_controlled_states
+					}
+				}
+			}
+			
+			load_oob = MNT_danubian_war
+		}
+		
+		SER = {
+			puppet = MNT
+		}
+	}
+}

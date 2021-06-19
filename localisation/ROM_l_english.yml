@@ -1,0 +1,48 @@
+﻿l_english:
+ ROM:0 "Kingdom of Romania"
+ ROM_DEF:0 "the Kingdom of Romania"
+ ROM_ADJ:0 "Romanian"
+ 
+ ROM_insurrectionary_anarchism_party:0 "--"
+ ROM_revolutionary_autocracy_party:0 "--"
+ ROM_proletarian_dictatorship_party:0 "--"
+ ROM_libertarian_socialism_party:0 "--"
+ ROM_social_democracy_party:0 "PRT"
+ ROM_social_democracy_party_long:0 "Partidul Radical-Tărănesc"
+ ROM_progressive_liberalism_party:0 "PNL"
+ ROM_progressive_liberalism_party_long:0 "Partidul National Liberal"
+ ROM_market_libertarianism_party:0 "PNL"
+ ROM_market_libertarianism_party_long:0 "Partidul National Liberal"
+ ROM_national_conservatism_party:0 "PNT"
+ ROM_national_conservatism_party_long:0 "Partidul National Tărănesc"
+ ROM_reactionary_theocracy_party:0 "--"
+ ROM_authoritarian_republicanism_party:0 "--"
+ ROM_martial_despotism_party:0 "PNC"
+ ROM_martial_despotism_party_long:0 "Partidul National Crestin"
+ ROM_ultranational_statism_party:0 "TpT"
+ ROM_ultranational_statism_party_long:0 "Totul pentru Tară"
+ 
+ ROM_german_dominance:0 "German Dominance"
+ ROM_treaty_of_bucharest:0 "Treaty of Bucharest"
+ 
+ ROM_build_up_economy:0 "Building up the Economy"
+ ROM_focus_heavy_industry:0 "Focus on Heavy Industry"
+ ROM_focus_on_agriculture:0 "Focus on Agriculture"
+ ROM_invest_in_malaxa:0 "Invest in MALAXA"
+ ROM_invest_in_machine_tools:0 "Invest in New Machine Tools"
+ ROM_build_up_cetatea_port:0 "Build up the Cetatea Port"
+ ROM_iasi_industrial_park:0 "Develop the Iasi Industrial Park"
+ 
+ ROM_cheating_the_treaty:0 "Cheating the Treaty"
+ ROM_away_from_prying_eyes:0 "Away From Prying Eyes"
+ ROM_rapid_conversion_plans:0 "Rapid Conversion Plans"
+ ROM_invest_in_malaxa_military:0 ""Invest" in MALAXA"
+ ROM_indigenous_armor:0 "Indigenous Armor"
+ ROM_build_air_force:0 "Building an Air Force"
+ ROM_enlarge_reserves:0 "Enlarge the Reserves"
+ 
+ ROM_true_to_promise:0 "True to Our Promises"
+ ROM_true_to_belief:0 "True to our Beliefs"
+ ROM_was_it_enough:0 "Was it Enough?"
+ 
+ 

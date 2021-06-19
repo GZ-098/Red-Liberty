@@ -1,0 +1,16 @@
+danubian_wars_category = {
+
+	icon = usa_congress
+	
+	allowed = {
+		OR = {
+			tag = ROM
+			tag = SER
+			tag = ITA
+		}
+	}
+	
+	visible = {
+		always = yes
+	}
+}

@@ -1,20 +1,23 @@
+
 state={
 	id=72
 	name="STATE_72"
-	manpower = 152000
-	
-	state_category = rural
-	
+
 	history={
 		owner = AHE
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1
+
 		}
 		add_core_of = AHE
+
 	}
 
 	provinces={
-		9551 9567 
+		13205 13236 
 	}
+	manpower=152000
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

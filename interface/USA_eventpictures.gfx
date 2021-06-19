@@ -27,5 +27,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_usa_election_generic"
 		texturefile = "gfx/event_gfx/USA/report_event_usa_election_generic.dds"
-	}  
+	}
+	
+	### news events ###
+	
+	spriteType = {
+		name = "GFX_report_event_usa_election_thomas_victory"
+		texturefile = "gfx/news_event_gfx/USA/news_event_USA_thomas.dds"
+	}
 }

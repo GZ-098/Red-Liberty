@@ -1,0 +1,19 @@
+state={
+	id=886
+	name="STATE_886"
+	
+	history={
+		owner = AHE
+		add_core_of = AHE
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	
+	provinces={
+		3985 6614 6619 6957 6983 9586 9588 9922 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

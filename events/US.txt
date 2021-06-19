@@ -185,20 +185,28 @@ country_event = {
 		set_country_flag = USA_1937_recession
 		worsen_great_depression = yes
 		mark_focus_tree_layout_dirty = yes
+		
+		hidden_effect = {
+			country_event = {
+				id = united_states.10
+			}
+		}
 	}
 }
 
-country_event = {
+news_event = { # recession world event
 	id = united_states.10
-	title = ""
+	title = "United States Enters Recession!"
 	desc = united_states.10.desc
 	
 	is_triggered_only = yes
 	
 	fire_only_once = yes
+	
+	major = yes
 
 	option = {
-		name = ""
+		name = "All that hard work..."
 	}
 }
 

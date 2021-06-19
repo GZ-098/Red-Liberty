@@ -228,6 +228,9 @@ FLA = "countries/Flanders.txt"
 WLA = "countries/Wallonia.txt"
 WUK = "countries/West Ukraine.txt"
 KRA = "countries/Krakow.txt"
+TRS = "countries/Transylvania.txt"
+BNT = "countries/Banat.txt"
+BUK = "countries/Bukovina.txt"
 
 ### Africa ###
 BEA = "countries/British East Africa.txt"

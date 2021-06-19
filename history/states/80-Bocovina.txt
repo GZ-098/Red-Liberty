@@ -12,7 +12,6 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = AHE
-		add_claim_by = ROM
 	}
 
 	provinces={

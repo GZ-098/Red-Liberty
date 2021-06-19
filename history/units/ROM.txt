@@ -14,32 +14,8 @@ division_template = {
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 	}
-	#support = {
-		#recon = { x = 0 y = 0 }		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
-		#engineer = { x = 0 y = 1 }		# (semi-mot) Engineer bn
-		#artillery = { x = 0 y = 0 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
-	#}
-}
-
-division_template = {
-	name = "Divizie Infanterie II"			# Rifle Division Art
-	division_names_group = ROM_INF_01
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
 	support = {
-		#recon = { x = 0 y = 0 }		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and #they seem rather OP. Could revisit if balance changes
-		#engineer = { x = 0 y = 1 }		# (semi-mot) Engineer bn
-		artillery = { x = 0 y = 0 }		# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+		artillery = { x = 0 y = 0 }
 	}
 }
 
@@ -54,28 +30,6 @@ division_template = {
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
 		cavalry = { x = 1 y = 2 }
-	}
-	#support = {
-		#light_armor = { x = 0 y = 0 }	# Tank "rgt" of 64 light tanks, 28 ACs - (removed)
-		#artillery = { x = 0 y = 0 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
-	#}
-}
-division_template = {
-	name = "Divizie Cavalerie II"	# Kavaleriyskaya Diviziya fire support
-	division_names_group = ROM_CAV_01
-
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
-	}
-
-	support = {
-		#	light_armor = { x = 0 y = 0 }	# Tank "rgt" of 64 light tanks, 28 ACs - (removed)
-		artillery = { x = 0 y = 0 }		# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
 	}
 }
 
@@ -108,19 +62,6 @@ division_template = {
 	priority = 2
 }
 
-division_template = {
-	name = "Armored-Division"
-	division_names_group = ROM_ARM_01
-	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		light_armor = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-	}
-}
-
 ##### OOB #####
 units = {
 	division = {
@@ -132,33 +73,6 @@ units = {
 		division_template = "Divizie Infanterie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 7
-		}
-		location = 6652
-		division_template = "Divizie Infanterie II"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Brigada I Mixta"
-		location = 6706
-		division_template = "Divizie Infanterie II"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 3636
-		division_template = "Divizie Cavalerie II"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -187,30 +101,10 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 3707
-		division_template = "Divizie Infanterie II"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
 			name_order = 3
 		}
 		location = 6727
 		division_template = "Divizie Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 9617
-		division_template = "Divizie Infanterie II"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -229,7 +123,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 674
+		location = 6652
 		division_template = "Divizie Infanterie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
@@ -239,7 +133,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 674
+		location = 6652
 		division_template = "Divizie Vanatori de Munte"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0

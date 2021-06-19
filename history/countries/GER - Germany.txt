@@ -4,8 +4,31 @@ oob = "GER_1936"
 
 set_fuel_ratio = 0.8 
 
-puppet = POL
-puppet = LIT
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = POL
+		autonomous_state = autonomy_occupied
+	}
+	set_autonomy = {
+		target = LIT
+		autonomous_state = autonomy_occupied
+	}
+	set_autonomy = {
+		target = ROM
+		autonomous_state = autonomy_occupied
+	}
+	else = {
+		puppet = POL
+		puppet = LIT
+		puppet = ROM
+	}
+}
 
 set_country_flag = conservative_coalition
 set_country_flag = despotist_coalition
@@ -146,8 +169,9 @@ add_to_faction = GER
 add_to_faction = BLR
 add_to_faction = UKR
 add_to_faction = GEO
-#add_to_faction = LAT
-#add_to_faction = EST
+add_to_faction = LAT
+add_to_faction = EST
+remove_from_faction = ROM
 
 add_ideas = {
 	GER_the_loss_of_a_generation

@@ -1,28 +1,119 @@
-add_namespace = aus_hun
-add_namespace = aus_hun_flavor
-add_namespace = danubian_war
-add_namespace = danubian_war_interventions
-add_namespace = danubian_war_news
+add_namespace = AHE_collapse
 
-country_event = { # intro event
-	id = aus_hun.1
+country_event = { dolfuss' coup
+	id = AHE_collapse.1
+	title = "Fatherland Front Coup!"
+	desc = AHE_collapse.1.desc
+	
+	trigger = {
+		has_stability < 0.25
+	}
+
+	fire_only_once = yes 
+
+	option = {
+		name = ""
+		set_politics = {
+			ruling_party = ultranational_statism
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		
+		end_puppet = SER
+		
+		clear_all_coalitions = yes
+		set_country_flag = market_libertarian_coalition
+		set_country_flag = despotist_coalition
+		set_country_flag = ultranationalist_coalition
+	}
+}
+
+country_event = { # west ukrainian secession
+	id = AHE_collapse.2
 	title = ""
-	desc = aus_hun.1.desc
+	desc = AHE_collapse.2.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			AHE_setup_WUK = yes
+		}
+	}
+
+	option = {
+		name = ""
+	} 
+}
+
+country_event = { # czechoslovak secession
+	id = AHE_collapse.3
+	title = ""
+	desc = AHE_collapse.3.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+	
+	immediate = {
+		hidden_effect = {
+			AHE_setup_CZE = yes
+		}
+	}
+
+	option = {
+		name = ""
+	} 
+}
+
+country_event = {
+	id = AHE_collapse.4
+	title = ""
+	desc = AHE_collapse.4.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			AHE_setup_CRO = yes
+		}
+	}
+
+	option = {
+		name = ""
+	} 
+}
+
+country_event = {
+	id = AHE_collapse.5
+	title = ""
+	desc = AHE_collapse.5.desc
 
 	is_triggered_only = yes
 
 	fire_only_once = yes 
 
 	option = {
-		ai_chance = { factor = 1 }
 		name = ""
+		POL = {
+			transfer_state = 88
+			
+			all_owned_state = {
+				remove_core_of = AHE
+			}
+		}
 	} 
 }
 
-country_event = { # danubian wars start
-	id = danubian_war.1
+country_event = {
+	id = AHE_collapse.6
 	title = ""
-	desc = danubian_war.1.desc
+	desc = AHE_collapse.6.desc
 
 	is_triggered_only = yes
 
@@ -30,63 +121,39 @@ country_event = { # danubian wars start
 	
 	immediate = {
 		hidden_effect = {
-			HUN = {
-				transfer_state = 83 
-				transfer_state = 84 
-				transfer_state = 76 
-				transfer_state = 82 
-				transfer_state = 764 
-				transfer_state = 45 
-				transfer_state = 155 
-				transfer_state = 154 
-				transfer_state = 43 
-				transfer_state = 664 
-				transfer_state = 70 
-				transfer_state = 71 
-				transfer_state = 73
-				
-				load_oob = HSR_danubian_war
-				
-				country_event = {
-					id = danubian_war.2
-					days = 1
-				}
-			}
-			set_global_flag = danubian_war_start
+			AHE_setup_BNT = yes
 		}
 	}
 
 	option = {
-		ai_chance = { factor = 1 }
 		name = ""
-		country_event = {
-			id = danubian_war_news.1
-			days = 2
-		}
 	} 
 }
 
-news_event = {
-	id = danubian_war_news.1
-	title = "Austria Hungary Collapses"
-	desc = danubian_war_news.1.desc
+country_event = {
+	id = AHE_collapse.7
+	title = ""
+	desc = AHE_collapse.7.desc
 
 	is_triggered_only = yes
 
-	fire_only_once = yes
+	fire_only_once = yes 
 	
-	major = yes
+	immediate = {
+		hidden_effect = {
+			AHE_setup_HUN = yes
+		}
+	}
 
 	option = {
-		ai_chance = { factor = 1 }
-		name = "Charlemagne’s thread is finally severed."
+		name = ""
 	} 
 }
 
-country_event = { # danubian wars start
-	id = danubian_war.2
+country_event = {
+	id = AHE_collapse.8
 	title = ""
-	desc = danubian_war.2.desc
+	desc = AHE_collapse.8.desc
 
 	is_triggered_only = yes
 
@@ -94,340 +161,68 @@ country_event = { # danubian wars start
 	
 	immediate = {
 		hidden_effect = {
-			HSR = {
-				transfer_state = 45
-				transfer_state = 764 
-				transfer_state = 82 
-				transfer_state = 83 
-				transfer_state = 84 
-				transfer_state = 76 
-				transfer_state = 154
-				
-				load_oob = HSR_danubian_war
-			}
-			
-			every_state = {
-				limit = {
-					is_core_of = HUN
-					NOT = { is_claimed_by = HUN }
-				}
-				add_core_of = HSR
-			}
-			
-			HUN = {
-				declare_war_on = {
-					target = HSR
-					type = annex_everything
-				}
-			}
+			AHE_setup_MNT = yes
 		}
 	}
 
 	option = {
-		ai_chance = { factor = 1 }
 		name = ""
+	}
+}
+
+country_event = {
+	id = AHE_collapse.9
+	title = ""
+	desc = AHE_collapse.9.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+	option = {
+		TRS = {
+			transfer_state = 76
+			transfer_state = 83
+			transfer_state = 84
+		}
+	}
+}
+
+country_event = {
+	id = AHE_collapse.10
+	title = ""
+	desc = AHE_collapse.10.desc
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+	option = {
 		AHE = {
-			country_event = {
-				id = danubian_war.3
-				days = 3
-			}
-		}
-	} 
-}
-
-country_event = { # austria invades hungary
-	id = danubian_war.3
-	title = ""
-	desc = danubian_war.3.desc
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-	
-	immediate = {
-		hidden_effect = {
-			AHE = {
-				end_puppet = UKR
-				leave_faction = yes
-				end_puppet = SER
-				end_puppet = ROM
-			}
-			
-			ROM = {
-				country_event = {
-					id = danubian_war_interventions.1
-					days = 3
-				}
-			}
-			
-			SER = {
-				country_event = {
-					id = danubian_war_interventions.2
-					days = 7
-				}
-			}
-		}
-	}
-
-	option = {
-		ai_chance = { factor = 1 }
-		name = ""
-		AHE = {
-			declare_war_on = {
-				target = HSR
-				type = annex_everything
-			}
 			declare_war_on = {
 				target = HUN
 				type = annex_everything
 			}
-			
-			country_event = {
-				id = danubian_war.4
-				days = 7
+			declare_war_on = {
+				target = CZE
+				type = annex_everything
 			}
-			country_event = {
-				id = danubian_war.5
-				days = 10
+			declare_war_on = {
+				target = CRO
+				type = annex_everything
 			}
 		}
-	} 
-}
-
-country_event = { # czech revolt
-	id = danubian_war.4
-	title = ""
-	desc = danubian_war.4.desc
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-	
-	immediate = {
-		hidden_effect = {
-			CZE = {
-				transfer_state = 9 
-				set_province_controller = 3569
-				
-				load_oob = CZE_danubian_war
-				
-				declare_war_on = {
-					target = AHE
-					type = take_state_focus 
-					generator = { 69 72 74 75 815 }
-				}
+		HUN = {
+			declare_war_on = {
+				target = TRS
+				type = annex_everything
+			}
+		}
+		CRO = {
+			declare_war_on = {
+				target = BOS
+				type = annex_everything
 			}
 		}
 	}
-
-	option = {
-		ai_chance = { factor = 1 }
-		name = ""
-		
-	} 
-}
-
-country_event = { # galicia falls
-	id = danubian_war.5
-	title = ""
-	desc = danubian_war.5.desc
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-	
-	immediate = {
-		hidden_effect = {
-			WUK = {
-				set_state_owner = 91
-				set_province_controller = 11479
-				
-				add_state_core = 89
-				add_state_core = 91
-				
-				load_oob = WUK_danubian_war
-				
-				declare_war_on = {
-					target = AHE
-					type = take_state_focus 
-					generator = { 89 }
-				}
-			}
-			KRA = {
-				set_state_owner = 88
-				set_province_controller = 9427
-				set_province_controller = 11507
-				
-				add_state_core = 88
-				
-				load_oob = KRA_danubian_war
-				
-				declare_war_on = {
-					target = AHE
-					type = take_state_focus 
-					generator = { 88 }
-				}
-			}
-		}
-	}
-
-	option = {
-		ai_chance = { factor = 1 }
-		name = ""
-	}
-	
-	option = {
-		ai_chance = { factor = 0 }
-		name = ""
-		KRA = { change_tag_from = ROOT }
-	}
-	
-	option = {
-		ai_chance = { factor = 0 }
-		name = "Slava Ukraina!"
-		WUK = { change_tag_from = ROOT }
-	}
-}
-
-country_event = { # intervention event - romania
-	id = danubian_war_interventions.1
-	title = ""
-	desc = danubian_war_interventions.1.desc
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	option = {
-		ai_chance = { factor = 1 }
-		name = ""
-		ROM = {
-			declare_war_on = {
-				target = HSR
-				type = take_state_focus 
-				generator = { 82 83 84 76 }
-			}
-			declare_war_on = {
-				target = HUN
-				type = take_state_focus 
-				generator = { 82 83 84 76 }
-			}
-			declare_war_on = {
-				target = AHE
-				type = take_state_focus 
-				generator = { 80 }
-			}
-		}
-		BUL = {
-			country_event = {
-				id = danubian_war_interventions.3
-				days = 2
-			}
-		}
-		TUR = {
-			country_event = {
-				id = danubian_war_interventions.4
-				days = 7
-			}
-		}
-		ITA = {
-			country_event = {
-				id = danubian_war_interventions.5
-				days = 10
-			}
-		}
-	} 
-}
-
-country_event = { # intervention event - serbia
-	id = danubian_war_interventions.2
-	title = ""
-	desc = danubian_war_interventions.2.desc
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	option = {
-		ai_chance = { factor = 1 }
-		name = ""
-		SER = {
-			declare_war_on = {
-				target = AHE
-				type = take_state_focus 
-				generator = { 104 105 }
-			}
-			declare_war_on = {
-				target = BUL
-				type = take_state_focus 
-				generator = { 106 801 }
-			}
-		}
-	} 
-}
-
-country_event = { # intervention event - bulgaria
-	id = danubian_war_interventions.3
-	title = ""
-	desc = danubian_war_interventions.3.desc
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	option = {
-		ai_chance = { factor = 1 }
-		name = ""
-		BUL = {
-			declare_war_on = {
-				target = ROM
-				type = take_state_focus 
-				generator = { 46 }
-			}
-		}
-	} 
-}
-
-country_event = { # intervention event - turkey
-	id = danubian_war_interventions.4
-	title = ""
-	desc = danubian_war_interventions.4.desc
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	option = {
-		ai_chance = { factor = 1 }
-		name = ""
-		TUR = {
-			declare_war_on = {
-				target = BUL
-				type = take_state_focus 
-				generator = { 820 }
-			}
-		}
-	} 
-}
-
-country_event = { # intervention event - italy
-	id = danubian_war_interventions.5
-	title = ""
-	desc = danubian_war_interventions.5.desc
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	option = {
-		ai_chance = { factor = 1 }
-		name = ""
-		ITA = {
-			declare_war_on = {
-				target = AHE
-				type = take_state_focus 
-				generator = { 39 736 }
-			}
-		}
-	} 
 }
