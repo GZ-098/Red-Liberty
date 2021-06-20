@@ -114,7 +114,7 @@ NOR = {
 	color_ui = rgb { 117 159 163 }
 }
 DEN = {
-	color = rgb { 153 116 93 }
+	color = rgb { 153 102 93 }
 	color_ui = rgb { 199 151 121 }
 }
 BUL = {

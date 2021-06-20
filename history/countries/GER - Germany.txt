@@ -31,6 +31,7 @@ if = {
 }
 
 set_country_flag = conservative_coalition
+set_country_flag = authoritarian_coalition
 set_country_flag = despotist_coalition
 set_country_flag = ultranationalist_coalition
 
@@ -135,18 +136,11 @@ set_convoys = 200
 set_stability = 0.75 
 set_war_support = 0.3
 
-#Trade
-create_import = {
-		resource = tungsten
-		factories = 1
-		exporter = SWE
-}
-
 set_politics = {
 	ruling_party = ultranational_statism 
-	last_election = ""
-	election_frequency = 0
-	elections_allowed = no
+	last_election = "1935.1.12"
+	election_frequency = 48
+	elections_allowed = yes
 }
 set_popularities = {
 	insurrectionary_anarchism = 0
@@ -174,6 +168,7 @@ add_to_faction = EST
 remove_from_faction = ROM
 
 add_ideas = {
+	GER_master_of_europe
 	GER_the_loss_of_a_generation
 	GER_unpaid_war_expenses
 	GER_paramilitary_violence
