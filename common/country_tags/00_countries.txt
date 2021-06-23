@@ -232,6 +232,8 @@ TRS = "countries/Transylvania.txt"
 BNT = "countries/Banat.txt"
 BUK = "countries/Bukovina.txt"
 
+BAL = "countries/United Baltic.txt"
+
 ### Africa ###
 BEA = "countries/British East Africa.txt"
 BWA = "countries/British West Africa.txt"

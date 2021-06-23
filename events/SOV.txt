@@ -31,11 +31,11 @@ country_event = { # far east revolt
 				type = annex_everything
 			}
 			declare_war_on = {
-				target = NRR
+				target = URL
 				type = annex_everything
 			}
 			declare_war_on = {
-				target = URL
+				target = ORE
 				type = annex_everything
 			}
 		}

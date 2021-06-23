@@ -60,6 +60,10 @@ if = {
 	}
 }
 
+add_ideas = {
+	limited_conscription
+}
+
 set_politics = {
 	ruling_party = social_democracy
 	last_election = "1932.11.8"

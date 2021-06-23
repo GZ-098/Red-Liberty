@@ -1,7 +1,11 @@
 ﻿l_english:
- NRR:0 "Severnaya Oblast"
- NRR_DEF:0 "Severnaya Oblast"
+ NRR:0 "North Russian Republic"
+ NRR_DEF:0 "the North Russian Republic"
  NRR_ADJ:0 "Russian"
+
+ NRR_severnaya_oblast:0 "Severnaya Oblast"
+ NRR_severnaya_oblastDEF:0 "Severnaya Oblast"
+ NRR_severnaya_oblastADJ:0 "Russian"
  
  NRR_starving_army:0 "Starving Army" 
  NRR_one_common_enemy:0 "One Common Enemy" 

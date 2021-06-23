@@ -150,6 +150,11 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_spqa"
+		texturefile = "gfx/interface/goals/USA/USA_spqa.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_second_bill_of_rights"
 		texturefile = "gfx/interface/goals/USA/USA_the_second_bill_of_rights.png"
 	}
@@ -214,5 +219,62 @@ spritetypes = {
 	SpriteType = {
 		name = "GFX_USA_back_on_track"
 		texturefile = "gfx/interface/goals/USA/USA_back_on_track.png"
+	}
+	
+	### SECOND BILL OF RIGHTS ###
+	
+	SpriteType = {
+		name = "GFX_USA_right_to_learn"
+		texturefile = "gfx/interface/goals/USA/USA_right_to_learn.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_assess_school_resources"
+		texturefile = "gfx/interface/goals/USA/USA_legislation.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_invest_in_higher_education"
+		texturefile = "gfx/interface/goals/USA/USA_education_grants.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_federal_education_grants"
+		texturefile = "gfx/interface/goals/USA/USA_education_grants_2.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_right_to_work"
+		texturefile = "gfx/interface/goals/USA/USA_right_to_work.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_workplace_democracy"
+		texturefile = "gfx/interface/goals/USA/USA_workplace_democracy.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_ensure_fair_competition"
+		texturefile = "gfx/interface/goals/USA/USA_money.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_6_hour_day"
+		texturefile = "gfx/interface/goals/USA/USA_6_hour_day.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_right_to_life"
+		texturefile = "gfx/interface/goals/USA/USA_right_to_life.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_right_to_democracy"
+		texturefile = "gfx/interface/goals/USA/USA_right_to_democracy.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_gerrymandering"
+		texturefile = "gfx/interface/goals/USA/USA_gerrymandering.png"
 	}
 }

@@ -977,6 +977,11 @@ BOS = {
 	color = rgb { 189 162 109 }
 }
 
+BAL = {
+	color = rgb { 113 133 132 }
+	color_ui = rgb { 142 142 128 }
+}
+
 ### US CIVIL WAR COLORS ###
 
 AMS = {

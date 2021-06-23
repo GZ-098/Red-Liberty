@@ -2,7 +2,7 @@ add_namespace = us_election
 add_namespace = us_campaign
 add_namespace = USA_election_helpers
 
-country_event = {
+country_event = { # 1936 election trigger
 	id = us_election.1
 	title = "Election Day"
 	desc = us_election.1.desc
@@ -37,6 +37,12 @@ country_event = {
 	desc = us_election.2.desc
 
 	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			country_event = { id = USA_election_helpers.12 days = 30 }
+		}
+	}
 	
 	option = { # no clear winner
 		name = us_election.2.a
@@ -77,7 +83,7 @@ country_event = {
 		}
 		country_event = { # thomas inaug
 			id = us_election.5
-			days = 109
+			days = 114
 		}
 		country_event = {
 			id = us_election.6
@@ -100,7 +106,7 @@ country_event = {
 		}
 		country_event = { # lister inaug
 			id = us_election.7
-			days = 109
+			days = 114
 		}
 		country_event = {
 			id = us_election.8
@@ -139,7 +145,7 @@ country_event = { # house of reps votes
 		}
 		country_event = {
 			id = us_election.5
-			days = 52
+			days = 57
 		}
 		country_event = {
 			id = us_election.6
@@ -156,7 +162,7 @@ country_event = { # house of reps votes
 		}
 		country_event = {
 			id = us_election.7
-			days = 52
+			days = 57
 		}
 		country_event = {
 			id = us_election.8
@@ -244,6 +250,7 @@ news_event = { # lister election news event
 	id = us_election.8
 	title = "Joseph Lister Hill Elected President!"
 	desc = us_election.8.desc
+	picture = GFX_report_event_usa_election_lister_victory
 
 	is_triggered_only = yes
 	
@@ -517,8 +524,6 @@ country_event = { #Clear variables after seeing conclusion
 			clr_country_flag = USA_campaigning_democrat
 			clr_country_flag = USA_campaigning_socialist
 			clr_country_flag = currently_campaigning
-			
-			USA_clear_presidential_election_values = yes
  		}
 	}
 

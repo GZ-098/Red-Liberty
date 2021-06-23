@@ -14,7 +14,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = martial_despotism
+	ruling_party = authoritarian_republicanism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -38,16 +38,20 @@ add_ideas = {
 	NRR_one_common_enemy 
 	NRR_starving_army 
 	NRR_northern_isolation
+	
+	limited_conscription
+	limited_exports
+	low_economic_mobilization
 }
 
-set_cosmetic_tag = RUS_cossack_host
+#set_cosmetic_tag = NRR_severnaya_oblast
 
 create_country_leader = {
-	name = "Piotr Struve"
+	name = "Pyotr Struve"
 	desc = "POLITICS_PIOTR_STRUVE_DESC"
 	picture = "portrait_nrr_piotr_struve.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarian_republicanism_subtype
 	traits = {
 		#
 	}
