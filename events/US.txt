@@ -185,6 +185,8 @@ country_event = {
 		set_country_flag = USA_1937_recession
 		worsen_great_depression = yes
 		
+		mark_focus_tree_layout_dirty = yes
+		
 		add_stability = -0.05
 		
 		hidden_effect = {

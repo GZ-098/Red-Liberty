@@ -1,0 +1,733 @@
+defined_text = {
+	name = GetPresidentVotes
+	text = {
+		trigger = {
+			has_state_flag = voted_socialist
+		}
+		localization_key = US_Election_socialist
+	}
+	text = {
+		trigger = {
+			has_state_flag = voted_democrat
+		}
+		localization_key = US_Election_democrat
+	}
+	text = {
+		trigger = {
+			has_state_flag = voted_republican
+		}
+		localization_key = US_Election_republican
+	}
+	text = {
+		trigger = {
+			has_state_flag = voted_afp
+		}
+		localization_key = US_Election_afp
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_ALABAMA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_ALABAMA
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_ARIZONA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_ARIZONA
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_ARKANSAS_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_ARKANSAS
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_CALIFORNIA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_CALIFORNIA
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_COLORADO_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_COLORADO
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_CONNECTICUT_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_CONNECTICUT
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_DELAWARE_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_DELAWARE
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_FLORIDA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_FLORIDA
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_GEORGIA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_GEORGIA
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_IDAHO_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_IDAHO
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+defined_text = {
+	name = PRESIDENT_ILLINOIS_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_ILLINOIS
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_INDIANA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_INDIANA
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_IOWA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_IOWA
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_KANSAS_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_KANSAS
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_KENTUCKY_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_KENTUCKY
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_LOUISIANA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_LOUISIANA
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_MAINE_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_MAINE
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_MARYLAND_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_MARYLAND
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_MASSACHUSETTS_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_MASSACHUSETTS
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_MASSACHUSETTS_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+defined_text = {
+	name = PRESIDENT_VERMONT_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_VERMONT
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_VERMONT_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+defined_text = {
+	name = PRESIDENT_MICHIGAN_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_MICHIGAN
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_MICHIGAN_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+defined_text = {
+	name = PRESIDENT_MINNESOTA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_MINNESOTA
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_MINNESOTA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+defined_text = {
+	name = PRESIDENT_MISSISSIPPI_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_MISSISSIPPI
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_MISSISSIPPI_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+defined_text = {
+	name = PRESIDENT_MISSOURI_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_MISSOURI
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_MONTANA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_MONTANA
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_NEBRASKA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_NEBRASKA
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_NEVADA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_NEVADA
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_NEW_HAMPSHIRE_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_NEW_HAMPSHIRE
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_NEW_HAMPSHIRE_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+defined_text = {
+	name = PRESIDENT_NEW_JERSEY_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_NEW_JERSEY
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_NEW_JERSEY_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+defined_text = {
+	name = PRESIDENT_NEW_MEXICO_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_NEW_MEXICO
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_NEW_MEXICO_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+defined_text = {
+	name = PRESIDENT_NEW_YORK_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_NEW_YORK
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_NEW_YORK_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+defined_text = {
+	name = PRESIDENT_NORTH_CAROLINA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_NORTH_CAROLINA
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_NORTH_CAROLINA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+defined_text = {
+	name = PRESIDENT_NORTH_DAKOTA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_NORTH_DAKOTA
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_NORTH_DAKOTA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+defined_text = {
+	name = PRESIDENT_OHIO_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_OHIO
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_OHIO_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+defined_text = {
+	name = PRESIDENT_OKLAHOMA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_OKLAHOMA
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_OKLAHOMA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+defined_text = {
+	name = PRESIDENT_OREGON_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_OREGON
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_OREGON_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+defined_text = {
+	name = PRESIDENT_PENNSYLVANIA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_PENNSYLVANIA
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_PENNSYLVANIA_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+defined_text = {
+	name = PRESIDENT_RHODE_ISLAND_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_RHODE_ISLAND
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_RHODE_ISLAND_2
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+defined_text = {
+	name = PRESIDENT_SOUTH_CAROLINA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_SOUTH_CAROLINA
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_SOUTH_DAKOTA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_SOUTH_DAKOTA
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_TENNESSEE_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_TENNESSEE
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_TEXAS_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_TEXAS
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_UTAH_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_UTAH
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_VIRGINIA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_VIRGINIA
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_WASHINGTON_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_WASHINGTON
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_WEST_VIRGINIA_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_WEST_VIRGINIA
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_WISCONSIN_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_WISCONSIN
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}
+
+defined_text = {
+	name = PRESIDENT_WYOMING_CONCLUSION
+	text = {
+		trigger = {
+			has_country_flag = USA_presidential_conclusion
+		}
+		localization_key = PRESIDENT_CONCLUSION_WYOMING
+	}
+	text = {
+		localization_key = USA_nothing
+	}
+}

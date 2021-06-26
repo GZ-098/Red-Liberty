@@ -54,6 +54,8 @@ country_event = {
 		}
 		clr_country_flag = USA_presidential_elections
 		
+		add_stability = -0.1
+		
 		country_event = { # new congress gets sworn in
 			id = us_election.3
 			days = 50
@@ -248,7 +250,7 @@ country_event = { # lister inaug day
 
 news_event = { # lister election news event
 	id = us_election.8
-	title = "Joseph Lister Hill Elected President!"
+	title = "Lister Wins the Presidency!"
 	desc = us_election.8.desc
 	picture = GFX_report_event_usa_election_lister_victory
 

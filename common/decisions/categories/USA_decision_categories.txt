@@ -14,6 +14,17 @@ USA_congress = {
 
 	visible_when_empty = yes
 
+	priority = 100
+}
+
+USA_amendments_category = {
+	icon = usa_congress
+	allowed = {
+		original_tag = USA
+	}
+	
+	visible_when_empty = yes
+	
 	priority = 85
 }
 

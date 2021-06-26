@@ -43,6 +43,8 @@
  USA_the_great_depression_3_desc:0 "After the Wall Street Crash of 1929, the American economy took a nosedive. While it took time for the effects to be felt by the workers, when reality hit, it hit hard. Massive levels of unemployment, currency deflation, and the bank collapses that erased the life savings of millions all caused economic damage unprecedented in history. Tens of millions live in poverty, and many feel they have woken up from the American Dream."
  USA_pacifism:0 "Widespread Pacifism"
  USA_pacifism_desc:0 "One of the most popular campaign promises of Eugene Debs was to keep America out of conflict. This promise he absolutely delivered on. The USA stayed out of the Great War, and hasn’t seen any real military conflict in decades. The military’s numbers and funding are low, and jingoism is not an ideal many Americans live by. Most Americans are glad that the country is at peace, and desire for it to stay that way."
+ USA_bloated_federal_government:0 "Bloated Executive Branch"
+ USA_bloated_federal_government_desc:0 "The government, and especially the executive branch, has seen rapid and far-reaching expansion over the course of the last four years. While this has greatly aided in its ability to assist in economic recovery, this has also had the unfortunate side effect of severe bureaucratic bloat."
  
  USA_osrd:0 "Office of Scientific Research and Development"
  
@@ -108,16 +110,17 @@
  USA_work_with_teachers_unions:0 "Work with Teacher's Unions"
  USA_compulsory_education:0 "Formalize Compulsory Education"
  USA_invest_in_higher_education:0 "Invest in Higher Education"
- USA_644_schooling:0 "6-4-4 Schooling"
+ #USA_644_schooling:0 "6-4-4 Schooling"
+ USA_fund_public_libraries:0 "Fund Public Libraries"
  USA_federal_education_grants:0 "Federal Education Grants"
- USA_attempt_standardization:0 "An Attempt at Standardization"
+ USA_attempt_standardization:0 "Equivalent Education Act"
  
  USA_right_to_work:0 "Right to Work"
  USA_workplace_democracy:0 "Workplace Democracy"
  USA_ensure_fair_competition:0 "Ensure Fair Competition"
  USA_unemployment_compensation:0 "Unemployment Compensation"
  USA_6_hour_day:0 "The 6-Hour Day"
- USA_end_wage_descrimination:0 "End Wage Discrimination"
+ USA_end_wage_discrimination:0 "End Wage Discrimination"
  USA_invest_in_childcare:0 "Invest in Childcare"
  USA_end_child_labor:0 "End Child Labor"
  USA_economic_equality_act:0 "Economic Equality Act"
@@ -135,7 +138,15 @@
  USA_gerrymandering:0 "The Issue of Gerrymandering"
  USA_the_past_isnt_dead:0 "The Past Isn't Dead"
  USA_erode_bases_of_power:0 "Erode Their Bases of Power"
+ USA_intimidate_the_intimidators:0 "Intimidate the Intimidators"
+ USA_attack_voter_suppression:0 "Supress Voter Suppression"
+ USA_these_are_your_rights:0 "These are your Rights!"
+ USA_voting_rights_act:0 "Voting Rights Act"
  
+ USA_america_reborn:0 "America Reborn"
+ USA_one_more_thing:0 ""
+ 
+ USA_second_thomas_admin_tt:0 "§YNow we can truly begin.§!"
  court_packed_effect_tt:0 "§RThe Supreme court will no longer be an obstacle. We will gain new options for much more powerful legislation.§!\n"
  
  USA_secured_funding:0 "Secured Funding"
@@ -163,6 +174,9 @@
  
  
  ### other stuff ###
+ 
+ USA_amendments_category:0 "To Make Amends"
+ USA_amendments_category_desc:0 "The authority to amend the Constitution of the United States is derived from §YArticle V§! of the Constitution. The Constitution provides that an amendment may be proposed either by the Congress with a §Ytwo-thirds majority vote in both the House of Representatives and the Senate§! or by a constitutional convention called for by two-thirds of the State legislatures. Thus far, the method of amendment via constitutional convention has never been used. A proposed amendment becomes part of the Constitution as soon as it is §Yratified by three-fourths of the States (at this time 36 of 48 States)§!.\n\nWe currently have the support of X/36 state governments.\n\n§YNew England§!:[AMENDMENT_CONNECTICUT_SUPPORT][AMENDMENT_MAINE_SUPPORT][AMENDMENT_MASSACHUSETTS_SUPPORT][AMENDMENT_NEW_HAMPSHIRE_SUPPORT][AMENDMENT_RHODE_ISLAND_SUPPORT][AMENDMENT_VERMONT_SUPPORT]\n\n§YThe East Coast§!:[AMENDMENT_DELAWARE_SUPPORT][AMENDMENT_MARYLAND_SUPPORT][AMENDMENT_NEW_YORK_SUPPORT][AMENDMENT_NEW_JERSEY_SUPPORT][AMENDMENT_PENNSYLVANIA_SUPPORT][AMENDMENT_WEST_VIRGINIA_SUPPORT]\n\n§YThe Deep South§!:[AMENDMENT_ALABAMA_SUPPORT][AMENDMENT_ARKANSAS_SUPPORT][AMENDMENT_FLORIDA_SUPPORT][AMENDMENT_GEORGIA_SUPPORT][AMENDMENT_LOUISIANA_SUPPORT][AMENDMENT_MISSISSIPPI_SUPPORT][AMENDMENT_SOUTH_CAROLINA_SUPPORT]\n\n§YThe Upper South§!:[AMENDMENT_KENTUCKY_SUPPORT][AMENDMENT_NORTH_CAROLINA_SUPPORT][AMENDMENT_VIRGINIA_SUPPORT][AMENDMENT_TENNESSEE_SUPPORT]\n\n§YThe Southwest§!:[AMENDMENT_TEXAS_SUPPORT][AMENDMENT_OKLAHOMA_SUPPORT][AMENDMENT_NEW_MEXICO_SUPPORT][AMENDMENT_ARIZONA_SUPPORT]\n\n§YThe Great Lakes§!:[AMENDMENT_ILLINOIS_SUPPORT][AMENDMENT_INDIANA_SUPPORT][AMENDMENT_MICHIGAN_SUPPORT][AMENDMENT_OHIO_SUPPORT][AMENDMENT_WISCONSIN_SUPPORT]\n\n§YThe Great Plains§!:[AMENDMENT_MINNESOTA_SUPPORT][AMENDMENT_IOWA_SUPPORT][AMENDMENT_KANSAS_SUPPORT][AMENDMENT_MISSOURI_SUPPORT][AMENDMENT_NEBRASKA_SUPPORT][AMENDMENT_NORTH_DAKOTA_SUPPORT][AMENDMENT_SOUTH_DAKOTA_SUPPORT]\n\n§YThe Rockies§!:[AMENDMENT_COLORADO_SUPPORT][AMENDMENT_IDAHO_SUPPORT][AMENDMENT_MONTANA_SUPPORT][AMENDMENT_NEVADA_SUPPORT][AMENDMENT_UTAH_SUPPORT][AMENDMENT_WYOMING_SUPPORT]\n\n§YThe West Coast:§![AMENDMENT_CALIFORNIA_SUPPORT][AMENDMENT_OREGON_SUPPORT][AMENDMENT_WASHINGTON_SUPPORT]\n"
  
  USA_thomas_tyranny_category:0 "Walking the Tightrope"
  USA_thomas_tyranny_category_desc:0 "There are those who say that socialism has no place in America. There are those who would do anything to keep it that way. We must keep an eye on the groups most likely to fall under the influence of far-right extremism.\n\nThe §Rbourgeoisie upper-class oligarchs§!, sitting in their gilded halls of crime view the president [GetThomasOpinionRich] [GetThomasRadicalism].\n\nThe §Ymiddle class§!, ever fickle and ignorant of the plight of the worker views the president [GetThomasOpinionMiddle]\n\n§RFar-right extremist groups§! such as the KKK §Yhate us and our agenda§!, but §Glack widespread popular support§!."

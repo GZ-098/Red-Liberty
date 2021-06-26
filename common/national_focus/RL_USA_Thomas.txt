@@ -6,7 +6,7 @@ shared_focus = {
 	
 	cost = 2
     completion_reward = {
-        
+        custom_effect_tooltip = USA_second_thomas_admin_tt
     }
 	
 	ai_will_do = {
@@ -70,6 +70,9 @@ shared_focus = {
 	prerequisite = { focus = USA_reorganization }
     completion_reward = {
         add_political_power = 25
+		remove_ideas = {
+			USA_bloated_federal_government
+		}
     }
 	
 	ai_will_do = {
@@ -244,7 +247,10 @@ shared_focus = {
 	prerequisite = { focus = USA_reorg_act }
 	prerequisite = { focus = USA_court_tamed }
     completion_reward = {
-        
+        country_event = {
+			id = united_states_thomas.21
+			days = 1
+		}
     }
 	
 	ai_will_do = {
@@ -263,7 +269,7 @@ shared_focus = {
 	relative_position_id = USA_our_mandate
 	prerequisite = { focus = USA_our_mandate }
     completion_reward = {
-        
+        add_political_power = 50
     }
 	
 	ai_will_do = {
@@ -278,14 +284,22 @@ shared_focus = {
     x = -1
 	y = 1
 	
-	cost = 5
+	cost = 4
 	mutually_exclusive = {
 		focus = USA_reach_across
 	}
 	relative_position_id = USA_preparing_our_agenda
 	prerequisite = { focus = USA_preparing_our_agenda }
     completion_reward = {
-        
+        add_popularity = {
+			ideology = proletarian_dictatorship
+			popularity = 0.005
+		}
+		add_popularity = {
+			ideology = libertarian_socialism
+			popularity = 0.005
+		}
+		add_political_power = 50
     }
 	
 	ai_will_do = {
@@ -300,14 +314,19 @@ shared_focus = {
     x = 1
 	y = 1
 	
-	cost = 5
+	cost = 4
 	mutually_exclusive = {
 		focus = USA_unity_above_all_else
 	}
 	relative_position_id = USA_preparing_our_agenda
 	prerequisite = { focus = USA_preparing_our_agenda }
     completion_reward = {
-        
+        set_country_flag = USA_SPA_open_to_compromise
+		add_popularity = {
+			ideology = social_democracy
+			popularity = 0.01
+		}
+		add_political_power = -100
     }
 	
 	ai_will_do = {
@@ -329,7 +348,10 @@ shared_focus = {
 		focus = USA_reach_across
 	}
     completion_reward = {
-        
+        country_event = {
+			id = united_states_thomas.22
+			days = 1
+		}
     }
 	
 	ai_will_do = {
@@ -348,7 +370,7 @@ shared_focus = {
 	relative_position_id = USA_conceptualization
 	prerequisite = { focus = USA_conceptualization }
     completion_reward = {
-        
+        add_stability = 0.03
     }
 	
 	ai_will_do = {
@@ -511,8 +533,8 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_644_schooling
-	icon = GFX_USA_644_schooling
+    id = USA_fund_public_libraries
+	icon = GFX_USA_fund_public_libraries
 	
     x = 1
 	y = 1
@@ -537,8 +559,8 @@ shared_focus = {
 	y = 1
 	
 	cost = 8
-	relative_position_id = USA_644_schooling
-	prerequisite = { focus = USA_644_schooling }
+	relative_position_id = USA_fund_public_libraries
+	prerequisite = { focus = USA_fund_public_libraries }
 	prerequisite = { focus = USA_federal_education_grants }
     completion_reward = {
         
@@ -653,8 +675,8 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_end_wage_descrimination
-	icon = GFX_USA_end_wage_descrimination
+    id = USA_end_wage_discrimination
+	icon = GFX_USA_end_wage_discrimination
 	
     x = 1
 	y = 1
@@ -682,7 +704,7 @@ shared_focus = {
 	cost = 8
 	relative_position_id = USA_end_child_labor
 	prerequisite = { focus = USA_end_child_labor }
-	prerequisite = { focus = USA_end_wage_descrimination }
+	prerequisite = { focus = USA_end_wage_discrimination }
     completion_reward = {
         custom_effect_tooltip = USA_bill_pass_req_tt
 		effect_tooltip = {
@@ -1077,10 +1099,15 @@ shared_focus = {
     id = USA_fight_the_recession
 	icon = GFX_USA_fight_the_recession
 	
-    x = 16
+    x = 15
+	y = 0
 	
 	available = {
 		has_country_flag = USA_1937_recession
+	}
+	
+	allow_branch = {
+		always = yes
 	}
 	
 	cost = 5
@@ -1370,6 +1397,7 @@ shared_focus = {
 			}
 		}
         improve_great_depression = yes
+		clr_country_flag = USA_1937_recession
     }
 	
 	ai_will_do = {
@@ -1381,8 +1409,16 @@ shared_focus = {
     id = USA_war_is_a_racket
 	icon = GFX_USA_war_is_a_racket
 	
-    x = 26
+    x = -4
 	y = 0
+	
+	available = {
+		has_completed_focus = USA_our_mandate
+	}
+	
+	allow_branch = {
+		always = yes
+	}
 	
 	cost = 5
     completion_reward = {

@@ -818,6 +818,20 @@ defined_text = {
 		}
 		localization_key = "GFX_USA_states_gui_NE_republican"
 	}
+	
+	text = {
+		OR = {
+				AND = {
+					check_variable = { 384.senator_1 = 1 }
+					check_variable = { 384.senator_2 = 3 }
+				}
+				AND = {
+					check_variable = { 384.senator_1 = 3 }
+					check_variable = { 384.senator_2 = 1 }
+				}
+			}
+		localization_key = "GFX_USA_states_gui_NE_republican_socialist_split"
+	}
 }
 
 defined_text = {
@@ -1356,11 +1370,26 @@ defined_text = {
 	name = Get_USA_states_gui_WY
 	text = {
 		trigger = {
-			check_variable = { 381.republican_popularity > 381.socialist_popularity }
-			check_variable = { 381.republican_popularity > 381.democrat_popularity }
-			check_variable = { 381.republican_popularity > 381.afp_popularity }
+			check_variable = { 381.senator_1 = 2 }
+			check_variable = { 381.senator_2 = 2 }
 		}
 		localization_key = "GFX_USA_states_gui_WY_republican"
+	}
+	
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = { 381.senator_1 = 1 }
+					check_variable = { 381.senator_2 = 2 }
+				}
+				AND = {
+					check_variable = { 381.senator_1 = 2 }
+					check_variable = { 381.senator_2 = 1 }
+				}
+			}
+		}
+		localization_key = "GFX_USA_states_gui_WY_republican_socialist_split"
 	}
 }
 

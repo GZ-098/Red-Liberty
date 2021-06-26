@@ -23,6 +23,49 @@ ideas = {
 			}
 		}
 		
+		USA_red_liberty_2 = {
+			
+			removal_cost = -1 
+			
+			allowed_civil_war = {	 
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+		
+		USA_bloated_federal_government = {
+			
+			removal_cost = -1 
+			
+			allowed_civil_war = {	 
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			modifier = {
+				political_power_gain = -0.1
+				conscription_factor = -0.05
+			}
+		}
+		
 		USA_the_great_depression_1 = {
 			
 			removal_cost = -1 
