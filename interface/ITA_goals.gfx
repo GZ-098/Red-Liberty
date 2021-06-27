@@ -1,6 +1,18 @@
 spritetypes = {
 
 	SpriteType = {
+		name = "ITA_prepare_for_permenat_world_revolution"
+		texturefile = "gfx/interface/goals/ITA/ITA_prepare_for_permenat_world_revolution.dds"
+	}
+	SpriteType = {
+		name = "ITA_invite_the_balkan_countries"
+		texturefile = "gfx/interface/goals/ITA/ITA_invite_the_balkan_countries.dds"
+	}
+	SpriteType = {
+		name = "ITA_prepare_anti_air_defenses"
+		texturefile = "gfx/interface/goals/ITA/ITA_prepare_anti_air_defenses.dds"
+	}
+	SpriteType = {
 		name = "ITA_a_greater_italy"
 		texturefile = "gfx/interface/goals/ITA/ITA_a_greater_italy.dds"
 	}
@@ -50,8 +62,8 @@ spritetypes = {
 	}
 	#############################################
 	SpriteType = {
-		name = "ITA_begin_to_weaken_fascism"
-		texturefile = "gfx/interface/goals/ITA/ITA_begin_to_weaken_fascism.dds"
+		name = "ITA_begin_to_weaken_fascism1"
+		texturefile = "gfx/interface/goals/ITA/ITA_begin_to_weaken_fascism1.dds"
 	}
 	SpriteType = {
 		name = "ITA_hold_the_election"

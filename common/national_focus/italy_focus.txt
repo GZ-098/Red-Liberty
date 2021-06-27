@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = ITA_begin_to_weaken_fascism
-		icon = ITA_begin_to_weaken_fascism
+		icon = ITA_begin_to_weaken_fascism1
 		cost = 5.00
 		mutually_exclusive = {
 			focus = ITA_begin_the_revisions
@@ -2054,7 +2054,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_invite_the_balkan_countries
-		icon = GFX_goal_unknown
+		icon = ITA_invite_the_balkan_countries
 		cost = 5
 		prerequisite = {
 			focus = ITA_send_help_to_the_hungarian_socialists
@@ -2183,7 +2183,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_prepare_anti_air_defenses
-		icon = GFX_goal_unknown
+		icon = ITA_prepare_anti_air_defenses
 		cost = 5
 		bypass = {
 			if = {
@@ -2236,7 +2236,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_prepare_for_permenat_world_revolution
-		icon = GFX_goal_unknown
+		icon = ITA_prepare_for_permenat_world_revolution
 		cost = 5
 		prerequisite = {
 			focus = ITA_invite_the_balkan_countries
