@@ -62,8 +62,8 @@ spritetypes = {
 	}
 	#############################################
 	SpriteType = {
-		name = "ITA_begin_to_weaken_fascism1"
-		texturefile = "gfx/interface/goals/ITA/ITA_begin_to_weaken_fascism1.dds"
+		name = "GFX_ITA_begin_to_weaken_fascism"
+		texturefile = "gfx/interface/goals/ITA/ITA_begin_to_weaken_fascism.dds"
 	}
 	SpriteType = {
 		name = "ITA_hold_the_election"
