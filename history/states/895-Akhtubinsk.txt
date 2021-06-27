@@ -1,22 +1,22 @@
 
 state={
-	id=805
-	name="STATE_805"
+	id=895
+	name="STATE_895"
 
 	history={
-		owner = IDE
+		owner = URL
 		buildings = {
 			infrastructure = 3
 
 		}
-		add_core_of = IDE
+		add_core_of = URL
 
 	}
 
 	provinces={
-		4265 4311 4383 7300 7373 10185 12117 12200 
+		1247 4254 4294 7322 7370 7438 9528 11591 12235 12254 
 	}
-	manpower=220000
+	manpower=0
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

@@ -12,27 +12,7 @@ division_template = {
 		infantry = { x = 1 y = 2 }
 	}
 	support = {
-		#recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
-		#engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
 		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
-	}
-}
-
-division_template = {
-	name = "Gornostrelkovaya Diviziya"		# Mountain Division
-	division_names_group = SOV_MNT_01
-
-	regiments = {
-		mountaineers = { x = 0 y = 0 }	
-		mountaineers = { x = 0 y = 1 }	
-		mountaineers = { x = 0 y = 2 }	
-		mountaineers = { x = 1 y = 0 }	
-		mountaineers = { x = 1 y = 1 }	
-		mountaineers = { x = 1 y = 2 }	
-	}
-	support = {
-		engineer = { x = 0 y = 0 } 		# Engineer bn
-		artillery = { x = 0 y = 1 } 	# Heavy Arty Regiment had 2x 122mm bn
 	}
 }
 
@@ -69,8 +49,6 @@ division_template = {
 division_template = {
 	name = "Mekhanizirovaniy Korpus" 				# Represents regular mechanized corps (4 existed in 1935-38); 
 	division_names_group = SOV_MEC_01
-												# Also represents groups of independent tank, mech brigades of the time, though groups are best represented by tank bge 
-													# (2x M/L tank + 1x mot), and 2x mech bge (2x L tank + 1x mot)
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }		
@@ -83,6 +61,37 @@ division_template = {
 
 ##### OOB #####
 units = {
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6380
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3529
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11225
+		division_template = "Mekhanizirovaniy Korpus"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+
 	division= {
 		division_name = {
 			is_name_ordered = yes
@@ -188,7 +197,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 6473
+		location = 7343
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -198,7 +207,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 3490
+		location = 11537
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -208,7 +217,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 11482
+		location = 6491
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -218,7 +227,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 615
+		location = 464
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -308,7 +317,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 287
+		location = 11241
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -368,7 +377,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 615
+		location = 11433
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -400,7 +409,7 @@ units = {
 			name_order = 1
 		}
 		location = 4802
-		division_template = "Gornostrelkovaya Diviziya"
+		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}

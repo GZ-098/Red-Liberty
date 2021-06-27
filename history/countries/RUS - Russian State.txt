@@ -25,10 +25,10 @@ set_convoys = 50
 set_stability = 0.75 
 
 add_ideas = {  
-	RUS_ill_cordinated_army 
-	RUS_scheming_generals 
-	RUS_mixed_ideologies 
-	RUS_siberian_wasteland
+	RUS_eternal_transition
+	RUS_alone_in_the_cold
+	RUS_crippling_debt
+	
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
@@ -67,7 +67,15 @@ create_country_leader = {
 	}
 }
 
-create_faction = RUS_white_movement
-add_to_faction = ORE
-add_to_faction = SCH
-add_to_faction = URL
+ORE = {
+	give_military_access = RUS
+}
+URL = {
+	give_military_access = RUS
+}
+SCH = {
+	give_military_access = RUS
+}
+TRB = {
+	give_military_access = RUS
+}

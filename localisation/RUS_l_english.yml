@@ -18,6 +18,18 @@
  
  RUS_white_movement:0 "White Movement"
  
+ 
+ RUS_eternal_transition:0 "Eternal Transition"
+ RUS_eternal_transition_desc:0 "Created from the remnants of the Russian Republic in the aftermath of Lenin's revolution, the Russian State was always meant to be a transitional government; merely a tool to be used to crush the young Bolshevik revolution before either the Tsar or the Republic was restored. But plans never survive first contact, and the same is true of the Russian State.\n\nNow, a decade later, it is as though the civil war never ended, and at any day commanders on the front lines will once again order their men forward against the red menace, to reclaim the honour and glory of holy Russia."
+ 
+ RUS_alone_in_the_cold:0 "Alone in the Cold"
+ RUS_alone_in_the_cold_desc:0 "As the civil war dragged on, the resources at Supreme Leader Kolchak's disposal dwindled and vanished, slipping through his fingers like sand. Abandoned by the entente, betrayed by the rebellious Cossacks, and unable to truly rouse the people of Siberia to his cause, Kolchak's sole saving grace has been that the Bolsheviks are in just as poor a position as he is. At least, they were."
+ 
+ RUS_crippling_debt:0 "Crippling Debt"
+ RUS_crippling_debt_desc:0 ""
+ 
+ 
+ 
  RUS_ill_cordinated_army:0 "Ill Cordinated Army" 
  RUS_scheming_generals:0 "Scheming Generals" 
  RUS_mixed_ideologies:0 "Mixed Ideologies" 

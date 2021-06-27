@@ -445,7 +445,7 @@ initialize_US_elections_system = {
 		set_variable = { socialist_popularity = 0.45 } # Default Value
 		set_variable = { democrat_popularity = 0.35 } # Default Value
 		
-		set_variable = { socialist_popularity_special = 0.6 }
+		set_variable = { socialist_popularity_special = 0.6 } # thomas is from Marion, OH
 		
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 2 }
@@ -906,12 +906,6 @@ USA_update_presidential_election_race_in_state = {
 	set_variable = { republican_election_pop = republican_temp_pop }
 	set_variable = { democrat_election_pop = democrat_temp_pop }
 	set_variable = { afp_election_pop = afp_temp_pop }
-	
-	### zeroes out special popularity
-	set_variable = { socialist_popularity_special = 0 }
-	set_variable = { republican_popularity_special = 0 }
-	set_variable = { democrat_popularity_special = 0 }
-	set_variable = { afp_popularity_special = 0 }
 }
 
 USA_calculate_president_predictions = {
@@ -1061,10 +1055,16 @@ clear_election_results = {
 		set_variable = { republican_electoral_votes = 0 }
 		set_variable = { socialist_electoral_votes = 0 }
 		set_variable = { afp_electoral_votes = 0 }
+		
 		clr_state_flag = voted_socialist
 		clr_state_flag = voted_republican
 		clr_state_flag = voted_democrat
 		clr_state_flag = voted_afp
+		
+		set_variable = { socialist_popularity_special = 0 }
+		set_variable = { republican_popularity_special = 0 }
+		set_variable = { democrat_popularity_special = 0 }
+		set_variable = { afp_popularity_special = 0 }
 	}
 	set_variable = { democrat_electoral_votes = 0 }
 	set_variable = { republican_electoral_votes = 0 }

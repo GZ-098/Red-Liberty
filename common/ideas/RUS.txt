@@ -1,6 +1,74 @@
 ideas = {
 	
-	country = { 
+	country = {
+	
+		RUS_eternal_transition = {
+			
+			removal_cost = -1 
+			
+			allowed = {
+				tag = RUS
+			}
+			
+			available = {
+				
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {  
+				political_power_gain = -0.2
+				conscription_factor = 0.15
+			}
+		}
+		
+		RUS_alone_in_the_cold = {
+			
+			removal_cost = -1 
+			
+			allowed = {
+				tag = RUS
+			}
+			
+			available = {
+				
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {  
+				stability_factor = -0.05
+				army_org_factor = -0.1
+				production_factory_max_efficiency_factor = -0.10
+			}
+		}
+		
+		RUS_crippling_debt = {
+			
+			removal_cost = -1 
+			
+			allowed = {
+				tag = RUS
+			}
+			
+			available = {
+				
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.5
+				industrial_capacity_factory = -0.25
+			}
+		}
+	
        	RUS_ill_cordinated_army = {
 			removal_cost = -1 
 			
@@ -92,31 +160,5 @@ ideas = {
 				production_speed_buildings_factor = -0.25
 			}
 		}
-	}
-	
-	
-
-       
-
-
-	#Military
-	army_chief = {
-	}
-	navy_chief = {
-	}
-	air_chief = {
-	}
-	high_command = {
-	}
-	#Manufacturers
-	tank_manufacturer = {
-	}
-	naval_manufacturer = {
-	}
-	aircraft_manufacturer = {
-	}
-	materiel_manufacturer = {
-	}
-	theorist = {
 	}
 }
