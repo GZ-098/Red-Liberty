@@ -151,7 +151,7 @@ country_event = { # choice to keep or abandon the undistributed profits tax
 
 country_event = { # second thomas admin event
 	id = united_states_thomas.9
-	title = "Socialism Unrestrained"
+	title = "No More Deluded By Reaction"
 	desc = united_states_thomas.9.desc
 	
 	is_triggered_only = yes
@@ -346,10 +346,24 @@ country_event = { # shits gotten complicated
 	}
 }
 
-country_event = { # talking with the normies
+country_event = { # wrangling the senate
 	id = united_states_thomas.21
-	title = "Token Gestures"
+	title = "Wrangling the Senate"
 	desc = united_states_thomas.21.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+	}
+}
+
+country_event = { # conceptualization
+	id = united_states_thomas.22
+	title = "Looking to the Past"
+	desc = united_states_thomas.22.desc
 	
 	is_triggered_only = yes
 	

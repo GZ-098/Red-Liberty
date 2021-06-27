@@ -13,3 +13,194 @@ shared_focus = {
 		factor = 10
 	}
 }
+
+shared_focus = {
+    id = USA_back_in_the_saddle
+	icon = GFX_USA_back_in_the_saddle
+	
+    x = 0
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_the_lister_admin
+	prerequisite = { focus = USA_the_lister_admin }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_govt_needed
+	icon = GFX_USA_govt_needed
+	
+    x = -4
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_back_in_the_saddle
+	prerequisite = { focus = USA_back_in_the_saddle }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_govt_unneeded
+	icon = GFX_USA_govt_unneeded
+	
+    x = 3
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_back_in_the_saddle
+	prerequisite = { focus = USA_back_in_the_saddle }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_our_education
+	icon = GFX_USA_govt_needed
+	
+    x = -5
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_govt_needed
+	prerequisite = { focus = USA_govt_needed }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_fund_libraries
+	icon = GFX_USA_fund_libraries
+	
+    x = 0
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_our_education
+	prerequisite = { focus = USA_our_education }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_our_welfare
+	icon = GFX_USA_govt_needed
+	
+    x = -2
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_govt_needed
+	prerequisite = { focus = USA_govt_needed }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_our_business
+	icon = GFX_USA_govt_needed
+	
+    x = 1
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_govt_needed
+	prerequisite = { focus = USA_govt_needed }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_cut_taxes_lister
+	icon = GFX_USA_cut_taxes_lister
+	
+    x = 3
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_our_business
+	prerequisite = { focus = USA_our_business }
+	prerequisite = { focus = USA_govt_unneeded }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_cut_regulation
+	icon = GFX_USA_cut_regulation
+	
+    x = 0
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_cut_taxes_lister
+	prerequisite = { focus = USA_cut_taxes_lister }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_the_question_of_min_wage
+	icon = GFX_USA_the_question_of_min_wage
+	
+    x = 0
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_cut_regulation
+	prerequisite = { focus = USA_cut_regulation }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}

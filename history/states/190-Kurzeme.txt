@@ -7,7 +7,11 @@ state={
 		victory_points = {
 			9262 3 
 		}
-		owner = LAT
+		victory_points = {
+			3296 1
+		}
+		owner = BAL
+		add_core_of = BAL
 		buildings = {
 			infrastructure = 5
 			9262 = {
@@ -22,9 +26,9 @@ state={
 	}
 
 	provinces={
-		265 3194 3255 3296 3319 3525 6222 6322 6342 9262 11246 11358 
+		3194 3296 3319 6322 9262 11246 
 	}
-	manpower=379500
+	manpower=323000
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

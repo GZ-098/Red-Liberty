@@ -2,7 +2,7 @@ add_namespace = us_election
 add_namespace = us_campaign
 add_namespace = USA_election_helpers
 
-country_event = {
+country_event = { # 1936 election trigger
 	id = us_election.1
 	title = "Election Day"
 	desc = us_election.1.desc
@@ -38,6 +38,12 @@ country_event = {
 
 	is_triggered_only = yes
 	
+	immediate = {
+		hidden_effect = {
+			country_event = { id = USA_election_helpers.12 days = 30 }
+		}
+	}
+	
 	option = { # no clear winner
 		name = us_election.2.a
 		trigger = {
@@ -47,6 +53,8 @@ country_event = {
 			}
 		}
 		clr_country_flag = USA_presidential_elections
+		
+		add_stability = -0.1
 		
 		country_event = { # new congress gets sworn in
 			id = us_election.3
@@ -77,7 +85,7 @@ country_event = {
 		}
 		country_event = { # thomas inaug
 			id = us_election.5
-			days = 109
+			days = 114
 		}
 		country_event = {
 			id = us_election.6
@@ -100,7 +108,7 @@ country_event = {
 		}
 		country_event = { # lister inaug
 			id = us_election.7
-			days = 109
+			days = 114
 		}
 		country_event = {
 			id = us_election.8
@@ -139,7 +147,7 @@ country_event = { # house of reps votes
 		}
 		country_event = {
 			id = us_election.5
-			days = 52
+			days = 57
 		}
 		country_event = {
 			id = us_election.6
@@ -156,7 +164,7 @@ country_event = { # house of reps votes
 		}
 		country_event = {
 			id = us_election.7
-			days = 52
+			days = 57
 		}
 		country_event = {
 			id = us_election.8
@@ -242,8 +250,9 @@ country_event = { # lister inaug day
 
 news_event = { # lister election news event
 	id = us_election.8
-	title = "Joseph Lister Hill Elected President!"
+	title = "Lister Wins the Presidency!"
 	desc = us_election.8.desc
+	picture = GFX_report_event_usa_election_lister_victory
 
 	is_triggered_only = yes
 	
@@ -517,8 +526,6 @@ country_event = { #Clear variables after seeing conclusion
 			clr_country_flag = USA_campaigning_democrat
 			clr_country_flag = USA_campaigning_socialist
 			clr_country_flag = currently_campaigning
-			
-			USA_clear_presidential_election_values = yes
  		}
 	}
 

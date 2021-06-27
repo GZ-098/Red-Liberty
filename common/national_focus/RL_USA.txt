@@ -64,6 +64,10 @@ focus_tree = {
 			add = 10
 			tag = USA
 		}
+		modifier = {
+			add = 5
+			has_country_flag = USA_lister_tree_force_on
+		}
 	}
 	continuous_focus_position = {
 		x = 25

@@ -1,0 +1,1245 @@
+shared_focus = {
+    id = USA_the_thomas_admin
+	
+    x = 9
+	
+	cost = 2
+    completion_reward = {
+        country_event = {
+			id = redliberty.2
+			days = 1
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_socialist_cabinet
+	icon = GFX_USA_socialist_cabinet_focus
+	
+    x = 1
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_the_thomas_admin
+	mutually_exclusive = {
+		focus = USA_liberal_cabinet
+	}
+	prerequisite = { focus = USA_the_thomas_admin }
+    completion_reward = {
+        country_event = {
+			id = redliberty.4
+			days = 1
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_liberal_cabinet
+	icon = GFX_USA_liberal_cabinet_focus
+	
+	x = -1
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_the_thomas_admin
+	mutually_exclusive = {
+		focus = USA_socialist_cabinet
+	}
+	prerequisite = { focus = USA_the_thomas_admin }
+    completion_reward = {
+        country_event = {
+			id = redliberty.3
+			days = 1
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_plans_for_presidency
+	icon = GFX_USA_plans_for_presidency_focus
+	
+    x = 1
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_liberal_cabinet
+	prerequisite = { focus = USA_liberal_cabinet focus = USA_socialist_cabinet }
+    completion_reward = {
+        country_event = {
+			id = redliberty.5
+			days = 1
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_review_the_constitution
+	icon = GFX_USA_review_the_constitution_focus
+	
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_plans_for_presidency
+	prerequisite = { focus = USA_plans_for_presidency }
+    completion_reward = {
+        country_event = {
+			id = redliberty.6
+			days = 1
+		}
+		hidden_effect = {
+			load_focus_tree = {
+				tree = USA_RL_Thomas_tree
+				keep_completed = yes
+			}
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_accept_our_limitations
+	
+	x = -1
+	y = 1
+	
+	allow_branch = {
+		has_completed_focus = USA_review_the_constitution
+	}
+	
+	cost = 2
+	relative_position_id = USA_review_the_constitution
+	mutually_exclusive = {
+		focus = USA_we_cannot_be_impeded
+	}
+	prerequisite = { focus = USA_review_the_constitution }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_toe_the_line
+	
+	x = -1
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_accept_our_limitations
+	prerequisite = { focus = USA_accept_our_limitations }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_deals_and_compromises
+	
+	x = -1
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_toe_the_line
+	prerequisite = { focus = USA_toe_the_line }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_liberal_path
+	
+	x = -3
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_deals_and_compromises
+	mutually_exclusive = {
+		focus = USA_conservative_path
+		focus = USA_moderate_path
+	}
+	prerequisite = { focus = USA_deals_and_compromises }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_liberal_coalition
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_liberal_path
+	prerequisite = { focus = USA_liberal_path }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_convince_liberals
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_liberal_coalition
+	prerequisite = { focus = USA_liberal_coalition }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_finish_the_deal
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_convince_liberals
+	prerequisite = { focus = USA_convince_liberals }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_moderate_path
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_deals_and_compromises
+	mutually_exclusive = {
+		focus = USA_conservative_path
+		focus = USA_liberal_path
+	}
+	prerequisite = { focus = USA_deals_and_compromises }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_coalition_with_both
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_moderate_path
+	prerequisite = { focus = USA_moderate_path }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_this_isnt_working
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_coalition_with_both
+	prerequisite = { focus = USA_coalition_with_both }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_liberal_focus
+	
+	x = -1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_this_isnt_working
+	mutually_exclusive = {
+		focus = USA_conservative_focus
+	}
+	prerequisite = { focus = USA_this_isnt_working }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_conservative_focus
+	
+	x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_this_isnt_working
+	mutually_exclusive = {
+		focus = USA_liberal_focus
+	}
+	prerequisite = { focus = USA_this_isnt_working }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_conservative_path
+	
+	x = 3
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_deals_and_compromises
+	mutually_exclusive = {
+		focus = USA_conservative_path
+		focus = USA_moderate_path
+	}
+	prerequisite = { focus = USA_deals_and_compromises }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_conservative_coalition
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_conservative_path
+	prerequisite = { focus = USA_conservative_path }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_convince_conservatives
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_conservative_coalition
+	prerequisite = { focus = USA_conservative_coalition }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_just_few_more_weeks
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_convince_conservatives
+	prerequisite = { focus = USA_convince_conservatives }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_ready_for_the_vote
+	
+	x = -3
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_just_few_more_weeks
+	prerequisite = {
+		focus = USA_just_few_more_weeks
+		focus = USA_liberal_focus
+		focus = USA_conservative_focus
+		focus = USA_finish_the_deal
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_bill_passes
+	
+	x = -2
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_ready_for_the_vote
+	mutually_exclusive = {
+		focus = USA_bill_fails
+	}
+	prerequisite = {
+		focus = USA_ready_for_the_vote
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_keep_the_coalition
+	
+	x = -1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_bill_passes
+	mutually_exclusive = {
+		focus = USA_end_of_coalition
+	}
+	prerequisite = {
+		focus = USA_bill_passes
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_end_of_coalition
+	
+	x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_bill_passes
+	mutually_exclusive = {
+		focus = USA_keep_the_coalition
+	}
+	prerequisite = {
+		focus = USA_bill_passes
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_towards_brighter_future
+	
+	x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_keep_the_coalition
+	prerequisite = {
+		focus = USA_keep_the_coalition
+		focus = USA_end_of_coalition
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_bill_fails
+	
+	x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_ready_for_the_vote
+	mutually_exclusive = {
+		focus = USA_bill_passes
+	}
+	prerequisite = {
+		focus = USA_ready_for_the_vote
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_clean_up_our_mess
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_bill_fails
+	prerequisite = {
+		focus = USA_bill_fails
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_regain_party_confidence
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_clean_up_our_mess
+	prerequisite = {
+		focus = USA_clean_up_our_mess
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_try_again
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_regain_party_confidence
+	prerequisite = {
+		focus = USA_regain_party_confidence
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_some_changes
+	
+	x = -1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_try_again
+	prerequisite = {
+		focus = USA_try_again
+	}
+	mutually_exclusive = {
+		focus = USA_bill_is_ded
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_bill_is_ded
+	
+	x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_try_again
+	prerequisite = {
+		focus = USA_try_again
+	}
+	mutually_exclusive = {
+		focus = USA_some_changes
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_appease_opposition
+	
+	x = -1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_some_changes
+	prerequisite = {
+		focus = USA_some_changes
+	}
+	mutually_exclusive = {
+		focus = USA_stay_the_course
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_stay_the_course
+	
+	x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_some_changes
+	prerequisite = {
+		focus = USA_some_changes
+	}
+	mutually_exclusive = {
+		focus = USA_appease_opposition
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_convince_opposition
+	
+	x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_appease_opposition
+	prerequisite = {
+		focus = USA_appease_opposition
+		focus = USA_stay_the_course
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_second_round
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_convince_opposition
+	prerequisite = {
+		focus = USA_convince_opposition
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_the_bill_passes
+	
+	x = -1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_second_round
+	prerequisite = {
+		focus = USA_second_round
+	}
+	mutually_exclusive = {
+		focus = USA_its_over
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_its_over
+	
+	x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_second_round
+	prerequisite = {
+		focus = USA_second_round
+	}
+	mutually_exclusive = {
+		focus = USA_the_bill_passes
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_keep_the_coalition_again
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_the_bill_passes
+	prerequisite = {
+		focus = USA_the_bill_passes
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_a_better_america
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_keep_the_coalition_again
+	prerequisite = {
+		focus = USA_keep_the_coalition_again
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_we_cannot_be_impeded
+	
+	x = 1
+	y = 1
+	
+	allow_branch = {
+		has_completed_focus = USA_review_the_constitution
+	}
+	
+	cost = 7
+	relative_position_id = USA_review_the_constitution
+	mutually_exclusive = {
+		focus = USA_accept_our_limitations
+	}
+	prerequisite = { focus = USA_review_the_constitution }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_who_cares
+	
+	x = 1
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_we_cannot_be_impeded
+	prerequisite = { focus = USA_we_cannot_be_impeded }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_all_in
+	
+	x = 1
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_who_cares
+	prerequisite = { focus = USA_who_cares }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_congress_complains
+	
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_all_in
+	prerequisite = { focus = USA_all_in }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_we_have_majority
+	
+	x = -1
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_congress_complains
+	prerequisite = { focus = USA_congress_complains }
+	mutually_exclusive = {
+		focus = USA_game_of_politics
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_a_new_america
+	
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_we_have_majority
+	prerequisite = { focus = USA_we_have_majority }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_more_to_do
+	
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_a_new_america
+	prerequisite = { focus = USA_a_new_america }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_game_of_politics
+	
+	x = 1
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_congress_complains
+	prerequisite = { focus = USA_congress_complains }
+	mutually_exclusive = {
+		focus = USA_we_have_majority
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_through_the_house
+	
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_game_of_politics
+	prerequisite = { focus = USA_game_of_politics }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_into_the_senate
+	
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_through_the_house
+	prerequisite = { focus = USA_through_the_house }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_a_round_of_voting
+	
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_into_the_senate
+	prerequisite = { focus = USA_into_the_senate }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_a_socialist_future
+	
+	x = -2
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_a_round_of_voting
+	prerequisite = { focus = USA_a_round_of_voting }
+	mutually_exclusive = {
+		focus = USA_more_politics
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_forwards
+	
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_a_socialist_future
+	prerequisite = { focus = USA_a_socialist_future }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_more_politics
+	
+	x = 1
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_a_round_of_voting
+	prerequisite = { focus = USA_a_round_of_voting }
+	mutually_exclusive = {
+		focus = USA_a_socialist_future
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_come_to_terms
+	
+	x = -1
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_more_politics
+	prerequisite = { focus = USA_more_politics }
+	mutually_exclusive = {
+		focus = USA_another_round
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_another_round
+	
+	x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_more_politics
+	prerequisite = { focus = USA_more_politics }
+	mutually_exclusive = {
+		focus = USA_come_to_terms
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_convincing_the_house
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_another_round
+	prerequisite = { focus = USA_another_round }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_convincing_the_senate
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_convincing_the_house
+	prerequisite = { focus = USA_convincing_the_house }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_more_voting
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_convincing_the_senate
+	prerequisite = { focus = USA_convincing_the_senate }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_delayed_future
+	
+	x = -1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_more_voting
+	prerequisite = { focus = USA_more_voting }
+	mutually_exclusive = {
+		focus = USA_bill_ded_again
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_has_finally_arrived
+	
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_delayed_future
+	prerequisite = { focus = USA_delayed_future }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_bill_ded_again
+	
+	x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = USA_more_voting
+	prerequisite = { focus = USA_more_voting }
+	mutually_exclusive = {
+		focus = USA_delayed_future
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}

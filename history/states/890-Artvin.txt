@@ -1,0 +1,20 @@
+state={
+	id=890
+	name="STATE_890"
+	
+	history={
+		owner = GEO
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = GEO
+		add_claim_by = TUR
+	}
+	
+	provinces={
+		7454 10403 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

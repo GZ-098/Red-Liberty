@@ -24,7 +24,7 @@ country_event = { # boulder dam complete
 }
 country_event = { # may day
 	id = united_states_flavor.2
-	days = 119
+	days = 120
 }
 country_event = { # howie boy endorses thomas
 	id = united_states_flavor.3
@@ -162,8 +162,9 @@ set_popularities = {
 
 add_ideas = {
 	USA_red_liberty
-	USA_the_great_depression_3
+	USA_the_great_depression_5
 	USA_pacifism
+	USA_bloated_federal_government
 
 	undisturbed_isolation
 	great_depression
@@ -247,6 +248,17 @@ create_country_leader = {
 	picture = ""
 	expire = "1965.1.1"
 	ideology = liberal_conservatism_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "J. Lister Hill"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = national_conservatism_subtype
 	traits = {
 		
 	}

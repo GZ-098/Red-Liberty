@@ -163,8 +163,7 @@ add_to_faction = GER
 add_to_faction = BLR
 add_to_faction = UKR
 add_to_faction = GEO
-add_to_faction = LAT
-add_to_faction = EST
+add_to_faction = BAL
 remove_from_faction = ROM
 
 add_ideas = {

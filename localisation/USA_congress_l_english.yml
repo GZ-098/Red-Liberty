@@ -112,4 +112,9 @@
  USA_executive_order_8802_desc:0 "Order 8802 shall place a complete ban on racial discrimination in industries that contribute to the war effort."
  USA_executive_order_8807:0 "Executive Order 8807"
  
+ ### SPECIAL ###
+ 
+ USA_recession_timer:0 "§RThe Recession Worsens...§!"
+ USA_recession_timer_fail_tt:0 "§RFailing to deal with the recession in a timely manner will have serious political consequences...§!\n"
+ 
  

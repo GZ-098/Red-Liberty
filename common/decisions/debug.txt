@@ -47,6 +47,35 @@ debug_category = {
 				id = us_election.5
 			}
 			set_country_flag = USA_thomas_second_term_tree_force_on
+			clr_country_flag = USA_lister_tree_force_on
+		}
+	}
+	
+	debug_load_lister_first_term = {
+	
+		icon = generic_political_discourse
+		
+		avaliable = {
+			tag = USA
+		}
+		
+		visible = {
+			is_debug = yes
+			tag = USA
+		}
+		
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+		
+		complete_effect = {
+			country_event = {
+				id = us_election.7
+			}
+			set_country_flag = USA_lister_tree_force_on
+			clr_country_flag = USA_thomas_second_term_tree_force_on
 		}
 	}
 	
