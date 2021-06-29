@@ -1,6 +1,6 @@
 ﻿capital = 586
 
-oob = ""
+oob = "SCH"
 
 set_research_slots = 2
 

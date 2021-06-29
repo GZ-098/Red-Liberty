@@ -1,0 +1,21 @@
+SCH_restore_bukhara = {
+	custom_effect_tooltip = SCH_restore_bukhara_tt
+	hidden_effect = {
+		UZB = {	
+			add_state_core = 844
+			add_state_core = 742
+			
+			transfer_state = 844
+			transfer_state = 742
+			
+			if = {
+				limit = { has_template = "Kazach'ya Pekhotnaya Diviziya" }
+				delete_unit_template_and_units = { division_template = "Kazach'ya Pekhotnaya Diviziya }
+			}
+			if = {
+				limit = { has_template = "Kazach'ya Kavaleriyskaya Diviziya" }
+				delete_unit_template_and_units = { division_template = "Kazach'ya Kavaleriyskaya Diviziya" }
+			}
+		}
+	}
+}

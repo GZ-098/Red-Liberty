@@ -28,6 +28,7 @@ add_ideas = {
 	RUS_eternal_transition
 	RUS_alone_in_the_cold
 	RUS_crippling_debt
+	RUS_new_years_strike
 	
 	limited_exports
 	limited_conscription

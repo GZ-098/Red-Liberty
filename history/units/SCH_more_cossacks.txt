@@ -1,0 +1,15 @@
+﻿
+units = {
+	division= {
+		location = 1591
+		division_template = "Kazach'ya Pekhotnaya Diviziya"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+	}
+	division= {
+		location = 1591
+		division_template = "Kazach'ya Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+	}
+}

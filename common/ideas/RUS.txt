@@ -64,7 +64,27 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = 0.5
+				consumer_goods_factor = 0.3
+			}
+		}
+		
+		RUS_new_years_strike = {
+			
+			removal_cost = -1 
+			
+			allowed = {
+				tag = RUS
+			}
+			
+			available = {
+				
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
 				industrial_capacity_factory = -0.25
 			}
 		}

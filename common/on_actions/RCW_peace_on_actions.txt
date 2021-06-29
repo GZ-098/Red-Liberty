@@ -56,6 +56,28 @@ on_actions = {
 				}
 			}
 			
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							original_tag = URL
+							original_tag = ORE
+						}
+					}
+					FROM = {
+						OR = {
+							tag = SOV
+							tag = FER
+						}
+					}
+				}
+				SOV = {
+					annex_country = {
+						target = ROOT
+					}
+				}
+			}
+			
 			clr_global_flag = skip_default_capitulation
 		}
 	}

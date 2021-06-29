@@ -3,5 +3,12 @@
  SCH_DEF:0 "the Semirechye Cossack Host"
  SCH_ADJ:0 "Cossack"
  
+ SCH_turkestan_autonomy:0 "Turkestan Autonomy"
+ SCH_turkestan_autonomy_DEF:0 "the Turkestan Autonomy"
+ SCH_turkestan_autonomy_ADJ:0 "Turkestani"
+ 
  SCH_cossacks:0 "Cossacks"
+ 
+ SCH_restore_bukhara_tt:0 "The §YEmirate of Bukhara§! will be restored as a puppet state."
+ SCH_onto_khiva_tt:0 "Depending on our choices, we will either attempt to puppet the §YKhanate of Khiva§!, or we will crush them militarily."
  

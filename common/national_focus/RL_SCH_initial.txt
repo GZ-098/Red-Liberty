@@ -1,0 +1,398 @@
+shared_focus = {
+    id = SCH_semirechye_cossacks
+	icon = GFX_SCH_semirechye_cossacks
+	
+    x = 8
+	y = 0
+	
+	cost = 2
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SCH_developing_verniy
+	icon = GFX_SCH_developing_verniy
+	
+    x = -4
+	y = 1
+	
+	cost = 3
+	relative_position_id = SCH_semirechye_cossacks
+	prerequisite = { focus = SCH_semirechye_cossacks }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SCH_russian_assistance
+	icon = GFX_SCH_russian_assistance
+	
+    x = -1
+	y = 1
+	
+	cost = 3
+	relative_position_id = SCH_developing_verniy
+	prerequisite = { focus = SCH_developing_verniy }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SCH_smuggle_tools
+	icon = GFX_SCH_smuggle_tools
+	
+    x = 1
+	y = 1
+	
+	cost = 3
+	relative_position_id = SCH_developing_verniy
+	prerequisite = { focus = SCH_developing_verniy }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SCH_finalize_plans
+	icon = GFX_SCH_finalize_plans
+	
+    x = 1
+	y = 1
+	
+	cost = 3
+	relative_position_id = SCH_russian_assistance
+	prerequisite = { focus = SCH_russian_assistance }
+	prerequisite = { focus = SCH_smuggle_tools }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SCH_first_factory
+	icon = GFX_SCH_first_factory
+	
+    x = 0
+	y = 1
+	
+	cost = 3
+	relative_position_id = SCH_finalize_plans
+	prerequisite = { focus = SCH_finalize_plans }
+    completion_reward = {
+        586 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}	
+			add_extra_state_shared_building_slots = 1
+		}
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SCH_battle_for_central_asia
+	icon = GFX_SCH_battle_for_central_asia
+	
+    x = 0
+	y = 1
+	
+	cost = 3
+	relative_position_id = SCH_semirechye_cossacks
+	prerequisite = { focus = SCH_semirechye_cossacks }
+    completion_reward = {
+        declare_war_on = {
+			target = KYR
+			type = annex_everything
+		}
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SCH_abolish_emirates
+	icon = GFX_SCH_abolish_emirates
+	
+    x = -1
+	y = 1
+	
+	available = {
+		KYR = {
+			exists = no
+		}
+	}
+	
+	cost = 3
+	mutually_exclusive = { focus = SCH_restore_bukhara }
+	relative_position_id = SCH_battle_for_central_asia
+	prerequisite = { focus = SCH_battle_for_central_asia }
+    completion_reward = {
+        add_state_core = 844
+		add_state_core = 742
+		
+		add_stability = -0.1
+		
+		add_political_power = -50
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SCH_restore_bukhara
+	icon = GFX_SCH_restore_bukhara
+	
+    x = 1
+	y = 1
+	
+	available = {
+		KYR = {
+			exists = no
+		}
+	}
+	
+	cost = 3
+	mutually_exclusive = { focus = SCH_abolish_emirates }
+	relative_position_id = SCH_battle_for_central_asia
+	prerequisite = { focus = SCH_battle_for_central_asia }
+    completion_reward = {
+        SCH_restore_bukhara = yes
+		SCH = {
+			puppet = UZB
+		}
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SCH_onto_khiva
+	icon = GFX_SCH_onto_khiva
+	
+    x = 1
+	y = 1
+	
+	cost = 3
+	relative_position_id = SCH_abolish_emirates
+	prerequisite = {
+		focus = SCH_abolish_emirates
+		focus = SCH_restore_bukhara
+	}
+    completion_reward = {
+		custom_effect_tooltip = SCH_onto_khiva_tt
+        if = {
+			limit = {
+				has_completed_focus = SCH_restore_bukhara
+			}
+			puppet = KHV
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = SCH_abolish_emirates
+			}
+			declare_war_on = {
+				target = KHV
+				type = annex_everything
+			}
+		}
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SCH_shores_of_the_caspian
+	icon = GFX_SCH_shores_of_the_caspian
+	
+    x = 0
+	y = 1
+	
+	cost = 3
+	relative_position_id = SCH_onto_khiva
+	prerequisite = { focus = SCH_onto_khiva }
+    completion_reward = {
+        declare_war_on = {
+			target = TMS
+			type = annex_everything
+		}
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SCH_our_army
+	icon = GFX_SCH_our_army
+	
+    x = 4
+	y = 1
+	
+	cost = 3
+	relative_position_id = SCH_semirechye_cossacks
+	prerequisite = { focus = SCH_semirechye_cossacks }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SCH_recruit_locals
+	icon = GFX_SCH_recruit_locals
+	
+    x = -1
+	y = 1
+	
+	cost = 3
+	mutually_exclusive = { focus = SCH_cossacks_only }
+	relative_position_id = SCH_our_army
+	prerequisite = { focus = SCH_our_army }
+    completion_reward = {
+        load_oob = SCH_more_peasants
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SCH_cossacks_only
+	icon = GFX_SCH_cossacks_only
+	
+    x = 1
+	y = 1
+	
+	cost = 3
+	mutually_exclusive = { focus = SCH_recruit_locals }
+	relative_position_id = SCH_our_army
+	prerequisite = { focus = SCH_our_army }
+    completion_reward = {
+        load_oob = SCH_more_cossacks
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SCH_crossing_the_mountains
+	icon = GFX_SCH_crossing_the_mountains
+	
+    x = 1
+	y = 1
+	
+	cost = 3
+	relative_position_id = SCH_recruit_locals
+	prerequisite = {
+		focus = SCH_recruit_locals
+		focus = SCH_cossacks_only
+	}
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SCH_cossacks_have_no_fear
+	icon = GFX_SCH_cossacks_have_no_fear
+	
+    x = 0
+	y = 1
+	
+	cost = 3
+	relative_position_id = SCH_crossing_the_mountains
+	prerequisite = { focus = SCH_crossing_the_mountains }
+    completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SCH_restore_turkestan_autonomy
+	icon = GFX_SCH_restore_turkestan_autonomy
+	
+    x = -1
+	y = 1
+	
+	available = {
+		TMS = {
+			exists = no
+		}
+	}
+	
+	cost = 3
+	mutually_exclusive = {
+		focus = SCH_form_great_turkestan_host
+	}
+	relative_position_id = SCH_shores_of_the_caspian
+	prerequisite = { focus = SCH_shores_of_the_caspian }
+	prerequisite = { focus = SCH_first_factory }
+    completion_reward = {
+        set_cosmetic_tag = SCH_turkestan_autonomy
+		#RUS = {
+		#	puppet = SCH
+		#}
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = SCH_form_great_turkestan_host
+	icon = GFX_SCH_form_great_turkestan_host
+	
+    x = 1
+	y = 1
+	
+	cost = 3
+	mutually_exclusive = {
+		focus = SCH_restore_turkestan_autonomy
+	}
+	relative_position_id = SCH_shores_of_the_caspian
+	prerequisite = { focus = SCH_shores_of_the_caspian }
+	prerequisite = { focus = SCH_cossacks_have_no_fear }
+	completion_reward = {
+        
+    }
+	ai_will_do = {
+		factor = 10
+	}
+}
