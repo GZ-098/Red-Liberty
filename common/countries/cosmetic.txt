@@ -401,3 +401,8 @@ ENG_puppet = {
 	color = rgb { 171 48 48 }
 	color_ui = rgb { 255 73 121 }
 }
+
+SCH_turkestan_autonomy = {
+	color = rgb { 95 135 80 }
+	color_ui = rgb { 77 133 56 }
+}

@@ -1,0 +1,46 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Kazach'ya Pekhotnaya Diviziya"
+
+	division_names_group = ORE_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Kazach'ya Kavaleriyskaya Diviziya"
+
+	division_names_group = ORE_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+
+###### OOB ######
+units = {
+	division= {
+		location = 1591
+		division_template = "Kazach'ya Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.85
+		start_equipment_factor = 0.8
+	}
+	division= {
+		location = 4316
+		division_template = "Kazach'ya Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.85
+		start_equipment_factor = 0.8
+	}
+}

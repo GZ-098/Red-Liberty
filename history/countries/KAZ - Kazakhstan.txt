@@ -82,6 +82,8 @@ set_popularities = {
 	ultranational_statism = 0
 }
 
+set_cosmetic_tag = RUS_cossack_host
+
 create_country_leader = {
 	name = "Nikolay Aleksandrovich Skvortsov"
 	desc = "POLITICS_SKVORTSOV_DESC"

@@ -760,7 +760,7 @@ ALT = {
 }
 
 SCH = {
-	color = rgb { 232 46 46 }
+	color = rgb { 209 88 88 }
 	color_ui = rgb { 232 46 46 }
 }
 

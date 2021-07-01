@@ -16,7 +16,7 @@ country_event = { # intro event
 
 country_event = { # far east revolt
 	id = soviet.2
-	title = ""
+	title = "A Hint of Weakness"
 	desc = soviet.2.desc
 	
 	is_triggered_only = yes
@@ -24,7 +24,7 @@ country_event = { # far east revolt
 	fire_only_once = yes
 
 	option = {
-		name = "Damned Tsarists!"
+		name = "Move Out!"
 		SOV = {
 			declare_war_on = {
 				target = RUS

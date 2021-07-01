@@ -41,6 +41,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			country_event = { id = USA_election_helpers.12 days = 30 }
+			clr_country_flag = USA_presidential_elections
 		}
 	}
 	
@@ -52,7 +53,6 @@ country_event = {
 				check_variable = { ROOT.democrat_electoral_votes > 267 }
 			}
 		}
-		clr_country_flag = USA_presidential_elections
 		
 		add_stability = -0.1
 		
@@ -76,8 +76,6 @@ country_event = {
 		trigger = {
 			check_variable = { ROOT.socialist_electoral_votes > 267 }
 		}
-		clr_country_flag = USA_presidential_elections
-		clear_election_results = yes
 		
 		country_event = { # new congress gets sworn in
 			id = us_election.3
@@ -99,8 +97,6 @@ country_event = {
 		trigger = {
 			check_variable = { ROOT.democrat_electoral_votes > 267 }
 		}
-		clr_country_flag = USA_presidential_elections
-		clear_election_results = yes
 		
 		country_event = { # new congress gets sworn in
 			id = us_election.3

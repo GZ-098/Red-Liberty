@@ -4,12 +4,12 @@ spritetypes = {
 	
 	SpriteType = {
 		name = "GFX_WGR_proclaim_republic"
-		texturefile = "gfx/interface/goals/WGR/WGR_peoples_republic.png"
+		texturefile = "gfx/interface/goals/WGR/WGR_proclaim_the_peoples_republic_2.png"
 	}
 	
 	SpriteType = {
 		name = "GFX_WGR_republican_army"
-		texturefile = "gfx/interface/goals/WGR/WGR_army.png"
+		texturefile = "gfx/interface/goals/WGR/WGR_republican_army.png"
 	}
 	
 	SpriteType = {
