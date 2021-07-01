@@ -756,7 +756,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ITA_bust_unions
 		}
-		x = 34
+		x = 36
 		y = 10
 			available_if_capitulated = yes
 			search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1472,7 +1472,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ITA_encourage_worker_unions
 		}
-		x = 36
+		x = 34
 		y = 10
 			available_if_capitulated = yes
 			search_filters = { FOCUS_FILTER_INDUSTRY }
