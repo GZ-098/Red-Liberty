@@ -1,0 +1,486 @@
+shared_focus = {
+    id = FRA_the_revolution_begins
+	icon = GFX_FRA_the_revolution_begins
+	
+    x = 8
+	y = 0
+	
+	cost = 5
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_committee_of_public_safety
+	icon = GFX_FRA_committee_of_public_safety
+	
+    x = -3
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_the_revolution_begins
+	prerequisite = { focus = FRA_the_revolution_begins }
+	mutually_exclusive = {
+		focus = FRA_revolutionary_masses
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_reign_of_terror
+	icon = GFX_FRA_reign_of_terror
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_committee_of_public_safety
+	prerequisite = { focus = FRA_committee_of_public_safety }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_fate_of_enemies
+	icon = GFX_FRA_fate_of_enemies
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_reign_of_terror
+	prerequisite = { focus = FRA_reign_of_terror }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_fate_of_allies
+	icon = GFX_FRA_fate_of_allies
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_fate_of_enemies
+	prerequisite = { focus = FRA_fate_of_enemies }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_cult_of_reason
+	icon = GFX_FRA_cult_of_reason
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_fate_of_allies
+	prerequisite = { focus = FRA_fate_of_allies }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_petit_livre_rouge
+	icon = GFX_FRA_petit_livre_rouge
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_committee_of_public_safety
+	prerequisite = { focus = FRA_committee_of_public_safety }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_free_the_masses
+	icon = GFX_FRA_free_the_masses
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_petit_livre_rouge
+	prerequisite = { focus = FRA_petit_livre_rouge }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_export_socialism
+	icon = GFX_FRA_export_socialism
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_free_the_masses
+	prerequisite = { focus = FRA_free_the_masses }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_erect_barricades
+	icon = GFX_FRA_erect_barricades
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_export_socialism
+	prerequisite = { focus = FRA_export_socialism }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_eternal_terror
+	icon = GFX_FRA_eternal_terror
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_cult_of_reason
+	prerequisite = { focus = FRA_cult_of_reason }
+	prerequisite = { focus = FRA_erect_barricades }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_revolutionary_masses
+	icon = GFX_FRA_revolutionary_masses
+	
+    x = 3
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_the_revolution_begins
+	prerequisite = { focus = FRA_the_revolution_begins }
+	mutually_exclusive = {
+		focus = FRA_committee_of_public_safety
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_mob_justice
+	icon = GFX_FRA_mob_justice
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_revolutionary_masses
+	prerequisite = { focus = FRA_revolutionary_masses }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_french_marxism
+	icon = GFX_FRA_french_marxism
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_mob_justice
+	prerequisite = { focus = FRA_mob_justice }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_expand_public_works
+	icon = GFX_FRA_expand_public_works
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_french_marxism
+	prerequisite = { focus = FRA_french_marxism }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_think_mark_think
+	icon = GFX_FRA_think_mark_think
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_expand_public_works
+	prerequisite = { focus = FRA_expand_public_works }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_colonial_indoctrination
+	icon = GFX_FRA_colonial_indoctrination
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_revolutionary_masses
+	prerequisite = { focus = FRA_revolutionary_masses }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_revolutionary_colonies
+	icon = GFX_FRA_revolutionary_colonies
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	mutually_exclusive = {
+		focus = FRA_communal_union
+	}
+	relative_position_id = FRA_colonial_indoctrination
+	prerequisite = { focus = FRA_colonial_indoctrination }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_some_more_equal
+	icon = GFX_FRA_some_more_equal
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_revolutionary_colonies
+	prerequisite = { focus = FRA_revolutionary_colonies }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_council_of_minorities
+	icon = GFX_FRA_council_of_minorities
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_some_more_equal
+	prerequisite = { focus = FRA_some_more_equal }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_france_reborn
+	icon = GFX_FRA_france_reborn
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_think_mark_think
+	prerequisite = { focus = FRA_think_mark_think }
+	prerequisite = { focus = FRA_council_of_minorities }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_communal_union
+	icon = GFX_FRA_communal_union
+	
+    x = 2
+	y = 1
+	
+	cost = 5
+	mutually_exclusive = {
+		focus = FRA_revolutionary_colonies
+	}
+	relative_position_id = FRA_colonial_indoctrination
+	prerequisite = { focus = FRA_colonial_indoctrination }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_representation_for_all
+	icon = GFX_FRA_representation_for_all
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_communal_union
+	prerequisite = { focus = FRA_communal_union }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_one_people
+	icon = GFX_FRA_one_people
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_representation_for_all
+	prerequisite = { focus = FRA_representation_for_all }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = FRA_one_state
+	icon = GFX_FRA_one_state
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = FRA_one_people
+	prerequisite = { focus = FRA_one_people }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}

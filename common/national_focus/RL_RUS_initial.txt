@@ -1,0 +1,216 @@
+shared_focus = {
+    id = RUS_the_new_years_strike
+	icon = GFX_RUS_the_new_years_strike
+	
+    x = 8
+	y = 0
+	
+	cost = 1
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = RUS_come_to_the_table
+	icon = GFX_RUS_come_to_the_table
+	
+    x = -2
+	y = 1
+	
+	cost = 2
+	mutually_exclusive = {
+		focus = RUS_no_negotiation
+	}
+	relative_position_id = RUS_the_new_years_strike
+	prerequisite = { focus = RUS_the_new_years_strike }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = RUS_better_pay
+	icon = GFX_RUS_better_pay
+	
+    x = -1
+	y = 1
+	
+	cost = 2
+	relative_position_id = RUS_come_to_the_table
+	prerequisite = { focus = RUS_come_to_the_table }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = RUS_shorter_hours
+	icon = GFX_RUS_shorter_hours
+	
+    x = 1
+	y = 1
+	
+	cost = 2
+	relative_position_id = RUS_come_to_the_table
+	prerequisite = { focus = RUS_come_to_the_table }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = RUS_all_is_well
+	icon = GFX_RUS_all_is_well
+	
+    x = 1
+	y = 1
+	
+	cost = 2
+	relative_position_id = RUS_better_pay
+	prerequisite = { focus = RUS_better_pay }
+	prerequisite = { focus = RUS_shorter_hours }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = RUS_no_negotiation
+	icon = GFX_RUS_no_negotiation
+	
+    x = 2
+	y = 1
+	
+	cost = 2
+	mutually_exclusive = {
+		focus = RUS_come_to_the_table
+	}
+	relative_position_id = RUS_the_new_years_strike
+	prerequisite = { focus = RUS_the_new_years_strike }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = RUS_send_the_army
+	icon = GFX_RUS_send_the_army
+	
+    x = -1
+	y = 1
+	
+	cost = 2
+	relative_position_id = RUS_no_negotiation
+	prerequisite = { focus = RUS_no_negotiation }
+    completion_reward = {
+        add_stability = -0.1
+		add_manpower = -234
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = RUS_hunt_them_down
+	icon = GFX_RUS_hunt_them_down
+	
+    x = 0
+	y = 1
+	
+	cost = 2
+	relative_position_id = RUS_send_the_army
+	prerequisite = { focus = RUS_send_the_army }
+    completion_reward = {
+        add_stability = -0.05
+		add_manpower = -127
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = RUS_stricter_eye
+	icon = GFX_RUS_stricter_eye
+	
+    x = 1
+	y = 1
+	
+	cost = 2
+	relative_position_id = RUS_no_negotiation
+	prerequisite = { focus = RUS_no_negotiation }
+    completion_reward = {
+        add_stability = 0.05
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = RUS_harder_hand
+	icon = GFX_RUS_harder_hand
+	
+    x = 0
+	y = 1
+	
+	cost = 2
+	relative_position_id = RUS_stricter_eye
+	prerequisite = { focus = RUS_stricter_eye }
+    completion_reward = {
+        add_stability = 0.05
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = RUS_situation_normal
+	icon = GFX_RUS_situation_normal
+	
+    x = 1
+	y = 1
+	
+	cost = 2
+	relative_position_id = RUS_hunt_them_down
+	prerequisite = { focus = RUS_hunt_them_down }
+	prerequisite = { focus = RUS_harder_hand }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
