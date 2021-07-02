@@ -1,0 +1,31 @@
+state={
+	id=896
+	name="STATE_896"
+	
+	history={
+		owner = RUS
+		victory_points = {
+			957 15 
+		}
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			industrial_complex = 2
+			air_base = 5
+			957 = {
+				naval_base = 8
+				coastal_bunker = 3
+			}
+		}
+		add_core_of = RUS
+		
+		set_demilitarized_zone = yes
+	}
+	
+	provinces={
+		957 
+	}
+	manpower=120000
+	buildings_max_level_factor=1.000
+	state_category=city
+}
