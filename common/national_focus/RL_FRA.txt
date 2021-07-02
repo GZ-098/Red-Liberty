@@ -24,6 +24,10 @@ focus_tree = {
 			add = 10
 			tag = FRA
 		}
+		modifier = {
+			add = 5
+			has_country_flag = FRA_far_left_force_on
+		}
 	}
 	continuous_focus_position = {
 		x = -2500

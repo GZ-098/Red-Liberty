@@ -150,4 +150,21 @@ spritetypes = {
 		name = "GFX_FRA_paris_putsch"
 		texturefile = "gfx/interface/goals/FRA/FRA_paris_putsch.png"
 	}
+	
+	### FAR-LEFT TREE ###
+	
+	SpriteType = {
+		name = "GFX_FRA_the_revolution_begins"
+		texturefile = "gfx/interface/goals/FRA/FRA_the_revolution_begins.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_committee_of_public_safety"
+		texturefile = "gfx/interface/goals/FRA/FRA_committee_for_public_safety.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_reign_of_terror"
+		texturefile = "gfx/interface/goals/FRA/FRA_reign_of_terror.png"
+	}
 }

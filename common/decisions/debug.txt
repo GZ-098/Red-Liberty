@@ -79,6 +79,31 @@ debug_category = {
 		}
 	}
 	
+	debug_load_FRA_far_left_tree = {
+	
+		icon = generic_political_discourse
+		
+		avaliable = {
+			tag = FRA
+		}
+		
+		visible = {
+			is_debug = yes
+			tag = FRA
+		}
+		
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+		
+		complete_effect = {
+			load_focus_tree = FRA_communist_tree
+			set_country_flag = FRA_far_left_force_on
+		}
+	}
+	
 	debug_start_second_acw = {
 	
 		icon = generic_political_discourse
