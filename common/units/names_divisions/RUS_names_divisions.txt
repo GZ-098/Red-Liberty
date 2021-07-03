@@ -1,0 +1,390 @@
+﻿RUS_INF_01 = {
+	name = "Rifle Division"
+
+	for_countries = { RUS }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%dya. Pekhotnaya Diviziya"
+
+	ordered = {
+		1 = { "%dya. Pekhotnaya Diviziya" }
+		2 = { "%dya. Pekhotnaya Diviziya" }
+		3 = { "%dya. Pekhotnaya Diviziya" }
+		4 = { "%dya. Pekhotnaya Diviziya" }
+		5 = { "%dya. Pekhotnaya Diviziya" }
+		6 = { "%dya. Pekhotnaya Diviziya" }
+		7 = { "%dya. Pekhotnaya Diviziya" }
+		8 = { "%dya. Pekhotnaya Diviziya" }
+		9 = { "%dya. Pekhotnaya Diviziya" }
+		10 = { "%dya. Pekhotnaya Diviziya" }
+		40 = { "%dya. Yeniseyskaya Pekhotnaya Diviziya" }
+		41 = { "%dya. Petrovskaya Pekhotnaya Diviziya" }
+		42 = { "%dya. Bagrationovskaya Pekhotnaya Diviziya" }
+		43 = { "%dya. Shuyskaya Pekhotnaya Diviziya" }
+		44 = { "%dya. Imeretinskaya Pekhotnaya Diviziya" }
+		45 = { "%dya. Miloradovichskaya Pekhotnaya Diviziya" }
+		52 = { "%dya. Kremlyevskaya Pekhotnaya Diviziya" }
+		53 = { "%dya. Georgievskaya Pekhotnaya Diviziya" }
+		55 = { "%dya. Kulikovskaya Pekhotnaya Diviziya" }
+		83 = { "%dya. Samurskaya Pekhotnaya Diviziya" }
+	}
+}
+
+RUS_INF_02 = {
+	name = "Life/Grenadier Guards"
+
+	for_countries = { RUS }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+
+	fallback_name = "%dya. Gvardeiskaya Pekhotnaya Diviziya"
+
+	ordered = {
+		1 = { "1ya. Gvardeiskaya Pekhotnaya Diviziya" }
+		2 = { "2ya. Gvardeiskaya Pekhotnaya Diviziya" }
+		3 = { "3ya. Gvardeiskaya Pekhotnaya Diviziya" }
+		4 = { "1ya. Grenaderskaya Diviziya" }
+		5 = { "2ya. Grenaderskaya Diviziya" }
+		6 = { "3ya. Grenaderskaya Diviziya" }
+		7 = { "1ya. Kavkazskaya Grenaderskaya Diviziya" }
+		8 = { "5ya. Grenaderskaya Diviziya" }
+		9 = { "6ya. Grenaderskaya Diviziya" }
+		10 = { "2ya. Kavkazskaya Grenaderskaya Diviziya" }
+	}
+}
+
+RUS_INF_03 = {
+	name = "Field Gendarme Squadron"
+
+	for_countries = { RUS }
+
+	can_use = { always = no }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%dya. Field Gendarme Squadron"
+
+	ordered = {
+		1 = { "%dya. Polevoi Zhandarmskii eskadron" }
+		2 = { "%dya. Polevoi Zhandarmskii eskadron" }
+		3 = { "%dya. Polevoi Zhandarmskii eskadron" }
+		4 = { "%dya. Polevoi Zhandarmskii eskadron" }
+		5 = { "%dya. Polevoi Zhandarmskii eskadron" }
+		6 = { "%dya. Polevoi Zhandarmskii eskadron" }
+		7 = { "%dya. Polevoi Zhandarmskii eskadron" }
+		8 = { "%dya. Polevoi Zhandarmskii eskadron" }
+		9 = { "%dya. Polevoi Zhandarmskii eskadron" }
+		10 = { "%dya. Polevoi Zhandarmskii eskadron" }
+	}
+}
+
+RUS_INF_04 = {
+	name = "Siberian Infantry Division"
+
+	for_countries = { RUS }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+
+	fallback_name = "%dya. Sibirskaya Strelkovaya Diviziya"
+
+	ordered = {
+		1 = { "%dya. Sibirskaya Strelkovaya Diviziya" }
+		2 = { "%dya. Sibirskaya Strelkovaya Diviziya" }
+		3 = { "%dya. Sibirskaya Strelkovaya Diviziya" }
+		4 = { "%dya. Sibirskaya Strelkovaya Diviziya" }
+		5 = { "%dya. Sibirskaya Strelkovaya Diviziya" }
+		6 = { "%dya. Sibirskaya Strelkovaya Diviziya" }
+		7 = { "%dya. Sibirskaya Strelkovaya Diviziya" }
+		8 = { "%dya. Sibirskaya Strelkovaya Diviziya" }
+		9 = { "%dya. Sibirskaya Strelkovaya Diviziya" }
+		10 = { "%dya. Sibirskaya Strelkovaya Diviziya" }
+	}
+}
+
+RUS_CAV_01 = {
+	name = "Cavalry Division"
+
+	for_countries = { RUS }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+
+	fallback_name = "%dya. Kavaleriiskaya Diviziya"
+
+	ordered = {
+		1 = { "%dya. Kavaleriiskaya Diviziya" }
+		2 = { "%dya. Kavaleriiskaya Diviziya" }
+		3 = { "%dya. Kavaleriiskaya Diviziya" }
+		4 = { "%dya. Kavaleriiskaya Diviziya" }
+		5 = { "%dya. Kavaleriiskaya Diviziya" }
+		6 = { "%dya. Kavaleriiskaya Diviziya" }
+		7 = { "%dya. Kavaleriiskaya Diviziya" }
+		8 = { "%dya. Kavaleriiskaya Diviziya" }
+		9 = { "%dya. Kavaleriiskaya Diviziya" }
+		10 = { "%dya. Kavaleriiskaya Diviziya" }
+		11 = { "%dya. Kavaleriiskaya Diviziya" }
+		12 = { "%dya. Kavaleriiskaya Diviziya" }
+		13 = { "%dya. Kavaleriiskaya Diviziya" }
+		14 = { "%dya. Kavaleriiskaya Diviziya" }
+		15 = { "%dya. Kavaleriiskaya Diviziya" }
+		16 = { "Kavkazskaya Kavaleriiskaya Diviziya" }
+		26 = { "%dya. Konno-Arteliriyskaya Diviziya" }
+		27 = { "%dya. Uralskaya Kazach'ya Diviziya" }
+	}
+}
+
+RUS_CAV_02 = {
+	name = "Guard Cavalry Division"
+
+	for_countries = { RUS }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	fallback_name = "%dya. Gvardeiskaya Kavaleriiskaya Diviziya"
+
+	ordered = {
+		1 = { "%dya. Gvardeiskaya Kavaleriiskaya Diviziya" }
+		2 = { "%dya. Gvardeiskaya Kavaleriiskaya Diviziya" }
+	}
+}
+
+RUS_CAV_03 = {
+	name = "Cossack Division"
+
+	for_countries = { RUS }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	fallback_name = "%dya. Kazach'ya Diviziya"
+
+	ordered = {
+		1 = { "%dya. Kavkazskaya Kazach'ya Diviziya" }
+		2 = { "%dya. Kavkazskaya Kazach'ya Diviziya" }
+		3 = { "%dya. Kavkazskaya Kazach'ya Diviziya" }
+		4 = { "%dya. Kazach'ya Diviziya" }
+		5 = { "%dya. Kazach'ya Diviziya" }
+		6 = { "%dya. Kazach'ya Diviziya" }
+		7 = { "%dya. Kazach'ya Diviziya" }
+		8 = { "%dya. Kazach'ya Diviziya" }
+		9 = { "%dya. Kazach'ya Diviziya" }
+		10 = { "%dya. Kazach'ya Diviziya" }
+		11 = { "%dya. Kazach'ya Diviziya" }
+		12 = { "%dya. Kazach'ya Diviziya" }
+		13 = { "%dya. Kazach'ya Diviziya" }
+		14 = { "%dya. Kazach'ya Diviziya" }
+		15 = { "%dya. Kazach'ya Diviziya" }
+	}
+}
+
+RUS_MOT_01 = {
+	name = "Motor Rifle Division"
+	for_countries = { RUS }
+	can_use = { always = yes }
+	division_types = { "motorized" }
+	link_numbering_with = { RUS_INF_01 RUS_MEC_01 }
+
+	fallback_name = "%dya Motopekhotnaya Diviziya" #For god sake, you named rifle division 'Pekhotnaya' (Infantry) but motorized divisions named 'Motorised Rifle division' not 'Motorised Infantry division'. Motopekhotnaya means Motorised Infantry.
+
+	ordered = {
+		1 = { "%dya. Motopekhotnaya Diviziya" }
+		2 = { "%dya. Motopekhotnaya Diviziya" }
+		3 = { "%dya. Motopekhotnaya Diviziya" }
+		4 = { "%dya. Zheleznaya Motostrelkovaya Diviziya" }
+		5 = { "%dya. Motopekhotnaya Diviziya" }
+		6 = { "%dya. Motopekhotnaya Diviziya" }
+		7 = { "%dya. Motopekhotnaya Diviziya" }
+		8 = { "%dya. Motopekhotnaya Diviziya" }
+		9 = { "%dya. Motopekhotnaya Diviziya" }
+		10 = { "%dya. Motopekhotnaya Diviziya" }
+	}
+}
+
+RUS_MEC_01 = {
+	name = "Mechanized Division"
+	for_countries = { RUS }
+	can_use = { always = yes }
+	division_types = { "mechanized" "motorized" }
+	link_numbering_with = { RUS_INF_01 RUS_MOT_01 }
+
+	fallback_name = "%dya Mekhanizirovanaya Diviziya"
+
+	ordered = {
+		1 = { "%dya. Mekhanizirovanaya Diviziya" }
+		2 = { "%dya. Mekhanizirovanaya Diviziya" }
+		3 = { "%dya. Mekhanizirovanaya Diviziya" }
+		4 = { "%dya. Mekhanizirovanaya Diviziya" }
+		5 = { "%dya. Mekhanizirovanaya Diviziya" }
+		6 = { "%dya. Mekhanizirovanaya Diviziya" }
+		7 = { "%dya. Mekhanizirovanaya Diviziya" }
+		8 = { "%dya. Mekhanizirovanaya Diviziya" }
+		9 = { "%dya. Mekhanizirovanaya Diviziya" }
+		10 = { "%dya. Mekhanizirovanaya Diviziya" }
+	}
+}
+
+RUS_ARM_01 = {
+	name = "Tank Division"
+	for_countries = { RUS }
+	can_use = { always = yes }
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "%dya Tankovaya Diviziya"
+
+	ordered = {
+		1 = { "%dya. Tankovaya Diviziya" }
+		2 = { "%dya. Tankovaya Diviziya" }
+		3 = { "%dya. Tankovaya Diviziya" }
+		4 = { "%dya. Moskovskaya Tankovaya Diviziya" }
+		5 = { "%dya. Petrogradskaya Tankovaya Diviziya" }
+		6 = { "%dya. Uralskaya Tankovaya Diviziya" }
+		7 = { "%dya. Irkutskaya Tankovaya Diviziya" }
+		8 = { "%dya. Blagoveshchenskaya Tankovaya Diviziya" }
+		9 = { "%dya. Orenburgskaya Tankovaya Diviziya" }
+		10 = { "%dya. Tankovaya Diviziya" }
+		11 = { "%dya. Tsaritsynskaya Tankovaya Diviziya" }
+		12 = { "%dya. Tankovaya Diviziya" }
+		13 = { "%dya. Tankovaya Diviziya" }
+		14 = { "%dya. Tankovaya Diviziya" }
+		15 = { "%dya. Tankovaya Diviziya" }
+		16 = { "%dya. Tankovaya Diviziya" }
+		17 = { "%dya. Tankovaya Diviziya" }
+		18 = { "%dya. Tankovaya Diviziya" }
+		19 = { "%dya. Tankovaya Diviziya" }
+		20 = { "%dya. Tankovaya Diviziya" }
+	}
+}
+
+RUS_ARM_02 = {
+	name = "Guards Tank Division"
+	for_countries = { RUS }
+	can_use = { always = yes }
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "%dya Tankovaya Diviziya"
+
+	ordered = {
+		1 = { "%dya. Gvardeiskaya Tankovaya Diviziya" }
+		2 = { "%dya. Gvardeiskaya Tankovaya Diviziya" }
+		3 = { "%dya. Gvardeiskaya Tankovaya Diviziya" }
+		4 = { "%dya. Gvardeiskaya Tankovaya Diviziya" } 
+		5 = { "%dya. Gvardeiskaya Tankovaya Diviziya" }
+		6 = { "%dya. Gvardeiskaya Tankovaya Diviziya" }
+		7 = { "%dya. Gvardeiskaya Tankovaya Diviziya" }
+		8 = { "%dya. Gvardeiskaya Tankovaya Diviziya" }
+		9 = { "%dya. Gvardeiskaya Tankovaya Diviziya" }
+	}
+}
+
+RUS_PAR_01 = {
+	name = "Paratrooper Division"
+	for_countries = { RUS }
+	can_use = { always = yes }
+	division_types = { "paratrooper" }
+
+	fallback_name = "%dya Vozdushno-Desantnaya Diviziya"
+
+	ordered = {
+		1 = { "%dya. Vozdushno-Desantnaya Diviziya" }
+		2 = { "%dya. Vozdushno-Desantnaya Diviziya" }
+		3 = { "%dya. Vozdushno-Desantnaya Diviziya" }
+		4 = { "%dya. Vozdushno-Desantnaya Diviziya" }
+		5 = { "%dya. Vozdushno-Desantnaya Diviziya" }
+		6 = { "%dya. Vozdushno-Desantnaya Diviziya" }
+		7 = { "%dya. Vozdushno-Desantnaya Diviziya" }
+		8 = { "%dya. Vozdushno-Desantnaya Diviziya" }
+		9 = { "%dya. Vozdushno-Desantnaya Diviziya" }
+		10 = { "%dya. Vozdushno-Desantnaya Diviziya" }
+	}
+}
+
+RUS_MAR_01 = {
+	name = "Marine Division"
+	for_countries = { RUS }
+	can_use = { always = yes }
+	division_types = { "marine" }
+
+	fallback_name = "%dya Diviziya Morskoy Pekhoty"
+
+	ordered = {
+		1 = { "%dya. Diviziya Morskoy Pekhoty" }
+		2 = { "%dya. Diviziya Morskoy Pekhoty" }
+		3 = { "%dya. Diviziya Morskoy Pekhoty" }
+		4 = { "%dya. Diviziya Morskoy Pekhoty" }
+		5 = { "%dya. Diviziya Morskoy Pekhoty" }
+		6 = { "%dya. Diviziya Morskoy Pekhoty" }
+		7 = { "%dya. Diviziya Morskoy Pekhoty" }
+		8 = { "%dya. Diviziya Morskoy Pekhoty" }
+		9 = { "%dya. Diviziya Morskoy Pekhoty" }
+		10 = { "%dya. Diviziya Morskoy Pekhoty" }
+	}
+}
+
+RUS_MNT_01 = {
+	name = "Mountain Rifle Division"
+	for_countries = { RUS }
+	can_use = { always = yes }
+	division_types = { "mountaineers" }
+
+	fallback_name = "%dya Gornopekhotnaya Diviziya"
+
+	ordered = {
+		1 = { "%dya. Kavkazskaya Gornostrelkovaya Diviziya" } #historical (Russian imperial army)
+		2 = { "%dya. Kavkazskaya Gornostrelkovaya Diviziya" } #historical (Russian imperial army)
+		3 = { "%dya. Kavkazskaya Gornostrelkovaya Diviziya" } #historical (Russian imperial army)
+		4 = { "%dya. Kavkazskaya Gornostrelkovaya Diviziya" } #historical (Russian imperial army)
+		5 = { "%dya. Kavkazskaya Gornostrelkovaya Diviziya" } #historical (Russian imperial army)
+		6 = { "%dya. Kavkazskaya Gornostrelkovaya Diviziya" } #historical (Russian imperial army)
+		7 = { "%dya. Kavkazskaya Gornostrelkovaya Diviziya" } #historical (Russian imperial army)
+		17 = { "%dya. Gornopekhotnaya Diviziya" }
+		18 = { "%dya. Gornopekhotnaya Diviziya" }
+		19 = { "%dya. Gornopekhotnaya Diviziya" }
+		20 = { "%dya. Gornopekhotnaya Diviziya" }
+	}
+}
+
+RUS_MIL_01 = {
+	name = "Militia Division"
+	for_countries = { RUS }
+	can_use = { always = yes }
+	division_types = { "militia" }
+
+	fallback_name = "%dya Diviziya Opolcheniya"
+
+	ordered = {
+		1 = { "%dya Diviziya Moskovskogo Opolcheniya" }
+		2 = { "%dya Diviziya Petrogradskogo Opolcheniya" }
+		3 = { "%dya Diviziya Tsaritsynskogo Opolcheniya" }
+		4 = { "%dya Diviziya Irkutskogo Opolcheniya" }
+		5 = { "%dya Diviziya Pskovskogo Opolcheniya" }
+		6 = { "%dya Diviziya Vitebskogo Opolcheniya" }
+		7 = { "%dya Diviziya Novgorodskogo Opolcheniya" }
+		8 = { "%dya Diviziya Yekaterinburgskogo Opolcheniya" }
+		9 = { "%dya Diviziya Krestyanskogo Opolcheniya" }
+		10 = { "%dya Diviziya Krestyanskogo Opolcheniya" }
+		11 = { "%dya Diviziya Krestyanskogo Opolcheniya" }
+		12 = { "%dya Diviziya Rabochego Opolcheniya" }
+		13 = { "%dya Diviziya Rabochego Opolcheniya" }
+		14 = { "%dya Diviziya Rabochego Opolcheniya" }
+		15 = { "%dya Diviziya Opolcheniya" }
+		16 = { "%dya Diviziya Opolcheniya" }
+		17 = { "%dya Diviziya Opolcheniya" }
+		18 = { "%dya Diviziya Opolcheniya" }
+		19 = { "%dya Diviziya Opolcheniya" }
+		20 = { "%dya Diviziya Opolcheniya" }
+	}
+}
