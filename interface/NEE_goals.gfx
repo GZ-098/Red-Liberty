@@ -52,7 +52,7 @@ spritetypes = {
 	
 	SpriteType = {
 		name = "GFX_NEE_crack_down_on_puritanism"
-		texturefile = "gfx/interface/goals/NEE/crack_down_on_puritanism.png"
+		texturefile = "gfx/interface/goals/NEE/crack_down_on_puritanism_2.png"
 	}
 	
 	SpriteType = {

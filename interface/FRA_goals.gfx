@@ -160,11 +160,26 @@ spritetypes = {
 	
 	SpriteType = {
 		name = "GFX_FRA_committee_of_public_safety"
-		texturefile = "gfx/interface/goals/FRA/FRA_committee_for_public_safety.png"
+		texturefile = "gfx/interface/goals/FRA/FRA_committee_for_public_safety_2.png"
 	}
 	
 	SpriteType = {
 		name = "GFX_FRA_reign_of_terror"
 		texturefile = "gfx/interface/goals/FRA/FRA_reign_of_terror.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_revolutionary_masses"
+		texturefile = "gfx/interface/goals/FRA/FRA_revolutionary_masses_bigger.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_mob_justice"
+		texturefile = "gfx/interface/goals/FRA/FRA_mob_justice_bigger.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_french_marxism"
+		texturefile = "gfx/interface/goals/FRA/FRA_french_marxism_smaller.png"
 	}
 }
