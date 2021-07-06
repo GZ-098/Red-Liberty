@@ -360,3 +360,18 @@ country_event = { # aw yea its cthulhu ftaghn time
 		}
 	}
 }
+
+country_event = { # USA, USA, USA!
+	id = united_states_flavor.4
+	title = "The Fourth of July"
+	desc = united_states_flavor.4.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = united_states_flavor.4.a
+		custom_effect_tooltip = usa_usa_usa_tt
+	}
+}

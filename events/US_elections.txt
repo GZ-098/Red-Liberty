@@ -259,6 +259,34 @@ news_event = { # lister election news event
 	}
 }
 
+country_event = { # lindy inaug day
+	id = us_election.9
+	title = "Inuaguration Day"
+	desc = us_election.9.desc
+
+	is_triggered_only = yes
+	
+	option = { # 
+		name = us_election.7.a
+		USA_lindy_pres_setup = yes
+	}
+}
+
+news_event = { # lindy election news event
+	id = us_election.10
+	title = "Lindbergh Wins the Presidency!"
+	desc = us_election.10.desc
+	picture = GFX_report_event_usa_election_lindy_victory
+
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = us_election.10.a
+	}
+}
+
 news_event = { # deadlocked EC news event
 	id = us_election.9
 	title = "Deadlock in the United States!"

@@ -32,6 +32,8 @@ country_event = { # far east revolt
 				add_state_core = 561
 				add_state_core = 562
 				add_state_core = 657
+				
+				add_state_core = 896
 			}
 			RUS = {
 				every_owned_state = {

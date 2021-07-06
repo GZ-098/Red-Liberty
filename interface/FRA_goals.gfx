@@ -180,6 +180,41 @@ spritetypes = {
 	
 	SpriteType = {
 		name = "GFX_FRA_french_marxism"
-		texturefile = "gfx/interface/goals/FRA/FRA_french_marxism_smaller.png"
+		texturefile = "gfx/interface/goals/FRA/FRA_french_marxism_even_smaller.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_expand_public_works"
+		texturefile = "gfx/interface/goals/FRA/FRA_expand_public_works_even_smaller.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_think_mark_think"
+		texturefile = "gfx/interface/goals/FRA/FRA_think_workers_smaller.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_colonial_indoctrination"
+		texturefile = "gfx/interface/goals/FRA/FRA_colonial_indoctrination.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_revolutionary_colonies"
+		texturefile = "gfx/interface/goals/FRA/FRA_revolutionary_colonies_smaller.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_some_more_equal"
+		texturefile = "gfx/interface/goals/FRA/FRA_some_equal_than_others_2_smaller.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_council_of_minorities"
+		texturefile = "gfx/interface/goals/FRA/FRA_council_of_minorites.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_france_reborn"
+		texturefile = "gfx/interface/goals/FRA/FRA_france_reborn.png"
 	}
 }

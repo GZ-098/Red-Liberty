@@ -1,6 +1,28 @@
 ideas = {
 	
-	country = { 
+	country = {
+	
+       	FRA_fallen_govt = {
+			removal_cost = -1 
+			
+			allowed = {
+				tag = FRA
+			} 
+			available = {
+				
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = -0.25
+				political_power_gain = -1
+			}
+		} 
+	
+	
        	FRA_a_falling_democracy = {
 			removal_cost = -1 
 			
@@ -24,31 +46,4 @@ ideas = {
 			}
 		} 
 	}
-	
-	
-
-       
-
-
-	#Military
-	army_chief = {
-	}
-	navy_chief = {
-	}
-	air_chief = {
-	}
-	high_command = {
-	}
-	#Manufacturers
-	tank_manufacturer = {
-	}
-	naval_manufacturer = {
-	}
-	aircraft_manufacturer = {
-	}
-	materiel_manufacturer = {
-	}
-	theorist = {
-	}
-}
 }

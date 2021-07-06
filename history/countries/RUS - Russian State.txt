@@ -80,3 +80,9 @@ SCH = {
 TRB = {
 	give_military_access = RUS
 }
+AMU = {
+	give_military_access = RUS
+}
+USS = {
+	give_military_access = RUS
+}

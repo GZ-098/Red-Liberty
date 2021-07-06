@@ -11,12 +11,16 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = RUS
+		owner = AMU
 		buildings = {
 			infrastructure = 3
 			air_base = 2
 		}
-		add_core_of = RUS
+		add_core_of = AMU
+		
+		victory_points = {
+			7763 1
+		}
 	}
 
 	provinces={

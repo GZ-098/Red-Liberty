@@ -30,6 +30,10 @@ country_event = { # howie boy endorses thomas
 	id = united_states_flavor.3
 	days = 156
 }
+country_event = { # fourth of july
+	id = united_states_flavor.4
+	days = 185
+}
 
 country_event = { # 1937 recession event chain
 	id = united_states.7
@@ -39,6 +43,7 @@ country_event = { # 1937 recession event chain
 country_event = { # appalachian insurgency
 	id = united_states.15
 	days = 610 # around the end of the year 1937
+	random = 15
 }
 
 set_research_slots = 4

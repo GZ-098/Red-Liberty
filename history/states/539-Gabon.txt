@@ -3,7 +3,8 @@ state={
 	name="STATE_539"
 
 	history={
-		owner = FRA
+		owner = FCA
+		add_core_of = FCA
 		add_core_of = GAB
 		victory_points = {
 			5139 1 

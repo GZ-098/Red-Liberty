@@ -982,6 +982,21 @@ BAL = {
 	color_ui = rgb { 142 142 128 }
 }
 
+FWA = {
+	color = rgb { 43 86 173 }
+	color_ui = rgb { 74 147 255 }
+}
+
+FCA = {
+	color = rgb { 43 86 173 }
+	color_ui = rgb { 74 147 255 }
+}
+
+FIC = {
+	color = rgb { 43 86 173 }
+	color_ui = rgb { 74 147 255 }
+}
+
 ### US CIVIL WAR COLORS ###
 
 AMS = {

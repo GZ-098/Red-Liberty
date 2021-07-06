@@ -1,0 +1,40 @@
+﻿capital = 671
+
+oob = "empty"
+set_stability = 0.45
+set_war_support = 0.05
+
+set_technology = {
+	
+}
+
+set_politics = {
+	ruling_party = martial_despotism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 2
+	social_democracy = 0
+	progressive_liberalism = 10
+	market_libertarianism = 12
+	national_conservatism = 5
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 33
+	martial_despotism = 38
+	ultranational_statism = 0
+}
+
+create_country_leader = {
+	name = "Eugène Jean Louis René Robin"
+	desc = ""
+	picture = ""
+	ideology = martial_despotism_subtype
+	traits = {
+		
+	}
+}

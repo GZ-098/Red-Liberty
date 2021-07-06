@@ -5,9 +5,66 @@ shared_focus = {
     x = 8
 	y = 0
 	
-	cost = 5
+	select_effect = {
+		country_event = {
+			id = france.2
+			days = 5
+		}
+	}
+	
+	cost = 7
     completion_reward = {
-        
+        custom_effect_tooltip = FRA_convene_assembly_tt
+		
+		if = {
+			limit = {
+				has_country_flag = FRA_popular_front
+			}
+			set_politics = {
+				ruling_party = libertarian_socialism
+				last_election = "1936.4.3"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+			set_country_flag = libertarian_socialism_coalition
+			set_country_flag = social_democracy_coalition
+			
+			remove_ideas = {
+				FRA_fallen_govt
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = FRA_popular_front_found_coalition_partner
+			}
+			add_popularity = {
+				ideology = revolutionary_autocracy
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = proletarian_dictatorship
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = market_libertarianism
+				popularity = -0.01
+			}
+			add_popularity = {
+				ideology = national_conservatism
+				popularity = -0.02
+			}
+			set_country_flag = rev_autocracy_coalition
+			set_country_flag = proletarian_coalition
+			set_country_flag = progressive_coalition
+		}
+		if = {
+			limit = {
+				has_country_flag = FRA_popular_front_grand_coalition
+			}
+			set_country_flag = progressive_coalition
+			set_country_flag = market_libertarian_coalition
+			set_country_flag = conservative_coalition
+		}
     }
 	
 	ai_will_do = {
@@ -29,6 +86,7 @@ shared_focus = {
 		focus = FRA_mass_resignations
 	}
     completion_reward = {
+		add_political_power = 50
         mark_focus_tree_layout_dirty = yes
     }
 	
@@ -51,6 +109,7 @@ shared_focus = {
 		focus = FRA_government_formed
 	}
     completion_reward = {
+		add_political_power = -50
         mark_focus_tree_layout_dirty = yes
     }
 	

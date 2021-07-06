@@ -1,0 +1,26 @@
+state={
+	id=897
+	name="STATE_897"
+	
+	history={
+		owner = USS
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = USS
+		
+		victory_points = {
+			3977 3
+		}
+		victory_points = {
+			664 1
+		}
+	}
+	
+	provinces={
+		664 810 3787 3843 3977 5427 6684 6838 11879 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

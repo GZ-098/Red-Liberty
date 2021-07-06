@@ -211,12 +211,15 @@ ALT = "countries/Altai.txt"
 SBR = "countries/Siberia.txt"
 FER = "countries/Far Eastern Republic.txt"
 NRR = "countries/North Russian Republic.txt"
+KHV = "countries/Khiva.txt"
+TMY = "countries/Talyshstan.txt"
+
+USS = "countries/Ussuri Cossack Host.txt"
 SCH = "countries/Semirechye Cossack Host.txt"
 ORE = "countries/Orenburg Cossack Host.txt"
 TRB = "countries/Transbaikalia.txt"
 URL = "countries/Ural Cossack Host.txt"
-KHV = "countries/Khiva.txt"
-TMY = "countries/Talyshstan.txt"
+AMU = "countries/Amur Cossack Host.txt"
 
 DON = "countries/Don Republic.txt"
 KUB = "countries/Kuban Republic.txt"
@@ -241,6 +244,9 @@ BSA = "countries/British South Africa.txt"
 AES = "countries/Anglo-Egyptian Sudan.txt"
 BAR = "countries/British Arabia.txt"
 BWI = "countries/British West Indies.txt"
+
+FWA = "countries/French West Africa.txt"
+FCA = "countries/French Central Africa.txt"
 
 ### South America ###
 UOB = "countries/Union of Brazil.txt"
@@ -272,6 +278,7 @@ GUI = "countries/Guizhou.txt"
 
 ### East Indies ###
 SRW = "countries/Sarawak.txt"
+FIC = "countries/French Indochina.txt"
 
 ### Civil War Majors - WILL ALWAYS APPEAR ###
 MCA = "countries/MacArthur Clique.txt"

@@ -40,4 +40,9 @@ spriteTypes = {
 		name = "GFX_report_event_usa_election_lister_victory"
 		texturefile = "gfx/news_event_gfx/USA/news_event_USA_lister_garner.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_report_event_usa_election_lindy_victory"
+		texturefile = "gfx/news_event_gfx/USA/news_event_USA_lindy.dds"
+	}
 }
