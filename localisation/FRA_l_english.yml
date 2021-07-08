@@ -32,8 +32,10 @@
  FRA_national_conservatism_party_long:0 "Fédération Républicaine"
  FRA_reactionary_theocracy_party:0 "--"
  FRA_authoritarian_republicanism_party:0 "--"
- FRA_martial_despotism_party:0 "--"
- FRA_ultranational_statism_party:0 "--"
+ FRA_martial_despotism_party:0 "AF"
+ FRA_martial_despotism_party_long:0 "Action Française"
+ FRA_ultranational_statism_party:0 "CdF"
+ FRA_ultranational_statism_party_long:0 "Croix-de-Feu"
  
  ### IDEAS ###
  
@@ -45,7 +47,8 @@
  FRA_government_formed:0 "Government Formed"
  FRA_mass_resignations:0 "Mass Resignations"
  
- FRA_convene_assembly_tt:0 "The National Assembly will be convened, and hopefully a governent will be formed."
+ FRA_convene_assembly_tt:0 "The National Assembly will be convened, and hopefully a government will be formed."
+ FRA_govt_formed:0 "A government was successfully formed!"
  
  FRA_cooler_heads_prevail:0 "Cooler Heads Prevail"
  FRA_outlaw_paramilitaries:0 "Outlaw Paramilitaries"
@@ -84,6 +87,14 @@
  FRA_the_revolution_begins:0 "The Revolution Begins"
  FRA_committee_of_public_safety:0 "A New Committee of Public Safety"
  FRA_reign_of_terror:0 "Reign of Terror"
+ FRA_fate_of_enemies:0 "Fate of Our Enemies"
+ FRA_fate_of_allies:0 "Fate of Our Allies"
+ FRA_cult_of_reason:0 "Culte de la Raison"
+ FRA_petit_livre_rouge:0 "Petit Livre Rouge"
+ FRA_free_the_masses:0 "Free the Masses"
+ FRA_export_socialism:0 "Export Socialism"
+ FRA_erect_barricades:0 "Erect Barricades"
+ FRA_eternal_terror:0 "Eternal State of Terror"
  
  FRA_revolutionary_masses:0 "Revolutionary Masses"
  FRA_mob_justice:0 "Mob Justice"
@@ -95,6 +106,10 @@
  FRA_some_more_equal:0 "Some More Equal Than Others"
  FRA_council_of_minorities:0 "Council of Minorities"
  FRA_france_reborn:0 "France Reborn"
+ FRA_communal_union:0 "Communal Union"
+ FRA_representation_for_all:0 "Representation for All"
+ FRA_one_people:0 "One People"
+ FRA_one_state:0 "One State"
  
  ### EVENTS ###
  france_far_right.1.desc:0 "After over sixty years of Republican rule and the effective disappearance of overt monarchism in the French political scene, it was thought that its return was impossible. That belief was mistaken.\n\nToday, members of the Action Française entered the largely-vacant Palais du Luxembourg and Palais Bourbon, allowed entry by their comrades who already had seats in the government, and declared themselves as being the new government of France by virtue of simply occupying the halls of government.\n\nThe military seems onboard, although a vocal minority of the population is less than enthused by this turn of events, and of course virtually all of the republicans parties have declared the new regime illegitimate, to which leaders of Action Française have snidely remarked that, if they loved their republic so much, perhaps they should not have abandoned it by resigning their posts.\n\nThe leader of Action Française, Charles Maurras, has been declared regent in a ceremony that blended both ancient themes with modern political language, evoking the glory of the Ancien Régime while also calling for “national rejuvenation”. This bizarre blending of the old and the new was, fittingly, broadcast on radio and television for all French people to see and hear.\n\nHaving achieved this position by making their particular brand of monarchy as vague and inclusive as possible, it is, as of yet, unknown which of the three major royal families, the Bourbons, the Orléanists, or the Bonapartes, will be crowned. What is certain is that the Third Republic is now, officially, dead."

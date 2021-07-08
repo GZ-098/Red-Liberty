@@ -169,6 +169,46 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_FRA_fate_of_enemies"
+		texturefile = "gfx/interface/goals/FRA/FRA_fate_of_the_enemies.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_fate_of_allies"
+		texturefile = "gfx/interface/goals/FRA/FRA_fate_of_the_allies.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_cult_of_reason"
+		texturefile = "gfx/interface/goals/FRA/FRA_cult_of_reason.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_petit_livre_rouge"
+		texturefile = "gfx/interface/goals/FRA/FRA_petit_livre_rouge.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_free_the_masses"
+		texturefile = "gfx/interface/goals/FRA/FRA_free_the_masses.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_export_socialism"
+		texturefile = "gfx/interface/goals/FRA/FRA_export_socialism.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_erect_barricades"
+		texturefile = "gfx/interface/goals/FRA/FRA_erect_barriers.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_eternal_terror"
+		texturefile = "gfx/interface/goals/FRA/FRA_eternal_terror.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_FRA_revolutionary_masses"
 		texturefile = "gfx/interface/goals/FRA/FRA_revolutionary_masses_bigger.png"
 	}
@@ -216,5 +256,25 @@ spritetypes = {
 	SpriteType = {
 		name = "GFX_FRA_france_reborn"
 		texturefile = "gfx/interface/goals/FRA/FRA_france_reborn.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_communal_union"
+		texturefile = "gfx/interface/goals/FRA/FRA_communal_union.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_representation_for_all"
+		texturefile = "gfx/interface/goals/FRA/FRA_representation_for_all.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_one_people"
+		texturefile = "gfx/interface/goals/FRA/FRA_one_people.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_one_state"
+		texturefile = "gfx/interface/goals/FRA/FRA_one_state.png"
 	}
 }

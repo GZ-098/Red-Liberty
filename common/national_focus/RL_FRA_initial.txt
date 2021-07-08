@@ -32,6 +32,8 @@ shared_focus = {
 			remove_ideas = {
 				FRA_fallen_govt
 			}
+			
+			set_country_flag = FRA_govt_formed
 		}
 		if = {
 			limit = {
@@ -65,6 +67,44 @@ shared_focus = {
 			set_country_flag = market_libertarian_coalition
 			set_country_flag = conservative_coalition
 		}
+		
+		if = {
+			limit = {
+				has_country_flag = FRA_national_union
+			}
+			set_politics = {
+				ruling_party = national_conservatism
+				last_election = "1936.4.3"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+			set_country_flag = market_libertarian_coalition
+			set_country_flag = conservative_coalition
+			
+			remove_ideas = {
+				FRA_fallen_govt
+			}
+			
+			set_country_flag = FRA_govt_formed
+		}
+		if = {
+			limit = {
+				has_country_flag = FRA_national_union_found_coalition_partner
+			}
+			add_popularity = {
+				ideology = ultranational_statism
+				popularity = 0.02
+			}
+			set_country_flag = ultranationalist_coalition
+		}
+		if = {
+			limit = {
+				has_country_flag = FRA_national_union_grand_coalition
+			}
+			set_country_flag = libertarian_socialism_coalition
+			set_country_flag = social_democracy_coalition
+			set_country_flag = progressive_coalition
+		}
     }
 	
 	ai_will_do = {
@@ -78,6 +118,10 @@ shared_focus = {
 	
     x = -1
 	y = 1
+	
+	available = {
+		has_country_flag = FRA_govt_formed
+	}
 	
 	cost = 5
 	relative_position_id = FRA_convene_national_assembly
@@ -101,6 +145,12 @@ shared_focus = {
 	
     x = 1
 	y = 1
+	
+	available = {
+		NOT = {
+			has_country_flag = FRA_govt_formed
+		}
+	}
 	
 	cost = 5
 	relative_position_id = FRA_convene_national_assembly

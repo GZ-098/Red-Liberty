@@ -118,10 +118,10 @@ set_popularities = {
 	social_democracy = 10
 	progressive_liberalism = 19
 	market_libertarianism = 13
-	national_conservatism = 32
+	national_conservatism = 29
 	reactionary_theocracy = 0
 	authoritarian_republicanism = 1
-	martial_despotism = 0
+	martial_despotism = 3
 	ultranational_statism = 7
 }
 
