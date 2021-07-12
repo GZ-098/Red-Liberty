@@ -56,29 +56,56 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = revolutionary_socialism
+	ruling_party = social_democracy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 35
+	social_democracy = 45
+	progressive_liberalism = 0
+	market_libertarianism = 20
+	national_conservatism = 0
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 0
+	martial_despotism = 0
+	ultranational_statism = 0
+}
+
+create_country_leader = {
+	name = "Thomas Faulkner"
+	desc = ""
+	picture = "Portrait_LIB_Thomas.tga"
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype
+	traits = {
+		#
+	
+}
+
+create_country_leader = {
+	name = "Didwho Twe"
+	desc = ""
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = libertarian_socialism_subtype
+	traits = {
+		
+	}
 }
 
 create_country_leader = {
 	name = "Edwin Barclay"
-	desc = "POLITICS_EDWIN_BARCLAY_DESC"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
+	desc = ""
+	picture = "Portrait_LIB_edwin_barclay.tga"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = market_libertarianism_subtype
 	traits = {
-		#
+		
 	}
 }
 
