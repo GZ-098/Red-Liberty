@@ -81,4 +81,8 @@
  AZR_liberalism_party:0 "Musavat"
  AZR_democratic_socialism_party:0 "Hummet"
  AZR_revolutionary_socialism_party:0 "Bolsheviks"
+
+ LIB_social_democracy_party:0 "People's Party"
+ LIB_libertarian_socialism_party:0 "Reform Party"
+ LIB_market_libertarianism_party:0 "True Whig Party"
  
