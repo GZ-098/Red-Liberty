@@ -23,10 +23,15 @@ if = {
 		target = ROM
 		autonomous_state = autonomy_occupied
 	}
+	set_autonomy = {
+		target = CRI
+		autonomous_state = autonomy_occupied
+	}
 	else = {
 		puppet = POL
 		puppet = LIT
 		puppet = ROM
+		puppet = CRI
 	}
 }
 
@@ -164,6 +169,7 @@ add_to_faction = BLR
 add_to_faction = UKR
 add_to_faction = GEO
 add_to_faction = BAL
+add_to_faction = CRI
 remove_from_faction = ROM
 
 add_ideas = {

@@ -23,8 +23,6 @@ USA_amendments_category = {
 		original_tag = USA
 	}
 	
-	visible_when_empty = yes
-	
 	priority = 85
 }
 

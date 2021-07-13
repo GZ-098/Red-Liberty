@@ -334,7 +334,7 @@ country_event = { # regret
 
 country_event = { # shits gotten complicated
 	id = united_states_thomas.20
-	title = "A Byzantine Labyrinth"
+	title = "Dealing with the Bloat"
 	desc = united_states_thomas.20.desc
 	
 	is_triggered_only = yes
@@ -342,7 +342,7 @@ country_event = { # shits gotten complicated
 	fire_only_once = yes
 
 	option = {
-		name = ""
+		name = "Make it so."
 	}
 }
 

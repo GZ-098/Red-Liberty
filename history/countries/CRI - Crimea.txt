@@ -1,0 +1,46 @@
+﻿capital = 137
+
+oob = ""
+
+set_research_slots = 2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+}
+
+set_politics = {
+	ruling_party = authoritarian_republicanism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 5
+	social_democracy = 30
+	progressive_liberalism = 10
+	market_libertarianism = 0
+	national_conservatism = 20
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 35
+	martial_despotism = 0
+	ultranational_statism = 0
+}
+
+create_country_leader = {
+	name = "Maciej Sulkiewicz"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = authoritarian_republicanism_subtype 
+	traits = {
+	}
+} 
+

@@ -9,14 +9,33 @@ if = {
 	}
 }
 
-load_focus_tree = USA_initial_tree
-complete_national_focus = USA_the_year_1936
+#load_focus_tree = USA_initial_tree
+#complete_national_focus = USA_the_year_1936
 
+load_focus_tree = USA_thomas_tree
+complete_national_focus = USA_hoovers_folly
+complete_national_focus = USA_the_american_crisis
+complete_national_focus = USA_of_agriculture
+complete_national_focus = USA_buy_up_produce
+complete_national_focus = USA_federal_relief_programs
+complete_national_focus = USA_ccc
+complete_national_focus = USA_of_industry
+complete_national_focus = USA_create_the_fprc
+complete_national_focus = USA_bank_regulation
+complete_national_focus = USA_regulate_stock_markets
+complete_national_focus = USA_paying_for_it_all
+complete_national_focus = USA_raise_taxes
+complete_national_focus = USA_dealing_with_the_dustbowl
+complete_national_focus = USA_strengthen_labor_regs
 
-set_variable = { USA_thomas_rich_tyranny = 26 }
-set_variable = { USA_thomas_rich_radicalism = 19 }
-set_variable = { USA_thomas_middle_tyranny = 12 }
+complete_national_focus = USA_the_second_thomas_admin
 
+set_country_flag = USA_recovery_enabled
+set_variable = { USA_recovery_length = 250 }
+
+#set_variable = { USA_thomas_rich_tyranny = 26 }
+#set_variable = { USA_thomas_rich_radicalism = 19 }
+#set_variable = { USA_thomas_middle_tyranny = 12 }
 
 country_event = { # boulder dam complete
 	id = united_states_flavor.1
@@ -170,6 +189,7 @@ add_ideas = {
 	USA_the_great_depression_5
 	USA_pacifism
 	USA_bloated_federal_government
+	USA_clashes_with_the_courts
 
 	undisturbed_isolation
 	great_depression

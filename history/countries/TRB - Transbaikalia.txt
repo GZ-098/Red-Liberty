@@ -1,6 +1,6 @@
 ﻿capital = 564
 
-#oob = ""
+oob = "TRB"
 
 # Starting tech
 set_technology = {
@@ -29,6 +29,11 @@ set_popularities = {
 }
 
 set_cosmetic_tag = RUS_cossack_host
+
+add_ideas = {
+	TRB_cossack_host
+	TRB_buryat_mongolia
+}
 
 create_country_leader = {
 	name = "Grigory Semyonov"

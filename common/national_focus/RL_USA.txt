@@ -1,20 +1,20 @@
 ###INITIAL TREE
-focus_tree = {
-	id = USA_initial_tree
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = USA
-		}
-	}
-	continuous_focus_position = {
-		x = 25
-		y = -1250
-	}
-	default = no
-	shared_focus = USA_the_year_1936
-}
+#focus_tree = {
+#	id = USA_initial_tree
+#	country = {
+#		factor = 0
+#		modifier = {
+#			add = 10
+#			tag = USA
+#		}
+#	}
+#	continuous_focus_position = {
+#		x = 25
+#		y = -1250
+#	}
+#	default = no
+#	shared_focus = USA_the_year_1936
+#}
 
 focus_tree = {
 	id = USA_thomas_tree
@@ -35,8 +35,8 @@ focus_tree = {
 	}
 	default = no
 	shared_focus = USA_the_second_thomas_admin
-	shared_focus = USA_fight_the_recession
-	shared_focus = USA_war_is_a_racket
+	shared_focus = USA_reforming_the_military
+	#shared_focus = USA_fight_the_recession
 }
 
 focus_tree = {

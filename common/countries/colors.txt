@@ -997,6 +997,11 @@ FIC = {
 	color_ui = rgb { 74 147 255 }
 }
 
+CRI = {
+	color = rgb { 143 189 191 }
+	color_ui = rgb { 143 189 191 }
+}
+
 ### US CIVIL WAR COLORS ###
 
 AMS = {

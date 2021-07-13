@@ -1,0 +1,509 @@
+shared_focus = {
+    id = USA_reforming_the_military
+	icon = GFX_USA_USA_reforming_the_military
+	
+    x = -12
+	
+	cost = 2
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_the_army
+	icon = GFX_USA_the_army
+	
+    x = -6
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_reforming_the_military
+	prerequisite = { focus = USA_reforming_the_military }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_war_is_a_racket
+	icon = GFX_USA_war_is_a_racket
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_the_army
+	prerequisite = { focus = USA_the_army }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_butler_reform_plan
+	icon = GFX_USA_butler_reform_plan
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_war_is_a_racket
+	prerequisite = { focus = USA_war_is_a_racket }
+    completion_reward = {
+        army_experience = 25
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_20_division_plan
+	icon = GFX_USA_20_division_plan
+	
+    x = -5
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_butler_reform_plan
+	prerequisite = { focus = USA_butler_reform_plan }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_scrap_reserves
+	icon = GFX_USA_scrap_reserves
+	
+    x = -2
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_20_division_plan
+	prerequisite = { focus = USA_20_division_plan }
+    completion_reward = {
+        delete_unit_template_and_units = {
+			division_template = "Organized Reserve"
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_adequate_defense
+	icon = GFX_USA_adequate_defense
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_20_division_plan
+	prerequisite = { focus = USA_20_division_plan }
+    completion_reward = {
+        add_ideas = {
+			USA_coastal_defense
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_decentralize_national_guard
+	icon = GFX_USA_decentralize_national_guard
+	
+    x = 2
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_20_division_plan
+	prerequisite = { focus = USA_20_division_plan }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_make_do
+	icon = GFX_USA_make_do
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_scrap_reserves
+	prerequisite = { focus = USA_scrap_reserves }
+	prerequisite = { focus = USA_adequate_defense }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_army_of_by_for_the_people
+	icon = GFX_USA_army_of_by_for_the_people
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_adequate_defense
+	prerequisite = { focus = USA_adequate_defense }
+	prerequisite = { focus = USA_decentralize_national_guard }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_and_nothing_more
+	icon = GFX_USA_and_nothing_more
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_make_do
+	prerequisite = { focus = USA_make_do }
+	prerequisite = { focus = USA_army_of_by_for_the_people }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_ending_war_as_business
+	icon = GFX_USA_ending_war_as_business
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_butler_reform_plan
+	prerequisite = { focus = USA_butler_reform_plan }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_reclaim_american_dream
+	icon = GFX_USA_reclaim_american_dream
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_ending_war_as_business
+	prerequisite = { focus = USA_ending_war_as_business }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_dollars_and_cents
+	icon = GFX_USA_dollars_and_cents
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_ending_war_as_business
+	prerequisite = { focus = USA_ending_war_as_business }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_collective_conciousness
+	icon = GFX_USA_collective_conciousness
+	
+    x = -1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_reclaim_american_dream
+	prerequisite = { focus = USA_reclaim_american_dream }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_no_more_lies
+	icon = GFX_USA_no_more_lies
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_reclaim_american_dream
+	prerequisite = { focus = USA_reclaim_american_dream }
+	prerequisite = { focus = USA_dollars_and_cents }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_the_men_who_sold_the_world
+	icon = GFX_USA_the_men_who_sold_the_world
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_dollars_and_cents
+	prerequisite = { focus = USA_dollars_and_cents }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_fight_your_own_wars
+	icon = GFX_USA_fight_your_own_wars
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_no_more_lies
+	prerequisite = { focus = USA_collective_conciousness }
+	prerequisite = { focus = USA_no_more_lies }
+	prerequisite = { focus = USA_the_men_who_sold_the_world }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_as_the_fathers_intended
+	icon = GFX_USA_as_the_fathers_intended
+	
+    x = 3
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_and_nothing_more
+	prerequisite = { focus = USA_and_nothing_more }
+	prerequisite = { focus = USA_fight_your_own_wars }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_the_air_corps
+	icon = GFX_USA_the_air_corps
+	
+    x = 0
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_reforming_the_military
+	prerequisite = { focus = USA_reforming_the_military }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_under_the_army
+	icon = GFX_USA_under_the_army
+	
+    x = -2
+	y = 1
+	
+	cost = 2
+	mutually_exclusive = {
+		focus = USA_independent_air_force
+	}
+	relative_position_id = USA_the_air_corps
+	prerequisite = { focus = USA_the_air_corps }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_support_doctrine
+	icon = GFX_USA_support_doctrine
+	
+    x = -1
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_under_the_army
+	prerequisite = { focus = USA_under_the_army }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_cas_development
+	icon = GFX_USA_cas_development
+	
+    x = 1
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_under_the_army
+	prerequisite = { focus = USA_under_the_army }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_recon_aircraft
+	icon = GFX_USA_recon_aircraft
+	
+    x = 1
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_support_doctrine
+	prerequisite = { focus = USA_support_doctrine }
+	prerequisite = { focus = USA_cas_development }
+	prerequisite = { focus = USA_butler_reform_plan }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_independent_air_force
+	icon = GFX_USA_independent_air_force
+	
+    x = 2
+	y = 1
+	
+	cost = 2
+	mutually_exclusive = {
+		focus = USA_under_the_army
+	}
+	relative_position_id = USA_the_air_corps
+	prerequisite = { focus = USA_the_air_corps }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_the_navy
+	icon = GFX_USA_the_navy
+	
+    x = 6
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_reforming_the_military
+	prerequisite = { focus = USA_reforming_the_military }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
