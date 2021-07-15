@@ -1,0 +1,23 @@
+MEX_cristero_revolt = {
+	icon = GFX_population_icon
+	enable = { always = yes }
+	remove_trigger = { always = no }
+		
+	local_manpower = -0.5
+	supply_consumption_factor = 0.5
+	local_org_regain = -0.25
+	local_building_slots_factor = -0.5
+	local_resources = -0.5
+}
+
+MEX_cristero_sympathy = {
+	icon = GFX_population_icon
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	
+	local_manpower = -0.1
+	supply_consumption_factor = 0.25
+	local_org_regain = -0.1
+	local_building_slots_factor = -0.25
+	army_speed_factor = -0.25
+}

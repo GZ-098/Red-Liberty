@@ -1,0 +1,26 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			478 = {
+				add_dynamic_modifier = {
+					modifier = MEX_cristero_revolt
+				}
+			}
+			481 = {
+				add_dynamic_modifier = {
+					modifier = MEX_cristero_sympathy
+				}
+			}
+			485 = {
+				add_dynamic_modifier = {
+					modifier = MEX_cristero_sympathy
+				}
+			}
+			899 = {
+				add_dynamic_modifier = {
+					modifier = MEX_cristero_sympathy
+				}
+			}
+		}
+	}
+}

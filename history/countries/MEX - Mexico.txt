@@ -50,7 +50,7 @@ set_war_support = 0.1
 
 set_politics = {
 	ruling_party = proletarian_dictatorship
-	last_election = "1932.11.8"
+	last_election = "1932.7.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -72,7 +72,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Lázaro Cárdenas"
 	#desc = ""
-	#picture = ""
+	picture = "Portrait_MEX_Lazaro_Cardenas.png"
 	expire = "1965.1.1"
 	ideology = proletarian_dictatorship_subtype
 	traits = {
@@ -83,7 +83,7 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Lázaro Cárdenas"
 	id = 712
-	picture = "Portrait_Mexico_Lazaro_Cardenas.dds"
+	picture = "Portrait_MEX_Lazaro_Cardenas.png"
 	traits = { politically_connected }
 	skill = 3
 	attack_skill = 3
