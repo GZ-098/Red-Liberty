@@ -265,7 +265,7 @@ shared_focus = {
 	}
 	prerequisite = { focus = JAP_the_results }
     completion_reward = {
-        
+        add_stability = 0.03
     }
 	ai_will_do = {
 		factor = 10
@@ -302,20 +302,17 @@ shared_focus = {
     x = 1
 	y = 1
 	
-	cost = 1
+	cost = 2
 	relative_position_id = JAP_the_results
 	mutually_exclusive = {
 		focus = JAP_status_quo
 	}
 	prerequisite = { focus = JAP_the_results }
 	available = {
-		has_country_flag = JAP_july_crisis
+		has_country_flag = JAP_the_july_crisis
 	}
     completion_reward = {
-        country_event = {
-			id = japan.11
-			days = 1
-		}
+        add_stability = -0.03
     }
 	ai_will_do = {
 		factor = 10

@@ -179,7 +179,7 @@ country_event = {
 		name = "The ball is in the Liberals’ court now..."
 		set_politics = {
 			ruling_party = progressive_liberalism
-			last_election = "1933.2.25"
+			last_election = "1936.7.15"
 			election_frequency = 24
 			elections_allowed = yes
 		}
@@ -195,6 +195,18 @@ country_event = {
 		clear_all_coalitions = yes
 		set_country_flag = progressive_coalition
 		set_country_flag = market_libertarian_coalition
+		
+		hidden_effect = {
+			create_country_leader = {
+				name = "Ichiro Hatoyama"
+				desc = ""
+				picture = ""
+				expire = "1989.1.1"
+				ideology = national_conservatism_subtype
+				traits = {
+				}
+			}
+		}
 		
 		country_event = {
 			id = japan.10
@@ -223,7 +235,13 @@ country_event = {
 	
 	option = {
 		name = "Dear Abe-san..."
-		set_country_flag = JAP_july_crisis
+		set_country_flag = JAP_the_july_crisis
+		
+		country_event = {
+			id = japan.11
+			days = 14
+		}
+		
 		add_popularity = {
 			ideology = social_democracy
 			popularity = 0.04
@@ -250,6 +268,7 @@ country_event = {
 	option = {
 		name = "That’s ridiculous. His Majesty would never agree to that."
 		add_stability = -0.1
+		complete_national_focus = JAP_july_crisis
 		country_event = {
 			id = japan.13
 			days = 1
@@ -260,6 +279,7 @@ country_event = {
 	option = {
 		name = "I'm listening..."
 		add_political_power = -50
+		complete_national_focus = JAP_july_crisis
 		country_event = {
 			id = japan.12
 			days = 1
@@ -357,6 +377,7 @@ country_event = {
 		}
 		
 		clear_all_coalitions = yes
+		set_country_flag = conservative_coalition
 		set_country_flag = authoritarian_coalition
 		set_country_flag = despotist_coalition
 		set_country_flag = ultranationalist_coalition
@@ -387,11 +408,11 @@ country_event = {
 		}
 		set_politics = {
 			ruling_party = national_conservatism
-			last_election = "1933.2.25"
+			last_election = "1936.7.15"
 			election_frequency = 24
 			elections_allowed = yes
 		}
-		complete_national_focus = jap_taisho_democracy_conservative
+		#complete_national_focus = jap_taisho_democracy_conservative
 		ai_chance = { factor = 100 }
 	}
 }

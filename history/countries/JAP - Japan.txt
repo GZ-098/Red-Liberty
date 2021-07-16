@@ -5,6 +5,9 @@ oob = "JAP_1936"
 set_stability = 0.5 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8
 
+load_focus_tree = JAP_initial_tree
+complete_national_focus = JAP_inukai_govt
+
 set_country_flag = progressive_coalition
 set_country_flag = market_libertarian_coalition
 set_country_flag = conservative_coalition
