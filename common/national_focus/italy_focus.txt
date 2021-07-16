@@ -38,19 +38,18 @@ focus_tree = {
 		}
 		x = 20
 		y = 2
-			available_if_capitulated = yes
-			search_filters = { FOCUS_FILTER_POLITICAL }
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					add_stability = -0.15
-					country_event = {
-							id = italy_events.1
-							days = 1
-						}
-				}
-
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+				factor = 1
+			}
+		completion_reward = {
+			add_stability = -0.1
+			country_event = {
+				id = italy_events.1
+				days = 1
+			}
+		}
 	}
 	focus = {
 		id = ITA_purge_grand_council
@@ -109,10 +108,19 @@ focus_tree = {
 					factor = 1
 				}
 			completion_reward = {
-					add_stability = 0.10
-					add_political_power = 30
+				add_stability = 0.10
+				add_political_power = 30
+					country_event = {
+						id = italy_events.66 
+						days = 1
+					}
+			hidden_effect = {
+				world_news = {
+					id = italy_events.67
+					days = 1
 				}
-
+			}
+		}
 	}
 	focus = {
 		id = ITA_expand_african_influence
@@ -129,7 +137,14 @@ focus_tree = {
 					factor = 1
 				}
 			completion_reward = {
-					add_stability = 0.10
+					hidden_effect = {
+						ETH = {
+							country_event = {
+								id = ethiopia_events.3
+								days = 1
+							}
+						}
+					}
 					add_political_power = 30
 				}
 
@@ -829,16 +844,10 @@ focus_tree = {
 					factor = 1
 				}
 			completion_reward = {
-					ENG = {
-							country_event = {
-									id = uk_events.1
-									days = 1
-								}
-						}
-					create_wargoal = {
-							type = annex_everything
-							target = ETH
-						}
+				create_wargoal = {
+						type = annex_everything
+						target = ETH
+					}
 				}
 
 	}
@@ -851,15 +860,18 @@ focus_tree = {
 		}
 		x = 17
 		y = 9
-			available_if_capitulated = yes
-			search_filters = { FOCUS_FILTER_MANPOWER }
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					add_ideas = { ITA_ethiopian_italianization_program }
-				}
-
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#Italianizing the Ethiopians event
+			country_event = {
+				id = italy_events.67
+				days = 1
+			}
+		}
 	}
 	focus = {
 		id = ITA_the_roman_vision_speech

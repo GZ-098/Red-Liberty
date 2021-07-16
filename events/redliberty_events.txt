@@ -15,30 +15,35 @@ country_event = {
 	picture = GFX_report_event_italo_ethiopian_war
 
 	is_triggered_only = yes
+	
+	trigger = {
+		ITA = {
+			has_war = yes
+		}
+	}
 
 	fire_only_once = yes 
 
 	option = { 
-		ai_chance = { factor = 35 }
+		ai_chance = { factor = 20 }
 		name = "The Italians Have Become too Militaristic"
-		remove_fromTA
-    		modifier = _faction = ITA
-		add_opinion_modifier = {
-    		target = Ifaction_traitor
-		}
+		remove_from_faction = ITA
 		ITA = {
+			add_opinion_modifier = {
+				target = ENG
+    			modifier = faction_traitor
+			}	
 			country_event = { id = italy_events.4 days = 1 }
+		}
+		add_opinion_modifier = {
+			target = ITA
+			modifier = faction_traitor
 		}
 	} 
 
 	option = { 
-		ai_chance = { factor = 35 }
-		name = "It's Better That we Keep Them"
-		remove_from_faction = ITA
-		add_opinion_modifier = {
-    		target = ITA
-    		modifier = small_decrease
-		}
+		ai_chance = { factor = 65 }
+		name = "It's Better hat we Keep Them"
 	} 
 } 
 ####################
@@ -50,7 +55,7 @@ country_event = {
 	id = ethiopia_events.1
 	title = ethiopia_events.1.t
 	desc = ethiopia_events.1.d
-	picture = GFX_report_event_winning_in_ethiopia
+	picture = GFX_filler
 
 	is_triggered_only = yes
 
@@ -70,7 +75,7 @@ country_event = {
 	id = ethiopia_events.2
 	title = ethiopia_events.2.t
 	desc = ethiopia_events.2.d
-	picture = GFX_report_event_winning_in_ethiopia
+	picture = GFX_filler
 
 	is_triggered_only = yes
 
@@ -81,6 +86,23 @@ country_event = {
 		name = "Our Future Looks Bleak"
 		add_stability = -0.25 
 		add_war_support = -0.32
+	} 
+}
+
+#Feeling the Italian Influence
+country_event = {
+	id = ethiopia_events.3
+	title = ethiopia_events.3.t
+	desc = ethiopia_events.3.d
+	picture = GFX_filler
+
+	is_triggered_only = yes
+
+	fire_only_once = yes 
+
+	option = { 
+		ai_chance = { factor = 100 }
+		name = "The Italian Flame gets Closer by the Day"
 	} 
 }
 ####################
@@ -1614,10 +1636,196 @@ country_event = {
 
 	option = { 
 		ai_chance = { factor = 40 }
-		name = "We Will Take Our Losses Else Where"
+		name = "Wonderful"
 	} 
 }
 
+#Mussolini cements his rule of Italy
+country_event = {
+	id = italy_events.66
+	title = italy_events.66.t
+	desc = italy_events.66.d
+	picture = GFX_filler
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "A New Grand Age is at our Fingertips!"
+	} 
+}
+
+#Mussolini Announces that "All Traitorous Pigs have been Cleansed from Italy!"
+news_event = {
+	id = italy_events.67
+	title = italy_events.67.t
+	desc = italy_events.67.d
+	picture = GFX_filler
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Fascism is to Stay in Italy"
+		trigger = {
+			NOT = {
+				tag = ITA
+			}
+		}
+	} 
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Fascism is to Stay in Italy"
+		trigger = {
+			NOT = {
+				tag = ITA
+			}
+		}
+	} 
+}
+
+#Italianizing the Ethiopians
+country_event = {
+	id = italy_events.68
+	title = italy_events.68.t
+	desc = italy_events.68.d
+	picture = GFX_filler
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Light Italianization of Ethiopia"
+		random_list = {
+			30 = {country_event = { id = italy_events.69 days = 1 }}#Increased Resistance Efforts
+			45 = {country_event = { id = italy_events.70 days = 1 }}#The Ethiopians Accept the new Status Quo
+		}
+	} 
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Mild Italianization Campaign"
+		random_list = {
+			45 = {country_event = { id = italy_events.71 days = 1 }}#Small Rebelions Break out
+			30 = {country_event = { id = italy_events.72 days = 1 }}#A Succesfull Pacification	
+		}
+	} 
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Full Italianization of Ethiopian Society"
+		random_list = {
+			30 = {country_event = { id = italy_events.73 days = 1 }}#Large Scale Militancy Against Us
+			45 = {country_event = { id = italy_events.74 days = 1 }}#Wthiopia is Practiclly an Extension of Italy
+		}
+	}
+}
+
+#Increased Resistance Efforts
+country_event = {
+	id = italy_events.69
+	title = italy_events.69.t
+	desc = italy_events.69.d
+	picture = GFX_filler
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "We Could've Done Better..."
+	} 
+}
+
+#The Ethiopians Accept the New Status Quo
+country_event = {
+	id = italy_events.70
+	title = italy_events.70.t
+	desc = italy_events.70.d
+	picture = GFX_filler
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "One Less Hassel for us to Deal with"
+	} 
+}
+
+#Break out of Small Rebelions
+country_event = {
+	id = italy_events.71
+	title = italy_events.71.t
+	desc = italy_events.71.d
+	picture = GFX_filler
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Time to get the Guns out Again"
+	} 
+}
+
+#A Successful Pacification
+country_event = {
+	id = italy_events.72
+	title = italy_events.72.t
+	desc = italy_events.72.d
+	picture = GFX_filler
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "A Great Success"
+	} 
+}
+
+#Large Scale Rebellions Break out 
+country_event = {
+	id = italy_events.73
+	title = italy_events.73.t
+	desc = italy_events.73.d
+	picture = GFX_filler
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Seems like we can't get out Just Yet"
+	} 
+}
+
+#Full Intergration of Ethiopia
+country_event = {
+	id = italy_events.74
+	title = italy_events.74.t
+	desc = italy_events.74.d
+	picture = GFX_filler
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Lets see if we can Replicate our Success"
+	} 
+}
 ####################
 ##	 US events   ##
 ###################
