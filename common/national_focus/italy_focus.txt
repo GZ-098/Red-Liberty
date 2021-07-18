@@ -24,7 +24,7 @@ focus_tree = {
 				}
 		completion_reward = {
 			add_popularity = {
-				ideology = empowered_nationalism
+				ideology = martial_despotism
 				popularity = -0.07
 			}
 		}
@@ -304,12 +304,12 @@ focus_tree = {
 					factor = 1
 				}
 			completion_reward = {
-					add_political_power = 67
+					add_political_power = 60
 				}
 
 	}
 	focus = {
-		id = ITA_expand_the_number_of_seats
+		id = ITA_expand_the_number_of_seats #A Council of Yes-Men
 		icon = GFX_ITA_expand_the_number_of_seats
 		cost = 5
 		prerequisite = {
@@ -1042,7 +1042,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			GER = {
-				add_political_power = -50
+				add_popularity = {
+					ideology = martial_despotism
+					popularity = 0.10
+				}
 			}
 		}
 	}
@@ -1062,7 +1065,10 @@ focus_tree = {
 				}
 		completion_reward = {
 			FRA = {
-				add_political_power = -50
+				add_popularity = {
+					ideology = martial_despotism
+					popularity = 0.1
+				}
 			}
 		}
 
@@ -1320,7 +1326,7 @@ focus_tree = {
 		id = ITA_send_equipment_to_the_german_fascists
 		icon = GFX_ITA_send_equipment_to_the_german_fascists
 		cost = 5
-		available = {
+		bypass = {
 			IF = {
 				GER = {
 					has_civil_war = no
