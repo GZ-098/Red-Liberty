@@ -1002,6 +1002,11 @@ CRI = {
 	color_ui = rgb { 143 189 191 }
 }
 
+KRD = {
+	color = rgb { 214 190 129 }
+	color_ui = rgb { 214 190 129 }
+}
+
 ### US CIVIL WAR COLORS ###
 
 AMS = {

@@ -257,6 +257,7 @@ ASI = "countries/Asir.txt"
 GIL = "countries/Gilan.txt"
 KHR = "countries/Khorasan.txt"
 HEZ = "countries/Hedjaz.txt"
+KRD = "countries/Kurdistan.txt"
 
 ### China ###
 FNG = "countries/Fengtian.txt"

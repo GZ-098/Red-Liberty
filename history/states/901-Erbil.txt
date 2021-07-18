@@ -1,22 +1,19 @@
-
 state={
-	id=803
-	name="STATE_803"
-
+	id=901
+	name="STATE_901"
+	
 	history={
 		owner = KRD
 		buildings = {
 			infrastructure = 3
-
 		}
 		add_core_of = KRD
-
 	}
-
+	
 	provinces={
-		1463 7530 12476 
+		3916 5014 6826 10811 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category = rural
 }
