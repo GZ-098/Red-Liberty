@@ -4,7 +4,7 @@ SOV_revolution_category = {
 		original_tag = SOV
 	}
 	visible = {
-		original_tag = SOV
+		always = no
 	}
 }
 
@@ -14,7 +14,7 @@ SOV_science_meter_category = {
 		original_tag = SOV
 	}
 	visible = {
-		original_tag = SOV
+		always = no
 	}
 
 	scripted_gui = SOV_science_meter_gui

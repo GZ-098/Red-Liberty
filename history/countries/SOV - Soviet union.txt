@@ -192,7 +192,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "Semyon Budyonny"
-	picture = "e"
+	picture = "Portrait_SOV_Semyon_Budyonny.png"
 	traits = {
 		old_guard
 		politically_connected
@@ -211,8 +211,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "Vasily Blyukher"
-	id = 436
-	portrait_path = "e"
+	picture = "Portrait_SOV_Vasily_Blyukher.png"
 	traits = {
 		politically_connected
 		winter_specialist

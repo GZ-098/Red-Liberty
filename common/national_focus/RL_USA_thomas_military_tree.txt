@@ -2,7 +2,7 @@ shared_focus = {
     id = USA_reforming_the_military
 	icon = GFX_USA_USA_reforming_the_military
 	
-    x = -12
+    x = -13
 	
 	cost = 2
     completion_reward = {
@@ -434,7 +434,7 @@ shared_focus = {
     x = 1
 	y = 1
 	
-	cost = 2
+	cost = 4
 	relative_position_id = USA_under_the_army
 	prerequisite = { focus = USA_under_the_army }
     completion_reward = {
@@ -490,6 +490,25 @@ shared_focus = {
 }
 
 shared_focus = {
+    id = USA_bomber_development
+	icon = GFX_USA_bomber_development
+	
+    x = -1
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_independent_air_force
+	prerequisite = { focus = USA_independent_air_force }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
     id = USA_the_navy
 	icon = GFX_USA_the_navy
 	
@@ -499,6 +518,168 @@ shared_focus = {
 	cost = 2
 	relative_position_id = USA_reforming_the_military
 	prerequisite = { focus = USA_reforming_the_military }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_the_naval_act
+	icon = GFX_USA_the_naval_act
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_the_navy
+	prerequisite = { focus = USA_the_navy }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_north_carolina_class
+	icon = GFX_USA_north_carolina_class
+	
+    x = -1
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_the_naval_act
+	prerequisite = { focus = USA_the_naval_act }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_south_dakota_class
+	icon = GFX_USA_south_dakota_class
+	
+    x = 1
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_the_naval_act
+	prerequisite = { focus = USA_the_naval_act }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_two_ocean_navy
+	icon = GFX_USA_two_ocean_navy
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_north_carolina_class
+	prerequisite = { focus = USA_north_carolina_class }
+	prerequisite = { focus = USA_south_dakota_class }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_matching_europe
+	icon = GFX_USA_matching_europe
+	
+    x = -1
+	y = 1
+	
+	cost = 3
+	mutually_exclusive = {
+		focus = USA_naval_air
+	}
+	relative_position_id = USA_two_ocean_navy
+	prerequisite = { focus = USA_two_ocean_navy }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_naval_air
+	icon = GFX_USA_naval_air
+	
+    x = 4
+	y = 1
+	
+	cost = 3
+	mutually_exclusive = {
+		focus = USA_matching_europe
+	}
+	relative_position_id = USA_two_ocean_navy
+	prerequisite = { focus = USA_two_ocean_navy }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_the_bureau_of_aeronautics
+	icon = GFX_USA_the_bureau_of_aeronautics
+	
+    x = 0
+	y = 1
+	
+	cost = 3
+	relative_position_id = USA_naval_air
+	prerequisite = { focus = USA_naval_air }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_expand_operations
+	icon = GFX_USA_expand_operations
+	
+    x = 3
+	y = 1
+	
+	cost = 3
+	relative_position_id = USA_matching_europe
+	prerequisite = {
+		focus = USA_matching_europe
+		focus = USA_naval_air
+	}
     completion_reward = {
         
     }
