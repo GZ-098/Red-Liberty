@@ -1,0 +1,30 @@
+﻿capital = 774
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = proletarian_dictatorship
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 14
+	proletarian_dictatorship = 25
+	libertarian_socialism = 29
+	social_democracy = 20
+	progressive_liberalism = 5
+	market_libertarianism = 2
+	national_conservatism = 5
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 0
+	martial_despotism = 0
+	ultranational_statism = 0
+}

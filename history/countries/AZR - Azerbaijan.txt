@@ -1,6 +1,6 @@
 ﻿capital = 229 #Baku
 
-oob = "AZR_1936"
+oob = "AZR"
 
 set_research_slots = 3
 
@@ -29,79 +29,34 @@ set_technology = {
 	fleet_in_being = 1
 }
 
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		early_heavy_cruiser = 1
-		early_battleship = 1
-		early_battlecruiser = 1
-		transport = 1
-	}
+set_politics = {
+	ruling_party = martial_despotism 
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
 }
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		mtg_transport = 1
-		basic_battery = 1
-		basic_torpedo = 1
-	}
-}
-
 set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 1
+	libertarian_socialism = 14
+	social_democracy = 10
+	progressive_liberalism = 7
+	market_libertarianism = 10
+	national_conservatism = 21
+	reactionary_theocracy = 2
+	authoritarian_republicanism = 5
+	martial_despotism = 20
+	ultranational_statism = 10
 }
 
 create_country_leader = {
-	name = "Mir Jafar Baghirov"
+	name = "Abdulhamid bey Gaytabashi"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	picture = ""
 	expire = "1953.3.1"
-	ideology = stalinism
+	ideology = martial_despotism_subtype
 	traits = {
 		
 	}
 }
-
-create_country_leader = {
-	name = "Mammad Amin Rasulzade"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Gara Garabeyov"
-	desc = ""
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
-	expire = "1953.3.1"
-	ideology = moderatism
-	traits = {
-		
-	}
-}
-
-
-
