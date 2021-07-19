@@ -1739,6 +1739,10 @@ country_event = {
 	option = { 
 		ai_chance = { factor = 40 }
 		name = "We Could've Done Better..."
+		271 = {
+			add_resistance = 15
+			add_compliance = -10
+		}
 	} 
 }
 
@@ -1756,6 +1760,10 @@ country_event = {
 	option = { 
 		ai_chance = { factor = 40 }
 		name = "One Less Hassel for us to Deal with"
+		271 = {
+			add_compliance = 10
+			add_resistance = -10
+		}
 	} 
 }
 
@@ -1773,6 +1781,15 @@ country_event = {
 	option = { 
 		ai_chance = { factor = 40 }
 		name = "Time to get the Guns out Again"
+		271 = {
+			add_resistance = 20
+			add_compliance = -15
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}			
+		}
+
 	} 
 }
 
@@ -1790,6 +1807,10 @@ country_event = {
 	option = { 
 		ai_chance = { factor = 40 }
 		name = "A Great Success"
+		271 = {
+			add_compliance = 25
+			add_resistance = -20
+		}
 	} 
 }
 
@@ -1807,6 +1828,20 @@ country_event = {
 	option = { 
 		ai_chance = { factor = 40 }
 		name = "Seems like we can't get out Just Yet"
+		hidden_effect = {
+			world_news = {
+				id = italy_events.75
+				days = 1
+			}
+		}
+		271 = {
+			add_resistance = 70
+			add_compliance = -60
+			damage_building = {
+				type = infrastructure
+				damage = 4
+			}			
+		}		
 	} 
 }
 
@@ -1824,6 +1859,29 @@ country_event = {
 	option = { 
 		ai_chance = { factor = 40 }
 		name = "Lets see if we can Replicate our Success"
+		add_state_core = 271
+		271 = {
+			create_unit = {
+				division = "name = \"1 ° Divisione di Fanteria Etiope\" division_template = \"Divisione Coloniale\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = GER
+			}
+		}
+	} 
+}
+
+world_news = {
+	id = italy_events.75
+	title = italy_events.75.t
+	desc = italy_events.75.d
+	picture = GFX_filler
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "The Ethiopians Never Lost their Fighting Spirit"
 	} 
 }
 ####################
