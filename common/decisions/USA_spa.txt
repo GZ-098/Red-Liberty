@@ -1,0 +1,21 @@
+USA_managing_spa = {
+
+	USA_reset_pie_chart = {
+	
+		icon = generic_army_support
+		
+		visible = {
+			
+		}
+		
+		available = {
+			tag = USA
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			create_pie_chart = yes
+		}
+	}
+}

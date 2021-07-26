@@ -17,6 +17,23 @@ USA_congress = {
 	priority = 100
 }
 
+USA_managing_spa = {
+	icon = usa_spa
+	allowed = {
+		original_tag = USA
+	}
+	
+	visible = {
+		has_government = libertarian_socialism
+	}
+
+	scripted_gui = USA_SPA_pie_chart
+
+	visible_when_empty = yes
+
+	priority = 90
+}
+
 USA_amendments_category = {
 	icon = usa_congress
 	allowed = {

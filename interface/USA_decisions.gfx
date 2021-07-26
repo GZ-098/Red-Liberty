@@ -1,0 +1,7 @@
+spritetypes = {
+	
+	SpriteType = {
+		name = "usa_spa"
+		texturefile = "gfx/interface/USA/USA_spa_category.png"
+	}
+}
