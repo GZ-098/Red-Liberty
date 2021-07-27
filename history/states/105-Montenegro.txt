@@ -10,7 +10,7 @@ state={
 		victory_points = {
 			9809 3
 		}
-		owner = AHE
+		owner = SER
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -20,8 +20,7 @@ state={
 			}
 
 		}
-		add_core_of = AHE
-		add_claim_by = SER
+		add_core_of = SER
 	}
 
 	provinces={

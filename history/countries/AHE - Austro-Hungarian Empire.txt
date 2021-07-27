@@ -32,7 +32,16 @@ set_technology = {
 	fuel_refining = 1
 }
 
-puppet = SER
+#puppet = SER
+SER = {
+	give_military_access = AHE
+	
+	diplomatic_relation = {
+		country = AHE
+		relation = docking_rights
+		active = yes
+	}
+}
 
 #country_event = { id = danubian_war.1 days = 154 }
 
