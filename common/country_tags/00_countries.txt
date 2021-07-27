@@ -282,6 +282,10 @@ GUI = "countries/Guizhou.txt"
 SRW = "countries/Sarawak.txt"
 FIC = "countries/French Indochina.txt"
 
+### North America ###
+MXR = "countries/Mexican Revolt.txt"
+YUC = "countries/Yucatan.txt"
+
 ### Civil War Majors - WILL ALWAYS APPEAR ###
 MCA = "countries/MacArthur Clique.txt"
 NEE = "countries/New England.txt"

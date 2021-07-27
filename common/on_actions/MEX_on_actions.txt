@@ -3,22 +3,32 @@ on_actions = {
 		effect = {
 			478 = {
 				add_dynamic_modifier = {
-					modifier = MEX_cristero_revolt
+					modifier = MEX_cristero_revolt_heavy
 				}
 			}
 			481 = {
 				add_dynamic_modifier = {
-					modifier = MEX_cristero_sympathy
+					modifier = MEX_cristero_revolt_light
 				}
 			}
 			485 = {
 				add_dynamic_modifier = {
-					modifier = MEX_cristero_sympathy
+					modifier = MEX_cristero_revolt_light
 				}
 			}
 			899 = {
 				add_dynamic_modifier = {
-					modifier = MEX_cristero_sympathy
+					modifier = MEX_cristero_revolt_light
+				}
+			}
+			905 = {
+				add_dynamic_modifier = {
+					modifier = MEX_cristero_revolt_medium
+				}
+			}
+			906 = {
+				add_dynamic_modifier = {
+					modifier = MEX_cristero_revolt_light
 				}
 			}
 		}

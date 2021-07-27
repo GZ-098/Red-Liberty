@@ -1007,6 +1007,14 @@ KRD = {
 	color_ui = rgb { 214 190 129 }
 }
 
+MXR = {
+	color = rgb { 107 78 106 }
+}
+
+YUC = {
+	color = rgb { 153 132 130 }
+}
+
 ### US CIVIL WAR COLORS ###
 
 AMS = {

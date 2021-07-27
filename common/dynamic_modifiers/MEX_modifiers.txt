@@ -1,4 +1,16 @@
-MEX_cristero_revolt = {
+MEX_cristero_revolt_heavy = {
+	icon = GFX_population_icon
+	enable = { always = yes }
+	remove_trigger = { always = no }
+		
+	local_manpower = -0.75
+	supply_consumption_factor = 0.5
+	local_org_regain = -0.5
+	local_building_slots_factor = -0.75
+	local_resources = -0.75
+}
+
+MEX_cristero_revolt_medium = {
 	icon = GFX_population_icon
 	enable = { always = yes }
 	remove_trigger = { always = no }
@@ -10,7 +22,7 @@ MEX_cristero_revolt = {
 	local_resources = -0.5
 }
 
-MEX_cristero_sympathy = {
+MEX_cristero_revolt_light = {
 	icon = GFX_population_icon
 	enable = { always = yes }
 	remove_trigger = { always = no }

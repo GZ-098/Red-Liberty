@@ -1,0 +1,20 @@
+state={
+	id=904
+	name="STATE_904"
+	
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = MEX
+	}
+	
+	provinces={
+		2021 12867 
+	}
+	manpower=400000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

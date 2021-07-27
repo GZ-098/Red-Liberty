@@ -1,0 +1,89 @@
+add_namespace = mexico
+
+country_event = { # intro event
+	id = mexico.1
+	title = ""
+	desc = mexico.1.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+	}
+}
+
+country_event = { # civil war demo event
+	id = mexico.2
+	title = ""
+	desc = mexico.2.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+		MXR = {
+			transfer_state = 478
+			478 = {
+				set_demilitarized_zone = no
+			}
+			random_list = {
+				80 = {
+					transfer_state = 905
+				}
+				20 = {
+					
+				}
+			}
+			random_list = {
+				80 = {
+					transfer_state = 481
+				}
+				20 = {
+					
+				}
+			}
+			random_list = {
+				60 = {
+					transfer_state = 485
+				}
+				40 = {
+					
+				}
+			}
+			random_list = {
+				60 = {
+					transfer_state = 899
+				}
+				40 = {
+					
+				}
+			}
+			random_list = {
+				50 = {
+					transfer_state = 906
+				}
+				50 = {
+					
+				}
+			}
+		}
+		YUC = {
+			add_state_core = 474
+			transfer_state = 474
+		}
+		MEX = {
+			declare_war_on = {
+				target = MXR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = YUC
+				type = annex_everything
+			}
+		}
+	}
+}
