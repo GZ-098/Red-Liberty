@@ -1,20 +1,22 @@
+
 state={
 	id=836
 	name="STATE_836"
-	
+
 	history={
-		owner = ASI
+		owner = HEZ
 		buildings = {
 			infrastructure = 2
 
 		}
-		add_claim_by = ASI
+		add_claim_by = HEZ
+
 	}
-	
+
 	provinces={
-		5006 8073 
+		1923 5006 8073 10786 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
-	state_category = pastoral
+	state_category=pastoral
 }

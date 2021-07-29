@@ -201,7 +201,19 @@
  ### other stuff ###
  
  USA_managing_spa:0 "Managing the Party"
- USA_managing_spa_desc:0 "WOOOOOOOOOOOOOOOOO YEA BABY THATS WHAT IVE BEEN WAITING FOR THATS WHAT ITS ALL ABOUT\n\nThe Radicals are currently:\n\nThe Orthodox Socialists are currently:\n\nThe Progessives are currently:"
+ USA_managing_spa_desc:0 "WOOOOOOOOOOOOOOOOO YEA BABY THATS WHAT IVE BEEN WAITING FOR THATS WHAT ITS ALL ABOUT"
+ USA_spa_ortho_support:0 "The §RLibertarians§! are currently:"
+ USA_spa_radical_support:0 "The §rRadicals§! are currently:"
+ USA_spa_socdem_support:0 "The §PProgressives§! are currently:"
+ USA_spa_party_unity:0 "Party Unity is currently: [GetSPAUnity]"
+ 
+ USA_spa_party_unity_very_high:0 "§GVery High§!"
+ USA_spa_party_unity_high:0 "§GHigh§!"
+ USA_spa_party_unity_middling:0 "§YMiddling§!"
+ USA_spa_party_unity_low:0 "§RLow§!"
+ USA_spa_party_unity_very_low:0 "§RVery Low§!"
+ 
+ USA_increase_unity:0 "Call a Party Conference"
  
  USA_amendments_category:0 "To Make Amends"
  USA_amendments_category_desc:0 "The authority to amend the Constitution of the United States is derived from §YArticle V§! of the Constitution. The Constitution provides that an amendment may be proposed either by the Congress with a §Ytwo-thirds majority vote in both the House of Representatives and the Senate§! or by a constitutional convention called for by two-thirds of the State legislatures. Thus far, the method of amendment via constitutional convention has never been used. A proposed amendment becomes part of the Constitution as soon as it is §Yratified by three-fourths of the States (at this time 36 of 48 States)§!.\n\nWe currently have the support of X/36 state governments.\n\n§YNew England§!:[AMENDMENT_CONNECTICUT_SUPPORT][AMENDMENT_MAINE_SUPPORT][AMENDMENT_MASSACHUSETTS_SUPPORT][AMENDMENT_NEW_HAMPSHIRE_SUPPORT][AMENDMENT_RHODE_ISLAND_SUPPORT][AMENDMENT_VERMONT_SUPPORT]\n\n§YThe East Coast§!:[AMENDMENT_DELAWARE_SUPPORT][AMENDMENT_MARYLAND_SUPPORT][AMENDMENT_NEW_YORK_SUPPORT][AMENDMENT_NEW_JERSEY_SUPPORT][AMENDMENT_PENNSYLVANIA_SUPPORT][AMENDMENT_WEST_VIRGINIA_SUPPORT]\n\n§YThe Deep South§!:[AMENDMENT_ALABAMA_SUPPORT][AMENDMENT_ARKANSAS_SUPPORT][AMENDMENT_FLORIDA_SUPPORT][AMENDMENT_GEORGIA_SUPPORT][AMENDMENT_LOUISIANA_SUPPORT][AMENDMENT_MISSISSIPPI_SUPPORT][AMENDMENT_SOUTH_CAROLINA_SUPPORT]\n\n§YThe Upper South§!:[AMENDMENT_KENTUCKY_SUPPORT][AMENDMENT_NORTH_CAROLINA_SUPPORT][AMENDMENT_VIRGINIA_SUPPORT][AMENDMENT_TENNESSEE_SUPPORT]\n\n§YThe Southwest§!:[AMENDMENT_TEXAS_SUPPORT][AMENDMENT_OKLAHOMA_SUPPORT][AMENDMENT_NEW_MEXICO_SUPPORT][AMENDMENT_ARIZONA_SUPPORT]\n\n§YThe Great Lakes§!:[AMENDMENT_ILLINOIS_SUPPORT][AMENDMENT_INDIANA_SUPPORT][AMENDMENT_MICHIGAN_SUPPORT][AMENDMENT_OHIO_SUPPORT][AMENDMENT_WISCONSIN_SUPPORT]\n\n§YThe Great Plains§!:[AMENDMENT_MINNESOTA_SUPPORT][AMENDMENT_IOWA_SUPPORT][AMENDMENT_KANSAS_SUPPORT][AMENDMENT_MISSOURI_SUPPORT][AMENDMENT_NEBRASKA_SUPPORT][AMENDMENT_NORTH_DAKOTA_SUPPORT][AMENDMENT_SOUTH_DAKOTA_SUPPORT]\n\n§YThe Rockies§!:[AMENDMENT_COLORADO_SUPPORT][AMENDMENT_IDAHO_SUPPORT][AMENDMENT_MONTANA_SUPPORT][AMENDMENT_NEVADA_SUPPORT][AMENDMENT_UTAH_SUPPORT][AMENDMENT_WYOMING_SUPPORT]\n\n§YThe West Coast:§![AMENDMENT_CALIFORNIA_SUPPORT][AMENDMENT_OREGON_SUPPORT][AMENDMENT_WASHINGTON_SUPPORT]\n"

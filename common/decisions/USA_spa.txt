@@ -2,7 +2,27 @@ USA_managing_spa = {
 
 	USA_reset_pie_chart = {
 	
-		icon = generic_army_support
+		icon = generic_decision
+		
+		visible = {
+			is_debug = yes
+		}
+		
+		available = {
+			tag = USA
+			is_debug = yes
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			create_pie_chart = yes
+		}
+	}
+	
+	USA_increase_unity = {
+	
+		icon = generic_political_discourse
 		
 		visible = {
 			
@@ -12,10 +32,10 @@ USA_managing_spa = {
 			tag = USA
 		}
 		
-		cost = 0
+		cost = 75
 		
 		complete_effect = {
-			create_pie_chart = yes
+			add_to_variable = { USA_SPA_unity = 5 }
 		}
 	}
 }

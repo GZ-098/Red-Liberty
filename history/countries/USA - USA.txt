@@ -33,6 +33,8 @@ complete_national_focus = USA_the_second_thomas_admin
 set_country_flag = USA_recovery_enabled
 set_variable = { USA_recovery_length = 250 }
 
+create_pie_chart = yes
+set_variable = { USA_SPA_unity = 78 }
 #set_variable = { USA_thomas_rich_tyranny = 26 }
 #set_variable = { USA_thomas_rich_radicalism = 19 }
 #set_variable = { USA_thomas_middle_tyranny = 12 }

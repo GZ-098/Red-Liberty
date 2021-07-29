@@ -1,4 +1,46 @@
 defined_text = {
+	name = GetSPAUnity
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_SPA_unity > 80 }
+        }
+        localization_key = "USA_spa_party_unity_very_high"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_SPA_unity < 80 }
+			check_variable = { USA_SPA_unity > 50 }
+        }
+        localization_key = "USA_spa_party_unity_high"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_SPA_unity > 30 }
+			check_variable = { USA_SPA_unity < 50 }
+        }
+        localization_key = "USA_spa_party_unity_middling"
+    }
+	
+	text = {
+		trigger = {
+			check_variable = { USA_SPA_unity < 30 }
+			check_variable = { USA_SPA_unity > 15 }
+        }
+        localization_key = "USA_spa_party_unity_low"
+    }
+	
+	text = {
+		trigger = {
+			check_variable = { USA_SPA_unity < 15 }
+        }
+        localization_key = "USA_spa_party_unity_very_low"
+    }
+}
+
+defined_text = {
 	name = GetThomasOpinionRich
 	
 	text = { 

@@ -5,11 +5,47 @@ guiTypes = {
 	containerWindowType = {
 		name = "pie_container"
 		position = { x = 0 y = 0 }
-		size = { width = 200 height = 200 }
+		size = { width = 485 height = 225 }
 		clipping = no
-		Orientation = center
-		scale = 0.1
+		#Orientation = center
+		scale = 1
 		#scale = 0.0693359
+		
+		instantTextBoxType = {
+			name ="spa_ortho_support"
+			position = { x = 180 y = 45 }
+			maxWidth = 400
+			font = "hoi_16mbs"
+			text = "USA_spa_ortho_support"
+			format = left
+		}
+		
+		instantTextBoxType = {
+			name ="spa_radical_support"
+			position = { x = 180 y = 88 }
+			maxWidth = 400
+			font = "hoi_16mbs"
+			text = "USA_spa_radical_support"
+			format = left
+		}
+		
+		instantTextBoxType = {
+			name ="spa_socdem_support"
+			position = { x = 180 y = 130 }
+			maxWidth = 400
+			font = "hoi_16mbs"
+			text = "USA_spa_socdem_support"
+			format = left
+		}
+		
+		instantTextBoxType = {
+			name ="spa_party_unity"
+			position = { x = 180 y = 170 }
+			maxWidth = 400
+			font = "hoi_26mbs"
+			text = "USA_spa_party_unity"
+			format = left
+		}
 		
 		background = {
 			name = "Background"
@@ -17,9 +53,17 @@ guiTypes = {
 		}
 		
 		containerWindowType = {
-			name = "pie_chart_contents"
-			position = { x = 1000 y = 1000 }
-
+			name = "pie_container_container"
+			scale = 0.1
+			position = { x = 90 y = 100 }
+			size = { width = 100 height = 100 }
+			clipping = no
+			
+			#background = {
+			#	name = "Background_2"
+			#	quadTextureSprite = "GFX_tiled_window_thin_border2"
+			#}
+			
 			iconType = {
 				name = "pie0"
 				quadTextureSprite = "GFX_pie_chart_segment"
@@ -35,8 +79,7 @@ guiTypes = {
 				alwaystransparent = yes
 				rotation = 0.0628318531
 			}
-
-
+			
 			iconType = {
 				name = "pie2"
 				quadTextureSprite = "GFX_pie_chart_segment"

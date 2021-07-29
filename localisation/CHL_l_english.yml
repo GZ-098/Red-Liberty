@@ -1,0 +1,26 @@
+﻿l_english:
+ CHL:0 "Socialist Republic of Chile"
+ CHL_DEF:0 "the Socialist Republic of Chile"
+ CHL_ADJ:0 "Chilean"
+ 
+ CHL_insurrectionary_anarchism_party:0 "--"
+ CHL_revolutionary_autocracy_party:0 "PCCh"
+ CHL_revolutionary_autocracy_party_long:0 "Partido Comunista de Chile"
+ CHL_proletarian_dictatorship_party:0 "PS"
+ CHL_proletarian_dictatorship_party_long:0 "Partido Socialista de Chile"
+ CHL_libertarian_socialism_party:0 "PS"
+ CHL_libertarian_socialism_party_long:0 "Partido Socialista de Chile"
+ CHL_social_democracy_party:0 "PD"
+ CHL_social_democracy_party_long:0 "Partido Demócrata"
+ CHL_progressive_liberalism_party:0 "PR"
+ CHL_progressive_liberalism_party_long:0 "Partido Radical"
+ CHL_market_libertarianism_party:0 "PL"
+ CHL_market_libertarianism_party_long:0 "Partido Liberal"
+ CHL_national_conservatism_party:0 "PCon"
+ CHL_national_conservatism_party_long:0 "Partido Conservador"
+ CHL_reactionary_theocracy_party:0 "--"
+ CHL_authoritarian_republicanism_party:0 "--"
+ CHL_martial_despotism_party:0 "--"
+ CHL_ultranational_statism_party:0 "--"
+ 
+ 
