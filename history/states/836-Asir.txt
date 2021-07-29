@@ -4,17 +4,17 @@ state={
 	name="STATE_836"
 
 	history={
-		owner = HEZ
+		owner = ASI
 		buildings = {
 			infrastructure = 2
 
 		}
-		add_claim_by = HEZ
+		add_claim_by = ASI
 
 	}
 
 	provinces={
-		1923 5006 8073 10786 
+		1923 8073 10786 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
