@@ -373,3 +373,19 @@ country_event = { # conceptualization
 		name = ""
 	}
 }
+
+country_event = { # reed retires as vp
+	id = united_states_thomas.23
+	title = "An Inevitable Parting"
+	desc = united_states_thomas.23.desc
+	picture = GFX_report_event_jack_reed
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "...I promise."
+		custom_effect_tooltip = USA_reed_will_remember_tt
+	}
+}

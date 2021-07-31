@@ -5,6 +5,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_report_event_jack_reed"
+		texturefile = "gfx/event_gfx/USA/report_event_jack_reed.png"
+	}
+	
+	spriteType = {
 		name = "GFX_report_event_unemployment"
 		texturefile = "gfx/event_gfx/USA/report_event_unemployment.tga"
 	}

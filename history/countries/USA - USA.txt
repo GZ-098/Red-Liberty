@@ -56,6 +56,11 @@ country_event = { # fourth of july
 	days = 185
 }
 
+country_event = { # reed announces retirement
+	id = united_states_thomas.23
+	days = 100
+}
+
 country_event = { # 1937 recession event chain
 	id = united_states.7
 	days = 510 # around the middle of may 1937
