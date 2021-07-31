@@ -14,6 +14,31 @@ spritetypes = {
 	
 	SpriteType = {
 		name = "GFX_WGR_raid_arsenals"
-		texturefile = "gfx/interface/goals/WGR/WGR_raid_shadow_legends.png"
+		texturefile = "gfx/interface/goals/WGR/WGR_raid_imperial_arsenals.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_WGR_recruitment"
+		texturefile = "gfx/interface/goals/WGR/WGR_expand_recruitment.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_WGR_fight_for_future"
+		texturefile = "gfx/interface/goals/WGR/WGR_fight_for_the_future.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_WGR_chain_of_command"
+		texturefile = "gfx/interface/goals/WGR/WGR_chain_of_command.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_WGR_maintain_discipline"
+		texturefile = "gfx/interface/goals/WGR/WGR_maintain_discipline.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_WGR_to_end_war"
+		texturefile = "gfx/interface/goals/WGR/WGR_to_end_war_2.png"
 	}
 }

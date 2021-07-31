@@ -64,6 +64,7 @@ shared_focus = {
 
 shared_focus = {
     id = WGR_recruitment
+	icon = GFX_WGR_recruitment
 	
     x = 1
 	y = 1
@@ -81,6 +82,7 @@ shared_focus = {
 
 shared_focus = {
     id = WGR_fight_for_future
+	icon = GFX_WGR_fight_for_future
 	
     x = -1
 	y = 1
@@ -98,6 +100,7 @@ shared_focus = {
 
 shared_focus = {
     id = WGR_chain_of_command
+	icon = GFX_WGR_chain_of_command
 	
     x = 1
 	y = 1
@@ -107,7 +110,10 @@ shared_focus = {
 	prerequisite = { focus = WGR_raid_arsenals }
 	prerequisite = { focus = WGR_recruitment }
     completion_reward = {
-        
+        swap_ideas = {
+			remove_idea = WGR_disorganized_revolt_2
+			add_idea = WGR_disorganized_revolt_3
+		}
     }
 	ai_will_do = {
 		factor = 10
@@ -116,6 +122,7 @@ shared_focus = {
 
 shared_focus = {
     id = WGR_maintain_discipline
+	icon = GFX_WGR_maintain_discipline
 	
     x = 1
 	y = 1
@@ -124,7 +131,7 @@ shared_focus = {
 	relative_position_id = WGR_recruitment
 	prerequisite = { focus = WGR_recruitment }
     completion_reward = {
-        
+        add_stability = 0.075
     }
 	ai_will_do = {
 		factor = 10
@@ -133,9 +140,10 @@ shared_focus = {
 
 shared_focus = {
     id = WGR_to_end_war
+	icon = GFX_WGR_to_end_war
 	
     x = 2
-	y = 1
+	y = 2
 	
 	available = {
 		NOT = {
