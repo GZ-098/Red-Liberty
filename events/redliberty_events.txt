@@ -1829,7 +1829,7 @@ country_event = {
 		ai_chance = { factor = 40 }
 		name = "Seems like we can't get out Just Yet"
 		hidden_effect = {
-			world_news = {
+			news_event = {
 				id = italy_events.75
 				days = 1
 			}
@@ -1869,7 +1869,8 @@ country_event = {
 	} 
 }
 
-world_news = {
+#Large Scale Rebellions in Ethiopia
+news_event = {
 	id = italy_events.75
 	title = italy_events.75.t
 	desc = italy_events.75.d
@@ -1882,6 +1883,134 @@ world_news = {
 	option = { 
 		ai_chance = { factor = 40 }
 		name = "The Ethiopians Never Lost their Fighting Spirit"
+	} 
+}
+
+#The Italians are Messing with our Politics!
+country_event = {
+	id = italy_events.76
+	title = italy_events.76.t
+	desc = italy_events.76.d
+	picture = GFX_filler
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "A Covert Answer"
+		random_list = {
+			60 = {country_event = { id = italy_events.77 days = 1 }} #The Operation is a Success
+			40 = {country_event = {id = italy_events.78 days = 1 }
+				  ITA = {country_event = {id = italy_events.80 days = 1 }}} #The Italians Found out
+		}
+	} 
+	option = {
+		ai_chance = { factor = 40 }
+		name = "The World Shall know of Italy's Actions"
+		news_event = {
+			id = italy_events.79
+			days = 1
+		}
+		add_popularity = {
+			ideology = martial_despotism
+			popularity = -0.4
+		}
+		hidden_effect = {
+			ITA = {
+				country_event = {
+					id = italy_events.80
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+#The Operation is a Success
+country_event = {
+	id = italy_events.77
+	title = italy_events.77.t
+	desc = italy_events.77.d
+	picture = GFX_filler
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Wonderful!"
+		add_popularity = {
+			ideology = martial_despotism 
+			popularity = -0.10
+		}
+	} 
+}
+
+#We Weren't Covert Enough...
+country_event = {
+	id = italy_events.78
+	title = italy_events.78.t
+	desc = italy_events.78.d
+	picture = GFX_filler
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Damn"
+		add_popularity = {
+			ideology = martial_despotism
+			popularity = -0.2
+		}
+		add_opinion_modifier = {
+			target = ITA
+			modifier = large_decrease
+		}
+		ITA = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = large_decrease
+			}
+		}
+	} 
+}
+
+#Germany Exposes Italy's Actions!
+news_event = {
+	id = italy_events.79
+	title = italy_events.79.t
+	desc = italy_events.79.d
+	picture = GFX_filler
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Pretty Inconviniant for Italy"
+	} 
+}
+
+#Germany Messed with our Efferts
+coutnry_event = {
+	id = italy_events.80
+	title = italy_events.80.t
+	desc = italy_events.80.d
+	picture = GFX_filler
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		ai_chance = { factor = 40 }
+		name = "Hopefully we will have Better Luck next Time"
 	} 
 }
 ####################

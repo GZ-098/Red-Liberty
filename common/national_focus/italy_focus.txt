@@ -8,6 +8,20 @@ focus_tree = {
 		}
 	}
 	default = no
+	#focus = {
+	#	id = name
+	#	icon = name
+	#	cost = 5.00
+	#	x = 35
+	#	y = 2
+	#		available_if_capitulated = yes
+	#		search_filters = { FOCUS_FILTER_POLITICAL }
+	#		ai_will_do = {
+	#				factor = 10
+	#			}
+	#	completion_reward = {
+	#	}
+	#}
 	focus = {
 		id = ITA_begin_to_weaken_fascism
 		icon = GFX_ITA_begin_to_weaken_fascism
@@ -115,7 +129,7 @@ focus_tree = {
 						days = 1
 					}
 			hidden_effect = {
-				world_news = {
+				news_event = {
 					id = italy_events.67
 					days = 1
 				}
@@ -1004,6 +1018,21 @@ focus_tree = {
 			GER = {
 				add_ideas = {
 					ITA_fascist_influence
+				}
+				hidden_effect = {
+					IF = {
+						limit = {
+							NOT = {
+								has_government = martial_despotism
+
+							}
+												
+						}
+						country_event = {
+							id = italy_events.76
+							days = 1 
+						}							
+					}
 				}
 			}
 		}
@@ -2313,6 +2342,10 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			#Add timed idea for 100 days "Industrial works"
+			add_timed_idea = {
+				idea = ITA_industrial_works
+				days = 100
+			}
 		}
 	}
 	focus = {
@@ -2669,6 +2702,7 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			#Add 2 offsite mil factories
+			add_offsite_building = { type = arms_factory level = 2 }
 		}
 	}
 	focus = {
@@ -2685,6 +2719,7 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			#give national idea "Rifel production effort"
+			add_ideas = { ITA_increased_rifel_production }
 		}
 	}
 	focus = {
@@ -2698,6 +2733,11 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			#add 100% bonus for a random mil tech
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 	focus = {
@@ -2711,6 +2751,7 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			#add 100 pp
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -2818,6 +2859,11 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			#add 100% bonus for mechanized units
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
 		}
 	}
 	focus = {
@@ -2869,7 +2915,7 @@ focus_tree = {
 		x = 49
 		y = 8
 		completion_reward = {
-			#add 1-2 infastructer from states with major states to Rome
+			#add 1-2 infastructer to all states
 		}
 	}
 	focus = {
@@ -3004,6 +3050,7 @@ focus_tree = {
 		x = 44
 		y = 15
 		completion_reward = {
+			
 		}
 	}
 	focus = {
