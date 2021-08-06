@@ -1,6 +1,23 @@
 ﻿l_english:
- ELS:0 "El Salvador"
+ ELS:0 "Republic of El Salvador"
  ELS_DEF:0 "the Republic of El Salvador"
  ELS_ADJ:0 "Salvadoran"
+ 
+ ELS_insurrectionary_anarchism_party:0 "--"
+ ELS_revolutionary_autocracy_party:0 "--"
+ ELS_proletarian_dictatorship_party:0 "--"
+ ELS_libertarian_socialism_party:0 "--"
+ ELS_social_democracy_party:0 "--"
+ ELS_progressive_liberalism_party:0 "--"
+ ELS_market_libertarianism_party:0 "--"
+ ELS_national_conservatism_party:0 "PNPP"
+ ELS_national_conservatism_party_long:0 "Partido Nacional Pro-Patria"
+ ELS_reactionary_theocracy_party:0 "--"
+ ELS_authoritarian_republicanism_party:0 "PNPP"
+ ELS_authoritarian_republicanism_party_long:0 "Partido Nacional Pro-Patria"
+ ELS_martial_despotism_party:0 "PNPP"
+ ELS_martial_despotism_party_long:0 "Partido Nacional Pro-Patria"
+ ELS_ultranational_statism_party:0 "PNPP"
+ ELS_ultranational_statism_party_long:0 "Partido Nacional Pro-Patria"
  
  

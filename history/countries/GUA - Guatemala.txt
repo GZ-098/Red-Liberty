@@ -1,0 +1,45 @@
+﻿capital = 313
+
+oob = "GUA_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+set_country_flag = monroe_doctrine
+set_war_support = 0.1
+set_convoys = 5
+
+set_politics = {
+	ruling_party = libertarian_socialism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 28
+	social_democracy = 13
+	progressive_liberalism = 14
+	market_libertarianism = 3
+	national_conservatism = 26
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 13
+	martial_despotism = 3
+	ultranational_statism = 0
+}
+
+create_country_leader = {
+	name = "Juan José Arévalo Bermejo"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = libertarian_socialism_subtype
+	traits = {
+		#
+	}
+}

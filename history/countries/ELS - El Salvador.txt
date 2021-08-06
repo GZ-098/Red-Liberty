@@ -12,10 +12,10 @@ set_war_support = 0.1
 set_convoys = 5
 
 set_politics = {
-	ruling_party = social_democracy
+	ruling_party = ultranational_statism
 	last_election = "1932.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	insurrectionary_anarchism = 0
@@ -32,10 +32,23 @@ set_popularities = {
 	ultranational_statism = 15
 }
 
+set_country_flag = conservative_coalition
+set_country_flag = authoritarian_coalition
+set_country_flag = despotist_coalition
+set_country_flag = ultranationalist_coalition
+
 create_country_leader = {
 	name = "Arturo Araujo"
 	desc = ""
 	picture = ""
 	expire = "1965.1.1"
 	ideology = social_democracy_subtype
+}
+
+create_country_leader = {
+	name = "Maximiliano Hernández Martínez"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = ultranational_statism_subtype
 }

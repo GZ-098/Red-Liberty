@@ -13,6 +13,10 @@ state={
 		}
 		add_core_of = BRA
 		add_core_of = UOB
+		
+		victory_points = {
+			12987 10
+		}
 	}
 
 	provinces={

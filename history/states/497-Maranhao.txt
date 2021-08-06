@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = UOB
+		owner = BRA
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -25,9 +25,9 @@ state={
 		victory_points = {
 			12853 1 
 		}
+
 		1936.1.1 = {
-			BRA = {
-				set_province_controller = 2214
+			UOB = {
 				set_province_controller = 10874
 			}
 		}

@@ -23,6 +23,14 @@ state={
 		victory_points = {
 			10980 10
 		}
+
+		1936.1.1 = {
+			BRA = {
+				set_province_controller = 5172
+				set_province_controller = 8190
+				set_province_controller = 12996
+			}
+		}
 	}
 
 	provinces={

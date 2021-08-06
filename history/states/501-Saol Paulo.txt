@@ -23,6 +23,13 @@ state={
 		victory_points = {
 			5112 1
 		}
+
+		1936.1.1 = {
+			UOB= {
+				set_province_controller = 5112
+				set_province_controller = 5167
+			}
+		}
 	}
 
 	provinces={

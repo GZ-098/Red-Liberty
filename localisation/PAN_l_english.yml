@@ -1,0 +1,19 @@
+﻿l_english:
+ PAN:0 "Republic of Panama"
+ PAN_DEF:0 "Panama"
+ PAN_ADJ:0 "Panamanian"
+ 
+ PAN_insurrectionary_anarchism_party:0 "--"
+ PAN_revolutionary_autocracy_party:0 "--"
+ PAN_proletarian_dictatorship_party:0 "--"
+ PAN_libertarian_socialism_party:0 "--"
+ PAN_social_democracy_party:0 "--"
+ PAN_progressive_liberalism_party:0 "--"
+ PAN_market_libertarianism_party:0 "--"
+ PAN_national_conservatism_party:0 "--"
+ PAN_reactionary_theocracy_party:0 "--"
+ PAN_authoritarian_republicanism_party:0 "AC"
+ PAN_authoritarian_republicanism_party_long:0 "Accion Comunal"
+ PAN_martial_despotism_party:0 "--"
+ PAN_ultranational_statism_party:0 "--"
+ 

@@ -18,6 +18,17 @@ state={
 		}
 		add_core_of = BRA
 		add_core_of = UOB
+
+		1936.1.1 = {
+			UOB = {
+				# amapas
+				set_province_controller = 4980
+				# amazonas
+				set_province_controller = 2035
+				set_province_controller = 5232
+				set_province_controller = 8172
+			}
+		}
 	}
 
 	provinces={

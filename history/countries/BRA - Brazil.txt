@@ -1,4 +1,4 @@
-﻿capital = 500
+﻿capital = 505
 
 oob = "empty"
 

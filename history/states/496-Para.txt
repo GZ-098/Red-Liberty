@@ -27,14 +27,6 @@ state={
 		}
 		add_core_of = BRA
 		add_core_of = UOB
-		
-		1936.1.1 = {
-			UOB = {
-				set_province_controller = 8226
-				set_province_controller = 12334
-				set_province_controller = 12903
-			}
-		}
 	}
 
 	provinces={

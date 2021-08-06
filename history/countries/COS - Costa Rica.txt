@@ -41,3 +41,14 @@ create_country_leader = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "Rafael Ángel Calderón"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = progressive_liberalism_subtype
+	traits = {
+		#
+	}
+}
