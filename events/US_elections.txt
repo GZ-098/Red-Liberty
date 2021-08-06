@@ -55,6 +55,9 @@ country_event = {
 		}
 		
 		add_stability = -0.1
+		add_ideas = {
+			USA_election_chaos
+		}
 		
 		country_event = { # new congress gets sworn in
 			id = us_election.3
@@ -63,9 +66,6 @@ country_event = {
 		country_event = { # house of reps votes
 			id = us_election.4
 			days = 57
-		}
-		country_event = {
-			id = us_election.9
 		}
 		
 		set_country_flag = USA_1936_election_shitshow
@@ -143,12 +143,15 @@ country_event = { # house of reps votes
 		}
 		country_event = {
 			id = us_election.5
-			days = 57
+			days = 55
 		}
 		country_event = {
 			id = us_election.6
 		}
 		set_country_flag = USA_thomas_elected
+		remove_ideas = {
+			USA_election_chaos
+		}
 	}
 	
 	option = { # democrat majority
@@ -160,10 +163,14 @@ country_event = { # house of reps votes
 		}
 		country_event = {
 			id = us_election.7
-			days = 57
+			days = 55
 		}
 		country_event = {
 			id = us_election.8
+		}
+		set_country_flag = USA_lister_elected
+		remove_ideas = {
+			USA_election_chaos
 		}
 	}
 }

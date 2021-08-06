@@ -13,22 +13,38 @@ if = {
 #complete_national_focus = USA_the_year_1936
 
 load_focus_tree = USA_thomas_tree
-complete_national_focus = USA_hoovers_folly
-complete_national_focus = USA_the_american_crisis
-complete_national_focus = USA_of_agriculture
-complete_national_focus = USA_buy_up_produce
-complete_national_focus = USA_federal_relief_programs
-complete_national_focus = USA_ccc
-complete_national_focus = USA_of_industry
-complete_national_focus = USA_create_the_fprc
-complete_national_focus = USA_bank_regulation
-complete_national_focus = USA_regulate_stock_markets
-complete_national_focus = USA_paying_for_it_all
-complete_national_focus = USA_raise_taxes
-complete_national_focus = USA_dealing_with_the_dustbowl
-complete_national_focus = USA_strengthen_labor_regs
+unlock_national_focus = USA_the_second_thomas_admin
+unlock_national_focus = USA_reach_across
+unlock_national_focus = USA_preparing_our_agenda
 
-complete_national_focus = USA_the_second_thomas_admin
+unlock_national_focus = USA_the_forgotten
+unlock_national_focus = USA_anti_lynching_legislation
+unlock_national_focus = USA_encourage_minority_voting
+unlock_national_focus = USA_take_on_the_klan
+unlock_national_focus = USA_unleash_the_fbi
+unlock_national_focus = USA_expose_their_crimes
+unlock_national_focus = USA_find_their_funding
+
+unlock_national_focus = USA_the_american_crisis
+unlock_national_focus = USA_of_agriculture
+unlock_national_focus = USA_buy_up_produce
+unlock_national_focus = USA_federal_relief_programs
+unlock_national_focus = USA_ccc
+unlock_national_focus = USA_of_industry
+unlock_national_focus = USA_create_the_fprc
+unlock_national_focus = USA_bank_regulation
+unlock_national_focus = USA_regulate_stock_markets
+unlock_national_focus = USA_dealing_with_the_dustbowl
+unlock_national_focus = USA_strengthen_labor_regs
+
+unlock_national_focus = USA_our_mandate
+unlock_national_focus = USA_of_politics
+
+unlock_national_focus = USA_reforming_the_military
+unlock_national_focus = USA_the_army
+unlock_national_focus = USA_the_air_corps
+unlock_national_focus = USA_the_navy
+unlock_national_focus = USA_the_naval_act
 
 set_country_flag = USA_recovery_enabled
 set_variable = { USA_recovery_length = 250 }
@@ -53,7 +69,7 @@ country_event = { # howie boy endorses thomas
 }
 country_event = { # fourth of july
 	id = united_states_flavor.4
-	days = 185
+	days = 183
 }
 
 country_event = { # reed announces retirement

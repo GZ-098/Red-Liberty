@@ -15,309 +15,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_unity_above_all_else
-	icon = GFX_USA_unity_above_all_else
+    id = USA_hoovers_folly
+	icon = GFX_USA_hoovers_folly
 	
-    x = -1
+    x = -4
 	y = 1
 	
-	cost = 4
-	mutually_exclusive = {
-		focus = USA_reach_across
-	}
+	cost = 2
 	relative_position_id = USA_the_second_thomas_admin
 	prerequisite = { focus = USA_the_second_thomas_admin }
-    completion_reward = {
-        add_popularity = {
-			ideology = proletarian_dictatorship
-			popularity = 0.005
-		}
-		add_popularity = {
-			ideology = libertarian_socialism
-			popularity = 0.005
-		}
-		add_political_power = 50
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_reach_across
-	icon = GFX_USA_reach_across
-	
-    x = 1
-	y = 1
-	
-	cost = 4
-	mutually_exclusive = {
-		focus = USA_unity_above_all_else
-	}
-	relative_position_id = USA_the_second_thomas_admin
-	prerequisite = { focus = USA_the_second_thomas_admin }
-    completion_reward = {
-        set_country_flag = USA_SPA_open_to_compromise
-		add_popularity = {
-			ideology = social_democracy
-			popularity = 0.01
-		}
-		add_political_power = -100
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_preparing_our_agenda
-	icon = GFX_USA_preparing_our_agenda
-	
-    x = 1
-	y = 1
-	
-	cost = 2
-	relative_position_id = USA_unity_above_all_else
-	prerequisite = {
-		focus = USA_unity_above_all_else
-		focus = USA_reach_across
-	}
-    completion_reward = {
-        add_political_power = 50
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_the_forgotten
-	icon = GFX_USA_the_forgotten
-	
-    x = -5
-	y = 1
-	
-	cost = 2
-	relative_position_id = USA_preparing_our_agenda
-	prerequisite = {
-		focus = USA_preparing_our_agenda
-	}
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_anti_lynching_legislation
-	icon = GFX_USA_anti_lynching_legislation
-	
-    x = -1
-	y = 1
-	
-	cost = 5
-	relative_position_id = USA_the_forgotten
-	prerequisite = { focus = USA_the_forgotten }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_encourage_minority_voting
-	icon = GFX_USA_encourage_minority_voting
-	
-    x = 1
-	y = 1
-	
-	cost = 5
-	relative_position_id = USA_the_forgotten
-	prerequisite = { focus = USA_the_forgotten }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_take_on_the_klan
-	icon = GFX_USA_take_on_the_klan
-	
-    x = 1
-	y = 1
-	
-	cost = 2
-	relative_position_id = USA_anti_lynching_legislation
-	prerequisite = { focus = USA_anti_lynching_legislation }
-	prerequisite = { focus = USA_encourage_minority_voting }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = { # how ya like them apples?
-    id = USA_unleash_the_fbi
-	icon = GFX_USA_unleash_the_fbi
-	
-    x = -1
-	y = 1
-	
-	cost = 4
-	relative_position_id = USA_take_on_the_klan
-	prerequisite = { focus = USA_take_on_the_klan }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_expose_their_crimes
-	icon = GFX_USA_expose_their_crimes
-	
-    x = 1
-	y = 1
-	
-	cost = 4
-	relative_position_id = USA_take_on_the_klan
-	prerequisite = { focus = USA_take_on_the_klan }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_arrest_their_leaders
-	icon = GFX_USA_expose_their_crimes
-	
-    x = -1
-	y = 1
-	
-	cost = 4
-	relative_position_id = USA_unleash_the_fbi
-	prerequisite = { focus = USA_unleash_the_fbi }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_find_their_funding
-	icon = GFX_USA_find_their_funding
-	
-    x = 1
-	y = 1
-	
-	cost = 4
-	relative_position_id = USA_unleash_the_fbi
-	prerequisite = { focus = USA_unleash_the_fbi }
-	prerequisite = { focus = USA_expose_their_crimes }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_take_down_statues
-	icon = GFX_USA_take_down_statues
-	
-    x = 1
-	y = 1
-	
-	cost = 4
-	relative_position_id = USA_expose_their_crimes
-	prerequisite = { focus = USA_expose_their_crimes }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_investigate_the_afp
-	icon = GFX_USA_investigate_the_afp
-	
-    x = 1
-	y = 1
-	
-	cost = 4
-	relative_position_id = USA_arrest_their_leaders
-	prerequisite = { focus = USA_arrest_their_leaders }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_erase_their_legacy
-	icon = GFX_USA_erase_their_legacy
-	
-    x = -1
-	y = 1
-	
-	cost = 4
-	relative_position_id = USA_take_down_statues
-	prerequisite = { focus = USA_take_down_statues }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_itll_never_happen_here
-	icon = GFX_USA_itll_never_happen_here
-	
-    x = 1
-	y = 1
-	
-	cost = 4
-	relative_position_id = USA_investigate_the_afp
-	prerequisite = { focus = USA_investigate_the_afp }
-	prerequisite = { focus = USA_find_their_funding }
-	prerequisite = { focus = USA_erase_their_legacy }
     completion_reward = {
         
     }
@@ -335,10 +41,8 @@ shared_focus = {
 	y = 1
 	
 	cost = 2
-	relative_position_id = USA_preparing_our_agenda
-	prerequisite = {
-		focus = USA_preparing_our_agenda
-	}
+	relative_position_id = USA_hoovers_folly
+	prerequisite = { focus = USA_hoovers_folly }
     completion_reward = {
         
     }
@@ -406,35 +110,16 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_dealing_with_the_dustbowl
-	icon = GFX_USA_dealing_with_the_dustbowl
+    id = USA_ccc
+	icon = GFX_USA_ccc
 	
     x = 1
 	y = 1
 	
-	cost = 5
+	cost = 3
 	relative_position_id = USA_buy_up_produce
 	prerequisite = { focus = USA_buy_up_produce }
 	prerequisite = { focus = USA_federal_relief_programs }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_ccc
-	icon = GFX_USA_ccc
-	
-    x = 0
-	y = 2
-	
-	cost = 3
-	relative_position_id = USA_dealing_with_the_dustbowl
-	prerequisite = { focus = USA_dealing_with_the_dustbowl }
     completion_reward = {
         
     }
@@ -605,6 +290,25 @@ shared_focus = {
 }
 
 shared_focus = {
+    id = USA_dealing_with_the_dustbowl
+	icon = GFX_USA_dealing_with_the_dustbowl
+	
+    x = 0
+	y = 2
+	
+	cost = 5
+	relative_position_id = USA_ccc
+	prerequisite = { focus = USA_ccc }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
     id = USA_strengthen_labor_regs
 	icon = GFX_USA_strengthen_labor_regs
 	
@@ -631,8 +335,8 @@ shared_focus = {
 	y = 1
 	
 	cost = 5
-	relative_position_id = USA_ccc
-	prerequisite = { focus = USA_ccc }
+	relative_position_id = USA_dealing_with_the_dustbowl
+	prerequisite = { focus = USA_dealing_with_the_dustbowl }
 	prerequisite = { focus = USA_federal_aid_commission }
 	prerequisite = { focus = USA_strengthen_labor_regs }
     completion_reward = {
@@ -653,14 +357,12 @@ shared_focus = {
     id = USA_our_mandate
 	icon = GFX_USA_our_mandate
 	
-    x = 5
+    x = 4
 	y = 1
 	
 	cost = 2
-	relative_position_id = USA_preparing_our_agenda
-	prerequisite = {
-		focus = USA_preparing_our_agenda
-	}
+	relative_position_id = USA_the_second_thomas_admin
+	prerequisite = { focus = USA_the_second_thomas_admin }
     completion_reward = {
         #country_event = {
 		#	id = united_states_thomas.9
@@ -673,17 +375,15 @@ shared_focus = {
 	}
 }
 
-
 shared_focus = {
-    id = USA_of_politics
-	icon = GFX_USA_of_politics
+    id = USA_preparing_the_country
+	icon = GFX_USA_preparing_the_country
 	
     x = 0
 	y = 1
 	
-	cost = 5
+	cost = 2
 	relative_position_id = USA_our_mandate
-	prerequisite = { focus = USA_the_american_crisis }
 	prerequisite = { focus = USA_our_mandate }
     completion_reward = {
         
@@ -698,12 +398,12 @@ shared_focus = {
     id = USA_reorganization
 	icon = GFX_USA_reorganization
 	
-    x = 0
+    x = -2
 	y = 1
 	
 	cost = 2
-	relative_position_id = USA_of_politics
-	prerequisite = { focus = USA_of_politics }
+	relative_position_id = USA_preparing_the_country
+	prerequisite = { focus = USA_preparing_the_country }
     completion_reward = {
         country_event = {
 			id = united_states_thomas.20
@@ -917,17 +617,158 @@ shared_focus = {
 }
 
 shared_focus = {
+    id = USA_preparing_our_agenda
+	icon = GFX_USA_preparing_our_agenda
+	
+    x = 2
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_preparing_the_country
+	prerequisite = { focus = USA_preparing_the_country }
+    completion_reward = {
+        add_political_power = 50
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_unity_above_all_else
+	icon = GFX_USA_unity_above_all_else
+	
+    x = -1
+	y = 1
+	
+	cost = 4
+	mutually_exclusive = {
+		focus = USA_reach_across
+	}
+	relative_position_id = USA_preparing_our_agenda
+	prerequisite = { focus = USA_preparing_our_agenda }
+    completion_reward = {
+        add_popularity = {
+			ideology = proletarian_dictatorship
+			popularity = 0.005
+		}
+		add_popularity = {
+			ideology = libertarian_socialism
+			popularity = 0.005
+		}
+		add_political_power = 50
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_reach_across
+	icon = GFX_USA_reach_across
+	
+    x = 1
+	y = 1
+	
+	cost = 4
+	mutually_exclusive = {
+		focus = USA_unity_above_all_else
+	}
+	relative_position_id = USA_preparing_our_agenda
+	prerequisite = { focus = USA_preparing_our_agenda }
+    completion_reward = {
+        set_country_flag = USA_SPA_open_to_compromise
+		add_popularity = {
+			ideology = social_democracy
+			popularity = 0.01
+		}
+		add_political_power = -100
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_conceptualization
+	icon = GFX_USA_conceptualization
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_unity_above_all_else
+	prerequisite = {
+		focus = USA_unity_above_all_else
+		focus = USA_reach_across
+	}
+    completion_reward = {
+        country_event = {
+			id = united_states_thomas.22
+			days = 1
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_lay_the_groundwork
+	icon = GFX_USA_lay_the_groundwork
+	
+    x = 0
+	y = 2
+	
+	cost = 5
+	relative_position_id = USA_conceptualization
+	prerequisite = { focus = USA_conceptualization }
+    completion_reward = {
+        add_stability = 0.03
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_of_politics
+	icon = GFX_USA_of_politics
+	
+    x = 2
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_spqa
+	prerequisite = { focus = USA_spqa }
+	prerequisite = { focus = USA_lay_the_groundwork }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
     id = USA_second_bill_of_rights
 	icon = GFX_USA_second_bill_of_rights
 	
-    x = 0
+    x = 4
 	y = 1
 	
 	cost = 5
 	relative_position_id = USA_of_poverty
-	prerequisite = { focus = USA_itll_never_happen_here }
-	prerequisite = { focus = USA_of_poverty }
-	prerequisite = { focus = USA_spqa }
+	prerequisite = {
+		focus = USA_of_poverty
+		focus = USA_of_politics
+	}
     completion_reward = {
         
     }

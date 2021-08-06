@@ -33,6 +33,9 @@ on_actions = {
 			}
 			
 			USA = {
+				### INTRO EVENT ###
+				country_event = { id = united_states.1 hours = 1 }
+			
 				### 1936 ELECTIONS PREP ###
 				country_event = { id = USA_election_helpers.1 days = 30 } # SENATE
 				country_event = { id = USA_election_helpers.11 days = 30 } # PRESIDENTIAL

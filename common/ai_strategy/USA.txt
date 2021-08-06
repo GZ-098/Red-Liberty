@@ -1,0 +1,31 @@
+usa_friends_with_canada = {
+	allowed = {
+		tag = USA
+	}
+	enable = {
+		NOT = { has_war_with = CAN }
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = befriend
+		id = "CAN"
+		value = 200
+	}
+	ai_strategy = {
+		type = support
+		id = "CAN"
+		value = 200
+	}
+	ai_strategy = {
+		type = protect
+		id = "CAN"
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = "CAN"
+		value = -500
+	}
+}

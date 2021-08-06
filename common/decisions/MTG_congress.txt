@@ -49,18 +49,20 @@ USA_congress = {
 		available = {
 			NOT = {
 				has_country_flag = social_security_passed
-				has_country_flag = USA_discussing_bill
 			}
-			has_completed_focus = USA_social_security
+			#has_completed_focus = USA_social_security
+			has_completed_focus = USA_of_poverty
 		}
 		
 		visible = {
 			original_tag = USA
 			NOT = {
-				has_country_flag = social_security_passed
 				has_country_flag = USA_discussing_bill
 			}
-			has_completed_focus = USA_social_security
+			has_country_leader = {
+				name = "Norman Thomas"
+				ruling_only = yes
+			}
 		}
 		
 		cost = 0
@@ -145,7 +147,6 @@ USA_congress = {
 		available = {
 			NOT = {
 				has_country_flag = reorg_act_passed
-				has_country_flag = USA_discussing_bill
 			}
 			has_completed_focus = USA_reorg_act
 		}
@@ -153,10 +154,12 @@ USA_congress = {
 		visible = {
 			original_tag = USA
 			NOT = {
-				has_country_flag = reorg_act_passed
 				has_country_flag = USA_discussing_bill
 			}
-			has_completed_focus = USA_reorg_act
+			has_country_leader = {
+				name = "Norman Thomas"
+				ruling_only = yes
+			}
 		}
 		
 		cost = 0

@@ -339,6 +339,29 @@ USA_wealth_tax_act_setup = { # wealth tax act
 	USA_bill_setup = yes # always required
 }
 
+USA_enforcement_act_setup = { # ban the kkk
+	log = "[GetDateText]: [Root.GetName]: bill setup active"
+	
+	set_variable = { bill_id = 10 } # EACH BILL MUST HAVE A UNIQUE ID
+	
+	set_country_flag = USA_republican_discussing
+	set_country_flag = USA_democrat_discussing
+	set_country_flag = USA_communist_discussing
+	set_country_flag = USA_socialist_discussing
+	set_country_flag = USA_fascist_discussing
+	
+	set_country_flag = bill_enable_mission
+	set_variable = { USA_bill_mission_deadline = 75 }
+	
+	set_variable = { USA_republican_bill_support = 0.3 }
+	set_variable = { USA_democrat_bill_support = 0.15 }
+	set_variable = { USA_communist_bill_support = 1 }
+	set_variable = { USA_socialist_bill_support = 1 }
+	set_variable = { USA_fascist_bill_support = 0 }
+	
+	USA_bill_setup = yes # always required
+}
+
 USA_bill_setup = {
 	USA_initialize_bill_support = yes
 }

@@ -3,7 +3,7 @@ add_namespace = united_states_flavor
 
 country_event = { # intro event
 	id = united_states.1
-	title = ""
+	title = "Long May She Wave"
 	desc = united_states.1.desc
 	
 	is_triggered_only = yes
@@ -11,7 +11,7 @@ country_event = { # intro event
 	fire_only_once = yes
 
 	option = {
-		name = ""
+		name = "Let's go!"
 	}
 }
 

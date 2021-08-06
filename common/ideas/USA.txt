@@ -2,6 +2,28 @@ ideas = {
 
 	country = {
 	
+		USA_election_chaos = {
+			
+			removal_cost = -1 
+			
+			allowed_civil_war = {	 
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			modifier = {
+				political_power_gain_factor = -0.9
+				stability_factor = -0.1
+			}
+		}
+	
 		USA_red_liberty = {
 			
 			removal_cost = -1 

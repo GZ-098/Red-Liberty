@@ -1,0 +1,44 @@
+germany_worried_about_soviet = {
+	enable = {
+		is_in_faction_with = GER
+		country_exists = SOV
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = contain
+		id = "SOV"
+		value = 100
+	}
+	ai_strategy = {
+		type = conquer
+		id = "SOV"
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "SOV"
+		value = 100
+	}
+}
+
+germany_worried_about_france = {
+	enable = {
+		is_in_faction_with = GER
+		country_exists = SOV
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = contain
+		id = "FRA"
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "FRA"
+		value = 100
+	}
+}

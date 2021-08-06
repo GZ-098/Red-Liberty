@@ -509,6 +509,25 @@ shared_focus = {
 }
 
 shared_focus = {
+    id = USA_strat_destruction
+	icon = GFX_USA_strat_destruction
+	
+    x = 1
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_independent_air_force
+	prerequisite = { focus = USA_independent_air_force }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
     id = USA_the_navy
 	icon = GFX_USA_the_navy
 	
