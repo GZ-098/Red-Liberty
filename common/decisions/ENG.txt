@@ -1,6 +1,6 @@
 ENG_parliament = {
 	
-	ENG_tutorial = {
+	ENG_public_order_act = {
 	
 		icon = ger_mefo_bills
 		
@@ -8,10 +8,33 @@ ENG_parliament = {
 			always = yes
 		}
 		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ENG_house_votes_tt
+				check_variable = {
+					coalition_seats > 314
+				}
+			}
+		}
+		
+		days_remove = 25
+		
 		cost = 15
 		
-		complete_effect = {
-			
+		remove_effect = {
+			add_stability = 0.02
+			add_popularity = {
+				ideology = ultranational_statism
+				popularity = -0.01
+			}
+			add_popularity = {
+				ideology = proletarian_dictatorship
+				popularity = -0.01
+			}
+			add_popularity = {
+				ideology = revolutionary_autocracy
+				popularity = -0.01
+			}
 		}
 	}
 }

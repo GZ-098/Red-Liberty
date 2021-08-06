@@ -1,0 +1,12 @@
+spritetypes = {
+	
+	spriteType = {
+		name = "GFX_ENG_the_great_divide"
+		texturefile = "gfx/interface/goals/ENG/ENG_the_great_divide.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ENG_crooks_and_thieves"
+		texturefile = "gfx/interface/goals/ENG/ENG_crooks_and_theives.png"
+	}
+}
