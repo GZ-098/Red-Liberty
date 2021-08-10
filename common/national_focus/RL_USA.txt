@@ -36,6 +36,7 @@ focus_tree = {
 	default = no
 	shared_focus = USA_the_second_thomas_admin
 	shared_focus = USA_reforming_the_military
+	shared_focus = USA_down_mexico_way
 	#shared_focus = USA_fight_the_recession
 }
 
