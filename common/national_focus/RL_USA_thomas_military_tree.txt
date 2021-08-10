@@ -25,7 +25,7 @@ shared_focus = {
 	relative_position_id = USA_reforming_the_military
 	prerequisite = { focus = USA_reforming_the_military }
     completion_reward = {
-        
+        army_experience = 25
     }
 	
 	ai_will_do = {
@@ -378,7 +378,7 @@ shared_focus = {
 	relative_position_id = USA_reforming_the_military
 	prerequisite = { focus = USA_reforming_the_military }
     completion_reward = {
-        
+        air_experience = 25
     }
 	
 	ai_will_do = {
@@ -393,14 +393,16 @@ shared_focus = {
     x = -2
 	y = 1
 	
-	cost = 2
+	cost = 3
 	mutually_exclusive = {
 		focus = USA_independent_air_force
 	}
 	relative_position_id = USA_the_air_corps
 	prerequisite = { focus = USA_the_air_corps }
     completion_reward = {
-        
+        add_ideas = {
+			USA_usac
+		}
     }
 	
 	ai_will_do = {
@@ -415,11 +417,15 @@ shared_focus = {
     x = -1
 	y = 1
 	
-	cost = 2
+	cost = 4
 	relative_position_id = USA_under_the_army
 	prerequisite = { focus = USA_under_the_army }
     completion_reward = {
-        
+        add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = battlefield_support_tree
+		}
     }
 	
 	ai_will_do = {
@@ -438,7 +444,11 @@ shared_focus = {
 	relative_position_id = USA_under_the_army
 	prerequisite = { focus = USA_under_the_army }
     completion_reward = {
-        
+        add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = cas_bomber
+		}
     }
 	
 	ai_will_do = {
@@ -453,13 +463,307 @@ shared_focus = {
     x = 1
 	y = 1
 	
-	cost = 2
+	cost = 3
 	relative_position_id = USA_support_doctrine
 	prerequisite = { focus = USA_support_doctrine }
 	prerequisite = { focus = USA_cas_development }
-	prerequisite = { focus = USA_butler_reform_plan }
+    completion_reward = {
+        add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = cat_scout_plane
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_shorten_response_times
+	icon = GFX_USA_shorten_response_times
+	
+    x = -1
+	y = 1
+	
+	cost = 3
+	relative_position_id = USA_recon_aircraft
+	prerequisite = { focus = USA_recon_aircraft }
     completion_reward = {
         
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_pilot_rotation
+	icon = GFX_USA_pilot_rotation
+	
+    x = 1
+	y = 1
+	
+	cost = 3
+	relative_position_id = USA_recon_aircraft
+	prerequisite = { focus = USA_recon_aircraft }
+    completion_reward = {
+        swap_ideas = {
+			add_idea = USA_usac_2
+			remove_idea = USA_usac
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_combined_arms
+	icon = GFX_USA_combined_arms
+	
+    x = 1
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_shorten_response_times
+	prerequisite = { focus = USA_shorten_response_times }
+	prerequisite = { focus = USA_pilot_rotation }
+    completion_reward = {
+        swap_ideas = {
+			add_idea = USA_usac_3
+			remove_idea = USA_usac_2
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_streamline_production
+	icon = GFX_USA_streamline_production
+	
+    x = 0
+	y = 2
+	
+	cost = 5
+	relative_position_id = USA_construct_airbases
+	prerequisite = { focus = USA_construct_airbases }
+    completion_reward = {
+        if = {
+			limit = {
+				has_completed_focus = USA_under_the_army
+			}
+			add_ideas = {
+				USA_streamlined_prod_cas
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = USA_independent_air_force
+			}
+			add_ideas = {
+				USA_streamlined_prod_bomber
+			}
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_construct_airbases
+	icon = GFX_USA_construct_airbases
+	
+    x = 1
+	y = 1
+	
+	cost = 3
+	relative_position_id = USA_cas_development
+	prerequisite = {
+		focus = USA_cas_development
+		focus = USA_bomber_development
+	}
+    completion_reward = {
+        random_owned_state = {
+			prioritize = { 361 375 382 391 }
+			limit = {
+				is_core_of = USA
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			prioritize = { 361 375 382 391 }
+			limit = {
+				is_core_of = USA
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			prioritize = { 361 375 382 391 }
+			limit = {
+				is_core_of = USA
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_long_range_escorts
+	icon = GFX_USA_recon_aircraft
+	
+    x = -1
+	y = 1
+	
+	cost = 3
+	relative_position_id = USA_strat_destruction
+	prerequisite = { focus = USA_strat_destruction }
+    completion_reward = {
+        swap_ideas = {
+			add_idea = USA_usaaf_2
+			remove_idea = USA_usaaf
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_control_the_sky
+	icon = GFX_USA_control_the_sky
+	
+    x = 1
+	y = 1
+	
+	cost = 3
+	relative_position_id = USA_strat_destruction
+	prerequisite = { focus = USA_strat_destruction }
+    completion_reward = {
+        add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = light_fighter
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_modernize_naval_bombers
+	icon = GFX_USA_modernize_naval_bombers
+	
+    x = 1
+	y = 1
+	
+	cost = 3
+	relative_position_id = USA_construct_airbases
+	prerequisite = { focus = USA_long_range_escorts }
+	prerequisite = { focus = USA_construct_airbases }
+    completion_reward = {
+        add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = naval_bomber
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_flying_fortresses
+	icon = GFX_USA_flying_fortresses
+	
+    x = 1
+	y = 1
+	
+	cost = 3
+	relative_position_id = USA_long_range_escorts
+	prerequisite = { focus = USA_long_range_escorts }
+	prerequisite = { focus = USA_control_the_sky }
+    completion_reward = {
+        add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = cat_strategic_bomber
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_form_usaf
+	icon = GFX_USA_form_usaf
+	
+    x = 1
+	y = 1
+	
+	cost = 4
+	relative_position_id = USA_modernize_naval_bombers
+	prerequisite = { focus = USA_modernize_naval_bombers }
+	prerequisite = { focus = USA_flying_fortresses }
+    completion_reward = {
+        swap_ideas = {
+			add_idea = USA_usaaf_3
+			remove_idea = USA_usaaf_2
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_the_eagle_flies
+	icon = GFX_USA_the_eagle_flies
+	
+    x = 0
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_streamline_production
+	prerequisite = { focus = USA_streamline_production }
+	prerequisite = {
+		focus = USA_combined_arms
+		focus = USA_form_usaf
+	}
+    completion_reward = {
+        # add event here about air force
     }
 	
 	ai_will_do = {
@@ -474,14 +778,16 @@ shared_focus = {
     x = 2
 	y = 1
 	
-	cost = 2
+	cost = 3
 	mutually_exclusive = {
 		focus = USA_under_the_army
 	}
 	relative_position_id = USA_the_air_corps
 	prerequisite = { focus = USA_the_air_corps }
     completion_reward = {
-        
+        add_ideas = {
+			USA_usaaf
+		}
     }
 	
 	ai_will_do = {
@@ -500,7 +806,11 @@ shared_focus = {
 	relative_position_id = USA_independent_air_force
 	prerequisite = { focus = USA_independent_air_force }
     completion_reward = {
-        
+        add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = tactical_bomber
+		}
     }
 	
 	ai_will_do = {
@@ -519,7 +829,11 @@ shared_focus = {
 	relative_position_id = USA_independent_air_force
 	prerequisite = { focus = USA_independent_air_force }
     completion_reward = {
-        
+        add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = strategic_destruction_tree
+		}
     }
 	
 	ai_will_do = {
@@ -538,7 +852,7 @@ shared_focus = {
 	relative_position_id = USA_reforming_the_military
 	prerequisite = { focus = USA_reforming_the_military }
     completion_reward = {
-        
+        navy_experience = 25
     }
 	
 	ai_will_do = {
@@ -557,7 +871,9 @@ shared_focus = {
 	relative_position_id = USA_the_navy
 	prerequisite = { focus = USA_the_navy }
     completion_reward = {
-        
+		custom_effect_tooltip = USA_bill_over_time_tt
+		unlock_decision_tooltip = start_USA_naval_act_fake
+        unlock_decision_tooltip = start_USA_naval_act
     }
 	
 	ai_will_do = {
@@ -576,7 +892,35 @@ shared_focus = {
 	relative_position_id = USA_the_naval_act
 	prerequisite = { focus = USA_the_naval_act }
     completion_reward = {
-        
+		if = {
+			limit = {
+				NOT = {
+					has_tech = basic_ship_hull_heavy
+				}
+			}
+			set_technology = {
+				basic_ship_hull_heavy = 1
+			}
+		}
+        create_equipment_variant = {
+			name = "North Carolina Class"				
+			type = ship_hull_heavy_2
+			name_group = USA_BB_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				fixed_ship_armor_slot = ship_armor_bb_2
+				front_1_custom_slot = ship_heavy_battery_2
+				mid_1_custom_slot = ship_secondaries_2
+				mid_2_custom_slot = ship_secondaries_2
+				rear_1_custom_slot = ship_heavy_battery_2
+			}
+		}
     }
 	
 	ai_will_do = {
@@ -595,7 +939,35 @@ shared_focus = {
 	relative_position_id = USA_the_naval_act
 	prerequisite = { focus = USA_the_naval_act }
     completion_reward = {
-        
+        if = {
+			limit = {
+				NOT = {
+					has_tech = basic_ship_hull_heavy
+				}
+			}
+			set_technology = {
+				basic_ship_hull_heavy = 1
+			}
+		}
+        create_equipment_variant = {
+			name = "South Dakota Class"				
+			type = ship_hull_heavy_2
+			name_group = USA_BB_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				fixed_ship_armor_slot = ship_armor_bb_2
+				front_1_custom_slot = ship_heavy_battery_2
+				mid_1_custom_slot = ship_secondaries_2
+				mid_2_custom_slot = ship_airplane_launcher_1
+				rear_1_custom_slot = ship_heavy_battery_2
+			}
+		}
     }
 	
 	ai_will_do = {
@@ -607,6 +979,12 @@ shared_focus = {
     id = USA_two_ocean_navy
 	icon = GFX_USA_two_ocean_navy
 	
+	available = {
+		NOT = {
+			has_idea = USA_the_naval_act
+		}
+	}
+	
     x = 1
 	y = 1
 	
@@ -615,7 +993,7 @@ shared_focus = {
 	prerequisite = { focus = USA_north_carolina_class }
 	prerequisite = { focus = USA_south_dakota_class }
     completion_reward = {
-        
+        unlock_decision_tooltip = start_USA_two_ocean_navy_act
     }
 	
 	ai_will_do = {
@@ -636,6 +1014,170 @@ shared_focus = {
 	}
 	relative_position_id = USA_two_ocean_navy
 	prerequisite = { focus = USA_two_ocean_navy }
+    completion_reward = {
+        add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = cat_fleet_in_being
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_pacific_presence
+	icon = GFX_USA_pacific_presence
+	
+	available = {
+		has_tech = radio_detection
+	}
+	
+    x = -1
+	y = 1
+	
+	cost = 3
+	relative_position_id = USA_matching_europe
+	prerequisite = { focus = USA_matching_europe }
+    completion_reward = {
+        629 = {
+			add_building_construction = {
+				type = radar_station
+				level = 2
+				instant_build = yes
+			}
+		}
+		631 = {
+			add_building_construction = {
+				type = radar_station
+				level = 2
+				instant_build = yes
+			}
+		}
+		632 = {
+			add_building_construction = {
+				type = radar_station
+				level = 2
+				instant_build = yes
+			}
+		}
+		638 = {
+			add_building_construction = {
+				type = radar_station
+				level = 2
+				instant_build = yes
+			}
+		}
+		if = {
+			limit = {
+				PHI = {
+					is_subject_of = USA
+				}
+			}
+			327 = {
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_atlantic_awareness
+	icon = GFX_USA_atlantic_awareness
+	
+	available = {
+		has_tech = radio_detection
+	}
+	
+    x = 1
+	y = 1
+	
+	cost = 3
+	relative_position_id = USA_matching_europe
+	prerequisite = { focus = USA_matching_europe }
+    completion_reward = {
+		366 = {
+			add_building_construction = {
+				type = radar_station
+				level = 2
+				instant_build = yes
+			}
+		}
+        686 = {
+			add_building_construction = {
+				type = radar_station
+				level = 2
+				instant_build = yes
+			}
+		}
+		827 = {
+			add_building_construction = {
+				type = radar_station
+				level = 2
+				instant_build = yes
+			}
+		}
+		if = {
+			limit = {
+				USA = {
+					owns_state = 696
+				}
+			}
+			696 = {
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_study_super_heavy_designs
+	icon = GFX_USA_study_super_heavy_designs
+	
+    x = 1
+	y = 1
+	
+	cost = 3
+	relative_position_id = USA_pacific_presence
+	prerequisite = { focus = USA_pacific_presence }
+	prerequisite = { focus = USA_atlantic_awareness }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_iowa_class
+	icon = GFX_USA_iowa_class
+	
+    x = 0
+	y = 1
+	
+	cost = 3
+	relative_position_id = USA_study_super_heavy_designs
+	prerequisite = { focus = USA_study_super_heavy_designs }
     completion_reward = {
         
     }
@@ -659,7 +1201,11 @@ shared_focus = {
 	relative_position_id = USA_two_ocean_navy
 	prerequisite = { focus = USA_two_ocean_navy }
     completion_reward = {
-        
+        add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = cat_base_strike
+		}
     }
 	
 	ai_will_do = {
@@ -699,6 +1245,25 @@ shared_focus = {
 		focus = USA_matching_europe
 		focus = USA_naval_air
 	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_modern_screens
+	icon = GFX_USA_modern_screens
+	
+    x = 0
+	y = 1
+	
+	cost = 3
+	relative_position_id = USA_expand_operations
+	prerequisite = { focus = USA_expand_operations }
     completion_reward = {
         
     }
