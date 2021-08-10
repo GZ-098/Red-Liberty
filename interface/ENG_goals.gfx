@@ -9,4 +9,19 @@ spritetypes = {
 		name = "GFX_ENG_crooks_and_thieves"
 		texturefile = "gfx/interface/goals/ENG/ENG_crooks_and_theives.png"
 	}
+	
+	spriteType = {
+		name = "GFX_ENG_holy_bountiful_england"
+		texturefile = "gfx/interface/goals/ENG/ENG_holy_bountiful_england.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ENG_the_kings_speech"
+		texturefile = "gfx/interface/goals/ENG/ENG_the_kings_speech.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ENG_he_knocks"
+		texturefile = "gfx/interface/goals/ENG/ENG_he_knocks.png"
+	}
 }
