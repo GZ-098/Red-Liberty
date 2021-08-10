@@ -5,6 +5,7 @@ tags={
 	"Map"
 	"National Focuses"
 }
+replace_path = "common/autonomous_states"
 replace_path = "common/ideas"
 replace_path = "events"
 replace_path = "common/national_focus"

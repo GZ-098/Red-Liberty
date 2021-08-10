@@ -1,10 +1,10 @@
 autonomy_state = {
-	id = autonomy_occupied
+	id = USA_autonomy_commonwealth
 	
 	default = yes
 	is_puppet = yes
 	
-	min_freedom_level = 0.25
+	min_freedom_level = 0.75
 	
 	rule = {
 		can_not_declare_war = yes
@@ -33,12 +33,7 @@ autonomy_state = {
 	}
 
 	allowed = {
-		is_subject_of = GER
-		OR = {
-			tag = ROM
-			tag = POL
-			tag = LIT
-		}
+		is_subject_of = USA
 	}
 
 	can_take_level = {
