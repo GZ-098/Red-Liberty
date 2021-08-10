@@ -81,33 +81,32 @@
  
  start_USA_farm_tenant_act:0 "The Farm Tenant Act"
  us_bill.3.title_passed:0 "The Farm Tenant Act Passes!"
- farm_tenant_act_passed:0 "We have passed the Farm Tenant Act"
+ farm_tenant_act_passed:0 " We have passed the Farm Tenant Act"
  
  start_USA_court_packing_act:0 "The Judicial Procedures Reform Act"
- court_packing_act_passed:0 "We have passed the Judicial Procedures Reform Act"
+ court_packing_act_passed:0 " We have passed the Judicial Procedures Reform Act"
  USA_abandon_court_packing_tt:0 "§RWe will abandon our attempts to pack the court.§!\n"
  
  start_USA_reorg_act:0 "The Reorganization Act"
- reorg_act_passed:0 "We have passed the Reorganization Act"
+ reorg_act_passed:0 " We have passed the Reorganization Act"
  
  start_USA_union_rep_act:0 "The Union Representation Act"
- union_act_passed:0 "We have passed the Union Representation Act"
+ union_act_passed:0 " We have passed the Union Representation Act"
  
  start_USA_housing_act:0 "The Housing Act"
- housing_act_passed:0 "We have passed the Housing Act"
+ housing_act_passed:0 " We have passed the Housing Act"
  
  start_USA_pension_act:0 "The Old Age Pension Act"
- pension_act_passed:0 "We have passed the Old Age Pension Act"
+ pension_act_passed:0 " We have passed the Old Age Pension Act"
  
  start_USA_wealth_tax_act:0 "The Redistribution of Accumulated Wealth Act"
- wealth_tax_act_passed:0 "We have passed the Redistribution Act"
+ wealth_tax_act_passed:0 " We have passed the Redistribution Act"
  
  start_USA_ban_kkk_act:0 "The Enemies of the People Act"
- ban_kkk_act_passed:0 "We have passed the Enemies of the People Act"
+ ban_kkk_act_passed:0 " We have passed the Enemies of the People Act"
  
  start_USA_naval_act_fake:0 "The Naval Act of 1935"
  start_USA_naval_act:0 "The Naval Act of 1938"
- naval_act_passed:0 "We have passed the Naval Act"
  
  start_USA_two_ocean_navy_act:0 "The Two-Ocean Navy Act"
  

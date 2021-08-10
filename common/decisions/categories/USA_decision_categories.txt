@@ -25,7 +25,6 @@ USA_managing_spa = {
 	
 	visible = {
 		has_government = libertarian_socialism
-		always = no
 	}
 
 	scripted_gui = USA_SPA_pie_chart

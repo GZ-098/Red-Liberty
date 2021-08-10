@@ -817,7 +817,7 @@ shared_focus = {
 	icon = GFX_USA_pack_the_court
 	
 	available = {
-		has_country_flag = court_packing_act_passed
+		has_country_flag = court_packing_plan_passed
 	}
 	
     x = -1
@@ -845,7 +845,7 @@ shared_focus = {
 	
 	available = {
 		NOT = {
-			has_country_flag = court_packing_act_passed
+			has_country_flag = court_packing_plan_passed
 		}
 	}
 	
@@ -1948,130 +1948,6 @@ shared_focus = {
 		}
         improve_great_depression = yes
 		clr_country_flag = USA_1937_recession
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-### MEXICO WAR TREE ###
-
-shared_focus = {
-    id = USA_down_mexico_way
-	icon = GFX_USA_down_mexico_way
-	
-    x = -8
-	y = 10
-	
-	available = {
-		
-	}
-	
-	cost = 5
-    completion_reward = {
-		
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_get_involved
-	icon = GFX_USA_get_involved
-	
-    x = -1
-	y = 1
-	
-	available = {
-		
-	}
-	
-	cost = 5
-	mutually_exclusive = {
-		focus = USA_maintain_neutrality
-	}
-	relative_position_id = USA_down_mexico_way
-	prerequisite = { focus = USA_down_mexico_way }
-    completion_reward = {
-		
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_permit_volunteers
-	icon = GFX_USA_permit_volunteers
-	
-    x = -1
-	y = 1
-	
-	available = {
-		
-	}
-	
-	cost = 5
-	relative_position_id = USA_get_involved
-	prerequisite = { focus = USA_get_involved }
-    completion_reward = {
-		
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_maintain_neutrality
-	icon = GFX_USA_maintain_neutrality
-	
-    x = 1
-	y = 1
-	
-	available = {
-		
-	}
-	
-	cost = 5
-	mutually_exclusive = {
-		focus = USA_get_involved
-	}
-	relative_position_id = USA_down_mexico_way
-	prerequisite = { focus = USA_down_mexico_way }
-    completion_reward = {
-		
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_support_yucatec_indep
-	icon = GFX_USA_support_yucatec_indep
-	
-    x = 1
-	y = 1
-	
-	available = {
-		
-	}
-	
-	cost = 5
-	relative_position_id = USA_get_involved
-	prerequisite = {
-		focus = USA_get_involved
-		focus = USA_maintain_neutrality
-	}
-    completion_reward = {
-		
     }
 	
 	ai_will_do = {
