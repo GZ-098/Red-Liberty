@@ -1,4 +1,4 @@
-ENG_recalc_parliament = { # this will recalculate the number of members of parliament based on party popularity, with a bias towards labour and the tories
+ENG_recalc_parliament = { # this will recalculate the number of representatives based on party popularity, in an unbiased manner which does not favor any parties
 	
 	#Sets variable to check for discrepencies
 	set_variable = {
@@ -11,9 +11,6 @@ ENG_recalc_parliament = { # this will recalculate the number of members of parli
 	add_to_variable = {
 		communist_mps = party_popularity@proletarian_dictatorship
 	}
-	multiply_variable = {
-		communist_mps = 0.5
-	}
 	
 	set_variable = {
 		labour_mps = party_popularity@libertarian_socialism
@@ -25,29 +22,16 @@ ENG_recalc_parliament = { # this will recalculate the number of members of parli
 	set_variable = {
 		liberal_mps = party_popularity@progressive_liberalism
 	}
-	multiply_variable = {
-		liberal_mps = 0.75
-	}
-	
-	set_variable = {
-		national_liberal_mps = party_popularity@market_libertarianism
-	}
-	multiply_variable = {
-		national_liberal_mps = 0.5
+	add_to_variable = {
+		liberal_mps = party_popularity@market_libertarianism
 	}
 	
 	set_variable = {
 		conservative_mps = party_popularity@national_conservatism
 	}
-	add_to_variable = {
-		conservative_mps = party_popularity@authoritarian_republicanism
-	}
 	
 	set_variable = {
 		fascist_mps = party_popularity@ultranational_statism
-	}
-	multiply_variable = {
-		fascist_mps = 0.5
 	}
 	
 	#Gets seats
@@ -61,9 +45,6 @@ ENG_recalc_parliament = { # this will recalculate the number of members of parli
 		liberal_mps = mps_total
 	}
 	multiply_variable = {
-		national_liberal_mps = mps_total
-	}
-	multiply_variable = {
 		conservative_mps = mps_total
 	}
 	multiply_variable = {
@@ -74,7 +55,6 @@ ENG_recalc_parliament = { # this will recalculate the number of members of parli
 	round_variable = communist_mps
 	round_variable = labour_mps
 	round_variable = liberal_mps
-	round_variable = national_liberal_mps
 	round_variable = conservative_mps
 	round_variable = fascist_mps
 	
@@ -90,9 +70,6 @@ ENG_recalc_parliament = { # this will recalculate the number of members of parli
 	}
 	add_to_variable = {
 		mps_total = liberal_mps
-	}
-	add_to_variable = {
-		mps_total = national_liberal_mps
 	}
 	add_to_variable = {
 		mps_total = conservative_mps
@@ -147,14 +124,6 @@ ENG_recalc_parliament = { # this will recalculate the number of members of parli
 		}
 		else_if = {
 			limit = {
-				has_government = market_libertarianism
-			}
-			add_to_variable = {
-				liberal_mps = ENG_old_mps_total
-			}
-		}
-		else_if = {
-			limit = {
 				has_government = national_conservatism
 			}
 			add_to_variable = {
@@ -168,28 +137,6 @@ ENG_recalc_parliament = { # this will recalculate the number of members of parli
 			add_to_variable = {
 				fascist_mps = ENG_old_mps_total
 			}
-		}
-	}
-}
-
-ENG_calc_coalition_seats = {
-	if = {
-		limit = {
-			AND = {
-				has_country_flag = libertarian_socialism_coalition
-				has_country_flag = social_democracy_coalition
-			}
-		}
-		add_to_variable = {
-			coalition_seats = labour_mps
-		}
-	}
-	if = {
-		limit = {
-			has_country_flag = progressive_coalition
-		}
-		add_to_variable = {
-			coalition_seats = liberal_mps
 		}
 	}
 }

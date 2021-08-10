@@ -98,10 +98,10 @@ spritetypes = {
 	
 	SpriteType = {
 		name = "GFX_WGR_recruitment_shine"
-		texturefile = "gfx/interface/goals/WGR/WGR_expand_recruitment.png"
+		texturefile = "gfx/interface/goals/WGR/WGR_recruitment.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/WGR/WGR_expand_recruitment.png"
+			animationmaskfile = "gfx/interface/goals/WGR/WGR_recruitment.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -114,7 +114,7 @@ spritetypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/WGR/WGR_expand_recruitment.png"
+			animationmaskfile = "gfx/interface/goals/WGR/WGR_recruitment.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -130,10 +130,10 @@ spritetypes = {
 	
 	SpriteType = {
 		name = "GFX_WGR_fight_for_future_shine"
-		texturefile = "gfx/interface/goals/WGR/WGR_fight_for_the_future.png"
+		texturefile = "gfx/interface/goals/WGR/WGR_fight_for_future.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/WGR/WGR_fight_for_the_future.png"
+			animationmaskfile = "gfx/interface/goals/WGR/WGR_fight_for_future.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -146,7 +146,7 @@ spritetypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/WGR/WGR_fight_for_the_future.png"
+			animationmaskfile = "gfx/interface/goals/WGR/WGR_fight_for_future.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

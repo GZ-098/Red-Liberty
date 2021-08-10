@@ -118,7 +118,6 @@ set_popularities = {
 add_ideas = {
 	SOV_home_of_the_revolution
 	SOV_political_turmoil
-	SOV_nep
 }
 
 create_country_leader = {

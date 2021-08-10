@@ -14,12 +14,7 @@ if = {
 set_country_flag = libertarian_socialism_coalition
 set_country_flag = social_democracy_coalition
 set_country_flag = progressive_coalition
-
-set_country_flag = market_libertarian_opposition
-set_country_flag = conservative_opposition
-set_country_flag = authoritarian_opposition
-set_country_flag = despotist_opposition
-set_country_flag = ultranationalist_opposition
+set_country_flag = market_libertarian_coalition
 
 load_oob = "ENG_Motorized"
 
@@ -198,17 +193,17 @@ set_politics = {
 }
 set_popularities = {
 	insurrectionary_anarchism = 0
-	revolutionary_autocracy = 3
+	revolutionary_autocracy = 6
 	proletarian_dictatorship = 6
 	libertarian_socialism = 17
-	social_democracy = 28
+	social_democracy = 22
 	progressive_liberalism = 6
 	market_libertarianism = 4
-	national_conservatism = 22
+	national_conservatism = 20
 	reactionary_theocracy = 0
-	authoritarian_republicanism = 2
-	martial_despotism = 1
-	ultranational_statism = 11
+	authoritarian_republicanism = 0
+	martial_despotism = 4
+	ultranational_statism = 15
 }
 
 create_faction = Entente
