@@ -8,6 +8,8 @@ on_actions = {
 				ENG_recalc_parliament = yes
 
 				parliament_gui_initial = yes
+				
+				ENG_calc_coalition_seats = yes
 			}
 		}
 	}

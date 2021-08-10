@@ -5,7 +5,9 @@ ENG_parliament = {
 		tag = ENG
 	}
 
-	scripted_gui = parliament_gui
+	#scripted_gui = parliament_gui
+	
+	visible_when_empty = yes
 
-	priority = 85
+	priority = 100
 }
