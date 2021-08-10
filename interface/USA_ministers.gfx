@@ -1,0 +1,7 @@
+spritetypes = {
+	
+	SpriteType = {
+		name = "GFX_idea_USA_jack_reed_hog"
+		texturefile = "gfx/interface/ministers/USA/USA_John_Reed.png"
+	}
+}

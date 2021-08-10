@@ -17,3 +17,17 @@ USA_segregation_modifier = {
 	
 	local_manpower = -0.25
 }
+
+USA_senate_control_modifier = {
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	
+	political_power_gain = USA_senate_control
+}
+
+USA_house_control_modifier = {
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	
+	political_power_gain = USA_house_control
+}

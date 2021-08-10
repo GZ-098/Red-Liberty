@@ -103,8 +103,8 @@ initialize_US_elections_system = {
 		set_variable = { democrat_popularity = 0.15 }
 		set_variable = { socialist_popularity = 0.45 }
 		
-		set_variable = { senator_1 = 1 } # socialist
-		set_variable = { senator_2 = 2 } # republican
+		set_variable = { senator_1 = 2 } # republican
+		set_variable = { senator_2 = 1 } # socialist
 		
 		set_variable = { electoral_votes = 22 }
 	}
@@ -123,21 +123,21 @@ initialize_US_elections_system = {
 	
 	830 = { # Connecticut, republican stronghold
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.55 }
-		set_variable = { democrat_popularity = 0.25 }
-		set_variable = { socialist_popularity = 0.2 }
+		set_variable = { republican_popularity = 0.2 }
+		set_variable = { democrat_popularity = 0.55 }
+		set_variable = { socialist_popularity = 0.45 }
 		
-		set_variable = { senator_1 = 3 }
-		set_variable = { senator_2 = 2 }
+		set_variable = { senator_1 = 2 } # socialist
+		set_variable = { senator_2 = 3 } # democrat
 		
 		set_variable = { electoral_votes = 8 }
 	}
 	
 	833 = { # Delaware, slightly republican
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.7 }
-		set_variable = { democrat_popularity = 0.2 }
-		set_variable = { socialist_popularity = 0.1 }
+		set_variable = { republican_popularity = 0.3 }
+		set_variable = { democrat_popularity = 0.55 }
+		set_variable = { socialist_popularity = 0.35 }
 		
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 3 }
@@ -170,6 +170,7 @@ initialize_US_elections_system = {
 	
 	387 = { # Idaho, potato state
 		set_state_flag = US_election_state
+		set_variable = { socialist_popularity = 0.5 }
 		set_variable = { republican_popularity = 0.3 }
 		set_variable = { democrat_popularity = 0.6 }
 		set_variable = { socialist_popularity = 0.15 }
@@ -193,6 +194,7 @@ initialize_US_elections_system = {
 	
 	396 = { # Indiana, solid republican state
 		set_state_flag = US_election_state
+		set_variable = { socialist_popularity = 0.45 }
 		set_variable = { republican_popularity = 0.75 }
 		set_variable = { democrat_popularity = 0.25 }
 		
@@ -264,9 +266,9 @@ initialize_US_elections_system = {
 	
 	361 = { # Maryland, good establishment place
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.7 }
-		set_variable = { democrat_popularity = 0.2 }
-		set_variable = { socialist_popularity = 0.1 }
+		set_variable = { republican_popularity = 0.25 }
+		set_variable = { democrat_popularity = 0.6 }
+		set_variable = { socialist_popularity = 0.45 }
 		
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 2 }
@@ -346,8 +348,8 @@ initialize_US_elections_system = {
 	
 	384 = { # Nebraska, basically Kansas
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.7 }
-		set_variable = { socialist_popularity = 0.6 }
+		set_variable = { republican_popularity = 0.5 }
+		set_variable = { socialist_popularity = 0.65 }
 		set_variable = { democrat_popularity = 0.3 }
 		set_variable = { afp_popularity = 0.2 }
 		

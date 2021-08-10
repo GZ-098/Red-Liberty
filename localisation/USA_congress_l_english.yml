@@ -1,6 +1,9 @@
 ﻿l_english:
  USA_congress:0 "Congress"
- USA_congress_desc:0 "The Hill has its own rules and ideas. We will have to work with them to make things happen, but there are ways to ensure that we have a sympathetic and supportive §YCongress§! to work with.\n\n§R[?representatives_republican]§! Representative(s) support the §RRepublican Party§!.\n§C[?representatives_democrat]§! Representative(s) support the §CDemocratic Party§!.[get_us_socialist_rep_count][get_us_fascist_rep_count][get_us_communist_rep_count]\nTotal Representatives: §G[?representatives_total]§!\n\n§R[?senators_republican]§! Senator(s) support the §RRepublican Party§!.\n§C[?senators_democrat]§! Senator(s) support the §CDemocratic Party§!.[get_us_socialist_senator_count][get_us_fascist_senator_count][get_us_communist_senator_count]\nTotal Senators: §G[?senators_total]§!\n\n[get_congress_voting]"
+ USA_congress_desc:0 "The Hill has its own rules and ideas. We will have to work with them to make things happen, but there are ways to ensure that we have a sympathetic and supportive §YCongress§! to work with.\n\n§R[?representatives_republican]§! Representative(s) support the §RRepublican Party§!.\n§C[?representatives_democrat]§! Representative(s) support the §CDemocratic Party§!.[get_us_socialist_rep_count][get_us_fascist_rep_count][get_us_communist_rep_count]\nTotal Representatives: §G[?representatives_total]§!\nOur foothold in the house nets us §G+[?USA_house_control|2]§! political power per day.\n\n§R[?senators_republican]§! Senator(s) support the §RRepublican Party§!.\n§C[?senators_democrat]§! Senator(s) support the §CDemocratic Party§!.[get_us_socialist_senator_count][get_us_fascist_senator_count][get_us_communist_senator_count]\nTotal Senators: §G[?senators_total]§!\nOur foothold in the senate nets us §G+[?USA_senate_control|2]§! political power per day.\n\n[get_congress_voting]"
+ 
+ USA_senate_control_modifier:0 "Senate Control"
+ USA_house_control_modifier:0 "House Control"
  
  USA_congress_voting_none:0 "There is currently no important legislation being considered."
  
@@ -56,7 +59,7 @@
  USA_govt_controlled_by_none:0 "Currently, no party is dominant."
  
  USA_bill_pass_req_tt:0 "§RWe will have to pass the bill to gain the following effect:§!"
- 
+ USA_bill_over_time_tt:0 "§RThe following decisions will become available over time:§!"
  
  start_test_bill_debug:0 "The Debug Act"
  debug_bill_passed:0 "We have passed the Debug Act."
@@ -64,7 +67,7 @@
  us_bill.1.a:0 "A great victory."
  USA_debug_act_effect:0 "If passed, the §YDebug Act§! will provide the following bonus:\nStability: §G+2%§!\n\n"
  
- start_social_security_act:0 "The Social Security Act"
+ start_USA_social_security_act:0 "The Social Security Act"
  social_security_passed:0 " We have passed the Social Security Act"
  us_bill.2.title_passed:0 "Social Security Bill Passes!"
  us_bill.2.title_failed:0 "Social Security Bill Fails!"
@@ -78,10 +81,10 @@
  
  start_USA_farm_tenant_act:0 "The Farm Tenant Act"
  us_bill.3.title_passed:0 "The Farm Tenant Act Passes!"
- farm_tenant_passed:0 " We have passed the Farm Tenant Act"
+ farm_tenant_act_passed:0 " We have passed the Farm Tenant Act"
  
  start_USA_court_packing_act:0 "The Judicial Procedures Reform Act"
- court_packing_plan_passed:0 " We have passed the Judicial Procedures Reform Act"
+ court_packing_act_passed:0 " We have passed the Judicial Procedures Reform Act"
  USA_abandon_court_packing_tt:0 "§RWe will abandon our attempts to pack the court.§!\n"
  
  start_USA_reorg_act:0 "The Reorganization Act"
@@ -97,6 +100,15 @@
  pension_act_passed:0 " We have passed the Old Age Pension Act"
  
  start_USA_wealth_tax_act:0 "The Redistribution of Accumulated Wealth Act"
+ wealth_tax_act_passed:0 " We have passed the Redistribution Act"
+ 
+ start_USA_ban_kkk_act:0 "The Enemies of the People Act"
+ ban_kkk_act_passed:0 " We have passed the Enemies of the People Act"
+ 
+ start_USA_naval_act_fake:0 "The Naval Act of 1935"
+ start_USA_naval_act:0 "The Naval Act of 1938"
+ 
+ start_USA_two_ocean_navy_act:0 "The Two-Ocean Navy Act"
  
  ### MINOR LEGISLATION ###
  
@@ -106,6 +118,9 @@
  start_USA_natural_gas_act_desc:0 "The NGA shall establish federal authority to regulate the rates charged by interstate natural gas transmission companies."
  
  ### EXECUTIVE ORDERS ###
+ 
+ USA_public_law_163:0 "Public Law No. 163"
+ USA_public_law_163_desc:0 "Public Law No. 163 shall extend funding for the CCC for an additional three years, as well as mandate academic and vocational training for enrollees within the corps."
  
  USA_executive_order_7806:0 "Executive Order 7806"
  USA_executive_order_7806_desc:0 "Order 7806 shall establish the (mostly impartial) National Public Employment Relations Commission, which will be tasked with supporting and overseeing fair collective bargaining practices between employee and employer."

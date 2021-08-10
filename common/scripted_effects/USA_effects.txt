@@ -11,6 +11,73 @@ USA_lister_pres_setup = {
 	}
 }
 
+USA_calc_congress_control = {
+	
+	### SENATE ###
+	set_temp_variable = { temp_communist_senators = senators_communist }
+	set_temp_variable = { temp_socialist_senators = senators_socialist }
+	set_temp_variable = { temp_republican_senators = senators_republican }
+	set_temp_variable = { temp_democrat_senators = senators_democrat }
+	set_temp_variable = { temp_fascist_senators = senators_fascist }
+	
+	set_temp_variable = { temp_total_senators = senators_communist }
+	add_to_temp_variable = { temp_total_senators = senators_socialist }
+	add_to_temp_variable = { temp_total_senators = senators_republican }
+	add_to_temp_variable = { temp_total_senators = senators_democrat }
+	add_to_temp_variable = { temp_total_senators = senators_fascist }
+	
+	divide_temp_variable = { temp_communist_senators = temp_total_senators }
+	divide_temp_variable = { temp_socialist_senators = temp_total_senators }
+	divide_temp_variable = { temp_republican_senators = temp_total_senators }
+	divide_temp_variable = { temp_democrat_senators = temp_total_senators }
+	divide_temp_variable = { temp_fascist_senators = temp_total_senators }
+	
+	if = {
+		limit = {
+			OR = {
+				has_government = proletarian_dictatorship
+				has_government = libertarian_socialism
+				has_government = social_democracy
+			}
+		}
+		set_variable = { USA_senate_control = temp_socialist_senators }
+	}
+	
+	multiply_variable = { USA_senate_control = 0.5 }
+	
+	### HOUSE ###
+	set_temp_variable = { temp_communist_reps = representatives_communist }
+	set_temp_variable = { temp_socialist_representatives = representatives_socialist }
+	set_temp_variable = { temp_republican_representatives = representatives_republican }
+	set_temp_variable = { temp_democrat_representatives = representatives_democrat }
+	set_temp_variable = { temp_fascist_representatives = representatives_fascist }
+	
+	set_temp_variable = { temp_total_representatives = representatives_communist }
+	add_to_temp_variable = { temp_total_representatives = representatives_socialist }
+	add_to_temp_variable = { temp_total_representatives = representatives_republican }
+	add_to_temp_variable = { temp_total_representatives = representatives_democrat }
+	add_to_temp_variable = { temp_total_representatives = representatives_fascist }
+	
+	divide_temp_variable = { temp_communist_representatives = temp_total_representatives }
+	divide_temp_variable = { temp_socialist_representatives = temp_total_representatives }
+	divide_temp_variable = { temp_republican_representatives = temp_total_representatives }
+	divide_temp_variable = { temp_democrat_representatives = temp_total_representatives }
+	divide_temp_variable = { temp_fascist_representatives = temp_total_representatives }
+	
+	if = {
+		limit = {
+			OR = {
+				has_government = proletarian_dictatorship
+				has_government = libertarian_socialism
+				has_government = social_democracy
+			}
+		}
+		set_variable = { USA_house_control = temp_socialist_representatives }
+	}
+	
+	multiply_variable = { USA_house_control = 0.5 }
+}
+
 improve_great_depression = {
 	if = {
 		limit = {

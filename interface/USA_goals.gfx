@@ -181,7 +181,7 @@ spritetypes = {
 	
 	SpriteType = {
 		name = "GFX_USA_second_bill_of_rights"
-		texturefile = "gfx/interface/goals/USA/USA_the_second_bill_of_rights.png"
+		texturefile = "gfx/interface/goals/USA/USA_second_bill_of_rights.png"
 	}
 	
 	### 2ND TERM RECESSION ###

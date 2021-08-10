@@ -1,0 +1,82 @@
+leader_traits = {
+
+	### ideology ###
+	
+	communist = {}
+	trotskyist = {}
+	syndicalist = {}
+	revolutionary_socialist = {}
+	radical_socialist = {}
+	libertarian_socialist = {}
+	social_democrat = {}
+
+	### general ###
+	head_of_government = {}
+	foreign_minister = {}
+	economy_minister = {}
+	
+	### USA specific ###
+	vice_president = {}
+	secretary_of_state = {}
+	secretary_of_the_treasury = {}
+	secretary_of_labor = {}
+	attorney_general = {}
+
+	hog_red_journo = {
+		political_power_gain = 0.03
+		stability_factor = -0.02
+
+		random = no
+	}
+	
+	hog_americanist = {
+		stability_factor = 0.02
+
+		random = no
+	}
+	
+	lab_union_boss = {
+		industrial_capacity_factory = 0.03
+		political_power_gain = 0.05
+		stability_factor = -0.05
+
+		random = no
+	}
+	
+	lab_red_suffragette = {
+		stability_factor = -0.05
+		political_power_gain = 0.03
+
+		random = no
+	}
+	
+	### non-unique ###
+	
+	for_biased_intellectual = {
+		political_power_gain = 0.02
+		drift_defence_factor = 0.15
+		
+		random = no
+	}
+	
+	sec_compassionate_gentleman = {
+		stability_factor = 0.02
+		political_power_gain = 0.04
+		
+		random = no
+	}
+	
+	sec_efficient_sociopath = {
+		local_resources_factor = 0.05
+		conscription_factor = -0.02
+
+		random = no
+	}
+	
+	sec_silent_lawyer = {
+		political_power_gain = 0.04
+		production_speed_buildings_factor = 0.02
+
+		random = no
+	}
+}

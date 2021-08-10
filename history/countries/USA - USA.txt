@@ -46,8 +46,8 @@ unlock_national_focus = USA_the_air_corps
 unlock_national_focus = USA_the_navy
 unlock_national_focus = USA_the_naval_act
 
-set_country_flag = USA_recovery_enabled
-set_variable = { USA_recovery_length = 250 }
+#set_country_flag = USA_recovery_enabled
+#set_variable = { USA_recovery_length = 250 }
 
 create_pie_chart = yes
 set_variable = { USA_SPA_unity = 78 }
@@ -176,7 +176,6 @@ if = {
 		mtg_transport = 1
 		improved_airplane_launcher = 1
 	}
-	add_ideas = MTG_naval_treaty_adherent
 }
 
 set_convoys = 500
@@ -209,11 +208,16 @@ set_popularities = {
 
 add_ideas = {
 	USA_red_liberty
-	USA_the_great_depression_5
+	USA_social_coalition
+	USA_the_great_depression_1
 	USA_pacifism
 	USA_bloated_federal_government
-	USA_clashes_with_the_courts
-
+	
+	USA_jack_reed_hog
+	USA_max_shachtman_for
+	USA_elizabeth_flynn_lab
+	USA_john_abt_sec
+	
 	undisturbed_isolation
 	great_depression
 	disarmed_nation
@@ -223,7 +227,7 @@ add_ideas = {
 # DIPLOMACY
 set_autonomy = {
 	target = PHI
-	autonomous_state =  autonomy_puppet
+	autonomous_state =  USA_autonomy_commonwealth
 }
 
 create_country_leader = {
@@ -262,7 +266,7 @@ create_country_leader = {
 	desc = "POLITICS_NORMAN_THOMAS_DESC"
 	picture = "gfx/leaders/norman.png"
 	expire = "1947.1.1"
-	ideology = libertarian_socialism_subtype
+	ideology = sewer_socialism_subtype
 	traits = {
 		
 	}

@@ -21,11 +21,21 @@ on_actions = {
 				#set_variable = { var = senators_democrat value = 39 }
 				#set_variable = { var = senators_fascist value = 3 }
 
-				set_variable = { var = representatives_communist value = 11 }
-				set_variable = { var = representatives_socialist value = 168 }
+				set_variable = { var = representatives_communist value = 9 }
+				set_variable = { var = representatives_socialist value = 170 }
 				set_variable = { var = representatives_republican value = 83 }
 				set_variable = { var = representatives_democrat value = 159 }
 				set_variable = { var = representatives_fascist value = 14 }
+				
+				USA_calc_congress_control = yes
+				
+				add_dynamic_modifier = {
+					modifier = USA_senate_control_modifier
+				}
+				
+				add_dynamic_modifier = {
+					modifier = USA_house_control_modifier
+				}
 			}
 			
 			USA = {
@@ -128,6 +138,12 @@ on_actions = {
 				USA_check_election_vs = yes
 				USA_check_election_closeness = yes
 			}
+		}
+	}
+	
+	on_weekly_USA = {
+		effect = {
+			USA_calc_congress_control = yes
 		}
 	}
 	

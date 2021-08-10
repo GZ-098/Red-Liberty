@@ -1,5 +1,170 @@
 ideas = {
 
+	head_of_government = {
+	
+		USA_earl_browder_hog = {
+		
+			allowed = {
+				original_tag = USA
+			}
+		
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			
+			removal_cost = -1
+				
+			traits = {
+				vice_president
+				hog_americanist
+				communist
+			}
+		}
+		
+		USA_jack_reed_hog = {
+		
+			allowed = {
+				original_tag = USA
+			}
+		
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			
+			removal_cost = -1
+				
+			traits = {
+				vice_president
+				hog_red_journo
+				syndicalist
+			}
+		}
+	}
+	
+	political_advisor = {
+		
+		USA_max_shachtman_for = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			#available = {
+			#	NOT = {
+			#		has_idea_with_trait = secretary_of_state
+			#	}
+			#}
+				
+			traits = {
+				secretary_of_state
+				for_biased_intellectual
+				trotskyist
+			}
+		}
+		
+		USA_eugene_dennis_for = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			#available = {
+			#	NOT = {
+			#		has_idea_with_trait = secretary_of_state
+			#	}
+			#}
+				
+			traits = {
+				secretary_of_state
+				syndicalist
+			}
+		}
+		
+		USA_paul_mattick_eco = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			traits = {
+				secretary_of_the_treasury
+				syndicalist
+			}
+		}
+		
+		USA_elizabeth_flynn_lab = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			traits = {
+				secretary_of_labor
+				lab_red_suffragette
+				libertarian_socialist
+			}
+		}
+		
+		USA_john_lewis_lab = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			traits = {
+				secretary_of_labor
+				lab_union_boss
+				social_democrat
+			}
+		}
+		
+		USA_john_abt_sec = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			traits = {
+				attorney_general
+				sec_efficient_sociopath
+				syndicalist
+			}
+		}
+		
+		USA_lee_pressman_sec = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			traits = {
+				attorney_general
+				sec_compassionate_gentleman
+				syndicalist
+			}
+		}
+	}
+
 	army_chief = {
 	
 		USA_douglas_macarthur_army_chief = {

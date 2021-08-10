@@ -30,6 +30,8 @@
  
  USA_red_liberty:0 "Red Liberty"
  USA_red_liberty_desc:0 "After the election of President Eugene V. Debs in 1912, the Socialist Party of America became (and has remained) a major player in US politics. Though they have not been able to fully implement their agenda due to liberal and right-wing resistance, America has been changed by their radical pro-worker policies. Radical left-wing ideas are popular and normalized, which has in turn fostered greater radicalism on the right."
+ USA_social_coalition:0 "The Social Coalition"
+ USA_social_coalition_desc:0 "The "Social Coailtion" is the name of an informal political coalition supporting the Socialist Party. Composed of labor unions, blue collar workers, racial and religious minorities, farmers, rural white southerners, and urban intellectuals, their common goal of seeing the country out of the depression binds them together."
  USA_the_great_depression_1:0 "The Great Depression"
  USA_the_great_depression_2:0 "The Great Depression"
  USA_the_great_depression_3:0 "The Great Depression"
@@ -213,12 +215,50 @@
  USA_housing_act:0 "Housing Act"
  USA_back_on_track:0 "Back on Track"
  
- ### SECOND TERM ARMY TREE ###
+ ### MILITARY TREE ###
+ USA_reforming_the_military:0 "Reforming the Military"
+ USA_the_army:0 "The Army"
  USA_war_is_a_racket:0 "War is a Racket"
  USA_butler_reform_plan:0 "Butler Reform Plan"
- 
  USA_coastal_defense:0 "Coastal Defence"
  
+ USA_the_air_corps:0 "The Air Corps"
+ USA_under_the_army:0 "Under the Army"
+ USA_support_doctrine:0 "Support Doctrine"
+ USA_cas_development:0 "CAS Development"
+ USA_recon_aircraft:0 "Invest in Recon Aircraft"
+ USA_shorten_response_times:0 "Shorten Response Times"
+ USA_pilot_rotation:0 "Pilot Rotation"
+ USA_combined_arms:0 "Combined Arms"
+ 
+ USA_independent_air_force:0 "Towards an Independent Air Force"
+ USA_bomber_development:0 "Bomber Development"
+ USA_strat_destruction:0 "Strategic Destruction"
+ USA_long_range_escorts:0 "Long-Range Escorts"
+ USA_control_the_sky:0 "Control the Sky"
+ USA_modernize_naval_bombers:0 "Modernize our Naval Bombers"
+ USA_flying_fortresses:0 "Flying Fortresses"
+ USA_form_usaf:0 "Form the USAF"
+ 
+ USA_construct_airbases:0 "Construct Airbases"
+ USA_streamline_production:0 "Streamline Production"
+ USA_the_eagle_flies:0 "The Eagle Flies"
+ 
+ USA_streamlined_prod_cas:0 "Streamlined Production"
+ 
+ USA_usaaf:0 "United States Army Air Forces"
+ USA_usaaf_2:0 "United States Army Air Forces"
+ USA_usaaf_3:0 "United States Air Force"
+ 
+ USA_usac:0 "United States Air Corps"
+ USA_usac_2:0 "United States Air Corps"
+ USA_usac_3:0 "United States Air Corps"
+ 
+ USA_the_navy:0 "The Navy"
+ USA_the_naval_act:0 "The Naval Act"
+ USA_north_carolina_class:0 "North Carolina Class"
+ USA_south_dakota_class:0 "South Dakota Class"
+ USA_two_ocean_navy:0 "Two-Ocean Navy Act"
  
  ### other stuff ###
  

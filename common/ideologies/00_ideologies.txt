@@ -104,6 +104,10 @@ ideologies = {
 			libertarian_socialism_subtype = {
 			
 			}
+			
+			sewer_socialism_subtype = {
+			
+			}
 		}
 		
 		dynamic_faction_names = {

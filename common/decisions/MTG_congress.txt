@@ -44,13 +44,12 @@ USA_congress = {
 		}
 	}
 	
-	start_social_security_act = { # social security act
+	start_USA_social_security_act = { # social security act
 		icon = ger_mefo_bills
 		available = {
 			NOT = {
 				has_country_flag = social_security_passed
 			}
-			#has_completed_focus = USA_social_security
 			has_completed_focus = USA_of_poverty
 		}
 		
@@ -59,10 +58,7 @@ USA_congress = {
 			NOT = {
 				has_country_flag = USA_discussing_bill
 			}
-			has_country_leader = {
-				name = "Norman Thomas"
-				ruling_only = yes
-			}
+			has_completed_focus = USA_the_second_thomas_admin
 		}
 		
 		cost = 0
@@ -76,69 +72,29 @@ USA_congress = {
 		}
 	}
 	
-	start_USA_farm_tenant_act = {
+	start_USA_ban_kkk_act = {
 		icon = ger_mefo_bills
 		available = {
 			NOT = {
-				has_country_flag = farm_tenant_act_passed
-				has_country_flag = USA_discussing_bill
+				has_country_flag = ban_kkk_act_passed
 			}
-			has_completed_focus = USA_farm_tenant_act
+			has_completed_focus = USA_itll_never_happen_here
+			
 		}
 		
 		visible = {
 			original_tag = USA
 			NOT = {
-				has_country_flag = farm_tenant_act_passed
+				has_country_flag = ban_kkk_act_passed
 				has_country_flag = USA_discussing_bill
 			}
-			has_completed_focus = USA_farm_tenant_act
+			has_completed_focus = USA_the_second_thomas_admin
 		}
 		
 		cost = 0
 		
 		complete_effect = {
-			custom_effect_tooltip = USA_bill_pass_req_tt
-			effect_tooltip = {
-				improve_great_depression = yes
-			}
-			USA_farm_tenant_act_setup = yes
-		}
-	}
-	
-	start_USA_court_packing_act = {
-		icon = ger_mefo_bills
-		available = {
-			NOT = {
-				has_country_flag = court_packing_act_passed
-				has_country_flag = USA_discussing_bill
-			}
-			has_completed_focus = USA_strengthen_executive_branch
-			NOT = {
-				has_completed_focus = USA_accept_the_rulings
-			}
-		}
-		
-		visible = {
-			original_tag = USA
-			NOT = {
-				has_country_flag = court_packing_act_passed
-				has_country_flag = USA_discussing_bill
-			}
-			has_completed_focus = USA_strengthen_executive_branch
-			NOT = {
-				has_completed_focus = USA_accept_the_rulings
-			}
-		}
-		
-		cost = 0
-		
-		complete_effect = {
-			custom_effect_tooltip = USA_bill_pass_req_tt
-			effect_tooltip = {
-				
-			}
-			USA_judicial_reform_act_setup = yes
+			
 		}
 	}
 	
@@ -156,10 +112,7 @@ USA_congress = {
 			NOT = {
 				has_country_flag = USA_discussing_bill
 			}
-			has_country_leader = {
-				name = "Norman Thomas"
-				ruling_only = yes
-			}
+			has_completed_focus = USA_the_second_thomas_admin
 		}
 		
 		cost = 0
@@ -175,23 +128,22 @@ USA_congress = {
 		}
 	}
 	
-	start_USA_union_rep_act = {
+	start_USA_farm_tenant_act = {
 		icon = ger_mefo_bills
 		available = {
 			NOT = {
-				has_country_flag = union_rep_act_passed
-				has_country_flag = USA_discussing_bill
+				has_country_flag = farm_tenant_act_passed
 			}
-			has_completed_focus = USA_union_act
+			has_completed_focus = USA_of_poverty
 		}
 		
 		visible = {
 			original_tag = USA
 			NOT = {
-				has_country_flag = union_rep_act_passed
+				has_country_flag = farm_tenant_act_passed
 				has_country_flag = USA_discussing_bill
 			}
-			has_completed_focus = USA_union_act
+			has_completed_focus = USA_the_second_thomas_admin
 		}
 		
 		cost = 0
@@ -199,11 +151,44 @@ USA_congress = {
 		complete_effect = {
 			custom_effect_tooltip = USA_bill_pass_req_tt
 			effect_tooltip = {
-				add_ideas = {
-					USA_union_representation_act
-				}
+				
 			}
-			USA_union_representation_act_setup = yes
+			USA_farm_tenant_act_setup = yes
+		}
+	}
+	
+	start_USA_court_packing_act = {
+		icon = ger_mefo_bills
+		available = {
+			NOT = {
+				has_country_flag = court_packing_act_passed
+			}
+			has_completed_focus = USA_strengthen_executive_branch
+			NOT = {
+				has_completed_focus = USA_accept_the_rulings
+			}
+		}
+		
+		visible = {
+			original_tag = USA
+			NOT = {
+				has_country_flag = court_packing_act_passed
+				has_country_flag = USA_discussing_bill
+			}
+			has_completed_focus = USA_the_second_thomas_admin
+			NOT = {
+				has_completed_focus = USA_accept_the_rulings
+			}
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			custom_effect_tooltip = USA_bill_pass_req_tt
+			effect_tooltip = {
+				
+			}
+			USA_judicial_reform_act_setup = yes
 		}
 	}
 	
@@ -212,9 +197,8 @@ USA_congress = {
 		available = {
 			NOT = {
 				has_country_flag = pension_act_passed
-				has_country_flag = USA_discussing_bill
 			}
-			has_completed_focus = USA_pension_act
+			has_completed_focus = USA_of_poverty
 		}
 		
 		visible = {
@@ -223,7 +207,7 @@ USA_congress = {
 				has_country_flag = pension_act_passed
 				has_country_flag = USA_discussing_bill
 			}
-			has_completed_focus = USA_pension_act
+			has_completed_focus = USA_the_second_thomas_admin
 		}
 		
 		cost = 0
@@ -242,9 +226,8 @@ USA_congress = {
 		available = {
 			NOT = {
 				has_country_flag = housing_act_passed
-				has_country_flag = USA_discussing_bill
 			}
-			has_completed_focus = USA_pension_act
+			has_completed_focus = USA_of_poverty
 		}
 		
 		visible = {
@@ -253,7 +236,7 @@ USA_congress = {
 				has_country_flag = housing_act_passed
 				has_country_flag = USA_discussing_bill
 			}
-			has_completed_focus = USA_housing_act
+			has_completed_focus = USA_the_second_thomas_admin
 		}
 		
 		cost = 0
@@ -267,14 +250,44 @@ USA_congress = {
 		}
 	}
 	
+	start_USA_union_rep_act = {
+		icon = ger_mefo_bills
+		available = {
+			NOT = {
+				has_country_flag = union_act_passed
+			}
+			has_completed_focus = USA_strengthen_executive_branch
+		}
+		
+		visible = {
+			original_tag = USA
+			NOT = {
+				has_country_flag = union_act_passed
+				has_country_flag = USA_discussing_bill
+			}
+			has_completed_focus = USA_the_second_thomas_admin
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			custom_effect_tooltip = USA_bill_pass_req_tt
+			effect_tooltip = {
+				add_ideas = {
+					USA_union_representation_act
+				}
+			}
+			USA_union_representation_act_setup = yes
+		}
+	}
+	
 	start_USA_wealth_tax_act = {
 		icon = ger_mefo_bills
 		available = {
 			NOT = {
 				has_country_flag = wealth_tax_act_passed
-				has_country_flag = USA_discussing_bill
 			}
-			has_completed_focus = USA_attack_oligarchs
+			has_completed_focus = USA_strengthen_executive_branch
 		}
 		
 		visible = {
@@ -283,7 +296,7 @@ USA_congress = {
 				has_country_flag = wealth_tax_act_passed
 				has_country_flag = USA_discussing_bill
 			}
-			has_completed_focus = USA_attack_oligarchs
+			has_completed_focus = USA_the_second_thomas_admin
 		}
 		
 		cost = 0
@@ -294,6 +307,77 @@ USA_congress = {
 				improve_great_depression = yes
 			}
 			USA_wealth_tax_act_setup = yes
+		}
+	}
+	
+	start_USA_naval_act_fake = {
+		
+		icon = ger_mefo_bills
+		available = {
+			always = no
+		}
+		
+		visible = {
+			always = no
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			
+		}
+	}
+	
+	start_USA_naval_act = {
+		icon = ger_mefo_bills
+		available = {
+			NOT = {
+				has_country_flag = naval_act_passed
+			}
+			has_completed_focus = USA_the_naval_act
+		}
+		
+		visible = {
+			original_tag = USA
+			NOT = {
+				has_country_flag = naval_act_passed
+				has_country_flag = USA_discussing_bill
+			}
+			date > 1938.1.1
+			has_completed_focus = USA_the_naval_act
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			custom_effect_tooltip = USA_bill_pass_req_tt
+			
+		}
+	}
+	
+	start_USA_two_ocean_navy_act = {
+		icon = ger_mefo_bills
+		available = {
+			NOT = {
+				has_country_flag = two_ocean_navy_act_passed
+			}
+			has_completed_focus = USA_two_ocean_navy_act
+		}
+		
+		visible = {
+			original_tag = USA
+			NOT = {
+				has_country_flag = two_ocean_navy_act_passed
+				has_country_flag = USA_discussing_bill
+			}
+			has_completed_focus = USA_two_ocean_navy_act
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			custom_effect_tooltip = USA_bill_pass_req_tt
+			
 		}
 	}
 	
@@ -342,14 +426,15 @@ USA_congress = {
 	### EXECUTIVE ORDERS ###
 	
 	USA_executive_order_7806 = { # form the National Public Employment Relations Commission
-	icon = ger_mefo_bills
+		icon = ger_mefo_bills
 		available = {
-			has_completed_focus = USA_workplace_democracy
+			has_completed_focus = USA_strengthen_labor_regs
 		}
 		
 		visible = {
 			original_tag = USA
-			has_completed_focus = USA_workplace_democracy
+			date > 1937.01.01
+			has_completed_focus = USA_strengthen_labor_regs
 		}
 		
 		fire_only_once = yes
@@ -361,8 +446,28 @@ USA_congress = {
 		}
 	}
 	
+	USA_public_law_163 = { # expand the ccc
+		icon = ger_mefo_bills
+		available = {
+			has_completed_focus = USA_ccc
+		}
+		
+		visible = {
+			original_tag = USA
+			date > 1940.01.01
+		}
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		complete_effect = {
+			
+		}
+	}
+	
 	USA_executive_order_8802 = {
-	icon = ger_mefo_bills
+		icon = ger_mefo_bills
 		available = {
 			has_war = yes
 		}
@@ -385,7 +490,7 @@ USA_congress = {
 	}
 	
 	USA_executive_order_8807 = {
-	icon = ger_mefo_bills
+		icon = ger_mefo_bills
 		available = {
 			has_war = yes
 		}
