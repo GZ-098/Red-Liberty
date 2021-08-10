@@ -227,7 +227,7 @@ add_ideas = {
 # DIPLOMACY
 set_autonomy = {
 	target = PHI
-	autonomous_state =  USA_autonomy_commonwealth
+	autonomous_state =  autonomy_puppet
 }
 
 create_country_leader = {

@@ -142,39 +142,39 @@ if = {
 	
 	set_autonomy = {
 		target = OMA
-		autonomous_state = ENG_autonomy_protectorate
+		autonomous_state = autonomy_colony
 	}
 	set_autonomy = {
 		target = EGY
-		autonomous_state = ENG_autonomy_protectorate
+		autonomous_state = autonomy_colony
 	}
 	set_autonomy = {
 		target = SRW
-		autonomous_state = ENG_autonomy_protectorate
+		autonomous_state = autonomy_colony
 	}
 	set_autonomy = {
 		target = RAJ
-		autonomous_state = ENG_autonomy_colony
+		autonomous_state = autonomy_colony
 	}
 	set_autonomy = {
 		target = MAL
-		autonomous_state = ENG_autonomy_colony
+		autonomous_state = autonomy_colony
 	}
 	set_autonomy = {
 		target = CAN
-		autonomous_state = ENG_autonomy_dominion
+		autonomous_state = autonomy_dominion
 	}
 	set_autonomy = {
 		target = SAF
-		autonomous_state = ENG_autonomy_dominion
+		autonomous_state = autonomy_dominion
 	}
 	set_autonomy = {
 		target = AST
-		autonomous_state = ENG_autonomy_dominion
+		autonomous_state = autonomy_dominion
 	}
 	set_autonomy = {
 		target = NZL
-		autonomous_state = ENG_autonomy_dominion
+		autonomous_state = autonomy_dominion
 	}
 	else = {
 		puppet = MAL

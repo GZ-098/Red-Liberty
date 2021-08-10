@@ -2078,3 +2078,27 @@ shared_focus = {
 		factor = 10
 	}
 }
+
+shared_focus = {
+    id = USA_debate_full_intervention
+	icon = GFX_USA_debate_full_intervention
+	
+    x = 1
+	y = 1
+	
+	available = {
+		
+	}
+	
+	cost = 5
+	relative_position_id = USA_permit_volunteers
+	prerequisite = { focus = USA_permit_volunteers }
+	prerequisite = { focus = USA_support_yucatec_indep }
+    completion_reward = {
+		
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}

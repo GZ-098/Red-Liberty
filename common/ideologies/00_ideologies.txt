@@ -139,6 +139,10 @@ ideologies = {
 			social_democracy_subtype = {
 			
 			}
+			
+			sewer_socialism_socdem_subtype = {
+			
+			}
 		}
 		
 		dynamic_faction_names = {

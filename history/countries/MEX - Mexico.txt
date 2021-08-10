@@ -45,7 +45,7 @@ if = {
 set_country_flag = monroe_doctrine
 
 country_event = {
-	id = mexico.2
+	id = united_mexican_states.2
 	days = 280
 }
 
