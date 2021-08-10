@@ -980,6 +980,7 @@ shared_focus = {
 	icon = GFX_USA_two_ocean_navy
 	
 	available = {
+		has_country_flag = naval_act_passed
 		NOT = {
 			has_idea = USA_the_naval_act
 		}
