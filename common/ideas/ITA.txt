@@ -124,13 +124,15 @@ ideas = {
 				always = yes
 			}
 			
+			research_bonus = {
+               	industry = 0.1
+				synth_resources = 0.1
+				dispersed_industry_category = 0.15
+				concentrated_industry_category = 0.15
+			}
+			
 			modifier = {
-				research_bonus = {
-                	industry = 0.1
-					synth_resources = 0.1
-					dispersed_industry_category = 0.15
-					concentrated_industry_category = 0.15
-				}
+				
 			}
 		}
 		ITA_tech_mil_focused = {
@@ -145,15 +147,17 @@ ideas = {
 				always = yes
 			}
 			
+			research_bonus = {
+               	armor = 0.1
+				artillery = 0.1
+				light_air = 0.1
+				infantry_tech = 0.1
+				logistics_tech = 0.15
+				land_doctrine = 0.15
+			}
+			
 			modifier = {
-				research_bonus = {
-                	armor = 0.1
-					artillery = 0.1
-					light_air = 0.1
-					infantry_tech = 0.1
-					logistics_tech = 0.15
-					land_doctrine = 0.15
-				}
+				
 			}
 		}
 		ITA_tech_focused = {
@@ -168,13 +172,15 @@ ideas = {
 				always = yes
 			}
 			
+			research_bonus = {
+               	electronics = 0.1
+				signal_company_tech = 0.1
+				radar_tech = 0.1
+				computing_tech = 0.1
+			}
+			
 			modifier = {
-				research_bonus = {
-                	electronics = 0.1
-					signal_company_tech = 0.1
-					radar_tech = 0.1
-					computing_tech = 0.1
-				}
+				
 			}
 		}
 		ITA_nav_civ_focused = {
@@ -416,7 +422,7 @@ ideas = {
 			
 			modifier = {
 				justify_war_goal_time = -0.15
-				weekly_war_support_factor = 0.1
+				war_support_factor = 0.1
 				political_power_gain = 0.05
 			}
 		}
@@ -434,25 +440,6 @@ ideas = {
 			}
 			
 			modifier = {
-				revolutionary_socialism_drift = 0.1
-				drift_defence_factor = -0.2
-			}
-		}
-
-		ITA_direct_democracy = {
-			removal_cost = -1 
-			
-			picture = ITA_direct_democracy
-			
-			available = {
-			}
-			
-			allowed_civil_war = { 
-				always = yes
-			}
-			
-			modifier = {
-				revolutionary_socialism_drift = 0.1
 				drift_defence_factor = -0.2
 			}
 		}
@@ -470,7 +457,6 @@ ideas = {
 			}
 			
 			modifier = {
-				conservatism_drift = 0.05
 				drift_defence_factor = 0.40
 			}
 		}
@@ -594,7 +580,6 @@ ideas = {
 			}
 			
 			modifier = {
-				enemy_partisan_effect = -0.15 
 				compliance_gain = 0.15 
 				non_core_manpower = 0.15
 			}
@@ -613,9 +598,9 @@ ideas = {
 			}
 			
 			modifier = {
-			production_speed_industrial_complex_factor = 0.15 
-			consumer_goods_factor = -0.15 
-			production_speed_buildings_factor = -0.10 
+				production_speed_industrial_complex_factor = 0.15 
+				consumer_goods_factor = -0.15 
+				production_speed_buildings_factor = -0.10 
 			}
 		} 
 
@@ -632,10 +617,10 @@ ideas = {
 			}
 			
 			modifier = {
-			production_speed_arms_factory_factor = 0.15 
-			consumer_goods_factor = -0.15 
-			production_speed_buildings_factor = -0.10 
-			training_time_army_factor = -0.10 
+				production_speed_arms_factory_factor = 0.15 
+				consumer_goods_factor = -0.15 
+				production_speed_buildings_factor = -0.10 
+				training_time_army_factor = -0.10 
 			}
 		} 
 
@@ -652,8 +637,8 @@ ideas = {
 			}
 			
 			modifier = {
-			trade_laws_cost_factor = -0.25 
-			economy_cost_factor = -0.25 
+				trade_laws_cost_factor = -0.25 
+				economy_cost_factor = -0.25 
 			}
 		}
 
@@ -670,8 +655,8 @@ ideas = {
 			}
 			
 			modifier = {
-			conscription = 0.10 
-			non_core_manpower = 0.10 
+				conscription = 0.10 
+				non_core_manpower = 0.10 
 			}
 		}
 
@@ -688,10 +673,10 @@ ideas = {
 			}
 			
 			modifier = {
-			conscription = 0.1 
-			army_core_attack_factor = 0.25 
-			army_core_defence_factor = 0.25 
-			training_time_factor = -0.15 
+				conscription = 0.1 
+				army_core_attack_factor = 0.25 
+				army_core_defence_factor = 0.25 
+				training_time_factor = -0.15 
 			}
 		}
 
@@ -708,11 +693,11 @@ ideas = {
 			}
 			
 			modifier = {
-			revolutionary_socialism_drift = -0.02 
-			democratic_socialism_drift = -0.02 
-			liberalism_drift = -0.02 
-			conservatism_drift = -0.02 	
-			partisan_effect = -0.15	
+				proletarian_dictatorship_drift = -0.02 
+				libertarian_socialism_socialism_drift = -0.02 
+				progressive_liberalism_drift = -0.02 
+				national_conservatism_drift = -0.02 	
+				partisan_effect = -0.15	
 			}
 		}
 
@@ -729,9 +714,9 @@ ideas = {
 			}
 			
 			modifier = {
-			political_power_gain = 0.1 
-			stability_weekly = 0.02 
-			consumer_goods_factor = -0.05
+				political_power_gain = 0.1 
+				stability_weekly = 0.02 
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -748,9 +733,9 @@ ideas = {
 			}
 			
 			modifier = {
-			empowered_nationalism_drift = 0.05 
-			political_power_gain = 0.10 
-			conscription = 0.05 
+				ultranational_statism_drift = 0.05 
+				political_power_gain = 0.10 
+				conscription = 0.05 
 			}
 		} 
 
@@ -1072,25 +1057,6 @@ ideas = {
 			modifier = {
 				drift_defence_factor = 0.45
 				political_power_factor = -0.15
-			}
-		}
-
-		ITA_last_bastion_of_democracy = {
-			removal_cost = -1 
-			
-			picture = ITA_busted_unions
-			
-			available = {
-			}
-			
-			allowed_civil_war = { 
-				always = yes
-			}
-			
-			modifier = {
-				drift_defence_factor = 0.1
-				conservatism_drift = 0.06
-				army_core_defence_factor = 0.15
 			}
 		}
 

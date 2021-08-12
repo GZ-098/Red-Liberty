@@ -134,7 +134,7 @@ USA_congress = {
 			NOT = {
 				has_country_flag = farm_tenant_act_passed
 			}
-			has_completed_focus = USA_of_poverty
+			has_completed_focus = USA_war_on_poverty
 		}
 		
 		visible = {
@@ -143,7 +143,7 @@ USA_congress = {
 				has_country_flag = farm_tenant_act_passed
 				has_country_flag = USA_discussing_bill
 			}
-			has_completed_focus = USA_the_second_thomas_admin
+			has_completed_focus = USA_second_bill_of_rights
 		}
 		
 		cost = 0
@@ -198,7 +198,7 @@ USA_congress = {
 			NOT = {
 				has_country_flag = pension_act_passed
 			}
-			has_completed_focus = USA_of_poverty
+			has_completed_focus = USA_war_on_poverty
 		}
 		
 		visible = {
@@ -207,7 +207,7 @@ USA_congress = {
 				has_country_flag = pension_act_passed
 				has_country_flag = USA_discussing_bill
 			}
-			has_completed_focus = USA_the_second_thomas_admin
+			has_completed_focus = USA_second_bill_of_rights
 		}
 		
 		cost = 0
@@ -227,7 +227,7 @@ USA_congress = {
 			NOT = {
 				has_country_flag = housing_act_passed
 			}
-			has_completed_focus = USA_of_poverty
+			has_completed_focus = USA_war_on_poverty
 		}
 		
 		visible = {
@@ -236,7 +236,7 @@ USA_congress = {
 				has_country_flag = housing_act_passed
 				has_country_flag = USA_discussing_bill
 			}
-			has_completed_focus = USA_the_second_thomas_admin
+			has_completed_focus = USA_second_bill_of_rights
 		}
 		
 		cost = 0

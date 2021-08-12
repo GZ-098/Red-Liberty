@@ -1,0 +1,30 @@
+bookmarks = {
+	bookmark = { 
+	#test part4
+		name = "DRAGON_AND_SUN_NAME"
+		desc = "DRAGON_AND_SUN_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "JAP"
+		
+		"JAP"={
+			history = "JAP_DRAGON_AND_SUN_DESC"
+			ideology = national_conservatism
+			ideas = {
+				
+			}	
+			focuses = {
+				
+			}			
+		}
+		
+		"---"={ 
+			history = "OTHER_DRAGON_AND_SUN_DESC"
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

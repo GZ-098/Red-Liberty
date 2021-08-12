@@ -39,6 +39,15 @@ USA_election_season_category = {
 			USA_campaigning_effect = yes
 			clr_country_flag = currently_campaigning
 		}
+
+		ai_will_do = {
+			factor = 10
+			
+			modifier = {
+				add = 100
+				has_country_flag = USA_campaigning_socialist
+			}
+		}
 	}
 	
 	USA_campaign_in_east_coast = {
@@ -79,6 +88,15 @@ USA_election_season_category = {
 		remove_effect = {
 			USA_campaigning_effect = yes
 			clr_country_flag = currently_campaigning
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+			modifier = {
+				add = 100
+				has_country_flag = USA_campaigning_socialist
+			}
 		}
 	}
 	
@@ -121,6 +139,10 @@ USA_election_season_category = {
 			USA_campaigning_effect = yes
 			clr_country_flag = currently_campaigning
 		}
+		
+		ai_will_do = {
+			factor = 10
+		}
 	}
 	
 	USA_campaign_in_deep_south = {
@@ -161,6 +183,10 @@ USA_election_season_category = {
 		remove_effect = {
 			USA_campaigning_effect = yes
 			clr_country_flag = currently_campaigning
+		}
+		
+		ai_will_do = {
+			factor = 10
 		}
 	}
 	
@@ -203,6 +229,15 @@ USA_election_season_category = {
 			USA_campaigning_effect = yes
 			clr_country_flag = currently_campaigning
 		}
+		
+		ai_will_do = {
+			factor = 10
+			
+			modifier = {
+				add = 150
+				has_country_flag = USA_campaigning_socialist
+			}
+		}
 	}
 	
 	USA_campaign_in_southwest = {
@@ -243,6 +278,10 @@ USA_election_season_category = {
 		remove_effect = {
 			USA_campaigning_effect = yes
 			clr_country_flag = currently_campaigning
+		}
+		
+		ai_will_do = {
+			factor = 10
 		}
 	}
 	
@@ -285,6 +324,15 @@ USA_election_season_category = {
 			USA_campaigning_effect = yes
 			clr_country_flag = currently_campaigning
 		}
+		
+		ai_will_do = {
+			factor = 10
+			
+			modifier = {
+				add = 150
+				has_country_flag = USA_campaigning_socialist
+			}
+		}
 	}
 	
 	USA_campaign_in_rocky_mountains = {
@@ -326,6 +374,10 @@ USA_election_season_category = {
 			USA_campaigning_effect = yes
 			clr_country_flag = currently_campaigning
 		}
+		
+		ai_will_do = {
+			factor = 10
+		}
 	}
 	
 	USA_campaign_in_west_coast = {
@@ -366,6 +418,15 @@ USA_election_season_category = {
 		remove_effect = {
 			USA_campaigning_effect = yes
 			clr_country_flag = currently_campaigning
+		}
+		
+		ai_will_do = {
+			factor = 10
+			
+			modifier = {
+				add = 100
+				has_country_flag = USA_campaigning_socialist
+			}
 		}
 	}
 }

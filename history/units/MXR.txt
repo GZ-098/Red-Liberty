@@ -15,91 +15,91 @@ units = {
 	division = {
 		name = "Cristero Division"
 		location = 13089
-		division_template = "Tumen"
+		division_template = "Cristero Division"
 		start_experience_factor = 0.2
 	}
 	division = {
 		name = "Cristero Division"
 		location = 13089
-		division_template = "Tumen"
+		division_template = "Cristero Division"
 		start_experience_factor = 0.2
 	}
 	division = {
 		name = "Cristero Division"
 		location = 13089
-		division_template = "Tumen"
+		division_template = "Cristero Division"
 		start_experience_factor = 0.2
 	}
 	division = {
 		name = "Cristero Division"
 		location = 13089
-		division_template = "Tumen"
+		division_template = "Cristero Division"
 		start_experience_factor = 0.2
 	}
 	division = {
 		name = "Cristero Division"
 		location = 13089
-		division_template = "Tumen"
+		division_template = "Cristero Division"
 		start_experience_factor = 0.2
 	}
 	division = {
 		name = "Cristero Division"
 		location = 13089
-		division_template = "Tumen"
+		division_template = "Cristero Division"
 		start_experience_factor = 0.2
 	}
 	division = {
 		name = "Cristero Division"
 		location = 13089
-		division_template = "Tumen"
+		division_template = "Cristero Division"
 		start_experience_factor = 0.2
 	}
 	division = {
 		name = "Cristero Division"
 		location = 13089
-		division_template = "Tumen"
+		division_template = "Cristero Division"
 		start_experience_factor = 0.2
 	}
 	division = {
 		name = "Cristero Division"
 		location = 13089
-		division_template = "Tumen"
+		division_template = "Cristero Division"
 		start_experience_factor = 0.2
 	}
 	division = {
 		name = "Cristero Division"
 		location = 13089
-		division_template = "Tumen"
+		division_template = "Cristero Division"
 		start_experience_factor = 0.2
 	}
 	division = {
 		name = "Cristero Division"
 		location = 13089
-		division_template = "Tumen"
+		division_template = "Cristero Division"
 		start_experience_factor = 0.2
 	}
 	division = {
 		name = "Cristero Division"
 		location = 13089
-		division_template = "Tumen"
+		division_template = "Cristero Division"
 		start_experience_factor = 0.2
 	}
 	division = {
 		name = "Cristero Division"
 		location = 13089
-		division_template = "Tumen"
+		division_template = "Cristero Division"
 		start_experience_factor = 0.2
 	}
 	division = {
 		name = "Cristero Division"
 		location = 13089
-		division_template = "Tumen"
+		division_template = "Cristero Division"
 		start_experience_factor = 0.2
 	}
 	division = {
 		name = "Cristero Division"
 		location = 13089
-		division_template = "Tumen"
+		division_template = "Cristero Division"
 		start_experience_factor = 0.2
 	}
 }

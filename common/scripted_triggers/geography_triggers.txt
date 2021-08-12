@@ -1,0 +1,14 @@
+is_north_american_tag = {
+	tag = USA
+	tag = MEX
+	tag = CAN
+	tag = GUA
+	tag = NIC
+	tag = ELS
+	tag = HON
+	tag = COS
+	tag = PAN
+	
+	tag = YUC
+	tag = MXR
+}

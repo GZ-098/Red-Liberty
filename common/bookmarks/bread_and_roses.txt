@@ -1,0 +1,35 @@
+bookmarks = {
+	bookmark = { 
+	#test part4
+		name = "BREAD_AND_ROSES_NAME"
+		desc = "BREAD_AND_ROSES_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "USA"
+		default = yes
+		
+		"USA"={
+			history = "USA_BREAD_AND_ROSES_DESC"
+			ideology = libertarian_socialism
+			ideas = {
+				USA_red_liberty
+				USA_social_coalition
+				USA_the_great_depression_1
+			}
+			focuses = {
+				USA_the_second_thomas_admin
+				USA_itll_never_happen_here
+				USA_second_bill_of_rights
+			}
+		}
+		
+		"---"={ 
+			history = "OTHER_BREAD_AND_ROSES_DESC"
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

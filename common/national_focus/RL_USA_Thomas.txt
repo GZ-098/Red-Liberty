@@ -640,11 +640,11 @@ shared_focus = {
 	prerequisite = { focus = USA_federal_aid_commission }
 	prerequisite = { focus = USA_strengthen_labor_regs }
     completion_reward = {
-		custom_effect_tooltip = USA_bill_over_time_tt
         unlock_decision_tooltip = start_USA_social_security_act
-		unlock_decision_tooltip = start_USA_farm_tenant_act
-		unlock_decision_tooltip = start_USA_pension_act
-		unlock_decision_tooltip = start_USA_housing_act
+		custom_effect_tooltip = USA_bill_pass_req_tt
+		effect_tooltip = {
+			improve_great_depression = yes
+		}
     }
 	
 	ai_will_do = {
@@ -1404,7 +1404,10 @@ shared_focus = {
 	relative_position_id = USA_right_to_life
 	prerequisite = { focus = USA_right_to_life }
     completion_reward = {
-        
+		custom_effect_tooltip = USA_bill_over_time_tt
+        unlock_decision_tooltip = start_USA_farm_tenant_act
+		unlock_decision_tooltip = start_USA_pension_act
+		unlock_decision_tooltip = start_USA_housing_act
     }
 	
 	ai_will_do = {
@@ -1965,10 +1968,10 @@ shared_focus = {
 	y = 10
 	
 	available = {
-		
+		has_global_flag = MEX_cristero_war_bad
 	}
 	
-	cost = 5
+	cost = 3
     completion_reward = {
 		
     }
@@ -1989,7 +1992,7 @@ shared_focus = {
 		
 	}
 	
-	cost = 5
+	cost = 3
 	mutually_exclusive = {
 		focus = USA_maintain_neutrality
 	}
@@ -2015,7 +2018,7 @@ shared_focus = {
 		
 	}
 	
-	cost = 5
+	cost = 3
 	relative_position_id = USA_get_involved
 	prerequisite = { focus = USA_get_involved }
     completion_reward = {
@@ -2038,7 +2041,7 @@ shared_focus = {
 		
 	}
 	
-	cost = 5
+	cost = 3
 	mutually_exclusive = {
 		focus = USA_get_involved
 	}
@@ -2064,7 +2067,7 @@ shared_focus = {
 		
 	}
 	
-	cost = 5
+	cost = 3
 	relative_position_id = USA_get_involved
 	prerequisite = {
 		focus = USA_get_involved

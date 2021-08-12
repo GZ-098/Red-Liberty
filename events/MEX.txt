@@ -26,6 +26,7 @@ country_event = { # civil war demo event
 	option = {
 		name = ""
 		MXR = {
+			set_global_flag = MEX_cristero_war_bad
 			transfer_state = 478
 			478 = {
 				set_demilitarized_zone = no
@@ -70,6 +71,7 @@ country_event = { # civil war demo event
 					
 				}
 			}
+			load_oob = MXR
 		}
 		YUC = {
 			add_state_core = 474
@@ -94,6 +96,10 @@ news_event = {
 	desc = united_mexican_states.3.desc
 	
 	major = yes
+	
+	show_major = {
+		is_north_american_tag = yes
+	}
 	
 	is_triggered_only = yes
 	

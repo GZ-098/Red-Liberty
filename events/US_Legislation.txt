@@ -80,6 +80,13 @@ country_event = { # social security act
 			ideology = social_democracy
 			popularity = 0.01
 		}
+		custom_effect_tooltip = USA_SPA_better_nationwide
+		hidden_effect = {
+			every_owned_state = {
+				limit = { can_have_elections_in_state = yes }
+				add_to_variable = { socialist_popularity = 0.05 }
+			}
+		}
 		set_country_flag = social_security_passed
 		USA_bill_clear = yes # ALWAYS DO THIS
 	}

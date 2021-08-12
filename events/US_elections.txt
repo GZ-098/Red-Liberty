@@ -386,24 +386,6 @@ country_event = { #Show preparation and mark states for election
  		name = "SPA! SPA! SPA!"
  		custom_effect_tooltip = USA_senate_elections_visible_tt
 		set_country_flag = USA_campaigning_socialist
-		hidden_effect = {
-			country_event = {
-				id = united_states_thomas.1
-				days = 10
-			}
-			country_event = {
-				id = united_states_thomas.2
-				days = 60
-			}
-			country_event = {
-				id = united_states_thomas.3
-				days = 90
-			}
-			country_event = {
-				id = united_states_thomas.6
-				days = 130
-			}
-		}
  	}
 	option = {
  		name = "Protect our American way of life! Vote Democrat!"

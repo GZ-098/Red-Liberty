@@ -1,0 +1,37 @@
+USA_thomas_strategy_plan = {
+	name = ""
+	desc = ""
+
+	enable = {
+		original_tag = USA
+	}
+	
+	abort = {
+		NOT = {
+			original_tag = USA
+		}
+	}
+
+	ai_national_focuses = {
+		USA_paying_for_it_all
+		USA_raise_taxes
+		USA_cut_the_military
+		USA_federal_aid_commission
+		USA_of_poverty
+		
+		USA_take_down_statues
+		USA_arrest_their_leaders
+		USA_investigate_the_afp
+		USA_erase_their_legacy
+		USA_itll_never_happen_here
+		
+		USA_reorganization
+		USA_totally_not_brownlow_commitee
+		USA_strengthen_executive_branch
+		USA_accept_the_rulings
+		USA_court_tamed
+		
+		USA_reorg_act
+		USA_spqa
+	}
+}
