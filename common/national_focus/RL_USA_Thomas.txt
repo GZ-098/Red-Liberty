@@ -624,6 +624,11 @@ shared_focus = {
 	
 	ai_will_do = {
 		factor = 10
+		
+		modifier = {
+			factor = 0
+			date < 1937.3.1
+		}
 	}
 }
 
@@ -1973,7 +1978,7 @@ shared_focus = {
 	
 	cost = 3
     completion_reward = {
-		
+		# add event giving player choice of path
     }
 	
 	ai_will_do = {
@@ -1999,11 +2004,12 @@ shared_focus = {
 	relative_position_id = USA_down_mexico_way
 	prerequisite = { focus = USA_down_mexico_way }
     completion_reward = {
-		
+		add_stability = -0.15
+		add_war_support = 0.05
     }
 	
 	ai_will_do = {
-		factor = 10
+		factor = 4
 	}
 }
 
@@ -2015,14 +2021,21 @@ shared_focus = {
 	y = 1
 	
 	available = {
-		
+		MXR = {
+			exists = yes
+			has_war_with = MEX
+		}
 	}
 	
 	cost = 3
 	relative_position_id = USA_get_involved
 	prerequisite = { focus = USA_get_involved }
     completion_reward = {
-		
+		custom_effect_tooltip = USA_mexican_volunteers_lost_tt
+		add_ideas = {
+			USA_mexican_volunteers
+		}
+		# add event about volunteers going off to fight?
     }
 	
 	ai_will_do = {
@@ -2048,11 +2061,11 @@ shared_focus = {
 	relative_position_id = USA_down_mexico_way
 	prerequisite = { focus = USA_down_mexico_way }
     completion_reward = {
-		
+		add_stability = 0.05
     }
 	
 	ai_will_do = {
-		factor = 10
+		factor = 6
 	}
 }
 
@@ -2064,7 +2077,9 @@ shared_focus = {
 	y = 1
 	
 	available = {
-		
+		YUC = {
+			exists = yes
+		}
 	}
 	
 	cost = 3
@@ -2073,6 +2088,44 @@ shared_focus = {
 		focus = USA_get_involved
 		focus = USA_maintain_neutrality
 	}
+    completion_reward = {
+		USA = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 1500
+				target = YUC
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = demo_mex.4
+				days = 25
+			}
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_negotiated_peace
+	icon = GFX_USA_negotiated_peace
+	
+    x = 0
+	y = 2
+	
+	available = {
+		MXR = {
+			exists = yes
+			has_war_with = MEX
+		}
+	}
+	
+	cost = 3
+	relative_position_id = USA_maintain_neutrality
+	prerequisite = { focus = USA_maintain_neutrality }
     completion_reward = {
 		
     }
@@ -2090,7 +2143,10 @@ shared_focus = {
 	y = 1
 	
 	available = {
-		
+		MXR = {
+			exists = yes
+			has_war_with = MEX
+		}
 	}
 	
 	cost = 5
@@ -2098,7 +2154,7 @@ shared_focus = {
 	prerequisite = { focus = USA_permit_volunteers }
 	prerequisite = { focus = USA_support_yucatec_indep }
     completion_reward = {
-		
+		# def add an event here
     }
 	
 	ai_will_do = {

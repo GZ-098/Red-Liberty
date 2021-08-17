@@ -4,6 +4,7 @@ USA_thomas_strategy_plan = {
 
 	enable = {
 		original_tag = USA
+		always = no
 	}
 	
 	abort = {

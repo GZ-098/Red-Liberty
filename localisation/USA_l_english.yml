@@ -260,6 +260,20 @@
  USA_south_dakota_class:0 "South Dakota Class"
  USA_two_ocean_navy:0 "Two-Ocean Navy Act"
  
+ 
+ ### MEXICO INTERVENTION TREE ###
+ 
+ USA_down_mexico_way:0 "Down Mexico Way"
+ USA_get_involved:0 "Getting Involved"
+ USA_permit_volunteers:0 "Permit Volunteers"
+ USA_maintain_neutrality:0 "Maintain Neutrality"
+ USA_support_yucatec_indep:0 "Support Yucatec Independence"
+ USA_debate_full_intervention:0 "Debate Full Intervention"
+ USA_negotiated_peace:0 "Negotiate Peace"
+ 
+ USA_mexican_volunteers:0 "Mexican Volunteer Groups"
+ USA_mexican_volunteers_lost_tt:0 "§RThis National Spirit will be removed after the war's conclusion!§!"
+ 
  ### other stuff ###
  
  USA_managing_spa:0 "Managing the Party"

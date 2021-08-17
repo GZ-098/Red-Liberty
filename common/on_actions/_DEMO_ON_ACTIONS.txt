@@ -1,0 +1,18 @@
+on_actions = {
+	on_startup = {
+		effect = {
+		
+		### demo events ###
+		
+		### mexico ###
+		country_event = {
+			id = demo_mex.1
+			days = 185
+		}
+		country_event = {
+			id = demo_mex.2
+			days = 385
+			random = 15
+		}
+	}
+}

@@ -602,5 +602,28 @@ ideas = {
 				
 			}
 		}
+		
+		USA_mexican_volunteers = {
+		
+			removal_cost = -1 
+			
+			allowed_civil_war = {	 
+				always = no
+			}
+			
+			available = {
+				MEX = {
+					has_war_with = MXR
+				}
+			}
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			modifier = {
+				send_volunteer_size = 2
+			}
+		}
 	}
 }

@@ -459,7 +459,7 @@ initialize_US_elections_system = {
 		set_state_flag = US_election_state
 		set_variable = { democrat_popularity = 0.7 }
 		set_variable = { afp_popularity = 0.35 }
-		set_variable = { socialist_popularity = 0.1 }
+		set_variable = { socialist_popularity = 0.45 }
 		
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 3 }

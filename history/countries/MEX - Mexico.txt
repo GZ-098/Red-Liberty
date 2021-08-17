@@ -44,11 +44,6 @@ if = {
 
 set_country_flag = monroe_doctrine
 
-country_event = {
-	id = united_mexican_states.2
-	days = 280
-}
-
 set_convoys = 45
 set_stability = 0.2
 set_war_support = 0.1

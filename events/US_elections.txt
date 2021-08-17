@@ -83,7 +83,7 @@ country_event = {
 		}
 		country_event = { # thomas inaug
 			id = us_election.5
-			days = 114
+			days = 116
 		}
 		country_event = {
 			id = us_election.6
@@ -104,7 +104,7 @@ country_event = {
 		}
 		country_event = { # lister inaug
 			id = us_election.7
-			days = 114
+			days = 116
 		}
 		country_event = {
 			id = us_election.8

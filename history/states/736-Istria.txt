@@ -12,6 +12,7 @@ state={
 		add_claim_by = ITA
 		buildings = {
 			infrastructure = 5
+			dockyard = 2
 			6626 = {
 				naval_base = 5
 

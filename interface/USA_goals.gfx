@@ -85,6 +85,46 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_the_forgotten"
+		texturefile = "gfx/interface/goals/USA/USA_those_who_were_forgotten.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_anti_lynching_legislation"
+		texturefile = "gfx/interface/goals/USA/USA_pass_anti_lynching_legislation.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_encourage_minority_voting"
+		texturefile = "gfx/interface/goals/USA/USA_encourage_minority_voting.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_take_on_the_klan"
+		texturefile = "gfx/interface/goals/USA/USA_take_on_the_klan.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_the_american_crisis"
+		texturefile = "gfx/interface/goals/USA/USA_the_american_crisis.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_of_agriculture"
+		texturefile = "gfx/interface/goals/USA/USA_of_agriculture.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_of_industry"
+		texturefile = "gfx/interface/goals/USA/USA_of_industry.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_of_politics"
+		texturefile = "gfx/interface/goals/USA/USA_of_politics.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_our_mandate"
 		texturefile = "gfx/interface/goals/USA/USA_our_mandate_2.png"
 	}
@@ -316,5 +356,27 @@ spritetypes = {
 	SpriteType = {
 		name = "GFX_USA_america_reborn"
 		texturefile = "gfx/interface/goals/USA/USA_america_reborn_2.png"
+	}
+	
+	### MEXICO TREE ###
+	
+	SpriteType = {
+		name = "GFX_USA_get_involved"
+		texturefile = "gfx/interface/goals/USA/USA_get_involved.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_permit_volunteers"
+		texturefile = "gfx/interface/goals/USA/USA_permit_volunteers.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_maintain_neutrality"
+		texturefile = "gfx/interface/goals/USA/USA_maintain_neutrality.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_support_yucatec_indep"
+		texturefile = "gfx/interface/goals/USA/USA_support_yucatec_indep.png"
 	}
 }

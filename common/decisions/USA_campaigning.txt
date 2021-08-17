@@ -27,7 +27,7 @@ USA_election_season_category = {
 		cost = 15
 		
 		days_remove = 30
-		days_re_enable = 20
+		days_re_enable = 35
 		
 		complete_effect = {
 			USA_campaign_area_new_england = yes
@@ -77,7 +77,7 @@ USA_election_season_category = {
 		cost = 15
 		
 		days_remove = 30
-		days_re_enable = 20
+		days_re_enable = 35
 		
 		complete_effect = {
 			USA_campaign_area_east_coast = yes
@@ -127,7 +127,7 @@ USA_election_season_category = {
 		cost = 15
 		
 		days_remove = 30
-		days_re_enable = 20
+		days_re_enable = 35
 		
 		complete_effect = {
 			USA_campaign_area_upper_south = yes
@@ -172,7 +172,7 @@ USA_election_season_category = {
 		cost = 15
 		
 		days_remove = 30
-		days_re_enable = 20
+		days_re_enable = 35
 		
 		complete_effect = {
 			USA_campaign_area_deep_south = yes
@@ -217,7 +217,7 @@ USA_election_season_category = {
 		cost = 15
 		
 		days_remove = 30
-		days_re_enable = 20
+		days_re_enable = 35
 		
 		complete_effect = {
 			USA_campaign_area_great_lakes = yes
@@ -267,7 +267,7 @@ USA_election_season_category = {
 		cost = 15
 		
 		days_remove = 30
-		days_re_enable = 20
+		days_re_enable = 35
 		
 		complete_effect = {
 			USA_campaign_area_southwest = yes
@@ -312,7 +312,7 @@ USA_election_season_category = {
 		cost = 15
 		
 		days_remove = 30
-		days_re_enable = 20
+		days_re_enable = 35
 		
 		complete_effect = {
 			USA_campaign_area_great_plains = yes
@@ -362,7 +362,7 @@ USA_election_season_category = {
 		cost = 15
 		
 		days_remove = 30
-		days_re_enable = 20
+		days_re_enable = 35
 		
 		complete_effect = {
 			USA_campaign_area_rocky_mountains = yes
@@ -407,7 +407,7 @@ USA_election_season_category = {
 		cost = 15
 		
 		days_remove = 30
-		days_re_enable = 20
+		days_re_enable = 35
 		
 		complete_effect = {
 			USA_campaign_area_west_coast = yes

@@ -1,0 +1,32 @@
+ideas = {
+	
+	country = {
+	
+       	YUC_indep_revolt = {
+			removal_cost = -1 
+			
+			allowed = {
+				tag = YUC
+			}
+			
+			available = {
+				tag = YUC
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				conscription_factor = 0.15
+				consumer_goods_factor = -0.05
+				army_attack_factor = -0.05
+				army_defence_factor = 0.1
+				army_morale_factor = 0.2
+				army_org_factor = -0.15
+				
+				ai_focus_defense_factor = 0.5
+			}
+		}
+	}
+}
