@@ -55,23 +55,23 @@ if = {
 }
 
 set_politics = {
-	ruling_party = progressive_liberalism
+	ruling_party = social_democracy
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
 	insurrectionary_anarchism = 0
 	revolutionary_autocracy = 0
-	proletarian_dictatorship = 1
-	libertarian_socialism = 4
-	social_democracy = 12
-	progressive_liberalism = 27
-	market_libertarianism = 7
-	national_conservatism = 21
+	proletarian_dictatorship = 10
+	libertarian_socialism = 0
+	social_democracy = 40
+	progressive_liberalism = 0
+	market_libertarianism = 20
+	national_conservatism = 20
 	reactionary_theocracy = 0
-	authoritarian_republicanism = 8
-	martial_despotism = 10
+	authoritarian_republicanism = 0
+	martial_despotism = 0
 	ultranational_statism = 10
 }
 
@@ -79,11 +79,11 @@ set_convoys = 20
 set_stability = 0.55
 
 create_country_leader = {
-	name = "Rıza Tevfik Bölükbaşı"
+	name = "İsmet İnönü"
 	desc = ""
 	picture = ""
 	expire = "1965.1.1"
-	ideology = progressive_liberalism_subtype
+	ideology = social_democracy_subtype 
 	traits = {
 		#
 	}
