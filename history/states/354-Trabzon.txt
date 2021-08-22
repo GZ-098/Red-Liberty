@@ -4,7 +4,7 @@ state={
 	name="STATE_354"
 
 	history={
-		owner = ARM
+		owner = PON
 		victory_points = {
 			9932 3 
 		}
@@ -17,6 +17,7 @@ state={
 
 		}
 		add_core_of = TUR
+		add_core_of = PON
 
 	}
 

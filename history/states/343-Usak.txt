@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = TUR
+		owner = OTT
 		victory_points = {
 			10041 1 
 		}
@@ -20,6 +20,7 @@ state={
 
 		}
 		add_core_of = TUR
+		add_core_of = OTT
 
 	}
 
