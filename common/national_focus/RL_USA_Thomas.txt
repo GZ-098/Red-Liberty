@@ -11,6 +11,7 @@ shared_focus = {
 				USA_jack_reed_hog
 				USA_max_shachtman_for
 				USA_elizabeth_flynn_lab
+				USA_harry_hopkins_com
 				USA_john_abt_sec
 			}
 		}
@@ -132,7 +133,7 @@ shared_focus = {
 	relative_position_id = USA_the_forgotten
 	prerequisite = { focus = USA_the_forgotten }
     completion_reward = {
-        
+        add_stability = 0.075
     }
 	
 	ai_will_do = {
@@ -151,7 +152,9 @@ shared_focus = {
 	relative_position_id = USA_the_forgotten
 	prerequisite = { focus = USA_the_forgotten }
     completion_reward = {
-        
+        country_event = {
+			id = united_states_thomas.26
+		}
     }
 	
 	ai_will_do = {
@@ -190,7 +193,10 @@ shared_focus = { # how ya like them apples?
 	relative_position_id = USA_take_on_the_klan
 	prerequisite = { focus = USA_take_on_the_klan }
     completion_reward = {
-        
+        country_event = {
+			id = united_states_thomas.24
+			days = 1
+		}
     }
 	
 	ai_will_do = {
@@ -219,7 +225,7 @@ shared_focus = {
 
 shared_focus = {
     id = USA_arrest_their_leaders
-	icon = GFX_USA_expose_their_crimes
+	icon = GFX_USA_arrest_their_leaders
 	
     x = -1
 	y = 1
@@ -237,8 +243,8 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_find_their_funding
-	icon = GFX_USA_find_their_funding
+    id = USA_raid_their_headquarters
+	icon = GFX_USA_raid_their_headquarters
 	
     x = 1
 	y = 1
@@ -267,7 +273,10 @@ shared_focus = {
 	relative_position_id = USA_expose_their_crimes
 	prerequisite = { focus = USA_expose_their_crimes }
     completion_reward = {
-        # add event about confederate statues being taken down
+        country_event = {
+			id = united_states_thomas.25
+			days = 1
+		}
     }
 	
 	ai_will_do = {
@@ -323,7 +332,7 @@ shared_focus = {
 	cost = 4
 	relative_position_id = USA_investigate_the_afp
 	prerequisite = { focus = USA_investigate_the_afp }
-	prerequisite = { focus = USA_find_their_funding }
+	prerequisite = { focus = USA_raid_their_headquarters }
 	prerequisite = { focus = USA_erase_their_legacy }
     completion_reward = {
         unlock_decision_tooltip = start_USA_ban_kkk_act
@@ -550,8 +559,8 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_raise_taxes
-	icon = GFX_USA_raise_taxes
+    id = USA_federal_project_one
+	icon = GFX_USA_federal_project_one
 	
     x = -1
 	y = 1
@@ -595,8 +604,8 @@ shared_focus = {
 	y = 1
 	
 	cost = 8
-	relative_position_id = USA_raise_taxes
-	prerequisite = { focus = USA_raise_taxes }
+	relative_position_id = USA_federal_project_one
+	prerequisite = { focus = USA_federal_project_one }
 	prerequisite = { focus = USA_cut_the_military }
     completion_reward = {
 		

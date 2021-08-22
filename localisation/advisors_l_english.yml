@@ -1,7 +1,7 @@
 ﻿l_english:
 
  cabinet:0 "Cabinet"
- head_of_government:0 "Head of Government"
+ head_of_government:0 "Head of Government/Deputy Leader"
  head_of_gov_available:0 "Your Head of Government cannot be changed manually"
  
  ###################### 
@@ -22,27 +22,37 @@
  secretary_of_state:0 "Secretary of State"
  secretary_of_the_treasury:0 "Secretary of the Treasury"
  secretary_of_labor:0 "Secretary of Labor"
+ secretary_of_commerce:0 "Secretary of Commerce"
  attorney_general:0 "Attorney General"
+ secretary_of_war:0 "Secretary of War"
+ 
+ head_of_govt:0 "Head of Government"
  
  ###################### 
  #political advisors traits - effects
  ######################
  hog_americanist:0 "Americanist"
  hog_red_journo:0 "Red Journalist"
+ hog_curious_intellectual:0 "Curious Intellectual"
  
  for_biased_intellectual:0 "Biased Intellectual"
  
  lab_union_boss:0 "Union Boss"
  lab_red_suffragette:0 "Red Suffragette"
  
+ com_relief_coordinator:0 "Relief Coordinator"
+ 
  sec_compassionate_gentleman:0 "Compassionate Gentleman"
  sec_efficient_sociopath:0 "Efficient Sociopath"
+ 
+ fbi_director:0 "The Director"
 
  ###################### 
  #US political advisors 
  ######################
  USA_earl_browder_hog:0 "Earl Browder"
  USA_jack_reed_hog:0 "John 'Jack' Reed"
+ USA_henry_wallace_hog:0 "Henry A. Wallace"
  
  USA_max_shachtman_for:0 "Max Shachtman"
  USA_eugene_dennis_for:0 "Eugene Dennis"
@@ -52,6 +62,12 @@
  USA_elizabeth_flynn_lab:0 "Elizabeth Gurley Flynn"
  USA_john_lewis_lab:0 "John L. Lewis"
  
+ USA_harry_hopkins_com:0 "Harry Hopkins"
+ 
  USA_john_abt_sec:0 "John Abt"
  USA_lee_pressman_sec:0 "Lee Pressman"
+ 
+ USA_martin_abern_war:0 "Martin Abern"
+ 
+ USA_john_edgar_hoover_fbi:0 "J. Edgar Hoover"
  

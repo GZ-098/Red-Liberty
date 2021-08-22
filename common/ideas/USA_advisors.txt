@@ -45,6 +45,28 @@ ideas = {
 				syndicalist
 			}
 		}
+		
+		USA_henry_wallace_hog = {
+		
+			allowed = {
+				original_tag = USA
+			}
+		
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			
+			removal_cost = -1
+				
+			traits = {
+				vice_president
+				hog_curious_intellectual
+				social_democrat
+			}
+		}
 	}
 	
 	political_advisor = {
@@ -134,6 +156,21 @@ ideas = {
 			}
 		}
 		
+		USA_harry_hopkins_com = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			traits = {
+				secretary_of_commerce
+				com_relief_coordinator
+				social_democrat
+			}
+		}
+		
 		USA_john_abt_sec = {
 			
 			removal_cost = -1
@@ -161,6 +198,33 @@ ideas = {
 				attorney_general
 				sec_compassionate_gentleman
 				syndicalist
+			}
+		}
+		
+		USA_martin_abern_war = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			traits = {
+				secretary_of_war
+				trotskyist
+			}
+		}
+		
+		USA_john_edgar_hoover_fbi = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			traits = {
+				fbi_director
 			}
 		}
 	}

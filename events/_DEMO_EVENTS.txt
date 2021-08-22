@@ -1,5 +1,7 @@
 add_namespace = demo_mex
 add_namespace = demo_ahe
+add_namespace = demo_rus
+add_namespace = demo_ww2
 
 country_event = { # election event
 	id = demo_mex.1
@@ -200,6 +202,61 @@ country_event = { # election event for austria
 		add_popularity = {
 			ideology = national_conservatism
 			popularity = 0.03
+		}
+	}
+}
+
+country_event = { # 
+	id = demo_rus.1
+	title = ""
+	desc = demo_rus.1.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+		896 = {
+			set_demilitarized_zone = no
+		}
+		FER = {
+			add_state_core = 408
+			add_state_core = 409
+			add_state_core = 560
+			add_state_core = 561
+			add_state_core = 562
+			add_state_core = 657
+			add_state_core = 896
+			
+			transfer_state = 896
+			
+			load_oob = FER
+			
+			declare_war_on = {
+				target = PRI
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = {
+	id = demo_ww2.1
+	title = ""
+	desc = demo_ww2.1.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+		FER = {
+			declare_war_on = {
+				target = PRI
+				type = annex_everything
+			}
 		}
 	}
 }

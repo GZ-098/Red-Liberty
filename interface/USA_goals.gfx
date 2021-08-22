@@ -105,6 +105,51 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_unleash_the_fbi"
+		texturefile = "gfx/interface/goals/USA/USA_unleash_the_FBI.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_expose_their_crimes"
+		texturefile = "gfx/interface/goals/USA/USA_expose_their_crimes.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_arrest_their_leaders"
+		texturefile = "gfx/interface/goals/USA/USA_arrest_their_leaders.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_find_their_funding"
+		texturefile = "gfx/interface/goals/USA/USA_find_their_funding.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_raid_their_headquarters"
+		texturefile = "gfx/interface/goals/USA/USA_raiding_their_headquarters.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_take_down_statues"
+		texturefile = "gfx/interface/goals/USA/USA_taking_down_their_statues.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_investigate_the_afp"
+		texturefile = "gfx/interface/goals/USA/USA_investigate_the_AFP.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_erase_their_legacy"
+		texturefile = "gfx/interface/goals/USA/USA_erase_their_legacy.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_itll_never_happen_here"
+		texturefile = "gfx/interface/goals/USA/USA_itll_never_happen_here.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_the_american_crisis"
 		texturefile = "gfx/interface/goals/USA/USA_the_american_crisis.png"
 	}
@@ -358,7 +403,39 @@ spritetypes = {
 		texturefile = "gfx/interface/goals/USA/USA_america_reborn_2.png"
 	}
 	
+	### MILITARY TREE ###
+	
+	SpriteType = {
+		name = "GFX_USA_reforming_the_military"
+		texturefile = "gfx/interface/goals/USA/USA_reforming_the_military.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_the_army"
+		texturefile = "gfx/interface/goals/USA/USA_the_army_2.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_the_air_corps"
+		texturefile = "gfx/interface/goals/USA/USA_the_air_corps.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_under_the_army"
+		texturefile = "gfx/interface/goals/USA/USA_under_the_army.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_the_navy"
+		texturefile = "gfx/interface/goals/USA/USA_the_navy.png"
+	}
+	
 	### MEXICO TREE ###
+	
+	SpriteType = {
+		name = "GFX_USA_down_mexico_way"
+		texturefile = "gfx/interface/goals/USA/USA_down_mexico_way.png"
+	}
 	
 	SpriteType = {
 		name = "GFX_USA_get_involved"
@@ -368,6 +445,11 @@ spritetypes = {
 	SpriteType = {
 		name = "GFX_USA_permit_volunteers"
 		texturefile = "gfx/interface/goals/USA/USA_permit_volunteers.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_debate_full_intervention"
+		texturefile = "gfx/interface/goals/USA/USA_debate_full_intervention.png"
 	}
 	
 	SpriteType = {

@@ -93,17 +93,30 @@
  ### THOMAS TREE - FORMERLY SECOND TERM ###
  USA_the_second_thomas_admin:0 "The Thomas Administration"
  USA_the_forgotten:0 "Those Who Were Forgotten"
+ USA_the_forgotten_desc:0 "America claims to be The Land of the Free, and yet millions of it’s citizens have long been forgotten and pushed out of the Political Scene - it is time now to ensure that the Non-White Americans are represented."
  USA_anti_lynching_legislation:0 "Push Anti-Lynching Legislation"
+ USA_anti_lynching_legislation_desc:0 "It is both morally reprehensible and fundamentally anti-American to allow the oppression of our coloured citizens to continue. The President and his government officials will begin to push for legislation to end this horrendous practice of mob justice."
  USA_encourage_minority_voting:0 "Encourage Minority Voting"
+ USA_encourage_minority_voting_desc:0 "For generations, our minority population has been discouraged from partaking in their civil duty of casting the ballot, this is one of the largest downfalls of the American Republic; it is time to right this wrong."
  USA_take_on_the_klan:0 "Take on the Klan"
- USA_unleash_the_fbi:0 "Unleash the FBI"
+ USA_take_on_the_klan_desc:0 "The Ku Klux Klan is to be officially named an Enemy of the American People, President Thomas will do all within his power to crush this organization and grind it finely into the dirt."
+ USA_unleash_the_fbi:0 "Unleash the Bureau"
+ USA_unleash_the_fbi_desc:0 "The Bureau holds vast intelligence on the borderline terroristic nature of the Klan, it is time to let slip the dogs of war and begin the takedown of their organization."
  USA_expose_their_crimes:0 "Expose their Crimes"
+ USA_expose_their_crimes_desc:0 "The large scale anti-American actions of the Ku Klux Klan are intensely illegal and largely overlooked, it is time to push their crimes into the light and inform the American people of their wrongdoing."
  USA_arrest_their_leaders:0 "Arrest their Leaders"
- USA_find_their_funding:0 "Find their Funding"
+ USA_arrest_their_leaders_desc:0 "Now that these crimes have been made public and the support base of the Klan is being quickly eroded, it is time to publicly arrest the leaders of the organization to ensure the American people are aware not even the most influential can escape the all-seeing eye of the law."
+ #USA_find_their_funding:0 "Find their Funding"
+ #USA_find_their_funding_desc:0 "Wealthy, Capitalistic Whites from all throughout the nation have been funneling money towards the Klan to further their white supremacist aims - it is suspected that even high ranking officials within the Democratic Party are involved. President Thomas intends to find and expose these officials."
+ USA_raid_their_headquarters:0 "Raid their Heaquarters"
  USA_take_down_statues:0 "Take down their Statues"
+ USA_take_down_statues_desc:0 "The Confederate States of America is a rebel nation, those who fought for it were traitors, those who support it are dissidents and anti-American, let us remove and destroy the reminders of this treason."
  USA_investigate_the_afp:0 "Investigate the AFP"
+ USA_investigate_the_afp_desc:0 ""
  USA_erase_their_legacy:0 "Erase their Legacy"
+ USA_erase_their_legacy_desc:0 "The Confederacy was a national embarrassment, and so President Thomas will ensure no future generation will ever even hold knowledge of its existence."
  USA_itll_never_happen_here:0 "It'll Never Happen Here"
+ USA_itll_never_happen_here_desc:0 "The United States of America will never regress into the doctrines of racism and fascism."
  #USA_hoovers_folly:0 "Hoover's Folly"
  USA_the_american_crisis:0 "The American Crisis"
  USA_of_agriculture:0 "Of Agriculture"
@@ -115,7 +128,7 @@
  USA_bank_regulation:0 "Those Damn Banks"
  USA_regulate_stock_markets:0 "Where it all Started"
  USA_paying_for_it_all:0 "Paying for it All"
- USA_raise_taxes:0 "Raise Taxes"
+ USA_federal_project_one:0 "Federal Project No.1"
  USA_cut_the_military:0 "Cut the Military"
  USA_federal_aid_commission:0 "Federal Aid Commission"
  USA_dealing_with_the_dustbowl:0 "Dealing with the Dustbowl"
@@ -260,6 +273,12 @@
  USA_south_dakota_class:0 "South Dakota Class"
  USA_two_ocean_navy:0 "Two-Ocean Navy Act"
  
+ USA_matching_europe:0 "Matching the Fleets of Europe"
+ USA_pacific_presence:0 "Pacific Presience"
+ USA_atlantic_awareness:0 "Atlantic Awareness"
+ 
+ USA_naval_air:0 "Naval Air is the Future!"
+ 
  
  ### MEXICO INTERVENTION TREE ###
  
@@ -372,6 +391,12 @@
  
  united_states_thomas.23.desc:0 ""You're retiring?" Thomas's eyes looked the other man up and down, silently appraising his vice president, and lingering on the dark circles under the man's eyes. Jack had been a friend, and, more than that, an ally, for years. He helped keep the peace with the more radical members of the party, keeping everyone on the same team.\n\n"Yeah." Reed coughed. "I don't want to go, of course, but I don't feel like I have much choice. Damn typhus. It spent too long in me in Russia, and now no doctor in this whole damned country can get it out of me." The circles under his eyes seemed to grow darker as he slumped back into his chair. "I'm so sorry, Norman. I have to do this. I can't keep this up anymore. I'm too old for this."\n\nThe vice president stared down at the floor, and Norman could swear he saw tears glistening in his eyes. "We're the old guard, Norman. We're the only ones who remember the good old days, back when Eugene and Bill were still here." It was an exaggeration, but not much of one. A lot of the newer party members had been sucking their thumbs when Debs was president.\n\nPresident Thomas sighed, his own eyes directed down at his desk. He suddenly felt empty and cold; old.\n\n"I'll be with you until the end of this term. We'll have to have a primary in the party to find my successor."\n\nThomas nodded.\n\n"... Tom. Promise me you'll finish the job. No half-measures, like Labour did in Britain. We can't sell out now; we're so close to the end. We can break capital's back if we win the next election. We just need one more push. Promise me you won't sell out."\n\nReed had always been more radical than Thomas. Their friendship had gotten off to a rocky start when Thomas had been informed of Reed's adventure in Russia and subsequent flirtation with Leninism, to say nothing of his unabashed Marxism. He said nothing; merely stared down at his desk and nodded."
  USA_reed_will_remember_tt:0 "Jack Reed will remember that..."
+ 
+ united_states_thomas.24.desc:0 "Joe Willers had been called many things: A Patriot, a Hero, a Son of the South. He'd been called a "lazy do-nothing" by his father and an "asshole" by his wife, although that one was used more affectionately.\n\nHe'd never in his life expected to be called a murderer. It would never've been allowed, not by the police, not by a jury, not by his neighbors, regardless of what he may or may not have done.\n\nWhich was why he felt his heart drop into his stomach when he opened his door to find two men in clean, neat suits on his doorstep, with a black sedan parked on the dirt road behind them. One of them, a negro, stepped forward and smiled, offering his hand. Joe didn't take it. "Who are you and what do want?"\n\nThe two men looked at each other, and the other, a white, stepped forward. "I'm Agent Farrow, this is Agent Franklin. We work for the Bureau of Investigation, and we're conducting an investigation into a murder in the area."\n\n"I ain't heard of no murder." Joe leaned against the doorframe, scowling.\n\nAgent Franklin retrieved a notebook from his pocket and opened it, scribbling something down before flipping back a few pages to start reading. "Six days ago, a local colored man, Leon Forager, was found hanged from a tree in his backyard. His house had been broken into and there were signs of a struggle. The local police declined to investigate, so, due to section four of the Terrorism Suppression Act, the case falls into federal jurisdiction. Would you come with us, please, we have some questions for you."\n\nFour weeks later, Joe Willers would find himself in an integrated federal courtroom, charged with breaking and entering, assault, and murder."
+ 
+ united_states_thomas.25.desc:0 "Everett watched in dismay as the statue was lifted up off the pedestal, chains growing taut as the crane lifted it up into the air, slowly swung it across the grassy park, and then set it down on the bed of a National Guard truck.\n\nHe joined the crowd in shouting at the assembled soldiers; National Guardsmen from the north federalized and sent South to protect Army engineers as they removed the most obvious symbols of the Confederacy from public lands across Dixie.\n\n"This is unconstitutional! You can't do this!" He pushed his way through the crowd, shouldering jeering men and women aside to get to the front, where he was held back by National Guardsmen. "Hey! Yankee!" He yelled at an engineer observing the truck, who turned to face him curiously. "Put it back! You can't fucking do this!"\n\n"I ain't a yankee; I'm from Minnesota. And why not?" The uniformed man grinned amusedly, like this was all a big joke. "We did it before."\n\nEverett stared at him.\n\n"What, you don't know? We've got your battle-flag! A Minnesota unit captured it at Gettysburg. Finders keepers, ya know. Your state keeps trying to get it back, and some fella tried to sue us for it around the turn of the century. We ain't never givin' it back! Don't worry, we ain't gonna keep the statue. Dunno what's gonna be done with it, but hey, that's not really my business. We're lettin' ya keep the pedestal, though. You can do whatever you want with it. Just don't put any more traitors on it."\n\n"What if we came up to your state and took down your statues! How would it feel?!" Everett yelled.\n\n"Well, we don't really make a habit of putting up statues of traitors who tried to destroy the Union, but hey, maybe if you elect the right guy it'll be your turn to give it a shot. Just remember how it went the last time you fellows tried dictate terms to the North." He walked away to supervise the securing of the state, leaving Everett spluttering furiously."
+ 
+ united_states_thomas.26.desc:0 "The sun beat down on Katherine as she stood in line, but she didn't mind. She was pretty happy to be allowed to stand in this line to begin with. In front of her, the town courthouse loomed above, a banner reading "Polling Station" hanging from a pair of second story windows.\n\nSoldiers and military police milled around, finding shady spots under trees or awnings to observe the gathered civilians. The Ohio National Guard, federalized and called in to supervise elections south of the Mason Dixon line, by order of President Thomas.\n\nShe felt less unwelcome than expected; some of the whites seemed unphased by her presence, while others shot her threatening stares from time to time, but no one dared try anything under the watchful eye of the guard. She was far from the only colored person in the line; they were actually the majority in this county, but hadn't been allowed to vote since Reconstruction. If anyone worked up the nerve to go to the polls, they found themselves demanded to recite the constitution from memory to prove that they were literate, and if they managed that, well... what followed was a usually a noose.\n\nShe stepped inside the courthouse lobby, which was baking like an oven. A clerk glanced up and handed her a ballot, indicating a table off to the right with dividers set up on it. "There. And there's a pen there already. Drop it in the box over there. Any box." He pointed at a line of ballot boxes on the opposite side of the room, watched over by a pair of federal marshals and a bored-looking major.\n\nKatherine nodded and stepped over to the table. Setting the ballot down, she uncapped a pen and looked over her options. For the first time in her life, the political destiny of her nation was in her own hands. She smiled, and began filling out the ballot."
  
  ### ADVISORS ###
  

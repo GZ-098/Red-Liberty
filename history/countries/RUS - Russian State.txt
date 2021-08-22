@@ -13,11 +13,6 @@ set_technology = {
 	
 }
 
-country_event = {
-	id = russia.2
-	days = 110
-}
-
 oob = "RUS"
 
 set_research_slots = 2

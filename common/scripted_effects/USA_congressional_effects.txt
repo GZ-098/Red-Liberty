@@ -1,25 +1,32 @@
 USA_congress_get_quorum = {
-	set_variable = { var = quorum_low value = senators_total }
-	multiply_variable = { var = quorum_low value = 0.4 }
-	set_variable = { var = quorum_medium value = senators_total }
-	multiply_variable = { var = quorum_medium value = 0.5 }
-	set_variable = { var = quorum_high value = senators_total }
-	multiply_variable = { var = quorum_high value = 0.6 }
+	set_variable = { quorum_low = senators_total }
+	multiply_variable = { quorum_low = 0.4 }
+	
+	set_variable = { quorum_medium = senators_total }
+	multiply_variable = { quorum_medium = 0.5 }
+	
+	set_variable = { quorum_high = senators_total }
+	multiply_variable = { quorum_high = 0.6 }
 	round_variable = quorum_low 
 	round_variable = quorum_medium 
 	round_variable = quorum_high
 	
-	set_variable = { var = rep_quorum_low value = representatives_total }
-	multiply_variable = { var = rep_quorum_low value = 0.4 }
-	set_variable = { var = rep_quorum_medium value = representatives_total }
-	multiply_variable = { var = rep_quorum_medium value = 0.5 }
-	set_variable = { var = rep_quorum_high value = representatives_total }
-	multiply_variable = { var = rep_quorum_high value = 0.6 }
+	set_variable = { rep_quorum_low = representatives_total }
+	
+	log = "[GetDateText]: [Root.GetName]: rep_quorum_low : [?USA.rep_quorum_low]"
+	multiply_variable = { rep_quorum_low = 0.4 }
+	
+	
+	set_variable = { rep_quorum_medium = representatives_total }
+	multiply_variable = { rep_quorum_medium = 0.5 }
+	
+	log = "[GetDateText]: [Root.GetName]: rep_quorum_medium : [?USA.rep_quorum_medium]"
+	
+	set_variable = { rep_quorum_high = representatives_total }
+	multiply_variable = { rep_quorum_high = 0.6 }
 	round_variable = rep_quorum_low 
 	round_variable = rep_quorum_medium
 	round_variable = rep_quorum_high
-	
-	#USA_recalc_congress_icon_frames = yes
 }
 
 USA_congress_remove_state = {

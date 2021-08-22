@@ -11,7 +11,7 @@ leader_traits = {
 	social_democrat = {}
 
 	### general ###
-	head_of_government = {}
+	head_of_govt = {}
 	foreign_minister = {}
 	economy_minister = {}
 	
@@ -20,7 +20,9 @@ leader_traits = {
 	secretary_of_state = {}
 	secretary_of_the_treasury = {}
 	secretary_of_labor = {}
+	secretary_of_commerce = {}
 	attorney_general = {}
+	secretary_of_war = {}
 
 	hog_red_journo = {
 		political_power_gain = 0.03
@@ -31,6 +33,13 @@ leader_traits = {
 	
 	hog_americanist = {
 		stability_factor = 0.02
+
+		random = no
+	}
+	
+	hog_curious_intellectual = {
+		political_power_gain = 0.03
+		drift_defence_factor = 0.05
 
 		random = no
 	}
@@ -59,6 +68,13 @@ leader_traits = {
 		random = no
 	}
 	
+	com_relief_coordinator = {
+		production_speed_buildings_factor = 0.02
+		industrial_capacity_factory = 0.02
+		
+		random = no
+	}
+	
 	sec_compassionate_gentleman = {
 		stability_factor = 0.02
 		political_power_gain = 0.04
@@ -77,6 +93,12 @@ leader_traits = {
 		political_power_gain = 0.04
 		production_speed_buildings_factor = 0.02
 
+		random = no
+	}
+	
+	fbi_director = {
+		political_power_gain = 0.04
+		
 		random = no
 	}
 }

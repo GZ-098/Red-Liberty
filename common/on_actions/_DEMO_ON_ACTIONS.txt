@@ -14,5 +14,12 @@ on_actions = {
 			days = 385
 			random = 15
 		}
+		
+		### russia ###
+		
+		country_event = {
+			id = demo_rus.1
+			days = 110
+		}
 	}
 }
