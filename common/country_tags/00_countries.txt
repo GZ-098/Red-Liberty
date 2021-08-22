@@ -258,6 +258,11 @@ GIL = "countries/Gilan.txt"
 KHR = "countries/Khorasan.txt"
 HEZ = "countries/Hedjaz.txt"
 KRD = "countries/Kurdistan.txt"
+PON = "countries/Pontus.txt"
+ASY = "countries/Assyria.txt"
+OTT = "countries/Ottoman.txt"
+
+
 
 ### China ###
 FNG = "countries/Fengtian.txt"
