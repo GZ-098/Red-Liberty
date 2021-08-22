@@ -1007,6 +1007,21 @@ KRD = {
 	color_ui = rgb { 214 190 129 }
 }
 
+PON = {
+	color = rgb { 18 140 128 }
+	color_ui = rgb { 18 140 128 }
+}
+
+ASY = {
+	color = rgb { 255 148 148 }
+	color_ui = rgb { 255 148 148 }
+}
+
+OTT = {
+	color = rgb { 0 140 0 }
+	color_ui = rgb { 0 140 0 }
+}
+
 MXR = {
 	color = rgb { 107 78 106 }
 }
