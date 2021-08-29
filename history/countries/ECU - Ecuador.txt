@@ -12,88 +12,34 @@ set_country_flag = monroe_doctrine
 set_war_support = 0.1
 set_convoys = 5
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "ECU_1939"
-	set_technology = {
-		gw_artillery = 1
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
-
 set_politics = {
-	ruling_party = revolutionary_socialism
+	ruling_party = social_democracy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 18
+	social_democracy = 27
+	progressive_liberalism = 22
+	market_libertarianism = 0
+	national_conservatism = 17
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 11
+	martial_despotism = 5
+	ultranational_statism = 0
 }
 
 create_country_leader = {
 	name = "Federico Páez"
-	desc = "POLITICS_FEDERICO_PAEZ_DESC"
-	picture = "GFX_Portrait_ecuador_federico_paez"
+	desc = ""
+	picture = ""
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democracy_subtype
 	traits = {
 		#
-	}
-}
-
-1939.1.1 = {
-	create_country_leader = {
-		name = "Aurelio Mosquera"
-		desc = "POLITICS_AURELIO_MOSQUERA_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
-		expire = "1965.1.1"
-		ideology = liberalism
-		traits = {
-			#
-		}
 	}
 }

@@ -1,6 +1,6 @@
 capital = 282
 
-oob = "JAP_1936"
+oob = "JAP"
 
 set_stability = 0.5 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8

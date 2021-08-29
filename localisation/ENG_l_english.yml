@@ -1,7 +1,15 @@
 ﻿l_english:
  ENG:0 "United Kingdom"
- ENG_DEF:0 "United Kingdom"
+ ENG_DEF:0 "the United Kingdom"
  ENG_ADJ:0 "British"
+ 
+ CEN:0 "Union of Britian"
+ CEN_DEF:0 "the Union of Britian"
+ CEN_ADJ:0 "British"
+ 
+ FEN:0 "British Empire"
+ FEN_DEF:0 "the British Empire"
+ FEN_ADJ:0 "British"
  
  ENG_insurrectionary_anarchism_party:0 "--"
  ENG_revolutionary_autocracy_party:0 "CPGB"

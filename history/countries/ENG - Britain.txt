@@ -176,6 +176,10 @@ if = {
 		target = NZL
 		autonomous_state = autonomy_dominion
 	}
+	set_autonomy = {
+		target = IRE
+		autonomous_state = autonomy_dominion
+	}
 	else = {
 		puppet = MAL
 		puppet = RAJ
@@ -218,11 +222,10 @@ add_to_faction = CAN
 add_to_faction = AST
 add_to_faction = NZL
 add_to_faction = SAF 
-#add_to_faction = ITA
-
-give_military_access = RAJ
-add_to_faction = RAJ		# Must be after puppet
+add_to_faction = RAJ
 add_to_faction = MAL
+
+remove_from_faction = IRE
 
 give_guarantee = BEL
 

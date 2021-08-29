@@ -10,9 +10,9 @@ on_actions = {
 				USA_update_presidential_election_race_in_state = yes
 			}
 			USA = {
-				set_variable = { var = senators_total value = 96 }
-				set_variable = { var = representatives_total value = 435 }
-				USA_congress_get_quorum = yes
+				set_variable = { senators_total = 96 }
+				set_variable = { representatives_total = 483 }
+				USA_congress_quorum = yes
 
 				# deprecated, variables are now set per state
 				#set_variable = { var = senators_communist value = 2 }
@@ -20,12 +20,20 @@ on_actions = {
 				#set_variable = { var = senators_republican value = 30 }
 				#set_variable = { var = senators_democrat value = 39 }
 				#set_variable = { var = senators_fascist value = 3 }
-
-				set_variable = { var = representatives_communist value = 9 }
-				set_variable = { var = representatives_socialist value = 170 }
-				set_variable = { var = representatives_republican value = 83 }
-				set_variable = { var = representatives_democrat value = 159 }
-				set_variable = { var = representatives_fascist value = 14 }
+				
+				# adds up to 435
+				#set_variable = { var = representatives_communist value = 9 }
+				#set_variable = { var = representatives_socialist value = 170 }
+				#set_variable = { var = representatives_republican value = 83 }
+				#set_variable = { var = representatives_democrat value = 159 }
+				#set_variable = { var = representatives_fascist value = 14 }
+				
+				# adds up to 483
+				set_variable = { var = representatives_communist value = 11 }
+				set_variable = { var = representatives_socialist value = 190 }
+				set_variable = { var = representatives_republican value = 85 }
+				set_variable = { var = representatives_democrat value = 179 }
+				set_variable = { var = representatives_fascist value = 18 }
 				
 				USA_calc_congress_control = yes
 				
@@ -38,9 +46,9 @@ on_actions = {
 				}
 			}
 			
-			USA = {
-				USA_calc_poverty_goal = yes
-			}
+			#USA = {
+			#	USA_calc_poverty_goal = yes
+			#}
 			
 			USA = {
 				### INTRO EVENT ###
@@ -132,11 +140,6 @@ on_actions = {
 					modifier = USA_dust_bowl_modifier
 				}
 			}
-			870 = {
-				add_dynamic_modifier = {
-					modifier = USA_dust_bowl_modifier
-				}
-			}
 		}
 	}
 	
@@ -167,14 +170,14 @@ on_actions = {
 		}
 	}
 	
-	on_monthly_USA = { # economy stuff
-		effect = {
-			add_to_variable = { USA_unemployment = USA_unemployment_change }
-			add_to_variable = { USA_poverty = USA_poverty_change }
-			add_to_variable = { USA_inflation = USA_inflation_change }
-			USA_calc_poverty_goal = yes
-		}
-	}
+	#on_monthly_USA = { # economy stuff
+	#	effect = {
+	#		add_to_variable = { USA_unemployment = USA_unemployment_change }
+	#		add_to_variable = { USA_poverty = USA_poverty_change }
+	#		add_to_variable = { USA_inflation = USA_inflation_change }
+	#		USA_calc_poverty_goal = yes
+	#	}
+	#}
 	
 	on_monthly_USA { # update
 		effect = {

@@ -416,7 +416,8 @@ country_event = { # your move mr law man
 	fire_only_once = yes
 
 	option = {
-		name = "Guilty on all charges."
+		name = "'Guilty on all charges.'"
+		add_manpower = -1
 	}
 }
 
@@ -431,6 +432,9 @@ country_event = { # WE'LL ALL GO DOWN TO DIXIE, AWAY, AWAY
 
 	option = {
 		name = "So what do we do with the pedestal?"
+		362 = {
+			subtract_from_variable = { socialist_popularity = 0.05 }
+		}
 	}
 }
 

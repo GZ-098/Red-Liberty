@@ -231,6 +231,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_USA_states_gui_NV_socialist_democrat_split"
+		texturefile = "gfx/interface/USA/states/USA_states_NV_socialist_democrat_split.tga"
+	}
+	
+	spriteType = {
 		name = "GFX_USA_states_gui_NV_republican_democrat_split"
 		texturefile = "gfx/interface/USA/states/USA_states_NV_republican_democrat_split.tga"
 	}

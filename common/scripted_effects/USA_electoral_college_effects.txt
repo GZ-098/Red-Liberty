@@ -71,7 +71,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 3 } # democrat
 		set_variable = { senator_2 = 4 } # afp
 		
-		set_variable = { electoral_votes = 11 }
+		set_variable = { electoral_votes = 12 } # was 11
 	}
 	
 	377 = { # Arizona,  fairly conservative
@@ -83,7 +83,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 3 } # democrat
 		set_variable = { senator_2 = 3 } # democrat
 		
-		set_variable = { electoral_votes = 3 }
+		set_variable = { electoral_votes = 5 } # was 3
 	}
 	
 	372 = { # Arkansas
@@ -106,7 +106,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 2 } # republican
 		set_variable = { senator_2 = 1 } # socialist
 		
-		set_variable = { electoral_votes = 22 }
+		set_variable = { electoral_votes = 23 } # was 22
 	}
 	
 	382 = { # Colorado, not a hot bed of radicalism
@@ -118,7 +118,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 3 }
 		
-		set_variable = { electoral_votes = 6 }
+		set_variable = { electoral_votes = 7 } # was 6
 	}
 	
 	830 = { # Connecticut, republican stronghold
@@ -130,7 +130,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 2 } # socialist
 		set_variable = { senator_2 = 3 } # democrat
 		
-		set_variable = { electoral_votes = 8 }
+		set_variable = { electoral_votes = 9 } # was 8
 	}
 	
 	833 = { # Delaware, slightly republican
@@ -142,7 +142,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 3 }
 		
-		set_variable = { electoral_votes = 3 }
+		set_variable = { electoral_votes = 4 } # was 3
 	}
 	
 	366 = { # Florida, a bit more liberal, but still heavily conservative
@@ -154,7 +154,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 3 }
 		
-		set_variable = { electoral_votes = 7 }
+		set_variable = { electoral_votes = 8 } # was 7
 	}
 	
 	365 = { # Georgia, like Alabama, very pro-segregation
@@ -165,7 +165,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 3 }
 		
-		set_variable = { electoral_votes = 12 }
+		set_variable = { electoral_votes = 13 } # was 12
 	}
 	
 	387 = { # Idaho, potato state
@@ -178,7 +178,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 3 }
 		
-		set_variable = { electoral_votes = 4 }
+		set_variable = { electoral_votes = 5 } # was 4
 	}
 	
 	395 = { # Illinois, core socialist state
@@ -189,7 +189,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 1 }
 		
-		set_variable = { electoral_votes = 29 }
+		set_variable = { electoral_votes = 30 } # was 29
 	}
 	
 	396 = { # Indiana, solid republican state
@@ -213,7 +213,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 1 }
 		
-		set_variable = { electoral_votes = 11 }
+		set_variable = { electoral_votes = 12 } # was 11
 	}
 	
 	383 = { # Kansas, same as Iowa, more republican leaning
@@ -226,7 +226,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 2 }
 		
-		set_variable = { electoral_votes = 9 }
+		set_variable = { electoral_votes = 10 } # was 9
 	}
 	
 	369 = { # Kentucky
@@ -238,7 +238,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 3 }
 		
-		set_variable = { electoral_votes = 11 }
+		set_variable = { electoral_votes = 12 } # was 11
 	}
 	
 	371 = { # Louisiana, pro segregation, very conservative, afp stronghold
@@ -261,7 +261,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 3 }
 		
-		set_variable = { electoral_votes = 5 }
+		set_variable = { electoral_votes = 6 } # was 5
 	}
 	
 	361 = { # Maryland, good establishment place
@@ -273,7 +273,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 2 }
 		
-		set_variable = { electoral_votes = 8 }
+		set_variable = { electoral_votes = 9 } # was 8
 	}
 	
 	357 = { # Massachusetts, home of many famous liberals, though old money is still holding strong
@@ -285,7 +285,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 3 }
 		
-		set_variable = { electoral_votes = 17 }
+		set_variable = { electoral_votes = 18 } # was 17
 	}
 	
 	393 = { # Michigan, strong union and anti-segregationist sentiment in Detroit
@@ -296,7 +296,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 1 }
 		
-		set_variable = { electoral_votes = 19 }
+		set_variable = { electoral_votes = 20 } # was 19
 	}
 	
 	391 = { # Minnesota, like the Midwest but more liberal, huge farmer-labor influence
@@ -308,7 +308,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 1 }
 		
-		set_variable = { electoral_votes = 11 }
+		set_variable = { electoral_votes = 12 } # was 11
 	}
 	
 	370 = { # Mississippi, pro-segregation
@@ -320,7 +320,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 4 }
 		
-		set_variable = { electoral_votes = 9 }
+		set_variable = { electoral_votes = 10 } # was 9
 	}
 	
 	373 = { # Missouri, midwest, decently conservative
@@ -332,7 +332,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 3 }
 		
-		set_variable = { electoral_votes = 15 }
+		set_variable = { electoral_votes = 16 } # was 15
 	}
 	
 	388 = { # Montana, heavily unionized
@@ -343,7 +343,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 1 }
 		
-		set_variable = { electoral_votes = 4 }
+		set_variable = { electoral_votes = 5 } # was 4
 	}
 	
 	384 = { # Nebraska, basically Kansas
@@ -356,16 +356,16 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 2 }
 		
-		set_variable = { electoral_votes = 7 }
+		set_variable = { electoral_votes = 8 } # was 7
 	}
 	
-	379 = { # Nevada, somewhat conservative
+	379 = { # Nevada, heavily influenced by neighbors
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.45 }
+		set_variable = { socialist_popularity = 0.45 }
 		set_variable = { democrat_popularity = 0.55 }
 		
-		set_variable = { senator_1 = 2 }
-		set_variable = { senator_2 = 3 }
+		set_variable = { senator_1 = 3 }
+		set_variable = { senator_2 = 1 }
 		
 		set_variable = { electoral_votes = 3 }
 	}
@@ -379,7 +379,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 3 }
 		
-		set_variable = { electoral_votes = 4 }
+		set_variable = { electoral_votes = 5 } # was 4
 	}
 	
 	359 = { # New Jersey
@@ -390,7 +390,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 2 }
 		
-		set_variable = { electoral_votes = 4 }
+		set_variable = { electoral_votes = 17 } # was 4, shouldve been 16
 	}
 	
 	376 = { # New Mexico, swing state
@@ -402,7 +402,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 3 }
 		
-		set_variable = { electoral_votes = 3 }
+		set_variable = { electoral_votes = 4 } # was 3
 	}
 	
 	358 = { # New York, very liberal
@@ -415,7 +415,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 3 }
 		
-		set_variable = { electoral_votes = 47 }
+		set_variable = { electoral_votes = 52 } # was 47
 	}
 	
 	363 = { # North Carolina, conservative but not super conservative
@@ -427,7 +427,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 3 }
 		
-		set_variable = { electoral_votes = 13 }
+		set_variable = { electoral_votes = 14 } # was 13
 	}
 	
 	389 = { # North Dakota, heartland, pro-republican, significant progressive presence
@@ -438,7 +438,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 1 }
 		
-		set_variable = { electoral_votes = 4 }
+		set_variable = { electoral_votes = 5 } # was 4
 	}
 	
 	261 = { # Ohio, swing state
@@ -476,7 +476,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 1 }
 		
-		set_variable = { electoral_votes = 5 }
+		set_variable = { electoral_votes = 6 } # was 5
 	}
 	
 	360 = { # Pennsylvania, swing state 
@@ -488,7 +488,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 1 }
 		
-		set_variable = { electoral_votes = 36 }
+		set_variable = { electoral_votes = 37 } # was 36
 	}
 	
 	831 = { # Rhode Island
@@ -501,7 +501,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 3 }
 		
-		set_variable = { electoral_votes = 4 }
+		set_variable = { electoral_votes = 5 } # was 4
 	}
 	
 	364 = { # South Carolina
@@ -514,7 +514,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 3 }
 		
-		set_variable = { electoral_votes = 8 }
+		set_variable = { electoral_votes = 9 } # was 8
 	}
 	
 	390 = { # South Dakota, North Dakota part 2
@@ -525,7 +525,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 2 }
 		
-		set_variable = { electoral_votes = 4 }
+		set_variable = { electoral_votes = 5 } # was 4
 	}
 	
 	368 = { # Tennessee
@@ -537,7 +537,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 4 }
 		
-		set_variable = { electoral_votes = 11 }
+		set_variable = { electoral_votes = 12 } # was 11
 	}
 	
 	375 = { # Texas, Southern but not too Southern
@@ -560,7 +560,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 3 }
 		
-		set_variable = { electoral_votes = 4 }
+		set_variable = { electoral_votes = 5 } # was 4
 	}
 	
 	829 = { # Vermont
@@ -572,7 +572,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 2 }
 		
-		set_variable = { electoral_votes = 3 }
+		set_variable = { electoral_votes = 4 } # was 3
 	}
 	
 	362 = { # Virginia
@@ -584,7 +584,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 3 }
 		set_variable = { senator_2 = 3 }
 		
-		set_variable = { electoral_votes = 11 }
+		set_variable = { electoral_votes = 12 } # was 11
 	}
 	
 	386 = { # Washington
@@ -608,7 +608,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 3 }
 		
-		set_variable = { electoral_votes = 8 }
+		set_variable = { electoral_votes = 9 } # was 8
 	}
 	
 	394 = { # Wisconsin, cheese and socialism
@@ -620,7 +620,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 1 }
 		
-		set_variable = { electoral_votes = 12 }
+		set_variable = { electoral_votes = 13 } # was 12
 	}
 	
 	381 = { # Wyoming
@@ -632,7 +632,7 @@ initialize_US_elections_system = {
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 2 }
 		
-		set_variable = { electoral_votes = 3 }
+		set_variable = { electoral_votes = 4 } # was 3
 	}
 	
 	USA_calculate_senators = yes
@@ -763,6 +763,37 @@ US_hold_presidential_election = {
 	}
 
 	log = "US Presidential Election: SPA: [?socialist_electoral_votes] || DP: [?democrat_electoral_votes] || RP: [?republican_electoral_votes] || AFP: [?afp_electoral_votes]"
+	
+	log = "[This.GetName] : actual_socialist_votes - [?ROOT.actual_socialist_votes]"
+	log = "[This.GetName] : actual_democrat_votes - [?ROOT.actual_democrat_votes]"
+	log = "[This.GetName] : actual_republican_votes - [?ROOT.actual_republican_votes]"
+	
+	divide_variable = { actual_socialist_votes = 1000 }
+	divide_variable = { actual_democrat_votes = 1000 }
+	divide_variable = { actual_republican_votes = 1000 }
+	
+	set_temp_variable = { total_votes = actual_socialist_votes }
+	add_to_temp_variable = { total_votes = actual_democrat_votes }
+	add_to_temp_variable = { total_votes = actual_republican_votes }
+	
+	log = "US Presidential Election: total_votes - [?total_votes]"
+	
+	#multiply_temp_variable = { total_votes = 4 }
+	#multiply_variable = { actual_socialist_votes = 2 }
+	#multiply_variable = { actual_democrat_votes = 2 }
+	
+	#add_to_variable = { actual_socialist_votes = total_votes }
+	#add_to_variable = { actual_democrat_votes = total_votes }
+	#add_to_variable = { actual_republican_votes = total_votes }
+	
+	set_variable = { socialist_random_votes = random }
+	multiply_variable = { socialist_random_votes = 1000 }
+	
+	set_variable = { democrat_random_votes = random }
+	multiply_variable = { democrat_random_votes = 1000 }
+	
+	set_variable = { republican_random_votes = random }
+	multiply_variable = { republican_random_votes = 1000 }
 }
 
 USA_clamp_state_popularities = {
@@ -892,7 +923,7 @@ USA_update_presidential_election_race_in_state = {
 	add_to_temp_variable = { democrat_temp_pop = democrat_popularity_special }
 	add_to_temp_variable = { afp_temp_pop = afp_popularity_special }
 	
-	add_to_temp_variable = { total_party_pop = socialist_popularity }
+	set_temp_variable = { total_party_pop = socialist_popularity }
 	add_to_temp_variable = { total_party_pop = republican_popularity }
 	add_to_temp_variable = { total_party_pop = democrat_popularity }
 	add_to_temp_variable = { total_party_pop = afp_popularity }
@@ -1046,6 +1077,8 @@ USA_hold_presidential_election_in_state = {
 		log = "[This.GetName] : Voted for afp with [?electoral_votes] electoral votes"
 		set_state_flag = voted_afp
 	}
+	
+	USA_calculate_popular_vote = yes
 }
 
 clear_election_results = {
@@ -1089,5 +1122,66 @@ USA_clear_presidential_election_values = {
 		USA_clear_senate_predictions = yes
 		clr_state_flag = voted_socialist
 		clr_state_flag = voted_democrat
+		clr_state_flag = voted_republican
+		clr_state_flag = voted_afp
 	}
+}
+
+USA_calculate_popular_vote = {
+	set_temp_variable = { total_election_pop = socialist_election_pop }
+	add_to_temp_variable = { total_election_pop = democrat_election_pop }
+	add_to_temp_variable = { total_election_pop = republican_election_pop }
+	add_to_temp_variable = { total_election_pop = afp_election_pop }
+	
+	set_temp_variable = { actual_votes = state_population_k }
+	
+	if = { # New York
+		limit = { check_variable = { THIS.id = 358.id } }
+		add_to_temp_variable = { actual_votes = 816.state_population_k }
+		add_to_temp_variable = { actual_votes = 870.state_population_k }
+		add_to_temp_variable = { actual_votes = 912.state_population_k }
+	}
+	if = { # California
+		limit = { check_variable = { THIS.id = 378.id } }
+		add_to_temp_variable = { actual_votes = 855.state_population_k }
+		add_to_temp_variable = { actual_votes = 861.state_population_k }
+		add_to_temp_variable = { actual_votes = 869.state_population_k }
+	}
+	if = { # Texas
+		limit = { check_variable = { THIS.id = 375.id } }
+		add_to_temp_variable = { actual_votes = 851.state_population_k }
+		add_to_temp_variable = { actual_votes = 852.state_population_k }
+	}
+	
+	log = "[This.GetName] : state_population_k - [?state_population_k]"
+	log = "[This.GetName] : actual_votes - [?actual_votes]"
+	
+	multiply_temp_variable = { actual_votes = 0.63 } # roughly voting age population
+	multiply_temp_variable = { actual_votes = 0.55 } # turnout
+	
+	log = "[This.GetName] : actual_votes after turnout - [?actual_votes]"
+		
+	set_temp_variable = { socialist_votes = actual_votes }
+	multiply_temp_variable = { socialist_votes = socialist_popularity }
+	divide_temp_variable = { socialist_votes = total_election_pop }
+		
+	set_variable = { ROOT.actual_socialist_votes = socialist_votes }
+	
+	log = "[GetDateText] [PREV.GetName] [This.GetName] socialist_election_pop is [?socialist_election_pop] actual_votes [?socialist_votes]"
+	
+	set_temp_variable = { democrat_votes = actual_votes }
+	multiply_temp_variable = { democrat_votes = democrat_popularity }
+	divide_temp_variable = { democrat_votes = total_election_pop }
+		
+	set_variable = { ROOT.actual_democrat_votes = democrat_votes }
+	
+	log = "[GetDateText] [PREV.GetName] [This.GetName] democrat_election_pop is [?democrat_election_pop] actual_votes [?democrat_votes]"
+	
+	set_temp_variable = { republican_votes = actual_votes }
+	multiply_temp_variable = { republican_votes = republican_popularity }
+	divide_temp_variable = { republican_votes = total_election_pop }
+		
+	set_variable = { ROOT.actual_republican_votes = republican_votes }
+	
+	log = "[GetDateText] [PREV.GetName] [This.GetName] republican_election_pop is [?republican_election_pop] actual_votes [?republican_votes]"
 }

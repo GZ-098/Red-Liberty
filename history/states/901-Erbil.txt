@@ -3,11 +3,11 @@ state={
 	name="STATE_901"
 	
 	history={
-		owner = KRD
+		owner = IRQ
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = KRD
+		add_core_of = IRQ
 	}
 	
 	provinces={

@@ -1,20 +1,22 @@
+
 state={
 	id=870
 	name="STATE_870"
-	
+
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 4
+			infrastructure = 5
+			industrial_complex = 2
 		}
 		add_core_of = USA
 
 	}
-	
+
 	provinces={
-		1738 1809 7780 11772 12570 12642 
+		734 3702 3733 3747 6707 6717 9664 9708 11650 11654 11680 13157 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category=city
 }

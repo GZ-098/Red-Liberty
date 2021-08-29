@@ -1,6 +1,6 @@
 ﻿capital = 64
 
-oob = "GER_1936"
+oob = "GER"
 
 set_fuel_ratio = 0.8 
 

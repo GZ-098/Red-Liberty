@@ -1,0 +1,30 @@
+﻿l_english:
+ IRE:0 "Irish Free State"
+ IRE_DEF:0 "the Irish Free State"
+ IRE_ADJ:0 "Irish"
+ 
+ IRE_insurrectionary_anarchism_party:0 "--"
+ IRE_revolutionary_autocracy_party:0 "--"
+ IRE_proletarian_dictatorship_party:0 "--"
+ IRE_libertarian_socialism_party:0 ""
+ IRE_libertarian_socialism_party_long:0 ""
+ IRE_social_democracy_party:0 "LP"
+ IRE_social_democracy_party_long:0 "Labour Party (Páirtí an Lucht Oibre)"
+ IRE_progressive_liberalism_party:0 "--"
+ IRE_market_libertarianism_party:0 "FG"
+ IRE_market_libertarianism_party_long:0 "Fine Gael"
+ IRE_national_conservatism_party:0 "FF"
+ IRE_national_conservatism_party_long:0 "Fianna Fáil"
+ IRE_reactionary_theocracy_party:0 "--"
+ IRE_authoritarian_republicanism_party:0 "--"
+ IRE_martial_despotism_party:0 "--"
+ IRE_ultranational_statism_party:0 "--"
+ 
+ IRE_anglo_irish_trade_war:0 "Anglo-Irish Trade War"
+ IRE_anglo_irish_trade_war_1:0 "Anglo-Irish Trade War"
+ 
+ IRE_the_ira:0 "The Irish Republican Army"
+ 
+ IRE_parliament:0 "Dáil Éireann"
+ IRE_parliament_desc:0 "The Dáil Éireann serves as the directly elected lower house of the Oireachtas of the Irish State."
+ 

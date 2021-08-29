@@ -13,57 +13,6 @@ set_technology = {
 }
 set_country_flag = monroe_doctrine
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = construction_effort_2
-	complete_national_focus = production_effort_2
-	complete_national_focus = infrastructure_effort
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "BOL_1939"
-	set_technology = {
-		interwar_artillery = 1
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_refining = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-}
-
 set_politics = {
 	ruling_party = revolutionary_socialism
 	last_election = "1932.11.8"
@@ -71,11 +20,18 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 20
-	revolutionary_socialism = 20
-	empowered_nationalism = 20
-	democratic_socialism = 20
-	autocratic_despotism = 20
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 8
+	social_democracy = 0
+	progressive_liberalism = 32
+	market_libertarianism = 0
+	national_conservatism = 17
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 31
+	martial_despotism = 12
+	ultranational_statism = 0
 }
 
 create_country_leader = {
@@ -83,7 +39,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
 	picture = "Portrait_Bolivia_Jose_Luis_Tejada_Sorzano.dds"
 	expire = "1965.1.1"
-	ideology = despotism # liberalism, personally, but puppet for military
+	ideology = progressive_liberalism_subtype
 	traits = {
 		#
 	}

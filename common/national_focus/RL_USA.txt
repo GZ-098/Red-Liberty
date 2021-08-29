@@ -41,6 +41,40 @@ focus_tree = {
 }
 
 focus_tree = {
+	id = USA_flame_burnt_out_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+	continuous_focus_position = {
+		x = 25
+		y = -1250
+	}
+	default = no
+	shared_focus = USA_the_flame_burnt_out
+}
+
+focus_tree = {
+	id = USA_greatest_disaster_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+	continuous_focus_position = {
+		x = 25
+		y = -1250
+	}
+	default = no
+	shared_focus = USA_the_greatest_disaster
+}
+
+focus_tree = {
 	id = USA_roosevelt_tree
 	country = {
 		factor = 0

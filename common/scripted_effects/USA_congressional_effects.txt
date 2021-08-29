@@ -1,4 +1,4 @@
-USA_congress_get_quorum = {
+USA_congress_quorum = {
 	set_variable = { quorum_low = senators_total }
 	multiply_variable = { quorum_low = 0.4 }
 	
@@ -91,14 +91,14 @@ USA_social_security_act_setup = { # social security act
 	set_country_flag = USA_socialist_discussing
 	#set_country_flag = USA_fascist_discussing
 	
-	set_country_flag = bill_enable_mission # Gives the President penalties if they drag their feet for too long doing this
-	set_variable = { USA_bill_mission_deadline = 45 }
+	#set_country_flag = bill_enable_mission # Gives the President penalties if they drag their feet for too long doing this
+	#set_variable = { USA_bill_mission_deadline = 45 }
 	
 	set_variable = { USA_republican_bill_support = 0.15 } # free market reeeeeee
 	set_variable = { USA_democrat_bill_support = 0.35 } # liberals are supportive, conservatives not so much
 	set_variable = { USA_communist_bill_support = 1 } # yes, more socialism
 	set_variable = { USA_socialist_bill_support = 1 } # i mean, its our bill so
-	set_variable = { USA_fascist_bill_support = 0.1 } # longists are supportive
+	set_variable = { USA_fascist_bill_support = 0.1 } # longists are supportive, others not so much
 	
 	#set_country_flag = USA_special_decisions_enabled # hides generic decisions in favor of special ones
 	

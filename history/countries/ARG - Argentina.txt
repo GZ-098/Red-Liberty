@@ -51,206 +51,38 @@ if = {
 
 set_country_flag = monroe_doctrine
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "ARG_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "ARG_1939_naval_mtg"
-		else = {
-			set_naval_oob = "ARG_1939_naval_legacy"
-		}
-	}
-
-	set_technology = {
-		early_bomber = 1
-		naval_bomber1 = 1
-		interwar_artillery = 1
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			basic_destroyer = 1
-			basic_light_cruiser = 1
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_light_battery = 1
-			basic_medium_battery = 1
-		}
-	}
-}
-
 set_convoys = 120
 set_politics = {
-	ruling_party = revolutionary_socialism
-	last_election = "1932.11.8"
+	ruling_party = authoritarian_republicanism
+	last_election = "1931.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	conservatism = 5
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 85 
-	conservatism = 0 
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 0
+	social_democracy = 10
+	progressive_liberalism = 30
+	market_libertarianism = 0
+	national_conservatism = 15
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 35
+	martial_despotism = 10
+	ultranational_statism = 0
 }
 
 create_country_leader = {
-	name = "Agustín Pedro Justo"
-	desc = "POLITICS_AGUSTIN_PEDRO_JUSTO_DESC"
-	picture = "Portrait_Argentina_Agustin_Pedro_Justo.dds"
+	name = "Agustín P. Justo Rolón"
+	desc = ""
+	picture = ""
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarian_republicanism_subtype
 	traits = {
 		#
 	}
 }
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1937.9.5"
-		election_frequency = 108
-		elections_allowed = yes
-	}
-
-	set_popularities = {
-		conservatism = 5
-		fascism = 5
-		communism = 12
-		neutrality = 78
-	}
-
-	create_country_leader = {
-		name = "Roberto María Ortiz"
-		desc = "POLITICS_ROBERTO_MARIA_ORTIZ_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
-		expire = "1965.1.1"
-		ideology = despotism
-		traits = {
-			#
-		}
-	}
-}
-
-
-create_country_leader = {
-	name = "Nimo de Anquín"
-	desc = "POLITICS_NIMO_DE_ANQUIN_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Marcelo T. de Alvear"
-	desc = "POLITICS_MARCELO_ALVEAR_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Fanny Jabcovsky"
-	desc = "POLITICS_FANNY_JABCOVSKY_DESC"
-	picture = "Portrait_Argentina_Fanny_Jabcovsky.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	female = yes
-	traits = {
-		#
-	}
-}
-
-create_field_marshal = {
-	name = "Arturo Rawson"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
-	traits = { defensive_doctrine }
-	skill = 3
-    attack_skill = 4
-    defense_skill = 3
-    planning_skill = 1
-    logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Juan Pistarini"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
-	traits = { urban_assault_specialist fortress_buster }
-	skill = 3
-    attack_skill = 1
-    defense_skill = 2
-    planning_skill = 4
-    logistics_skill = 3
-}
-
-create_navy_leader = {
-	name = "Alberto Teisaire"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
-	traits = { chief_engineer }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 3
-}
-
 
 ### VARIANTS ###
 # 1936 Start #

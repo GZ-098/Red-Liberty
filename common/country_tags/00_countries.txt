@@ -238,6 +238,11 @@ BUK = "countries/Bukovina.txt"
 CRI = "countries/Crimea.txt"
 BAL = "countries/United Baltic.txt"
 
+BRT = "countries/British Republic.txt"
+FEN = "countries/Fascist England.txt"
+CEN = "countries/Communist England.txt"
+KER = "countries/Kernow.txt"
+
 ### Africa ###
 BEA = "countries/British East Africa.txt"
 BWA = "countries/British West Africa.txt"
@@ -262,7 +267,8 @@ PON = "countries/Pontus.txt"
 ASY = "countries/Assyria.txt"
 OTT = "countries/Ottoman.txt"
 
-
+### India ###
+IND = "countries/India.txt"
 
 ### China ###
 FNG = "countries/Fengtian.txt"

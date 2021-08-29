@@ -26,6 +26,10 @@
  USA_ultranational_statism_party:0 "AFP"
  USA_ultranational_statism_party_long:0 "America First Party - Radical"
  
+ USA_thomas_tree:0 "The Thomas Administration"
+ USA_flame_burnt_out_tree:0 "The Flame Burnt Out"
+ USA_greatest_disaster_tree:0 "The Greatest Disaster"
+ 
  POLITICS_NORMAN_THOMAS_DESC:0 "A Princeton graduate and Presbyterian minister, Norman Thomas made his first impression in politics with his pacifist, anti-war activism during the Great War, a position that drew him to the Socialist Party of America, who had delivered on their promises to keep America out of it. He gained popularity as an SPA journalist and was elected governor of New York in 1924. When Eugene V. Debs died in 1926, Thomas became the new head of the party as its leading non-immigrant member. He lost his first bid for president to Herbert Hoover in 1928, but after the Stock Market crash in 1929, Hoover’s popularity plummeted, and in 1932 President Norman Thomas and the SPA won the Presidency in a landslide. For all of his term, Norman Thomas has set about fixing the Great Depression with large amounts of government spending, public works projects, bureaucratic expansion, and worker-led recovery efforts. His recovery policies have been hindered and watered down by political resistance from the center and right wing, but where they have been enacted, have been both successful and popular."
  
  USA_red_liberty:0 "Red Liberty"
@@ -210,6 +214,7 @@
  
  USA_second_thomas_admin_tt:0 "§YNow we can truly begin.§!"
  court_packed_effect_tt:0 "§RThe Supreme court will no longer be an obstacle. We will gain new options for much more powerful legislation.§!\n"
+ USA_are_you_sure:0 "§RAre you sure this is worth it?§!\n"
  
  USA_secured_funding:0 "Secured Funding"
  

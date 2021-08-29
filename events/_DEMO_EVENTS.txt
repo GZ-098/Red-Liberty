@@ -1,6 +1,8 @@
 add_namespace = demo_mex
 add_namespace = demo_ahe
 add_namespace = demo_rus
+add_namespace = demo_eng
+add_namespace = demo_ire
 add_namespace = demo_ww2
 
 country_event = { # election event
@@ -241,6 +243,121 @@ country_event = { #
 	}
 }
 
+country_event = { # king suspends parliament
+	id = demo_eng.1
+	title = ""
+	desc = demo_eng.1.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+		ENG = {
+			set_politics = {
+				ruling_party = martial_despotism
+				elections_allowed = no
+				last_election = "1936.10.8"
+				election_frequency = 48
+			}
+		}
+	}
+}
+
+country_event = { # civil war
+	id = demo_eng.2
+	title = ""
+	desc = demo_ww2.2.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+		CEN = {
+			set_state_owner = 128
+			set_state_owner = 130
+			set_state_owner = 132
+			
+			set_province_controller = 377 # cardiff
+			
+			set_province_controller = 6318 # manchester
+			set_province_controller = 9379 # leeds
+			set_province_controller = 9315 # sheffield
+			
+			set_province_controller = 9297 # birmingham
+			set_province_controller = 7239
+			set_province_controller = 6270
+			
+			set_province_controller = 351 # newcastle
+		}
+		SCO = {
+			set_state_owner = 120
+			set_state_owner = 121
+			set_state_owner = 133
+			set_state_owner = 136
+			
+			set_province_controller = 3273
+			set_province_controller = 9392
+			
+			set_province_controller = 9161
+			set_province_controller = 11055
+			set_province_controller = 11306
+		}
+		ENG = {
+			dismantle_faction = yes
+		
+			clear_all_coalitions = yes
+			clear_all_opposition = yes
+		
+			end_puppet = CAN
+			end_puppet = SAF
+			end_puppet = IRE
+			end_puppet = AST
+			end_puppet = NZL
+			
+			end_puppet = RAJ
+			end_puppet = MAL
+			end_puppet = IRQ
+			end_puppet = OMA
+			end_puppet = EGY
+			end_puppet = SRW
+		}
+	}
+}
+
+country_event = { # adoption of 1937 constitution
+	id = demo_ire.1
+	title = ""
+	desc = demo_ire.1.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+	}
+}
+
+news_event = { # adoption of 1937 constitution - news
+	id = demo_ire.2
+	title = ""
+	desc = demo_ire.2.desc
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Send our most ardent congratulations!"
+	}
+}
+
 country_event = {
 	id = demo_ww2.1
 	title = ""
@@ -252,9 +369,9 @@ country_event = {
 
 	option = {
 		name = ""
-		FER = {
+		FRA = {
 			declare_war_on = {
-				target = PRI
+				target = GER
 				type = annex_everything
 			}
 		}

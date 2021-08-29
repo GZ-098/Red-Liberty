@@ -1,0 +1,11 @@
+IRE_parliament = {
+	icon = IRE_parliament
+	
+	allowed = {
+		tag = IRE
+	}
+	
+	visible_when_empty = yes
+
+	priority = 100
+}

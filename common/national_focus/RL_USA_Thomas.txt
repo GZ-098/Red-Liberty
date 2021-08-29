@@ -235,6 +235,7 @@ shared_focus = {
 	prerequisite = { focus = USA_unleash_the_fbi }
     completion_reward = {
         # add event about major kkk figures being arrested
+		add_stability = -0.025
     }
 	
 	ai_will_do = {
@@ -254,7 +255,7 @@ shared_focus = {
 	prerequisite = { focus = USA_unleash_the_fbi }
 	prerequisite = { focus = USA_expose_their_crimes }
     completion_reward = {
-        
+        add_stability = -0.075
     }
 	
 	ai_will_do = {
@@ -277,6 +278,7 @@ shared_focus = {
 			id = united_states_thomas.25
 			days = 1
 		}
+		add_stability = -0.05
     }
 	
 	ai_will_do = {
@@ -295,7 +297,7 @@ shared_focus = {
 	relative_position_id = USA_arrest_their_leaders
 	prerequisite = { focus = USA_arrest_their_leaders }
     completion_reward = {
-        
+        add_political_power = 25
     }
 	
 	ai_will_do = {
@@ -666,7 +668,6 @@ shared_focus = {
 	}
 }
 
-
 shared_focus = {
     id = USA_our_mandate
 	icon = GFX_USA_our_mandate
@@ -815,10 +816,16 @@ shared_focus = {
 	relative_position_id = USA_reorganization
 	prerequisite = { focus = USA_reorganization }
     completion_reward = {
-		custom_effect_tooltip = USA_bill_over_time_tt
-		unlock_decision_tooltip = start_USA_court_packing_act
-		unlock_decision_tooltip = start_USA_union_rep_act
-		unlock_decision_tooltip = start_USA_wealth_tax_act
+		if = {
+			limit = {
+				date < 1937.4.4
+			}
+			custom_effect_tooltip = USA_are_you_sure
+		}
+		#custom_effect_tooltip = USA_bill_over_time_tt
+		#unlock_decision_tooltip = start_USA_court_packing_act
+		#unlock_decision_tooltip = start_USA_union_rep_act
+		#unlock_decision_tooltip = start_USA_wealth_tax_act
     }
 	
 	ai_will_do = {

@@ -160,8 +160,73 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_buy_up_produce"
+		texturefile = "gfx/interface/goals/USA/USA_buy_up_produce.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_federal_relief_programs"
+		texturefile = "gfx/interface/goals/USA/USA_farmers_labor.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_of_industry"
 		texturefile = "gfx/interface/goals/USA/USA_of_industry.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_create_the_fprc"
+		texturefile = "gfx/interface/goals/USA/USA_fprc.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_bank_regulation"
+		texturefile = "gfx/interface/goals/USA/USA_those_damn_banks.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_regulate_stock_markets"
+		texturefile = "gfx/interface/goals/USA/USA_where_it_all_started.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_strengthen_labor_regs"
+		texturefile = "gfx/interface/goals/USA/USA_strengthen_labor_regulations.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_dealing_with_the_dustbowl"
+		texturefile = "gfx/interface/goals/USA/USA_dealing_with_the_dustbowl.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_ccc"
+		texturefile = "gfx/interface/goals/USA/USA_ccc.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_paying_for_it_all"
+		texturefile = "gfx/interface/goals/USA/USA_paying_for_it_all.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_federal_project_one"
+		texturefile = "gfx/interface/goals/USA/USA_fed_one.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_cut_the_military"
+		texturefile = "gfx/interface/goals/USA/USA_cut_the_military.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_of_poverty"
+		texturefile = "gfx/interface/goals/USA/USA_of_poverty.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_federal_aid_commission"
+		texturefile = "gfx/interface/goals/USA/USA_federal_aid_commission.png"
 	}
 	
 	SpriteType = {

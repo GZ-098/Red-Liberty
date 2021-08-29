@@ -66,7 +66,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 792
+		location = 4111
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
@@ -76,7 +76,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 2097
+		location = 3942
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0

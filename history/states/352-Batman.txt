@@ -4,7 +4,7 @@ state={
 	name="STATE_352"
 
 	history={
-		owner = ARM
+		owner = TUR
 		victory_points = {
 			6935 1 
 		}
@@ -13,8 +13,6 @@ state={
 
 		}
 		add_core_of = TUR
-		add_core_of = ARM
-
 	}
 
 	provinces={

@@ -4,8 +4,7 @@ state={
 	name="STATE_848"
 
 	history={
-		owner = GIL
-		add_core_of = GIL
+		owner = PER
 		buildings = {
 			infrastructure = 3
 

@@ -1,0 +1,52 @@
+shared_focus = {
+    id = USA_the_flame_burnt_out
+	icon = GFX_USA_the_flame_burnt_out
+	
+    x = 8
+	
+	cost = 2
+    completion_reward = {
+		
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_prepare_the_transition
+	icon = GFX_USA_prepare_the_transition
+	
+    x = 0
+	y = 1
+	
+	cost = 2
+	relative_position_id = USA_the_flame_burnt_out
+	prerequisite = { focus = USA_the_flame_burnt_out }
+    completion_reward = {
+		
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+### thomas assassination tree
+
+shared_focus = {
+    id = USA_the_greatest_disaster
+	icon = GFX_USA_the_greatest_disaster
+	
+    x = 8
+	
+	cost = 2
+    completion_reward = {
+		
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}

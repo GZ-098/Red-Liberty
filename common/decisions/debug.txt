@@ -22,6 +22,37 @@ debug_category = {
 			set_country_flag = debug_disabled
 		}
 	}
+	
+	debug_trigger_election = {
+	
+		icon = generic_political_discourse
+		
+		avaliable = {
+			
+		}
+		
+		visible = {
+			is_debug = yes
+		}
+		
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+		
+		complete_effect = {
+			USA_class_1_senate_prepare = yes
+			USA_recalculate_polls = yes
+			
+			USA_hold_senate_election = yes
+			
+			USA_prepare_presidential_election = yes
+			
+			US_hold_presidential_election = yes
+			set_country_flag = USA_presidential_conclusion
+		}
+	}
 
 	#debug_load_thomas_second_term = {
 	#
@@ -50,6 +81,30 @@ debug_category = {
 	#		clr_country_flag = USA_lister_tree_force_on
 	#	}
 	#}
+	
+	debug_load_thomas_lost_election_tree = {
+	
+		icon = generic_political_discourse
+		
+		avaliable = {
+			tag = USA
+		}
+		
+		visible = {
+			is_debug = yes
+			tag = USA
+		}
+		
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+		
+		complete_effect = {
+			load_focus_tree = USA_flame_burnt_out_tree
+		}
+	}
 	
 	debug_load_lister_first_term = {
 	

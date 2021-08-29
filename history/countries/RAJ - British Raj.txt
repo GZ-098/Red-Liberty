@@ -36,8 +36,6 @@ if = {
 
 set_convoys = 20
 
-set_cosmetic_tag = RAJ_UK # British Raj
-
 set_politics = {
 	ruling_party = martial_despotism
 	last_election = "1936.1.1"

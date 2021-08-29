@@ -2,7 +2,7 @@
 
 oob = "IRE_1936"
 
-set_research_slots = 3
+set_research_slots = 2
 
 set_technology = {
 	infantry_weapons = 1
@@ -13,79 +13,43 @@ set_technology = {
 set_convoys = 10
 
 set_politics = {
-	ruling_party = conservatism
-	last_election = "1932.11.8"
-	election_frequency = 48
+	ruling_party = national_conservatism
+	last_election = "1933.1.24"
+	election_frequency = 84
 	elections_allowed = yes
 }
 set_popularities = {
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 25
-	conservatism = 65
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 0
+	social_democracy = 10
+	progressive_liberalism = 6
+	market_libertarianism = 35
+	national_conservatism = 49
+	reactionary_theocracy = 0
+	authoritarian_republicanism = 0
+	martial_despotism = 0
+	ultranational_statism = 0
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = conservatism
-		last_election = "1938.6.17"
-		election_frequency = 48
-		elections_allowed = yes
-	}
+set_country_flag = social_democracy_coalition
+set_country_flag = conservative_coalition
+
+set_country_flag = market_libertarian_opposition
+
+add_ideas = {
+	IRE_anglo_irish_trade_war
+	IRE_the_ira
 }
+
 create_country_leader = {
 	name = "Éamon de Valera"
-	desc = "POLITICS_ÉAMON_DE_VALERA_DESC"
-	picture = "Portrait_Ireland_Eamon_de_Valera.dds"
+	desc = ""
+	picture = "Portrait_IRE_Eamon_Valera.png"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = national_conservatism_subtype
 	traits = {
 		#
 	}
-}
-
-create_country_leader = {
-	name = "Eoin O'Duffy"
-	desc = "POLITICS_EOIN_ODUFFY_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "James Larkin"
-	desc = "POLITICS_JAMES_LARKIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "William Norton"
-	desc = "POLITICS_JAMES_LARKIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "Michael Costello"
-	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
 }

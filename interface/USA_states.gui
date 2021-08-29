@@ -14,7 +14,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "USA_states_map_window"
 		#size = { width = 710 height = 450 }
-		size = { width = 1000 height = 470 }
+		size = { width = 1000 height = 550 }
 		position = { x=-1100 y=-450 }
 		show_position = { x=-400 y=-450 }
 		
@@ -386,9 +386,9 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "USA_states_gui_state_infobox"
-			position = { x = 700 y = 150 }
-			maxWidth = 200
-			format = center
+			position = { x = 680 y = 150 }
+			maxWidth = 250
+			format = left
 			text = "[get_state_info]"
 		}
 		

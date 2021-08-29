@@ -49,8 +49,8 @@ country_event = {
 		name = us_election.2.a
 		trigger = {
 			NOT = {
-				check_variable = { ROOT.socialist_electoral_votes > 267 }
-				check_variable = { ROOT.democrat_electoral_votes > 267 }
+				check_variable = { ROOT.socialist_electoral_votes > 290 }
+				check_variable = { ROOT.democrat_electoral_votes > 290 }
 			}
 		}
 		
@@ -74,7 +74,7 @@ country_event = {
 	option = { # socialist victory
 		name = us_election.2.b
 		trigger = {
-			check_variable = { ROOT.socialist_electoral_votes > 267 }
+			check_variable = { ROOT.socialist_electoral_votes > 290 }
 		}
 		
 		country_event = { # new congress gets sworn in
@@ -95,7 +95,7 @@ country_event = {
 	option = { # democrat victory
 		name = us_election.2.c
 		trigger = {
-			check_variable = { ROOT.democrat_electoral_votes > 267 }
+			check_variable = { ROOT.democrat_electoral_votes > 290 }
 		}
 		
 		country_event = { # new congress gets sworn in
@@ -109,6 +109,8 @@ country_event = {
 		country_event = {
 			id = us_election.8
 		}
+		
+		load_focus_tree = USA_flame_burnt_out_tree
 		
 		set_country_flag = USA_1936_election_democrat_victory
 	}
@@ -169,6 +171,9 @@ country_event = { # house of reps votes
 			id = us_election.8
 		}
 		set_country_flag = USA_lister_elected
+		
+		load_focus_tree = USA_flame_burnt_out_tree
+		
 		remove_ideas = {
 			USA_election_chaos
 		}
@@ -185,7 +190,7 @@ country_event = { # thomas inaug day
 	
 	option = { # 
 		name = us_election.5.a
-		load_focus_tree = USA_thomas_tree
+		#load_focus_tree = USA_thomas_tree
 	}
 }
 

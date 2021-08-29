@@ -58,8 +58,8 @@
  USA_govt_split_dem_rep:0 "Currently, Congress is split between the §CDemocratic Party§! and the §RRepublican Party§!."
  USA_govt_controlled_by_none:0 "Currently, no party is dominant."
  
- USA_bill_pass_req_tt:0 "§RWe will have to pass the bill to gain the following effect:§!"
- USA_bill_over_time_tt:0 "§RThe following decisions will become available over time:§!"
+ USA_bill_pass_req_tt:0 "§CWe will have to pass the bill to gain the following effect:§!"
+ USA_bill_over_time_tt:0 "§CThe following decisions will become available over time:§!"
  
  start_test_bill_debug:0 "The Debug Act"
  debug_bill_passed:0 "We have passed the Debug Act."

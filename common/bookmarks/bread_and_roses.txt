@@ -17,9 +17,9 @@ bookmarks = {
 				USA_the_great_depression_1
 			}
 			focuses = {
-				USA_the_second_thomas_admin
-				USA_itll_never_happen_here
-				USA_second_bill_of_rights
+				USA_of_agriculture
+				USA_of_industry
+				USA_of_politics
 			}
 		}
 		
