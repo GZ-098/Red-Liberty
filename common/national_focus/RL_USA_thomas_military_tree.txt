@@ -1018,7 +1018,7 @@ shared_focus = {
     completion_reward = {
         add_tech_bonus = {
 			bonus = 0.75
-			uses = 1
+			uses = 2
 			category = cat_fleet_in_being
 		}
     }
@@ -1161,7 +1161,11 @@ shared_focus = {
 	prerequisite = { focus = USA_pacific_presence }
 	prerequisite = { focus = USA_atlantic_awareness }
     completion_reward = {
-        
+        add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = shbb_tech
+		}
     }
 	
 	ai_will_do = {
@@ -1175,6 +1179,13 @@ shared_focus = {
 	
     x = 0
 	y = 1
+	
+	available = {
+		OR = {
+			has_tech = heavy_battleship
+			has_tech = ship_hull_super_heavy
+		}
+	}
 	
 	cost = 3
 	relative_position_id = USA_study_super_heavy_designs
@@ -1204,7 +1215,7 @@ shared_focus = {
     completion_reward = {
         add_tech_bonus = {
 			bonus = 0.75
-			uses = 1
+			uses = 2
 			category = cat_base_strike
 		}
     }
@@ -1247,7 +1258,30 @@ shared_focus = {
 		focus = USA_naval_air
 	}
     completion_reward = {
-        
+        362 = {
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		816 = {
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		855 = {
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
     }
 	
 	ai_will_do = {
@@ -1266,7 +1300,16 @@ shared_focus = {
 	relative_position_id = USA_expand_operations
 	prerequisite = { focus = USA_expand_operations }
     completion_reward = {
-        
+        add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = dd_tech
+		}
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = asw_tech
+		}
     }
 	
 	ai_will_do = {

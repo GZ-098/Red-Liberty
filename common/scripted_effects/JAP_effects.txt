@@ -1,0 +1,154 @@
+JAP_calc_house = { # this will recalculate the number of members of parliament based on party popularity, with a bias towards seiyukai and minseito
+	
+	#Sets variable to check for discrepencies
+	set_variable = {
+		JAP_old_mps_total = mps_total
+	}
+	
+	set_variable = {
+		kyosan_mps = party_popularity@revolutionary_autocacy
+	}
+	add_to_variable = {
+		kyosan_mps = party_popularity@proletarian_dictatorship
+	}
+	multiply_variable = {
+		kyosan_mps = 0.5
+	}
+	
+	set_variable = {
+		ronoto_mps = party_popularity@libertarian_socialism
+	}
+	add_to_variable = {
+		ronoto_mps = party_popularity@social_democracy
+	}
+	multiply_variable = {
+		ronoto_mps = 0.8
+	}
+	
+	set_variable = {
+		minseito_mps = party_popularity@progressive_liberalism
+	}
+	add_to_variable = {
+		minseito_mps = party_popularity@market_libertarianism
+	}
+	
+	set_variable = {
+		seiyukai_mps = party_popularity@national_conservatism
+	}
+	
+	set_variable = {
+		tohokai_mps = party_popularity@ultranational_statism
+	}
+	multiply_variable = {
+		tohokai_mps = 0.75
+	}
+	
+	#Gets seats
+	multiply_variable = {
+		kyosan_mps = mps_total
+	}
+	multiply_variable = {
+		ronoto_mps = mps_total
+	}
+	multiply_variable = {
+		minseito_mps = mps_total
+	}
+	multiply_variable = {
+		seiyukai_mps = mps_total
+	}
+	multiply_variable = {
+		tohokai_mps = mps_total
+	}
+	
+	#rounds
+	round_variable = kyosan_mps
+	round_variable = ronoto_mps
+	round_variable = minseito_mps
+	round_variable = seiyukai_mps
+	round_variable = tohokai_mps
+	
+	#Gets new total seat value
+	set_variable = {
+		mps_total = 0
+	}
+	add_to_variable = {
+		mps_total = kyosan_mps
+	}
+	add_to_variable = {
+		mps_total = ronoto_mps
+	}
+	add_to_variable = {
+		mps_total = minseito_mps
+	}
+	add_to_variable = {
+		mps_total = seiyukai_mps
+	}
+	add_to_variable = {
+		mps_total = tohokai_mps
+	}
+	
+	#gets discrepency
+	subtract_from_variable = {
+		JAP_old_mps_total = mps_total
+	}
+	
+	#deals with discrepency, if needed
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					JAP_old_mps_total = 0
+				}
+			}
+		}
+		add_to_variable = {
+			mps_total = JAP_old_mps_total
+		}
+		if = {
+			limit = {
+				has_government = proletarian_dictatorship
+			}
+			add_to_variable = {
+				kyosan_mps = JAP_old_mps_total
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_government = libertarian_socialism
+					has_government = social_democracy
+				}
+			}
+			add_to_variable = {
+				ronoto_mps = JAP_old_mps_total
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_government = progressive_liberalism
+					has_government = market_libertarianism
+				}
+			}
+			add_to_variable = {
+				minseito_mps = JAP_old_mps_total
+			}
+		}
+		else_if = {
+			limit = {
+				has_government = national_conservatism
+			}
+			add_to_variable = {
+				seiyukai_mps = JAP_old_mps_total
+			}
+		}
+		else_if = {
+			limit = {
+				has_government = ultranational_statism
+			}
+			add_to_variable = {
+				tohokai_mps = JAP_old_mps_total
+			}
+		}
+	}
+}

@@ -327,7 +327,7 @@ ideas = {
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
-				research_speed_factor = 0.10
+				research_speed_factor = 0.075
 				civilian_intel_to_others = 40.0
 				navy_intel_to_others = 20.0
 			}

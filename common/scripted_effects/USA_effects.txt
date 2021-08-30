@@ -78,6 +78,36 @@ USA_calc_congress_control = {
 	multiply_variable = { USA_house_control = 0.5 }
 }
 
+improve_safety_net = {
+	if = {
+		limit = {
+			has_idea = USA_safety_net_acceptable
+		}
+		swap_ideas = {
+			remove_idea = USA_safety_net_acceptable
+			add_idea = USA_safety_net_large
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = USA_safety_net_small
+		}
+		swap_ideas = {
+			remove_idea = USA_safety_net_small
+			add_idea = USA_safety_net_acceptable
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = USA_safety_net_barebones
+		}
+		swap_ideas = {
+			remove_idea = USA_safety_net_barebones
+			add_idea = USA_safety_net_small
+		}
+	}
+}
+
 improve_great_depression = {
 	if = {
 		limit = {

@@ -71,21 +71,8 @@ country_event = { # social security act
 	option = { # bill passes
 		name = us_bill.2.a
 		trigger = { has_country_flag = bill_passed }
-		improve_great_depression = yes
-		add_popularity = {
-			ideology = libertarian_socialism
-			popularity = 0.01
-		}
-		add_popularity = {
-			ideology = social_democracy
-			popularity = 0.01
-		}
-		custom_effect_tooltip = USA_SPA_better_nationwide
-		hidden_effect = {
-			every_owned_state = {
-				limit = { can_have_elections_in_state = yes }
-				add_to_variable = { socialist_popularity = 0.05 }
-			}
+		add_ideas = {
+			USA_safety_net_barebones
 		}
 		set_country_flag = social_security_passed
 		USA_bill_clear = yes # ALWAYS DO THIS
@@ -97,7 +84,7 @@ country_event = { # social security act
 		add_stability = -0.05
 		add_popularity = {
 			ideology = libertarian_socialism
-			popularity = -0.05
+			popularity = -0.03
 		}
 		trigger = { NOT = { has_country_flag = bill_passed } }
 		USA_bill_clear = yes # ALWAYS DO THIS

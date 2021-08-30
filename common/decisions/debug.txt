@@ -28,11 +28,12 @@ debug_category = {
 		icon = generic_political_discourse
 		
 		avaliable = {
-			
+			tag = USA
 		}
 		
 		visible = {
 			is_debug = yes
+			tag = USA
 		}
 		
 		cost = 0

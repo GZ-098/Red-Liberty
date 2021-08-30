@@ -1,0 +1,16 @@
+shared_focus = {
+    id = JAP_ichiro_government
+	icon = GFX_JAP_ichiro_government
+	
+    x = 8
+	y = 0
+	
+	cost = 2
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}

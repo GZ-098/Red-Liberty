@@ -93,6 +93,46 @@ add_offsite_building = {
 }
 
 create_country_leader = {
+	name = "Cai Yuanpei"
+	desc = ""
+	picture = ""
+	expire = "1989.1.1"
+	ideology = insurrectionary_anarchism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Bo Gu"
+	desc = ""
+	picture = ""
+	expire = "1989.1.1"
+	ideology = revolutionary_autocracy_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Bo Gu"
+	desc = ""
+	picture = ""
+	expire = "1989.1.1"
+	ideology = proletarian_dictatorship_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Cai Yuanpei"
+	desc = ""
+	picture = ""
+	expire = "1989.1.1"
+	ideology = libertarian_socialism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
 	name = "Rongyao"
 	#desc = ""
 	picture = "Portrait_CHI_Yuan_Keding.tga"
@@ -100,6 +140,16 @@ create_country_leader = {
 	ideology = social_democracy_subtype
 	traits = {
 		
+	}
+}
+
+create_country_leader = {
+	name = "Duan Qirui"
+	desc = ""
+	picture = ""
+	expire = "1989.1.1"
+	ideology = progressive_liberalism_subtype
+	traits = {
 	}
 }
 
@@ -115,6 +165,26 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Puyi"
+	desc = ""
+	picture = ""
+	expire = "1989.1.1"
+	ideology = national_conservatism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Zhang Zoulin"
+	desc = ""
+	picture = ""
+	expire = "1989.1.1"
+	ideology = authoritarian_republicanism_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
 	name = "Rongyao"
 	#desc = ""
 	picture = "Portrait_CHI_Yuan_Keding.tga"
@@ -122,6 +192,16 @@ create_country_leader = {
 	ideology = martial_despotism_subtype
 	traits = {
 		
+	}
+}
+
+create_country_leader = {
+	name = "Zhang Binglin"
+	desc = ""
+	picture = ""
+	expire = "1989.1.1"
+	ideology = ultranational_statism_subtype
+	traits = {
 	}
 }
 

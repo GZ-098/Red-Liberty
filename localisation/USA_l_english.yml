@@ -199,6 +199,11 @@
  USA_maternity_insurance:0 "Maternity Insurance"
  USA_national_healthcare_act:0 "National Healthcare Act"
  
+ USA_improve_safety_net_tt:0 "The §YAmerican Safety Net§! national spirit will be §Gimproved§!.\n"
+ USA_safety_net_barebones:0 "American Safety Net - Barebones"
+ USA_safety_net_small:0 "American Safety Net - Small"
+ USA_safety_net_acceptable:0 "American Safety Net - Acceptable"
+
  USA_right_to_democracy:0 "Right to Democracy"
  USA_more_perfect_union:0 "In Search of a More Perfect Union"
  USA_gerrymandering:0 "The Issue of Gerrymandering"
@@ -281,6 +286,11 @@
  USA_matching_europe:0 "Matching the Fleets of Europe"
  USA_pacific_presence:0 "Pacific Presience"
  USA_atlantic_awareness:0 "Atlantic Awareness"
+ USA_study_super_heavy_designs:0 "Study Super-Heavy Designs"
+ USA_iowa_class:0 "Iowa Class"
+ 
+ USA_expand_operations:0 "Expand Shipbuilding Facilities"
+ USA_modern_screens:0 "Modern Screening"
  
  USA_naval_air:0 "Naval Air is the Future!"
  

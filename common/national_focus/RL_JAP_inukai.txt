@@ -1,5 +1,6 @@
 shared_focus = {
     id = JAP_inukai_govt
+	icon = GFX_JAP_inukai_govt
 	
     x = 8
 	y = 0
@@ -16,6 +17,7 @@ shared_focus = {
 
 shared_focus = {
     id = JAP_sino_japanese_friendship
+	icon = GFX_JAP_sino_japanese_friendship
 	
     x = -2
 	y = 1
@@ -37,6 +39,7 @@ shared_focus = {
 
 shared_focus = {
     id = JAP_bipartisanship
+	icon = GFX_JAP_bipartisanship
 	
     x = 0
 	y = 1
@@ -62,6 +65,7 @@ shared_focus = {
 
 shared_focus = {
     id = JAP_sideline_extremists
+	icon = GFX_JAP_sideline_extremists
 	
     x = 2
 	y = 1
@@ -116,6 +120,7 @@ shared_focus = {
 
 shared_focus = {
     id = JAP_state_funeral
+	icon = GFX_JAP_state_funeral
 	
     x = 0
 	y = 1
@@ -165,6 +170,7 @@ shared_focus = {
 
 shared_focus = {
     id = JAP_seiyukai_platform
+	icon = GFX_JAP_seiyukai_platform
 	
     x = -2
 	y = 1

@@ -57,6 +57,7 @@ USA_congress = {
 			original_tag = USA
 			NOT = {
 				has_country_flag = USA_discussing_bill
+				has_country_flag = social_security_passed
 			}
 			has_completed_focus = USA_the_second_thomas_admin
 		}
@@ -66,7 +67,9 @@ USA_congress = {
 		complete_effect = {
 			custom_effect_tooltip = USA_bill_pass_req_tt
 			effect_tooltip = {
-				improve_great_depression = yes
+				add_ideas = {
+					USA_safety_net_barebones
+				}
 			}
 			USA_social_security_act_setup = yes
 		}
@@ -85,8 +88,8 @@ USA_congress = {
 		visible = {
 			original_tag = USA
 			NOT = {
-				has_country_flag = ban_kkk_act_passed
 				has_country_flag = USA_discussing_bill
+				has_country_flag = ban_kkk_act_passed
 			}
 			has_completed_focus = USA_the_second_thomas_admin
 		}
@@ -94,7 +97,7 @@ USA_congress = {
 		cost = 0
 		
 		complete_effect = {
-			
+			USA_enforcement_act_setup = yes
 		}
 	}
 	
@@ -111,6 +114,7 @@ USA_congress = {
 			original_tag = USA
 			NOT = {
 				has_country_flag = USA_discussing_bill
+				has_country_flag = reorg_act_passed
 			}
 			has_completed_focus = USA_the_second_thomas_admin
 		}

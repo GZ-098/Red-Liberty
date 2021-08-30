@@ -1,3 +1,18 @@
+JAP_house_of_reps_category = {
+	icon = usa_congress
+	
+	allowed = {
+		tag = JAP
+	}
+	visible = {
+		always = yes
+	}
+	
+	visible_when_empty = yes
+	
+	priority = 100
+}
+
 JAP_liberal_socialist_influence_category = {
 	icon = usa_congress
 	

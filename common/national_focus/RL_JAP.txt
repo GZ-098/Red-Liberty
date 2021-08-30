@@ -34,6 +34,23 @@ focus_tree = {
 }
 
 focus_tree = {
+	id = JAP_taisho_democracy_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	continuous_focus_position = {
+		x = -2000
+		y = 500
+	}
+	default = no
+	shared_focus = JAP_ichiro_government
+}
+
+focus_tree = {
 	id = JAP_nationalist_tree
 	country = {
 		factor = 0

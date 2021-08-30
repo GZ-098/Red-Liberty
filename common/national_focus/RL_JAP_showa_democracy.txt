@@ -7,7 +7,8 @@ shared_focus = {
 	
 	cost = 2
     completion_reward = {
-        
+        set_variable = { JAP_socialist_influence = 21 }
+		set_variable = { JAP_liberal_influence = 79 }
     }
 	
 	ai_will_do = {

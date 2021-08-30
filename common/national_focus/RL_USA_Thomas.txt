@@ -435,7 +435,7 @@ shared_focus = {
 	prerequisite = { focus = USA_buy_up_produce }
 	prerequisite = { focus = USA_federal_relief_programs }
     completion_reward = {
-        
+		
     }
 	
 	ai_will_do = {
@@ -454,8 +454,8 @@ shared_focus = {
 	relative_position_id = USA_dealing_with_the_dustbowl
 	prerequisite = { focus = USA_dealing_with_the_dustbowl }
     completion_reward = {
-		custom_effect_tooltip = USA_bill_over_time_tt
-        unlock_decision_tooltip = USA_public_law_163
+		#custom_effect_tooltip = USA_bill_over_time_tt
+        #unlock_decision_tooltip = USA_public_law_163
     }
 	
 	ai_will_do = {
@@ -474,7 +474,7 @@ shared_focus = {
 	relative_position_id = USA_the_american_crisis
 	prerequisite = { focus = USA_the_american_crisis }
     completion_reward = {
-        
+		
     }
 	
 	ai_will_do = {
@@ -493,7 +493,9 @@ shared_focus = {
 	relative_position_id = USA_of_industry
 	prerequisite = { focus = USA_of_industry }
     completion_reward = {
-        
+        effect_tooltip = {
+			improve_great_depression = yes
+		}
     }
 	
 	ai_will_do = {
@@ -552,7 +554,7 @@ shared_focus = {
 	prerequisite = { focus = USA_federal_relief_programs }
 	prerequisite = { focus = USA_create_the_fprc }
     completion_reward = {
-        
+        # add event about taxes
     }
 	
 	ai_will_do = {
@@ -571,7 +573,7 @@ shared_focus = {
 	relative_position_id = USA_paying_for_it_all
 	prerequisite = { focus = USA_paying_for_it_all }
     completion_reward = {
-        
+        # add event about local 829
     }
 	
 	ai_will_do = {
@@ -590,7 +592,7 @@ shared_focus = {
 	relative_position_id = USA_paying_for_it_all
 	prerequisite = { focus = USA_paying_for_it_all }
     completion_reward = {
-        
+        # add event?
     }
 	
 	ai_will_do = {
@@ -610,7 +612,7 @@ shared_focus = {
 	prerequisite = { focus = USA_federal_project_one }
 	prerequisite = { focus = USA_cut_the_military }
     completion_reward = {
-		
+		improve_great_depression = yes
     }
 	
 	ai_will_do = {
@@ -659,7 +661,9 @@ shared_focus = {
         unlock_decision_tooltip = start_USA_social_security_act
 		custom_effect_tooltip = USA_bill_pass_req_tt
 		effect_tooltip = {
-			improve_great_depression = yes
+			add_ideas = {
+				USA_safety_net_barebones
+			}
 		}
     }
 	
@@ -980,7 +984,7 @@ shared_focus = {
 	relative_position_id = USA_second_bill_of_rights
 	prerequisite = { focus = USA_second_bill_of_rights }
     completion_reward = {
-        
+        # add event
     }
 	
 	ai_will_do = {
@@ -1018,7 +1022,7 @@ shared_focus = {
 	relative_position_id = USA_assess_school_resources
 	prerequisite = { focus = USA_assess_school_resources }
     completion_reward = {
-        
+        add_political_power = 25
     }
 	
 	ai_will_do = {
@@ -1153,7 +1157,7 @@ shared_focus = {
 	relative_position_id = USA_second_bill_of_rights
 	prerequisite = { focus = USA_second_bill_of_rights }
     completion_reward = {
-        
+        # add event
     }
 	
 	ai_will_do = {
@@ -1172,10 +1176,7 @@ shared_focus = {
 	relative_position_id = USA_right_to_work
 	prerequisite = { focus = USA_right_to_work }
     completion_reward = {
-        custom_effect_tooltip = USA_bill_pass_req_tt
-		effect_tooltip = {
-			improve_great_depression = yes
-		}
+        improve_great_depression = yes
     }
 	
 	ai_will_do = {
@@ -1195,7 +1196,7 @@ shared_focus = {
 	prerequisite = { focus = USA_workplace_democracy }
 	prerequisite = { focus = USA_invest_in_childcare }
     completion_reward = {
-        
+        add_stability = 0.03
     }
 	
 	ai_will_do = {
@@ -1297,11 +1298,15 @@ shared_focus = {
     x = 2
 	y = 1
 	
+	available = {
+		has_idea = USA_safety_net_barebones
+	}
+	
 	cost = 5
 	relative_position_id = USA_second_bill_of_rights
 	prerequisite = { focus = USA_second_bill_of_rights }
     completion_reward = {
-        
+        # add event
     }
 	
 	ai_will_do = {
@@ -1320,10 +1325,7 @@ shared_focus = {
 	relative_position_id = USA_right_to_life
 	prerequisite = { focus = USA_right_to_life }
     completion_reward = {
-        add_popularity = {
-			ideology = libertarian_socialism
-			popularity = 0.01
-		}
+		improve_great_depression = yes
     }
 	
 	ai_will_do = {
@@ -1343,7 +1345,15 @@ shared_focus = {
 	prerequisite = { focus = USA_food_stamp_plan }
 	prerequisite = { focus = USA_ensure_fair_competition }
     completion_reward = {
-        
+		if = {
+			limit = {
+				NOT = {
+					has_idea = USA_safety_net_barebones
+				}
+			}
+			custom_effect_tooltip = USA_improve_safety_net_tt
+		}
+		improve_safety_net = yes
     }
 	
 	ai_will_do = {
@@ -1381,7 +1391,15 @@ shared_focus = {
 	relative_position_id = USA_lower_healthcare_costs
 	prerequisite = { focus = USA_lower_healthcare_costs }
     completion_reward = {
-        
+		if = {
+			limit = {
+				NOT = {
+					has_idea = USA_safety_net_barebones
+				}
+			}
+			custom_effect_tooltip = USA_improve_safety_net_tt
+		}
+		improve_safety_net = yes
     }
 	
 	ai_will_do = {
@@ -1403,9 +1421,15 @@ shared_focus = {
     completion_reward = {
 		custom_effect_tooltip = USA_bill_pass_req_tt
         effect_tooltip = {
-			add_ideas = {
-				USA_national_healthcare_act
+			if = {
+				limit = {
+					NOT = {
+						has_idea = USA_safety_net_barebones
+					}
+				}
+				custom_effect_tooltip = USA_improve_safety_net_tt
 			}
+			improve_safety_net = yes
 		}
     }
 	
@@ -1466,7 +1490,7 @@ shared_focus = {
 	relative_position_id = USA_second_bill_of_rights
 	prerequisite = { focus = USA_second_bill_of_rights }
     completion_reward = {
-        
+        # add event
     }
 	
 	ai_will_do = {

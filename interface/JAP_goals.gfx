@@ -3,8 +3,33 @@ spritetypes = {
 	### INTRO TREE ###
 	
 	SpriteType = {
+		name = "GFX_JAP_inukai_govt"
+		texturefile = "gfx/interface/goals/JAP/JAP_inukai_govt.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_sino_japanese_friendship"
+		texturefile = "gfx/interface/goals/JAP/JAP_sino_japanese_friendship.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_bipartisanship"
+		texturefile = "gfx/interface/goals/JAP/JAP_bipartisanship.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_sideline_extremists"
+		texturefile = "gfx/interface/goals/JAP/JAP_sideline_extremists.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_JAP_socio_economic_stability"
 		texturefile = "gfx/interface/goals/JAP/JAP_socio_economic_stability.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_state_funeral"
+		texturefile = "gfx/interface/goals/JAP/JAP_state_funeral.png"
 	}
 	
 	SpriteType = {
