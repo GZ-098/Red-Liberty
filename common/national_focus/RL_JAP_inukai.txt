@@ -268,7 +268,7 @@ shared_focus = {
 	}
 	available = {
 		NOT = {
-			has_country_flag = JAP_july_crisis
+			has_country_flag = JAP_the_july_crisis
 		}
 		has_country_flag = JAP_status_quo_upheld
 	}
@@ -283,6 +283,7 @@ shared_focus = {
 
 shared_focus = {
     id = JAP_picking_a_cabinet
+	icon = GFX_JAP_picking_a_cabinet
 	
     x = -1
 	y = 1
@@ -307,6 +308,7 @@ shared_focus = {
 
 shared_focus = {
     id = JAP_july_crisis
+	icon = GFX_JAP_july_crisis
 	
     x = 1
 	y = 1
@@ -330,6 +332,7 @@ shared_focus = {
 
 shared_focus = {
     id = JAP_constitutional_amendment
+	icon = GFX_JAP_constitutional_amendment
 	
     x = -1
 	y = 1
@@ -360,6 +363,7 @@ shared_focus = {
 
 shared_focus = {
     id = JAP_konoe_govt
+	icon = GFX_JAP_konoe_govt
 	
     x = 1
 	y = 1

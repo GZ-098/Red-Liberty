@@ -1,5 +1,6 @@
 add_namespace = japan
 add_namespace = japan_flavor
+add_namespace = japan_konoe
 
 country_event = { # intro event
 	id = japan.1
@@ -493,5 +494,89 @@ country_event = {
 
 	option = {
 		name = "...sometimes we must stick to our principles."
+	}
+}
+
+country_event = {
+	id = japan_konoe.1
+	title = "Blood on the Cobblestones"
+	desc = japan_konoe.1.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Iwao to na~rite, koke no~ musu ma~de..."
+	}
+}
+
+country_event = {
+	id = japan_konoe.2
+	title = "Knock, Knock!"
+	desc = japan_konoe.2.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "She would never know for sure what happened to him."
+	}
+}
+
+country_event = {
+	id = japan_konoe.3
+	title = "On Patrol"
+	desc = japan_konoe.3.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Was he really guilty of Konoe's crimes?"
+	}
+}
+
+country_event = {
+	id = japan_konoe.4
+	title = "A Mutual Understanding"
+	desc = japan_konoe.4.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Thank you, Your Majesty."
+	}
+}
+
+country_event = {
+	id = japan_konoe.5
+	title = "Rallying the Nation"
+	desc = japan_konoe.5.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Traitors must be dealt with for the nation to be whole."
+	}
+}
+
+country_event = {
+	id = japan_konoe.6
+	title = "After the Storm"
+	desc = japan_konoe.6.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "To the Future."
 	}
 }

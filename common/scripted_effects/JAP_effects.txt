@@ -37,6 +37,9 @@ JAP_calc_house = { # this will recalculate the number of members of parliament b
 	}
 	
 	set_variable = {
+		tohokai_mps = party_popularity@authoritarian_republicanism
+	}
+	add_to_variable = {
 		tohokai_mps = party_popularity@ultranational_statism
 	}
 	multiply_variable = {

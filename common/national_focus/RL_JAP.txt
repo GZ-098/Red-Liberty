@@ -65,4 +65,7 @@ focus_tree = {
 	}
 	default = no
 	shared_focus = JAP_spiders_web
+	shared_focus = JAP_the_carrot
+	shared_focus = JAP_the_stick
+	shared_focus = JAP_on_the_march
 }

@@ -56,4 +56,29 @@ spritetypes = {
 		name = "GFX_JAP_the_results"
 		texturefile = "gfx/interface/goals/JAP/JAP_the_results.png"
 	}
+	
+	SpriteType = {
+		name = "GFX_JAP_status_quo"
+		texturefile = "gfx/interface/goals/JAP/JAP_status_quo.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_july_crisis"
+		texturefile = "gfx/interface/goals/JAP/JAP_the_july_crisis.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_picking_a_cabinet"
+		texturefile = "gfx/interface/goals/JAP/JAP_picking_a_cabinet.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_constitutional_amendment"
+		texturefile = "gfx/interface/goals/JAP/JAP_constitutional_amendment.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_konoe_govt"
+		texturefile = "gfx/interface/goals/JAP/JAP_gamer_ending.png"
+	}
 }
