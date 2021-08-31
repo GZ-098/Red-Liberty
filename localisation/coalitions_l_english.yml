@@ -4,5 +4,7 @@
  add_social_democrat_coalition_tt:0 "The §PSocial Democrats§! will be added to our coalition."
  
  add_conservative_coalition_tt:0 "The §BNational Conservatives§! will be added to our coalition."
- 
+ add_authoritarian_coalition_tt:0 "The §gAuthoritarian Democrats§! will be added to our coalition."
+ add_despotist_coalition_tt:0 "The §gMartial Despotists§! will be added to our coalition."
+ add_ultranat_coalition_tt:0 "The §LUltranationalists§! will be added to our coalition."
  

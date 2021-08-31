@@ -391,6 +391,10 @@ country_event = {
 		set_country_flag = despotist_coalition
 		set_country_flag = ultranationalist_coalition
 		
+		custom_effect_tooltip = add_conservative_coalition_tt
+		custom_effect_tooltip = add_despotist_coalition_tt
+		custom_effect_tooltip = add_ultranat_coalition_tt
+		
 		load_focus_tree = JAP_nationalist_tree
 		
 		add_political_power = 50
