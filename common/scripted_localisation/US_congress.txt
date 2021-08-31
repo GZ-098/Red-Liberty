@@ -133,3 +133,93 @@ defined_text = {
 		localization_key = "USA_congress_voting_none"
     }
 }
+
+defined_text = {
+	name = get_bill_name
+	
+	text = { 
+        trigger = {
+			check_variable = { bill_id = 2 }
+			has_country_flag = USA_discussing_bill
+        }
+        localization_key = "start_USA_social_security_act"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { bill_id = 3 }
+			has_country_flag = USA_discussing_bill
+        }
+        localization_key = "start_USA_farm_tenant_act"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { bill_id = 4 }
+			has_country_flag = USA_discussing_bill
+        }
+        localization_key = "start_USA_court_packing_act"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { bill_id = 5 }
+			has_country_flag = USA_discussing_bill
+        }
+        localization_key = "start_USA_reorg_act"
+    }
+	
+	text = { 
+        localization_key = "major_legislation"
+    }
+}
+
+defined_text = {
+	name = get_rep_color
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_support > rep_quorum_medium }
+        }
+        localization_key = "reps_support_green"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_support = rep_quorum_medium }
+        }
+        localization_key = "reps_support_yellow"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_support < rep_quorum_medium }
+        }
+        localization_key = "reps_support_red"
+    }
+}
+
+defined_text = {
+	name = get_senator_color
+	
+	text = { 
+        trigger = {
+			check_variable = { senators_support > quorum_medium }
+        }
+        localization_key = "senator_support_green"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { senators_support = quorum_medium }
+        }
+        localization_key = "senator_support_yellow"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { senators_support < quorum_medium }
+        }
+        localization_key = "senator_support_red"
+    }
+}
