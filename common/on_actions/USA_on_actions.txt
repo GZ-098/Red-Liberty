@@ -87,7 +87,7 @@ on_actions = {
 			}
 			
 			USA = {
-				### SPA CAMPAIGN EVENTS ###
+				### SPA EVENTS ###
 				country_event = {
 					id = united_states_thomas.1
 					days = 10
@@ -104,8 +104,45 @@ on_actions = {
 					id = united_states_thomas.6
 					days = 130
 				}
+				country_event = { # reed announces retirement
+					id = united_states_thomas.23
+					days = 100
+				}
 			}
 			
+			USA = {
+				### FLAVOR EVENTS ###
+				country_event = { # boulder dam complete
+					id = united_states_flavor.1
+					days = 91
+				}
+				country_event = { # may day
+					id = united_states_flavor.2
+					days = 120
+				}
+				country_event = { # howie boy endorses thomas
+					id = united_states_flavor.3
+					days = 156
+				}
+				country_event = { # fourth of july
+					id = united_states_flavor.4
+					days = 183
+				}
+				country_event = { # 1937 recession event chain
+					id = united_states.7
+					days = 510 # around the middle of may 1937
+				}
+				country_event = { # new england hurricane
+					id = united_states_flavor.5
+					days = 994
+				}
+			}
+			
+			### produce distribution ###
+			USA = {
+				set_variable = { USA_produce_units = 3 }
+				set_variable = { USA_produce_decay_rate = 55 }
+			}
 			
 			### SEGREGATION SETUP ###
 			#365 = {

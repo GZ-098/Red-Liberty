@@ -174,7 +174,7 @@ shared_focus = {
 	prerequisite = { focus = USA_anti_lynching_legislation }
 	prerequisite = { focus = USA_encourage_minority_voting }
     completion_reward = {
-        
+        custom_effect_tooltip = USA_break_the_klan_tt
     }
 	
 	ai_will_do = {
@@ -338,6 +338,14 @@ shared_focus = {
 	prerequisite = { focus = USA_erase_their_legacy }
     completion_reward = {
         unlock_decision_tooltip = start_USA_ban_kkk_act
+		custom_effect_tooltip = USA_bill_pass_req_tt
+		effect_tooltip = {
+			add_stability = 0.1
+			swap_ideas = {
+				add_idea = USA_social_coalition_2
+				remove_idea = USA_social_coalition
+			}
+		}
     }
 	
 	ai_will_do = {
@@ -396,7 +404,7 @@ shared_focus = {
 	relative_position_id = USA_of_agriculture
 	prerequisite = { focus = USA_of_agriculture }
     completion_reward = {
-        
+        unlock_decision_category_tooltip = USA_distribute_produce
     }
 	
 	ai_will_do = {

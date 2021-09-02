@@ -10,6 +10,12 @@ music = {
 	volume = 1
 }
 
+music = {
+	name = "battle_hymn"
+	file = "USA/USA_battle_hymn.ogg"
+	volume = 1
+}
+
 ### RUSSIA ###
 
 music = {

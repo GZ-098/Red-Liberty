@@ -191,6 +191,25 @@ country_event = { # thomas inaug day
 	option = { # 
 		name = us_election.5.a
 		#load_focus_tree = USA_thomas_tree
+		remove_ideas = {
+			USA_jack_reed_hog
+		}
+		if = {
+			limit = {
+				has_country_flag = USA_progressive_veep
+			}
+			add_ideas = {
+				USA_henry_wallace_hog
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = USA_radical_veep
+			}
+			add_ideas = {
+				USA_earl_browder_hog
+			}
+		}
 	}
 }
 

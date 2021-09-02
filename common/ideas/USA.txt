@@ -163,6 +163,28 @@ ideas = {
 				stability_factor = 0.15
 			}
 		}
+		
+		USA_social_coalition_2 = {
+			
+			removal_cost = -1 
+			
+			allowed_civil_war = {	 
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.15
+			}
+		}
 	
 		USA_election_chaos = {
 			

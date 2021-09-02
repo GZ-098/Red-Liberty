@@ -97,6 +97,14 @@ USA_congress = {
 		cost = 0
 		
 		complete_effect = {
+			custom_effect_tooltip = USA_bill_pass_req_tt
+			effect_tooltip = {
+				add_stability = 0.1
+				swap_ideas = {
+					add_idea = USA_social_coalition_2
+					remove_idea = USA_social_coalition
+				}
+			}
 			USA_enforcement_act_setup = yes
 		}
 	}

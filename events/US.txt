@@ -113,11 +113,6 @@ country_event = { # spa convention - choosing veep
 	is_triggered_only = yes
 	
 	fire_only_once = yes
-
-	option = {
-		name = "The Moderate."
-		set_country_flag = USA_moderate_veep
-	}
 	
 	option = {
 		name = "The Progressive."
@@ -142,7 +137,6 @@ country_event = {
 
 	option = {
 		name = "Damn."
-		worsen_great_depression = yes
 		country_event = {
 			id = united_states.8
 			days = 15
@@ -162,7 +156,6 @@ country_event = {
 
 	option = {
 		name = "Damn."
-		worsen_great_depression = yes
 		country_event = {
 			id = united_states.9
 			days = 15
@@ -185,7 +178,7 @@ country_event = {
 		set_country_flag = USA_1937_recession
 		worsen_great_depression = yes
 		
-		mark_focus_tree_layout_dirty = yes
+		#mark_focus_tree_layout_dirty = yes
 		
 		add_stability = -0.05
 		
@@ -224,10 +217,18 @@ country_event = { # 1940 dnc
 
 	option = { # lister second term
 		name = "Four More Years!"
+		trigger = {
+			has_government = national_conservatism
+		}
 	}
 	
 	option = {
 		name = "Cordell Hull!"
+		trigger = {
+			NOT = {
+				has_government = national_conservatism
+			}
+		}
 	}
 }
 
@@ -242,6 +243,9 @@ country_event = { # 1940 spa convention
 
 	option = { # thomas third term
 		name = "Four More Years!"
+		trigger = {
+			has_government = national_conservatism
+		}
 	}
 	
 	option = { # other socialist
@@ -373,5 +377,88 @@ country_event = { # USA, USA, USA!
 	option = {
 		name = united_states_flavor.4.a
 		custom_effect_tooltip = usa_usa_usa_tt
+	}
+}
+
+country_event = { # new england hurricane
+	id = united_states_flavor.5
+	title = "The Great New England Hurricant"
+	desc = united_states_flavor.5.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = united_states_flavor.5.a
+		add_manpower = -728
+		357 = {
+			damage_building = {
+				type = infrastructure
+				damage = 5
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+		}
+		358 = {
+			damage_building = {
+				type = infrastructure
+				damage = 2
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+		}
+		816 = {
+			damage_building = {
+				type = infrastructure
+				damage = 4
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+			damage_building = {
+				type = dockyard
+				damage = 2
+			}
+		}
+		827 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+		828 = {
+			damage_building = {
+				type = infrastructure
+				damage = 2
+			}
+		}
+		829 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+		830 = {
+			damage_building = {
+				type = infrastructure
+				damage = 3
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+		}
+		831 = {
+			damage_building = {
+				type = infrastructure
+				damage = 3
+			}
+		}
 	}
 }

@@ -17,6 +17,21 @@ USA_congress = {
 	priority = 100
 }
 
+USA_distribute_produce = {
+	icon = usa_congress
+	allowed = {
+		original_tag = USA
+	}
+	
+	visible = {
+		has_government = libertarian_socialism
+	}
+
+	visible_when_empty = yes
+
+	priority = 95
+}
+
 USA_managing_spa = {
 	icon = usa_spa
 	allowed = {
