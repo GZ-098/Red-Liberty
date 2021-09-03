@@ -163,7 +163,7 @@ set_popularities = {
 }	
 
 
-create_faction = central_powers
+create_faction = Reichspakt
 add_to_faction = GER
 add_to_faction = BLR
 add_to_faction = UKR

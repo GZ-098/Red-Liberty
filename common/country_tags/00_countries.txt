@@ -254,6 +254,8 @@ BWI = "countries/British West Indies.txt"
 FWA = "countries/French West Africa.txt"
 FCA = "countries/French Central Africa.txt"
 
+ASA = "countries/Aussa.txt"
+
 ### South America ###
 UOB = "countries/Union of Brazil.txt"
 

@@ -132,8 +132,12 @@ on_actions = {
 					id = united_states.7
 					days = 510 # around the middle of may 1937
 				}
-				country_event = { # new england hurricane
+				country_event = { # pittsburgh flood
 					id = united_states_flavor.5
+					days = 107
+				}
+				country_event = { # new england hurricane
+					id = united_states_flavor.6
 					days = 994
 				}
 			}

@@ -1046,6 +1046,11 @@ IND = {
 	color_ui = rgb { 226 135 40 }
 }
 
+ASA = {
+	color = rgb { 64 138 173 } # { 71 152 191 } # { 17 99 138 }
+	color_ui = rgb { 20 125 175 }
+}
+
 ### US CIVIL WAR COLORS ###
 
 AMS = {

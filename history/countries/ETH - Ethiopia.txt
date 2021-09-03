@@ -1,6 +1,6 @@
 ﻿capital = 271
 
-oob = "ETH_1936"
+oob = "ETH"
 
 # Starting tech
 set_technology = {
@@ -14,7 +14,7 @@ set_politics = {
 	ruling_party = martial_despotism
 	last_election = "1932.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	insurrectionary_anarchism = 0
@@ -29,6 +29,10 @@ set_popularities = {
 	authoritarian_republicanism = 10
 	martial_despotism = 55
 	ultranational_statism = 0
+}
+
+add_ideas = {
+	ETH_resist_and_fight
 }
 
 create_country_leader = {

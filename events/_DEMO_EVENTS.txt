@@ -1,5 +1,7 @@
 add_namespace = demo_mex
+add_namespace = demo_ita
 add_namespace = demo_ahe
+add_namespace = demo_rom
 add_namespace = demo_rus
 add_namespace = demo_eng
 add_namespace = demo_ire
@@ -172,6 +174,23 @@ country_event = { # notification for mex
 	}
 }
 
+country_event = {
+	id = demo_ita.1
+	title = ""
+	desc = demo_ita.1.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+		ITA = {
+			puppet = ASA
+		}
+	}
+}
+
 country_event = { # election event for austria
 	id = demo_ahe.1
 	title = ""
@@ -328,6 +347,32 @@ country_event = { # civil war
 	}
 }
 
+country_event = { # 1937 election
+	id = demo_rom.1
+	title = ""
+	desc = demo_rom.1.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+	}
+	
+	option = {
+		name = ""
+		ROM = {
+			set_politics = {
+				ruling_party = ultranational_statism
+				elections_allowed = no
+				last_election = "1937.12.8"
+				election_frequency = 48
+			}
+		}
+	}
+}
+
 country_event = { # adoption of 1937 constitution
 	id = demo_ire.1
 	title = ""
@@ -369,9 +414,68 @@ country_event = {
 
 	option = {
 		name = ""
+		WGR_start_revolt = yes
+		FRA = {
+			country_event = {
+				id = demo_ww2.2
+				days = 15
+			}
+		}
+	}
+}
+
+country_event = {
+	id = demo_ww2.2
+	title = ""
+	desc = demo_ww2.2.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
 		FRA = {
 			declare_war_on = {
 				target = GER
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = WGR
+				type = annex_everything
+			}
+		}
+	}
+}
+
+news_event = {
+	id = demo_ww2.3
+	title = ""
+	desc = demo_ww2.3.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+	}
+}
+
+country_event = {
+	id = demo_ww2.4
+	title = ""
+	desc = demo_ww2.4.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+		UKR = {
+			declare_war_on = {
+				target = CRI
 				type = annex_everything
 			}
 		}

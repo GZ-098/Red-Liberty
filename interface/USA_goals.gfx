@@ -405,12 +405,12 @@ spritetypes = {
 	
 	SpriteType = {
 		name = "GFX_USA_assess_school_resources"
-		texturefile = "gfx/interface/goals/USA/USA_legislation.png"
+		texturefile = "gfx/interface/goals/USA/USA_assess_school_resources.png"
 	}
 	
 	SpriteType = {
 		name = "GFX_USA_invest_in_higher_education"
-		texturefile = "gfx/interface/goals/USA/USA_education_grants.png"
+		texturefile = "gfx/interface/goals/USA/USA_invest_in_higher_education.png"
 	}
 	
 	SpriteType = {

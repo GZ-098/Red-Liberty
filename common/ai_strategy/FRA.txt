@@ -1,0 +1,24 @@
+france_worried_about_germany = {
+	enable = {
+		original_tag = FRA
+		country_exists = GER
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = contain
+		id = "GER"
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "GER"
+		value = 100
+	}
+	ai_strategy = {
+		type = conquer
+		id = "GER"
+		value = 100
+	}
+}

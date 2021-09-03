@@ -33,6 +33,10 @@ WGR_start_revolt = {
 			dismantle_faction = yes
 			end_puppet = POL
 			end_puppet = LIT
+			end_puppet = ROM
+			end_puppet = CRI
+			
+			transfer_state = 898
 			
 			set_province_controller = 3488
 			set_province_controller = 3547

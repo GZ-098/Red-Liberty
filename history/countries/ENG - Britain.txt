@@ -215,9 +215,9 @@ set_popularities = {
 	ultranational_statism = 11
 }
 
-create_faction = Entente
+create_faction = Commonwealth
 add_to_faction = ENG
-add_to_faction = FRA
+#add_to_faction = FRA
 add_to_faction = CAN
 add_to_faction = AST
 add_to_faction = NZL

@@ -380,10 +380,35 @@ country_event = { # USA, USA, USA!
 	}
 }
 
-country_event = { # new england hurricane
+country_event = { # pittsburgh flood
 	id = united_states_flavor.5
-	title = "The Great New England Hurricant"
+	title = "The Great Pittsburgh Flood"
 	desc = united_states_flavor.5.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = united_states_flavor.5.a
+		add_manpower = -69
+		862 = {
+			damage_building = {
+				type = infrastructure
+				damage = 5
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 3
+			}
+		}
+	}
+}
+
+country_event = { # new england hurricane
+	id = united_states_flavor.6
+	title = "The Great New England Hurricane"
+	desc = united_states_flavor.6.desc
 	
 	is_triggered_only = yes
 	
@@ -460,5 +485,25 @@ country_event = { # new england hurricane
 				damage = 3
 			}
 		}
+	}
+}
+
+country_event = { # 
+	id = united_states_flavor.7
+	title = "Remembering Blair Mountain"
+	desc = united_states_flavor.7.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = united_states_flavor.7.a
+		add_war_support = 0.05
+	}
+	
+	option = {
+		name = united_states_flavor.7.b
+		add_stability = 0.05
 	}
 }

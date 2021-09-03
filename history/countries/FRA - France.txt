@@ -129,6 +129,25 @@ add_ideas = {
 	FRA_fallen_govt
 }
 
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = SYR
+		autonomous_state = autonomy_colony
+	}
+	else = {
+		puppet = SYR
+	}
+}
+
+create_faction = FRA_continental_entente
+add_to_faction = FRA
+
 create_country_leader = {
 	name = "André Léon Blum"
 	desc = ""

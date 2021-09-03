@@ -1,0 +1,28 @@
+ideas = {
+	
+	country = {
+	
+		ETH_resist_and_fight = {
+			
+			removal_cost = -1 
+			
+			allowed = {
+				tag = ETH
+			}  
+
+			available = {
+				tag = ETH
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				war_support_factor = 0.1
+				conscription = 0.01
+				army_defence_factor = 0.1
+			}
+		}
+	}
+}

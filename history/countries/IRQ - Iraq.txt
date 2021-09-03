@@ -15,7 +15,7 @@ set_politics = {
 	ruling_party = martial_despotism
 	last_election = "1932.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	insurrectionary_anarchism = 0
@@ -33,7 +33,7 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = ""
+	name = "Abdullah I"
 	desc = ""
 	picture = ""
 	expire = "1965.1.1"

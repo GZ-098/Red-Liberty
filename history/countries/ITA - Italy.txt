@@ -6,16 +6,32 @@ set_research_slots = 4
 set_stability = 0.6
 set_war_support = 0.7
 add_ideas = {
-	ITA_missing_manpower
-	ITA_complete_economic_failure
-	ITA_leftists_in_the_blackshirts
-	ITA_leftists_in_the_grand_council_of_fascism
-	ITA_undecided_buget
-	ITA_undecided_tax_policy
+	#ITA_missing_manpower
+	#ITA_complete_economic_failure
+	#ITA_leftists_in_the_blackshirts
+	#ITA_leftists_in_the_grand_council_of_fascism
+	#ITA_undecided_buget
+	#ITA_undecided_tax_policy
 	
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+}
+
+if = {
+	limit = {
+		has_start_date < 1936.01.02
+	}
+	declare_war_on = {
+		target = ETH
+		type = annex_everything
+	}
+}
+
+271 = {
+	ITA = {
+		set_province_controller = 13252
+	}
 }
 
 550 = {
@@ -29,6 +45,34 @@ add_ideas = {
 	start_resistance = yes
 	set_compliance = 10
 	set_resistance = 0
+	set_garrison_strength = 1.0
+}
+
+451 = {
+	start_resistance = yes
+	set_compliance = 8
+	set_resistance = 28
+	set_garrison_strength = 1.0
+}
+
+449 = {
+	start_resistance = yes
+	set_compliance = 12
+	set_resistance = 14
+	set_garrison_strength = 1.0
+}
+
+662 = {
+	start_resistance = yes
+	set_compliance = 28
+	set_resistance = 4
+	set_garrison_strength = 1.0
+}
+
+663 = {
+	start_resistance = yes
+	set_compliance = 8
+	set_resistance = 32
 	set_garrison_strength = 1.0
 }
 
@@ -105,14 +149,6 @@ if = {
 	add_ideas = MTG_naval_treaty_adherent
 }
 
-# DIPLOMACY / WAR 36
-if = {
-	limit = {
-		has_start_date < 1936.01.02
-	}
-	give_guarantee = ALB
-}
-
 set_convoys = 200
 
 set_politics = {
@@ -146,6 +182,7 @@ create_country_leader = {
 		
 	}
 }
+
 create_country_leader = {
 	name = "Alcide De Gasperi"
 	desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
@@ -156,6 +193,7 @@ create_country_leader = {
 
 	}
 }
+
 create_country_leader = {
 	name = "Luigi Facta"
 	desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
@@ -166,6 +204,7 @@ create_country_leader = {
 
 	}
 }
+
 create_country_leader = {
 	name = "Victor Emmanuel III"
 	desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
@@ -176,6 +215,7 @@ create_country_leader = {
 
 	}
 }
+
 create_country_leader = {
 	name = "Benito Mussolini"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
@@ -351,14 +391,14 @@ if = {
 # 1936 Start #
 #plane variants
 create_equipment_variant = {
-		name = "CR.42"
-		type = fighter_equipment_0
-		upgrades = {
-			plane_gun_upgrade = 1
-			plane_range_upgrade = 0  
-			plane_engine_upgrade = 2
-			plane_reliability_upgrade = 1
-		}
+	name = "CR.42"
+	type = fighter_equipment_0
+	upgrades = {
+		plane_gun_upgrade = 1
+		plane_range_upgrade = 0  
+		plane_engine_upgrade = 2
+		plane_reliability_upgrade = 1
+	}
 }
 if = {
 	limit = {

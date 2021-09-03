@@ -15,6 +15,8 @@
  FIC_DEF:0 "French Indochina"
  FIC_ADJ:0 "Indochinese"
  
+ FRA_continental_entente:0 "Continental Entente"
+ 
  FRA_insurrectionary_anarchism_party:0 "--"
  FRA_revolutionary_autocracy_party:0 "SFIC"
  FRA_revolutionary_autocracy_party_long:0 "Section Française de l'Internationale Communiste"

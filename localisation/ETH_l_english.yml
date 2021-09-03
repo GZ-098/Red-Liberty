@@ -3,4 +3,6 @@
  ETH_DEF:0 "the Ethiopian Empire"
  ETH_ADJ:0 "Ethiopian"
  
+ ETH_resist_and_fight:0 "Resist and Fight"
+ ETH_resist_and_fight_desc:0 "We beat the Italians before, and we shall do so again!"
  
