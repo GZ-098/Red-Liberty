@@ -3,4 +3,7 @@
  TUN_DEF:0 "Tunisia"
  TUN_ADJ:0 "Tunisian"
  
+ FRA_TUN_puppet:0 "Protectorate of Tunisia"
+ FRA_TUN_puppet_DEF:0 "the Protectorate of Tunisia"
+ FRA_TUN_puppet_ADJ:0 "Tunisian"
  

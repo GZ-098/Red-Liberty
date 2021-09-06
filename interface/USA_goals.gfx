@@ -409,13 +409,38 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_work_with_teachers_unions"
+		texturefile = "gfx/interface/goals/USA/USA_work_with_teachers_unions.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_compulsory_education"
+		texturefile = "gfx/interface/goals/USA/USA_compulsory_education.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_invest_in_higher_education"
 		texturefile = "gfx/interface/goals/USA/USA_invest_in_higher_education.png"
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_invest_in_childcare"
+		texturefile = "gfx/interface/goals/USA/USA_invest_in_childcare.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_federal_education_grants"
-		texturefile = "gfx/interface/goals/USA/USA_education_grants_2.png"
+		texturefile = "gfx/interface/goals/USA/USA_federal_education_grants.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_fund_public_libraries"
+		texturefile = "gfx/interface/goals/USA/USA_fund_public_libaries.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_attempt_standardization"
+		texturefile = "gfx/interface/goals/USA/USA_equivalent_education_act.png"
 	}
 	
 	SpriteType = {

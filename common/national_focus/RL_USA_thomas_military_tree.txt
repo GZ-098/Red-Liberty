@@ -903,7 +903,7 @@ shared_focus = {
 			}
 		}
         create_equipment_variant = {
-			name = "North Carolina Class"				
+			name = "North Carolina Class"
 			type = ship_hull_heavy_2
 			name_group = USA_BB_HISTORICAL
 			parent_version = 0
@@ -920,6 +920,17 @@ shared_focus = {
 				mid_2_custom_slot = ship_secondaries_2
 				rear_1_custom_slot = ship_heavy_battery_2
 			}
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_2
+				creator = "USA" 
+				version_name = "North Carolina Class"
+			}
+			name = "North Carolina" 
+			requested_factories = 1
+			progress = 0.55
+			amount = 1
 		}
     }
 	
@@ -950,7 +961,7 @@ shared_focus = {
 			}
 		}
         create_equipment_variant = {
-			name = "South Dakota Class"				
+			name = "South Dakota Class"
 			type = ship_hull_heavy_2
 			name_group = USA_BB_HISTORICAL
 			parent_version = 0
@@ -967,6 +978,17 @@ shared_focus = {
 				mid_2_custom_slot = ship_airplane_launcher_1
 				rear_1_custom_slot = ship_heavy_battery_2
 			}
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_2
+				creator = "USA" 
+				version_name = "South Dakota Class"
+			}
+			name = "South Dakota" 
+			requested_factories = 1
+			progress = 0.55
+			amount = 1
 		}
     }
 	

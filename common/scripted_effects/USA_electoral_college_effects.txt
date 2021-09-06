@@ -4,8 +4,6 @@
 #Constants
 @BONUS_POPULARITY_PRES_MULTIPLIER = 0.3
 @PRESIDENT_INCUMBENCY_BONUS_POPULARITY = 0.05
-@MAXIMUM_UNITY = 30
-@MINIMUM_UNITY = 0.001
 @SENATE_SITTING_PRESIDENT_PENALTY = -0.1 #USED TO BE 0.05, testing is done by LAZER 2. april 2020
 @SENATE_INCUMBENCY_BONUS_MULTIPLIER_1 = 2
 @SENATE_INCUMBENCY_BONUS_MULTIPLIER_2 = 0.001
@@ -34,23 +32,23 @@ initialize_US_elections_system = {
 		limit = { can_have_elections_in_state = yes}
 		clamp_variable = { #make sure to clamp any support variable that can change! 
    			var = republican_popularity
-    		min = 0.001
-    		max = 1000 
+    		min = @POPULARITY_CLAMP_MIN
+    		max = @POPULARITY_CLAMP_MAX
 		}
 		clamp_variable = { #make sure to clamp any support variable that can change! 
    			var = democrat_popularity
-    		min = 0.001
-    		max = 1000 
+    		min = @POPULARITY_CLAMP_MIN
+    		max = @POPULARITY_CLAMP_MAX
 		}
 		clamp_variable = { #make sure to clamp any support variable that can change! 
    			var = socialist_popularity
-    		min = 0.001
-    		max = 1000 
+    		min = @POPULARITY_CLAMP_MIN
+    		max = @POPULARITY_CLAMP_MAX
 		}
 		clamp_variable = { #make sure to clamp any support variable that can change! 
    			var = afp_popularity
-    		min = 0.001
-    		max = 1000 
+    		min = @POPULARITY_CLAMP_MIN
+    		max = @POPULARITY_CLAMP_MAX
 		}
 	}
 	
@@ -384,8 +382,9 @@ initialize_US_elections_system = {
 	
 	359 = { # New Jersey
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.45 } # Default Value
-		set_variable = { socialist_popularity = 0.55 } # Default Value
+		set_variable = { republican_popularity = 0.4 } # Default Value
+		set_variable = { democrat_popularity = 0.45 }
+		set_variable = { socialist_popularity = 0.65 } # Default Value
 		
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 2 }
@@ -481,8 +480,8 @@ initialize_US_elections_system = {
 	
 	360 = { # Pennsylvania, swing state 
 		set_state_flag = US_election_state
-		set_variable = { socialist_popularity = 0.55 }
-		set_variable = { republican_popularity = 0.4 }
+		set_variable = { socialist_popularity = 0.6 }
+		set_variable = { republican_popularity = 0.35 }
 		set_variable = { democrat_popularity = 0.15 }
 		
 		set_variable = { senator_1 = 1 }
@@ -601,9 +600,9 @@ initialize_US_elections_system = {
 	
 	832 = { # West Virginia
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.35 }
-		set_variable = { democrat_popularity = 0.2 }
-		set_variable = { socialist_popularity = 0.45 }
+		set_variable = { republican_popularity = 0.2 }
+		set_variable = { democrat_popularity = 0.35 }
+		set_variable = { socialist_popularity = 0.65 }
 		
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 3 }
@@ -763,37 +762,6 @@ US_hold_presidential_election = {
 	}
 
 	log = "US Presidential Election: SPA: [?socialist_electoral_votes] || DP: [?democrat_electoral_votes] || RP: [?republican_electoral_votes] || AFP: [?afp_electoral_votes]"
-	
-	log = "[This.GetName] : actual_socialist_votes - [?ROOT.actual_socialist_votes]"
-	log = "[This.GetName] : actual_democrat_votes - [?ROOT.actual_democrat_votes]"
-	log = "[This.GetName] : actual_republican_votes - [?ROOT.actual_republican_votes]"
-	
-	divide_variable = { actual_socialist_votes = 1000 }
-	divide_variable = { actual_democrat_votes = 1000 }
-	divide_variable = { actual_republican_votes = 1000 }
-	
-	set_temp_variable = { total_votes = actual_socialist_votes }
-	add_to_temp_variable = { total_votes = actual_democrat_votes }
-	add_to_temp_variable = { total_votes = actual_republican_votes }
-	
-	log = "US Presidential Election: total_votes - [?total_votes]"
-	
-	#multiply_temp_variable = { total_votes = 4 }
-	#multiply_variable = { actual_socialist_votes = 2 }
-	#multiply_variable = { actual_democrat_votes = 2 }
-	
-	#add_to_variable = { actual_socialist_votes = total_votes }
-	#add_to_variable = { actual_democrat_votes = total_votes }
-	#add_to_variable = { actual_republican_votes = total_votes }
-	
-	set_variable = { socialist_random_votes = random }
-	multiply_variable = { socialist_random_votes = 1000 }
-	
-	set_variable = { democrat_random_votes = random }
-	multiply_variable = { democrat_random_votes = 1000 }
-	
-	set_variable = { republican_random_votes = random }
-	multiply_variable = { republican_random_votes = 1000 }
 }
 
 USA_clamp_state_popularities = {
@@ -1125,63 +1093,4 @@ USA_clear_presidential_election_values = {
 		clr_state_flag = voted_republican
 		clr_state_flag = voted_afp
 	}
-}
-
-USA_calculate_popular_vote = {
-	set_temp_variable = { total_election_pop = socialist_election_pop }
-	add_to_temp_variable = { total_election_pop = democrat_election_pop }
-	add_to_temp_variable = { total_election_pop = republican_election_pop }
-	add_to_temp_variable = { total_election_pop = afp_election_pop }
-	
-	set_temp_variable = { actual_votes = state_population_k }
-	
-	if = { # New York
-		limit = { check_variable = { THIS.id = 358.id } }
-		add_to_temp_variable = { actual_votes = 816.state_population_k }
-		add_to_temp_variable = { actual_votes = 870.state_population_k }
-		add_to_temp_variable = { actual_votes = 912.state_population_k }
-	}
-	if = { # California
-		limit = { check_variable = { THIS.id = 378.id } }
-		add_to_temp_variable = { actual_votes = 855.state_population_k }
-		add_to_temp_variable = { actual_votes = 861.state_population_k }
-		add_to_temp_variable = { actual_votes = 869.state_population_k }
-	}
-	if = { # Texas
-		limit = { check_variable = { THIS.id = 375.id } }
-		add_to_temp_variable = { actual_votes = 851.state_population_k }
-		add_to_temp_variable = { actual_votes = 852.state_population_k }
-	}
-	
-	log = "[This.GetName] : state_population_k - [?state_population_k]"
-	log = "[This.GetName] : actual_votes - [?actual_votes]"
-	
-	multiply_temp_variable = { actual_votes = 0.63 } # roughly voting age population
-	multiply_temp_variable = { actual_votes = 0.55 } # turnout
-	
-	log = "[This.GetName] : actual_votes after turnout - [?actual_votes]"
-		
-	set_temp_variable = { socialist_votes = actual_votes }
-	multiply_temp_variable = { socialist_votes = socialist_popularity }
-	divide_temp_variable = { socialist_votes = total_election_pop }
-		
-	set_variable = { ROOT.actual_socialist_votes = socialist_votes }
-	
-	log = "[GetDateText] [PREV.GetName] [This.GetName] socialist_election_pop is [?socialist_election_pop] actual_votes [?socialist_votes]"
-	
-	set_temp_variable = { democrat_votes = actual_votes }
-	multiply_temp_variable = { democrat_votes = democrat_popularity }
-	divide_temp_variable = { democrat_votes = total_election_pop }
-		
-	set_variable = { ROOT.actual_democrat_votes = democrat_votes }
-	
-	log = "[GetDateText] [PREV.GetName] [This.GetName] democrat_election_pop is [?democrat_election_pop] actual_votes [?democrat_votes]"
-	
-	set_temp_variable = { republican_votes = actual_votes }
-	multiply_temp_variable = { republican_votes = republican_popularity }
-	divide_temp_variable = { republican_votes = total_election_pop }
-		
-	set_variable = { ROOT.actual_republican_votes = republican_votes }
-	
-	log = "[GetDateText] [PREV.GetName] [This.GetName] republican_election_pop is [?republican_election_pop] actual_votes [?republican_votes]"
 }

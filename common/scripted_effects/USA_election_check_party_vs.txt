@@ -1,31 +1,234 @@
 USA_check_election_vs = {
+	log = "[This.GetName] USA_check_election_vs = yes"
+	
+	clr_state_flag = socialist_first_place
+	clr_state_flag = republican_first_place
+	clr_state_flag = democrat_first_place
+	clr_state_flag = afp_first_place
+	
+	clr_state_flag = socialist_second_place
+	clr_state_flag = republican_second_place
+	clr_state_flag = democrat_second_place
+	clr_state_flag = afp_second_place
+	
+	### check first place
 	if = {
 		limit = { # socialists in first
 			check_variable = { socialist_popularity > republican_popularity }
 			check_variable = { socialist_popularity > democrat_popularity }
 			check_variable = { socialist_popularity > afp_popularity }
 		}
-		#set_state_flag = socialist_first_place
+		set_state_flag = socialist_first_place
 	}
 	if = {
 		limit = {
-			check_variable = { republican_popularity < socialist_popularity }
+			check_variable = { republican_popularity > socialist_popularity }
 			check_variable = { republican_popularity > democrat_popularity }
 			check_variable = { republican_popularity > afp_popularity }
 		}
-		#set_state_flag = republican_second_place
+		set_state_flag = republican_first_place
 	}
-	#log = "[This.GetName] USA_check_election_vs = yes"
-}
-
-USA_check_election_closeness = {
 	if = {
 		limit = {
-			has_state_flag = socialist_first_place
-			has_state_flag = republican_second_place
+			check_variable = { democrat_popularity > socialist_popularity }
+			check_variable = { democrat_popularity > republican_popularity }
+			check_variable = { democrat_popularity > afp_popularity }
 		}
-		set_variable = { USA_state_R_v_S_poll_pop_diff = republican_popularity }
-		subtract_from_variable = { USA_state_R_v_S_poll_pop_diff = socialist_popularity }
-		#log = "[This.GetName] USA_state_R_v_S_poll_pop_diff = [?THIS.USA_state_R_v_S_poll_pop_diff]"
+		set_state_flag = democrat_first_place
+	}
+	if = {
+		limit = {
+			check_variable = { afp_popularity > socialist_popularity }
+			check_variable = { afp_popularity > republican_popularity }
+			check_variable = { afp_popularity > democrat_popularity }
+		}
+		set_state_flag = afp_first_place
+	}
+	
+	### check second place
+	if = {
+		limit = { # socialists in second
+			OR = {
+				AND = {
+					check_variable = { socialist_popularity < republican_popularity }
+					check_variable = { socialist_popularity > democrat_popularity }
+					check_variable = { socialist_popularity > afp_popularity }
+				}
+				AND = {
+					check_variable = { socialist_popularity > republican_popularity }
+					check_variable = { socialist_popularity < democrat_popularity }
+					check_variable = { socialist_popularity > afp_popularity }
+				}
+				AND = {
+					check_variable = { socialist_popularity > republican_popularity }
+					check_variable = { socialist_popularity > democrat_popularity }
+					check_variable = { socialist_popularity < afp_popularity }
+				}
+			}
+		}
+		set_state_flag = socialist_second_place
+	}
+	
+	if = {
+		limit = { # democrats in second
+			OR = {
+				AND = {
+					check_variable = { democrat_popularity < republican_popularity }
+					check_variable = { democrat_popularity > socialist_popularity }
+					check_variable = { democrat_popularity > afp_popularity }
+				}
+				AND = {
+					check_variable = { democrat_popularity > republican_popularity }
+					check_variable = { democrat_popularity < socialist_popularity }
+					check_variable = { democrat_popularity > afp_popularity }
+				}
+				AND = {
+					check_variable = { democrat_popularity > republican_popularity }
+					check_variable = { democrat_popularity > socialist_popularity }
+					check_variable = { democrat_popularity < afp_popularity }
+				}
+			}
+		}
+		set_state_flag = democrat_second_place
+	}
+	
+	if = {
+		limit = { # republicans in second
+			OR = {
+				AND = {
+					check_variable = { republican_popularity < democrat_popularity }
+					check_variable = { republican_popularity > socialist_popularity }
+					check_variable = { republican_popularity > afp_popularity }
+				}
+				AND = {
+					check_variable = { republican_popularity > democrat_popularity }
+					check_variable = { republican_popularity < socialist_popularity }
+					check_variable = { republican_popularity > afp_popularity }
+				}
+				AND = {
+					check_variable = { republican_popularity > democrat_popularity }
+					check_variable = { republican_popularity > socialist_popularity }
+					check_variable = { republican_popularity < afp_popularity }
+				}
+			}
+		}
+		set_state_flag = republican_second_place
+	}
+	
+	if = {
+		limit = { # afp in second
+			OR = {
+				AND = {
+					check_variable = { afp_popularity < democrat_popularity }
+					check_variable = { afp_popularity > socialist_popularity }
+					check_variable = { afp_popularity > republican_popularity }
+				}
+				AND = {
+					check_variable = { afp_popularity > democrat_popularity }
+					check_variable = { afp_popularity < socialist_popularity }
+					check_variable = { afp_popularity > republican_popularity }
+				}
+				AND = {
+					check_variable = { afp_popularity > democrat_popularity }
+					check_variable = { afp_popularity > socialist_popularity }
+					check_variable = { afp_popularity < republican_popularity }
+				}
+			}
+		}
+		set_state_flag = afp_second_place
+	}
+}
+
+USA_check_election_margin = {
+	if = {
+		limit = {
+			AND = {
+				has_state_flag = socialist_first_place
+				has_state_flag = democrat_second_place
+			}
+		}
+		set_variable = { USA_state_poll_pop_diff = socialist_popularity }
+		subtract_from_variable = { USA_state_poll_pop_diff = democrat_popularity }
+		log = "[This.GetName] USA_state_poll_pop_diff = [?THIS.USA_state_poll_pop_diff]"
+	}
+	if = {
+		limit = {
+			AND = {
+				has_state_flag = democrat_first_place
+				has_state_flag = socialist_second_place
+			}
+		}
+		set_variable = { USA_state_poll_pop_diff = democrat_popularity }
+		subtract_from_variable = { USA_state_poll_pop_diff = socialist_popularity }
+		log = "[This.GetName] USA_state_poll_pop_diff = [?THIS.USA_state_poll_pop_diff]"
+	}
+	
+	if = {
+		limit = {
+			AND = {
+				has_state_flag = socialist_first_place
+				has_state_flag = republican_second_place
+			}
+		}
+		set_variable = { USA_state_poll_pop_diff = socialist_popularity }
+		subtract_from_variable = { USA_state_poll_pop_diff = republican_popularity }
+		log = "[This.GetName] USA_state_poll_pop_diff = [?THIS.USA_state_poll_pop_diff]"
+	}
+	if = {
+		limit = {
+			AND = {
+				has_state_flag = republican_first_place
+				has_state_flag = socialist_second_place
+			}
+		}
+		set_variable = { USA_state_poll_pop_diff = republican_popularity }
+		subtract_from_variable = { USA_state_poll_pop_diff = socialist_popularity }
+		log = "[This.GetName] USA_state_poll_pop_diff = [?THIS.USA_state_poll_pop_diff]"
+	}
+	
+	if = {
+		limit = {
+			AND = {
+				has_state_flag = republican_first_place
+				has_state_flag = democrat_second_place
+			}
+		}
+		set_variable = { USA_state_poll_pop_diff = republican_popularity }
+		subtract_from_variable = { USA_state_poll_pop_diff = democrat_popularity }
+		log = "[This.GetName] USA_state_poll_pop_diff = [?THIS.USA_state_poll_pop_diff]"
+	}
+	if = {
+		limit = {
+			AND = {
+				has_state_flag = democrat_first_place
+				has_state_flag = republican_second_place
+			}
+		}
+		set_variable = { USA_state_poll_pop_diff = democrat_popularity }
+		subtract_from_variable = { USA_state_poll_pop_diff = republican_popularity }
+		log = "[This.GetName] USA_state_poll_pop_diff = [?THIS.USA_state_poll_pop_diff]"
+	}
+	
+	if = {
+		limit = {
+			AND = {
+				has_state_flag = democrat_first_place
+				has_state_flag = afp_second_place
+			}
+		}
+		set_variable = { USA_state_poll_pop_diff = democrat_popularity }
+		subtract_from_variable = { USA_state_poll_pop_diff = afp_popularity }
+		log = "[This.GetName] USA_state_poll_pop_diff = [?THIS.USA_state_poll_pop_diff]"
+	}
+	if = {
+		limit = {
+			AND = {
+				has_state_flag = afp_first_place
+				has_state_flag = democrat_second_place
+			}
+		}
+		set_variable = { USA_state_poll_pop_diff = afp_popularity }
+		subtract_from_variable = { USA_state_poll_pop_diff = democrat_popularity }
+		log = "[This.GetName] USA_state_poll_pop_diff = [?THIS.USA_state_poll_pop_diff]"
 	}
 }

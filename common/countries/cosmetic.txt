@@ -397,6 +397,11 @@ FRA_puppet = {
 	color_ui = rgb { 74 147 255 }
 }
 
+FRA_TUN_puppet = {
+	color = rgb { 43 86 173 }
+	color_ui = rgb { 74 147 255 }
+}
+
 ENG_puppet = {
 	color = rgb { 171 48 48 }
 	color_ui = rgb { 255 73 121 }

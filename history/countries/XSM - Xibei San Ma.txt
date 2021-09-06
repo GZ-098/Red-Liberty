@@ -28,3 +28,14 @@ set_popularities = {
 	martial_despotism = 36
 	ultranational_statism = 0
 }
+
+create_country_leader = {
+	name = "Ma Bufang"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = martial_despotism
+	traits = {
+		#
+	}
+}

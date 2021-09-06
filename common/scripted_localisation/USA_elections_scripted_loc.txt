@@ -2395,43 +2395,146 @@ defined_text = {
 }
 
 defined_text = {
-	name = GetElectionPrediction
+	name = GetFirstPlace
 	text = {
 		trigger = {
-			check_variable = { socialist_senate_poll_pop > republican_senate_poll_pop }
-			check_variable = { socialist_senate_poll_pop > democrat_senate_poll_pop }
-			check_variable = { socialist_senate_poll_pop > afp_senate_poll_pop }
+			has_state_flag = socialist_first_place
 		}
-		localization_key = USA_Election_socialist_win
+		localization_key = SOCIALIST_SENATOR_PLURAL
 	}
 	text = {
 		trigger = {
-			check_variable = { republican_senate_poll_pop > socialist_senate_poll_pop }
-			check_variable = { republican_senate_poll_pop > democrat_senate_poll_pop }
-			check_variable = { republican_senate_poll_pop > afp_senate_poll_pop }
+			has_state_flag = republican_first_place
 		}
-		localization_key = USA_Election_republican_win
+		localization_key = REPUBLICAN_SENATOR_PLURAL
 	}
 	text = {
 		trigger = {
-			check_variable = { democrat_senate_poll_pop > socialist_senate_poll_pop }
-			check_variable = { democrat_senate_poll_pop > republican_senate_poll_pop }
-			check_variable = { democrat_senate_poll_pop > afp_senate_poll_pop }
+			has_state_flag = democrat_first_place
 		}
-		localization_key = USA_Election_democrat_win
+		localization_key = DEMOCRAT_SENATOR_PLURAL
 	}
 	text = {
 		trigger = {
-			check_variable = { afp_senate_poll_pop > socialist_senate_poll_pop }
-			check_variable = { afp_senate_poll_pop > democrat_senate_poll_pop }
-			check_variable = { afp_senate_poll_pop > republican_senate_poll_pop }
+			has_state_flag = afp_first_place
 		}
-		localization_key = USA_Election_afp_win
+		localization_key = AFP_SENATOR_PLURAL
 	}
 	text = {
-		localization_key = USA_Election_unsure
+		localization_key = empty
 	}
 }
+
+defined_text = {
+	name = GetSecondPlace
+	text = {
+		trigger = {
+			has_state_flag = socialist_second_place
+		}
+		localization_key = SOCIALIST_SENATOR_PLURAL
+	}
+	text = {
+		trigger = {
+			has_state_flag = republican_second_place
+		}
+		localization_key = REPUBLICAN_SENATOR_PLURAL
+	}
+	text = {
+		trigger = {
+			has_state_flag = democrat_second_place
+		}
+		localization_key = DEMOCRAT_SENATOR_PLURAL
+	}
+	text = {
+		trigger = {
+			has_state_flag = afp_second_place
+		}
+		localization_key = AFP_SENATOR_PLURAL
+	}
+	text = {
+		localization_key = empty
+	}
+}
+
+defined_text = {
+	name = GetMargin
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { USA_state_poll_pop_diff > 0.21 }
+			}
+		}
+		localization_key = USA_margin_large
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { USA_state_poll_pop_diff < 0.21 }
+				check_variable = { USA_state_poll_pop_diff > 0.11 }
+			}
+		}
+		localization_key = USA_margin_medium
+	}
+	text = {
+		trigger = {
+			check_variable = { USA_state_poll_pop_diff < 0.11 }
+			check_variable = { USA_state_poll_pop_diff > 0.06 }
+		}
+		localization_key = USA_margin_small
+	}
+	text = {
+		trigger = {
+			check_variable = { USA_state_poll_pop_diff < 0.051 }
+		}
+		localization_key = USA_margin_very_small
+	}
+}
+
+defined_text = {
+	name = GetElectionPrediction
+	text = {
+		localization_key = USA_Election_first_vs_second
+	}
+}
+
+#defined_text = {
+#	name = GetElectionPrediction
+#	text = {
+#		trigger = {
+#			check_variable = { socialist_senate_poll_pop > republican_senate_poll_pop }
+#			check_variable = { socialist_senate_poll_pop > democrat_senate_poll_pop }
+#			check_variable = { socialist_senate_poll_pop > afp_senate_poll_pop }
+#		}
+#		localization_key = USA_Election_socialist_win
+#	}
+#	text = {
+#		trigger = {
+#			check_variable = { republican_senate_poll_pop > socialist_senate_poll_pop }
+#			check_variable = { republican_senate_poll_pop > democrat_senate_poll_pop }
+#			check_variable = { republican_senate_poll_pop > afp_senate_poll_pop }
+#		}
+#		localization_key = USA_Election_republican_win
+#	}
+#	text = {
+#		trigger = {
+#			check_variable = { democrat_senate_poll_pop > socialist_senate_poll_pop }
+#			check_variable = { democrat_senate_poll_pop > republican_senate_poll_pop }
+#			check_variable = { democrat_senate_poll_pop > afp_senate_poll_pop }
+#		}
+#		localization_key = USA_Election_democrat_win
+#	}
+#	text = {
+#		trigger = {
+#			check_variable = { afp_senate_poll_pop > socialist_senate_poll_pop }
+#			check_variable = { afp_senate_poll_pop > democrat_senate_poll_pop }
+#			check_variable = { afp_senate_poll_pop > republican_senate_poll_pop }
+#		}
+#		localization_key = USA_Election_afp_win
+#	}
+#	text = {
+#		localization_key = USA_Election_unsure
+#	}
+#}
 
 defined_text = {
 	name = GetElectionCloseness

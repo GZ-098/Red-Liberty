@@ -27,7 +27,7 @@ set_popularities = {
 	national_conservatism = 20
 	reactionary_theocracy = 0
 	authoritarian_republicanism = 14
-	martial_despotism = 33
+	martial_despotism = 32
 	ultranational_statism = 2
 }
 
