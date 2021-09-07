@@ -20,8 +20,9 @@
  POR_national_conservatism_party:0 "CM"
  POR_national_conservatism_party_long:0 "Causa Monárquica"
  POR_reactionary_theocracy_party:0 "--"
- POR_authoritarian_republicanism_party:0 "--"
+ POR_authoritarian_republicanism_party:0 "CM"
+ POR_authoritarian_republicanism_party_long:0 "Causa Monárquica"
  POR_martial_despotism_party:0 "--"
  POR_ultranational_statism_party:0 "IL"
- POR_ultranational_statism_party:0 "Integralismo Lusitano"
+ POR_ultranational_statism_party_long:0 "Integralismo Lusitano"
  

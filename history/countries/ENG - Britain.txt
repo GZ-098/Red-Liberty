@@ -196,7 +196,7 @@ if = {
 
 set_politics = {
 	ruling_party = social_democracy
-	last_election = "1932.11.8"
+	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -229,7 +229,16 @@ remove_from_faction = IRE
 
 give_guarantee = BEL
 
-# Order matters - here Chamberlain becomes starting leader
+create_country_leader = {
+	name = "Clement Attlee"
+	desc = "POLITICS_CLEMENT_ATTLEE_DESC"
+	picture = "Portrait_ENG_Clement_Attlee.tga"
+	expire = "1965.1.1"
+	ideology = libertarian_socialism_subtype
+	traits = {
+		
+	}
+}
 
 create_country_leader = {
 	name = "Clement Attlee"
@@ -253,22 +262,32 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Assorted Politicians"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = authoritarian_republicanism_subtype
+	traits = {
+		
+	}
+}
 
 create_country_leader = {
-	name = "Stanley Baldwin"
-	desc = "POLITICS_STANLEY_BALDWIN_DESC"
-	picture = "gfx//leaders//ENG//Portrait_Britain_Stanley_Baldwin.dds"
-	expire = "1938.1.1"
-	ideology = liberalism
+	name = "Assorted Politicians"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = martial_despotism_subtype
 	traits = {
-		national_conservatism_subtype
+		
 	}
 }
 
 create_country_leader = {
 	name = "Oswald Mosley"
-	desc = "POLITICS_OSWALD_MOSLEY_DESC"
-	picture = "Portrait_Britain_Oswald_Mosley.dds"
+	desc = ""
+	picture = ""
 	expire = "1965.1.1"
 	ideology = ultranational_statism_subtype
 	traits = {

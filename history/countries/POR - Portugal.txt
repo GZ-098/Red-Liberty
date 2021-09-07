@@ -71,6 +71,11 @@ set_popularities = {
 	ultranational_statism = 5
 }
 
+set_country_flag = conservative_coalition
+set_country_flag = authoritarian_coalition
+set_country_flag = despotist_coalition
+set_country_flag = ultranationalist_coalition
+
 create_country_leader = {
 	name = "Manuel II"
 	desc = ""

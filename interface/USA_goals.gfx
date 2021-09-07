@@ -1,83 +1,6 @@
 spritetypes = {
 	
-	### INTRO TREE ###
-	
-	SpriteType = {
-		name = "GFX_USA_the_year_1936"
-		texturefile = "gfx/interface/goals/USA/USA_the_year_1936.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_continue_the_work"
-		texturefile = "gfx/interface/goals/USA/USA_continue_the_work.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_cut_mil_budget"
-		texturefile = "gfx/interface/goals/USA/USA_cut_mil_budget.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_rural_electrification"
-		texturefile = "gfx/interface/goals/USA/USA_rural_electrification.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_increase_corp_taxes"
-		texturefile = "gfx/interface/goals/USA/USA_increase_corp_taxes.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_increase_wpa_spending"
-		texturefile = "gfx/interface/goals/USA/USA_increase_wpa_spending.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_social_security"
-		texturefile = "gfx/interface/goals/USA/USA_social_security.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_a_new_america"
-		texturefile = "gfx/interface/goals/USA/USA_new_america.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_prepare_the_campaign"
-		texturefile = "gfx/interface/goals/USA/USA_prepare_the_campaign.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_campaign_great_lakes"
-		texturefile = "gfx/interface/goals/USA/USA_campaign_great_lakes.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_campaign_east_coast"
-		texturefile = "gfx/interface/goals/USA/USA_campaign_east_coast.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_reaching_new_heights"
-		texturefile = "gfx/interface/goals/USA/USA_reaching_new_heights.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_campaign_rockies"
-		texturefile = "gfx/interface/goals/USA/USA_campaign_rockies.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_campaign_west_coast"
-		texturefile = "gfx/interface/goals/USA/USA_campaign_west_coast.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_not_so_solid_south"
-		texturefile = "gfx/interface/goals/USA/USA_campaign_south.png"
-	}
-	
-	### THOMAS 2ND TERM ###
+	### THOMAS TREE ###
 	
 	SpriteType = {
 		name = "GFX_USA_the_second_thomas_admin"
@@ -469,8 +392,18 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_end_child_labor"
+		texturefile = "gfx/interface/goals/USA/USA_end_child_labor.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_end_wage_discrimination"
 		texturefile = "gfx/interface/goals/USA/USA_end_wage_discrimination.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_economic_equality_act"
+		texturefile = "gfx/interface/goals/USA/USA_economic_equality_act.png"
 	}
 	
 	SpriteType = {
@@ -479,18 +412,23 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_food_stamp_plan"
+		texturefile = "gfx/interface/goals/USA/USA_food_stamp_plan.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_lower_healthcare_costs"
 		texturefile = "gfx/interface/goals/USA/USA_lower_healthcare_costs.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_USA_right_to_democracy"
-		texturefile = "gfx/interface/goals/USA/USA_right_to_democracy.png"
+		name = "GFX_USA_war_on_poverty"
+		texturefile = "gfx/interface/goals/USA/USA_declare_war_on_poverty.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_USA_gerrymandering"
-		texturefile = "gfx/interface/goals/USA/USA_gerrymandering.png"
+		name = "GFX_USA_right_to_democracy"
+		texturefile = "gfx/interface/goals/USA/USA_right_to_democracy.png"
 	}
 	
 	SpriteType = {

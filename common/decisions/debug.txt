@@ -54,6 +54,36 @@ debug_category = {
 			set_country_flag = USA_presidential_conclusion
 		}
 	}
+	
+	debug_refresh_election = {
+	
+		icon = generic_political_discourse
+		
+		avaliable = {
+			tag = USA
+		}
+		
+		visible = {
+			is_debug = yes
+			tag = USA
+		}
+		
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+		
+		complete_effect = {
+			every_owned_state = {
+				limit = { can_have_elections_in_state = yes }
+				USA_update_presidential_election_race_in_state = yes
+				USA_clamp_state_popularities = yes
+				USA_check_election_vs = yes
+				USA_check_election_margin = yes
+			}
+		}
+	}
 
 	#debug_load_thomas_second_term = {
 	#

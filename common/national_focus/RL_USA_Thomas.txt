@@ -155,6 +155,7 @@ shared_focus = {
         country_event = {
 			id = united_states_thomas.26
 		}
+		custom_effect_tooltip = USA_SPA_better_south
     }
 	
 	ai_will_do = {
@@ -385,7 +386,7 @@ shared_focus = {
 	relative_position_id = USA_the_american_crisis
 	prerequisite = { focus = USA_the_american_crisis }
     completion_reward = {
-        
+        custom_effect_tooltip = USA_SPA_better_midwest
     }
 	
 	ai_will_do = {
@@ -482,7 +483,7 @@ shared_focus = {
 	relative_position_id = USA_the_american_crisis
 	prerequisite = { focus = USA_the_american_crisis }
     completion_reward = {
-		
+		custom_effect_tooltip = USA_SPA_better_north
     }
 	
 	ai_will_do = {
@@ -1526,8 +1527,8 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_gerrymandering
-	icon = GFX_USA_gerrymandering
+    id = USA_protect_the_first
+	icon = GFX_USA_protect_the_first
 	
     x = -1
 	y = 1
@@ -1545,15 +1546,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_the_past_isnt_dead
-	icon = GFX_USA_the_past_isnt_dead
+    id = USA_voting_rights_act
+	icon = GFX_USA_voting_rights_act
 	
     x = 1
 	y = 1
 	
 	cost = 8
-	relative_position_id = USA_gerrymandering
-	prerequisite = { focus = USA_gerrymandering }
+	relative_position_id = USA_protect_the_first
+	prerequisite = { focus = USA_protect_the_first }
     completion_reward = {
         
     }
@@ -1564,8 +1565,8 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_erode_bases_of_power
-	icon = GFX_USA_erode_bases_of_power
+    id = USA_the_initiative_and_referendum
+	icon = GFX_USA_the_initiative_and_referendum
 	
     x = 1
 	y = 1
@@ -1583,15 +1584,18 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_intimidate_the_intimidators
-	icon = GFX_USA_intimidate_the_intimidators
+    id = USA_legislative_referral
+	icon = GFX_USA_legislative_referral
 	
     x = -1
 	y = 1
 	
-	cost = 8
-	relative_position_id = USA_erode_bases_of_power
-	prerequisite = { focus = USA_erode_bases_of_power }
+	cost = 4
+	relative_position_id = USA_the_initiative_and_referendum
+	prerequisite = { focus = USA_the_initiative_and_referendum }
+	mutually_exclusive = {
+		focus = USA_peoples_veto
+	}
     completion_reward = {
         
     }
@@ -1602,15 +1606,18 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_attack_voter_suppression
-	icon = GFX_USA_attack_voter_suppression
+    id = USA_peoples_veto
+	icon = GFX_USA_peoples_veto
 	
     x = 1
 	y = 1
 	
-	cost = 8
-	relative_position_id = USA_erode_bases_of_power
-	prerequisite = { focus = USA_erode_bases_of_power }
+	cost = 4
+	relative_position_id = USA_the_initiative_and_referendum
+	prerequisite = { focus = USA_the_initiative_and_referendum }
+	mutually_exclusive = {
+		focus = USA_legislative_referral
+	}
     completion_reward = {
         
     }
@@ -1621,16 +1628,18 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_these_are_your_rights
-	icon = GFX_USA_these_are_your_rights
+    id = USA_prepare_the_amendment
+	icon = GFX_USA_prepare_the_amendment
 	
     x = 1
 	y = 1
 	
 	cost = 8
-	relative_position_id = USA_intimidate_the_intimidators
-	prerequisite = { focus = USA_intimidate_the_intimidators }
-	prerequisite = { focus = USA_attack_voter_suppression }
+	relative_position_id = USA_legislative_referral
+	prerequisite = {
+		focus = USA_legislative_referral
+		focus = USA_peoples_veto
+	}
     completion_reward = {
         
     }
@@ -1641,16 +1650,16 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_voting_rights_act
-	icon = GFX_USA_voting_rights_act
+    id = USA_politicians_should_be_popular
+	icon = GFX_USA_politicians_should_be_popular
 	
     x = 1
 	y = 1
 	
-	cost = 10
-	relative_position_id = USA_the_past_isnt_dead
-	prerequisite = { focus = USA_the_past_isnt_dead }
-	prerequisite = { focus = USA_these_are_your_rights }
+	cost = 8
+	relative_position_id = USA_voting_rights_act
+	prerequisite = { focus = USA_voting_rights_act }
+	prerequisite = { focus = USA_prepare_the_amendment }
     completion_reward = {
         
     }
@@ -1672,7 +1681,7 @@ shared_focus = {
 	prerequisite = { focus = USA_attempt_standardization }
 	prerequisite = { focus = USA_economic_equality_act }
 	prerequisite = { focus = USA_national_healthcare_act }
-	prerequisite = { focus = USA_voting_rights_act }
+	prerequisite = { focus = USA_politicians_should_be_popular }
     completion_reward = {
         
     }

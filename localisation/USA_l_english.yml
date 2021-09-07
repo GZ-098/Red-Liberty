@@ -65,6 +65,9 @@
  ### POPULARITY TOOLTIPS ###
  
  USA_SPA_better_nationwide:0 "The §PSPA§! looks a little better §Gnationwide§!.\n"
+ USA_SPA_better_south:0 "The §PSPA§! looks a little better §Gin the South§!.\n"
+ USA_SPA_better_north:0 "The §PSPA§! looks a little better §Gin the North§!.\n"
+ USA_SPA_better_midwest:0 "The §PSPA§! looks a little better §Gin the Midwest§!.\n"
  
  ### INTRO TREE ###
  
@@ -223,13 +226,14 @@
 
  USA_right_to_democracy:0 "Right to Democracy"
  USA_more_perfect_union:0 "In Search of a More Perfect Union"
+ USA_the_initiative_and_referendum:0 "The Initiative and the Referendum"
+ USA_protect_the_first:0 "Protect the First Amendment"
  USA_gerrymandering:0 "The Issue of Gerrymandering"
- USA_the_past_isnt_dead:0 "The Past Isn't Dead"
- USA_erode_bases_of_power:0 "Erode Their Bases of Power"
- USA_intimidate_the_intimidators:0 "Intimidate the Intimidators"
- USA_attack_voter_suppression:0 "Supress Voter Suppression"
- USA_these_are_your_rights:0 "These are your Rights!"
+ USA_legislative_referral:0 "Legislative Referral"
+ USA_peoples_veto:0 "The People's Veto"
  USA_voting_rights_act:0 "Voting Rights Act"
+ USA_prepare_the_amendment:0 "Prepare the Amendment"
+ USA_politicians_should_be_popular:0 "Politicians Should Be Popular!"
  
  USA_america_reborn:0 "America Reborn"
  USA_one_more_thing:0 ""

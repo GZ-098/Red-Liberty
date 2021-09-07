@@ -2,16 +2,10 @@
 # Created by Yard1, Modified by Wobbly
 
 #Constants
-@BONUS_POPULARITY_PRES_MULTIPLIER = 0.3
-@PRESIDENT_INCUMBENCY_BONUS_POPULARITY = 0.05
-@SENATE_SITTING_PRESIDENT_PENALTY = -0.1 #USED TO BE 0.05, testing is done by LAZER 2. april 2020
-@SENATE_INCUMBENCY_BONUS_MULTIPLIER_1 = 2
-@SENATE_INCUMBENCY_BONUS_MULTIPLIER_2 = 0.001
-@SENATE_OPPOSITION_BONUS_ADDER = 0.05
-@SENATE_TIEBREAKER_ADDER = 0.05
+@SENATE_TIEBREAKER = 0.05
 @POPULARITY_CLAMP_MIN = 0.001
 @POPULARITY_CLAMP_MAX = 1000
-@INCUMBENCY_BONUS_CLAMP_MIN = 0.0001 #is hoi4 even precise enough to represent this?
+@INCUMBENCY_BONUS_CLAMP_MIN = 0.0001
 @INCUMBENCY_BONUS_CLAMP_MAX = 0.002
 @PULSE_POPULARITY_CLAMP_MIN = 0
 @PULSE_POPULARITY_CLAMP_MAX_FIRST = 10
@@ -382,9 +376,9 @@ initialize_US_elections_system = {
 	
 	359 = { # New Jersey
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.4 } # Default Value
+		set_variable = { republican_popularity = 0.4 }
 		set_variable = { democrat_popularity = 0.45 }
-		set_variable = { socialist_popularity = 0.65 } # Default Value
+		set_variable = { socialist_popularity = 0.65 }
 		
 		set_variable = { senator_1 = 1 }
 		set_variable = { senator_2 = 2 }
@@ -419,8 +413,8 @@ initialize_US_elections_system = {
 	
 	363 = { # North Carolina, conservative but not super conservative
 		set_state_flag = US_election_state
-		set_variable = { democrat_popularity = 0.6 } # Default Value
-		set_variable = { republican_popularity = 0.1 } # Default Value
+		set_variable = { democrat_popularity = 0.6 }
+		set_variable = { republican_popularity = 0.1 }
 		set_variable = { afp_popularity = 0.25 }
 		
 		set_variable = { senator_1 = 3 }
@@ -431,8 +425,8 @@ initialize_US_elections_system = {
 	
 	389 = { # North Dakota, heartland, pro-republican, significant progressive presence
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.6 } # Default Value
-		set_variable = { socialist_popularity = 0.4 } # Default Value
+		set_variable = { republican_popularity = 0.6 }
+		set_variable = { socialist_popularity = 0.4 }
 		
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 1 }
@@ -442,9 +436,9 @@ initialize_US_elections_system = {
 	
 	261 = { # Ohio, swing state
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.65 } # Default Value
-		set_variable = { socialist_popularity = 0.45 } # Default Value
-		set_variable = { democrat_popularity = 0.35 } # Default Value
+		set_variable = { republican_popularity = 0.65 }
+		set_variable = { socialist_popularity = 0.45 }
+		set_variable = { democrat_popularity = 0.35 }
 		
 		set_variable = { socialist_popularity_special = 0.6 } # thomas is from Marion, OH
 		
@@ -553,8 +547,8 @@ initialize_US_elections_system = {
 	
 	380 = { # Utah, MORMON GANG
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.25 } # Default Value
-		set_variable = { democrat_popularity = 0.75 } # Default Value
+		set_variable = { republican_popularity = 0.25 }
+		set_variable = { democrat_popularity = 0.75 }
 		
 		set_variable = { senator_1 = 2 }
 		set_variable = { senator_2 = 3 }
@@ -576,8 +570,8 @@ initialize_US_elections_system = {
 	
 	362 = { # Virginia
 		set_state_flag = US_election_state
-		set_variable = { republican_popularity = 0.35 } # Default Value
-		set_variable = { democrat_popularity = 0.55 } # Default Value
+		set_variable = { republican_popularity = 0.35 }
+		set_variable = { democrat_popularity = 0.55 }
 		set_variable = { socialist_popularity = 0.1 }
 		
 		set_variable = { senator_1 = 3 }
