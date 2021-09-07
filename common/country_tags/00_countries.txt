@@ -255,6 +255,8 @@ FWA = "countries/French West Africa.txt"
 FCA = "countries/French Central Africa.txt"
 
 ASA = "countries/Aussa.txt"
+DAR = "countries/Darfur.txt"
+AZA = "countries/Azandeland.txt"
 
 ### South America ###
 UOB = "countries/Union of Brazil.txt"

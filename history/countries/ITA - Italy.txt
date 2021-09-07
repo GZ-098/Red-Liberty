@@ -174,7 +174,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Ferruccio Parri"
-	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+	desc = ""
 	picture = "GFX_portrait_italy_ferruccio_parri.tga"
 	expire = "1965.1.1"
 	ideology = libertarian_socialism_subtype
@@ -185,7 +185,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Alcide De Gasperi"
-	desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
+	desc = ""
 	picture = "GFX_portrait_italy_alcide_de_gasperi.tga"
 	expire = "1965.1.1"
 	ideology = national_conservatism_subtype
@@ -196,7 +196,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Luigi Facta"
-	desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
+	desc = ""
 	picture = "GFX_portrait_italy_luigi_facta.tga"
 	expire = "1965.1.1"
 	ideology = national_conservatism_subtype
@@ -221,7 +221,7 @@ create_country_leader = {
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "benito.png"
 	expire = "1965.1.1"
-	ideology = ultranational_statism_subtype
+	ideology = fascism_subtype
 	traits = {
 		
 	}

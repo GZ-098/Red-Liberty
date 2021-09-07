@@ -364,6 +364,10 @@ ideologies = {
 			ultranational_statism_subtype = {
 			
 			}
+			
+			fascism_subtype = {
+			
+			}
 		}
 		
 		dynamic_faction_names = {
