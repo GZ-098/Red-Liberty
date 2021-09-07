@@ -12,7 +12,6 @@ USA_recalculate_polls = {
 				}	
 			}
 			log = "[This.GetName]: calculate senate poll, because senator 1 is up for election"
-			#USA_update_senator_1_in_state = yes
 			USA_calculate_senate_predictions = yes
 		}
 		every_owned_state = {
@@ -20,7 +19,6 @@ USA_recalculate_polls = {
 				has_state_flag = elections_senator_2
 			}
 			log = "[This.GetName]: calculate senate poll, because senator 2 is up for election"
-			#USA_update_senator_2_in_state = yes
 			USA_calculate_senate_predictions = yes
 		}
 		every_owned_state = {
@@ -36,7 +34,6 @@ USA_recalculate_polls = {
 USA_class_1_senate_prepare = {
 	set_country_flag = USA_senate_elections
 	set_country_flag = USA_class_1_elections
-	#USA_recalculate_polls = yes
 	#SENATOR 1
 	377 = { #Arizona
 		set_state_flag = elections_senator_1
@@ -138,7 +135,6 @@ USA_class_1_senate_prepare = {
 USA_class_2_senate_prepare = {
 	set_country_flag = USA_senate_elections
 	set_country_flag = USA_class_2_elections
-	#USA_recalculate_polls = yes
 	#SENATOR 1
 	#Alabama
 	367 = {
@@ -277,7 +273,6 @@ USA_class_2_senate_prepare = {
 USA_class_3_senate_prepare = {
 	set_country_flag = USA_senate_elections
 	set_country_flag = USA_class_3_elections
-	#USA_recalculate_polls = yes
 	#SENATOR 2
 	#Alabama
 	367 = {
@@ -459,14 +454,8 @@ USA_hold_senate_election = {
     		max = @POPULARITY_CLAMP_MAX
 		}
 		
-		#log = " update senate 1 race"
-		#USA_update_senator_1_in_state = yes
-		
 		log = " pick senate 1 race"
 		USA_pick_senator_1_in_state = yes
-		
-		#log = " clear senate 1 race"
-		#USA_clear_senate_predictions = yes
 	}
 	every_owned_state = {
 		limit = {
@@ -505,59 +494,13 @@ USA_hold_senate_election = {
     		max = @POPULARITY_CLAMP_MAX
 		}
 		
-		#log = " update senate 2 race"
-		#USA_update_senator_2_in_state = yes
-		
 		log = " pick senate 1 race"
 		USA_pick_senator_2_in_state = yes
-		
-		#log = " clear senate 1 race"
-		#USA_clear_senate_predictions = yes
 	}
 	
 	USA_calculate_senators = yes
 	
 	set_country_flag = USA_senate_conclusion
-	#US_elections_calculate_country_vars = yes
-}
-
-USA_update_senator_1_in_state = { # deprecated and unused
-	if = {
-		limit = {
-			check_variable = { THIS.socialist_popularity > THIS.democrat_popularity }
-			check_variable = { THIS.socialist_popularity > THIS.republican_popularity }
-			check_variable = { THIS.socialist_popularity > THIS.afp_popularity }
-		}
-		#set_state_flag = USA_change_senator_to_1
-		log = "[THIS.getstate]: socialists win senate seat"
-	}
-	if = {
-		limit = {
-			check_variable = { THIS.republican_popularity > THIS.democrat_popularity }
-			check_variable = { THIS.republican_popularity > THIS.socialist_popularity }
-			check_variable = { THIS.republican_popularity > THIS.afp_popularity }
-		}
-		#set_state_flag = USA_change_senator_to_2
-		log = "[THIS.getstate]: republicans win senate seat"
-	}
-	if = {
-		limit = {
-			check_variable = { THIS.democrat_popularity > THIS.republican_popularity }
-			check_variable = { THIS.democrat_popularity > THIS.socialist_popularity }
-			check_variable = { THIS.democrat_popularity > THIS.afp_popularity }
-		}
-		#set_state_flag = USA_change_senator_to_3
-		log = "[THIS.getstate]: democrats win senate seat"
-	}
-	if = {
-		limit = {
-			check_variable = { THIS.afp_popularity > THIS.republican_popularity }
-			check_variable = { THIS.afp_popularity > THIS.socialist_popularity }
-			check_variable = { THIS.afp_popularity > THIS.democrat_popularity }
-		}
-		#set_state_flag = USA_change_senator_to_4
-		log = "[THIS.getstate]: afp wins senate seat"
-	}
 }
 
 USA_pick_senator_1_in_state = {

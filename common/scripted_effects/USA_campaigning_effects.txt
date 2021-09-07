@@ -1,5 +1,5 @@
-@CAMPAIGNING_GREAT_SUCCESS_BOOST = 0.2
-@CAMPAIGNING_GOOD_SUCCESS_BOOST = 0.1
+@CAMPAIGNING_GREAT_BOOST = 0.2
+@CAMPAIGNING_GOOD_BOOST = 0.1
 @CAMPAIGNING_NEUTRAL_BOOST = 0.05
 @CAMPAIGNING_BAD_BOOST = 0.025
 
@@ -16,7 +16,6 @@ USA_campaign_area_east_coast = {
 	add_to_array = { USA_campaign_states = 833 } #Delaware
 	add_to_array = { USA_campaign_states = 361 } #Maryland
 	add_to_array = { USA_campaign_states = 360 } #Pennsylvania
-	add_to_array = { USA_campaign_states = 832 } #West Virginia
 	add_to_array = { USA_campaign_states = 358 } #New York
 	add_to_array = { USA_campaign_states = 359 } #New Jersey
 }
@@ -26,6 +25,7 @@ USA_campaign_area_upper_south = {
 	add_to_array = { USA_campaign_states = 363 } #North Carolina
 	add_to_array = { USA_campaign_states = 368 } #Tennessee
 	add_to_array = { USA_campaign_states = 362 } #Virginia
+	add_to_array = { USA_campaign_states = 832 } #West Virginia
 }
 
 USA_campaign_area_deep_south = {
@@ -84,21 +84,21 @@ USA_campaigning_effect = {
 		limit = { has_country_flag = USA_campaigning_for_socialists }
 		random_list = {
 			15 = {
-				add_to_temp_variable = { USA_pop_factor = @CAMPAIGNING_GREAT_SUCCESS_BOOST }
+				add_to_temp_variable = { USA_pop_factor = @CAMPAIGNING_GREAT_BOOST }
 				custom_effect_tooltip = USA_campaigning_great_success_tt
 				country_event = { id = us_campaign.1 } 
 			}
 			50 = {
-				add_to_temp_variable = { USA_pop_factor = @CAMPAIGNING_GOOD_SUCCESS_BOOST }
+				add_to_temp_variable = { USA_pop_factor = @CAMPAIGNING_GOOD_BOOST }
 				custom_effect_tooltip = USA_campaigning_good_success_tt
 				country_event = { id = us_campaign.2 }
 			}
-			20 = {
+			25 = {
 				add_to_temp_variable = { USA_pop_factor = @CAMPAIGNING_NEUTRAL_BOOST }
 				custom_effect_tooltip = USA_campaigning_neutral_tt
 				country_event = { id = us_campaign.3 } 
 			}
-			15 = {
+			10 = {
 				add_to_temp_variable = { USA_pop_factor = @CAMPAIGNING_BAD_BOOST }
 				custom_effect_tooltip = USA_campaigning_bad_tt
 				country_event = { id = us_campaign.4 } 
@@ -106,10 +106,11 @@ USA_campaigning_effect = {
 		}
 	}
 	multiply_temp_variable = { USA_pop_factor = USA_campaigning_multiplier }
+	
 	log = "USA_campaigning_effect: USA_pop_factor: [?USA.USA_pop_factor]"
-	for_each_scope_loop = { # THIS IS WHERE THAT ARRAY YOU SEE IN THE CAMPAIGN EVENTS COMES FROM. Why couldn't hoi4 mods have been written in a normal language like Python?
+	
+	for_each_scope_loop = {
 		array = USA_campaign_states
-
 		USA_campaigning_state_boost = yes
 		log = "[This.GetName]: USA_campaigning_state_boost: SPA: [?socialist_popularity] || DP: [?democrat_popularity] || RP: [?republican_popularity] || AFP: [?afp_popularity]"
 	}

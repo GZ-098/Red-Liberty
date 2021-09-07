@@ -1,12 +1,7 @@
-
-# Created by Yard1, Modified by Wobbly
-
-#Constants
+### CONSTANTS ###
 @SENATE_TIEBREAKER = 0.05
 @POPULARITY_CLAMP_MIN = 0.001
 @POPULARITY_CLAMP_MAX = 1000
-@INCUMBENCY_BONUS_CLAMP_MIN = 0.0001
-@INCUMBENCY_BONUS_CLAMP_MAX = 0.002
 @PULSE_POPULARITY_CLAMP_MIN = 0
 @PULSE_POPULARITY_CLAMP_MAX_FIRST = 10
 @PULSE_POPULARITY_CLAMP_MAX_SECOND = 2 # originally 2
@@ -19,7 +14,7 @@
 # 5 = communist
 # 6 = farmer-labor
 
-initialize_US_elections_system = {
+USA_start_elections_system = {
 	set_variable = { USA_campaigning_multiplier = 1 }
 
 	every_owned_state = {
@@ -818,62 +813,17 @@ USA_clamp_state_popularities = {
 		min = @PULSE_POPULARITY_CLAMP_MIN
 		max = @PULSE_POPULARITY_CLAMP_MAX_SECOND
 	}
-	#log = "[This.GetName] : Clamped state popularities: SPA: [?socialist_popularity] || DP: [?democrat_popularity] || RP: [?republican_popularity] || AFP: [?afp_popularity]"
-}
-
-USA_clamp_state_popularities_alternate = {
-	set_temp_variable = { pop_total_temp = republican_popularity }
-	add_to_temp_variable = { pop_total_temp = democrat_popularity }
-	add_to_temp_variable = { pop_total_temp = socialist_popularity }
-	add_to_temp_variable = { pop_total_temp = afp_popularity }
-	if = {
-		limit = {
-			check_variable = { pop_total_temp > 1 }
-		}
-		divide_variable = { republican_popularity = pop_total_temp }
-		divide_variable = { democrat_popularity = pop_total_temp }
-		divide_variable = { socialist_popularity = pop_total_temp }
-		divide_variable = { afp_popularity = pop_total_temp }
-	}
-	
-	set_temp_variable = { pop_total_temp = republican_popularity }
-	add_to_temp_variable = { pop_total_temp = democrat_popularity }
-	add_to_temp_variable = { pop_total_temp = socialist_popularity }
-	add_to_temp_variable = { pop_total_temp = afp_popularity }
-	if = {
-		limit = {
-			check_variable = { pop_total_temp < 1 }
-		}
-		random_list = {
-			25 = {
-				add_to_variable = { socialist_popularity = 0.002 }
-			}
-			25 = {
-				add_to_variable = { republican_popularity = 0.002 }
-			}
-			25 = {
-				add_to_variable = { democrat_popularity = 0.002 }
-			}
-			25 = {
-				add_to_variable = { afp_popularity = 0.002 }
-			}
-		}
-	}
+	log = "[This.GetName] : Clamped state popularities: SPA: [?socialist_popularity] || DP: [?democrat_popularity] || RP: [?republican_popularity] || AFP: [?afp_popularity]"
 }
 
 USA_prepare_presidential_election = {
 	set_country_flag = USA_presidential_elections
-	#every_owned_state = {
-	#	limit = { can_have_elections_in_state = yes }
-	#}
-	#USA_recalculate_polls = yes
 }
 
-USA_update_presidential_election_race_in_state = {
+USA_convert_party_pop_percentage = {
 
-	#make party pop percentages
+	#make party pop into percentages
 	#convert temp party pops into percentages
-	
 	set_temp_variable = { socialist_temp_pop = socialist_popularity }
 	set_temp_variable = { republican_temp_pop = republican_popularity }
 	set_temp_variable = { democrat_temp_pop = democrat_popularity }
@@ -896,109 +846,15 @@ USA_update_presidential_election_race_in_state = {
 	divide_temp_variable = { afp_temp_pop = total_party_pop }
 
 	#convert to non-temp variables
-
 	set_variable = { socialist_election_pop = socialist_temp_pop }
 	set_variable = { republican_election_pop = republican_temp_pop }
 	set_variable = { democrat_election_pop = democrat_temp_pop }
 	set_variable = { afp_election_pop = afp_temp_pop }
 }
 
-USA_calculate_president_predictions = {
-	# socialists
-	set_variable = { socialist_president_poll_pop = socialist_election_pop }
-	set_temp_variable = { error_margin_state_socialist = 1 }
-	randomize_temp_variable = {
-		var = error_margin_state_socialist
-		distribution = uniform
-		min = 0.9
-		max = 1.1
-	}
-	multiply_variable = { socialist_president_poll_pop = error_margin_state_socialist }
-	
-	# republicans
-	set_variable = { republican_president_poll_pop = republican_election_pop }
-	set_temp_variable = { error_margin_state_republican = 1 }
-	randomize_temp_variable = {
-		var = error_margin_state_republican
-		distribution = uniform
-		min = 0.9
-		max = 1.1
-	}
-	multiply_variable = { republican_president_poll_pop = error_margin_state_republican }
-	
-	# democrats
-	set_variable = { democrat_president_poll_pop = democrat_election_pop }
-	set_temp_variable = { error_margin_state_democrat = 1 }
-	randomize_temp_variable = {
-		var = error_margin_state_democrat
-		distribution = uniform
-		min = 0.9
-		max = 1.1
-	}
-	multiply_variable = { democrat_president_poll_pop = error_margin_state_democrat }
-	
-	# afp
-	set_variable = { afp_president_poll_pop = afp_election_pop }
-	set_temp_variable = { error_margin_state_afp = 1 }
-	randomize_temp_variable = {
-		var = error_margin_state_afp
-		distribution = uniform
-		min = 0.9
-		max = 1.1
-	}
-	multiply_variable = { afp_president_poll_pop = error_margin_state_afp }
-}
-
-USA_calculate_senate_predictions = {
-	# socialists
-	set_variable = { socialist_senate_poll_pop = socialist_election_pop }
-	set_temp_variable = { error_margin_state_socialist = 1 }
-	randomize_temp_variable = {
-		var = error_margin_state_socialist
-		distribution = uniform
-		min = 0.9
-		max = 1.1
-	}
-	multiply_variable = { socialist_senate_poll_pop = error_margin_state_socialist }
-	
-	# republicans
-	set_variable = { republican_senate_poll_pop = republican_election_pop }
-	set_temp_variable = { error_margin_state_republican = 1 }
-	randomize_temp_variable = {
-		var = error_margin_state_republican
-		distribution = uniform
-		min = 0.9
-		max = 1.1
-	}
-	multiply_variable = { republican_senate_poll_pop = error_margin_state_republican }
-	
-	# democrats
-	set_variable = { democrat_senate_poll_pop = democrat_election_pop }
-	set_temp_variable = { error_margin_state_democrat = 1 }
-	randomize_temp_variable = {
-		var = error_margin_state_democrat
-		distribution = uniform
-		min = 0.9
-		max = 1.1
-	}
-	multiply_variable = { democrat_senate_poll_pop = error_margin_state_democrat }
-	
-	# afp
-	set_variable = { afp_senate_poll_pop = afp_election_pop }
-	set_temp_variable = { error_margin_state_afp = 1 }
-	randomize_temp_variable = {
-		var = error_margin_state_afp
-		distribution = uniform
-		min = 0.9
-		max = 1.1
-	}
-	multiply_variable = { afp_senate_poll_pop = error_margin_state_afp }
-}
-
 USA_hold_presidential_election_in_state = {
 	
 	#check which party is largest
-	
 	if = {
 		limit = {
 			check_variable = { socialist_election_pop > republican_election_pop }
@@ -1039,8 +895,6 @@ USA_hold_presidential_election_in_state = {
 		log = "[This.GetName] : Voted for afp with [?electoral_votes] electoral votes"
 		set_state_flag = voted_afp
 	}
-	
-	USA_calculate_popular_vote = yes
 }
 
 clear_election_results = {
@@ -1072,19 +926,7 @@ clear_election_results = {
 }
 
 USA_clear_presidential_election_values = {
-	clear_variable = socialist_electoral_votes
-	clear_variable = democrat_electoral_votes
-	clear_variable = republican_electoral_votes
-	clear_variable = afp_electoral_votes
 	clr_country_flag = USA_presidential_conclusion
 	clr_country_flag = USA_presidential_elections
 	clr_country_flag = currently_campaigning
-	every_owned_state = {
-		limit = { can_have_elections_in_state = yes }
-		USA_clear_senate_predictions = yes
-		clr_state_flag = voted_socialist
-		clr_state_flag = voted_democrat
-		clr_state_flag = voted_republican
-		clr_state_flag = voted_afp
-	}
 }

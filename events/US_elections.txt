@@ -1,6 +1,6 @@
 add_namespace = us_election
 add_namespace = us_campaign
-add_namespace = USA_election_trigger
+add_namespace = us_election_trigger
 
 country_event = { # 1936 election trigger
 	id = us_election.1
@@ -40,7 +40,7 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			country_event = { id = USA_election_trigger.12 days = 30 }
+			country_event = { id = us_election_trigger.12 days = 30 }
 			clr_country_flag = USA_presidential_elections
 		}
 	}
@@ -336,11 +336,10 @@ country_event = { #Great campaign
 	id = us_campaign.1
 	title = "Great Campaign"
 	desc = us_campaign.1.desc
-	picture = GFX_report_event_us_congress
 
 	is_triggered_only = yes
 
-	option = { #
+	option = {
 		name = us_campaign.1.a
 		ai_chance = { factor = 1 }
 	}
@@ -350,13 +349,12 @@ country_event = { #Good campaign
 	id = us_campaign.2
 	title = "Good Campaign"
 	desc = us_campaign.2.desc
-	picture = GFX_report_event_us_congress
 
 	is_triggered_only = yes
 
-	option = { #
+	option = {
 		name = us_campaign.2.a
-		ai_chance = { factor = 1 }
+		ai_chance = { factor = 10 }
 	}
 }
 
@@ -364,41 +362,35 @@ country_event = { #Middling campaign
 	id = us_campaign.3
 	title = "Middling Campaign"
 	desc = us_campaign.3.desc
-	picture = GFX_report_event_us_congress
 
 	is_triggered_only = yes
 
-	option = { #
+	option = {
 		name = us_campaign.3.a
-		ai_chance = { factor = 1 }
+		ai_chance = { factor = 10 }
 	}
 }
 country_event = { #Bad campaign
 	id = us_campaign.4
 	title = "Bad Campaign"
 	desc = us_campaign.4.desc
-	picture = GFX_report_event_us_congress
 
 	is_triggered_only = yes
 
-	option = { #
+	option = {
 		name = us_campaign.4.a
-		ai_chance = { factor = 1 }
+		ai_chance = { factor = 10 }
 	}
 }
 
-#Fire prep events in ~Jan 30th of the year, and have events fire Nov 6
-
-#Class 1
-country_event = { #Show preparation and mark states for election
-	id = USA_election_trigger.1
- 	title = USA_election_trigger.1.title
- 	desc = USA_election_trigger.1.desc
-	#picture = GFX_report_event_iberia_big_meeting
+country_event = { #mark states for election
+	id = us_election_trigger.1
+ 	title = us_election_trigger.1.title
+ 	desc = us_election_trigger.1.desc
 
 	immediate = {
  		hidden_effect = {
- 			country_event = { id = USA_election_trigger.2 days = 280 } # hold the election
+ 			country_event = { id = us_election_trigger.2 days = 280 } # hold the election
 			USA_class_1_senate_prepare = yes
 			USA_recalculate_polls = yes
  		}
@@ -409,30 +401,43 @@ country_event = { #Show preparation and mark states for election
  	option = {
  		name = "SPA! SPA! SPA!"
  		custom_effect_tooltip = USA_senate_elections_visible_tt
+		if = {
+			limit = {
+				is_presidential_election_year = yes
+			}
+			custom_effect_tooltip = USA_presidential_elections_visible_tt
+			USA_prepare_presidential_election = yes
+		}
 		set_country_flag = USA_campaigning_socialist
  	}
 	option = {
  		name = "Protect our American way of life! Vote Democrat!"
  		custom_effect_tooltip = USA_senate_elections_visible_tt
+		if = {
+			limit = {
+				is_presidential_election_year = yes
+			}
+			custom_effect_tooltip = USA_presidential_elections_visible_tt
+			USA_prepare_presidential_election = yes
+		}
 		set_country_flag = USA_campaigning_democrat
  	}
 }
 
 
-country_event = { #Actually hold the election
-	id = USA_election_trigger.2
- 	title = USA_election_trigger.2.t
- 	desc = USA_election_trigger.2.desc
-	#picture = GFX_report_event_usa_supreme_court
+country_event = { #hold the election
+	id = us_election_trigger.2
+ 	title = us_election_trigger.2.t
+ 	desc = us_election_trigger.2.desc
 
 	immediate = {
- 		hidden_effect = { country_event = { id = USA_election_trigger.8 days = 30 } }
+ 		hidden_effect = { country_event = { id = us_election_trigger.8 days = 30 } }
 	}
 
 	is_triggered_only = yes
 
  	option = {
- 		name = USA_election_trigger.2.a
+ 		name = us_election_trigger.2.a
  		custom_effect_tooltip = USA_senate_elections_occur_tt
  		hidden_effect = {
  			USA_hold_senate_election = yes
@@ -440,32 +445,46 @@ country_event = { #Actually hold the election
  	}
 }
 
-#Class 2
 country_event = { #Prep Class II election
-	id = USA_election_trigger.3
- 	title = USA_election_trigger.3.t
- 	desc = USA_election_trigger.3.desc
-	picture = GFX_report_event_us_presidential_podium
+	id = us_election_trigger.3
+ 	title = us_election_trigger.3.t
+ 	desc = us_election_trigger.3.desc
 
 	immediate = {
  		hidden_effect = {
- 			country_event = { id = USA_election_trigger.4 days = 280 }
+ 			country_event = { id = us_election_trigger.4 days = 280 }
  		}
 	}
 
 	is_triggered_only = yes
 
  	option = {
- 		name = USA_election_trigger.3.a
+ 		name = us_election_trigger.3.a
  		custom_effect_tooltip = USA_senate_elections_visible_tt
+		set_country_flag = USA_campaigning_socialist
+		if = {
+			limit = {
+				is_presidential_election_year = yes
+			}
+			custom_effect_tooltip = USA_presidential_elections_visible_tt
+			USA_prepare_presidential_election = yes
+		}
  		hidden_effect = {
  			USA_class_2_senate_prepare = yes
 			USA_recalculate_polls = yes
  		}
  	}
 	option = {
- 		name = USA_election_trigger.3.b
+ 		name = us_election_trigger.3.b
  		custom_effect_tooltip = USA_senate_elections_visible_tt
+		set_country_flag = USA_campaigning_democrat
+		if = {
+			limit = {
+				is_presidential_election_year = yes
+			}
+			custom_effect_tooltip = USA_presidential_elections_visible_tt
+			USA_prepare_presidential_election = yes
+		}
  		hidden_effect = {
  			USA_class_2_senate_prepare = yes
 			USA_recalculate_polls = yes
@@ -474,19 +493,18 @@ country_event = { #Prep Class II election
 }
 
 country_event = { #Hold Class II election
-	id = USA_election_trigger.4
- 	title = USA_election_trigger.4.t
- 	desc = USA_election_trigger.4.desc
-	picture = GFX_report_event_us_presidential_podium
+	id = us_election_trigger.4
+ 	title = us_election_trigger.4.t
+ 	desc = us_election_trigger.4.desc
 
 	immediate = {
- 		hidden_effect = { country_event = { id = USA_election_trigger.8 days = 30 } }
+ 		hidden_effect = { country_event = { id = us_election_trigger.8 days = 30 } }
 	}
 
 	is_triggered_only = yes
 
  	option = {
- 		name = USA_election_trigger.4.a
+ 		name = us_election_trigger.4.a
  		custom_effect_tooltip = USA_senate_elections_occur_tt
  		hidden_effect = {
  			USA_hold_senate_election = yes
@@ -494,32 +512,46 @@ country_event = { #Hold Class II election
  	}
 }
 
-#Class 3
 country_event = { #Prep for Class III election
-	id = USA_election_trigger.6
- 	title = USA_election_trigger.6.t
- 	desc = USA_election_trigger.6.desc
-	#picture = GFX_report_event_USA_congress_2
+	id = us_election_trigger.6
+ 	title = us_election_trigger.6.t
+ 	desc = us_election_trigger.6.desc
 
 	immediate = {
  		hidden_effect = {
- 			country_event = { id = USA_election_trigger.7 days = 280 }
+ 			country_event = { id = us_election_trigger.7 days = 280 }
  		}
 	}
 
 	is_triggered_only = yes
 
  	option = {
- 		name = USA_election_trigger.6.a
+ 		name = us_election_trigger.6.a
  		custom_effect_tooltip = USA_senate_elections_visible_tt
+		set_country_flag = USA_campaigning_socialist
+		if = {
+			limit = {
+				is_presidential_election_year = yes
+			}
+			custom_effect_tooltip = USA_presidential_elections_visible_tt
+			USA_prepare_presidential_election = yes
+		}
  		hidden_effect = {
  			USA_class_3_senate_prepare = yes
 			USA_recalculate_polls = yes
  		}
  	}
 	option = {
- 		name = USA_election_trigger.6.b
+ 		name = us_election_trigger.6.b
  		custom_effect_tooltip = USA_senate_elections_visible_tt
+		set_country_flag = USA_campaigning_democrat
+		if = {
+			limit = {
+				is_presidential_election_year = yes
+			}
+			custom_effect_tooltip = USA_presidential_elections_visible_tt
+			USA_prepare_presidential_election = yes
+		}
  		hidden_effect = {
  			USA_class_3_senate_prepare = yes
 			USA_recalculate_polls = yes
@@ -528,19 +560,18 @@ country_event = { #Prep for Class III election
 }
 
 country_event = { #Hold Class III election
-	id = USA_election_trigger.7
- 	title = USA_election_trigger.7.t
- 	desc = USA_election_trigger.7.desc
-	#picture = GFX_report_event_whitehouse_color
+	id = us_election_trigger.7
+ 	title = us_election_trigger.7.t
+ 	desc = us_election_trigger.7.desc
 
 	immediate = {
- 		hidden_effect = { country_event = { id = USA_election_trigger.8 days = 30 } }
+ 		hidden_effect = { country_event = { id = us_election_trigger.8 days = 30 } }
 	}
 
 	is_triggered_only = yes
 
  	option = {
- 		name = USA_election_trigger.7.a
+ 		name = us_election_trigger.7.a
  		custom_effect_tooltip = USA_senate_elections_occur_tt
  		hidden_effect = {
  			USA_hold_senate_election = yes
@@ -548,11 +579,10 @@ country_event = { #Hold Class III election
  	}
 }
 
-country_event = { #Clear variables after seeing conclusion
-	id = USA_election_trigger.8
+country_event = { # clear variables a month after election
+	id = us_election_trigger.8
  	title = "Election Season Ends"
- 	desc = USA_election_trigger.8.desc
-	#picture = GFX_report_event_us_congress
+ 	desc = us_election_trigger.8.desc
 	immediate = {
  		hidden_effect = {
  			USA_clear_senate_election_vars = yes
@@ -567,41 +597,13 @@ country_event = { #Clear variables after seeing conclusion
  	option = {
  		name = "Until next time!"
  		custom_effect_tooltip = USA_senate_elections_remove_tt
+		if = {
+			limit = {
+				is_presidential_election_year = yes
+			}
+			custom_effect_tooltip = USA_presidential_elections_remove_tt
+			USA_clear_presidential_election_values = yes
+		}
  	}
 }
 
-#Presidential Season Beginning
-country_event = {
-	id = USA_election_trigger.11
- 	title = USA_election_trigger.11.title
- 	desc = USA_election_trigger.11.desc
-	picture = GFX_report_event_generic_rally
-	is_triggered_only = yes
-
- 	option = {
- 		name = USA_election_trigger.11.a
- 		custom_effect_tooltip = USA_presidential_elections_visible_tt
- 		hidden_effect = {
- 			USA_prepare_presidential_election = yes
- 		}
- 		#flag: 'USA_presidential_elections' is set in the above effect
- 	}
-}
-
-
-#Presidential Season Ending
-country_event = {
-	id = USA_election_trigger.12
- 	title = USA_election_trigger.12.t
- 	desc = USA_election_trigger.12.desc
-	picture = GFX_report_event_iberia_big_meeting
-	is_triggered_only = yes
-
- 	option = {
- 		name = USA_election_trigger.12.a
- 		custom_effect_tooltip = USA_presidential_elections_remove_tt
- 		hidden_effect = {
- 			USA_clear_presidential_election_values = yes
- 		}
- 	}
-}
