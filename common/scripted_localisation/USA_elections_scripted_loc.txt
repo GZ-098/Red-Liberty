@@ -1231,7 +1231,7 @@ defined_text = {
 ### CONCLUSION ###
 
 defined_text = {
-	name = GetSenator_1_Elections_Prev
+	name = Get_Senator_1_Elections_Prev
 	text = {
 		trigger = {
 			check_variable = { prev_senator_1 = 1 }
@@ -1259,7 +1259,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = GetSenator_2_Elections_Prev
+	name = Get_Senator_2_Elections_Prev
 	text = {
 		trigger = {
 			check_variable = { prev_senator_2 = 1 }

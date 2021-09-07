@@ -1,20 +1,18 @@
-
 state={
-	id=879
-	name="STATE_879"
-
+	id=916
+	name="STATE_916"
+	
 	history={
 		owner = ENG
+		add_core_of = SUD
 		buildings = {
-			infrastructure = 3
-
+			infrastructure = 1
 		}
-		add_core_of = HEZ
 
 	}
-
+	
 	provinces={
-		1955 10791 10850 12702 
+		1960 4033 5060 8052 10739 10857 
 	}
 	manpower=200000
 	buildings_max_level_factor=1.000

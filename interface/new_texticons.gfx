@@ -1,0 +1,20 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_spa_texticon"
+		texturefile = "gfx/texticons/USA_spa.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_dem_texticon"
+		texturefile = "gfx/texticons/USA_dems.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_rep_texticon"
+		texturefile = "gfx/texticons/USA_reps.png"
+		legacy_lazy_load = no
+	}
+}

@@ -1,23 +1,85 @@
 ﻿l_english:
  LOADING_TIP_0:0 "Fascism glorifies both militarism and war. It is as surely a menace to the peace as to the liberty of mankind.\n- Norman Thomas"
  LOADING_TIP_1:0 "All our rulers have said that war is unthinkable, and then we think about it almost all the time. We’ve got to make it unthinkable.\n- Norman Thomas"
+ LOADING_TIP_2:0 "I am not the champion of lost causes, but the champion of causes not yet won.\n- Norman Thomas"
+ LOADING_TIP_3:0 "To us Americans much has been given; of us much is required. With all our faults and mistakes, it is our strength in support of the freedom our forefathers loved which has saved mankind from subjection to totalitarian power.\n- Norman Thomas"
  
- LOADING_TIP_2:0 "The class which has the power to rob upon a large scale has also the power to control the government and legalize their robbery.\n- Eugene V. Debs"
- LOADING_TIP_3:0 "Chicago is the product of modern capitalism, and, like all other great commercial centers, is unfit for human habitation.\n- Eugene V. Debs"
- LOADING_TIP_4:0 "The issue is Socialism versus Capitalism. I am for Socialism because I am for humanity. We have been cursed with the reign of gold long enough.\n- Eugene V. Debs"
- LOADING_TIP_5:0 "I am not a Labor Leader; I do not want you to follow me or anyone else; if you are looking for a Moses to lead you out of this capitalist wilderness, you will stay right where you are.\n- Eugene V. Debs"
- LOADING_TIP_6:0 "I have no country to fight for; my country is the earth; I am a citizen of the world.\n- Eugene V. Debs"
- LOADING_TIP_7:0 "It is infinitely better to vote for freedom and fail than to vote for slavery and succeed.\n- Eugene V. Debs"
- LOADING_TIP_8:0 "The man who seeks to arouse prejudice among workingmen is not their friend.\n- Eugene V. Debs"
- 
- LOADING_TIP_9:0 "Don’t compete! - competition is always injurious to the species, and you have plenty of resources to avoid it!\n- Pyotr Kropotkin"
- LOADING_TIP_10:0 "In fact, we know full well today that it is futile to speak of liberty as long as economic slavery exists.\n- Pyotr Kropotkin"
- LOADING_TIP_11:0 "It was poverty that created the first capitalist; because, before accumulating "surplus value," of which we hear so much, men had to be sufficiently destitute to consent to sell their labour, so as not to die of hunger.\n- Pyotr Kropotkin"
+ LOADING_TIP_4:0 "The class which has the power to rob upon a large scale has also the power to control the government and legalize their robbery.\n- Eugene V. Debs"
+ LOADING_TIP_5:0 "Chicago is the product of modern capitalism, and, like all other great commercial centers, is unfit for human habitation.\n- Eugene V. Debs"
+ LOADING_TIP_6:0 "The issue is Socialism versus Capitalism. I am for Socialism because I am for humanity. We have been cursed with the reign of gold long enough.\n- Eugene V. Debs"
+ LOADING_TIP_7:0 "I am not a Labor Leader; I do not want you to follow me or anyone else; if you are looking for a Moses to lead you out of this capitalist wilderness, you will stay right where you are.\n- Eugene V. Debs"
+ LOADING_TIP_8:0 "I have no country to fight for; my country is the earth; I am a citizen of the world.\n- Eugene V. Debs"
+ LOADING_TIP_9:0 "It is infinitely better to vote for freedom and fail than to vote for slavery and succeed.\n- Eugene V. Debs"
+ LOADING_TIP_10:0 "The man who seeks to arouse prejudice among workingmen is not their friend.\n- Eugene V. Debs"
+ LOADING_TIP_11:0 "The working class must be emancipated by the working class.\n- Eugene V. Debs"
  
  LOADING_TIP_12:0 "The capitalist has no heart, but harpoon him in the pocketbook and you will draw blood.\n- Bill Haywood"
+ LOADING_TIP_13:0 "I've never read Marx's Capital, but I've got the marks of capital all over my body.\n- Bill Haywood"
+ LOADING_TIP_14:0 "If one man has a dollar he didn't work for, some other man worked for a dollar he didn't get.\n- Bill Haywood"
  
- LOADING_TIP_13:0 "If through necessity or fear of a worse evil the workman accept harder conditions because an employer or contractor will afford him no better, he is made the victim of force and injustice.\n- Leo XIII"
+ LOADING_TIP_15:0 "The executive of the modern State is but a committee for managing the common affairs of the whole bourgeoisie.\n- Karl Marx"
+ LOADING_TIP_16:0 "The history of all hitherto existing societies is the history of class struggles.\n- Karl Marx"
+ LOADING_TIP_17:0 "Under no pretext should arms and ammunition be surrendered; any attempt to disarm the workers must be frustrated, by force if necessary.\n- Karl Marx"
+ LOADING_TIP_18:0 "Everyone who knows anything of history also knows that great social revolutions are impossible without the feminine ferment. Social progress may be measured precisely by the social position of the fair sex.\n- Karl Marx""
  
- LOADING_TIP_14:0 "That old man [Eugene Debs] with the burning eyes actually believes that there can be such a thing as the brotherhood of man. And that's not the funniest part of it. As long as he's around I believe it myself.\n- Unknown"
+ LOADING_TIP_19:0 "Communism is the doctrine of the conditions of the liberation of the proletariat.\n- Friedrich Engels"
+ LOADING_TIP_20:0 "Freedom does not consist in any dreamt-of independence from natural laws, but in the knowledge of these laws, and in the possibility this gives of systematically making them work towards definite ends.\n- Friedrich Engels"
+ 
+ LOADING_TIP_21:0 "Don’t compete! - competition is always injurious to the species, and you have plenty of resources to avoid it!\n- Pyotr Kropotkin"
+ LOADING_TIP_22:0 "In fact, we know full well today that it is futile to speak of liberty as long as economic slavery exists.\n- Pyotr Kropotkin"
+ LOADING_TIP_23:0 "It was poverty that created the first capitalist; because, before accumulating "surplus value," of which we hear so much, men had to be sufficiently destitute to consent to sell their labour, so as not to die of hunger.\n- Pyotr Kropotkin"
+ 
+ LOADING_TIP_24:0 "We see now that infringement of freedom is necessary with regard to the opponents of the revolution.\n- Nikolai Bukharin"
+ 
+ LOADING_TIP_25:0 "It is difficult for me to imagine what "personal liberty" is enjoyed by an unemployed person, who goes about hungry, and cannot find employment.\n- Joseph Stalin"
+ LOADING_TIP_26:0 "Bukharin's a swine and surely worse than a swine because he thinks it below his dignity to write a couple of lines.\n- Joseph Stalin"
+ 
+ LOADING_TIP_27:0 "An idealist is a person who helps other people to be prosperous.\n- Henry Ford"
+ LOADING_TIP_28:0 "The man who has the largest capacity for work and thought is the man who is bound to succeed.\n- Henry Ford"
+ 
+ LOADING_TIP_29:0 "The market can stay irrational longer than you can stay solvent.\n- John Maynard Keynes"
+ 
+ LOADING_TIP_30:0 "Our differences are policies; our agreements, principles.\n- William McKinley"
+ 
+ LOADING_TIP_31:0 "I have sworn upon the altar of god eternal hostility against every form of tyranny.\n- Thomas Jefferson"
+ 
+ LOADING_TIP_32:0 "Our defense is in the preservation of the spirit which prizes liberty as the heritage of all men, in all lands, everywhere.\n- Abraham Lincoln"
+ 
+ LOADING_TIP_33:0 "Observe good faith and justice towards all Nations; cultivate peace and harmony with all.\n- George Washington"
+ 
+ LOADING_TIP_34:0 "Society in every state is a blessing, but government even in its best state is but a necessary evil.\n- Thomas Paine"
+ LOADING_TIP_35:0 "I love the man that can smile in trouble, that can gather strength from distress, and grow brave by reflection.\n- Thomas Paine"
+ 
+ LOADING_TIP_36:0 "The thing that impresses me most about America is the way parents obey their children.\n- Edward VIII"
+ 
+ LOADING_TIP_37:0 "You can't shake hands with a clenched fist.\n- George V"
+ 
+ LOADING_TIP_38:0 "Shoot down, behead and eliminate the Socialists first, if need be, by a blood-bath.\n- Wilhelm II"
+ 
+ LOADING_TIP_39:0 "Man only honors what he conquers or defends.\n- Joseph Goebbels"
+ 
+ LOADING_TIP_40:0 "Those who do not move, do not notice their chains.\n- Rosa Luxemburg"
+ 
+ LOADING_TIP_41:0 "I know that our liberties were not won without suffering, and may be lost again through our cowardice.\n- Upton Sinclair"
+ 
+ LOADING_TIP_41:0 "This American system of ours... gives to each and every one of us a great opportunity if we only seize it with both hands and make the most of it.\n- Al Capone"
+ 
+ LOADING_TIP_42:0 "A great Empire, like a great cake, is most easily diminished at the edges.\n- Benjamin Franklin"
+ 
+ LOADING_TIP_43:0 "Wherever there is great property, there is great inequality.\n- Adam Smith"
+ 
+ LOADING_TIP_44:0 "A monarchy conducted with infinite wisdom and infinite benevolence is the most perfect of all possible governments.\n- Ezra Stiles"
+ 
+ LOADING_TIP_45:0 "Russia has only two allies: the Army and the Navy.\n- Alexander III"
+ 
+ LOADING_TIP_46:0 "'Emergencies' have always been the pretext on which the safeguards of individual liberty have been eroded.\n- Freidrich Hayek"
+ 
+ LOADING_TIP_47:0 "If liberty means anything at all, it means the right to tell people what they do not want to hear.\n- Eric Blair"
+ 
+ LOADING_TIP_48:0 "If through necessity or fear of a worse evil the workman accept harder conditions because an employer or contractor will afford him no better, he is made the victim of force and injustice.\n- Leo XIII"
+ 
+ LOADING_TIP_49:0 "That old man [Eugene Debs] with the burning eyes actually believes that there can be such a thing as the brotherhood of man. And that's not the funniest part of it. As long as he's around I believe it myself.\n- Unknown"
+ 
+ LOADING_TIP_50:0 "We live in a period.\n- Oswald 'Gamer' Mosley"
  
  

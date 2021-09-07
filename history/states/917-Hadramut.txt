@@ -1,20 +1,18 @@
-
 state={
-	id=879
-	name="STATE_879"
-
+	id=917
+	name="STATE_917"
+	
 	history={
-		owner = ENG
+		owner = RAJ
 		buildings = {
-			infrastructure = 3
-
+			infrastructure = 2
 		}
-		add_core_of = HEZ
+		add_core_of = YEM
 
 	}
-
+	
 	provinces={
-		1955 10791 10850 12702 
+		2029 4976 12894 13079 
 	}
 	manpower=200000
 	buildings_max_level_factor=1.000

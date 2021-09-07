@@ -11,8 +11,8 @@
 # 2 = republican
 # 3 = democrat
 # 4 = afp
-# 5 = communist
-# 6 = farmer-labor
+# 5 = communist # unelectable
+# 6 = farmer-labor # unused
 
 USA_start_elections_system = {
 	set_variable = { USA_campaigning_multiplier = 1 }
