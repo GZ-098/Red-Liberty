@@ -31,8 +31,8 @@
  martial_despotism:0 "Martial Despotism"
  martial_despotism_noun: "Martial Despotism"
  martial_despotism_desc:0 "Despotic Government"
- ultranational_statism:0 "Ultranational Statism"
- ultranational_statism_noun:0 "Ultranational Statism"
+ ultranational_statism:0 "Ultranationalism"
+ ultranational_statism_noun:0 "Ultranationalism"
  ultranational_statism_desc:0 "Ultranationalist Government"
  
  insurrectionary_anarchism_subtype_desc:0 "Anarchism is a political philosophy which advocates the abolition of all unjust hierarchy, as well as the destruction of oppressive structures such as governments, capitalism, and bigotry. Insurrectionary Anarchism differs from other strains of anarchist thought because it puts these principles into direct action, not via policy or reform but by immediate, violent revolt against all authority. Insurrectionary Anarchists will rarely ever negotiate with state authorities, and tend towards deliberately chaotic and militaristic."
@@ -50,25 +50,13 @@
  reactionary_theocracy_subtype_desc:0 "Deriving its mandate to rule and political doctrines solely on a religious basis, Fundamentalist Theocracy is a self-justifying and nebulous form of government. Usually but not always socially reactionary, these Theocrats are still deeply opposed to secularism, foreign religions, and disruptive social change. Fundamentalist Theocrats can be of any religion and hold nearly any specific policy positions, but are differentiated from other ideologies due to their strict adherence to a religious text or doctrine that forms the basis of their politics."
  authoritarian_republicanism_subtype_desc:0 "Professing the values of democracy and liberty, but practicing an authoritarian, undemocratic political style, Authoritarian Democracy is a contradictory but very common mode of political organizing. The military, a strongman, a populist, or some other political force has suspended civil liberties and operates with unchecked power in a civil dictatorship, running only a sham of democracy, while justifying it with democratic rhetoric, such as "protecting democracy," "maintaining order," and "for national security.""
  martial_despotism_subtype_desc:0 "Characterized by overt military rule and a total lack of democracy or civil liberties, Martial Despotism is a style of rule in which an individual, clique, or organization has seized absolute power without meaningful pretense besides that of the force they wield. Including warlords, absolute monarchs, military dictatorships, and more, Martial Despotism is distinguished from other kinds of authoritarianism by its lack of meaningful ideology and brazen, "might makes right" attitude."
- ultranational_statism_subtype_desc:0 "Representing the most destructive and hateful tendencies of humanity, Ultranational Statism is characterized by extreme authoritarianism, belief in racial or national supremacy, aggressive and belligerent posturing, and a thirst for violence. Though its specific beliefs are often nonsensical or contradictory, the core of Ultranational Statism is not ideology or reason, but hatred and fear. It usually manifests in the form of extremely authoritarian and militaristic national states with expansionist, often genocidal ambitions."
+ ultranational_statism_subtype_desc:0 "Representing the most destructive and hateful tendencies of humanity, Ultranationalism is characterized by extreme authoritarianism, belief in racial or national supremacy, aggressive and belligerent posturing, and a thirst for violence. Though its specific beliefs are often nonsensical or contradictory, the core of Ultranationalism is not ideology or reason, but hatred and fear. It usually manifests in the form of extremely authoritarian and militaristic national states with expansionist, often genocidal ambitions."
+ fascism_subtype_desc:0 "Fascism is a form of far-right, authoritarian ultranationalism characterized by dictatorial power, forcible suppression of opposition, and strong regimentation of society and of the economy. Fascists saw the Great War as a revolution that brought massive changes to the nature of war, society, the state, and technology. The advent of total war and the total mass mobilization of society had broken down the distinction between civilians and combatants. A military citizenship arose in which all citizens were involved with the military in some manner during the war. The war had resulted in the rise of a powerful state capable of mobilizing millions of people to serve on the front lines and providing economic production and logistics to support them, as well as having unprecedented authority to intervene in the lives of citizens."
 
  revolutionary_autocracy_drift:0 "Revolutionary Autocracy Drift"
  proletarian_dictatorship_drift:0 "Proletarian Dictatorship Drift"
  libertarian_socialism_drift:0 "Libertarian Socialism Drift"
- ultranational_statism_drift:0 "Ultranational Statism Drift"
-
- ENG_ultranational_statism_party:0 "BUF" 
- ENG_ultranational_statism_party_long:0 "British Union of Fascists" 
- ENG_high_tories:0 "High Tories" 
- ENG_high_tories_long:0 "High Tories" 
- ENG_communist_party_of_great_britian:0 "Communist Party of Great Britian" 
- ENG_communist_party_of_great_britian_long:0 "Communist Party of Great Britian" 
- ENG_tories:0 "Tories" 
- ENG_tories_long:0 "Tories" 
- ENG_liberal_party:0 "Liberal Party" 
- ENG_liberal_party_long:0 "Liberal Party" 
- ENG_labour:0 "Labour" 
- ENG_labour_long:0 "Labour"
+ ultranational_statism_drift:0 "Ultranationalism Drift"
  
  AFG_empowered_nationalism_party:0 "Saqqawists"
  AFG_autocratic_despotism_party:0 "Barakzai Dynasty"
@@ -83,8 +71,4 @@
  AZR_liberalism_party:0 "Musavat"
  AZR_democratic_socialism_party:0 "Hummet"
  AZR_revolutionary_socialism_party:0 "Bolsheviks"
-
- LIB_social_democracy_party:0 "People's Party"
- LIB_libertarian_socialism_party:0 "Reform Party"
- LIB_market_libertarianism_party:0 "True Whig Party"
  
