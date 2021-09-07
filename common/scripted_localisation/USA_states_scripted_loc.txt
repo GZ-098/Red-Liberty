@@ -889,21 +889,31 @@ defined_text = {
 	
 	text = {
 		OR = {
-				AND = {
-					check_variable = { 384.senator_1 = 1 }
-					check_variable = { 384.senator_2 = 3 }
-				}
-				AND = {
-					check_variable = { 384.senator_1 = 3 }
-					check_variable = { 384.senator_2 = 1 }
-				}
+			AND = {
+				check_variable = { 384.senator_1 = 1 }
+				check_variable = { 384.senator_2 = 3 }
 			}
+			AND = {
+				check_variable = { 384.senator_1 = 3 }
+				check_variable = { 384.senator_2 = 1 }
+			}
+		}
 		localization_key = "GFX_USA_states_gui_NE_republican_socialist_split"
 	}
 }
 
 defined_text = {
 	name = Get_USA_states_gui_NV
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { 379.senator_1 = 1 }
+				check_variable = { 379.senator_2 = 1 }
+			}
+		}
+		localization_key = "GFX_USA_states_gui_NV_socialist"
+	}
+	
 	text = {
 		trigger = {
 			OR = {

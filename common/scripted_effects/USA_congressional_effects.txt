@@ -662,6 +662,87 @@ USA_democrat_support_eventless = {
 	clear_variable = { new_house_support }
 }
 
+USA_socialist_support_eventless = {
+	custom_effect_tooltip = negotiate_some_socialist_support
+	USA = {
+		set_variable = { temp_senate_socialist = senators_socialist }
+		set_variable = { temp_senate_already_supporting = socialist_supporting_senators }
+		
+		subtract_from_variable = { temp_senate_socialist = temp_senate_already_supporting }
+		log = "[GetDateText]: [Root.GetName]: calculated non-supporting socialists: [?temp_senate_socialist]"
+		
+		set_variable = { new_senate_support = temp_senate_socialist }
+		log = "[GetDateText]: [Root.GetName]: set socialist senator support: [?new_senate_support]"
+		
+		multiply_variable = { new_senate_support = average_boost_socialist }
+		log = "[GetDateText]: [Root.GetName]: Senate - calculated new socialist support: [?new_senate_support]"
+		
+		randomize_variable = {
+			var = new_senate_support
+			distribution = uniform
+			min = 1
+			max = 20
+		}
+						
+		round_variable = new_senate_support
+		log = "[GetDateText]: [Root.GetName]: rounded socialist senator support: [?new_senate_support]"
+		
+		add_to_variable = { socialist_supporting_senators = new_senate_support }
+		clamp_variable = {
+			var = socialist_supporting_senators
+			min = 0
+			max = senators_socialist
+		}
+		clamp_variable = {
+			var = new_senate_support
+			min = 0
+			max = senators_socialist
+		}
+		add_to_variable = { senators_support = new_senate_support }
+		log = "[GetDateText]: [Root.GetName]: added socialist senator support: [?new_senate_support]"
+	}
+	
+	USA = {# representatives
+		set_variable = { temp_house_socialist = representatives_socialist }
+		set_variable = { temp_house_already_supporting = socialist_supporting_reps }
+		
+		subtract_from_variable = { temp_house_socialist = temp_house_already_supporting }
+		log = "[GetDateText]: [Root.GetName]: calculated non-supporting socialists: [?temp_house_socialist]"
+	
+		set_variable = { new_house_support = temp_house_socialist }
+		multiply_variable = { new_house_support = average_boost_socialist }
+		log = "[GetDateText]: [Root.GetName]: House - calculated new socialist support: [?new_house_support]"
+		
+		randomize_variable = {
+			var = new_house_support
+			distribution = uniform
+			min = 1
+			max = 20
+		}
+		
+		round_variable = new_house_support
+		log = "[GetDateText]: [Root.GetName]: rounded socialist representative support: [?new_house_support]"
+		
+		add_to_variable = { socialist_supporting_reps = new_house_support }
+		clamp_variable = {
+			var = socialist_supporting_reps
+			min = 0
+			max = representatives_socialist
+		}
+		clamp_variable = {
+			var = new_house_support
+			min = 0
+			max = representatives_socialist
+		}
+		add_to_variable = { representatives_support = new_house_support }
+		log = "[GetDateText]: [Root.GetName]: added socialist house support: [?new_house_support]"
+	}
+	
+	set_country_flag = socialists_negotiated
+	clear_variable = { new_senate_support }
+	clear_variable = { new_house_support }
+}
+
 USA_socialist_biased_allocation = {
 	set_variable = {
 		representatives_socialist = party_popularity@libertarian_socialism
@@ -1069,6 +1150,15 @@ USA_bill_vote = {
 		}
 		country_event = {
 			id = us_bill.9
+			hours = 1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { bill_id = 10 } # ban kkk act
+		}
+		country_event = {
+			id = us_bill.10
 			hours = 1
 		}
 	}

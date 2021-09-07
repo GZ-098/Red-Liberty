@@ -170,6 +170,14 @@ defined_text = {
     }
 	
 	text = { 
+        trigger = {
+			check_variable = { bill_id = 10 }
+			has_country_flag = USA_discussing_bill
+        }
+        localization_key = "start_USA_ban_kkk_act"
+    }
+	
+	text = { 
         localization_key = "major_legislation"
     }
 }

@@ -455,12 +455,17 @@ spritetypes = {
 	
 	SpriteType = {
 		name = "GFX_USA_ensure_fair_competition"
-		texturefile = "gfx/interface/goals/USA/USA_money.png"
+		texturefile = "gfx/interface/goals/USA/USA_ensure_fair_competition.png"
 	}
 	
 	SpriteType = {
 		name = "GFX_USA_6_hour_day"
 		texturefile = "gfx/interface/goals/USA/USA_6_hour_day.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_unemployment_compensation"
+		texturefile = "gfx/interface/goals/USA/USA_unemployment_compensation.png"
 	}
 	
 	SpriteType = {

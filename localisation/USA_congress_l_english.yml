@@ -9,6 +9,8 @@
  
  USA_congress_voting_bill:0 "§YCongress§! is currently considering §Y[get_bill_name]§!, which currently expects the support of [get_rep_color]/§Y[?USA.rep_quorum_medium]§! Representatives and [get_senator_color]/§Y[?USA.quorum_medium]§! Senators.\n\n§G[?republican_supporting_reps]§! Republican Representative(s) support this bill.\n§G[?democrat_supporting_reps]§! Democratic Representative(s) support this bill.\n§G[?socialist_supporting_reps]§! Socialist Representative(s) support this bill.\n§G[?fascist_supporting_reps]§! America First Representative(s) support the bill.\n§G[?communist_supporting_reps]§! Communist Representative(s) support the bill.\n\n§G[?republican_supporting_senators]§! Republican Senator(s) support the bill.\n§G[?democrat_supporting_senators]§! Democratic Senator(s) support the bill.\n§G[?socialist_supporting_senators]§! Socialist Senator(s) support the bill.\n§G[?fascist_supporting_senators]§! America First Senator(s) support the bill.\n§G[?communist_supporting_senators]§! Communist Senator(s) support the bill."
  
+ USA_house_voting_bill:0 "§YThe House of Representatives§! is currently considering §Y[get_bill_name]§!, which currently expects the support of [get_rep_color] of the necessary§Y[?USA.rep_quorum_medium]§! Representatives.\n\n§G[?republican_supporting_reps]§! Republican Representative(s) support this bill.\n§G[?democrat_supporting_reps]§! Democratic Representative(s) support this bill.\n§G[?socialist_supporting_reps]§! Socialist Representative(s) support this bill.\n§G[?fascist_supporting_reps]§! America First Representative(s) support the bill.\n§G[?communist_supporting_reps]§! Communist Representative(s) support the bill."
+ 
  not_working:0 "\n§RIF YOU SEE THIS, SOMETHING HAS BROKEN§!"
  
  reps_support_green:0 "§G[?USA.representatives_support]§!"
@@ -36,6 +38,7 @@
  USA_talk_with_democrats:0 "Negotiate with the Democrats"
  negotiate_some_democrat_support:0 "We will negotiate the support of some §CDemocratic§! members of Congress."
  USA_talk_with_dem_socialists:0 "Negotiate with the Socialists"
+ negotiate_some_socialist_support:0 "We will negotiate the support of some §PSocialist§! members of Congress."
  USA_talk_with_communists:0 "Negotiate with the Communists"
  USA_talk_with_fascists:0 "Negotiate with the AFP"
  

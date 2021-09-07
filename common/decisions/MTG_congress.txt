@@ -404,6 +404,9 @@ USA_congress = {
 		visible = {
 			original_tag = USA
 			date > 1937.1.20
+			NOT = {
+				has_country_flag = USA_discussing_bill
+			}
 		}
 		
 		fire_only_once = yes
@@ -424,6 +427,9 @@ USA_congress = {
 		visible = {
 			original_tag = USA
 			date > 1938.1.15
+			NOT = {
+				has_country_flag = USA_discussing_bill
+			}
 		}
 		
 		fire_only_once = yes
@@ -447,6 +453,9 @@ USA_congress = {
 			original_tag = USA
 			date > 1937.01.01
 			has_completed_focus = USA_strengthen_labor_regs
+			NOT = {
+				has_country_flag = USA_discussing_bill
+			}
 		}
 		
 		fire_only_once = yes
@@ -467,6 +476,9 @@ USA_congress = {
 		visible = {
 			original_tag = USA
 			date > 1940.01.01
+			NOT = {
+				has_country_flag = USA_discussing_bill
+			}
 		}
 		
 		fire_only_once = yes
@@ -486,6 +498,9 @@ USA_congress = {
 		
 		visible = {
 			original_tag = USA
+			NOT = {
+				has_country_flag = USA_discussing_bill
+			}
 		}
 		
 		visible = {
@@ -513,6 +528,9 @@ USA_congress = {
 		
 		visible = {
 			date > 1940.01.01
+			NOT = {
+				has_country_flag = USA_discussing_bill
+			}
 		}
 		
 		fire_only_once = yes
@@ -704,7 +722,7 @@ USA_congress = {
 		}
     	days_remove = 5
     	remove_effect = {
-			
+			USA_socialist_support_eventless = yes
 		}
 	}
 	

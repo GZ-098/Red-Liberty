@@ -394,3 +394,50 @@ country_event = { # wealth tax act
 		USA_bill_clear = yes # ALWAYS DO THIS
 	}
 }
+
+country_event = { # wealth tax act
+	id = us_bill.10
+	
+	# different loc based on if it passes or fails
+	title = {
+		text = us_bill.10.title_passed
+		trigger = { has_country_flag = bill_passed }
+	}
+	title = { 
+		text = us_bill.10.title_failed
+		trigger = { NOT = { has_country_flag = bill_passed } }
+	}
+	desc = {
+		text = us_bill.10.desc_passed
+		trigger = { has_country_flag = bill_passed }
+	}
+	desc = {
+		text = us_bill.10.desc_failed
+		trigger = { NOT = { has_country_flag = bill_passed } }
+	}
+	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event us_bill.10"
+	}
+
+	is_triggered_only = yes
+
+	option = { # bill passes
+		name = us_bill.10.a
+		trigger = { has_country_flag = bill_passed }
+		add_stability = 0.1
+		swap_ideas = {
+			remove_idea = USA_social_coalition
+			add_idea = USA_social_coalition_2
+		}
+		set_country_flag = ban_kkk_act_passed
+		USA_bill_clear = yes # ALWAYS DO THIS
+	}
+	
+	option = { # bill fails
+		name = us_bill.10.b
+		trigger = { NOT = { has_country_flag = bill_passed } }
+		add_political_power = -50
+		USA_bill_clear = yes # ALWAYS DO THIS
+	}
+}
