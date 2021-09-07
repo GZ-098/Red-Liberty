@@ -47,7 +47,7 @@ focus_tree = {
 		y = 500
 	}
 	default = no
-	shared_focus = JAP_ichiro_government
+	shared_focus = JAP_taisho_lives
 }
 
 focus_tree = {
