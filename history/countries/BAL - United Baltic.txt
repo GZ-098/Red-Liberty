@@ -1,20 +1,65 @@
 ﻿capital = 888
 
-oob = ""
+oob = "BAL"
 
 set_research_slots = 2
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	tech_recon = 1
+	infantry_weapons1 = 1
+	
 	tech_support = 1
+	tech_recon = 1
 	tech_mountaineers = 1
+	
 	gw_artillery = 1
+	
+	early_fighter = 1
+	early_bomber = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		transport = 1
+	}
+	set_naval_oob = "BAL_naval_legacy"
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		panzerschiffe = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		mtg_transport = 1
+		basic_torpedo = 1
+		improved_ship_torpedo_launcher = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_secondary_battery = 1
+		sonar = 1
+		basic_cruiser_armor_scheme = 1
+	}
+	set_naval_oob = "BAL_naval"
 }
 
 set_politics = {
-	ruling_party = national_conservatism
+	ruling_party = ultranational_statism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -24,27 +69,270 @@ set_popularities = {
 	revolutionary_autocracy = 0
 	proletarian_dictatorship = 0
 	libertarian_socialism = 0
-	social_democracy = 15
-	progressive_liberalism = 20
-	market_libertarianism = 5
-	national_conservatism = 25
+	social_democracy = 0
+	progressive_liberalism = 0
+	market_libertarianism = 0
+	national_conservatism = 0
 	reactionary_theocracy = 0
-	authoritarian_republicanism = 20
-	martial_despotism = 5
-	ultranational_statism = 10
+	authoritarian_republicanism = 15
+	martial_despotism = 50
+	ultranational_statism = 35
 }
+
+set_country_flag = authoritarian_coalition
+set_country_flag = despotist_coalition
+set_country_flag = ultranationalist_coalition
 
 add_ideas = {
 	limited_conscription
 }
 
 create_country_leader = {
-	name = "Adolf Friedrich I"
+	name = "Louise Berger"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = insurrectionary_anarchism_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Karl Säre"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = revolutionary_autocracy_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Johannes Vares"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = proletarian_dictatorship_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "August Rei"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = libertarian_socialism_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Pauls Kalnins"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Peteris Jurasevkis"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = progressive_liberalism_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Arveds Bergs"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = market_libertarianism_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Jaan Teemant"
 	desc = ""
 	picture = ""
 	expire = "1965.1.1"
 	ideology = national_conservatism_subtype
 	traits = {
 		
+	}
+}
+
+create_country_leader = {
+	name = "Andrejs Krastkalns"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = reactionary_theocracy_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Axel de Vries"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = authoritarian_republicanism_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Werner Hasselblatt"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = martial_despotism_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Alfred Rosenberg"
+	desc = ""
+	picture = "Portrait_BAL_Alfred_Rosenberg.png"
+	expire = "1965.1.1"
+	ideology = ultranational_statism_subtype
+	traits = {
+		
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	create_equipment_variant = {
+		name = "S100 Class"
+		type = ship_hull_submarine_2
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Type I Class"
+		type = ship_hull_submarine_1
+		name_group = GER_SS_IMPERIAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+		obsolete = yes
+	}
+
+	create_equipment_variant = {
+		name = "Riga Class"
+		type = ship_hull_light_2
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Gavriil Class"						# represents Fidonisi and Izyaslav classes
+		type = ship_hull_light_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+
+	create_equipment_variant = {
+		name = "Kolberg Class"
+		type = ship_hull_cruiser_1
+		name_group = GER_CL_IMPERIAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+
+	create_equipment_variant = {#TBC
+		name = "Nassau/Helgoland Class"
+		type = ship_hull_heavy_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = ship_heavy_battery_1
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = empty
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Braunschweig/Deutschland Class"
+		type = ship_hull_pre_dreadnought
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
 	}
 }

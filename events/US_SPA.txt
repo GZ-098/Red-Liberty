@@ -425,6 +425,7 @@ country_event = { # WE'LL ALL GO DOWN TO DIXIE, AWAY, AWAY
 	id = united_states_thomas.25
 	title = "Lee Marches North"
 	desc = united_states_thomas.25.desc
+	picture = GFX_report_event_usa_lee_removal
 	
 	is_triggered_only = yes
 	

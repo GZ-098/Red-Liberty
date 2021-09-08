@@ -24,7 +24,7 @@ set_technology = {
 set_convoys = 5
 
 set_politics = {
-	ruling_party = martial_despotism
+	ruling_party = authoritarian_republicanism
 	last_election = "1932.11.8"
 	election_frequency = 0
 	elections_allowed = no
@@ -39,8 +39,8 @@ set_popularities = {
 	market_libertarianism = 14
 	national_conservatism = 20
 	reactionary_theocracy = 0
-	authoritarian_republicanism = 6
-	martial_despotism = 17
+	authoritarian_republicanism = 17
+	martial_despotism = 6
 	ultranational_statism = 0
 }
 
@@ -49,7 +49,7 @@ create_country_leader = {
 	#desc = ""
 	picture = "Portrait_BUL_Ferdinand_I.png"
 	expire = "1965.1.1"
-	ideology = martial_despotism_subtype
+	ideology = authoritarian_republicanism_subtype
 	traits = {
 		#
 	}

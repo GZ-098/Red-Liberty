@@ -27,11 +27,16 @@ if = {
 		target = CRI
 		autonomous_state = autonomy_occupied
 	}
+	set_autonomy = {
+		target = BAL
+		autonomous_state = autonomy_colony
+	}
 	else = {
 		puppet = POL
 		puppet = LIT
 		puppet = ROM
 		puppet = CRI
+		puppet = BAL
 	}
 }
 
