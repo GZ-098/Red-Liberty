@@ -17,4 +17,10 @@ spriteTypes = {
 		texturefile = "gfx/texticons/USA_reps.png"
 		legacy_lazy_load = no
 	}
+	
+	spriteType = {
+		name = "GFX_afp_texticon"
+		texturefile = "gfx/texticons/USA_afp.png"
+		legacy_lazy_load = no
+	}
 }

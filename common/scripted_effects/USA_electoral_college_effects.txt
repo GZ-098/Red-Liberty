@@ -746,7 +746,7 @@ US_hold_presidential_election = {
     		max = @POPULARITY_CLAMP_MAX
 		}
 		
-		USA_update_presidential_election_race_in_state = yes
+		USA_convert_party_pop_percentage = yes
 		USA_hold_presidential_election_in_state = yes
 	}
 

@@ -6,16 +6,16 @@ can_have_elections_in_state = {
 is_presidential_election_year = {
 	OR = {
 		AND = {
-			date < 1936.01.01
-			date > 1936.12.31
+			date > 1936.01.01
+			date < 1936.12.31
 		}
 		AND = {
-			date < 1940.01.01
-			date > 1940.12.31
+			date > 1940.01.01
+			date < 1940.12.31
 		}
 		AND = {
-			date < 1944.01.01
-			date > 1944.12.31
+			date > 1944.01.01
+			date < 1944.12.31
 		}
 	}
 }

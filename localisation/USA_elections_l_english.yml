@@ -16,6 +16,13 @@
  
  USA_senate_elections_occur_tt:0 "Senate elections will be held."
  USA_senate_elections:0 "Senate elections are ongoing."
+ USA_senate_conclusion:0 "Senate elections are over."
+ 
+ USA_senate_elections_visible_tt:0 "§YAs it is an election year, Congressional elections will be held.§!"
+ USA_presidential_elections_visible_tt:0 "§YPresidential elections will also be held this year.§!"
+ 
+ USA_senate_elections_remove_tt:0 "The election info screen will be removed."
+ USA_presidential_elections_remove_tt:0 ""
  
  currently_campaigning:0 "We are currently campaigning elsewhere."
  
@@ -30,7 +37,7 @@
  SOCIALIST_SENATOR_PLURAL:0 "£GFX_spa_texticon §PSocialists§!"
  REPUBLICAN_SENATOR_PLURAL:0 "£GFX_rep_texticon §RRepublicans§!"
  DEMOCRAT_SENATOR_PLURAL:0 "£GFX_dem_texticon §CDemocrats§!"
- AFP_SENATOR_PLURAL:0 "§gAFP§!"
+ AFP_SENATOR_PLURAL:0 "£GFX_afp_texticon §gAFP§!"
  
  SOCIALIST_SENATOR_ELECTION:0 "§PSocialist Party§!"
  REPUBLICAN_SENATOR_ELECTION:0 "§RRepublican Party§!"

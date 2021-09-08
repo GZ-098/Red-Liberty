@@ -393,6 +393,12 @@ country_event = { #mark states for election
  			country_event = { id = us_election_trigger.2 days = 280 } # hold the election
 			USA_class_1_senate_prepare = yes
 			USA_recalculate_polls = yes
+			
+			USA_convert_party_pop_percentage = yes
+			USA_clamp_state_popularities = yes
+				
+			USA_check_election_vs = yes
+			USA_check_election_margin = yes
  		}
 	}
 
