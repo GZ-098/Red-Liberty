@@ -10,7 +10,7 @@ if = {
 }
 
 set_research_slots = 3
-set_convoys = 100
+set_convoys = 23
 set_stability = 0.75
 
 set_technology = {
@@ -79,7 +79,7 @@ set_country_flag = ultranationalist_coalition
 create_country_leader = {
 	name = "Manuel II"
 	desc = ""
-	picture = ""
+	picture = "Portait_POR_Manuel_I.png"
 	expire = "1989.1.1"
 	ideology = national_conservatism_subtype
 	traits = {
