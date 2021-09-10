@@ -422,8 +422,23 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_maternity_insurance"
+		texturefile = "gfx/interface/goals/USA/USA_maternity_insurance.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_war_on_poverty"
 		texturefile = "gfx/interface/goals/USA/USA_declare_war_on_poverty.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_look_at_causes"
+		texturefile = "gfx/interface/goals/USA/USA_look_at_causes.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_national_healthcare_act"
+		texturefile = "gfx/interface/goals/USA/USA_national_healthcare_act.png"
 	}
 	
 	SpriteType = {
@@ -432,8 +447,48 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_more_perfect_union"
+		texturefile = "gfx/interface/goals/USA/USA_more_perfect_union.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_protect_the_first"
+		texturefile = "gfx/interface/goals/USA/USA_protect_the_first.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_voting_rights_act"
+		texturefile = "gfx/interface/goals/USA/USA_voting_rights_act.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_the_initiative_and_referendum"
+		texturefile = "gfx/interface/goals/USA/USA_the_initiative_and_referendum.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_legislative_referral"
+		texturefile = "gfx/interface/goals/USA/USA_legislative_referral.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_peoples_veto"
+		texturefile = "gfx/interface/goals/USA/USA_the_peoples_veto.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_prepare_the_amendment"
+		texturefile = "gfx/interface/goals/USA/USA_prepare_the_amendment.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_politicians_should_be_popular"
+		texturefile = "gfx/interface/goals/USA/USA_politicians_should_be_popular.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_america_reborn"
-		texturefile = "gfx/interface/goals/USA/USA_america_reborn_2.png"
+		texturefile = "gfx/interface/goals/USA/USA_america_reborn.png"
 	}
 	
 	### MILITARY TREE ###

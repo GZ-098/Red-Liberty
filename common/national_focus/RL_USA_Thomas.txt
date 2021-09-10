@@ -970,9 +970,11 @@ shared_focus = {
 	
 	cost = 5
 	relative_position_id = USA_of_poverty
-	prerequisite = { focus = USA_itll_never_happen_here }
 	prerequisite = { focus = USA_of_poverty }
-	prerequisite = { focus = USA_spqa }
+	prerequisite = {
+		focus = USA_itll_never_happen_here
+		focus = USA_spqa
+	}
     completion_reward = {
         
     }
@@ -1575,7 +1577,7 @@ shared_focus = {
 	relative_position_id = USA_right_to_democracy
 	prerequisite = { focus = USA_right_to_democracy }
     completion_reward = {
-        
+        # intro event about referendums
     }
 	
 	ai_will_do = {
@@ -1597,7 +1599,7 @@ shared_focus = {
 		focus = USA_peoples_veto
 	}
     completion_reward = {
-        
+        # increase popularity, reduce power
     }
 	
 	ai_will_do = {
@@ -1619,7 +1621,7 @@ shared_focus = {
 		focus = USA_legislative_referral
 	}
     completion_reward = {
-        
+        # increase power, reduce popularity
     }
 	
 	ai_will_do = {
@@ -1641,7 +1643,7 @@ shared_focus = {
 		focus = USA_peoples_veto
 	}
     completion_reward = {
-        
+        # add congress bill
     }
 	
 	ai_will_do = {
@@ -1661,7 +1663,7 @@ shared_focus = {
 	prerequisite = { focus = USA_voting_rights_act }
 	prerequisite = { focus = USA_prepare_the_amendment }
     completion_reward = {
-        
+        # series of events about EC
     }
 	
 	ai_will_do = {
@@ -1683,7 +1685,7 @@ shared_focus = {
 	prerequisite = { focus = USA_national_healthcare_act }
 	prerequisite = { focus = USA_politicians_should_be_popular }
     completion_reward = {
-        
+        # add blessed event
     }
 	
 	ai_will_do = {
@@ -1699,8 +1701,8 @@ shared_focus = {
 	y = 1
 	
 	cost = 8
-	relative_position_id = USA_america_reborn
-	prerequisite = { focus = USA_america_reborn }
+	#relative_position_id = USA_america_reborn
+	#prerequisite = { focus = USA_america_reborn }
     completion_reward = {
         
     }
