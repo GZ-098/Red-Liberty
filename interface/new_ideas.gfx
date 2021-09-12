@@ -6,6 +6,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_USA_social_coalition"
+		texturefile = "gfx/interface/ideas/USA/USA_the_social_coalition.png"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_USA_the_great_depression_1"
 		texturefile = "gfx/interface/ideas/USA/USA_great_depression.tga"
 	}
