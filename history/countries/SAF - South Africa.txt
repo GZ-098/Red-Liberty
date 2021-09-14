@@ -48,24 +48,24 @@ if = {
 
 set_convoys = 25
 set_politics = {
-	ruling_party = authoritarian_republicanism
-	last_election = "1932.11.8"
-	election_frequency = 48
+	ruling_party = authoritarian_democracy
+	last_election = "1933.5.17"
+	election_frequency = 60
 	elections_allowed = yes
 }
 set_popularities = {
 	insurrectionary_anarchism = 0
 	revolutionary_autocracy = 0
-	proletarian_dictatorship = 1
-	libertarian_socialism = 10
-	social_democracy = 14
-	progressive_liberalism = 12
-	market_libertarianism = 17
+	proletarian_dictatorship = 0
+	libertarian_socialism = 0
+	social_democracy = 7
+	progressive_liberalism = 10
+	market_libertarianism = 22
 	national_conservatism = 21
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 15
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 40
 	martial_despotism = 0
-	ultranational_statism = 10
+	ultranational_statism = 0
 }
 
 create_country_leader = {
@@ -73,7 +73,7 @@ create_country_leader = {
 	desc = "POLITICS_J_B_M_HERTZOG_DESC"
 	picture = "Portrait_SAF_J_B_M_Hertzog.png"
 	expire = "1965.1.1"
-	ideology = authoritarian_republicanism_subtype
+	ideology = authoritarian_democracy_subtype
 	traits = {
 		#
 	}

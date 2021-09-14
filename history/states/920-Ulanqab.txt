@@ -1,0 +1,19 @@
+state={
+	id=920
+	name="STATE_920"
+	
+	history={
+		owner = MEN
+		add_core_of = MEN
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	
+	provinces={
+		7048 7158 10424 12331 12403 
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

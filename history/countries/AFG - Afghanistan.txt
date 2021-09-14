@@ -9,7 +9,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = reactionary_theocracy
+	ruling_party = autocratic_despotism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
@@ -23,30 +23,19 @@ set_popularities = {
 	progressive_liberalism = 5
 	market_libertarianism = 0
 	national_conservatism = 15
-	reactionary_theocracy = 55
-	authoritarian_republicanism = 0
-	martial_despotism = 25
-	ultranational_statism = 0
+	authoritarian_democracy = 0
+	autocratic_despotism = 55
+	far_right_authoritarianism = 25
+	fascism = 0
 }
 
-# Mohammad Hashim Khan (Prime Minister) other potential candidate
 create_country_leader = {
 	name = "Habibullah Kalakani"
-	desc = "POLITICS_HABIBULLAH_DESC"
+	desc = ""
 	picture = "Portrait_Habibullah.dds"
 	expire = "1965.1.1"
-	ideology = reactionary_theocracy_subtype
+	ideology = autocratic_despotism_subtype
 	traits = {
 		#
-	}
-}
-
-create_country_leader = {
-	name = "Amanullah Khan"
-	desc = "POLITICS_AMANULLAH_DESC"
-	picture = "Portrait_Amanullah.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
 	}
 }

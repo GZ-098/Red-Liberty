@@ -76,8 +76,8 @@ set_popularities = {
 	progressive_liberalism = 6
 	market_libertarianism = 19
 	national_conservatism = 24
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 0
-	martial_despotism = 0
-	ultranational_statism = 0
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 0
+	autocratic_despotism = 0
+	fascism = 0
 }

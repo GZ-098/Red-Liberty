@@ -11,7 +11,7 @@ set_war_support = 0.1
 set_convoys = 10
 
 set_politics = {
-	ruling_party = authoritarian_republicanism
+	ruling_party = authoritarian_democracy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
@@ -25,10 +25,10 @@ set_popularities = {
 	progressive_liberalism = 26
 	market_libertarianism = 6
 	national_conservatism = 13
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 28
-	martial_despotism = 3
-	ultranational_statism = 0
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 28
+	autocratic_despotism = 3
+	fascism = 0
 }
 
 create_country_leader = {
@@ -36,7 +36,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_PAN_Arnulfo_Arias_Madrid.png"
 	expire = "1965.1.1"
-	ideology = authoritarian_republicanism_subtype
+	ideology = authoritarian_democracy_subtype
 	traits = {
 		#
 	}

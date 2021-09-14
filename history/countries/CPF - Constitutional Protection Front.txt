@@ -9,7 +9,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = authoritarian_republicanism
+	ruling_party = authoritarian_democracy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
@@ -23,8 +23,8 @@ set_popularities = {
 	progressive_liberalism = 0
 	market_libertarianism = 10
 	national_conservatism = 5
-	reactionary_theocracy = 2
-	authoritarian_republicanism = 38
-	martial_despotism = 24
-	ultranational_statism = 11
+	far_right_authoritarianism = 2
+	authoritarian_democracy = 38
+	autocratic_despotism = 24
+	fascism = 11
 }

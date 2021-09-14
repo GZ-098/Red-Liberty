@@ -67,10 +67,10 @@ set_popularities = {
 	progressive_liberalism = 4
 	market_libertarianism = 6
 	national_conservatism = 27
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 0
-	martial_despotism = 14
-	ultranational_statism = 10
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 0
+	autocratic_despotism = 14
+	fascism = 10
 }
 
 create_country_leader = {
@@ -89,7 +89,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_AHE_Engelbert_Dolfuss.tga"
 	expire = "1965.1.1"
-	ideology = ultranational_statism_subtype
+	ideology = fascism_subtype
 	traits = {
 		#
 	}

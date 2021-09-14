@@ -81,10 +81,10 @@ set_popularities = {
 	progressive_liberalism = 17
 	market_libertarianism = 10
 	national_conservatism = 23
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 5
-	martial_despotism = 0
-	ultranational_statism = 5
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 5
+	autocratic_despotism = 0
+	fascism = 5
 }
 
 set_convoys = 100

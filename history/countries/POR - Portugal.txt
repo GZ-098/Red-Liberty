@@ -65,10 +65,10 @@ set_popularities = {
 	progressive_liberalism = 16
 	market_libertarianism = 18
 	national_conservatism = 34
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 9
-	martial_despotism = 1
-	ultranational_statism = 5
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 9
+	autocratic_despotism = 1
+	fascism = 5
 }
 
 set_country_flag = conservative_coalition

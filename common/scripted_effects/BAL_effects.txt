@@ -1,0 +1,144 @@
+BAL_form_autonomies = {
+	BAL = {
+		puppet = LAT
+		puppet = EST
+	}
+	EST = {
+		transfer_state = 13
+		transfer_state = 191
+		
+		set_politics = {
+			ruling_party = social_democracy
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			insurrectionary_anarchism = 0
+			revolutionary_autocracy = 0
+			proletarian_dictatorship = 0
+			libertarian_socialism = 5
+			social_democracy = 15
+			progressive_liberalism = 20
+			market_libertarianism = 0
+			national_conservatism = 35
+			far_right_authoritarianism = 0
+			authoritarian_democracy = 10
+			autocratic_despotism = 15
+			fascism = 0
+		}
+		
+		set_cosmetic_tag = BAL_EST_autonomy
+	}
+	LAT = {
+		transfer_state = 12
+		transfer_state = 889
+		
+		set_politics = {
+			ruling_party = social_democracy
+			last_election = "1936.1.1"
+			election_frequency = 0
+			elections_allowed = no
+		}
+		set_popularities = {
+			insurrectionary_anarchism = 0
+			revolutionary_autocracy = 0
+			proletarian_dictatorship = 0
+			libertarian_socialism = 6
+			social_democracy = 20
+			progressive_liberalism = 20
+			market_libertarianism = 8
+			national_conservatism = 12
+			far_right_authoritarianism = 0
+			authoritarian_democracy = 24
+			autocratic_despotism = 10
+			fascism = 0
+		}
+		
+		set_cosmetic_tag = BAL_LAT_autonomy
+	}
+}
+
+BAL_collapse = {
+	EST = {
+		transfer_state = 13
+		transfer_state = 191
+		
+		set_politics = {
+			ruling_party = far_right_authoritarianism
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			insurrectionary_anarchism = 0
+			revolutionary_autocracy = 0
+			proletarian_dictatorship = 0
+			libertarian_socialism = 5
+			social_democracy = 15
+			progressive_liberalism = 10
+			market_libertarianism = 0
+			national_conservatism = 35
+			far_right_authoritarianism = 15
+			authoritarian_democracy = 10
+			autocratic_despotism = 10
+			fascism = 0
+		}
+		drop_cosmetic_tag = yes
+	}
+	LAT = {
+		transfer_state = 12
+		transfer_state = 190
+		transfer_state = 888
+		transfer_state = 889
+		
+		set_politics = {
+			ruling_party = authoritarian_democracy
+			last_election = "1936.1.1"
+			election_frequency = 0
+			elections_allowed = no
+		}
+		set_popularities = {
+			insurrectionary_anarchism = 0
+			revolutionary_autocracy = 0
+			proletarian_dictatorship = 0
+			libertarian_socialism = 6
+			social_democracy = 20
+			progressive_liberalism = 20
+			market_libertarianism = 8
+			national_conservatism = 12
+			far_right_authoritarianism = 0
+			authoritarian_democracy = 24
+			autocratic_despotism = 10
+			fascism = 0
+		}
+		drop_cosmetic_tag = yes
+	}
+}
+
+BAL_form_federation = {
+	BAL = {
+		set_cosmetic_tag = BAL_federation
+		
+		set_politics = {
+			ruling_party = authoritarian_democracy
+			last_election = "1936.1.1"
+			election_frequency = 0
+			elections_allowed = no
+		}
+		set_popularities = {
+			insurrectionary_anarchism = 0
+			revolutionary_autocracy = 0
+			proletarian_dictatorship = 0
+			libertarian_socialism = 6
+			social_democracy = 20
+			progressive_liberalism = 20
+			market_libertarianism = 8
+			national_conservatism = 12
+			far_right_authoritarianism = 0
+			authoritarian_democracy = 14
+			autocratic_despotism = 10
+			fascism = 10
+		}
+	}
+}

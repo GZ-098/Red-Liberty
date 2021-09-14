@@ -10,7 +10,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = authoritarian_republicanism
+	ruling_party = authoritarian_democracy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
@@ -24,10 +24,10 @@ set_popularities = {
 	progressive_liberalism = 14
 	market_libertarianism = 0
 	national_conservatism = 0
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 40
-	martial_despotism = 6
-	ultranational_statism = 0
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 40
+	autocratic_despotism = 6
+	fascism = 0
 }
 
 create_country_leader = {
@@ -35,7 +35,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1965.1.1"
-	ideology = authoritarian_republicanism_subtype
+	ideology = authoritarian_democracy_subtype
 	traits = {
 		#
 	}

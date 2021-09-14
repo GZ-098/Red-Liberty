@@ -37,7 +37,7 @@ set_country_flag = monroe_doctrine
 set_convoys = 15
 
 set_politics = {
-	ruling_party = authoritarian_republicanism
+	ruling_party = authoritarian_democracy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
@@ -51,10 +51,10 @@ set_popularities = {
 	progressive_liberalism = 28
 	market_libertarianism = 0
 	national_conservatism = 13
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 31
-	martial_despotism = 14
-	ultranational_statism = 0
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 31
+	autocratic_despotism = 14
+	fascism = 0
 }
 
 create_country_leader = {
@@ -62,7 +62,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1965.1.1"
-	ideology = authoritarian_republicanism_subtype
+	ideology = authoritarian_democracy_subtype
 	traits = {
 		#
 	}

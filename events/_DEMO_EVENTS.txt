@@ -5,6 +5,7 @@ add_namespace = demo_rom
 add_namespace = demo_rus
 add_namespace = demo_eng
 add_namespace = demo_ire
+add_namespace = demo_bal
 add_namespace = demo_ww2
 
 country_event = { # election event
@@ -400,6 +401,91 @@ news_event = { # adoption of 1937 constitution - news
 
 	option = {
 		name = "Send our most ardent congratulations!"
+	}
+}
+
+country_event = { # baltic collapse/federation
+	id = demo_bal.1
+	title = ""
+	desc = demo_bal.1.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = ""
+		BAL_collapse = yes
+		country_event = {
+			id = demo_bal.2
+		}
+		ai_chance = { factor = 7 }
+	}
+	
+	option = {
+		name = ""
+		BAL_form_autonomies = yes
+		country_event = {
+			id = demo_bal.3
+		}
+		ai_chance = { factor = 2 }
+	}
+	
+	option = {
+		name = ""
+		BAL_form_federation = yes
+		country_event = {
+			id = demo_bal.4
+		}
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { # baltic collapse
+	id = demo_bal.2
+	title = ""
+	desc = demo_bal.2.desc
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "I'm surprised it lasted this long!"
+	}
+}
+
+news_event = { # baltic compromise
+	id = demo_bal.3
+	title = ""
+	desc = demo_bal.3.desc
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Huh."
+	}
+}
+
+news_event = { # baltic federation
+	id = demo_bal.4
+	title = ""
+	desc = demo_bal.4.desc
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "But can it last?"
 	}
 }
 

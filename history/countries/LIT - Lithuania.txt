@@ -17,7 +17,7 @@ set_technology = {
 set_convoys = 10
 
 set_politics = {
-	ruling_party = martial_despotism
+	ruling_party = autocratic_despotism
 	last_election = "1932.11.8"
 	election_frequency = 0
 	elections_allowed = no
@@ -31,10 +31,10 @@ set_popularities = {
 	progressive_liberalism = 10
 	market_libertarianism = 0
 	national_conservatism = 15
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 0
-	martial_despotism = 35
-	ultranational_statism = 10
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 0
+	autocratic_despotism = 35
+	fascism = 10
 }
 
 #set_cosmetic_tag = LIT_GER_occupied
@@ -44,7 +44,7 @@ create_country_leader = {
 	desc = "POLITICS_LUDWIG_BECK_DESC"
 	picture = "gfx/leaders/LIT/Portrait_LIT_Ludwig_Beck.tga"
 	expire = "1965.1.1"
-	ideology = martial_despotism_subtype
+	ideology = autocratic_despotism_subtype
 	traits = {
 		#
 	}

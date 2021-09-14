@@ -14,7 +14,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = reactionary_theocracy
+	ruling_party = far_right_authoritarianism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -28,8 +28,8 @@ set_popularities = {
 	progressive_liberalism = 16
 	market_libertarianism = 0
 	national_conservatism = 21
-	reactionary_theocracy = 24
-	authoritarian_republicanism = 6
-	martial_despotism = 21
-	ultranational_statism = 3
+	far_right_authoritarianism = 24
+	authoritarian_democracy = 6
+	autocratic_despotism = 21
+	fascism = 3
 }

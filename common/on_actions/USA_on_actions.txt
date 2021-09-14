@@ -4,10 +4,10 @@ on_actions = {
 			### POLITICAL SETUP ###
 			USA = {
 				USA_start_elections_system = yes
-			}
-			every_owned_state = {
-				limit = { can_have_elections_in_state = yes }
-				USA_convert_party_pop_percentage = yes
+				every_owned_state = {
+					limit = { can_have_elections_in_state = yes }
+					USA_convert_party_pop_percentage = yes
+				}
 			}
 			USA = {
 				set_variable = { senators_total = 96 }

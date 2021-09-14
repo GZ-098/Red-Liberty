@@ -21,11 +21,6 @@ ITA_orders_of_the_black_shirts = {
 				days = 60 
 				idea = ITA_anti_fascists_attacked
 			}
-			revolutionary_socialism_drift = -0.02 
-			democratic_socialism_drift = -0.02 
-			liberalism_drift = -0.02 
-			conservatism_drift = -0.02 	
-			partisan_effect = -0.15		
 		}
 	}
 	

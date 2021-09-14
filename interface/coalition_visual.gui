@@ -91,7 +91,7 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
-		name = "reac_theocracyVisual"
+		name = "auth_democratVisual"
 		position = { x = 341 y = 434 }
 		iconType ={
 			name = "pol_party_colour_bg_coalition_icon"
@@ -102,7 +102,7 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
-		name = "auth_democratVisual"
+		name = "martial_despotistVisual"
 		position = { x = 341 y = 450 }
 		iconType ={
 			name = "pol_party_colour_bg_coalition_icon"
@@ -113,7 +113,7 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
-		name = "martial_despotistVisual"
+		name = "far_rightVisual"
 		position = { x = 341 y = 466 }
 		iconType ={
 			name = "pol_party_colour_bg_coalition_icon"

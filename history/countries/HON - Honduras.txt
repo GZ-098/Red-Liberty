@@ -25,10 +25,10 @@ set_popularities = {
 	progressive_liberalism = 6
 	market_libertarianism = 0
 	national_conservatism = 20
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 14
-	martial_despotism = 32
-	ultranational_statism = 2
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 14
+	autocratic_despotism = 32
+	fascism = 2
 }
 
 create_country_leader = {

@@ -19,7 +19,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = martial_despotism
+	ruling_party = autocratic_despotism
 	last_election = "1936.1.1"
 	election_frequency = 0
 	elections_allowed = no
@@ -33,10 +33,10 @@ set_popularities = {
 	progressive_liberalism = 7
 	market_libertarianism = 4
 	national_conservatism = 25
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 10
-	martial_despotism = 30
-	ultranational_statism = 6
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 10
+	autocratic_despotism = 30
+	fascism = 6
 }
 
 create_country_leader = {
@@ -44,7 +44,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1965.1.1"
-	ideology = martial_despotism_subtype
+	ideology = autocratic_despotism_subtype
 	traits = {
 		#
 	}

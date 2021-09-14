@@ -14,7 +14,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = ultranational_statism
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -28,10 +28,10 @@ set_popularities = {
 	progressive_liberalism = 0
 	market_libertarianism = 0
 	national_conservatism = 0
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 10
-	martial_despotism = 45
-	ultranational_statism = 45
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 10
+	autocratic_despotism = 45
+	fascism = 45
 }
 
 add_ideas = {
@@ -43,7 +43,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1965.1.1"
-	ideology = ultranational_statism_subtype 
+	ideology = fascism_subtype 
 	traits = {
 	}
 } 

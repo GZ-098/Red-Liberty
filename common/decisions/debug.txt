@@ -77,7 +77,7 @@ debug_category = {
 		complete_effect = {
 			every_owned_state = {
 				limit = { can_have_elections_in_state = yes }
-				USA_update_presidential_election_race_in_state = yes
+				USA_convert_party_pop_percentage = yes
 				USA_clamp_state_popularities = yes
 				USA_check_election_vs = yes
 				USA_check_election_margin = yes

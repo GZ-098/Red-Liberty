@@ -10,7 +10,7 @@ set_technology = {
 set_convoys = 5
 
 set_politics = {
-	ruling_party = ultranational_statism
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -24,17 +24,17 @@ set_popularities = {
 	progressive_liberalism = 0
 	market_libertarianism = 0
 	national_conservatism = 14
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 6
-	martial_despotism = 16
-	ultranational_statism = 40
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 6
+	autocratic_despotism = 16
+	fascism = 40
 }
 create_country_leader = {
 	name = "Enver Pasha"
 	desc = "POLITICS_ENVER_DESC"
 	picture = "Portrait_KYR_ENVER.dds"
 	expire = "1953.3.1"
-	ideology = ultranational_statism_subtype
+	ideology = fascism_subtype
 	traits = {
 		
 	}

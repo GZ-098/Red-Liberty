@@ -64,7 +64,7 @@ set_variable = { UKR_german_influence = 27 }
 set_variable = { UKR_russian_influence = 15 }
 
 set_politics = {
-	ruling_party = martial_despotism
+	ruling_party = autocratic_despotism
 	last_election = "1932.11.8"
 	election_frequency = 0
 	elections_allowed = no
@@ -78,10 +78,10 @@ set_popularities = {
 	progressive_liberalism = 16
 	market_libertarianism = 2
 	national_conservatism = 14
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 0
-	martial_despotism = 13
-	ultranational_statism = 4
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 0
+	autocratic_despotism = 13
+	fascism = 4
 }
 
 add_ideas = {
@@ -94,7 +94,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_UKR_Pavlo_Skoropadski.png"
 	expire = "1953.3.1"
-	ideology = martial_despotism_subtype
+	ideology = autocratic_despotism_subtype
 	traits = {
 		
 	}

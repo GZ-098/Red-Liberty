@@ -411,3 +411,13 @@ SCH_turkestan_autonomy = {
 	color = rgb { 95 135 80 }
 	color_ui = rgb { 77 133 56 }
 }
+
+BAL_LAT_autonomy = {
+	color = rgb { 113 133 132 }
+	color_ui = rgb { 142 142 128 }
+}
+
+BAL_EST_autonomy = {
+	color = rgb { 113 133 132 }
+	color_ui = rgb { 142 142 128 }
+}

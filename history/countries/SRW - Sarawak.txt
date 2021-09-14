@@ -12,7 +12,7 @@ set_convoys = 5
 set_cosmetic_tag = ENG_puppet
 
 set_politics = {
-	ruling_party = martial_despotism
+	ruling_party = autocratic_despotism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -26,17 +26,17 @@ set_popularities = {
 	progressive_liberalism = 6
 	market_libertarianism = 4
 	national_conservatism = 20
-	reactionary_theocracy = 22
-	authoritarian_republicanism = 16
-	martial_despotism = 33
-	ultranational_statism = 0
+	far_right_authoritarianism = 22
+	authoritarian_democracy = 16
+	autocratic_despotism = 33
+	fascism = 0
 }
 
 create_country_leader = {
 	name = "Charles Vyner Brooke"
 	picture = ""
 	expire = "1965.1.1"
-	ideology = martial_despotism_subtype
+	ideology = autocratic_despotism_subtype
 	traits = {
 		#
 	}

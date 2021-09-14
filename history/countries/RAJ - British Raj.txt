@@ -37,7 +37,7 @@ if = {
 set_convoys = 20
 
 set_politics = {
-	ruling_party = martial_despotism
+	ruling_party = autocratic_despotism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -51,52 +51,18 @@ set_popularities = {
 	progressive_liberalism = 0
 	market_libertarianism = 0
 	national_conservatism = 35
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 0
-	martial_despotism = 45
-	ultranational_statism = 0
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 0
+	autocratic_despotism = 45
+	fascism = 0
 }
 
 create_country_leader = {
-	name = "Lord Linlithgow"
+	name = "Lord Willingdon"
 	desc = ""
-	picture = ""
+	picture = "Portrait_RAJ_Lord_Willingdon.png"
 	expire = "1965.1.1"
-	ideology = martial_despotism_subtype
-	traits = {
-		
-	}
-}
-
-# REVISIT Unclear if appropriate for this ideology
-create_country_leader = {
-	name = "V. D. Savarkar"
-	desc = "POLITICS_VD_SAVARKAR_DESC"
-	picture = "GFX_RAJ_veer_savarkar"
-	expire = "1965.1.1"
-	ideology = falangism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "P. Krishna Pillai"
-	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
-	picture = "GFX_RAJ_krishna_pillai"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "B. P. Sitaramayya"
-	desc = "POLITICS_B_P_SITARAMAYYA_DESC"
-	picture = "GFX_RAJ_pattabhi_sitaramayya"
-	expire = "1965.1.1"
-	ideology = socialism
+	ideology = autocratic_despotism_subtype
 	traits = {
 		
 	}

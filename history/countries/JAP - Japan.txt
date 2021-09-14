@@ -132,10 +132,10 @@ set_popularities = {
 	progressive_liberalism = 11
 	market_libertarianism = 18
 	national_conservatism = 34
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 9
-	martial_despotism = 1
-	ultranational_statism = 4
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 9
+	autocratic_despotism = 1
+	fascism = 4
 }
 
 create_country_leader = {
@@ -233,7 +233,7 @@ create_country_leader = {
 	desc = "POLITICS_SHOWA_DESC"
 	picture = "Portrait_JAP_Hirohito.png"
 	expire = "1989.1.1"
-	ideology = reactionary_theocracy_subtype
+	ideology = far_right_authoritarianism_subtype
 	traits = {
 	}
 }
@@ -242,7 +242,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_JAP_Konoe_Fumimaro.png"
 	expire = "1989.1.1"
-	ideology = authoritarian_republicanism_subtype
+	ideology = authoritarian_democracy_subtype
 	traits = {
 		
 	}
@@ -252,7 +252,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1989.1.1"
-	ideology = martial_despotism_subtype
+	ideology = autocratic_despotism_subtype
 	traits = {
 		
 	}
@@ -262,7 +262,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_JAP_Konoe_Fumimaro.png"
 	expire = "1989.1.1"
-	ideology = ultranational_statism_subtype
+	ideology = fascism_subtype
 	traits = {
 		
 	}

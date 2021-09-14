@@ -44,7 +44,7 @@ give_military_access = ZHI
 set_convoys = 40
 
 set_politics = {
-	ruling_party = martial_despotism
+	ruling_party = autocratic_despotism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
@@ -58,10 +58,10 @@ set_popularities = {
 	progressive_liberalism = 0
 	market_libertarianism = 16
 	national_conservatism = 14
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 6
-	martial_despotism = 40
-	ultranational_statism = 0
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 6
+	autocratic_despotism = 40
+	fascism = 0
 }
 
 add_ideas = {
@@ -179,7 +179,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1989.1.1"
-	ideology = authoritarian_republicanism_subtype
+	ideology = authoritarian_democracy_subtype
 	traits = {
 	}
 }
@@ -189,7 +189,7 @@ create_country_leader = {
 	#desc = ""
 	picture = "Portrait_CHI_Yuan_Keding.tga"
 	expire = "1965.1.1"
-	ideology = martial_despotism_subtype
+	ideology = autocratic_despotism_subtype
 	traits = {
 		
 	}
@@ -200,7 +200,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1989.1.1"
-	ideology = ultranational_statism_subtype
+	ideology = fascism_subtype
 	traits = {
 	}
 }

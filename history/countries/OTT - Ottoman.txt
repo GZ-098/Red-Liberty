@@ -61,7 +61,7 @@ if = {
 }
 
 set_politics = {
-	ruling_party = martial_despotism
+	ruling_party = autocratic_despotism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
@@ -76,10 +76,10 @@ set_popularities = {
 	progressive_liberalism = 30
 	market_libertarianism = 0
 	national_conservatism = 0
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 0
-	martial_despotism = 40
-	ultranational_statism = 20
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 0
+	autocratic_despotism = 40
+	fascism = 20
 }
 
 create_country_leader = {
@@ -87,7 +87,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1953.3.1"
-	ideology = martial_despotism_subtype
+	ideology = autocratic_despotism_subtype
 	traits = {
 		
 	}

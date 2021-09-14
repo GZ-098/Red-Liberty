@@ -5,28 +5,44 @@ on_actions = {
 		### demo events ###
 		
 		### mexico ###
-		country_event = {
-			id = demo_mex.1
-			days = 185
-		}
-		country_event = {
-			id = demo_mex.2
-			days = 385
-			random = 15
+		MEX = {
+			country_event = {
+				id = demo_mex.1
+				days = 185
+			}
+			country_event = {
+				id = demo_mex.2
+				days = 385
+				random = 15
+			}
 		}
 		
 		### italy ###
 		
-		country_event = {
-			id = demo_ita.1
-			days = 35
+		ITA = {
+			country_event = {
+				id = demo_ita.1
+				days = 35
+			}
 		}
 		
 		### russia ###
 		
-		country_event = {
-			id = demo_rus.1
-			days = 110
+		RUS = {
+			country_event = {
+				id = demo_rus.1
+				days = 110
+			}
+		}
+		
+		### baltic ###
+		
+		BAL = {
+			country_event = {
+				id = demo_bal.1
+				days = 765
+				days_random = 90
+			}
 		}
 	}
 }

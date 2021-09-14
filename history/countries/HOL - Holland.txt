@@ -92,16 +92,16 @@ set_politics = {
 set_popularities = {
 	insurrectionary_anarchism = 0
 	revolutionary_autocracy = 0
-	proletarian_dictatorship = 0
+	proletarian_dictatorship = 3
 	libertarian_socialism = 2
-	social_democracy = 25
-	progressive_liberalism = 25
-	market_libertarianism = 10
-	national_conservatism = 20
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 15
-	martial_despotism = 3
-	ultranational_statism = 0
+	social_democracy = 22
+	progressive_liberalism = 11
+	market_libertarianism = 13
+	national_conservatism = 39
+	authoritarian_democracy = 7
+	autocratic_despotism = 3
+	far_right_authoritarianism = 0
+	fascism = 0
 }
 
 set_convoys = 150

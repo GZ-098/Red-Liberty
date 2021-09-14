@@ -61,7 +61,7 @@ if = {
 }
 
 set_politics = {
-	ruling_party = martial_despotism 
+	ruling_party = autocratic_despotism 
 	last_election = ""
 	election_frequency = 0
 	elections_allowed = no
@@ -75,10 +75,10 @@ set_popularities = {
 	progressive_liberalism = 0
 	market_libertarianism = 10
 	national_conservatism = 15
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 22
-	martial_despotism = 35
-	ultranational_statism = 0
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 22
+	autocratic_despotism = 35
+	fascism = 0
 }
 
 set_cosmetic_tag = KHR_PER_autonomous_state

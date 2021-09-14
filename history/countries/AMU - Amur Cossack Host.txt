@@ -8,7 +8,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = martial_despotism
+	ruling_party = autocratic_despotism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -22,10 +22,10 @@ set_popularities = {
 	progressive_liberalism = 0
 	market_libertarianism = 9
 	national_conservatism = 13
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 17
-	martial_despotism = 44
-	ultranational_statism = 0
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 17
+	autocratic_despotism = 44
+	fascism = 0
 }
 
 set_cosmetic_tag = RUS_cossack_host

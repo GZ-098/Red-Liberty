@@ -32,12 +32,12 @@
  FRA_market_libertarianism_party_long:0 "Alliance Démocratique"
  FRA_national_conservatism_party:0 "FR"
  FRA_national_conservatism_party_long:0 "Fédération Républicaine"
- FRA_reactionary_theocracy_party:0 "--"
- FRA_authoritarian_republicanism_party:0 "--"
- FRA_martial_despotism_party:0 "AF"
- FRA_martial_despotism_party_long:0 "Action Française"
- FRA_ultranational_statism_party:0 "CdF"
- FRA_ultranational_statism_party_long:0 "Croix-de-Feu"
+ FRA_authoritarian_democracy_party:0 "--"
+ FRA_autocratic_despotism_party:0 "AF"
+ FRA_autocratic_despotism_party_long:0 "Action Française"
+ FRA_far_right_authoritarianism_party:0 "CdF"
+ FRA_far_right_authoritarianism_party_long:0 "Croix-de-Feu"
+ FRA_fascism_party:0 "--"
  
  ### IDEAS ###
  

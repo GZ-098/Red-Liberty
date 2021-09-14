@@ -16,7 +16,7 @@ set_country_flag = despotist_coalition
 set_country_flag = ultranationalist_coalition
 
 set_politics = {
-	ruling_party = authoritarian_republicanism
+	ruling_party = authoritarian_democracy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
@@ -30,10 +30,10 @@ set_popularities = {
 	progressive_liberalism = 5
 	market_libertarianism = 2
 	national_conservatism = 5
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 23
-	martial_despotism = 7
-	ultranational_statism = 14
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 23
+	autocratic_despotism = 7
+	fascism = 14
 }
 
 create_country_leader = {
@@ -41,7 +41,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1965.1.1"
-	ideology = authoritarian_republicanism_subtype
+	ideology = authoritarian_democracy_subtype
 	traits = {
 		#
 	}

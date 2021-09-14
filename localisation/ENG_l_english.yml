@@ -2,6 +2,9 @@
  ENG:0 "United Kingdom"
  ENG_DEF:0 "the United Kingdom"
  ENG_ADJ:0 "British"
+ ENG_social_democracy:0 "United Kingdom"
+ ENG_social_democracy_DEF:0 "the United Kingdom"
+ ENG_social_democracy_ADJ:0 "British"
  
  CEN:0 "Union of Britian"
  CEN_DEF:0 "the Union of Britian"

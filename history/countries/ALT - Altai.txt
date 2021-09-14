@@ -14,18 +14,24 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = conservatism
+	ruling_party = national_conservatism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	revolutionary_socialism = 5
-	democratic_socialism = 5
-	liberalism = 5
-	conservatism = 85
-	autocratic_despotism = 0 
-	empowered_nationalism = 0 
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 2
+	proletarian_dictatorship = 4
+	libertarian_socialism = 17
+	social_democracy = 28
+	progressive_liberalism = 6
+	market_libertarianism = 4
+	national_conservatism = 21
+	authoritarian_democracy = 2
+	autocratic_despotism = 2
+	far_right_authoritarianism = 5
+	fascism = 9
 }
 
 add_ideas = {
@@ -39,7 +45,7 @@ create_country_leader = {
 	desc = ""
 	picture = "portrait_cossack_council.dds"
 	expire = "1965.1.1"
-	ideology = conservatism_subtype 
+	ideology = national_conservatism_subtype 
 	traits = {
 	}
 } 

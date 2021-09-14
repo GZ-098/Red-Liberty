@@ -168,10 +168,10 @@ set_popularities = {
 	progressive_liberalism = 17
 	market_libertarianism = 10
 	national_conservatism = 21
-	reactionary_theocracy = 2
-	authoritarian_republicanism = 5
-	martial_despotism = 0
-	ultranational_statism = 10
+	far_right_authoritarianism = 2
+	authoritarian_democracy = 5
+	autocratic_despotism = 0
+	fascism = 10
 }
 
 add_ideas = {
@@ -290,7 +290,7 @@ create_country_leader = {
 	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
 	picture = "Portrait_USA_William_Dudley_Pelley.dds"
 	expire = "1965.1.1"
-	ideology = reactionary_theocracy_subtype
+	ideology = far_right_authoritarianism_subtype
 	traits = {
 		
 	}
@@ -301,7 +301,7 @@ create_country_leader = {
 	desc = "POLITICS_HUEY_LONG_DESC"
 	#picture = "Portrait_USA_William_Dudley_Pelley.dds"
 	expire = "1965.1.1"
-	ideology = authoritarian_republicanism_subtype
+	ideology = authoritarian_democracy_subtype
 	traits = {
 		
 	}
@@ -310,7 +310,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Various Military Officers"
 	expire = "1965.1.1"
-	ideology = martial_despotism_subtype
+	ideology = autocratic_despotism_subtype
 	traits = {
 		
 	}
@@ -321,7 +321,7 @@ create_country_leader = {
 	desc = "POLITICS_CHARLES_LINDBERGH_DESC"
 	#picture = "Portrait_USA_William_Dudley_Pelley.dds"
 	expire = "1965.1.1"
-	ideology = ultranational_statism_subtype
+	ideology = fascism_subtype
 	traits = {
 		
 	}

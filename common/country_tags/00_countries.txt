@@ -292,6 +292,8 @@ XIK = "countries/Xikang.txt"
 CHN = "countries/Chengdu.txt"
 GNN = "countries/Gannan.txt"
 GUI = "countries/Guizhou.txt"
+SUI = "countries/Suiyan.txt"
+KUM = "countries/Kumul.txt"
 
 ### East Indies ###
 SRW = "countries/Sarawak.txt"

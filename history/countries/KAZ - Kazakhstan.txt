@@ -76,10 +76,10 @@ set_popularities = {
 	progressive_liberalism = 12
 	market_libertarianism = 0
 	national_conservatism = 28
-	reactionary_theocracy = 15
-	authoritarian_republicanism = 0
-	martial_despotism = 4
-	ultranational_statism = 0
+	far_right_authoritarianism = 15
+	authoritarian_democracy = 0
+	autocratic_despotism = 4
+	fascism = 0
 }
 
 set_cosmetic_tag = RUS_cossack_host

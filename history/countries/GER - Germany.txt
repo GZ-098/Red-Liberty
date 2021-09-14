@@ -43,6 +43,7 @@ if = {
 set_country_flag = conservative_coalition
 set_country_flag = authoritarian_coalition
 set_country_flag = despotist_coalition
+set_country_flag = far_right_coalition
 set_country_flag = ultranationalist_coalition
 
 # Starting tech
@@ -147,7 +148,7 @@ set_stability = 0.75
 set_war_support = 0.3
 
 set_politics = {
-	ruling_party = ultranational_statism 
+	ruling_party = far_right_authoritarianism
 	last_election = "1935.1.12"
 	election_frequency = 48
 	elections_allowed = yes
@@ -161,10 +162,10 @@ set_popularities = {
 	progressive_liberalism = 15
 	market_libertarianism = 9
 	national_conservatism = 13
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 0
-	martial_despotism = 1
-	ultranational_statism = 17
+	far_right_authoritarianism = 10
+	authoritarian_democracy = 0
+	autocratic_despotism = 1
+	fascism = 7
 }	
 
 
@@ -192,7 +193,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/GER/Portrait_GER_Joseph_Goebbels.tga"
 	expire = "1965.1.1"
-	ideology = ultranational_statism_subtype
+	ideology = far_right_authoritarianism_subtype
 	traits = {
 		
 	}

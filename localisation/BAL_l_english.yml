@@ -3,6 +3,13 @@
  BAL_DEF:0 "the United Baltic Duchy"
  BAL_ADJ:0 "Baltic"
  
+ BAL_LAT_autonomy:0 "Latvian Autonomy"
+ BAL_EST_autonomy:0 "Estonian Autonomy"
+ 
+ BAL_federation:0 "Baltic Federation"
+ BAL_federation_DEF:0 "the Baltic Federation"
+ BAL_federation_ADJ:0 "Baltic"
+ 
  BAL_insurrectionary_anarchism_party:0 "FAV"
  BAL_insurrectionary_anarchism_party_long:0 "Freie Arbeitervereinigung"
  BAL_revolutionary_autocracy_party:0 "BKP"

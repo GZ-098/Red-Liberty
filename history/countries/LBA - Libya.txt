@@ -9,7 +9,7 @@ set_technology = {
 set_convoys = 20
 
 set_politics = {
-	ruling_party = martial_despotism
+	ruling_party = autocratic_despotism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -23,17 +23,17 @@ set_popularities = {
 	progressive_liberalism = 0
 	market_libertarianism = 0
 	national_conservatism = 0
-	reactionary_theocracy = 0
-	authoritarian_republicanism = 15
-	martial_despotism = 80
-	ultranational_statism = 5
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 15
+	autocratic_despotism = 80
+	fascism = 5
 }
 
 create_country_leader = {
 	name = "Idris Senussi"
 	desc = ""
 	picture = ""
-	ideology = martial_despotism_subtype
+	ideology = autocratic_despotism_subtype
 	traits = {
 		#
 	}

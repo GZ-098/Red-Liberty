@@ -570,7 +570,7 @@ focus_tree = {
 		cost = 5.00
 		available = {
 			IF = {
-				conservatism > 0.45
+				national_conservatism > 0.45
 			}
 		}
 		prerequisite = {
@@ -610,7 +610,7 @@ focus_tree = {
 				}
 		completion_reward = {
 			add_popularity = {
-    			ideology = revolutionary_socialism
+    			ideology = proletarian_dictatorship
     			popularity = 0.05
 			}
 		}
@@ -633,7 +633,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.5
 			add_popularity = {
-    			ideology = revolutionary_socialism
+    			ideology = proletarian_dictatorship
     			popularity = 0.05
 			}			
 		}
