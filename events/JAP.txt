@@ -156,11 +156,11 @@ country_event = {
 			popularity = -0.04
 		}
 		add_popularity = {
-			ideology = authoritarian_republicanism
+			ideology = authoritarian_democracy
 			popularity = -0.02
 		}
 		add_popularity = {
-			ideology = ultranational_statism
+			ideology = fascism
 			popularity = -0.01
 		}
 		ai_chance = { factor = 1 }
@@ -379,7 +379,7 @@ country_event = {
 	option = {
 		name = "Unruly children will need disciplining."
 		set_politics = {
-			ruling_party = authoritarian_republicanism
+			ruling_party = authoritarian_democracy
 			last_election = "1933.2.25"
 			election_frequency = 24
 			elections_allowed = no
@@ -389,10 +389,12 @@ country_event = {
 		set_country_flag = conservative_coalition
 		set_country_flag = authoritarian_coalition
 		set_country_flag = despotist_coalition
+		set_country_flag = far_right_coalition
 		set_country_flag = ultranationalist_coalition
 		
 		custom_effect_tooltip = add_conservative_coalition_tt
 		custom_effect_tooltip = add_despotist_coalition_tt
+		custom_effect_tooltip = add_far_right_coalition_tt
 		custom_effect_tooltip = add_ultranat_coalition_tt
 		
 		load_focus_tree = JAP_nationalist_tree
