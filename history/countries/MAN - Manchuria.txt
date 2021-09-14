@@ -1,19 +1,18 @@
-﻿capital = 716
+﻿capital = 328
 
 oob = "empty"
 
-set_stability = 0.7
-set_war_support = 0.4
-
 set_technology = {
 	infantry_weapons = 1
+	
+	gw_artillery = 1
 }
 
-set_cosmetic_tag = CHI_empire_puppet
+set_convoys = 5
 
 set_politics = {
-	ruling_party = autocratic_despotism
-	last_election = "1932.11.8"
+	ruling_party = far_right_authoritarianism
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -26,19 +25,20 @@ set_popularities = {
 	progressive_liberalism = 0
 	market_libertarianism = 14
 	national_conservatism = 16
-	far_right_authoritarianism = 0
-	authoritarian_democracy = 30
-	autocratic_despotism = 40
-	fascism = 0
+	authoritarian_democracy = 10
+	autocratic_despotism = 30
+	far_right_authoritarianism = 20
+	fascism = 10
 }
 
+set_cosmetic_tag = MAN_economic_zone
+
 create_country_leader = {
-	name = "Zhang Xueliang"
-	desc = ""
+	name = "Nobosuke Kishi"
 	picture = ""
-	expire = "1965.1.1"
-	ideology = autocratic_despotism_subtype
+	expire = "1960.1.1"
+	ideology = far_right_authoritarianism_subtype
 	traits = {
-		#
+		
 	}
 }

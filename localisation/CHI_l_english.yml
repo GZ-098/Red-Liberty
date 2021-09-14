@@ -16,6 +16,8 @@
  CHI_far_right_authoritarianism_party:0 "--"
  CHI_fascism_party:0 "--"
  
+ CHI_imperial_govt:0 "Imperial Government"
+ 
  zhili_officer:0 "Zhili Officer"
  zhili_officer_desc:0 "§LAn officer of the Zhili clique.§!"
  anhui_officer:0 "Anhui Officer"

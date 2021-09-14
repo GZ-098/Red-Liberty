@@ -29,5 +29,3 @@ set_popularities = {
 	autocratic_despotism = 100
 	fascism = 0
 }
-
-set_cosmetic_tag = CHI_empire_puppet

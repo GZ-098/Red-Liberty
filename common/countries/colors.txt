@@ -1051,6 +1051,10 @@ ASA = {
 	color_ui = rgb { 20 125 175 }
 }
 
+KUM = {
+	color = rgb { 212 202 131 }
+}
+
 ### US CIVIL WAR COLORS ###
 
 AMS = {
