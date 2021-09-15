@@ -99,10 +99,7 @@ DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ENABLE_TRIGGER = {
 	}
 }
 DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
-	custom_trigger_tooltip = {
-		tooltip = feature_disabled
-		always = no
-	}
+	always = yes
 }
 DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
 	custom_trigger_tooltip = {
@@ -122,7 +119,7 @@ DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
 		always = no
 	}
 }
- DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ENABLE_TRIGGER = {
+DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ENABLE_TRIGGER = {
 	custom_trigger_tooltip = {
 		tooltip = feature_disabled
 		always = no
