@@ -17,8 +17,8 @@ ideas = {
 			}
 			
 			modifier = {  
-				conscription_factor = 0.15
-				army_org_factor = -0.05
+				conscription_factor = -0.25
+				army_org_factor = -0.15
 			}
 		}
 		

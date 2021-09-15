@@ -9,10 +9,26 @@
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
 }
 
 division_template = {
-	name = "Zhili Division"
+	name = "Qibing"
+	division_names_group = CHI_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Zhili Juntuan"
 	division_names_group = CHI_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -31,7 +47,7 @@ division_template = {
 	is_locked = yes
 }
 division_template = {
-	name = "Anhui Division"
+	name = "Anhui Juntuan"
 	division_names_group = CHI_INF_01
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -57,35 +73,59 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
-	
-	### ZHILI DIVISIONS ###
 	division = {
-		location = 10068
-		division_template = "Zhili Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		location = 10068
-		division_template = "Zhili Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		location = 9958
-		division_template = "Zhili Division"
+		location = 9843
+		division_template = "Juntuan"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		location = 4619
-		division_template = "Zhili Division"
+		division_template = "Juntuan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 7418
+		division_template = "Juntuan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	
+	### ZHILI DIVISIONS ###
+	division = {
+		location = 10068
+		division_template = "Zhili Juntuan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 10068
+		division_template = "Zhili Juntuan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 9958
+		division_template = "Zhili Juntuan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 4619
+		division_template = "Zhili Juntuan"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		location = 3992
-		division_template = "Zhili Division"
+		division_template = "Zhili Juntuan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		location = 4190
+		division_template = "Zhili Juntuan"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
@@ -93,31 +133,31 @@ units = {
 	### ANHUI DIVISIONS ###
 	division = {
 		location = 7222
-		division_template = "Anhui Division"
+		division_template = "Anhui Juntuan"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		location = 11752
-		division_template = "Anhui Division"
+		location = 1489
+		division_template = "Anhui Juntuan"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		location = 12019
-		division_template = "Anhui Division"
+		division_template = "Anhui Juntuan"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		location = 11913
-		division_template = "Anhui Division"
+		division_template = "Anhui Juntuan"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		location = 10034
-		division_template = "Anhui Division"
+		division_template = "Anhui Juntuan"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}

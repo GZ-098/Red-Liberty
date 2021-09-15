@@ -448,7 +448,7 @@ BLR = {
 }
 
 MAN = {
-	color = rgb { 255 120 71 }
+	color = rgb { 209 97 56 }
 	color_ui = rgb { 255 120 71 }
 }
 
