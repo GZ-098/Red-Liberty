@@ -40,12 +40,6 @@ if = {
 	}
 }
 
-set_country_flag = conservative_coalition
-set_country_flag = authoritarian_coalition
-set_country_flag = despotist_coalition
-set_country_flag = far_right_coalition
-set_country_flag = ultranationalist_coalition
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -138,17 +132,13 @@ if = {
 	}
 }
 
-set_variable = { var = ger_gateway_to_europe_influence value = 0 }
-
-set_variable = { var = wehrmacht_anger value = 0 }
-set_variable = { var = ss_anger value = 0 }
 set_research_slots = 4
 set_convoys = 200
 set_stability = 0.75 
 set_war_support = 0.3
 
 set_politics = {
-	ruling_party = far_right_authoritarianism
+	ruling_party = fascism
 	last_election = "1935.1.12"
 	election_frequency = 48
 	elections_allowed = yes
@@ -159,15 +149,20 @@ set_popularities = {
 	proletarian_dictatorship = 1
 	libertarian_socialism = 1
 	social_democracy = 43
-	progressive_liberalism = 15
-	market_libertarianism = 9
+	progressive_liberalism = 11
+	market_libertarianism = 6
 	national_conservatism = 13
-	far_right_authoritarianism = 10
-	authoritarian_democracy = 0
-	autocratic_despotism = 1
-	fascism = 7
+	authoritarian_democracy = 3
+	autocratic_despotism = 4
+	far_right_authoritarianism = 8
+	fascism = 10
 }	
 
+set_country_flag = conservative_coalition
+set_country_flag = authoritarian_coalition
+set_country_flag = despotist_coalition
+set_country_flag = far_right_coalition
+set_country_flag = ultranationalist_coalition
 
 create_faction = Reichspakt
 add_to_faction = GER
@@ -180,12 +175,34 @@ remove_from_faction = ROM
 
 add_ideas = {
 	GER_master_of_europe
+	GER_triumvirate
 	GER_the_loss_of_a_generation
 	GER_unpaid_war_expenses
-	GER_paramilitary_violence
 	
 	limited_exports
 	limited_conscription
+}
+
+create_country_leader = {
+	name = "Otto Wels"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Alfred Hugenberg"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = autocratic_despotism_subtype
+	traits = {
+		
+	}
 }
 
 create_country_leader = {
@@ -193,7 +210,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/GER/Portrait_GER_Joseph_Goebbels.tga"
 	expire = "1965.1.1"
-	ideology = far_right_authoritarianism_subtype
+	ideology = german_socialism_subtype
 	traits = {
 		
 	}

@@ -3,6 +3,10 @@ state={
 	id=584
 	name="STATE_584"
 
+	resources = {
+		oil = 8
+	}
+
 	history={
 		owner = TMS
 		add_core_of = TMS

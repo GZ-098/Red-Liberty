@@ -163,16 +163,16 @@ set_politics = {
 }
 set_popularities = {
 	insurrectionary_anarchism = 0
-	revolutionary_autocracy = 13
-	proletarian_dictatorship = 1
+	revolutionary_autocracy = 10
+	proletarian_dictatorship = 4
 	libertarian_socialism = 8
-	social_democracy = 14
+	social_democracy = 4
 	progressive_liberalism = 11
 	market_libertarianism = 0
-	national_conservatism = 18
-	far_right_authoritarianism = 0
-	authoritarian_democracy = 0
+	national_conservatism = 13
+	authoritarian_democracy = 5
 	autocratic_despotism = 1
+	far_right_authoritarianism = 10
 	fascism = 34
 }
 

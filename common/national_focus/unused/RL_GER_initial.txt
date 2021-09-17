@@ -1,0 +1,146 @@
+shared_focus = {
+    id = GER_reichskanzlei_goebbels
+	icon = GFX_GER_reichskanzlei_goebbels
+	
+    x = 8
+	y = 0
+	
+	cost = 1
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_1936_budget
+	icon = GFX_GER_1936_budget
+	
+    x = 0
+	y = 1
+	
+	cost = 2
+	relative_position_id = GER_reichskanzlei_goebbels
+	prerequisite = { focus = GER_reichskanzlei_goebbels }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_bare_minimum
+	icon = GFX_GER_bare_minimum
+	
+    x = 0
+	y = 1
+	
+	cost = 1
+	relative_position_id = GER_1936_budget
+	prerequisite = { focus = GER_1936_budget }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_feminist_movement
+	icon = GFX_GER_feminist_movement
+	
+    x = -2
+	y = 1
+	
+	cost = 2
+	relative_position_id = GER_bare_minimum
+	prerequisite = { focus = GER_bare_minimum }
+	mutually_exclusive = {
+		focus = GER_paying_little
+		focus = GER_calls_for_peace
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_paying_little
+	icon = GFX_GER_paying_what_little_we_can
+	
+    x = 0
+	y = 1
+	
+	cost = 2
+	relative_position_id = GER_bare_minimum
+	prerequisite = { focus = GER_bare_minimum }
+	mutually_exclusive = {
+		focus = GER_feminist_movement
+		focus = GER_calls_for_peace
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_calls_for_peace
+	icon = GFX_GER_calls_for_peace
+	
+    x = 2
+	y = 1
+	
+	cost = 2
+	relative_position_id = GER_bare_minimum
+	prerequisite = { focus = GER_bare_minimum }
+	mutually_exclusive = {
+		focus = GER_feminist_movement
+		focus = GER_paying_little
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_meeting_with_the_kaiser
+	icon = GFX_GER_meeting_with_the_kaiser
+	
+    x = 0
+	y = 1
+	
+	cost = 1
+	relative_position_id = GER_paying_little
+	prerequisite = {
+		focus = GER_feminist_movement
+		focus = GER_paying_little
+		focus = GER_calls_for_peace
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}

@@ -3,6 +3,10 @@ state={
 	id=798
 	name="STATE_798"
 
+	resources={
+		aluminium=16
+	}
+
 	history={
 		owner = AHE
 		victory_points = {

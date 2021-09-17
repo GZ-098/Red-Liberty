@@ -2,10 +2,10 @@ shared_focus = {
     id = GER_reichskanzlei_goebbels
 	icon = GFX_GER_reichskanzlei_goebbels
 	
-    x = 8
+    x = 6
 	y = 0
 	
-	cost = 1
+	cost = 7
     completion_reward = {
         
     }
@@ -16,13 +16,13 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = GER_1936_budget
-	icon = GFX_GER_1936_budget
+    id = GER_the_triumvirate
+	icon = GFX_GER_the_triumvirate
 	
-    x = 0
+    x = -3
 	y = 1
 	
-	cost = 2
+	cost = 7
 	relative_position_id = GER_reichskanzlei_goebbels
 	prerequisite = { focus = GER_reichskanzlei_goebbels }
     completion_reward = {
@@ -35,38 +35,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = GER_bare_minimum
-	icon = GFX_GER_bare_minimum
-	
-    x = 0
-	y = 1
-	
-	cost = 1
-	relative_position_id = GER_1936_budget
-	prerequisite = { focus = GER_1936_budget }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = GER_feminist_movement
-	icon = GFX_GER_feminist_movement
+    id = GER_party
+	icon = GFX_GER_party
 	
     x = -2
 	y = 1
 	
-	cost = 2
-	relative_position_id = GER_bare_minimum
-	prerequisite = { focus = GER_bare_minimum }
-	mutually_exclusive = {
-		focus = GER_paying_little
-		focus = GER_calls_for_peace
-	}
+	cost = 7
+	relative_position_id = GER_the_triumvirate
+	prerequisite = { focus = GER_the_triumvirate }
     completion_reward = {
         
     }
@@ -77,18 +54,97 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = GER_paying_little
-	icon = GFX_GER_paying_what_little_we_can
+    id = GER_cult_of_personality
+	icon = GFX_GER_cult_of_personality
+	
+    x = -1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_party
+	prerequisite = { focus = GER_party }
+    completion_reward = {
+        add_popularity = {
+			ideology = fascism
+			popularity = 0.015
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_grand_council_question
+	icon = GFX_GER_grand_council_question
+	
+    x = 0
+	y = 2
+	
+	cost = 7
+	relative_position_id = GER_cult_of_personality
+	prerequisite = { focus = GER_cult_of_personality }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_army
+	icon = GFX_GER_party
 	
     x = 0
 	y = 1
 	
-	cost = 2
-	relative_position_id = GER_bare_minimum
-	prerequisite = { focus = GER_bare_minimum }
+	cost = 7
+	relative_position_id = GER_the_triumvirate
+	prerequisite = { focus = GER_the_triumvirate }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_begin_purges
+	icon = GFX_GER_begins_purges
+	
+    x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_party
+	prerequisite = { focus = GER_party }
+	prerequisite = { focus = GER_army }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_purge_army
+	icon = GFX_GER_purge_army
+	
+    x = -1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_begin_purges
+	prerequisite = { focus = GER_begin_purges }
 	mutually_exclusive = {
-		focus = GER_feminist_movement
-		focus = GER_calls_for_peace
+		focus = GER_purge_navy
 	}
     completion_reward = {
         
@@ -100,19 +156,101 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = GER_calls_for_peace
-	icon = GFX_GER_calls_for_peace
+    id = GER_purge_navy
+	icon = GFX_GER_purge_navy
+	
+    x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_begin_purges
+	prerequisite = { focus = GER_begin_purges }
+	mutually_exclusive = {
+		focus = GER_purge_army
+	}
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_establish_geheime_reichspolizei
+	icon = GFX_GER_establish_geheime_reichspolizei
+	
+    x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_purge_army
+	prerequisite = {
+		focus = GER_purge_army
+		focus = GER_purge_navy
+	}
+    completion_reward = {
+        add_ideas = {
+			GER_geheime_reichspolizei
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_4
+	icon = GFX_GER_prussianism
+	
+    x = 0
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_establish_geheime_reichspolizei
+	prerequisite = { focus = GER_grand_council_question }
+	prerequisite = { focus = GER_establish_geheime_reichspolizei }
+	prerequisite = { focus = GER_2 }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_kaiser
+	icon = GFX_GER_party
 	
     x = 2
 	y = 1
 	
-	cost = 2
-	relative_position_id = GER_bare_minimum
-	prerequisite = { focus = GER_bare_minimum }
-	mutually_exclusive = {
-		focus = GER_feminist_movement
-		focus = GER_paying_little
+	cost = 7
+	relative_position_id = GER_the_triumvirate
+	prerequisite = { focus = GER_the_triumvirate }
+    completion_reward = {
+        # event about goebbels meeting with the kaiser
+    }
+	
+	ai_will_do = {
+		factor = 10
 	}
+}
+
+shared_focus = {
+    id = GER_1
+	icon = GFX_GER_prussianism
+	
+    x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_army
+	prerequisite = { focus = GER_army }
     completion_reward = {
         
     }
@@ -123,19 +261,529 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = GER_meeting_with_the_kaiser
-	icon = GFX_GER_meeting_with_the_kaiser
+    id = GER_2
+	icon = GFX_GER_prussianism
 	
     x = 0
+	y = 2
+	
+	cost = 7
+	relative_position_id = GER_1
+	prerequisite = { focus = GER_1 }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_5
+	icon = GFX_GER_prussianism
+	
+    x = 1
 	y = 1
 	
-	cost = 1
-	relative_position_id = GER_paying_little
-	prerequisite = {
-		focus = GER_feminist_movement
-		focus = GER_paying_little
-		focus = GER_calls_for_peace
+	cost = 7
+	relative_position_id = GER_2
+	prerequisite = { focus = GER_2 }
+	prerequisite = { focus = GER_societal_militarization }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
 	}
+}
+
+shared_focus = {
+    id = GER_prussianism
+	icon = GFX_GER_prussianism
+	
+    x = 0
+	y = 2
+	
+	cost = 7
+	relative_position_id = GER_kaiser
+	prerequisite = { focus = GER_kaiser }
+    completion_reward = {
+        add_war_support = 0.05
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_german_socialism
+	icon = GFX_GER_german_socialism
+	
+    x = 2
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_reichskanzlei_goebbels
+	prerequisite = { focus = GER_reichskanzlei_goebbels }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_abolish_indep_unions
+	icon = GFX_GER_abolish_indep_unions
+	
+    x = -1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_german_socialism
+	prerequisite = { focus = GER_german_socialism }
+    completion_reward = {
+        add_stability = -0.075
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_destroy_marxism
+	icon = GFX_GER_destroy_marxism
+	
+    x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_german_socialism
+	prerequisite = { focus = GER_german_socialism }
+    completion_reward = {
+        add_popularity = {
+			ideology = social_democracy
+			popularity = -0.03
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_german_workers_front
+	icon = GFX_GER_german_workers_front
+	
+    x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_abolish_indep_unions
+	prerequisite = { focus = GER_abolish_indep_unions }
+	prerequisite = { focus = GER_destroy_marxism }
+    completion_reward = {
+        add_ideas = {
+			GER_deutsche_arbeitsfront
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_workbook_system
+	icon = GFX_GER_workbook_system
+	
+    x = -1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_german_workers_front
+	prerequisite = { focus = GER_german_workers_front }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_societal_militarization
+	icon = GFX_GER_societal_militarization
+	
+    x = -1
+	y = 1
+	
+	available = {
+		has_war_support > 0.5
+	}
+	
+	cost = 7
+	relative_position_id = GER_workbook_system
+	prerequisite = { focus = GER_workbook_system }
+	prerequisite = { focus = GER_prussianism }
+    completion_reward = {
+        swap_ideas = {
+			remove_idea = GER_the_loss_of_a_generation
+			add_idea = GER_the_loss_of_a_generation_1
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_strength_through_joy
+	icon = GFX_GER_strength_through_joy
+	
+    x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_german_workers_front
+	prerequisite = { focus = GER_german_workers_front }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_bolster_tourist_industry
+	icon = GFX_GER_bolster_tourist_industry
+	
+    x = -1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_strength_through_joy
+	prerequisite = { focus = GER_strength_through_joy }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_kdf_wagen_scheme
+	icon = GFX_GER_kdf_wagen_scheme
+	
+    x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_strength_through_joy
+	prerequisite = { focus = GER_strength_through_joy }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_class_collab
+	icon = GFX_GER_class_collab
+	
+    x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_bolster_tourist_industry
+	prerequisite = { focus = GER_bolster_tourist_industry }
+	prerequisite = { focus = GER_kdf_wagen_scheme }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_dealing_with_debt
+	icon = GFX_GER_dealing_with_debt
+	
+    x = 5
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_german_socialism
+	prerequisite = { focus = GER_german_socialism }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_pay_up
+	icon = GFX_GER_pay_up
+	
+    x = -1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_dealing_with_debt
+	prerequisite = { focus = GER_dealing_with_debt }
+    completion_reward = {
+        GER_improve_debt = yes
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_bank_of_german_labour
+	icon = GFX_GER_bank_of_german_labour
+	
+    x = -1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_pay_up
+	prerequisite = { focus = GER_pay_up }
+	prerequisite = { focus = GER_german_workers_front }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_arrange_accidents
+	icon = GFX_GER_arrange_accidents
+	
+    x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_dealing_with_debt
+	prerequisite = { focus = GER_dealing_with_debt }
+    completion_reward = {
+        GER_improve_debt = yes
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_imperial_economic_plan
+	icon = GFX_GER_imperial_economic_plan
+	
+    x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_pay_up
+	prerequisite = { focus = GER_pay_up }
+	prerequisite = { focus = GER_arrange_accidents }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_strengthen_mitteleuropa
+	icon = GFX_GER_strengthen_mitteleuropa
+	
+    x = -1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_imperial_economic_plan
+	prerequisite = { focus = GER_imperial_economic_plan }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_grossraumwirtschaft
+	icon = GFX_GER_grossraumwirtschaft
+	
+    x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_imperial_economic_plan
+	prerequisite = { focus = GER_imperial_economic_plan }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_eisenbahn_initiative
+	icon = GFX_GER_eisenbahn_initiative
+	
+    x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_strengthen_mitteleuropa
+	prerequisite = { focus = GER_strengthen_mitteleuropa }
+	prerequisite = { focus = GER_grossraumwirtschaft }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_reforming_the_army
+	icon = GFX_GER_reforming_the_army
+	
+    x = 12
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_reichskanzlei_goebbels
+	prerequisite = { focus = GER_reichskanzlei_goebbels }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_forced_retirements
+	icon = GFX_GER_forced_retirements
+	
+    x = -1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_reforming_the_army
+	prerequisite = { focus = GER_reforming_the_army }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_look_to_lower_ranks
+	icon = GFX_GER_look_to_lower_ranks
+	
+    x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_reforming_the_army
+	prerequisite = { focus = GER_reforming_the_army }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_downsize_the_army
+	icon = GFX_GER_downsize_the_army
+	
+    x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_forced_retirements
+	prerequisite = { focus = GER_forced_retirements }
+	prerequisite = { focus = GER_look_to_lower_ranks }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_7
+	icon = GFX_GER_7
+	
+    x = -1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_downsize_the_army
+	prerequisite = { focus = GER_downsize_the_army }
+    completion_reward = {
+        
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = GER_8
+	icon = GFX_GER_8
+	
+    x = 1
+	y = 1
+	
+	cost = 7
+	relative_position_id = GER_downsize_the_army
+	prerequisite = { focus = GER_downsize_the_army }
     completion_reward = {
         
     }

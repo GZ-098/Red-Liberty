@@ -1,0 +1,20 @@
+GER_improve_debt = {
+	if = {
+		limit = {
+			has_idea = GER_unpaid_war_expenses_1
+		}
+		swap_ideas = {
+			remove_idea = GER_unpaid_war_expenses_1
+			add_idea = GER_unpaid_war_expenses_2
+		}
+	}
+	if = {
+		limit = {
+			has_idea = GER_unpaid_war_expenses
+		}
+		swap_ideas = {
+			remove_idea = GER_unpaid_war_expenses
+			add_idea = GER_unpaid_war_expenses_1
+		}
+	}
+}

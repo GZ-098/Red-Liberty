@@ -37,7 +37,7 @@ if = {
 set_convoys = 20
 
 set_politics = {
-	ruling_party = autocratic_despotism
+	ruling_party = authoritarian_democracy
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -51,9 +51,9 @@ set_popularities = {
 	progressive_liberalism = 0
 	market_libertarianism = 0
 	national_conservatism = 35
-	far_right_authoritarianism = 0
-	authoritarian_democracy = 0
-	autocratic_despotism = 45
+	authoritarian_democracy = 30
+	autocratic_despotism = 10
+	far_right_authoritarianism = 5
 	fascism = 0
 }
 
@@ -62,7 +62,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_RAJ_Lord_Willingdon.png"
 	expire = "1965.1.1"
-	ideology = autocratic_despotism_subtype
+	ideology = authoritarian_democracy_subtype
 	traits = {
 		
 	}

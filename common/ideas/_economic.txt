@@ -463,10 +463,6 @@ ideas = {
 			
 			available = {
 				has_war = yes
-				OR = { 
-					has_government = ultranational_statism
-					has_government = insurrectionary_anarchism
-				}
 			}
 			
 			cost = 150

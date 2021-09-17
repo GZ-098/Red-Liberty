@@ -131,6 +131,7 @@ on_actions = {
 				country_event = { # 1937 recession event chain
 					id = united_states.7
 					days = 510 # around the middle of may 1937
+					days_random = 15
 				}
 				country_event = { # pittsburgh flood
 					id = united_states_flavor.5
@@ -146,6 +147,53 @@ on_actions = {
 			USA = {
 				set_variable = { USA_produce_units = 3 }
 				set_variable = { USA_produce_decay_rate = 55 }
+			}
+			
+			### SEGREGATION SETUP ###
+			364 = {
+				add_dynamic_modifier = {
+					modifier = USA_segregation_modifier
+				}
+			}
+			366 = {
+				add_dynamic_modifier = {
+					modifier = USA_segregation_modifier
+				}
+			}
+			365 = {
+				add_dynamic_modifier = {
+					modifier = USA_segregation_modifier
+				}
+			}
+			367 = {
+				add_dynamic_modifier = {
+					modifier = USA_segregation_modifier
+				}
+			}
+			369 = {
+				add_dynamic_modifier = {
+					modifier = USA_segregation_modifier
+				}
+			}
+			370 = {
+				add_dynamic_modifier = {
+					modifier = USA_segregation_modifier
+				}
+			}
+			371 = {
+				add_dynamic_modifier = {
+					modifier = USA_segregation_modifier
+				}
+			}
+			372 = {
+				add_dynamic_modifier = {
+					modifier = USA_segregation_modifier
+				}
+			}
+			373 = {
+				add_dynamic_modifier = {
+					modifier = USA_segregation_modifier
+				}
 			}
 			
 			### DUST BOWL SETUP ###

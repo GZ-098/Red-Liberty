@@ -3,6 +3,10 @@ state={
 	id=102
 	name="STATE_102"
 
+	resources={
+		aluminium=2
+	}
+
 	history={
 		owner = AHE
 		buildings = {

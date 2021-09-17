@@ -20,7 +20,26 @@ ideas = {
 				stability_factor = -0.1
 				war_support_factor = -0.1
 			}
-		}   
+		}
+		
+		GER_triumvirate = { # goebbels, the kaiser, and an army figure
+			removal_cost = -1 
+			
+			allowed = {
+				tag = GER
+			}  
+
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain = 0.15
+			}
+		}
 		
 		GER_the_loss_of_a_generation = {
 			removal_cost = -1 
@@ -43,23 +62,30 @@ ideas = {
 				production_speed_industrial_complex_factor = -0.2
 				production_speed_arms_factory_factor = -0.2
 			}
-		}   
-
-		GER_faith_in_the_kaiser = {
-			removal_cost = -1
-			
-			allowed_civil_war = {
-				always = yes	
-			}
+		}
+		
+		GER_the_loss_of_a_generation_1 = {
+			removal_cost = -1 
 			
 			allowed = {
 				tag = GER
+			}  
+
+			available = {
+			}
+			
+			allowed_civil_war = { 
+				always = yes
 			}
 			
 			modifier = {
-				political_power_gain = 0.1
+				conscription = -0.01
+				conscription_factor = -0.15
+				production_factory_max_efficiency_factor = -0.2
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
 			}
-		}    
+		}
 
 		GER_unpaid_war_expenses = {
 			removal_cost = -1
@@ -74,9 +100,44 @@ ideas = {
 				
 			modifier = {
 				consumer_goods_factor = 0.15
-				min_export = 0.05
 				conversion_cost_civ_to_mil_factor = 0.3
 				production_speed_arms_factory_factor = -0.25
+			}
+		}
+		
+		GER_unpaid_war_expenses_1 = {
+			removal_cost = -1
+			
+			allowed_civil_war = {	 
+				always = yes	
+			}	
+			
+			allowed = {
+				tag = GER
+			}
+				
+			modifier = {
+				consumer_goods_factor = 0.125
+				conversion_cost_civ_to_mil_factor = 0.25
+				production_speed_arms_factory_factor = -0.2
+			}
+		}
+		
+		GER_unpaid_war_expenses_2 = {
+			removal_cost = -1
+			
+			allowed_civil_war = {	 
+				always = yes	
+			}	
+			
+			allowed = {
+				tag = GER
+			}
+				
+			modifier = {
+				consumer_goods_factor = 0.1
+				conversion_cost_civ_to_mil_factor = 0.2
+				production_speed_arms_factory_factor = -0.15
 			}
 		}
 		
@@ -96,86 +157,41 @@ ideas = {
 				conscription_factor = -0.05
 			}
 		}
-	}
-	
-    ideas = {
-
-	country = {
-	
-		new_imperial_economic_plan = { 
-			
+		
+		GER_deutsche_arbeitsfront = {
 			removal_cost = -1 
 			
-			picture = new_imperial_economic_plan
+			allowed = {
+				tag = GER
+			}  
+
+			available = {
+			}
 			
-			allowed_civil_war = {	 
-				always = yes	
-			}	
+			allowed_civil_war = { 
+				always = yes
+			}
 			
+			modifier = {
+				conscription_factor = -0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		
+		GER_geheime_reichspolizei = {
+		
 			allowed = {
 				tag = GER
 			}
 			
-			modifier = {
-				consumer_goods_factor = -0.05 
-				production_speed_industrial_complex_factor = 0.10 
-				production_speed_arms_factory_factor = 0.05 
-				production_factory_efficiency_gain_factor = 0.10
-			}
-		}
-	
-		department_of_propoganda = {
-			
-			
-        allowed = {
-		    tag = GER
-		}
-        
-		avaliable = { 
-		      has_completed_focus= GER_establish_the_reichs_ministery_of_enlightenment
-		
-		}	
-
-        cancel = {}
-
-                allowed_civil_war = {
+			allowed_civil_war = {
 				always = yes
 			}
 
 			removal_cost = -1
-			
-			modifier = {
-			     compliance_gain = 0.3
-				 stability_factor = 0.10
-				 drift_defence_factor = 0.25
 				
-			}
-			
-		}ideas = {
-
-	country = {
-		geheime_saatspolizei = {
-			
-			
-        allowed = {
-		    tag = GER
-		}
-        
-		avaliable = { 
-		      has_completed_focus= GER_form_the_gestapo
-		
-		}	
-
-        cancel = {}
-
-                allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
 			modifier = {
-			    resistance_damage_to_garrison = -0.1
+				resistance_damage_to_garrison = -0.1
 				stability_factor = -0.05
 				root_out_resistance_effectiveness_factor = 0.15
 				consumer_goods_factor = 0.02

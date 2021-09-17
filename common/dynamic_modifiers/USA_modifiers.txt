@@ -15,7 +15,7 @@ USA_segregation_modifier = {
 	enable = { always = yes }
 	remove_trigger = { always = no }
 	
-	local_manpower = -0.25
+	local_manpower = -0.15
 }
 
 USA_senate_control_modifier = {

@@ -364,7 +364,7 @@ ideologies = {
 			
 			}
 			
-			fascism_subtype = {
+			german_socialism_subtype = {
 			
 			}
 		}
