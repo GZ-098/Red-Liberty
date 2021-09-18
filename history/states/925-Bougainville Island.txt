@@ -1,0 +1,32 @@
+state={
+	id=925
+	name="STATE_925"
+	
+	history={
+		owner = AST
+		add_core_of = SOL
+		buildings = {
+			infrastructure = 2
+			4226 = {
+				naval_base = 1
+
+			}
+			10234 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			4226 1 
+		}
+
+	}
+	
+	provinces={
+		1358 4226 4378 10234 
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+}

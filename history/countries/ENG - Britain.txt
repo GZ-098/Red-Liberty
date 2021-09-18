@@ -139,78 +139,34 @@ if = {
 			has_dlc = "Man the Guns"
 		}
 	}
-	
-	set_autonomy = {
-		target = OMA
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = EGY
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = SRW
-		autonomous_state = autonomy_colony
-	}
 	set_autonomy = {
 		target = RAJ
-		autonomous_state = autonomy_colony
+		autonomous_state = autonomy_RL_colonial_regime
 	}
 	set_autonomy = {
 		target = MAL
-		autonomous_state = autonomy_colony
+		autonomous_state = autonomy_RL_colonial_regime
+	}
+	set_autonomy = {
+		target = OMA
+		autonomous_state = autonomy_RL_protectorate
+	}
+	set_autonomy = {
+		target = EGY
+		autonomous_state = autonomy_RL_protectorate
+	}
+	set_autonomy = {
+		target = SRW
+		autonomous_state = autonomy_RL_protectorate
 	}
 	set_autonomy = {
 		target = IRQ
-		autonomous_state = autonomy_puppet
-	}
-	set_autonomy = {
-		target = CAN
-		autonomous_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = SAF
-		autonomous_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = AST
-		autonomous_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = NZL
-		autonomous_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = IRE
-		autonomous_state = autonomy_dominion
+		autonomous_state = autonomy_RL_protectorate
 	}
 	else = {
 		puppet = MAL
 		puppet = RAJ
 		puppet = IRQ
-	}
-}
-
-SAF = { # sadly necessary, make sure this matches SAF history file
-	set_politics = {
-		ruling_party = authoritarian_democracy
-		last_election = "1933.5.17"
-		election_frequency = 60
-		elections_allowed = yes
-	}
-	set_popularities = {
-		insurrectionary_anarchism = 0
-		revolutionary_autocracy = 0
-		proletarian_dictatorship = 0
-		libertarian_socialism = 0
-		social_democracy = 7
-		progressive_liberalism = 10
-		market_libertarianism = 22
-		national_conservatism = 21
-		far_right_authoritarianism = 0
-		authoritarian_democracy = 40
-		martial_despotism = 0
-		ultranational_statism = 0
 	}
 }
 
@@ -237,15 +193,12 @@ set_popularities = {
 
 create_faction = Commonwealth
 add_to_faction = ENG
-#add_to_faction = FRA
 add_to_faction = CAN
 add_to_faction = AST
 add_to_faction = NZL
 add_to_faction = SAF 
 add_to_faction = RAJ
 add_to_faction = MAL
-
-remove_from_faction = IRE
 
 give_guarantee = BEL
 
@@ -1480,5 +1433,51 @@ if = {
 				rear_1_custom_slot = empty
 			}
 		}
+	}
+}
+
+SAF = { # sadly necessary, make sure this matches SAF history file
+	set_politics = {
+		ruling_party = authoritarian_democracy
+		last_election = "1933.5.17"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+	set_popularities = {
+		insurrectionary_anarchism = 0
+		revolutionary_autocracy = 0
+		proletarian_dictatorship = 0
+		libertarian_socialism = 0
+		social_democracy = 7
+		progressive_liberalism = 10
+		market_libertarianism = 22
+		national_conservatism = 21
+		far_right_authoritarianism = 0
+		authoritarian_democracy = 40
+		martial_despotism = 0
+		ultranational_statism = 0
+	}
+}
+
+SRW = {
+	set_politics = {
+		ruling_party = autocratic_despotism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		insurrectionary_anarchism = 0
+		revolutionary_autocracy = 0
+		proletarian_dictatorship = 0
+		libertarian_socialism = 0
+		social_democracy = 0
+		progressive_liberalism = 6
+		market_libertarianism = 4
+		national_conservatism = 20
+		far_right_authoritarianism = 22
+		authoritarian_democracy = 16
+		autocratic_despotism = 33
+		fascism = 0
 	}
 }

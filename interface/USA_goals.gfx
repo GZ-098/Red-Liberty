@@ -504,6 +504,11 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_war_is_a_racket"
+		texturefile = "gfx/interface/goals/USA/USA_war_is_a_racket.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_the_air_corps"
 		texturefile = "gfx/interface/goals/USA/USA_the_air_corps.png"
 	}
@@ -514,8 +519,23 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_support_doctrine"
+		texturefile = "gfx/interface/goals/USA/USA_support_doctrine.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_independent_air_force"
+		texturefile = "gfx/interface/goals/USA/USA_towards_an_independent_air_force.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_the_navy"
 		texturefile = "gfx/interface/goals/USA/USA_the_navy.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_the_naval_act"
+		texturefile = "gfx/interface/goals/USA/USA_the_naval_act.png"
 	}
 	
 	### MEXICO TREE ###

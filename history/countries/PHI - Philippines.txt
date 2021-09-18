@@ -36,6 +36,8 @@ set_popularities = {
 	fascism = 0
 }
 
+set_cosmetic_tag = PHI_USA_commonwealth
+
 create_country_leader = {
 	name = "Emilio Aguinaldo"
 	desc = ""

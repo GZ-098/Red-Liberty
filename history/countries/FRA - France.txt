@@ -16,11 +16,41 @@ set_stability = 0.5
 
 load_focus_tree = FRA_initial_tree
 
-puppet = MOR
-puppet = TUN
-puppet = FWA
-puppet = FCA
-puppet = FIC
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = MOR
+		autonomous_state = autonomy_RL_protectorate
+	}
+	set_autonomy = {
+		target = TUN
+		autonomous_state = autonomy_RL_protectorate
+	}
+	set_autonomy = {
+		target = FWA
+		autonomous_state = autonomy_RL_colonial_regime
+	}
+	set_autonomy = {
+		target = FCA
+		autonomous_state = autonomy_RL_colonial_regime
+	}
+	set_autonomy = {
+		target = FIC
+		autonomous_state = autonomy_RL_colonial_regime
+	}
+	else = {
+		puppet = MOR
+		puppet = TUN
+		puppet = FWA
+		puppet = FCA
+		puppet = FIC
+	}
+}
 
 # Starting tech
 set_technology = {
@@ -127,22 +157,6 @@ set_popularities = {
 
 add_ideas = {
 	FRA_fallen_govt
-}
-
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_autonomy = {
-		target = SYR
-		autonomous_state = autonomy_colony
-	}
-	else = {
-		puppet = SYR
-	}
 }
 
 create_faction = FRA_continental_entente

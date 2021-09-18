@@ -34,6 +34,8 @@ set_popularities = {
 	fascism = 0
 }
 
+set_cosmetic_tag = CRI_GER_regional_govt
+
 create_country_leader = {
 	name = "Maciej Sulkiewicz"
 	desc = ""

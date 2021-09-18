@@ -1,0 +1,28 @@
+add_namespace = politics_saver
+
+country_event = { # called by keep_current_politics
+	id = politics_saver.1
+	hidden = yes
+	is_triggered_only = yes
+	
+	immediate = { reset_government = yes }
+
+	option = { }
+}
+
+country_event = { # test event
+	id = politics_saver.2
+	hidden = yes
+	is_triggered_only = yes
+	
+	immediate = { reset_government = yes }
+
+	option = {
+		IRE = {
+			keep_current_politics = yes
+		}
+		ENG = {
+			puppet = IRE
+		}
+	}
+}

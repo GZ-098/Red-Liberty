@@ -1,7 +1,7 @@
 
 MAL_UK = {
-    color = rgb { 171 48 48 }
-	color_ui = rgb { 255 73 121 }
+    color = rgb { 143 66 66 }
+	color_ui = rgb { 143 66 66 }
 }
 
 RAJ_UK = {
@@ -15,7 +15,7 @@ RAJ_FREE = {
 }
 
 INS_HOL = {
-    color = rgb { 203 138 74 }
+    color = rgb { 132 145 119 }
     color_ui = rgb { 255 179 96 }
 }
 
@@ -343,7 +343,7 @@ POR_empire = {
 #####
 
 CHI_empire_puppet = {
-	color = rgb { 191 134 44 }
+	color = rgb { 191 162 117 }
 	color_ui = rgb { 191 134 44 }
 }
 
@@ -403,8 +403,8 @@ FRA_TUN_puppet = {
 }
 
 ENG_puppet = {
-	color = rgb { 171 48 48 }
-	color_ui = rgb { 255 73 121 }
+	color = rgb { 143 66 66 }
+	color_ui = rgb { 143 66 66 }
 }
 
 SCH_turkestan_autonomy = {
@@ -420,4 +420,24 @@ BAL_LAT_autonomy = {
 BAL_EST_autonomy = {
 	color = rgb { 113 133 132 }
 	color_ui = rgb { 142 142 128 }
+}
+
+POL_GER_puppet = {
+	color = rgb { 153 121 121 }
+	color_ui = rgb { 122 83 83 }
+}
+
+LIT_GER_puppet = {
+	color = rgb { 156 120 104 }
+	color_ui = rgb { 156 120 104 }
+}
+
+CRI_GER_regional_govt = {
+	color = rgb { 112 117 106 }
+	color_ui = rgb { 112 117 106 }
+}
+
+PHI_USA_commonwealth = {
+	color = rgb { 112 136 161 }
+	color_ui = rgb { 112 136 161 }
 }

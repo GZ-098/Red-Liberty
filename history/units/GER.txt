@@ -734,6 +734,16 @@ units = {
 		start_experience_factor = 0.3
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
 	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3686
+		division_template = "Marine-Festungsbrigade"
+		start_experience_factor = 0.3
+	}
 }
 
 instant_effect = {

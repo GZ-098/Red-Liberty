@@ -7,3 +7,8 @@
  
  conscription_banned:0 " Conscription has been banned in our country"
  
+ autonomy_RL_integrated_puppet:0 "Integrated Puppet"
+ autonomy_RL_colonial_regime:0 "Colonial Regime"
+ autonomy_RL_protectorate:0 "Protectorate"
+ autonomy_RL_nominal_puppet:0 "Nominal Puppet"
+ 

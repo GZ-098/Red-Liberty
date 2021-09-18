@@ -8,6 +8,7 @@ tags={
 replace_path = "common/ai_strategy"
 replace_path = "common/ai_strategy_plans"
 replace_path = "common/ai_focuses"
+replace_path = "common/autonomous_states"
 replace_path = "common/ideas"
 replace_path = "common/ideologies"
 replace_path = "common/national_focus"

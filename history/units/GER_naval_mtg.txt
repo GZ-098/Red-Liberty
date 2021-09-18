@@ -1,0 +1,337 @@
+﻿### OOB for file GER.txt
+units = {
+	fleet = {
+		name = "Kaiserliche Marine"
+		naval_base = 6389
+
+		task_force = {
+			name = "Hochseeflotte"
+			location = 11360
+			ship = { name = "SMS Mainz" definition = carrier equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = GER version_name = "Mainz Class" } }
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "GER" amount = 16 }
+				}
+			}
+			ship = { name = "SMS Rhein" definition = carrier equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = GER version_name = "Mainz Class" } }
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "GER" amount = 16 }
+				}
+			}
+			
+			ship = { name = "SMS Bismarck" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = GER version_name = "Kaiser Wilhelm Class" } } }
+			ship = { name = "SMS Tirpitz" definition = battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = GER version_name = "Kaiser Wilhelm Class" } } }
+			ship = { name = "SMS Kaiser Wilhelm" definition = battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = GER version_name = "Kaiser Wilhelm Class" } } }
+			
+			ship = { name = "SMS Deutschland" definition = battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = GER version_name = "Deutschland Class " } } }
+			ship = { name = "SMS Nassau" definition = battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = GER version_name = "Deutschland Class " } } }
+			ship = { name = "SMS Posen" definition = battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = GER version_name = "Deutschland Class " } } }
+			ship = { name = "SMS Schlesien" definition = battleship equipment = { ship_hull_super_heavy_1 = { amount = 1 owner = GER version_name = "Deutschland Class " } } }
+			
+			ship = { name = "SMS Kaiser" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Kaiser Class" } } }
+			ship = { name = "SMS Friedrich der Große" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Kaiser Class" } } }
+			ship = { name = "SMS Kaiserin" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Kaiser Class" } } }
+			ship = { name = "SMS Prinzregent Luitpold" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Kaiser Class" } } }
+			ship = { name = "SMS König Albert" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Kaiser Class" } } }
+			
+			ship = { name = "SMS König" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "König Class" } } }
+			ship = { name = "SMS Großer Kurfürst" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "König Class" } } }
+			ship = { name = "SMS Markgraf" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "König Class" } } }
+			ship = { name = "SMS Kronprinz" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "König Class" } } }
+			
+			ship = { name = "SMS Bayern" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Bayern Class" } } }
+			ship = { name = "SMS Baden" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Bayern Class" } } }
+			ship = { name = "SMS Sachsen" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Bayern Class" } } }
+			ship = { name = "SMS Württemberg" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Bayern Class" } } }
+			
+			ship = { name = "SMS Von Der Tann" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Von Der Tann/Moltke/Seydlitz Class" } } }
+			ship = { name = "SMS Moltke" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Von Der Tann/Moltke/Seydlitz Class" } } }
+			ship = { name = "SMS Seydlitz" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Von Der Tann/Moltke/Seydlitz Class" } } }
+
+			ship = { name = "SMS Fürst Bismarck" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Mackensen/Yorck Class" } } }
+			ship = { name = "SMS Yorck" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Mackensen/Yorck Class" } } }
+			ship = { name = "SMS Mackensen" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Mackensen/Yorck Class" } } }
+			ship = { name = "SMS Prinz Eitel Friedrich" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Mackensen/Yorck Class" } } }
+			
+			ship = { name = "SMS Graudenz" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Graudenz/Cöln Class" } } }
+			ship = { name = "SMS Regensburg" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Graudenz/Cöln Class" } } }
+			ship = { name = "SMS Cöln" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Graudenz/Cöln Class" } } }
+			ship = { name = "SMS Dresden" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Graudenz/Cöln Class" } } }
+			
+			ship = { name = "SMS Stettin" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }
+			ship = { name = "SMS Stuttgart" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }
+			
+			ship = { name = "SMS Brummer" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Brummer Class" } } }
+			ship = { name = "SMS Bremse" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Brummer Class" } } }
+
+			ship = { name = "SMS Frankfurt" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Wiesbaden Class" } } }
+			
+			ship = { name = "SMS Magdeburg" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Magdeburg Class" } } }
+			ship = { name = "SMS Strassburg" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Magdeburg Class" } } }
+			ship = { name = "SMS Stralsund" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Magdeburg Class" } } }
+
+			ship = { name = "SMS V170" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS V171" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS V172" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS V173" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS V174" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS V175" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS V176" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS V177" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			
+			ship = { name = "SMS V203" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS V204" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS V205" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS V206" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS V207" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS V208" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS V209" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS V210" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			
+			ship = { name = "SMS S178" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS S179" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS S180" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS S181" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS S182" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS S183" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS S184" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS S185" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			
+			ship = { name = "SMS S211" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS S212" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS S213" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS S214" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS S215" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS S216" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS S217" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS S218" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS S219" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS S220" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS S221" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS S222" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS S223" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			
+			ship = { name = "SMS H186" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS H187" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS H188" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS H189" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS H190" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS H191" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS H192" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS H193" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS H194" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS H195" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS H196" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS H197" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS H198" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS H199" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS H200" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS H201" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+			ship = { name = "SMS H202" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "V170 Class" } } }
+		}
+
+		task_force = {
+			name = "Nordseeflotte"
+			location = 6389
+			ship = { name = "SMS Siegfried" definition = battleship equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = GER version_name = "Siegfried/Odin Class" } } }
+			ship = { name = "SMS Beowulf" definition = battleship equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = GER version_name = "Siegfried/Odin Class" } } }
+			ship = { name = "SMS Frithjof" definition = battleship equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = GER version_name = "Siegfried/Odin Class" } } }
+			ship = { name = "SMS Heimdall" definition = battleship equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = GER version_name = "Siegfried/Odin Class" } } }
+			ship = { name = "SMS Hildebrand" definition = battleship equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = GER version_name = "Siegfried/Odin Class" } } }
+			ship = { name = "SMS Hagen" definition = battleship equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = GER version_name = "Siegfried/Odin Class" } } }
+			
+			ship = { name = "SMS Odin" definition = battleship equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = GER version_name = "Siegfried/Odin Class" } } }
+			ship = { name = "SMS Ägir" definition = battleship equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = GER version_name = "Siegfried/Odin Class" } } }
+			
+			ship = { name = "SMS V125" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS V126" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS V127" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS V128" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS V129" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS V130" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			
+			ship = { name = "SMS V140" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS V141" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS V142" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS V143" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS V144" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			
+			ship = { name = "SMS S131" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS S132" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS S133" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS S134" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS S135" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS S136" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS S137" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS S138" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS S139" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			
+			ship = { name = "SMS H145" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS H146" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS H147" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			
+			ship = { name = "SMS G148" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS G149" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS G150" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			
+			ship = { name = "SMS WW151" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			
+			ship = { name = "SMS S152" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS S153" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS S154" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS S155" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS S156" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS S157" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			
+			ship = { name = "SMS V158" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS V159" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS V160" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS V161" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS V162" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS V163" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS V164" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS V165" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			
+			ship = { name = "SMS H166" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS H167" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS H168" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+			ship = { name = "SMS H169" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "G96 Class" } } }
+		}
+
+		task_force = {
+			name = "Reservegeschwader"
+			location = 362
+			ship = { name = "SMS Preußen" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Preußen/Siegfried Class" } } }
+			ship = { name = "SMS Hessen" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Preußen/Siegfried Class" } } }
+			ship = { name = "SMS Mecklenburg-Schwerin" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = GER version_name = "Preußen/Siegfried Class" } } }
+			
+			ship = { name = "SMS Rostock" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Graudenz/Cöln/Königsberg Class" } } }
+			ship = { name = "SMS Frauenlob" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Graudenz/Cöln/Königsberg Class" } } }
+			ship = { name = "SMS Bremen" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Bremen Class" } } }
+			ship = { name = "SMS Stralsund" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Bremen Class" } } }
+			ship = { name = "SMS Schlieffen" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Aachen Class" } } }
+			
+			ship = { name = "SMS Stuttgart" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Graudenz/Cöln/Königsberg Class" } } }
+			ship = { name = "SMS Königsberg" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Graudenz/Cöln/Königsberg Class" } } }
+			ship = { name = "SMS Stettin" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Graudenz/Cöln/Königsberg Class" } } }
+			
+			ship = { name = "SMS B97" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "B97 Class" } } }
+			ship = { name = "SMS B98" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "B97 Class" } } }
+			
+			ship = { name = "SMS V100" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "B97 Class" } } }
+			
+			ship = { name = "SMS B109" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "B97 Class" } } }
+			ship = { name = "SMS B110" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "B97 Class" } } }
+			ship = { name = "SMS B111" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "B97 Class" } } }
+			ship = { name = "SMS B112" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "B97 Class" } } }
+		}
+	}
+
+	fleet = {
+		name = "Schwarzmeerflotte"
+		naval_base = 3686
+		task_force = {
+			name = "Schwarzmeerflotte"
+			location = 3686
+			
+		}
+	}
+
+	fleet = {
+		name = "U-Boot-Flotte"
+		naval_base = 241
+		task_force = {
+			name = "I. U-Boot-Nordseeflotte"
+			location = 241
+			ship = { name = "SM U-232" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-233" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-234" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-235" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-236" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-237" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-238" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-239" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-240" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-241" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-242" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-243" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-244" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-245" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-246" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-247" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-248" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-249" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-250" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-251" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-252" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-253" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-254" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-255" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-256" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-257" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-258" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-259" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-260" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-261" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-262" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-263" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-264" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-265" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-266" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-267" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-268" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-269" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+		}
+
+		task_force = {
+			name = "II. U-Boot-Nordseeflotte"
+			location = 6389
+			ship = { name = "SM U-184" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-185" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-186" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-187" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-189" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-190" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-191" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-192" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-193" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-194" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-195" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-142" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-143" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-144" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-145" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-146" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-147" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-148" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-149" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-150" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-173" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-174" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+		}
+
+		task_force = {
+			name = "U-Boot-Ostseeflotte"
+			location = 6282
+			ship = { name = "SM U-203" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-204" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-205" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-206" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-207" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-208" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-209" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-210" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-211" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-212" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-213" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-214" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type I Class" } } }
+			ship = { name = "SM U-215" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-216" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-217" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-218" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-219" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-220" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-221" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+			ship = { name = "SM U-222" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GER version_name = "Type III Class" } } }
+		}
+	}
+}

@@ -1,0 +1,225 @@
+keep_current_politics = { # use before puppeting to keep ideology after
+	
+	set_variable = { save_insurrectionary_anarchism = party_popularity@insurrectionary_anarchism }
+	set_variable = { save_revolutionary_autocracy = party_popularity@revolutionary_autocracy }
+	set_variable = { save_proletarian_dictatorship = party_popularity@proletarian_dictatorship }
+	set_variable = { save_libertarian_socialism = party_popularity@libertarian_socialism }
+	set_variable = { save_social_democracy = party_popularity@social_democracy }
+	set_variable = { save_progressive_liberalism = party_popularity@progressive_liberalism }
+	set_variable = { save_market_libertarianism = party_popularity@market_libertarianism }
+	set_variable = { save_national_conservatism = party_popularity@national_conservatism }
+	set_variable = { save_authoritarian_democracy = party_popularity@authoritarian_democracy }
+	set_variable = { save_autocratic_despotism = party_popularity@autocratic_despotism }
+	set_variable = { save_far_right_authoritarianism = party_popularity@far_right_authoritarianism }
+	set_variable = { save_fascism = party_popularity@fascism }
+
+	multiply_variable = { save_insurrectionary_anarchism = 100 }
+	multiply_variable = { save_revolutionary_autocracy = 100 }
+	multiply_variable = { save_proletarian_dictatorship = 100 }
+	multiply_variable = { save_libertarian_socialism = 100 }
+	multiply_variable = { save_social_democracy = 100 }
+	multiply_variable = { save_progressive_liberalism = 100 }
+	multiply_variable = { save_market_libertarianism = 100 }
+	multiply_variable = { save_national_conservatism = 100 }
+	multiply_variable = { save_authoritarian_democracy = 100 }
+	multiply_variable = { save_autocratic_despotism = 100 }
+	multiply_variable = { save_far_right_authoritarianism = 100 }
+	multiply_variable = { save_fascism = 100 }
+
+	if = {
+		limit = { has_government = insurrectionary_anarchism }
+		set_country_flag = { flag = was_insurrectionary_anarchism value = 1 days = 1 }
+	}
+	if = {
+		limit = { has_government = revolutionary_autocracy }
+		set_country_flag = { flag = was_revolutionary_autocracy value = 1 days = 1 }
+	}
+	if = {
+		limit = { has_government = proletarian_dictatorship }
+		set_country_flag = { flag = was_proletarian_dictatorship value = 1 days = 1 }
+	}
+	if = {
+		limit = { has_government = libertarian_socialism }
+		set_country_flag = { flag = was_libertarian_socialism value = 1 days = 1 }
+	}
+	if = {
+		limit = { has_government = social_democracy }
+		set_country_flag = { flag = was_social_democracy value = 1 days = 1 }
+	}
+	if = {
+		limit = { has_government = progressive_liberalism }
+		set_country_flag = { flag = was_progressive_liberalism value = 1 days = 1 }
+	}
+	if = {
+		limit = { has_government = market_libertarianism }
+		set_country_flag = { flag = was_market_libertarianism value = 1 days = 1 }
+	}
+	if = {
+		limit = { has_government = national_conservatism }
+		set_country_flag = { flag = was_national_conservatism value = 1 days = 1 }
+	}
+	if = {
+		limit = { has_government = authoritarian_democracy }
+		set_country_flag = { flag = was_authoritarian_democracy value = 1 days = 1 }
+	}
+	if = {
+		limit = { has_government = autocratic_despotism }
+		set_country_flag = { flag = was_save_autocratic_despotism value = 1 days = 1 }
+	}
+	if = {
+		limit = { has_government = far_right_authoritarianism }
+		set_country_flag = { flag = was_far_right_authoritarianism value = 1 days = 1 }
+	}
+	if = {
+		limit = { has_government = fascism }
+		set_country_flag = { flag = was_fascism value = 1 days = 1 }
+	}
+
+	set_temp_variable = { total_ideology_score = 100 }
+	subtract_from_temp_variable = { total_ideology_score = save_insurrectionary_anarchism }
+	subtract_from_temp_variable = { total_ideology_score = save_revolutionary_autocracy }
+	subtract_from_temp_variable = { total_ideology_score = save_proletarian_dictatorship }
+	subtract_from_temp_variable = { total_ideology_score = save_libertarian_socialism }
+	subtract_from_temp_variable = { total_ideology_score = save_social_democracy }
+	subtract_from_temp_variable = { total_ideology_score = save_progressive_liberalism }
+	subtract_from_temp_variable = { total_ideology_score = save_market_libertarianism }
+	subtract_from_temp_variable = { total_ideology_score = save_national_conservatism }
+	subtract_from_temp_variable = { total_ideology_score = save_authoritarian_democracy }
+	subtract_from_temp_variable = { total_ideology_score = save_autocratic_despotism }
+	subtract_from_temp_variable = { total_ideology_score = save_far_right_authoritarianism }
+	subtract_from_temp_variable = { total_ideology_score = save_fascism }
+
+	if = {
+		limit = { NOT = { check_variable = { total_ideology_score = 0 } } }
+		if = {
+			limit = { has_government = insurrectionary_anarchism }
+			add_to_variable = { save_insurrectionary_anarchism = total_ideology_score }
+		}
+		else_if = {
+			limit = { has_government = revolutionary_autocracy }
+			add_to_variable = { save_revolutionary_autocracy = total_ideology_score }
+		}
+		else_if = {
+			limit = { has_government = proletarian_dictatorship }
+			add_to_variable = { save_proletarian_dictatorship = total_ideology_score }
+		}
+		else_if = {
+			limit = { has_government = libertarian_socialism }
+			add_to_variable = { save_libertarian_socialism = total_ideology_score }
+		}
+		else_if = {
+			limit = { has_government = social_democracy }
+			add_to_variable = { save_social_democracy = total_ideology_score }
+		}
+		else_if = {
+			limit = { has_government = progressive_liberalism }
+			add_to_variable = { save_progressive_liberalism = total_ideology_score }
+		}
+		else_if = {
+			limit = { has_government = market_libertarianism }
+			add_to_variable = { save_market_libertarianism = total_ideology_score }
+		}
+		else_if = {
+			limit = { has_government = national_conservatism }
+			add_to_variable = { save_national_conservatism = total_ideology_score }
+		}
+		else_if = {
+			limit = { has_government = authoritarian_democracy }
+			add_to_variable = { save_authoritarian_democracy = total_ideology_score }
+		}
+		else_if = {
+			limit = { has_government = autocratic_despotism }
+			add_to_variable = { save_autocratic_despotism = total_ideology_score }
+		}
+		else_if = {
+			limit = { has_government = far_right_authoritarianism }
+			add_to_variable = { save_far_right_authoritarianism = total_ideology_score }
+		}
+		else = {
+			limit = { has_government = fascism }
+			add_to_variable = { save_fascism = total_ideology_score }
+		}
+	}
+
+	hidden_effect = { country_event = { id = politics_saver.1 hours = 1 } }
+}
+
+reset_government = {
+
+	set_popularities = {
+		insurrectionary_anarchism = save_insurrectionary_anarchism
+		revolutionary_autocracy = save_revolutionary_autocracy
+		proletarian_dictatorship = save_proletarian_dictatorship
+		libertarian_socialism = save_libertarian_socialism
+		social_democracy = save_social_democracy
+		progressive_liberalism = save_progressive_liberalism
+		market_libertarianism = save_market_libertarianism
+		national_conservatism = save_national_conservatism
+		authoritarian_democracy = save_authoritarian_democracy
+		autocratic_despotism = save_autocratic_despotism
+		far_right_authoritarianism = save_far_right_authoritarianism
+		fascism = save_fascism
+	}
+	
+	if = {
+		limit = { has_country_flag = was_insurrectionary_anarchism }
+		set_politics = { ruling_party = insurrectionary_anarchism }
+	}
+	if = {
+		limit = { has_country_flag = was_revolutionary_autocracy }
+		set_politics = { ruling_party = revolutionary_autocracy }
+	}
+	if = {
+		limit = { has_country_flag = was_proletarian_dictatorship }
+		set_politics = { ruling_party = proletarian_dictatorship }
+	}
+	if = {
+		limit = { has_country_flag = was_libertarian_socialism }
+		set_politics = { ruling_party = libertarian_socialism }
+	}
+	if = {
+		limit = { has_country_flag = was_social_democracy }
+		set_politics = { ruling_party = social_democracy }
+	}
+	if = {
+		limit = { has_country_flag = was_progressive_liberalism }
+		set_politics = { ruling_party = progressive_liberalism }
+	}
+	if = {
+		limit = { has_country_flag = was_market_libertarianism }
+		set_politics = { ruling_party = market_libertarianism }
+	}
+	if = {
+		limit = { has_country_flag = was_national_conservatism }
+		set_politics = { ruling_party = national_conservatism }
+	}
+	if = {
+		limit = { has_country_flag = was_authoritarian_democracy }
+		set_politics = { ruling_party = authoritarian_democracy }
+	}
+	if = {
+		limit = { has_country_flag = was_autocratic_despotism }
+		set_politics = { ruling_party = autocratic_despotism }
+	}
+	if = {
+		limit = { has_country_flag = was_far_right_authoritarianism }
+		set_politics = { ruling_party = far_right_authoritarianism }
+	}
+	if = {
+		limit = { has_country_flag = was_fascism }
+		set_politics = { ruling_party = fascism }
+	}
+
+	clear_variable = save_insurrectionary_anarchism
+	clear_variable = save_revolutionary_autocracy
+	clear_variable = save_proletarian_dictatorship
+	clear_variable = save_libertarian_socialism
+	clear_variable = save_social_democracy
+	clear_variable = save_progressive_liberalism
+	clear_variable = save_market_libertarianism
+	clear_variable = save_national_conservatism
+	clear_variable = save_authoritarian_democracy
+	clear_variable = save_authoritarian_democracy
+	clear_variable = save_far_right_authoritarianism
+	clear_variable = save_fascism
+}

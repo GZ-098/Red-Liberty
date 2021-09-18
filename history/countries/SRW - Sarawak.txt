@@ -9,7 +9,7 @@ set_technology = {
 
 set_convoys = 5
 
-set_cosmetic_tag = ENG_puppet
+#set_cosmetic_tag = ENG_puppet
 
 set_politics = {
 	ruling_party = autocratic_despotism
@@ -34,7 +34,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Charles Vyner Brooke"
-	picture = ""
+	picture = "Portrait_SRW_Charles_Brooke.png"
 	expire = "1965.1.1"
 	ideology = autocratic_despotism_subtype
 	traits = {

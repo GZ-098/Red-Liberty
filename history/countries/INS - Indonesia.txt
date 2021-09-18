@@ -47,23 +47,23 @@ if = {
 
 set_convoys = 25
 set_politics = {
-	ruling_party = autocratic_despotism
-	last_election = "1932.11.8"
+	ruling_party = authoritarian_democracy
+	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	insurrectionary_anarchism = 0
 	revolutionary_autocracy = 0
-	proletarian_dictatorship = 2
-	libertarian_socialism = 8
-	social_democracy = 17
-	progressive_liberalism = 13
+	proletarian_dictatorship = 0
+	libertarian_socialism = 0
+	social_democracy = 0
+	progressive_liberalism = 0
 	market_libertarianism = 0
-	national_conservatism = 27
-	authoritarian_democracy = 3
-	autocratic_despotism = 25
-	far_right_authoritarianism = 5
+	national_conservatism = 0
+	authoritarian_democracy = 100
+	autocratic_despotism = 0
+	far_right_authoritarianism = 0
 	fascism = 0
 }
 
@@ -74,7 +74,7 @@ create_country_leader = {
 	desc = ""
 	picture = ""
 	expire = "1953.3.1"
-	ideology = autocratic_despotism_subtype 
+	ideology = authoritarian_democracy_subtype 
 	traits = {
 		
 	}
