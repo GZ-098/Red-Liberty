@@ -1,22 +1,20 @@
-
 state={
-	id=911
-	name="STATE_911"
-
+	id=926
+	name="STATE_926"
+	
 	history={
-		owner = YEM
+		owner = ASI
 		buildings = {
 			infrastructure = 1
-
 		}
 		add_core_of = YEM
-
+		add_core_of = ASI
 	}
-
+	
 	provinces={
-		8030 10870 
+		1920 
 	}
-	manpower=90000
+	manpower=3000
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=pastoral
 }
