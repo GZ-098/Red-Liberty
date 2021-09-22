@@ -82,7 +82,9 @@ shared_focus = {
 	relative_position_id = USA_butler_reform_plan
 	prerequisite = { focus = USA_butler_reform_plan }
     completion_reward = {
-        
+        add_ideas = {
+			USA_20_division_plan
+		}
     }
 	
 	ai_will_do = {

@@ -509,6 +509,16 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_butler_reform_plan"
+		texturefile = "gfx/interface/goals/USA/USA_butler_reform_plan.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_20_division_plan"
+		texturefile = "gfx/interface/goals/USA/USA_20_division_plan.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_the_air_corps"
 		texturefile = "gfx/interface/goals/USA/USA_the_air_corps.png"
 	}
@@ -568,5 +578,10 @@ spritetypes = {
 	SpriteType = {
 		name = "GFX_USA_support_yucatec_indep"
 		texturefile = "gfx/interface/goals/USA/USA_support_yucatec_indep.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_negotiated_peace"
+		texturefile = "gfx/interface/goals/USA/USA_negotiate_peace.png"
 	}
 }

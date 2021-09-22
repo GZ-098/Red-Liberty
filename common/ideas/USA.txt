@@ -743,5 +743,29 @@ ideas = {
 				send_volunteer_size = 2
 			}
 		}
+		
+		USA_20_division_plan = {
+		
+			removal_cost = -1 
+			
+			allowed_civil_war = {	 
+				always = no
+			}
+			
+			available = {
+				MEX = {
+					has_war_with = MXR
+				}
+			}
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			modifier = {
+				conscription_factor = -0.25
+				army_org_factor = 0.1
+			}
+		}
 	}
 }
