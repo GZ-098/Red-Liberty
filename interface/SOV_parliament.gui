@@ -57,7 +57,7 @@ guiTypes = {
 			name = "close_button"
 			spriteType = "GFX_closebutton"
 			orientation = right
-			position = { x = 552 y = 15 }
+			position = { x = 552 y = 16 }
 			pdx_tooltip = "CLOSE"
 			shortcut = "ESCAPE"
 		}
@@ -74,6 +74,15 @@ guiTypes = {
 			maxHeight = 50
 			font = hoi_24header
 			text = "The Congress of Soviets"
+		}
+		
+		instantTextBoxType = {
+			name = "SOV_parliament_gui_seats_total"
+			position = { x = 200 y = 330 }
+			format = center
+			maxHeight = 50
+			font = hoi_24header
+			text = "542"
 		}
 		
 		instantTextBoxType = {

@@ -123,10 +123,12 @@ add_ideas = {
 	SOV_nep
 }
 
+set_country_flag = conscription_banned
+
 create_country_leader = {
 	name = "Nikolai Bukharin"
-	#desc = ""
-	picture = "Portrait_SOV_Nikolai_Bukharin.tga"
+	desc = ""
+	picture = "Portrait_SOV_Nikolai_Bukharin.png"
 	expire = "1953.3.1"
 	ideology = revolutionary_autocracy_subtype
 	traits = {

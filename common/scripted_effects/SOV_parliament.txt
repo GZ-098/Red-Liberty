@@ -1,19 +1,22 @@
 SOV_refresh_parliament = {
 	
-	set_variable = { SOV_communist_seat = 250 }
-	set_variable = { SOV_socialist_seats = 230 }
-	set_variable = { SOV_technocrat_seats = 42 }
-	set_variable = { SOV_conservative_seats = 20 }
+	set_variable = { SOV_industrialist_seats = 122 }
+	set_variable = { SOV_technocrat_seats = 103 }
+	set_variable = { SOV_libertarian_seats = 117 }
+	set_variable = { SOV_eser_seats = 168 }
+	set_variable = { SOV_liberal_seats = 32 }
 	
-	set_temp_variable = { t1 = SOV_communist_seat }
-	set_temp_variable = { t2 = SOV_socialist_seats }
-	set_temp_variable = { t3 = SOV_technocrat_seats }
-	set_temp_variable = { t4 = SOV_conservative_seats }
-	set_temp_variable = { t5 = 542 }
+	set_temp_variable = { t1 = SOV_industrialist_seats }
+	set_temp_variable = { t2 = SOV_technocrat_seats }
+	set_temp_variable = { t3 = SOV_libertarian_seats }
+	set_temp_variable = { t4 = SOV_eser_seats }
+	set_temp_variable = { t5 = SOV_liberal_seats }
+	set_temp_variable = { t6 = 542 }
 
 	add_to_temp_variable = { t2 = t1 }
 	add_to_temp_variable = { t3 = t2 }
 	add_to_temp_variable = { t4 = t3 }
+	add_to_temp_variable = { t5 = t4 }
 	
 	clear_array = SOV_frame_array
 	
@@ -35,17 +38,23 @@ SOV_refresh_parliament = {
 		value = 3
 		size = t3
 	}
-	# Resize array to all t4 seats
+	# Resize array to all t4 seats, setting P4 frame numbers to 4 (Party 4 color)
 	resize_array = {
 		array = SOV_frame_array
 		value = 4
 		size = t4
 	}
-	# Resize array to all 542 seats, setting remaining frame numbers to 4 (Party 4 color)
+	# Resize array to all t5, setting P5 frame numbers to 5 (Party 5 color)
 	resize_array = {
 		array = SOV_frame_array
-		value = 4
+		value = 5
 		size = t5
+	}
+	# Resize array to all 542 seats, setting remaining frame numbers to 5 (Party 5 color)
+	resize_array = {
+		array = SOV_frame_array
+		value = 5
+		size = t6
 	}
 }
 

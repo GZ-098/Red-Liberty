@@ -7,7 +7,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "SOV_seat_icon"
-		textureFile = "/gfx/interface/SOV/SOV_parliament/parliament_parties.dds"
-		noOfFrames = 4
+		textureFile = "/gfx/interface/SOV/SOV_parliament/parliament_parties_2.dds"
+		noOfFrames = 5
 	}
 }
