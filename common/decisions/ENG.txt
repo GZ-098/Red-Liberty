@@ -24,7 +24,7 @@ ENG_parliament = {
 		remove_effect = {
 			add_stability = 0.02
 			add_popularity = {
-				ideology = ultranational_statism
+				ideology = fascism
 				popularity = -0.01
 			}
 			add_popularity = {

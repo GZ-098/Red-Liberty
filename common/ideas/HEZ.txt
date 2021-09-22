@@ -1,0 +1,25 @@
+ideas = {
+	country = {
+	
+		HEZ_caliphate = {
+			removal_cost = -1 
+				
+			allowed = {
+				tag = HEZ
+			}  
+
+			available = {
+				tag = HEZ
+			}
+				
+			allowed_civil_war = { 
+				always = yes
+			}
+				
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.05
+			}
+		}
+	}
+}

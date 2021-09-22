@@ -31,10 +31,14 @@ set_popularities = {
 	fascism = 0
 }
 
+add_ideas = {
+	HEZ_caliphate
+}
+
 create_country_leader = {
 	name = "Ali bin Hussein"
 	desc = ""
-	picture = ""
+	picture = "Portrait_HEZ_Ali_bin_Hussein.png"
 	expire = "1965.1.1"
 	ideology = autocratic_despotism_subtype
 	traits = {

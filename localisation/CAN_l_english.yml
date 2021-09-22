@@ -3,6 +3,14 @@
  CAN_DEF:0 "the Dominion of Canada"
  CAN_ADJ:0 "Canadian"
  
- CAN_social_democracy_party:0 "CLP"
- CAN_social_democracy_party_long:0 "Canadian Labour Party"
+ CAN_libertarian_socialism_party:0 "CLP"
+ CAN_libertarian_socialism_party_long:0 "Canadian Labour Party"
+ CAN_social_democracy_party:0 "CCF"
+ CAN_social_democracy_party_long:0 "Co-operative Commonwealth Federation"
+ CAN_progressive_liberalism_party:0 "LPC"
+ CAN_progressive_liberalism_party_long:0 "Liberal Party of Canada"
+ CAN_market_libertarianism_party:0 "SCPC"
+ CAN_market_libertarianism_party_long:0 "Social Credit Party of Canada"
+ CAN_national_conservatism_party:0 "CPC"
+ CAN_national_conservatism_party_long:0 "Conservative Party of Canada"
  
