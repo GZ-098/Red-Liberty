@@ -1,0 +1,13 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_SOV_parliament_button"
+		textureFile = ""
+	}
+
+	spriteType = {
+		name = "SOV_seat_icon"
+		textureFile = "/gfx/interface/SOV/SOV_parliament/parliament_parties.dds"
+		noOfFrames = 4
+	}
+}

@@ -1,0 +1,66 @@
+scripted_gui = {
+	
+	SOV_parliament_button_gui = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "SOV_parliament_button_container"
+		
+		triggers = {
+			SOV_parliament_button = {
+				tag = SOV
+			}
+		}
+
+		effects = {
+			SOV_parliament_button_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = SOV_open_parliament_gui }
+					}
+					ROOT = {
+						set_country_flag = SOV_open_parliament_gui
+					}
+				}
+				else = {
+					clr_country_flag = SOV_open_parliament_gui
+				}
+			}
+		}
+	}
+
+
+	parliament_sample_scripted_gui = {
+		window_name = "SOV_parliament_gui"
+		context_type = player_context
+
+		visible = {
+			has_country_flag = SOV_open_parliament_gui
+		}
+
+		dynamic_lists = {
+			parliament_diagram = {
+				array = SOV_x_array
+				change_scope = no
+				entry_container = SOV_seat_container
+				index = seat_idx
+			}
+		}
+
+		properties = {
+			parliament_dot_icon = {
+				x = SOV_x_array^seat_idx
+				y = SOV_y_array^seat_idx
+				frame = SOV_frame_array^seat_idx
+			}
+		}
+
+		effects = {
+			close_button_click = {
+				clr_country_flag = SOV_open_parliament_gui
+			}
+			refresh_button_click = {
+				SOV_refresh_parliament = yes
+			}
+		}
+	}
+}

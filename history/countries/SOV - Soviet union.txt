@@ -9,6 +9,8 @@ oob = "SOV"
 #	}
 #}
 
+SOV_init_parliament = yes
+
 load_focus_tree = SOV_initial_tree
 
 set_country_flag = rev_autocracy_coalition
@@ -101,17 +103,17 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	insurrectionary_anarchism = 10
-	revolutionary_autocracy = 35
-	proletarian_dictatorship = 5
-	libertarian_socialism = 25
-	social_democracy = 25
-	progressive_liberalism = 0
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 18
+	proletarian_dictatorship = 23
+	libertarian_socialism = 22
+	social_democracy = 21
+	progressive_liberalism = 7
 	market_libertarianism = 0
-	national_conservatism = 0
-	far_right_authoritarianism = 0
-	authoritarian_democracy = 0
+	national_conservatism = 5
+	authoritarian_democracy = 4
 	autocratic_despotism = 0
+	far_right_authoritarianism = 0
 	fascism = 0
 }
 

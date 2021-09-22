@@ -23,6 +23,17 @@ bookmarks = {
 			}
 		}
 		
+		"SOV"={
+			history = "SOV_BREAD_AND_ROSES_DESC"
+			ideology = revolutionary_autocracy
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
 		"---"={ 
 			history = "OTHER_BREAD_AND_ROSES_DESC"
 		}

@@ -1,0 +1,88 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "SOV_parliament_button_container"
+		position = { x = 460 y = 235 }
+
+		buttonType = {
+			name = "SOV_parliament_button"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_idea_SOV_political_turmoil"
+			pdx_tooltip = "SOV_congress_tt"
+		}
+	}
+	
+	containerWindowType = {
+		name = "SOV_seat_container"
+		position = { x = 0 y = 0 }
+
+		iconType = { 
+			name = "parliament_dot_icon"
+			quadTextureSprite = "SOV_seat_icon"
+			pdx_tooltip = "SOV_congress_seat_tt"
+		}
+	}
+	
+	containerWindowType = {
+		name = "SOV_parliament_gui"
+		position = { x = -1100 y = -450 }
+		show_position = { x = -400 y =-450 }
+		size = { width = 600 height = 600 }
+		
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+
+		animation_time = 300
+		moveable = yes
+		show_sound = menu_open_window
+		click_to_front = yes
+		
+		orientation = center
+		
+		background = {
+			name = "background"		
+			quadTextureSprite = "GFX_tiled_window_thin_border2"
+		}
+
+		gridboxtype = {
+			name = "parliament_diagram"
+			position = { x = 35 y = 100 }
+			size = { width = 100%% height = 100%% }
+			slotsize = { width = 100%% height = 0 }
+			max_slots_horizontal = 1
+			add_horizontal = no
+		}
+		
+		buttonType = {
+			name = "close_button"
+			spriteType = "GFX_closebutton"
+			orientation = right
+			position = { x = 552 y = 15 }
+			pdx_tooltip = "CLOSE"
+			shortcut = "ESCAPE"
+		}
+		buttonType = {
+			name = "refresh_button"
+			spriteType = "GFX_browser_refresh"
+			position = { x = 16 y = 16 }
+		}
+		
+		instantTextBoxType = {
+			name = "SOV_parliament_gui_name"
+			position = { x = 200 y = 30 }
+			format = center
+			maxHeight = 50
+			font = hoi_24header
+			text = "The Congress of Soviets"
+		}
+		
+		instantTextBoxType = {
+			name = "SOV_parliament_gui_desc"
+			position = { x = 200 y = 380 }
+			format = center
+			maxHeight = 50
+			font = hoi_24header
+			text = "SOV_congress_desc"
+		}
+	}
+}
