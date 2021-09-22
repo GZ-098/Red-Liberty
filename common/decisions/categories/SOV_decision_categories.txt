@@ -14,7 +14,7 @@ SOV_science_meter_category = {
 		original_tag = SOV
 	}
 	visible = {
-		always = no
+		always = yes
 	}
 
 	scripted_gui = SOV_science_meter_gui

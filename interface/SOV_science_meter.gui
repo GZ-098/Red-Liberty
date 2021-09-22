@@ -1,0 +1,48 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name = "SOV_science_meter_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 250 height = 230 }
+		
+		#background = {
+		#	name = "background"		
+		#	quadTextureSprite = "GFX_tiled_window_thin_border2"
+		#}
+
+		containerWindowType = {
+			name = "SOV_science_meter"
+			position = { x = 20 y = 50 } # { x = 128 y = 60 }
+
+			iconType = {
+				name = "SOV_science_meter_bg"
+				spriteType = "GFX_SOV_meter_bg"
+				position = { x = 2 y = 2 }
+			}
+			
+			iconType = {
+				name = "SOV_meter_hand"
+				spriteType = "GFX_SOV_meter_hand"
+				position = { x = 2 y = 2 }
+			}
+			
+			iconType = {
+				name = "SOV_science_meter_dot"
+				spriteType = "GFX_SOV_meter_dot"
+				position = { x = 1 y = 3 }
+			}
+
+			#buttonType = {
+			#	name = "left_button"
+			#	spriteType = "GFX_production_line_arrow_left"
+			#	position = { x = 20 y = 150 }
+			#}
+			
+			#buttonType = {
+			#	name = "right_button"
+			#	spriteType = "GFX_production_line_arrow_right"
+			#	position = { x = 153 y = 150 }
+			#}
+		}
+	}
+}

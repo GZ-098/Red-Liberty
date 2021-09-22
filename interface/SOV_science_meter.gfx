@@ -1,0 +1,34 @@
+spriteTypes = {
+
+	#spriteType = {
+	#	name = "GFX_SOV_science_meter_bg"
+	#	texturefile = "gfx/interface/SOV/speedometer.tga"
+	#}
+	
+	#spriteType = {
+	#	name = "GFX_SOV_science_needle_halfway"
+	#	texturefile = "gfx/interface/SOV/needle.tga"
+	#}
+	
+	progressbartype = {
+		name = "GFX_SOV_meter_hand"
+		textureFile1 = "/gfx/interface/SOV/SOV_science_meter/dial_full.dds"
+		textureFile2 = "/gfx/interface/SOV/SOV_science_meter/dial_empty.dds"
+		size = {	
+			x = 200
+			y = 200	
+		}
+		effectFile = "gfx/FX/half_dial.shader"
+		horizontal = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_meter_bg"
+		textureFile = "/gfx/interface/SOV/SOV_science_meter/dial_back_half.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SOV_meter_dot"
+		textureFile = "/gfx/interface/SOV/SOV_science_meter/dial_dot.dds"
+	}
+}

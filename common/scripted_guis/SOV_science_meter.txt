@@ -4,8 +4,25 @@ scripted_gui = {
 		context_type = decision_category
 		window_name = "SOV_science_meter_ui_window"
 		
+		effects = {
+			left_button_click = {
+				subtract_from_variable = {
+					SOV_SCIENCE_level = 5
+				}
+				clamp_variable = { var = SOV_SCIENCE_level min = 0 max = 100 }
+			}
+			right_button_click = {
+				add_to_variable = {
+					SOV_SCIENCE_level = 5
+				}
+				clamp_variable = { var = SOV_SCIENCE_level min = 0 max = 100 }
+			}
+		}
+		
 		properties = {
-			
+			SOV_meter_hand = {
+				frame = SOV_SCIENCE_level
+			}
 		}
 	}
 }

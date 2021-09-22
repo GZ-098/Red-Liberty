@@ -59,6 +59,11 @@ SOV_refresh_parliament = {
 }
 
 SOV_init_parliament = {
+
+	# Spread: 2.01
+	# First Row Radius: 5.7
+	# Total Delegates: 542
+
 	SOV_refresh_parliament = yes
 
 	clear_array = SOV_x_array

@@ -1,0 +1,6 @@
+defined_text = {
+	name = GetParliamentSeatCount
+	text = {
+		localization_key = "Error"
+	}
+}
