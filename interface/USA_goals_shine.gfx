@@ -421,11 +421,11 @@ spritetypes = {
 	### MILITARY TREE ###
 	
 	SpriteType = {
-		name = "GFX_USA_war_is_a_racket_shine"
-		texturefile = "gfx/interface/goals/USA/USA_war_is_a_racket.png"
+		name = "GFX_USA_butler_reform_plan_shine"
+		texturefile = "gfx/interface/goals/USA/USA_butler_reform_plan.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/USA/USA_war_is_a_racket.png"
+			animationmaskfile = "gfx/interface/goals/USA/USA_butler_reform_plan.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -438,7 +438,7 @@ spritetypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/USA/USA_war_is_a_racket.png"
+			animationmaskfile = "gfx/interface/goals/USA/USA_butler_reform_plan.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

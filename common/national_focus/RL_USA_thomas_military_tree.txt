@@ -14,54 +14,54 @@ shared_focus = {
 	}
 }
 
-shared_focus = {
-    id = USA_the_army
-	icon = GFX_USA_the_army
-	
-    x = -6
-	y = 1
-	
-	cost = 2
-	relative_position_id = USA_reforming_the_military
-	prerequisite = { focus = USA_reforming_the_military }
-    completion_reward = {
-        army_experience = 25
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
+#shared_focus = {
+#	id = USA_the_army
+#	icon = GFX_USA_the_army
+#	
+#	x = -8
+#	y = 1
+#	
+#	cost = 2
+#	relative_position_id = USA_reforming_the_military
+#	prerequisite = { focus = USA_reforming_the_military }
+#	completion_reward = {
+#		army_experience = 25
+#	}
+#	
+#	ai_will_do = {
+#		factor = 10
+#	}
+#}
 
-shared_focus = {
-    id = USA_war_is_a_racket
-	icon = GFX_USA_war_is_a_racket
-	
-    x = 0
-	y = 1
-	
-	cost = 5
-	relative_position_id = USA_the_army
-	prerequisite = { focus = USA_the_army }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
+#shared_focus = {
+#	id = USA_war_is_a_racket
+#	icon = GFX_USA_war_is_a_racket
+#	
+#    x = 0
+#	y = 1
+#	
+#	cost = 5
+#	relative_position_id = USA_the_army
+#	prerequisite = { focus = USA_the_army }
+#    completion_reward = {
+#     
+#	}
+#	
+#	ai_will_do = {
+#		factor = 10
+#	}
+#}
 
 shared_focus = {
     id = USA_butler_reform_plan
 	icon = GFX_USA_butler_reform_plan
 	
-    x = 0
+    x = -8
 	y = 1
 	
 	cost = 5
-	relative_position_id = USA_war_is_a_racket
-	prerequisite = { focus = USA_war_is_a_racket }
+	relative_position_id = USA_reforming_the_military
+	prerequisite = { focus = USA_reforming_the_military }
     completion_reward = {
         army_experience = 25
     }
@@ -75,7 +75,7 @@ shared_focus = {
     id = USA_20_division_plan
 	icon = GFX_USA_20_division_plan
 	
-    x = -5
+    x = -2
 	y = 1
 	
 	cost = 5
@@ -93,15 +93,50 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_scrap_reserves
-	icon = GFX_USA_scrap_reserves
+    id = USA_adequate_defense
+	icon = GFX_USA_adequate_defense
 	
-    x = -2
+    x = -1
 	y = 1
 	
 	cost = 5
 	relative_position_id = USA_20_division_plan
 	prerequisite = { focus = USA_20_division_plan }
+    completion_reward = {
+		816 = {
+			add_building_construction = {
+				type = coastal_bunker
+				level = 1
+				instant_build = yes
+				province = 3878
+			}
+		}
+		629 = {
+			add_building_construction = {
+				type = coastal_bunker
+				level = 1
+				instant_build = yes
+				province = 4180
+			}
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_scrap_reserves
+	icon = GFX_USA_scrap_reserves
+	
+    x = 1
+	y = 1
+	
+	cost = 5
+	relative_position_id = USA_20_division_plan
+	prerequisite = { focus = USA_20_division_plan }
+	prerequisite = { focus = USA_ending_war_as_business }
     completion_reward = {
         delete_unit_template_and_units = {
 			division_template = "Organized Reserve"
@@ -114,56 +149,16 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_adequate_defense
-	icon = GFX_USA_adequate_defense
-	
-    x = 0
-	y = 1
-	
-	cost = 5
-	relative_position_id = USA_20_division_plan
-	prerequisite = { focus = USA_20_division_plan }
-    completion_reward = {
-        add_ideas = {
-			USA_coastal_defense
-		}
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
     id = USA_decentralize_national_guard
 	icon = GFX_USA_decentralize_national_guard
-	
-    x = 2
-	y = 1
-	
-	cost = 5
-	relative_position_id = USA_20_division_plan
-	prerequisite = { focus = USA_20_division_plan }
-    completion_reward = {
-        
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_make_do
-	icon = GFX_USA_make_do
 	
     x = 1
 	y = 1
 	
 	cost = 5
-	relative_position_id = USA_scrap_reserves
-	prerequisite = { focus = USA_scrap_reserves }
+	relative_position_id = USA_adequate_defense
 	prerequisite = { focus = USA_adequate_defense }
+	prerequisite = { focus = USA_scrap_reserves }
     completion_reward = {
         
     }
@@ -177,13 +172,13 @@ shared_focus = {
     id = USA_army_of_by_for_the_people
 	icon = GFX_USA_army_of_by_for_the_people
 	
-    x = 1
-	y = 1
+    x = 0
+	y = 2
 	
 	cost = 5
-	relative_position_id = USA_adequate_defense
-	prerequisite = { focus = USA_adequate_defense }
-	prerequisite = { focus = USA_decentralize_national_guard }
+	relative_position_id = USA_scrap_reserves
+	prerequisite = { focus = USA_scrap_reserves }
+	prerequisite = { focus = USA_collective_conciousness }
     completion_reward = {
         
     }
@@ -197,13 +192,13 @@ shared_focus = {
     id = USA_and_nothing_more
 	icon = GFX_USA_and_nothing_more
 	
-    x = 1
-	y = 1
+    x = 0
+	y = 2
 	
 	cost = 5
-	relative_position_id = USA_make_do
-	prerequisite = { focus = USA_make_do }
-	prerequisite = { focus = USA_army_of_by_for_the_people }
+	relative_position_id = USA_adequate_defense
+	prerequisite = { focus = USA_decentralize_national_guard }
+	prerequisite = { focus = USA_adequate_defense }
     completion_reward = {
         
     }
@@ -217,7 +212,7 @@ shared_focus = {
     id = USA_ending_war_as_business
 	icon = GFX_USA_ending_war_as_business
 	
-    x = 0
+    x = 2
 	y = 1
 	
 	cost = 5
@@ -233,8 +228,8 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_reclaim_american_dream
-	icon = GFX_USA_reclaim_american_dream
+    id = USA_reveal_the_horrors
+	icon = GFX_USA_reveal_the_horrors
 	
     x = -1
 	y = 1
@@ -278,8 +273,8 @@ shared_focus = {
 	y = 1
 	
 	cost = 5
-	relative_position_id = USA_reclaim_american_dream
-	prerequisite = { focus = USA_reclaim_american_dream }
+	relative_position_id = USA_reveal_the_horrors
+	prerequisite = { focus = USA_reveal_the_horrors }
     completion_reward = {
         
     }
@@ -290,15 +285,15 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_no_more_lies
-	icon = GFX_USA_no_more_lies
+    id = USA_take_the_profit_out
+	icon = GFX_USA_take_the_profit_out
 	
     x = 1
 	y = 1
 	
 	cost = 5
-	relative_position_id = USA_reclaim_american_dream
-	prerequisite = { focus = USA_reclaim_american_dream }
+	relative_position_id = USA_reveal_the_horrors
+	prerequisite = { focus = USA_reveal_the_horrors }
 	prerequisite = { focus = USA_dollars_and_cents }
     completion_reward = {
         
@@ -336,9 +331,9 @@ shared_focus = {
 	y = 1
 	
 	cost = 5
-	relative_position_id = USA_no_more_lies
+	relative_position_id = USA_take_the_profit_out
 	prerequisite = { focus = USA_collective_conciousness }
-	prerequisite = { focus = USA_no_more_lies }
+	prerequisite = { focus = USA_take_the_profit_out }
 	prerequisite = { focus = USA_the_men_who_sold_the_world }
     completion_reward = {
         
@@ -353,12 +348,13 @@ shared_focus = {
     id = USA_as_the_fathers_intended
 	icon = GFX_USA_as_the_fathers_intended
 	
-    x = 3
+    x = 0
 	y = 1
 	
 	cost = 5
-	relative_position_id = USA_and_nothing_more
+	relative_position_id = USA_army_of_by_for_the_people
 	prerequisite = { focus = USA_and_nothing_more }
+	prerequisite = { focus = USA_army_of_by_for_the_people }
 	prerequisite = { focus = USA_fight_your_own_wars }
     completion_reward = {
         

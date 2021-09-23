@@ -36,7 +36,6 @@ unlock_national_focus = USA_our_mandate
 unlock_national_focus = USA_of_politics
 
 unlock_national_focus = USA_reforming_the_military
-unlock_national_focus = USA_the_army
 unlock_national_focus = USA_the_air_corps
 unlock_national_focus = USA_the_navy
 unlock_national_focus = USA_the_naval_act
@@ -196,7 +195,7 @@ add_ideas = {
 # DIPLOMACY
 set_autonomy = {
 	target = PHI
-	autonomous_state =  autonomy_puppet
+	autonomous_state =  autonomy_RL_nominal_puppet
 }
 
 create_country_leader = {

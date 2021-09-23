@@ -519,6 +519,21 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_scrap_reserves"
+		texturefile = "gfx/interface/goals/USA/USA_scrap_reserves.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_adequate_defense"
+		texturefile = "gfx/interface/goals/USA/USA_adequate_defense.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_decentralize_national_guard"
+		texturefile = "gfx/interface/goals/USA/USA_decentralize_national_guard.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_the_air_corps"
 		texturefile = "gfx/interface/goals/USA/USA_the_air_corps.png"
 	}
