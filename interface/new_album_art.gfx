@@ -1,7 +1,0 @@
-spriteTypes = {
-	spriteType = {
-		name = "GFX_radio_tsaritsyn_album_art"
-		texturefile = "gfx/stations/radio_tsaritsyn_album_art.dds"
-		noOfFrames = 2
-	}
-}

@@ -23,21 +23,6 @@ bookmarks = {
 			}
 		}
 		
-		"SOV"={
-			history = "SOV_BREAD_AND_ROSES_DESC"
-			ideology = revolutionary_autocracy
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		
-		"---"={ 
-			history = "OTHER_BREAD_AND_ROSES_DESC"
-		}
-		
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

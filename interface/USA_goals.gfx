@@ -544,6 +544,11 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_ending_war_as_business"
+		texturefile = "gfx/interface/goals/USA/USA_nanomachines_son.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_the_air_corps"
 		texturefile = "gfx/interface/goals/USA/USA_the_air_corps.png"
 	}

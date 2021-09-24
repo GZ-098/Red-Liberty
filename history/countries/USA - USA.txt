@@ -168,16 +168,16 @@ set_popularities = {
 	market_libertarianism = 10
 	national_conservatism = 21
 	far_right_authoritarianism = 2
-	authoritarian_democracy = 5
+	authoritarian_democracy = 10
 	autocratic_despotism = 0
-	fascism = 10
+	fascism = 5
 }
 
 add_ideas = {
 	USA_red_liberty
-	USA_social_coalition
 	USA_the_great_depression_1
-	USA_pacifism
+	USA_the_dust_bowl_1
+	USA_social_coalition
 	USA_bloated_federal_government
 	
 	USA_jack_reed_hog
@@ -296,9 +296,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Huey Long"
-	desc = "POLITICS_HUEY_LONG_DESC"
-	#picture = "Portrait_USA_William_Dudley_Pelley.dds"
+	name = "Charles Lindbergh"
+	desc = "POLITICS_CHARLES_LINDBERGH_DESC"
+	picture = ""
 	expire = "1965.1.1"
 	ideology = authoritarian_democracy_subtype
 	traits = {
@@ -318,7 +318,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Charles Lindbergh"
 	desc = "POLITICS_CHARLES_LINDBERGH_DESC"
-	#picture = "Portrait_USA_William_Dudley_Pelley.dds"
+	picture = ""
 	expire = "1965.1.1"
 	ideology = fascism_subtype
 	traits = {

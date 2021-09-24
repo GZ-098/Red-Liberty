@@ -45,12 +45,12 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_ideology_authoritarian_republicanism_group" 
+		name = "GFX_ideology_authoritarian_democracy_group" 
 		texturefile = "gfx/interface/ideologies/authoritarian_democracy_group.png"
 	}
 	
 	spriteType = {
-		name = "GFX_ideology_martial_despotism_group" 
+		name = "GFX_ideology_autocratic_despotism_group" 
 		texturefile = "gfx/interface/ideologies/martial_despotism_group.png"
 	}
 	
