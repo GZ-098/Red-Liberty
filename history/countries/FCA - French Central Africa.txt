@@ -9,7 +9,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = autocratic_despotism
+	ruling_party = authoritarian_democracy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
@@ -24,16 +24,16 @@ set_popularities = {
 	market_libertarianism = 12
 	national_conservatism = 5
 	far_right_authoritarianism = 0
-	authoritarian_democracy = 33
-	autocratic_despotism = 38
+	authoritarian_democracy = 38
+	autocratic_despotism = 33
 	fascism = 0
 }
 
 create_country_leader = {
 	name = "Jean Marchessou"
 	desc = ""
-	picture = ""
-	ideology = autocratic_despotism_subtype
+	picture = "Portrait_FCA_Jean_Marchessou.png"
+	ideology = authoritarian_democracy_subtype
 	traits = {
 		
 	}

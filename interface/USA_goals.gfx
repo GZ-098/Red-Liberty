@@ -534,6 +534,16 @@ spritetypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_USA_and_nothing_more"
+		texturefile = "gfx/interface/goals/USA/USA_and_nothing_more.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_army_of_by_for_the_people"
+		texturefile = "gfx/interface/goals/USA/USA_an_army_by_for_and_of_the_people.png"
+	}
+	
+	SpriteType = {
 		name = "GFX_USA_the_air_corps"
 		texturefile = "gfx/interface/goals/USA/USA_the_air_corps.png"
 	}

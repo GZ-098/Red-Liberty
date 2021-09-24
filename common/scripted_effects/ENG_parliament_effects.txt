@@ -6,7 +6,7 @@ ENG_recalc_parliament = { # this will recalculate the number of members of parli
 	}
 	
 	set_variable = {
-		communist_mps = party_popularity@revolutionary_autocacy
+		communist_mps = party_popularity@revolutionary_autocracy
 	}
 	add_to_variable = {
 		communist_mps = party_popularity@proletarian_dictatorship
@@ -40,11 +40,11 @@ ENG_recalc_parliament = { # this will recalculate the number of members of parli
 		conservative_mps = party_popularity@national_conservatism
 	}
 	add_to_variable = {
-		conservative_mps = party_popularity@authoritarian_republicanism
+		conservative_mps = party_popularity@authoritarian_democracy
 	}
 	
 	set_variable = {
-		fascist_mps = party_popularity@ultranational_statism
+		fascist_mps = party_popularity@fascism
 	}
 	multiply_variable = {
 		fascist_mps = 0.5

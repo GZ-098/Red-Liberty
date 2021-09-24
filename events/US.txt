@@ -73,7 +73,7 @@ country_event = { # conservatives abandon democratic party
 			popularity = -0.05
 		}
 		add_popularity = {
-			ideology = authoritarian_republicanism
+			ideology = authoritarian_democracy
 			popularity = 0.05
 		}
 	}
@@ -130,6 +130,12 @@ country_event = {
 	title = "A Jump in Unemployment!"
 	desc = united_states.7.desc
 	picture = GFX_report_event_unemployment
+	
+	trigger = {
+		NOT = {
+			has_government = libertarian_socialism
+		}
+	}
 	
 	is_triggered_only = yes
 	

@@ -141,7 +141,7 @@ guiTypes = {
 		name = "anarchismVisualOpposition"
 		position = { x = 341 y = 306 }
 		iconType ={
-			name = "pol_party_colour_bg_coalition_icon"
+			name = "pol_party_colour_bg_opposition_icon"
 			spriteType = "GFX_pol_party_colour_bg_opposition"
 			position = { x= 2 y = 0 }
 			Orientation = "UPPER_LEFT"
@@ -152,7 +152,7 @@ guiTypes = {
 		name = "rev_autocracyVisualOpposition"
 		position = { x = 341 y = 322 }
 		iconType ={
-			name = "pol_party_colour_bg_coalition_icon"
+			name = "pol_party_colour_bg_opposition_icon"
 			spriteType = "GFX_pol_party_colour_bg_opposition"
 			position = { x= 2 y = 0 }
 			Orientation = "UPPER_LEFT"
@@ -163,7 +163,7 @@ guiTypes = {
 		name = "prole_dictatorshipVisualOpposition"
 		position = { x = 341 y = 338 }
 		iconType ={
-			name = "pol_party_colour_bg_coalition_icon"
+			name = "pol_party_colour_bg_opposition_icon"
 			spriteType = "GFX_pol_party_colour_bg_opposition"
 			position = { x= 2 y = 0 }
 			Orientation = "UPPER_LEFT"
@@ -174,7 +174,7 @@ guiTypes = {
 		name = "lib_socialismVisualOpposition"
 		position = { x = 341 y = 354 }
 		iconType ={
-			name = "pol_party_colour_bg_coalition_icon"
+			name = "pol_party_colour_bg_opposition_icon"
 			spriteType = "GFX_pol_party_colour_bg_opposition"
 			position = { x= 2 y = 0 }
 			Orientation = "UPPER_LEFT"
@@ -185,7 +185,7 @@ guiTypes = {
 		name = "soc_democracyVisualOpposition"
 		position = { x = 341 y = 370 }
 		iconType ={
-			name = "pol_party_colour_bg_coalition_icon"
+			name = "pol_party_colour_bg_opposition_icon"
 			spriteType = "GFX_pol_party_colour_bg_opposition"
 			position = { x= 2 y = 0 }
 			Orientation = "UPPER_LEFT"
@@ -196,7 +196,7 @@ guiTypes = {
 		name = "prog_liberalVisualOpposition"
 		position = { x = 341 y = 386 }
 		iconType ={
-			name = "pol_party_colour_bg_coalition_icon"
+			name = "pol_party_colour_bg_opposition_icon"
 			spriteType = "GFX_pol_party_colour_bg_opposition"
 			position = { x= 2 y = 0 }
 			Orientation = "UPPER_LEFT"
@@ -207,7 +207,7 @@ guiTypes = {
 		name = "mar_liberalVisualOpposition"
 		position = { x = 341 y = 402 }
 		iconType ={
-			name = "pol_party_colour_bg_coalition_icon"
+			name = "pol_party_colour_bg_opposition_icon"
 			spriteType = "GFX_pol_party_colour_bg_opposition"
 			position = { x= 2 y = 0 }
 			Orientation = "UPPER_LEFT"
@@ -218,18 +218,7 @@ guiTypes = {
 		name = "nat_conservativeVisualOpposition"
 		position = { x = 341 y = 418 }
 		iconType ={
-			name = "pol_party_colour_bg_coalition_icon"
-			spriteType = "GFX_pol_party_colour_bg_opposition"
-			position = { x= 2 y = 0 }
-			Orientation = "UPPER_LEFT"
-            alwaystransparent = yes
-		}
-	}
-	containerWindowType = {
-		name = "reac_theocracyVisualOpposition"
-		position = { x = 341 y = 434 }
-		iconType ={
-			name = "pol_party_colour_bg_coalition_icon"
+			name = "pol_party_colour_bg_opposition_icon"
 			spriteType = "GFX_pol_party_colour_bg_opposition"
 			position = { x= 2 y = 0 }
 			Orientation = "UPPER_LEFT"
@@ -238,9 +227,9 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = "auth_democratVisualOpposition"
-		position = { x = 341 y = 450 }
+		position = { x = 341 y = 434 }
 		iconType ={
-			name = "pol_party_colour_bg_coalition_icon"
+			name = "pol_party_colour_bg_opposition_icon"
 			spriteType = "GFX_pol_party_colour_bg_opposition"
 			position = { x= 2 y = 0 }
 			Orientation = "UPPER_LEFT"
@@ -249,9 +238,20 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = "martial_despotistVisualOpposition"
+		position = { x = 341 y = 450 }
+		iconType ={
+			name = "pol_party_colour_bg_opposition_icon"
+			spriteType = "GFX_pol_party_colour_bg_opposition"
+			position = { x= 2 y = 0 }
+			Orientation = "UPPER_LEFT"
+            alwaystransparent = yes
+		}
+	}
+	containerWindowType = {
+		name = "far_rightVisualOpposition"
 		position = { x = 341 y = 466 }
 		iconType ={
-			name = "pol_party_colour_bg_coalition_icon"
+			name = "pol_party_colour_bg_opposition_icon"
 			spriteType = "GFX_pol_party_colour_bg_opposition"
 			position = { x= 2 y = 0 }
 			Orientation = "UPPER_LEFT"
@@ -262,7 +262,7 @@ guiTypes = {
 		name = "ultranationalistVisualOpposition"
 		position = { x = 341 y = 482 }
 		iconType ={
-			name = "pol_party_colour_bg_coalition_icon"
+			name = "pol_party_colour_bg_opposition_icon"
 			spriteType = "GFX_pol_party_colour_bg_opposition"
 			position = { x= 2 y = 0 }
 			Orientation = "UPPER_LEFT"
