@@ -1,19 +1,27 @@
+
 state={
 	id=858
 	name="STATE_858"
-	
+
+	resources = {
+		steel = 45
+		oil = 6
+	}
+
 	history={
 		owner = USA
 		add_core_of = USA
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 1
 		}
+
 	}
-	
+
 	provinces={
-		709 751 4854 5205 10599 
+		709 751 4854 5205 7420 9747 10233 10303 10599 11731 13155 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category=town
 }

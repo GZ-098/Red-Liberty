@@ -1,0 +1,43 @@
+﻿capital = 331
+
+oob = "NFL"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = social_democracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	insurrectionary_anarchism = 0
+	revolutionary_autocracy = 0
+	proletarian_dictatorship = 0
+	libertarian_socialism = 0
+	social_democracy = 50
+	progressive_liberalism = 0
+	market_libertarianism = 10
+	national_conservatism = 25
+	far_right_authoritarianism = 0
+	authoritarian_democracy = 15
+	autocratic_despotism = 0
+	fascism = 0
+}
+
+create_country_leader = {
+	name = "William Coaker"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype
+	traits = {
+		#
+	}
+}

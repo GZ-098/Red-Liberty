@@ -210,6 +210,27 @@ worsen_great_depression = {
 	}
 }
 
+improve_dust_bowl = {
+	if = {
+		limit = {
+			has_idea = USA_the_dust_bowl_2
+		}
+		swap_ideas = {
+			remove_idea = USA_the_dust_bowl_2
+			add_idea = USA_the_dust_bowl_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = USA_the_dust_bowl_1
+		}
+		swap_ideas = {
+			remove_idea = USA_the_dust_bowl_1
+			add_idea = USA_the_dust_bowl_2
+		}
+	}
+}
+
 clear_state_name_and_desc = {
 	clr_country_flag = USA_states_gui_AL_selected
 	clr_country_flag = USA_states_gui_AR_selected

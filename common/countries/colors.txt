@@ -1056,6 +1056,10 @@ KUM = {
 	color = rgb { 191 162 117 }
 }
 
+NFL {
+	color = rgb { 180 150 150 }
+}
+
 ### US CIVIL WAR COLORS ###
 
 AMS = {

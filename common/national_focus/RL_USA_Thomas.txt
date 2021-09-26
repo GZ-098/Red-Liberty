@@ -424,7 +424,9 @@ shared_focus = {
 	relative_position_id = USA_of_agriculture
 	prerequisite = { focus = USA_of_agriculture }
     completion_reward = {
-        
+        effect_tooltip = {
+			improve_dust_bowl = yes
+		}
     }
 	
 	ai_will_do = {
@@ -463,8 +465,9 @@ shared_focus = {
 	relative_position_id = USA_dealing_with_the_dustbowl
 	prerequisite = { focus = USA_dealing_with_the_dustbowl }
     completion_reward = {
-		#custom_effect_tooltip = USA_bill_over_time_tt
-        #unlock_decision_tooltip = USA_public_law_163
+		effect_tooltip = {
+			improve_dust_bowl = yes
+		}
     }
 	
 	ai_will_do = {
@@ -656,7 +659,7 @@ shared_focus = {
 
 shared_focus = {
     id = USA_of_poverty
-	icon = USA_of_poverty
+	icon = GFX_USA_of_poverty
 	
     x = 2
 	y = 1
@@ -1705,316 +1708,6 @@ shared_focus = {
 	#prerequisite = { focus = USA_america_reborn }
     completion_reward = {
         
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_fight_the_recession
-	icon = GFX_USA_fight_the_recession
-	
-    x = 15
-	y = 0
-	
-	available = {
-		has_country_flag = USA_1937_recession
-	}
-	
-	allow_branch = {
-		always = yes
-	}
-	
-	cost = 5
-    completion_reward = {
-        country_event = {
-			id = united_states_thomas.10
-			days = 1
-		}
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_caution_to_the_wind
-	icon = GFX_USA_caution_to_the_wind
-	
-    x = -1
-	y = 1
-	
-	cost = 5
-	relative_position_id = USA_fight_the_recession
-	prerequisite = { focus = USA_fight_the_recession }
-	mutually_exclusive = { focus = USA_scale_back_regulation }
-    completion_reward = {
-        add_stability = -0.05
-		add_days_mission_timeout = {
-			mission = USA_recession_timer
-			days = 25
-		}
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_conspiracy_of_capital
-	icon = GFX_USA_conspiracy_of_capital
-	
-    x = -1
-	y = 1
-	
-	cost = 5
-	relative_position_id = USA_caution_to_the_wind
-	prerequisite = { focus = USA_caution_to_the_wind }
-    completion_reward = {
-		
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_attack_oligarchs
-	icon = GFX_USA_attack_oligarchs
-	
-    x = -1
-	y = 1
-	
-	cost = 5
-	relative_position_id = USA_conspiracy_of_capital
-	prerequisite = { focus = USA_conspiracy_of_capital }
-    completion_reward = {
-		unlock_decision_tooltip = start_USA_wealth_tax_act
-		custom_effect_tooltip = USA_bill_pass_req_tt
-		effect_tooltip = {
-			add_political_power = 200
-			improve_great_depression = yes
-		}
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_scale_back_regulation
-	icon = GFX_USA_scale_back_regulation
-	
-    x = 1
-	y = 1
-	
-	cost = 5
-	relative_position_id = USA_fight_the_recession
-	prerequisite = { focus = USA_fight_the_recession }
-	mutually_exclusive = { focus = USA_caution_to_the_wind }
-    completion_reward = {
-        add_political_power = -50
-		add_days_mission_timeout = {
-			mission = USA_recession_timer
-			days = 25
-		}
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_cut_taxes
-	icon = GFX_USA_cut_taxes
-	
-    x = 1
-	y = 1
-	
-	cost = 5
-	relative_position_id = USA_scale_back_regulation
-	prerequisite = { focus = USA_scale_back_regulation }
-    completion_reward = {
-        add_political_power = -25
-		add_popularity = {
-			ideology = libertarian_socialism
-			popularity = 0.01
-		}
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_issue_subsidies
-	icon = GFX_USA_issue_subsidies
-	
-    x = 1
-	y = 1
-	
-	cost = 5
-	relative_position_id = USA_cut_taxes
-	prerequisite = { focus = USA_cut_taxes }
-    completion_reward = {
-		improve_great_depression = yes
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_end_union_infighting
-	icon = GFX_USA_end_union_infighting
-	
-    x = 1
-	y = 1
-	
-	cost = 4
-	relative_position_id = USA_caution_to_the_wind
-	prerequisite = {
-		focus = USA_caution_to_the_wind
-		focus = USA_scale_back_regulation
-	}
-    completion_reward = {
-		add_stability = 0.03
-		add_days_mission_timeout = {
-			mission = USA_recession_timer
-			days = 15
-		}
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_union_act
-	icon = GFX_USA_union_act
-	
-	select_effect = {
-		add_political_power = 1
-	}
-	
-    x = -1
-	y = 1
-	
-	cost = 5
-	relative_position_id = USA_end_union_infighting
-	prerequisite = {
-		focus = USA_end_union_infighting
-	}
-    completion_reward = {
-		unlock_decision_tooltip = start_USA_union_rep_act
-        custom_effect_tooltip = USA_bill_pass_req_tt
-		effect_tooltip = {
-			add_ideas = {
-				USA_union_representation_act
-			}
-		}
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_pension_act
-	icon = GFX_USA_pension_act
-	
-    x = 1
-	y = 1
-	
-	cost = 5
-	relative_position_id = USA_end_union_infighting
-	prerequisite = {
-		focus = USA_end_union_infighting
-	}
-    completion_reward = {
-		unlock_decision_tooltip = start_USA_pension_act
-        custom_effect_tooltip = USA_bill_pass_req_tt
-		effect_tooltip = {
-			improve_great_depression = yes
-		}
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_housing_act
-	icon = GFX_USA_housing_act
-	
-    x = 3
-	y = 1
-	
-	cost = 5
-	relative_position_id = USA_attack_oligarchs
-	prerequisite = {
-		focus = USA_attack_oligarchs
-		focus = USA_issue_subsidies
-	}
-	prerequisite = { focus = USA_union_act }
-	prerequisite = { focus = USA_pension_act }
-    completion_reward = {
-        custom_effect_tooltip = USA_bill_pass_req_tt
-		effect_tooltip = {
-			improve_great_depression = yes
-		}
-		add_days_mission_timeout = {
-			mission = USA_recession_timer
-			days = 15
-		}
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
-    id = USA_back_on_track
-	icon = GFX_USA_back_on_track
-	
-    x = 0
-	y = 1
-	
-	available = {
-		count_triggers = {
-			amount = 2
-			has_country_flag = union_act_passed
-			has_country_flag = housing_act_passed
-			has_country_flag = pension_act_passed
-		}
-	}
-	
-	cost = 5
-	relative_position_id = USA_housing_act
-	prerequisite = { focus = USA_housing_act }
-    completion_reward = {
-		custom_effect_tooltip = USA_SPA_better_nationwide
-		hidden_effect = {
-			every_owned_state = {
-				limit = { can_have_elections_in_state = yes }
-				add_to_variable = { socialist_popularity = 0.05 }
-			}
-		}
-        improve_great_depression = yes
-		clr_country_flag = USA_1937_recession
     }
 	
 	ai_will_do = {

@@ -144,7 +144,7 @@ spritetypes = {
 	
 	SpriteType = {
 		name = "GFX_USA_of_poverty"
-		texturefile = "gfx/interface/goals/USA/USA_of_poverty.png"
+		texturefile = "gfx/interface/goals/USA/USA_of_poverty.dds"
 	}
 	
 	SpriteType = {
@@ -243,11 +243,6 @@ spritetypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_USA_conceptualization"
-		texturefile = "gfx/interface/goals/USA/USA_conceptualization.png"
-	}
-	
-	SpriteType = {
 		name = "GFX_USA_lay_the_groundwork"
 		texturefile = "gfx/interface/goals/USA/USA_lay_groundwork.png"
 	}
@@ -255,68 +250,6 @@ spritetypes = {
 	SpriteType = {
 		name = "GFX_USA_second_bill_of_rights"
 		texturefile = "gfx/interface/goals/USA/USA_second_bill_of_rights.png"
-	}
-	
-	### 2ND TERM RECESSION ###
-	
-	SpriteType = {
-		name = "GFX_USA_fight_the_recession"
-		texturefile = "gfx/interface/goals/USA/USA_fight_the_recession.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_caution_to_the_wind"
-		texturefile = "gfx/interface/goals/USA/USA_throw_caution_to_the_wind.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_conspiracy_of_capital"
-		texturefile = "gfx/interface/goals/USA/USA_conspiracy_of_capital.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_attack_oligarchs"
-		texturefile = "gfx/interface/goals/USA/USA_attack_the_oligarchs.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_scale_back_regulation"
-		texturefile = "gfx/interface/goals/USA/USA_scale_back_regulation.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_cut_taxes"
-		texturefile = "gfx/interface/goals/USA/USA_cut_taxes.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_issue_subsidies"
-		texturefile = "gfx/interface/goals/USA/USA_issue_subsidies.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_end_union_infighting"
-		texturefile = "gfx/interface/goals/USA/USA_end_union_infighting.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_union_act"
-		texturefile = "gfx/interface/goals/USA/USA_union_representation_act.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_pension_act"
-		texturefile = "gfx/interface/goals/USA/USA_old_age_pension.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_housing_act"
-		texturefile = "gfx/interface/goals/USA/USA_housing_act.png"
-	}
-	
-	SpriteType = {
-		name = "GFX_USA_back_on_track"
-		texturefile = "gfx/interface/goals/USA/USA_back_on_track.png"
 	}
 	
 	### SECOND BILL OF RIGHTS ###
@@ -545,7 +478,42 @@ spritetypes = {
 	
 	SpriteType = {
 		name = "GFX_USA_ending_war_as_business"
-		texturefile = "gfx/interface/goals/USA/USA_nanomachines_son.png"
+		texturefile = "gfx/interface/goals/USA/USA_ending_war_as_a_business.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_reveal_the_horrors"
+		texturefile = "gfx/interface/goals/USA/USA_reveal_the_horrors_of_war.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_dollars_and_cents"
+		texturefile = "gfx/interface/goals/USA/USA_life_measured_in_dollars.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_collective_conciousness"
+		texturefile = "gfx/interface/goals/USA/USA_collective_consciousness.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_take_the_profit_out"
+		texturefile = "gfx/interface/goals/USA/usa_remove_the_profit.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_the_men_who_sold_the_world"
+		texturefile = "gfx/interface/goals/USA/USA_the_men_who_sold_the_wold.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_fight_your_own_wars"
+		texturefile = "gfx/interface/goals/USA/USA_fight_your_own_wars.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_as_the_fathers_intended"
+		texturefile = "gfx/interface/goals/USA/usa_a_racket_no_more.png"
 	}
 	
 	SpriteType = {
@@ -561,6 +529,21 @@ spritetypes = {
 	SpriteType = {
 		name = "GFX_USA_support_doctrine"
 		texturefile = "gfx/interface/goals/USA/USA_support_doctrine.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_cas_development"
+		texturefile = "gfx/interface/goals/USA/USA_cas_development.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_bomber_development"
+		texturefile = "gfx/interface/goals/USA/USA_bomber_development.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_strat_destruction"
+		texturefile = "gfx/interface/goals/USA/USA_strategic_destruction.png"
 	}
 	
 	SpriteType = {

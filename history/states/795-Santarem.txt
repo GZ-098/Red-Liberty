@@ -1,9 +1,11 @@
+
 state={
 	id=795
 	name="STATE_795"
 	resources={
-		chromium=20.000 #added due to portugal setup
+		chromium=20.000
 	}
+
 	history={
 		owner = POR
 		victory_points = {
@@ -22,7 +24,7 @@ state={
 	}
 
 	provinces={
-		844 924 3846 3886 3926 6986 9869 11768 
+		844 924 970 3846 3886 3926 6986 9869 11768 
 	}
 	manpower=729712
 	buildings_max_level_factor=1.000

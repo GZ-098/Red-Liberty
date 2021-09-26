@@ -1,11 +1,11 @@
 ﻿l_english:
  insurrectionary_anarchism:0 "Insurrectionary Anarchism"
  insurrectionary_anarchism_desc:0 "Anarchist Statelessness"
- revolutionary_autocracy:0 "Revolutionary Autocracy"
- revolutionary_autocracy_noun:0 "Revolutionary Autocracy"
+ revolutionary_autocracy:0 "Authoritarian Socialism"
+ revolutionary_autocracy_noun:0 "Authoritarian Socialism"
  revolutionary_autocracy_desc:0 "Authoritarian Socialist Government"
- proletarian_dictatorship:0 "Proletarian Dictatorship"
- proletarian_dictatorship_noun:0 "Proletarian Dictatorship"
+ proletarian_dictatorship:0 "Revolutionary Socialism"
+ proletarian_dictatorship_noun:0 "Revolutionary Socialism"
  proletarian_dictatorship_desc:0 "Revolutionary Socialist Government"
  libertarian_socialism:0 "Libertarian Socialism"
  libertarian_socialism_noun:0 "Libertarian Socialism"
@@ -35,10 +35,13 @@
  fascism_noun:0 "Fascism"
  fascism_desc:0 "Fascist Government"
  
+ subideology_tt:0 "[THIS.GetSubIdeologyText]"
+ 
  insurrectionary_anarchism_subtype_desc:0 "Anarchism is a political philosophy which advocates the abolition of all unjust hierarchy, as well as the destruction of oppressive structures such as governments, capitalism, and bigotry. Insurrectionary Anarchism differs from other strains of anarchist thought because it puts these principles into direct action, not via policy or reform but by immediate, violent revolt against all authority. Insurrectionary Anarchists will rarely ever negotiate with state authorities, and tend towards deliberately chaotic and militaristic."
  revolutionary_autocracy_subtype_desc:0 "Revolutionary Autocracy is an interpretation of Marxist theory which views the Dictatorship of the Proletariat as a license to create an extremely authoritarian and repressive state. Usually ruled by a political vanguard party by means of secret police, military force, and purges, Revolutionary Autocracies are extremely centralized both politically and economically, often ruled by a single leader, and use Marxist thought as the justification for their rule. They often tend toward social conservatism, and no democracy is practiced within such states."
  proletarian_dictatorship_subtype_desc:0 "Favored by most Orthodox Marxists, Communists, and Leninists, Proletarian Dictatorship is a form of government ruled by a vanguard party, which is educated on the doctrines of Marxism and Communism, and leads with a high degree of political and economic centralization, often with a high degree of central planning. Proletarian Dictatorships usually include a restricted form of democracy, such as party membership-based voting, democratic centralism, or limits on acceptable speech."
  libertarian_socialism_subtype_desc:0 "The most moderate of the socialist schools of thought, Libertarian Socialism includes many socialist governments which adopt a less centralized system both politically and economically. Engaging in full-franchise, often direct, democracy and with economies led by either collective or market forces rather than central planning, Libertarian Socialist governments tend to be smaller than other leftist ones. They also tend to be socially progressive, and may include anarchists, communists, socialists, and syndicalists."
+ sewer_socialism_noun:0 "Sewer Socialism"
  sewer_socialism_subtype_desc:0 "Hailing from Milwaukee, where the term was originally used as an insult, Sewer Socialism is a primarily social-democratic system based upon pragmatism and public outreach. Rejecting calls for revolution of any kind based on their belief that they lack the public support to fully overthrow capitalism, Sewer Socialists prefer to make gains where they can, passing laws to make workers' lives better in material ways, such as setting minimum wages, enforcing safe working conditions, regulating working hours, and using local governments to provide amenities like running water, electricity, and sewer systems to working class areas. Radicals often scoff that Sewer Socialists aren't doing enough to overthrow capitalism, but their short-term benefits for the welfare of the working class are hard to ignore."
  
  social_democracy_subtype_desc:0 "The furthest left among liberal views, Social Democracy adheres generally to a belief in market economics and allows private ownership, but believes in a much larger government than other liberals. Social Democrats argue for extensive welfare states and government programs of regulation and occasionally nationalization to protect and care for their citizens. They also tend towards social progressivism and, despite their nominal support of private enterprise, often align with further-left groups."

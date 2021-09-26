@@ -1,19 +1,21 @@
+
 state={
 	id=838
 	name="STATE_838"
-	
+
 	history={
 		owner = LIT
 		buildings = {
 			infrastructure = 5
 			air_base = 3
+
 		}
 		add_core_of = LIT
 
 	}
-	
+
 	provinces={
-		318 3281 6306 6359 13206 
+		318 3281 6306 6359 
 	}
 	manpower=424900
 	buildings_max_level_factor=1.000

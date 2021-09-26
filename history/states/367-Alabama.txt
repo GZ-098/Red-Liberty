@@ -4,6 +4,10 @@ state={
 	name="STATE_367"
 	manpower = 2646247
 	
+	resources = {
+		steel = 4
+	}
+	
 	state_category = city
 
 	history={
@@ -21,11 +25,6 @@ state={
 		}
 		victory_points = {
 			12735 1 
-		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-			}
 		}
 
 	}

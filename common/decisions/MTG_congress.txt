@@ -612,6 +612,120 @@ USA_congress = {
 		}
 	}
 	
+	USA_talk_with_communists = {
+		
+		visible = {
+			AND = {
+				original_tag = USA
+				check_variable = { bill_id > 0 }
+				OR = {
+					check_variable = { senators_communist > 0 }
+					check_variable = { representatives_communist > 0 }
+				}
+				NOT = {
+					has_country_flag = USA_special_decisions_enabled
+				}
+			}
+        }
+			
+		cost = communist_flip_cost
+       		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = communists_talking
+				has_country_flag = USA_communist_discussing
+			}
+			custom_trigger_tooltip = {
+				tooltip = unavaliable_already_negotiated
+				NOT = { has_country_flag = communist_negotiated }
+			}
+			custom_trigger_tooltip = {
+				tooltip = communists_fully_support
+				NOT = { check_variable = { USA_communist_bill_support = 1 } }
+			}
+		}
+    	days_remove = 5
+    	remove_effect = {
+			
+		}
+	}
+	
+	USA_talk_with_dem_socialists = {
+		
+		visible = {
+			AND = {
+				original_tag = USA
+				check_variable = { bill_id > 0 }
+				OR = {
+					check_variable = { senators_socialist > 0 }
+					check_variable = { representatives_socialist > 0 }
+				}
+				NOT = {
+					has_country_flag = USA_special_decisions_enabled
+				}
+			}
+        }
+			
+		cost = socialist_flip_cost
+       		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = socialist_talking
+				has_country_flag = USA_socialist_discussing
+			}
+			custom_trigger_tooltip = {
+				tooltip = unavaliable_already_negotiated
+				NOT = { has_country_flag = socialists_negotiated }
+			}
+			custom_trigger_tooltip = {
+				tooltip = socialist_fully_support
+				NOT = { check_variable = { USA_socialist_bill_support = 1 } }
+			}
+		}
+    	days_remove = 5
+    	remove_effect = {
+			USA_socialist_support_eventless = yes
+		}
+	}
+	
+	USA_talk_with_farmer_labor = {
+		
+		visible = {
+			AND = {
+				original_tag = USA
+				check_variable = { bill_id > 0 }
+				OR = {
+					check_variable = { senators_farmer_labor > 0 }
+					check_variable = { representatives_farmer_labor > 0 }
+				}
+				NOT = {
+					has_country_flag = USA_special_decisions_enabled
+				}
+			}
+        }
+			
+		cost = farmer_labor_flip_cost
+       		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = farmer_labor_talking
+				has_country_flag = USA_farmer_labor_discussing
+			}
+			custom_trigger_tooltip = {
+				tooltip = unavaliable_already_negotiated
+				NOT = { has_country_flag = farmer_labor_negotiated }
+			}
+			custom_trigger_tooltip = {
+				tooltip = farmer_labor_fully_support
+				NOT = { check_variable = { USA_farmer_labor_bill_support = 1 } }
+			}
+		}
+    	days_remove = 5
+    	remove_effect = {
+			
+		}
+	}
+	
 	USA_talk_with_republicans = {
 		
 		visible = {
@@ -685,82 +799,6 @@ USA_congress = {
     	days_remove = 5
     	remove_effect = {
 			USA_democrat_support_eventless = yes
-		}
-	}
-	
-	USA_talk_with_dem_socialists = {
-		
-		visible = {
-			AND = {
-				original_tag = USA
-				check_variable = { bill_id > 0 }
-				OR = {
-					check_variable = { senators_socialist > 0 }
-					check_variable = { representatives_socialist > 0 }
-				}
-				NOT = {
-					has_country_flag = USA_special_decisions_enabled
-				}
-			}
-        }
-			
-		cost = socialist_flip_cost
-       		
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = socialist_talking
-				has_country_flag = USA_socialist_discussing
-			}
-			custom_trigger_tooltip = {
-				tooltip = unavaliable_already_negotiated
-				NOT = { has_country_flag = socialists_negotiated }
-			}
-			custom_trigger_tooltip = {
-				tooltip = socialist_fully_support
-				NOT = { check_variable = { USA_socialist_bill_support = 1 } }
-			}
-		}
-    	days_remove = 5
-    	remove_effect = {
-			USA_socialist_support_eventless = yes
-		}
-	}
-	
-	USA_talk_with_communists = {
-		
-		visible = {
-			AND = {
-				original_tag = USA
-				check_variable = { bill_id > 0 }
-				OR = {
-					check_variable = { senators_communist > 0 }
-					check_variable = { representatives_communist > 0 }
-				}
-				NOT = {
-					has_country_flag = USA_special_decisions_enabled
-				}
-			}
-        }
-			
-		cost = communist_flip_cost
-       		
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = communists_talking
-				has_country_flag = USA_communist_discussing
-			}
-			custom_trigger_tooltip = {
-				tooltip = unavaliable_already_negotiated
-				NOT = { has_country_flag = communist_negotiated }
-			}
-			custom_trigger_tooltip = {
-				tooltip = communists_fully_support
-				NOT = { check_variable = { USA_communist_bill_support = 1 } }
-			}
-		}
-    	days_remove = 5
-    	remove_effect = {
-			
 		}
 	}
 	

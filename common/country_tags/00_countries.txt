@@ -300,6 +300,8 @@ SRW = "countries/Sarawak.txt"
 FIC = "countries/French Indochina.txt"
 
 ### North America ###
+NFL = "countries/Newfoundland.txt"
+
 MXR = "countries/Mexican Revolt.txt"
 YUC = "countries/Yucatan.txt"
 

@@ -48,33 +48,37 @@ USA_debug_example_setup = { # example debug act
 	
 	set_variable = { bill_id = 1 } # EACH BILL MUST HAVE A UNIQUE ID
 	
-	set_country_flag = USA_republican_discussing # Sets up who you can negotiate with
-	set_country_flag = USA_democrat_discussing
-	set_country_flag = USA_communist_discussing
+	set_country_flag = USA_communist_discussing # Sets up who you can negotiate with
 	set_country_flag = USA_socialist_discussing
+	set_country_flag = USA_farmer_labor_discussing
+	set_country_flag = USA_republican_discussing
+	set_country_flag = USA_democrat_discussing
 	set_country_flag = USA_fascist_discussing
 	
 	set_country_flag = bill_enable_mission # Gives the President penalties if they drag their feet for too long doing this
 	set_variable = { USA_bill_mission_deadline = 150 }
 	
-	set_variable = { USA_republican_bill_support = 0.7 } # percentage of congresspeople who will initially support the bill
-	set_variable = { USA_democrat_bill_support = 0.3 }
-	set_variable = { USA_communist_bill_support = 1 }
+	set_variable = { USA_communist_bill_support = 1 } # percentage of congresspeople who will initially support the bill
 	set_variable = { USA_socialist_bill_support = 1 }
+	set_variable = { USA_farmer_labor_bill_support = 1 }
+	set_variable = { USA_republican_bill_support = 0.7 }
+	set_variable = { USA_democrat_bill_support = 0.3 }
 	set_variable = { USA_fascist_bill_support = 0 }
 	
 	#set_country_flag = USA_special_decisions_enabled # hides generic decisions in favor of special ones
 	
-	set_variable = { average_boost_republican = 0.3 } # this shows the percentage of politicians (who are not currently supportive) who would be on average would be flipped by a compromise
-	set_variable = { average_boost_democrat = 0.2 }
-	set_variable = { average_boost_communist = 0.2 }
+	set_variable = { average_boost_communist = 0.2 } # this shows the percentage of politicians (who are not currently supportive) who would be on average would be flipped by a compromise
 	set_variable = { average_boost_socialist = 0.2 }
+	set_variable = { average_boost_farmer_labor = 0.2 }
+	set_variable = { average_boost_republican = 0.3 }
+	set_variable = { average_boost_democrat = 0.2 }
 	set_variable = { average_boost_fascist = 0.2 }
 	
-	set_variable = { republican_flip_cost = 25 } # how much pp negotiation decisions cost
-	set_variable = { democrat_flip_cost = 40 }
-	set_variable = { communist_flip_cost = 20 }
+	set_variable = { communist_flip_cost = 20 } # how much pp negotiation decisions cost
 	set_variable = { socialist_flip_cost = 20 }
+	set_variable = { farmer_labor_flip_cost = 20 }
+	set_variable = { republican_flip_cost = 25 }
+	set_variable = { democrat_flip_cost = 40 }
 	set_variable = { fascist_flip_cost = 70 }
 	
 	USA_bill_setup = yes # always required
@@ -85,30 +89,27 @@ USA_social_security_act_setup = { # social security act
 	
 	set_variable = { bill_id = 2 } # EACH BILL MUST HAVE A UNIQUE ID
 	
-	set_country_flag = USA_republican_discussing # Sets up who you can negotiate with
-	set_country_flag = USA_democrat_discussing
 	set_country_flag = USA_communist_discussing
 	set_country_flag = USA_socialist_discussing
-	#set_country_flag = USA_fascist_discussing
+	set_country_flag = USA_farmer_labor_discussing
+	set_country_flag = USA_republican_discussing
+	set_country_flag = USA_democrat_discussing
 	
-	#set_country_flag = bill_enable_mission # Gives the President penalties if they drag their feet for too long doing this
-	#set_variable = { USA_bill_mission_deadline = 45 }
-	
-	set_variable = { USA_republican_bill_support = 0.15 } # free market reeeeeee
-	set_variable = { USA_democrat_bill_support = 0.35 } # liberals are supportive, conservatives not so much
 	set_variable = { USA_communist_bill_support = 1 } # yes, more socialism
 	set_variable = { USA_socialist_bill_support = 1 } # i mean, its our bill so
+	set_variable = { USA_farmer_labor_bill_support = 1 }
+	set_variable = { USA_republican_bill_support = 0.15 } # free market reeeeeee
+	set_variable = { USA_democrat_bill_support = 0.35 } # liberals are supportive, conservatives not so much
 	set_variable = { USA_fascist_bill_support = 0.1 } # longists are supportive, others not so much
-	
-	#set_country_flag = USA_special_decisions_enabled # hides generic decisions in favor of special ones
 	
 	set_variable = { average_boost_republican = 0.3 }
 	set_variable = { average_boost_democrat = 0.2 }
 	
-	set_variable = { republican_flip_cost = 25 } # how much pp negotiation decisions cost
-	set_variable = { democrat_flip_cost = 40 }
 	set_variable = { communist_flip_cost = 20 }
 	set_variable = { socialist_flip_cost = 20 }
+	set_variable = { farmer_labor_flip_cost = 20 }
+	set_variable = { republican_flip_cost = 25 }
+	set_variable = { democrat_flip_cost = 40 }
 	set_variable = { fascist_flip_cost = 70 }
 	
 	if = {
@@ -377,52 +378,60 @@ USA_initialize_bill_support = {
 	set_country_flag = USA_discussing_bill
 	set_variable = { senators_support = 0 }
 	
-	set_variable = { republican_supporting_senators = senators_republican }
-	set_variable = { democrat_supporting_senators =  senators_democrat }
 	set_variable = { communist_supporting_senators = senators_communist }
 	set_variable = { socialist_supporting_senators = senators_socialist }
+	set_variable = { farmer_labor_supporting_senators = senators_farmer_labor }
+	set_variable = { republican_supporting_senators = senators_republican }
+	set_variable = { democrat_supporting_senators =  senators_democrat }
 	set_variable = { fascist_supporting_senators = senators_fascist }
 	
-	set_variable = { republican_supporting_reps = representatives_republican }
-	set_variable = { democrat_supporting_reps = representatives_democrat }
 	set_variable = { communist_supporting_reps = representatives_communist }
 	set_variable = { socialist_supporting_reps = representatives_socialist }
+	set_variable = { farmer_labor_supporting_reps = representatives_farmer_labor }
+	set_variable = { republican_supporting_reps = representatives_republican }
+	set_variable = { democrat_supporting_reps = representatives_democrat }
 	set_variable = { fascist_supporting_reps = representatives_fascist }
 	
-	multiply_variable = { republican_supporting_senators = USA_republican_bill_support }
-	multiply_variable = { democrat_supporting_senators = USA_democrat_bill_support }
 	multiply_variable = { communist_supporting_senators = USA_communist_bill_support }
 	multiply_variable = { socialist_supporting_senators = USA_socialist_bill_support }
+	multiply_variable = { farmer_labor_supporting_senators = USA_farmer_labor_bill_support }
+	multiply_variable = { republican_supporting_senators = USA_republican_bill_support }
+	multiply_variable = { democrat_supporting_senators = USA_democrat_bill_support }
 	multiply_variable = { fascist_supporting_senators = USA_fascist_bill_support }
 	
-	multiply_variable = { republican_supporting_reps = USA_republican_bill_support }
-	multiply_variable = { democrat_supporting_reps = USA_democrat_bill_support }
 	multiply_variable = { communist_supporting_reps = USA_communist_bill_support }
 	multiply_variable = { socialist_supporting_reps = USA_socialist_bill_support }
+	multiply_variable = { farmer_labor_supporting_reps = USA_farmer_labor_bill_support }
+	multiply_variable = { republican_supporting_reps = USA_republican_bill_support }
+	multiply_variable = { democrat_supporting_reps = USA_democrat_bill_support }
 	multiply_variable = { fascist_supporting_reps = USA_fascist_bill_support }
 	
-	round_variable = republican_supporting_senators 
-	round_variable = democrat_supporting_senators
 	round_variable = communist_supporting_senators
 	round_variable = socialist_supporting_senators
+	round_variable = farmer_labor_supporting_senators
+	round_variable = republican_supporting_senators 
+	round_variable = democrat_supporting_senators
 	round_variable = fascist_supporting_senators
 	
-	round_variable = republican_supporting_reps 
-	round_variable = democrat_supporting_reps
 	round_variable = communist_supporting_reps
 	round_variable = socialist_supporting_reps
+	round_variable = farmer_labor_supporting_reps
+	round_variable = republican_supporting_reps
+	round_variable = democrat_supporting_reps
 	round_variable = fascist_supporting_reps
 	
-	add_to_variable = { senators_support = republican_supporting_senators } 
-	add_to_variable = { senators_support = democrat_supporting_senators }
 	add_to_variable = { senators_support = communist_supporting_senators }
 	add_to_variable = { senators_support = socialist_supporting_senators }
+	add_to_variable = { senators_support = farmer_labor_supporting_senators }
+	add_to_variable = { senators_support = republican_supporting_senators } 
+	add_to_variable = { senators_support = democrat_supporting_senators }
 	add_to_variable = { senators_support = fascist_supporting_senators }
 	
-	add_to_variable = { representatives_support = republican_supporting_reps } 
-	add_to_variable = { representatives_support = democrat_supporting_reps }
 	add_to_variable = { representatives_support = communist_supporting_reps }
 	add_to_variable = { representatives_support = socialist_supporting_reps }
+	add_to_variable = { representatives_support = farmer_labor_supporting_reps }
+	add_to_variable = { representatives_support = republican_supporting_reps } 
+	add_to_variable = { representatives_support = democrat_supporting_reps }
 	add_to_variable = { representatives_support = fascist_supporting_reps }
 }
 
@@ -758,10 +767,26 @@ USA_recalc_house = { # this will recalculate the number of representatives based
 		representatives_socialist = party_popularity@libertarian_socialism
 	}
 	add_to_variable = {
-		representatives_socialist = party_popularity@social_democracy
-	}
-	add_to_variable = {
 		representatives_socialist = party_popularity@proletarian_dictatorship
+	}
+	
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = USA_farmer_labor_exists
+			}
+		}
+		add_to_variable = {
+			representatives_socialist = party_popularity@social_democracy
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = USA_farmer_labor_exists
+		}
+		add_to_variable = {
+			representatives_farmer_labor = party_popularity@social_democracy
+		}
 	}
 	
 	set_variable = {
@@ -769,10 +794,26 @@ USA_recalc_house = { # this will recalculate the number of representatives based
 	}
 	
 	set_variable = {
-		representatives_democrat = party_popularity@progressive_liberalism
-	}
-	add_to_variable = {
 		representatives_democrat = party_popularity@national_conservatism
+	}
+	
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = USA_liberal_exists
+			}
+		}
+		add_to_variable = {
+			representatives_democrat = party_popularity@progressive_liberalism
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = USA_liberal_exists
+		}
+		add_to_variable = {
+			representatives_liberal = party_popularity@social_democracy
+		}
 	}
 	
 	set_variable = {
@@ -790,6 +831,12 @@ USA_recalc_house = { # this will recalculate the number of representatives based
 		representatives_socialist = representatives_total
 	}
 	multiply_variable = {
+		representatives_farmer_labor = representatives_total
+	}
+	multiply_variable = {
+		representatives_liberal = representatives_total
+	}
+	multiply_variable = {
 		representatives_republican = representatives_total
 	}
 	multiply_variable = {
@@ -802,6 +849,8 @@ USA_recalc_house = { # this will recalculate the number of representatives based
 	#rounds
 	round_variable = representatives_communist
 	round_variable = representatives_socialist
+	round_variable = representatives_farmer_labor
+	round_variable = representatives_liberal
 	round_variable = representatives_republican
 	round_variable = representatives_democrat
 	round_variable = representatives_fascist
@@ -815,6 +864,12 @@ USA_recalc_house = { # this will recalculate the number of representatives based
 	}
 	add_to_variable = {
 		representatives_total = representatives_socialist
+	}
+	add_to_variable = {
+		representatives_total = representatives_farmer_labor
+	}
+	add_to_variable = {
+		representatives_total = representatives_liberal
 	}
 	add_to_variable = {
 		representatives_total = representatives_republican

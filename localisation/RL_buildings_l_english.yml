@@ -1,0 +1,9 @@
+﻿l_english: 
+ 
+ steel_mill:0 "Steel Mill"
+ steel_mill_desc:0 "A steel mill or steelworks is an industrial plant for the manufacture of steel.\n"
+ steel_mill_plural:0 "Steel Mills"
+ 
+ PRODUCTION_MATERIALS_IRON_ORE:0 "Iron Ore"
+ iron_ore_desc:0 "Iron Ore is dug out of the ground, and alloyed with other metals to create steel."
+ 

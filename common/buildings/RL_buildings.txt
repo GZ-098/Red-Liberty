@@ -1,0 +1,31 @@
+#buildings = {
+#
+#	# show_on_map:
+#	#    if provincial = yes, then show_on_map = X is amount per each province
+#	#    if provincial = no, then show_on_map = X is amount per state
+#
+#	steel_mill = {
+#		show_on_map = 3
+#		base_cost = 8000
+#		per_level_extra_cost = 200
+#		icon_frame = 15
+#		
+#		max_level = 10 # This is the max unlock level
+#		shares_slots = yes
+#		value = 3
+#		infrastructure_construction_effect = yes
+#		
+#		refinery = yes
+#		general_production = 1
+#		
+#		local_resources_steel = 8 # May use local_resources_ + any resource name
+#		
+#		#local_resources_iron_ore = -10
+#		#local_resources_chromium = -2
+#		#country_resource_cost_iron_ore = 10
+#		#country_resource_cost_chromium = 2
+#	}
+#}
+
+
+

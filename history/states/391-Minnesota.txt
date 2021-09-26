@@ -2,8 +2,9 @@
 state={
 	id=391
 	name="STATE_391"
-	resources={
-		steel=110.000
+
+	resources = {
+		steel = 110
 	}
 
 	history={
@@ -11,7 +12,6 @@ state={
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
-
 		}
 		add_core_of = USA
 		victory_points = {

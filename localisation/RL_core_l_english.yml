@@ -3,6 +3,9 @@
  BREAD_AND_ROSES_NAME:0 "Bread and Roses"
  BREAD_AND_ROSES_DESC:0 ""
  
+ india:0 "India"
+ central_america:0 "Central America"
+ 
  cat_scout_plane:0 "Scout Plane models"
  
  conscription_banned:0 " Conscription has been banned in our country"

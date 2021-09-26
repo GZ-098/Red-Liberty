@@ -1,0 +1,26 @@
+﻿l_english:
+ ### USA ###
+ RULE_GROUP_RL_RULES_UNITED_STATES:0 "United States"
+ 
+ USA_ELECTION_OUTCOME:0 "Outcome of the 1936 Election"
+ RULE_OPTION_USA_ELECTION_OUTCOME_RANDOM:0 "Default - Random"
+ RULE_OPTION_USA_ELECTION_OUTCOME_RANDOM_DESC:0 ""
+ RULE_OPTION_USA_ELECTION_OUTCOME_SOCIALIST:0 "£GFX_spa_texticon Socialist Victory"
+ RULE_OPTION_USA_ELECTION_OUTCOME_SOCIALIST_DESC:0 "The §PSocialist Party of America§!, following a highly successful four years in office, shall handily win the 1936 election."
+ 
+ RULE_OPTION_USA_ELECTION_OUTCOME_DEMOCRAT:0 "£GFX_dem_texticon Democrat Victory"
+ RULE_OPTION_USA_ELECTION_OUTCOME_DEMOCRAT_DESC:0 "The §CDemocratic Party§!, capitalizing on the Socialist's instability, manage to sweep the polls, and win the 1936 election."
+ 
+ ### JAP ###
+ RULE_GROUP_RL_RULES_JAPAN:0 "Empire of Japan"
+ 
+ JAP_POST_INUKAI:0 "Post-Inukai Japan"
+ RULE_OPTION_JAP_POST_INUKAI_RANDOM:0 "Default - Random"
+ RULE_OPTION_JAP_POST_INUKAI_RANDOM_DESC:0 ""
+ RULE_OPTION_JAP_POST_INUKAI_STATUS_QUO:0 "The Status Quo"
+ RULE_OPTION_JAP_POST_INUKAI_STATUS_QUO_DESC:0 "After winning the snap elections, the §YMinseito§! party chooses to coalition with the §CSeiyukai§!, upholding the status quo."
+ RULE_OPTION_JAP_POST_INUKAI_CONSTITUTIONAL_AMENDMENT:0 "The Constitutional Amendment"
+ RULE_OPTION_JAP_POST_INUKAI_CONSTITUTIONAL_AMENDMENT_DESC:0 "After winning the snap elections, the §YMinseito§! party chooses to coalition with the §PRonoto§!, and successfully petition the Emperor to amend the constitution."
+ RULE_OPTION_JAP_POST_INUKAI_KONOE_GOVT:0 "The Konoe Government"
+ RULE_OPTION_JAP_POST_INUKAI_KONOE_GOVT_DESC:0 "After winning the snap elections, the §YMinseito§! party chooses to coalition with the §PRonoto§!, and fail to petition the Emperor to amend the constitution, allowing §gFumimaro Konoe§! to seize power."
+ 

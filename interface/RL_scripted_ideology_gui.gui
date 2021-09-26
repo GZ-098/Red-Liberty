@@ -1,0 +1,31 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name = "subideology_box_diplo"
+		position = { x = 252 y = 264 }
+		
+		instantTextBoxType = {
+			name = "subideology_text_diplo"
+			position = { x = 5 y = 10 }
+			font = "hoi_16mbs"
+			text = "subideology_tt"
+			maxWidth = 245
+			maxHeight = 20
+		}
+	}
+	
+	containerWindowType = {
+		name = "subideology_box_politics"
+		position = { x = 91 y = 303 }
+		
+		instantTextBoxType = {
+			name = "subideology_text_diplo"
+			position = { x = 5 y = 10 }
+			font = "hoi_18mbs"
+			text = "subideology_tt"
+			maxWidth = 245
+			maxHeight = 20
+		}
+	}
+}
+

@@ -6,4 +6,7 @@ continents = {
 	africa
 	asia
 	middle_east
+	india
+	central_america
 }
+

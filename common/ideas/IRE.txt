@@ -41,7 +41,7 @@ ideas = {
 			}
 		}
 		
-		IRE_the_ira = {
+		IRE_paramilitary_violence = {
 			
 			removal_cost = -1 
 			

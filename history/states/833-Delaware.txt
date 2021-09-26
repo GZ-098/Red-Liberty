@@ -1,6 +1,10 @@
 state={
 	id=833
 	name="STATE_833"
+
+	resources = {
+		steel=2
+	}
 	
 	history={
 		owner = USA

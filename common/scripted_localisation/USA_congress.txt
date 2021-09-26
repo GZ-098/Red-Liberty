@@ -1,0 +1,428 @@
+defined_text = {
+	name = get_us_communist_rep_count
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_communist > 0 }
+        }
+        localization_key = "USA_congress_communist_rep_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_communist_rep_support
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_communist > 0 }
+        }
+        localization_key = "USA_congress_communist_rep_support"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_communist_senator_count
+	
+	text = { 
+        trigger = {
+			check_variable = { senators_communist > 0 }
+        }
+        localization_key = "USA_congress_communist_senator_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_socialist_rep_count
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_socialist > 0 }
+        }
+        localization_key = "USA_congress_socialist_rep_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_socialist_rep_support
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_socialist > 0 }
+        }
+        localization_key = "USA_congress_socialist_rep_support"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_socialist_senator_count
+	
+	text = { 
+        trigger = {
+			check_variable = { senators_socialist > 0 }
+        }
+        localization_key = "USA_congress_socialist_senator_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_farmer_labor_rep_count
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_farmer_labor > 0 }
+        }
+        localization_key = "USA_congress_farmer_labor_rep_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_farmer_labor_rep_support
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_farmer_labor > 0 }
+        }
+        localization_key = "USA_congress_farmer_labor_rep_support"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_farmer_labor_senator_count
+	
+	text = { 
+        trigger = {
+			check_variable = { senators_farmer_labor > 0 }
+        }
+        localization_key = "USA_congress_farmer_labor_senator_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_liberal_rep_count
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_liberal > 0 }
+        }
+        localization_key = "USA_congress_liberal_rep_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_liberal_rep_support
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_liberal > 0 }
+        }
+        localization_key = "USA_congress_liberal_rep_support"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_liberal_senator_count
+	
+	text = { 
+        trigger = {
+			check_variable = { senators_fliberal > 0 }
+        }
+        localization_key = "USA_congress_liberal_senator_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_republican_rep_count
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_republican > 0 }
+        }
+        localization_key = "USA_congress_republican_rep_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_republican_rep_support
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_republican > 0 }
+        }
+        localization_key = "USA_congress_republican_rep_support"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_republican_senator_count
+	
+	text = { 
+        trigger = {
+			check_variable = { senators_republican > 0 }
+        }
+        localization_key = "USA_congress_republican_senator_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_democrat_rep_count
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_democrat > 0 }
+        }
+        localization_key = "USA_congress_democrat_rep_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_democrat_rep_support
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_democrat > 0 }
+        }
+        localization_key = "USA_congress_democrat_rep_support"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_democrat_senator_count
+	
+	text = { 
+        trigger = {
+			check_variable = { senators_democrat > 0 }
+        }
+        localization_key = "USA_congress_democrat_senator_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_fascist_rep_count
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_fascist > 0 }
+        }
+        localization_key = "USA_congress_fascist_rep_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_afp_rep_support
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_fascist > 0 }
+        }
+        localization_key = "USA_congress_afp_rep_support"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_us_fascist_senator_count
+	
+	text = { 
+        trigger = {
+			check_variable = { senators_fascist > 0 }
+        }
+        localization_key = "USA_congress_fascist_senator_count"
+    }
+	
+	text = {
+		localization_key = ""
+    }
+}
+
+defined_text = {
+	name = get_congress_voting
+	
+	text = {
+        trigger = {
+			check_variable = { bill_id > 0 }
+			has_country_flag = USA_discussing_bill
+        }
+        localization_key = "USA_congress_voting_bill"
+    }
+	
+	text = {
+		localization_key = "USA_congress_voting_none"
+    }
+}
+
+defined_text = {
+	name = get_bill_name
+	
+	text = { 
+        trigger = {
+			check_variable = { bill_id = 2 }
+			has_country_flag = USA_discussing_bill
+        }
+        localization_key = "start_USA_social_security_act"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { bill_id = 3 }
+			has_country_flag = USA_discussing_bill
+        }
+        localization_key = "start_USA_farm_tenant_act"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { bill_id = 4 }
+			has_country_flag = USA_discussing_bill
+        }
+        localization_key = "start_USA_court_packing_act"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { bill_id = 5 }
+			has_country_flag = USA_discussing_bill
+        }
+        localization_key = "start_USA_reorg_act"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { bill_id = 10 }
+			has_country_flag = USA_discussing_bill
+        }
+        localization_key = "start_USA_ban_kkk_act"
+    }
+	
+	text = { 
+        localization_key = "major_legislation"
+    }
+}
+
+defined_text = {
+	name = get_rep_color
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_support > rep_quorum_medium }
+        }
+        localization_key = "reps_support_green"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_support = rep_quorum_medium }
+        }
+        localization_key = "reps_support_yellow"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { representatives_support < rep_quorum_medium }
+        }
+        localization_key = "reps_support_red"
+    }
+}
+
+defined_text = {
+	name = get_senator_color
+	
+	text = { 
+        trigger = {
+			check_variable = { senators_support > quorum_medium }
+        }
+        localization_key = "senator_support_green"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { senators_support = quorum_medium }
+        }
+        localization_key = "senator_support_yellow"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { senators_support < quorum_medium }
+        }
+        localization_key = "senator_support_red"
+    }
+}

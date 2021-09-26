@@ -23,6 +23,30 @@ debug_category = {
 		}
 	}
 	
+	debug_recalc_house = {
+	
+		icon = generic_political_discourse
+		
+		avaliable = {
+			tag = USA
+		}
+		
+		visible = {
+			is_debug = yes
+			tag = USA
+		}
+		
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+		
+		complete_effect = {
+			USA_recalc_house = yes
+		}
+	}
+	
 	debug_trigger_election = {
 	
 		icon = generic_political_discourse

@@ -54,22 +54,138 @@ set_popularities = {
 	fascism = 0
 }
 
-set_country_flag = social_democracy_coalition
-set_country_flag = conservative_coalition
-
-set_country_flag = market_libertarian_opposition
-
 add_ideas = {
 	IRE_anglo_irish_trade_war
-	IRE_the_ira
+	IRE_paramilitary_violence
 }
 
 create_country_leader = {
-	name = "Éamon de Valera"
+	name = "No Organized Leadership"
 	desc = ""
-	picture = "Portrait_IRE_Eamon_Valera.png"
+	picture = ""
+	expire = "1965.1.1"
+	ideology = insurrectionary_anarchism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Andy Barr"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = revolutionary_autocracy_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Jim Larkin"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = proletarian_dictatorship_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Charles Donnelly"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = libertarian_socialism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = ""
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Seán Lemass"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = progressive_liberalism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "W. T. Cosgrave"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = market_libertarianism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Michael Collins"
+	desc = ""
+	picture = "Portrait_IRE_Michael_Collins.png"
 	expire = "1965.1.1"
 	ideology = national_conservatism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Arthur Griffith"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = authoritarian_democracy_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Various Military Figures"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = autocratic_despotism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Eoin O'Duffy"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = far_right_authoritarianism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Gearóid Ó Cuinneagáin"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology =fascism_subtype
 	traits = {
 		#
 	}

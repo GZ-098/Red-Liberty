@@ -2,9 +2,9 @@
 state={
 	id=393
 	name="STATE_393"
-	resources={
-		steel=60.000
-		oil=6.000
+
+	resources = {
+		steel = 18
 	}
 
 	history={
@@ -13,7 +13,6 @@ state={
 			infrastructure = 6
 			industrial_complex = 3
 			air_base = 4
-
 		}
 		add_core_of = USA
 		victory_points = {
@@ -25,12 +24,13 @@ state={
 		victory_points = {
 			11714 3
 		}
+
 	}
 
 	provinces={
-		691 695 3766 6769 6782 7420 9684 9724 9746 9747 10233 10303 11641 11656 11669 11685 11714 11731 13155 13199 13200 
+		691 695 3766 6769 6782 9684 9724 9746 11641 11656 11669 11685 11714 13199 13200 
 	}
 	manpower=4842323
 	buildings_max_level_factor=1.000
-	state_category = large_town
+	state_category=large_town
 }

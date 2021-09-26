@@ -1,0 +1,56 @@
+
+### USA ###
+
+USA_election_outcome = {
+	name = "USA_ELECTION_OUTCOME"
+	group = "RULE_GROUP_RL_RULES_UNITED_STATES"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_USA_ELECTION_OUTCOME_RANDOM"
+		desc = "RULE_OPTION_USA_ELECTION_OUTCOME_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = USA_ELECTION_OUTCOME_SOCIALIST
+		text = "RULE_OPTION_USA_ELECTION_OUTCOME_SOCIALIST"
+		desc = "RULE_OPTION_USA_ELECTION_OUTCOME_SOCIALIST_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = USA_ELECTION_OUTCOME_DEMOCRAT
+		text = "RULE_OPTION_USA_ELECTION_OUTCOME_DEMOCRAT"
+		desc = "RULE_OPTION_USA_ELECTION_OUTCOME_DEMOCRAT_DESC"
+		allow_achievements = yes
+	}
+}
+
+### USA ###
+
+JAP_post_inukai_outcome = {
+	name = "JAP_POST_INUKAI"
+	group = "RULE_GROUP_RL_RULES_JAPAN"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_JAP_POST_INUKAI_RANDOM"
+		desc = "RULE_OPTION_JAP_POST_INUKAI_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_POST_INUKAI_STATUS_QUO
+		text = "RULE_OPTION_JAP_POST_INUKAI_STATUS_QUO"
+		desc = "RULE_OPTION_JAP_POST_INUKAI_STATUS_QUO_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_POST_INUKAI_CONSTITUTIONAL_AMENDMENT
+		text = "RULE_OPTION_JAP_POST_INUKAI_CONSTITUTIONAL_AMENDMENT"
+		desc = "RULE_OPTION_JAP_POST_INUKAI_CONSTITUTIONAL_AMENDMENT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = JAP_POST_INUKAI_KONOE_GOVT
+		text = "RULE_OPTION_JAP_POST_INUKAI_KONOE_GOVT"
+		desc = "RULE_OPTION_JAP_POST_INUKAI_KONOE_GOVT_DESC"
+		allow_achievements = yes
+	}
+}

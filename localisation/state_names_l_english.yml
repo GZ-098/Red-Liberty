@@ -84,7 +84,7 @@
  STATE_83:0 "Crisana"
  STATE_84:0 "Transylvania"
  STATE_85:0 "Danzig"
- STATE_86:0 "Poznan"
+ STATE_86:0 "Posen"
  STATE_87:1 "Lódz"
  STATE_88:0 "Krakow"
  STATE_89:0 "Stanislawów"
@@ -930,4 +930,6 @@
  STATE_929:0 "Umbria"
  STATE_930:0 "Algarve"
  STATE_931:0 "Centro Littoral"
+ STATE_932:0 "Scapa Flow"
+ STATE_933:0 "Guantanamo Bay"
  
