@@ -452,3 +452,17 @@ country_event = { #
 		name = "From many, one."
 	}
 }
+
+country_event = { # 
+	id = united_states_thomas.27
+	title = "All the Money in the World"
+	desc = united_states_thomas.27.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "A closet still locked and unseen."
+	}
+}

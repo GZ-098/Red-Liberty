@@ -342,6 +342,13 @@ country_event = { # housing act
 		improve_great_depression = yes
 		set_country_flag = housing_act_passed
 		USA_bill_clear = yes # ALWAYS DO THIS
+		
+		hidden_effect = {
+			country_event = {
+				id = united_states_thomas.27
+				days = 12
+			}
+		}
 	}
 	
 	option = { # bill fails

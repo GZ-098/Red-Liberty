@@ -18,6 +18,8 @@
  
  CHI_imperial_govt:0 "Imperial Government"
  
+ POLITICS_RONGYAO_DESC:0 "After the Xinhai Revolution, Yuan Shikai, through a series of shrewd political maneuvers, including bribes, assassinations, and a secret deal with Japan, usurped the Republic of China and became the Hongxian Emperor. Though many disloyal warlords and politicians turned against him, Japanese support and a well-trained Beiyang Army kept the Empire afloat. The National Protection War ended in a stalemate in 1918 when the Beiyang Army mutinied, and the Hongxian Emperor died soon afterwards. His heir, Yuntai (formerly Yuan Keding and now the Rongyao Emperor) ascended to the throne. He has spent a busy decade and a half establishing what is to be the government of the Empire and solidifying control over its territories. Now, with his three closest advisors, he must finish his reforms, find his footing on the international stage, and end the threat of the disloyal warlords once and for all."
+ 
  zhili_officer:0 "Zhili Officer"
  zhili_officer_desc:0 "§LAn officer of the Zhili clique.§!"
  anhui_officer:0 "Anhui Officer"

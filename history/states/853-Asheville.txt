@@ -1,19 +1,22 @@
+
 state={
 	id=853
 	name="STATE_853"
-	
+
 	history={
 		owner = USA
 		add_core_of = USA
 		buildings = {
 			infrastructure = 4
+
 		}
+
 	}
-	
+
 	provinces={
-		7643 9967 10096 10468 10495 
+		913 7558 7643 7791 8014 9779 9967 10096 10439 10468 10495 10657 10909 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category=rural
 }

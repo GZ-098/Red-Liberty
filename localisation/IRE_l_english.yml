@@ -26,11 +26,13 @@
  IRE_fascism_party:0 "AnA"
  IRE_fascism_party_long:0 "Ailtirí na hAiséirghe"
  
+ POLITICS_MICHAEL_COLLINS_DESC:0 "Regarded by many as a traitor to Ireland but by more as the undisputed founder of the Irish Republic, Michael Collins is a divisive man. As a young man and former accountant, Mick joined the Irish Volunteers in 1913, and would serve as a soldier of the Provisional Irish Republic during the Easter Rising just three years later. He was known for his tactical mind and fiery patriotism, for both of which he became a close friend and confidant to Seán MacDiarmada in the years after the failed Rising. Following the death of MacDiarmada in 1918, Collins was not only the man to proclaim the First Dáil and to assume a position as the President of the new Irish Republic, but was one of the revolution’s greatest military minds, revolutionising guerrilla warfare, infiltrating the British Intelligence Service, and ultimately being called to negotiate for the independence of Ireland in 1920 as the Great War was finally nearing its end.\n\nHoping to avoid any further instability for the new Republic, Collins won for 26 counties complete independence, but ceded 6 of the most militantly Protestant counties in Ulster to the UK, ironically causing the Irish Civil War while the Republic was still in its infancy. In the aftermath, political opponents of Collins and sympathisers with ICA and IRA rebels found themselves all but completely excluded from the Dáil, and commonly discriminated against by law. In the end, The Big Fella emerged from the Revolutionary Period of Irish history with a stranglehold on the new Irish government, and has just begun serving his third term as Taoiseach."
+ 
  IRE_anglo_irish_trade_war:0 "Anglo-Irish Trade War"
  IRE_anglo_irish_trade_war_1:0 "Anglo-Irish Trade War"
  
  IRE_paramilitary_violence:0 "Paramilitary Violence"
  
  IRE_parliament:0 "Dáil Éireann"
- IRE_parliament_desc:0 "The Dáil Éireann serves as the directly elected lower house of the Oireachtas of the Irish State."
+ IRE_parliament_desc:0 "The Dáil Éireann serves as the directly elected lower house of the Oireachtas of the Irish State.\n\n§rSocialist Party§!: [?communist_tds]\n§RCóisir na nDaoine§!: [?socialist_tds]\n§PLabour Party§!: [?labour_tds]\n§CDíle Soar§!: [?liberal_tds]\n§YNa Chéad Laochra§!: [?conservative_tds]\n§gSinn Féin§!: [?authoritarian_tds]"
  

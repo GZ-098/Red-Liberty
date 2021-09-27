@@ -1,3 +1,17 @@
 IRE_parliament = {
 	
+	IRE_reset_parliament = {
+	
+		icon = ger_mefo_bills
+		
+		visible = {
+			debug = yes
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			IRE_recalc_parliament = yes
+		}
+	}
 }

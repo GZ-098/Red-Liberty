@@ -42,9 +42,6 @@ if = {
 	}
 }
 
-give_military_access = ANH
-give_military_access = ZHI
-
 set_convoys = 40
 
 set_politics = {
@@ -197,7 +194,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Rongyao"
-	#desc = ""
+	desc = "POLITICS_RONGYAO_DESC"
 	picture = "Portrait_CHI_Yuan_Keding.png"
 	expire = "1965.1.1"
 	ideology = autocratic_despotism_subtype

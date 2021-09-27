@@ -1,0 +1,166 @@
+IRE_recalc_parliament = { # this will recalculate the number of members of parliament based on party popularity
+	
+	#Sets variable to check for discrepencies
+	set_variable = {
+		IRE_old_tds_total = tds_total
+	}
+	
+	set_variable = {
+		communist_tds = party_popularity@revolutionary_autocracy
+	}
+	add_to_variable = {
+		communist_tds = party_popularity@proletarian_dictatorship
+	}
+	
+	set_variable = {
+		socialist_tds = party_popularity@libertarian_socialism
+	}
+	
+	set_variable = {
+		labour_tds = party_popularity@social_democracy
+	}
+	
+	set_variable = {
+		liberal_tds = party_popularity@progressive_liberalism
+	}
+	
+	set_variable = {
+		conservative_tds = party_popularity@market_libertarianism
+	}
+	add_to_variable = {
+		conservative_tds = party_popularity@national_conservatism
+	}
+	
+	set_variable = {
+		authoritarian_tds = party_popularity@authoritarian_democracy
+	}
+	
+	#Gets seats
+	multiply_variable = {
+		communist_tds = tds_total
+	}
+	multiply_variable = {
+		socialist_tds = tds_total
+	}
+	multiply_variable = {
+		labour_tds = tds_total
+	}
+	multiply_variable = {
+		liberal_tds = tds_total
+	}
+	multiply_variable = {
+		conservative_tds = tds_total
+	}
+	multiply_variable = {
+		authoritarian_tds = tds_total
+	}
+	
+	#rounds
+	round_variable = communist_tds
+	round_variable = socialist_tds
+	round_variable = labour_tds
+	round_variable = liberal_tds
+	round_variable = national_liberal_tds
+	round_variable = conservative_tds
+	round_variable = authoritarian_tds
+	
+	#Gets new total seat value
+	set_variable = {
+		tds_total = 0
+	}
+	add_to_variable = {
+		tds_total = communist_tds
+	}
+	add_to_variable = {
+		tds_total = socialist_tds
+	}
+	add_to_variable = {
+		tds_total = labour_tds
+	}
+	add_to_variable = {
+		tds_total = liberal_tds
+	}
+	add_to_variable = {
+		tds_total = conservative_tds
+	}
+	add_to_variable = {
+		tds_total = authoritarian_tds
+	}
+	
+	#gets discrepency
+	subtract_from_variable = {
+		IRE_old_tds_total = tds_total
+	}
+	
+	#deals with discrepency, if needed
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					IRE_old_tds_total = 0
+				}
+			}
+		}
+		add_to_variable = {
+			tds_total = IRE_old_tds_total
+		}
+		if = {
+			limit = {
+				OR = {
+					has_government = revolutionary_autocracy
+					has_government = proletarian_dictatorship
+				}
+			}
+			add_to_variable = {
+				communist_tds = IRE_old_tds_total
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_government = libertarian_socialism
+				}
+			}
+			add_to_variable = {
+				socialist_tds = IRE_old_tds_total
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_government = social_democracy
+				}
+			}
+			add_to_variable = {
+				labour_tds = IRE_old_tds_total
+			}
+		}
+		else_if = {
+			limit = {
+				has_government = progressive_liberalism
+			}
+			add_to_variable = {
+				liberal_tds = IRE_old_tds_total
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_government = market_libertarianism
+					has_government = national_conservatism
+				}
+			}
+			add_to_variable = {
+				conservative_tds = IRE_old_tds_total
+			}
+		}
+		else_if = {
+			limit = {
+				has_government = authoritarian_democracy
+			}
+			add_to_variable = {
+				authoritarian_tds = IRE_old_tds_total
+			}
+		}
+	}
+}
