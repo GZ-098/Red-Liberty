@@ -2,9 +2,8 @@
 state={
 	id=862
 	name="STATE_862"
-
-	resources = {
-		steel = 28
+	resources={
+		steel=28.000
 	}
 
 	history={
@@ -13,12 +12,13 @@ state={
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 6
+
 		}
 
 	}
 
 	provinces={
-		880 3802 3850 9789 11769 11789 11800 12405 
+		702 822 847 862 880 3687 3697 3802 3847 3850 3880 6705 6872 6885 6899 9662 9789 9804 9836 11648 11758 11769 11789 11800 11817 12405 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000

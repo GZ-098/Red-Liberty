@@ -204,7 +204,7 @@ BRI = "countries/Brittany.txt"
 OCC = "countries/Occitania.txt"
 COR = "countries/Corsica.txt"
 
-### Russia ###
+### Russia and Siberia ###
 RUS = "countries/Russian State.txt"
 IDE = "countries/Idel-Ural.txt"
 ALT = "countries/Altai.txt"
@@ -215,7 +215,6 @@ KHV = "countries/Khiva.txt"
 TMY = "countries/Talyshstan.txt"
 
 USS = "countries/Ussuri Cossack Host.txt"
-SCH = "countries/Semirechye Cossack Host.txt"
 ORE = "countries/Orenburg Cossack Host.txt"
 TRB = "countries/Transbaikalia.txt"
 URL = "countries/Ural Cossack Host.txt"
@@ -224,6 +223,10 @@ PRI = "countries/Primorye.txt"
 
 DON = "countries/Don Republic.txt"
 KUB = "countries/Kuban Republic.txt"
+
+### Central Asia ###
+KOK = "countries/Kokand.txt"
+SCH = "countries/Semirechye Cossack Host.txt"
 
 ### Europe ###
 ITF = "countries/Italian Union of Fascists.txt"
@@ -250,10 +253,8 @@ BSA = "countries/British South Africa.txt"
 AES = "countries/Anglo-Egyptian Sudan.txt"
 BAR = "countries/British Arabia.txt"
 BWI = "countries/British West Indies.txt"
-
 FWA = "countries/French West Africa.txt"
 FCA = "countries/French Central Africa.txt"
-
 ASA = "countries/Aussa.txt"
 DAR = "countries/Darfur.txt"
 AZA = "countries/Azandeland.txt"

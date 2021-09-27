@@ -35,3 +35,14 @@ set_popularities = {
 }
 
 set_cosmetic_tag = RUS_cossack_host
+
+create_country_leader = {
+	name = "Mikhail Diterikhs"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = autocratic_despotism_subtype
+	traits = {
+		#
+	}
+}

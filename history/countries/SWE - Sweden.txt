@@ -81,3 +81,14 @@ set_popularities = {
 	autocratic_despotism = 0
 	fascism = 0
 }
+
+create_country_leader = {
+	name = "Gustaf V"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = social_democracy_subtype
+	traits = {
+		#
+	}
+}

@@ -4,8 +4,7 @@ state={
 	name="STATE_742"
 
 	history={
-		add_core_of = KYR
-		owner = KYR
+		owner = AFG
 		victory_points = {
 			1384 1 
 		}
@@ -13,11 +12,11 @@ state={
 			infrastructure = 1
 
 		}
-
+		add_core_of = AFG
 	}
 
 	provinces={
-		7224 8027 10417 12218 13237 
+		7224 8027 10205 10417 12218 12239 13237 
 	}
 	manpower=230000
 	buildings_max_level_factor=1.000
