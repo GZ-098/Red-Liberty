@@ -621,6 +621,61 @@ spritetypes = {
 		texturefile = "gfx/interface/goals/USA/USA_the_naval_act.png"
 	}
 	
+	SpriteType = {
+		name = "GFX_USA_north_carolina_class"
+		texturefile = "gfx/interface/goals/USA/USA_north_carolina_class.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_south_dakota_class"
+		texturefile = "gfx/interface/goals/USA/USA_south_dakota_class.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_two_ocean_navy"
+		texturefile = "gfx/interface/goals/USA/USA_two_ocean_navy_act.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_matching_europe"
+		texturefile = "gfx/interface/goals/USA/USA_matching_the_fleets_of_europe.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_pacific_presence"
+		texturefile = "gfx/interface/goals/USA/USA_pacific_prescience.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_atlantic_awareness"
+		texturefile = "gfx/interface/goals/USA/USA_atlantic_awareness.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_study_super_heavy_designs"
+		texturefile = "gfx/interface/goals/USA/USA_study_super_heavy_designs.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_iowa_class"
+		texturefile = "gfx/interface/goals/USA/USA_iowa_class.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_expand_operations"
+		texturefile = "gfx/interface/goals/USA/USA_expand_shipbuilding_facilities.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_naval_air"
+		texturefile = "gfx/interface/goals/USA/USA_naval_air_is_the_future.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_the_bureau_of_aeronautics"
+		texturefile = "gfx/interface/goals/USA/USA_bureau_of_aeronautics.png"
+	}
+	
 	### MEXICO TREE ###
 	
 	SpriteType = {
