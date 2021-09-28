@@ -543,40 +543,6 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = USA_streamline_production
-	icon = GFX_USA_streamline_production
-	
-    x = 0
-	y = 2
-	
-	cost = 5
-	relative_position_id = USA_construct_airbases
-	prerequisite = { focus = USA_construct_airbases }
-    completion_reward = {
-        if = {
-			limit = {
-				has_completed_focus = USA_under_the_army
-			}
-			add_ideas = {
-				USA_streamlined_prod_cas
-			}
-		}
-		if = {
-			limit = {
-				has_completed_focus = USA_independent_air_force
-			}
-			add_ideas = {
-				USA_streamlined_prod_bomber
-			}
-		}
-    }
-	
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-shared_focus = {
     id = USA_construct_airbases
 	icon = GFX_USA_construct_airbases
 	
@@ -621,6 +587,40 @@ shared_focus = {
 				type = air_base
 				level = 2
 				instant_build = yes
+			}
+		}
+    }
+	
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+shared_focus = {
+    id = USA_streamline_production
+	icon = GFX_USA_streamline_production
+	
+    x = 0
+	y = 2
+	
+	cost = 5
+	relative_position_id = USA_construct_airbases
+	prerequisite = { focus = USA_construct_airbases }
+    completion_reward = {
+        if = {
+			limit = {
+				has_completed_focus = USA_under_the_army
+			}
+			add_ideas = {
+				USA_streamlined_prod_cas
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = USA_independent_air_force
+			}
+			add_ideas = {
+				USA_streamlined_prod_bomber
 			}
 		}
     }

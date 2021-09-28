@@ -537,13 +537,33 @@ spritetypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_USA_bomber_development"
-		texturefile = "gfx/interface/goals/USA/USA_bomber_development.png"
+		name = "GFX_USA_recon_aircraft"
+		texturefile = "gfx/interface/goals/USA/USA_invest_in_recon_aircraft.png"
 	}
 	
 	SpriteType = {
-		name = "GFX_USA_strat_destruction"
-		texturefile = "gfx/interface/goals/USA/USA_strategic_destruction.png"
+		name = "GFX_USA_shorten_response_times"
+		texturefile = "gfx/interface/goals/USA/USA_shorten_response_times.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_pilot_rotation"
+		texturefile = "gfx/interface/goals/USA/USA_pilot_rotation.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_combined_arms"
+		texturefile = "gfx/interface/goals/USA/USA_combined_arms.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_streamline_production"
+		texturefile = "gfx/interface/goals/USA/USA_streamline_production.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_construct_airbases"
+		texturefile = "gfx/interface/goals/USA/USA_construct_airbases.png"
 	}
 	
 	SpriteType = {
@@ -554,6 +574,46 @@ spritetypes = {
 	SpriteType = {
 		name = "GFX_USA_the_navy"
 		texturefile = "gfx/interface/goals/USA/USA_the_navy.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_bomber_development"
+		texturefile = "gfx/interface/goals/USA/USA_bomber_development.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_strat_destruction"
+		texturefile = "gfx/interface/goals/USA/USA_strategic_destruction.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_long_range_escorts"
+		texturefile = "gfx/interface/goals/USA/USA_long_range_escorts.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_control_the_sky"
+		texturefile = "gfx/interface/goals/USA/USA_control_the_sky.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_modernize_naval_bombers"
+		texturefile = "gfx/interface/goals/USA/USA_modernize_naval_bombers.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_flying_fortresses"
+		texturefile = "gfx/interface/goals/USA/USA_flying_fortresses.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_form_usaf"
+		texturefile = "gfx/interface/goals/USA/USA_form_the_USAF.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_the_eagle_flies"
+		texturefile = "gfx/interface/goals/USA/USA_the_eagle_flies.png"
 	}
 	
 	SpriteType = {
