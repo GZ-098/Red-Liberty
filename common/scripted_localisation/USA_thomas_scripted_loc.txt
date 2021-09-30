@@ -45,27 +45,40 @@ defined_text = {
 	
 	text = { 
         trigger = {
-			check_variable = { USA_thomas_rich_tyranny > 50 }
+			check_variable = { USA_thomas_rich_opinion > 70 }
         }
-        localization_key = "USA_thomas_rich_tyrant"
+        localization_key = "USA_thomas_opinion_very_high"
     }
 	
 	text = { 
         trigger = {
-			check_variable = { USA_thomas_rich_tyranny > 25 }
+			check_variable = { USA_thomas_rich_opinion > 55 }
+			check_variable = { USA_thomas_rich_opinion < 71 }
         }
-        localization_key = "USA_thomas_rich_threat"
+        localization_key = "USA_thomas_opinion_high"
     }
 	
 	text = { 
         trigger = {
-			check_variable = { USA_thomas_rich_tyranny > 15 }
+			check_variable = { USA_thomas_rich_opinion > 44 }
+			check_variable = { USA_thomas_rich_opinion < 56 }
         }
-        localization_key = "USA_thomas_rich_sus"
+        localization_key = "USA_thomas_opinion_middling"
     }
 	
 	text = { 
-        localization_key = "USA_thomas_rich_nonthreat"
+        trigger = {
+			check_variable = { USA_thomas_rich_opinion > 24 }
+			check_variable = { USA_thomas_rich_opinion < 45 }
+        }
+        localization_key = "USA_thomas_opinion_low"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_thomas_rich_opinion < 25 }
+        }
+        localization_key = "USA_thomas_opinion_very_low"
     }
 }
 
@@ -74,41 +87,123 @@ defined_text = {
 	
 	text = { 
         trigger = {
-			check_variable = { USA_thomas_middle_tyranny > 50 }
+			check_variable = { USA_thomas_middle_opinion > 70 }
         }
-        localization_key = "USA_thomas_middle_tyrant"
+        localization_key = "USA_thomas_opinion_very_high"
     }
 	
 	text = { 
         trigger = {
-			check_variable = { USA_thomas_middle_tyranny > 15 }
+			check_variable = { USA_thomas_middle_opinion > 55 }
+			check_variable = { USA_thomas_middle_opinion < 71 }
         }
-        localization_key = "USA_thomas_middle_sus"
+        localization_key = "USA_thomas_opinion_high"
     }
 	
 	text = { 
-        localization_key = "USA_thomas_middle_nonthreat"
+        trigger = {
+			check_variable = { USA_thomas_middle_opinion > 44 }
+			check_variable = { USA_thomas_middle_opinion < 56 }
+        }
+        localization_key = "USA_thomas_opinion_middling"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_thomas_middle_opinion > 24 }
+			check_variable = { USA_thomas_middle_opinion < 45 }
+        }
+        localization_key = "USA_thomas_opinion_low"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_thomas_middle_opinion < 25 }
+        }
+        localization_key = "USA_thomas_opinion_very_low"
     }
 }
 
 defined_text = {
-	name = GetThomasRadicalism
+	name = GetThomasOpinionPoor
 	
 	text = { 
         trigger = {
-			check_variable = { USA_thomas_rich_radicalism > 50 }
+			check_variable = { USA_thomas_poor_opinion > 70 }
         }
-        localization_key = "USA_thomas_rich_veryhigh_radicalism"
+        localization_key = "USA_thomas_opinion_very_high"
     }
 	
 	text = { 
         trigger = {
-			check_variable = { USA_thomas_rich_radicalism > 15 }
+			check_variable = { USA_thomas_poor_opinion > 55 }
+			check_variable = { USA_thomas_poor_opinion < 71 }
         }
-        localization_key = "USA_thomas_rich_med_radicalism"
+        localization_key = "USA_thomas_opinion_high"
     }
 	
 	text = { 
-        localization_key = "USA_thomas_rich_low_radicalism"
+        trigger = {
+			check_variable = { USA_thomas_poor_opinion > 44 }
+			check_variable = { USA_thomas_poor_opinion < 56 }
+        }
+        localization_key = "USA_thomas_opinion_middling"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_thomas_poor_opinion > 24 }
+			check_variable = { USA_thomas_poor_opinion < 45 }
+        }
+        localization_key = "USA_thomas_opinion_low"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_thomas_poor_opinion < 25 }
+        }
+        localization_key = "USA_thomas_opinion_very_low"
+    }
+}
+
+defined_text = {
+	name = GetThomasOpinionRural
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_thomas_rural_opinion > 70 }
+        }
+        localization_key = "USA_thomas_opinion_very_high"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_thomas_rural_opinion > 55 }
+			check_variable = { USA_thomas_rural_opinion < 71 }
+        }
+        localization_key = "USA_thomas_opinion_high"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_thomas_rural_opinion > 44 }
+			check_variable = { USA_thomas_rural_opinion < 56 }
+        }
+        localization_key = "USA_thomas_opinion_middling"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_thomas_rural_opinion > 24 }
+			check_variable = { USA_thomas_rural_opinion < 45 }
+        }
+        localization_key = "USA_thomas_opinion_low"
+    }
+	
+	text = { 
+        trigger = {
+			check_variable = { USA_thomas_rural_opinion < 25 }
+        }
+        localization_key = "USA_thomas_opinion_very_low"
     }
 }

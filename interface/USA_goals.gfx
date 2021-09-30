@@ -667,8 +667,13 @@ spritetypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_USA_naval_air"
-		texturefile = "gfx/interface/goals/USA/USA_naval_air_is_the_future.png"
+		name = "GFX_USA_expand_operations"
+		texturefile = "gfx/interface/goals/USA/USA_expand_shipbuilding_facilities.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_modern_screens"
+		texturefile = "gfx/interface/goals/USA/USA_modern_screening.png"
 	}
 	
 	SpriteType = {

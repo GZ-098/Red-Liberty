@@ -35,6 +35,10 @@ ideologies = {
 	revolutionary_autocracy = {
 	
 		types = { 
+			marxism_leninism_subtype = {
+			
+			}
+		
 			revolutionary_autocracy_subtype = {
 			
 			}
@@ -61,7 +65,10 @@ ideologies = {
 		faction_impact_on_world_tension = 0.1
 		
 		modifiers = {
-			
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 7.5
+			navy_intel_to_others = 12.5
+			airforce_intel_to_others = 7.5
 		}
 		
 		ai_neutral = yes
@@ -69,8 +76,20 @@ ideologies = {
 	
 	proletarian_dictatorship = {
 	
-		types = { 
+		types = {
+			revolutionary_socialism_subtype = {
+			
+			}
+			
 			proletarian_dictatorship_subtype = {
+			
+			}
+			
+			de_leonism_subtype = {
+			
+			}
+			
+			scientific_socialism_subtype = {
 			
 			}
 		}
@@ -92,7 +111,10 @@ ideologies = {
 		can_host_government_in_exile = yes
 		
 		modifiers = {
-			
+			civilian_intel_to_others = 15.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
 		}
 		
 		ai_neutral = yes
@@ -100,12 +122,12 @@ ideologies = {
 	
 	libertarian_socialism = {
 	
-		types = { 
-			libertarian_socialism_subtype = {
+		types = {
+			democratic_socialism_subtype = {
 			
 			}
 			
-			sewer_socialism_subtype = {
+			libertarian_socialism_subtype = {
 			
 			}
 		}
@@ -127,7 +149,10 @@ ideologies = {
 		can_host_government_in_exile = yes
 		
 		modifiers = {
-			
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5.0
 		}
 		
 		ai_neutral = yes
@@ -140,7 +165,7 @@ ideologies = {
 			
 			}
 			
-			sewer_socialism_socdem_subtype = {
+			sewer_socialism_subtype = {
 			
 			}
 		}
@@ -162,7 +187,10 @@ ideologies = {
 		can_host_government_in_exile = yes
 		
 		modifiers = {
-			
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5.0
 		}
 		
 		ai_neutral = yes
@@ -193,7 +221,10 @@ ideologies = {
 		can_host_government_in_exile = yes
 		
 		modifiers = {
-			
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5.0
 		}
 		
 		ai_neutral = yes
@@ -233,7 +264,10 @@ ideologies = {
 		can_host_government_in_exile = yes
 		
 		modifiers = {
-			
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5.0
 		}
 		
 		ai_neutral = yes
@@ -263,7 +297,10 @@ ideologies = {
 		can_host_government_in_exile = yes
 		
 		modifiers = {
-			
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 5.0
+			navy_intel_to_others = 20.0
+			airforce_intel_to_others = 5.0
 		}
 		
 		ai_neutral = yes
@@ -291,7 +328,10 @@ ideologies = {
 		}
 		
 		modifiers = {
-			
+			civilian_intel_to_others = 15.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
 		}
 		
 		ai_neutral = yes
@@ -304,7 +344,7 @@ ideologies = {
 			
 			}
 			
-			far_right_authoritarianism_subtype = {
+			fundamentalist_theocracy_subtype = {
 			
 			}
 		}
@@ -323,7 +363,10 @@ ideologies = {
 		}
 		
 		modifiers = {
-			
+			civilian_intel_to_others = 15.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
 		}
 		
 		ai_neutral = yes
@@ -351,7 +394,10 @@ ideologies = {
 		}
 		
 		modifiers = {
-			
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 7.5
+			navy_intel_to_others = 12.5
+			airforce_intel_to_others = 7.5
 		}
 		
 		ai_neutral = yes
@@ -365,6 +411,10 @@ ideologies = {
 			}
 			
 			german_socialism_subtype = {
+			
+			}
+			
+			ultranationalism_subtype = {
 			
 			}
 		}
@@ -383,7 +433,10 @@ ideologies = {
 		}
 		
 		modifiers = {
-			
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 7.5
+			navy_intel_to_others = 12.5
+			airforce_intel_to_others = 7.5
 		}
 		
 		ai_neutral = yes

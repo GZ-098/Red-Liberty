@@ -45,9 +45,11 @@ unlock_national_focus = USA_the_naval_act
 
 #create_pie_chart = yes
 #set_variable = { USA_SPA_unity = 78 }
-#set_variable = { USA_thomas_rich_tyranny = 26 }
-#set_variable = { USA_thomas_rich_radicalism = 19 }
-#set_variable = { USA_thomas_middle_tyranny = 12 }
+
+set_variable = { USA_thomas_rich_opinion = 21 }
+set_variable = { USA_thomas_middle_opinion = 51 }
+set_variable = { USA_thomas_poor_opinion = 78 }
+set_variable = { USA_thomas_rural_opinion = 63 }
 
 country_event = { # appalachian insurgency
 	id = united_states.15
@@ -234,7 +236,7 @@ create_country_leader = {
 	desc = "POLITICS_NORMAN_THOMAS_DESC"
 	picture = "Portrait_USA_Norman_Thomas.png"
 	expire = "1947.1.1"
-	ideology = sewer_socialism_subtype
+	ideology = democratic_socialism_subtype
 	traits = {
 		
 	}

@@ -34,7 +34,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Habibullah.dds"
 	expire = "1965.1.1"
-	ideology = autocratic_despotism_subtype
+	ideology = fundamentalist_theocracy_subtype
 	traits = {
 		#
 	}

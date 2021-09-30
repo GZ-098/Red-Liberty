@@ -17,6 +17,21 @@ USA_congress = {
 	priority = 100
 }
 
+USA_interest_groups_category = {
+	icon = usa_congress
+	allowed = {
+		original_tag = USA
+	}
+	
+	visible = {
+		always = no
+	}
+
+	visible_when_empty = yes
+
+	priority = 98
+}
+
 USA_distribute_produce = {
 	icon = usa_congress
 	allowed = {

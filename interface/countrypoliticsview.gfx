@@ -366,6 +366,66 @@ spriteTypes = {
 		texturefile = "gfx//interface//pol_factions_strip.tga"
 		noOfFrames = 4
 	}
+	
+	spriteType = {
+		name = "GFX_ideology_insurrectionary_anarchism_group" 
+		texturefile = "gfx/interface/ideologies/insurrectionary_anarchism_group.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_revolutionary_autocracy_group" 
+		texturefile = "gfx/interface/ideologies/revolutionary_autocracy_group.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_proletarian_dictatorship_group" 
+		texturefile = "gfx/interface/ideologies/proletarian_dictatorship_group.png"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_libertarian_socialism_group"
+		texturefile = "gfx/interface/ideologies/libertarian_socialism_group.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_social_democracy_group" 
+		texturefile = "gfx/interface/ideologies/social_democracy_group.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_progressive_liberalism_group" 
+		texturefile = "gfx/interface/ideologies/progressive_liberalism_group.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_market_libertarianism_group"
+		texturefile = "gfx/interface/ideologies/liberal_conservatism_group.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_national_conservatism_group"
+		texturefile = "gfx/interface/ideologies/national_conservatism_group.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_authoritarian_democracy_group" 
+		texturefile = "gfx/interface/ideologies/authoritarian_democracy_group.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_autocratic_despotism_group" 
+		texturefile = "gfx/interface/ideologies/autocratic_despotism_group.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_far_right_authoritarianism_group" 
+		texturefile = "gfx/interface/ideologies/far_right_authoritarianism_group.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_fascism_group" 
+		texturefile = "gfx/interface/ideologies/new_fascism_group.png"
+	}
 
 	spriteType = {
 		name = "GFX_ideology_unknown"

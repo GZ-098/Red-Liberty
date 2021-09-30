@@ -277,6 +277,7 @@
  USA_war_is_a_racket:0 "War is a Racket"
  USA_butler_reform_plan:0 "Butler Reform Plan"
  USA_20_division_plan:0 "20-Division Plan"
+ USA_20_division_plan_1:0 "20-Division Plan"
  USA_scrap_reserves:0 "Scrap the Reserves"
  USA_adequate_defense:0 "Adequate Defense at the Coastline..."
  USA_decentralize_national_guard:0 "Decentralize the National Guard"
@@ -340,6 +341,7 @@
  USA_modern_screens:0 "Modern Screening"
  
  USA_naval_air:0 "Naval Air is the Future!"
+ USA_the_bureau_of_aeronautics:0 "Bureau of Aeronautics"
  
  
  ### MEXICO INTERVENTION TREE ###
@@ -382,23 +384,22 @@
  USA_amendments_category:0 "To Make Amends"
  USA_amendments_category_desc:0 "The authority to amend the Constitution of the United States is derived from §YArticle V§! of the Constitution. The Constitution provides that an amendment may be proposed either by the Congress with a §Ytwo-thirds majority vote in both the House of Representatives and the Senate§! or by a constitutional convention called for by two-thirds of the State legislatures. Thus far, the method of amendment via constitutional convention has never been used. A proposed amendment becomes part of the Constitution as soon as it is §Yratified by three-fourths of the States (at this time 36 of 48 States)§!.\n\nWe currently have the support of X/36 state governments.\n\n§YNew England§!:[AMENDMENT_CONNECTICUT_SUPPORT][AMENDMENT_MAINE_SUPPORT][AMENDMENT_MASSACHUSETTS_SUPPORT][AMENDMENT_NEW_HAMPSHIRE_SUPPORT][AMENDMENT_RHODE_ISLAND_SUPPORT][AMENDMENT_VERMONT_SUPPORT]\n\n§YThe East Coast§!:[AMENDMENT_DELAWARE_SUPPORT][AMENDMENT_MARYLAND_SUPPORT][AMENDMENT_NEW_YORK_SUPPORT][AMENDMENT_NEW_JERSEY_SUPPORT][AMENDMENT_PENNSYLVANIA_SUPPORT][AMENDMENT_WEST_VIRGINIA_SUPPORT]\n\n§YThe Deep South§!:[AMENDMENT_ALABAMA_SUPPORT][AMENDMENT_ARKANSAS_SUPPORT][AMENDMENT_FLORIDA_SUPPORT][AMENDMENT_GEORGIA_SUPPORT][AMENDMENT_LOUISIANA_SUPPORT][AMENDMENT_MISSISSIPPI_SUPPORT][AMENDMENT_SOUTH_CAROLINA_SUPPORT]\n\n§YThe Upper South§!:[AMENDMENT_KENTUCKY_SUPPORT][AMENDMENT_NORTH_CAROLINA_SUPPORT][AMENDMENT_VIRGINIA_SUPPORT][AMENDMENT_TENNESSEE_SUPPORT]\n\n§YThe Southwest§!:[AMENDMENT_TEXAS_SUPPORT][AMENDMENT_OKLAHOMA_SUPPORT][AMENDMENT_NEW_MEXICO_SUPPORT][AMENDMENT_ARIZONA_SUPPORT]\n\n§YThe Great Lakes§!:[AMENDMENT_ILLINOIS_SUPPORT][AMENDMENT_INDIANA_SUPPORT][AMENDMENT_MICHIGAN_SUPPORT][AMENDMENT_OHIO_SUPPORT][AMENDMENT_WISCONSIN_SUPPORT]\n\n§YThe Great Plains§!:[AMENDMENT_MINNESOTA_SUPPORT][AMENDMENT_IOWA_SUPPORT][AMENDMENT_KANSAS_SUPPORT][AMENDMENT_MISSOURI_SUPPORT][AMENDMENT_NEBRASKA_SUPPORT][AMENDMENT_NORTH_DAKOTA_SUPPORT][AMENDMENT_SOUTH_DAKOTA_SUPPORT]\n\n§YThe Rockies§!:[AMENDMENT_COLORADO_SUPPORT][AMENDMENT_IDAHO_SUPPORT][AMENDMENT_MONTANA_SUPPORT][AMENDMENT_NEVADA_SUPPORT][AMENDMENT_UTAH_SUPPORT][AMENDMENT_WYOMING_SUPPORT]\n\n§YThe West Coast:§![AMENDMENT_CALIFORNIA_SUPPORT][AMENDMENT_OREGON_SUPPORT][AMENDMENT_WASHINGTON_SUPPORT]\n"
  
- USA_thomas_tyranny_category:0 "Walking the Tightrope"
- USA_thomas_tyranny_category_desc:0 "There are those who say that socialism has no place in America. There are those who would do anything to keep it that way. We must keep an eye on the groups most likely to fall under the influence of far-right extremism.\n\nThe §Rbourgeoisie upper-class oligarchs§!, sitting in their gilded halls of crime view the president [GetThomasOpinionRich] [GetThomasRadicalism].\n\nThe §Ymiddle class§!, ever fickle and ignorant of the plight of the worker views the president [GetThomasOpinionMiddle]\n\n§RFar-right extremist groups§! such as the KKK §Yhate us and our agenda§!, but §Glack widespread popular support§!."
+ #USA_thomas_tyranny_category:0 "Walking the Tightrope"
+ #USA_thomas_tyranny_category_desc:0 "There are those who say that socialism has no place in America. There are those who would do anything to keep it that way. We must keep an eye on the groups most likely to fall under the influence of far-right extremism.\n\nThe §Rbourgeoisie upper-class oligarchs§!, sitting in their gilded halls of crime view the president [GetThomasOpinionRich] [GetThomasRadicalism].\n\nThe §Ymiddle class§!, ever fickle and ignorant of the plight of the worker views the president [GetThomasOpinionMiddle]\n\n§RFar-right extremist groups§! such as the KKK §Yhate us and our agenda§!, but §Glack widespread popular support§!."
  
- USA_thomas_rich_nonthreat:0 "§Yas a non-threat§!"
- USA_thomas_rich_sus:0 "§Ywith suspicion§!"
- USA_thomas_rich_threat:0 "§Yas a threat to their power§!"
- USA_thomas_rich_tyrant:0 "§Ras a Tyrant of the highest order§!"
+ USA_interest_groups_category:0 "Interest Groups"
+ USA_interest_groups_category_desc:0 "\nThe Upper Class, sitting in their gilded halls of crime [GetThomasOpinionRich]\n\nThe Middle Class, ever fickle and ignorant of the plight of the worker [GetThomasOpinionMiddle]\n\nThe Urban Laborer, toiling away in his factory [GetThomasOpinionPoor]\n\nThe Rural Farmer [GetThomasOpinionRural]\n\n---------------------------------\n\nThe Labor Union\n\nThe Business Magnate\n\nRight-Wing Extremists\n"
  
- USA_thomas_middle_nonthreat:0 "§Yas a non-threat§!"
- USA_thomas_middle_sus:0 "§Ywith suspicion§!"
- USA_thomas_middle_tyrant:0 "§Ras a Tyrant of the highest order§!"
+ USA_thomas_opinion_very_high:0 "§Gloves our administration§!."
+ USA_thomas_opinion_high:0 "§Gapproves of our administration§!."
+ USA_thomas_opinion_middling:0 "§Yhas mixed opinions of our administration§!."
+ USA_thomas_opinion_low:0 "§Rdislikes our administration§!."
+ USA_thomas_opinion_very_low:0 "§Rhates our administration§!."
  
- USA_thomas_rich_low_radicalism:0 "and are §Ycontent with supporting establishment parties§!"
- USA_thomas_rich_med_radicalism:0 "and are §Yputting their ill-gotten gains to use§!, supporting anti-socialist political groups"
- USA_thomas_rich_high_radicalism:0 ""
- USA_thomas_rich_veryhigh_radicalism:0 ""
- 
+ #USA_thomas_rich_nonthreat:0 "§Yas a non-threat§!"
+ #USA_thomas_rich_sus:0 "§Ywith suspicion§!"
+ #USA_thomas_rich_threat:0 "§Yas a threat to their power§!"
+ #USA_thomas_rich_tyrant:0 "§Ras a Tyrant of the highest order§!"
  
  USA_american_economy_category:0 "The American Economy"
  USA_american_economy_category_desc:0 "Unemployment is at §Y[?USA_unemployment]%§!.\nUnemployment is currently [GetUnemploymentTrend], at a rate of §Y[?USA_unemployment_change]§! per month.\n\nThe Poverty Rate is §Y[?USA_poverty]%§!, with a target of §Y[?USA_poverty_goal]%§!.\nThe Poverty Rate is currently [GetPovertyTrend], at a rate of §Y[?USA_poverty_change]§! per month.\n\nInflation is at §Y[?USA_inflation]%§!, which is a state of [GetInflationState].\nInflation is currently [GetInflationTrend], at a rate of §Y[?USA_inflation_change]§! per month."

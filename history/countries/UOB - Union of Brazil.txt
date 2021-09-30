@@ -18,7 +18,7 @@ set_technology = {
 set_cosmetic_tag = UOB_nla
 
 set_politics = {
-	ruling_party = libertarian_socialism
+	ruling_party = proletarian_dictatorship
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
@@ -48,7 +48,7 @@ create_country_leader = {
 	desc = "POLITICS_LUIS_CARLOS_PRESTES_DESC"
 	picture = "Portrait_UOB_Luis_Carlos_Prestes.tga"
 	expire = "1965.1.1"
-	ideology = libertarian_socialism_subtype
+	ideology = revolutionary_socialism_subtype
 	traits = {
 		#
 	}
