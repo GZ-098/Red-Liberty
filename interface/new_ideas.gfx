@@ -6,46 +6,6 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_USA_social_coalition"
-		texturefile = "gfx/interface/ideas/USA/USA_the_social_coalition.png"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_USA_the_great_depression_1"
-		texturefile = "gfx/interface/ideas/USA/USA_great_depression.tga"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_USA_the_great_depression_2"
-		texturefile = "gfx/interface/ideas/USA/USA_great_depression.tga"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_USA_the_great_depression_3"
-		texturefile = "gfx/interface/ideas/USA/USA_great_depression.tga"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_USA_the_great_depression_4"
-		texturefile = "gfx/interface/ideas/USA/USA_great_depression.tga"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_USA_the_great_depression_5"
-		texturefile = "gfx/interface/ideas/USA/USA_great_depression.tga"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_USA_red_liberty"
-		texturefile = "gfx/interface/ideas/USA/USA_red_liberty.tga"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_USA_pacifism"
-		texturefile = "gfx/interface/ideas/USA/USA_pacifism.tga"
-	}
-	
-	spriteType = {
 		name = "GFX_idea_SOV_home_of_the_revolution"
 		texturefile = "gfx/interface/ideas/SOV/SOV_home_of_revolution.tga"
 	}

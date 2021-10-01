@@ -1171,20 +1171,27 @@ defined_text = {
 
 defined_text = {
 	name = Get_USA_states_gui_OK
+	
 	text = {
 		trigger = {
-			check_variable = { 374.republican_popularity > 374.socialist_popularity }
-			check_variable = { 374.republican_popularity > 374.democrat_popularity }
-			check_variable = { 374.republican_popularity > 374.afp_popularity }
+			OR = {
+				AND = {
+					check_variable = { 374.senator_1 = 1 }
+					check_variable = { 374.senator_2 = 3 }
+				}
+				AND = {
+					check_variable = { 374.senator_1 = 3 }
+					check_variable = { 374.senator_2 = 1 }
+				}
+			}
 		}
-		localization_key = "GFX_USA_states_gui_OK_republican"
+		localization_key = "GFX_USA_states_gui_OK_socialist_democrat_split"
 	}
 	
 	text = {
 		trigger = {
-			check_variable = { 374.democrat_popularity > 374.socialist_popularity }
-			check_variable = { 374.democrat_popularity > 374.republican_popularity }
-			check_variable = { 374.democrat_popularity > 374.afp_popularity }
+			check_variable = { 374.senator_1 = 3 }
+			check_variable = { 374.senator_2 = 3 }
 		}
 		localization_key = "GFX_USA_states_gui_OK_democrat"
 	}

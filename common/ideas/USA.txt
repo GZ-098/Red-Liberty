@@ -302,6 +302,31 @@ ideas = {
 			}
 		}
 		
+		USA_the_great_depression_3 = {
+			
+			removal_cost = -1 
+			
+			allowed_civil_war = {	 
+				always = yes
+			}
+			
+			available = {
+				always = yes
+			}
+			
+			allowed = {
+				original_tag = USA
+			}
+				
+			modifier = {
+				production_speed_buildings_factor = -0.275
+				consumer_goods_factor = 0.25
+				production_factory_max_efficiency_factor = -0.125
+				production_factory_efficiency_gain_factor = -0.125
+				industrial_capacity_factory = -0.275
+			}
+		}
+		
 		USA_the_dust_bowl_1 = {
 			
 			removal_cost = -1 

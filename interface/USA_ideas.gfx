@@ -1,0 +1,62 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_USA_red_liberty"
+		texturefile = "gfx/interface/ideas/USA/USA_red_liberty.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_USA_social_coalition"
+		texturefile = "gfx/interface/ideas/USA/USA_the_social_coalition.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_USA_the_great_depression_1"
+		texturefile = "gfx/interface/ideas/USA/USA_great_depression.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_USA_the_great_depression_2"
+		texturefile = "gfx/interface/ideas/USA/USA_great_depression.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_USA_the_great_depression_3"
+		texturefile = "gfx/interface/ideas/USA/USA_great_depression.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_USA_the_great_depression_4"
+		texturefile = "gfx/interface/ideas/USA/USA_great_depression.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_USA_the_great_depression_5"
+		texturefile = "gfx/interface/ideas/USA/USA_great_depression.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_USA_pacifism"
+		texturefile = "gfx/interface/ideas/USA/USA_pacifism.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_USA_bloated_federal_government"
+		texturefile = "gfx/interface/ideas/USA/USA_blooted_executive_branch.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_USA_safety_net_barebones"
+		texturefile = "gfx/interface/ideas/USA/USA_american_safety_net_barebones.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_USA_safety_net_small"
+		texturefile = "gfx/interface/ideas/USA/USA_american_safety_net_small.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_USA_safety_net_acceptable"
+		texturefile = "gfx/interface/ideas/USA/USA_american_safety_net_acceptable.png"
+	}
+}

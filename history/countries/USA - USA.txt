@@ -178,7 +178,6 @@ set_popularities = {
 add_ideas = {
 	USA_red_liberty
 	USA_the_great_depression_1
-	USA_the_dust_bowl_1
 	USA_social_coalition
 	USA_bloated_federal_government
 	

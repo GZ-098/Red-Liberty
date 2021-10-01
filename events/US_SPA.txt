@@ -1,8 +1,8 @@
 add_namespace = united_states_thomas
 
-country_event = { # east coast campaign
+country_event = { # east coast campaign - nyc
 	id = united_states_thomas.1
-	title = "The Red Apple"
+	title = united_states_thomas.1.title
 	desc = united_states_thomas.1.desc
 	
 	is_triggered_only = yes
@@ -14,10 +14,15 @@ country_event = { # east coast campaign
 	fire_only_once = yes
 
 	option = {
-		name = "A municipal revolution."
+		name = united_states_thomas.1.a
 		add_popularity = {
 			ideology = libertarian_socialism
 			popularity = 0.01
+		}
+		hidden_effect = {
+			358 = { # new york state
+				add_to_variable = { socialist_popularity = 0.025 }
+			}
 		}
 		add_political_power = 10
 	}
@@ -25,7 +30,7 @@ country_event = { # east coast campaign
 
 country_event = { # great lakes campaign
 	id = united_states_thomas.2
-	title = "Workingmen, Unite!"
+	title = united_states_thomas.2.title
 	desc = united_states_thomas.2.desc
 	
 	is_triggered_only = yes
@@ -37,7 +42,7 @@ country_event = { # great lakes campaign
 	fire_only_once = yes
 
 	option = {
-		name = "S-P-A! S-P-A! S-P-A!"
+		name = united_states_thomas.2.a
 		add_popularity = {
 			ideology = libertarian_socialism
 			popularity = 0.01
@@ -453,7 +458,7 @@ country_event = { #
 	}
 }
 
-country_event = { # 
+country_event = { # post-housing act flavor event
 	id = united_states_thomas.27
 	title = "All the Money in the World"
 	desc = united_states_thomas.27.desc
@@ -464,5 +469,61 @@ country_event = { #
 
 	option = {
 		name = "A closet still locked and unseen."
+	}
+}
+
+country_event = { # right to learn
+	id = united_states_thomas.28
+	title = united_states_thomas.28.title
+	desc = united_states_thomas.28.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = united_states_thomas.28.a
+	}
+}
+
+country_event = { # right to work
+	id = united_states_thomas.29
+	title = united_states_thomas.29.title
+	desc = united_states_thomas.29.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = united_states_thomas.29.a
+	}
+}
+
+country_event = { # right to life
+	id = united_states_thomas.30
+	title = united_states_thomas.30.title
+	desc = united_states_thomas.30.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = united_states_thomas.30.a
+	}
+}
+
+country_event = { # right to democracy
+	id = united_states_thomas.31
+	title = united_states_thomas.31.title
+	desc = united_states_thomas.31.desc
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = united_states_thomas.31.a
 	}
 }

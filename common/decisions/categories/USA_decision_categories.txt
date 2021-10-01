@@ -1,5 +1,7 @@
 USA_congress = {
 	icon = usa_congress
+	picture = GFX_decision_USA_electoral_college
+	
 	allowed = {
 		original_tag = USA
 	}

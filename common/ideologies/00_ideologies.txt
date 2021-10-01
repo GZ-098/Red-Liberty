@@ -347,6 +347,10 @@ ideologies = {
 			fundamentalist_theocracy_subtype = {
 			
 			}
+			
+			absolute_monarchy_subtype = {
+			
+			}
 		}
 		
 		dynamic_faction_names = {

@@ -66,15 +66,17 @@
  authoritarian_democracy_noun:0 "Authoritarian Democracy"
  authoritarian_democracy_desc:0 "Authoritarian Government"
  
- authoritarian_demoracy_subtype_desc:0 "Professing the values of democracy and liberty, but practicing an authoritarian, undemocratic political style, §YAuthoritarian Democracy§! is a contradictory but very common mode of political organizing. The military, a strongman, a populist, or some other political force has suspended civil liberties and operates with unchecked power in a civil dictatorship, running only a sham of democracy, while justifying it with democratic rhetoric, such as "protecting democracy," "maintaining order," and "for national security.""
+ authoritarian_democracy_subtype_desc:0 "Professing the values of democracy and liberty, but practicing an authoritarian, undemocratic political style, §YAuthoritarian Democracy§! is a contradictory but very common mode of political organizing. The military, a strongman, a populist, or some other political force has suspended civil liberties and operates with unchecked power in a civil dictatorship, running only a sham of democracy, while justifying it with democratic rhetoric, such as "protecting democracy," "maintaining order," and "for national security.""
  
  autocratic_despotism:0 "Autocratic Despotism"
  autocratic_despotism_noun: "Autocratic Despotism"
  autocratic_despotism_desc:0 "Despotic Government"
  
- autocratic_despotism_subtype_desc:0 "Characterized by overt military rule and a total lack of democracy or civil liberties, Aurocratic Despotism is a style of rule in which an individual, clique, or organization has seized absolute power without meaningful pretense besides that of the force they wield. Including warlords, absolute monarchs, military dictatorships, and more, Aurocratic Despotism is distinguished from other kinds of authoritarianism by its lack of meaningful ideology and brazen, "might makes right" attitude."
+ autocratic_despotism_subtype_desc:0 "Characterized by overt military rule and a total lack of democracy or civil liberties, §YAutocratic Despotism§! is a style of rule in which an individual, clique, or organization has seized absolute power without meaningful pretense besides that of the force they wield. Including warlords, absolute monarchs, military dictatorships, and more, Aurocratic Despotism is distinguished from other kinds of authoritarianism by its lack of meaningful ideology and brazen, "might makes right" attitude."
  
- fundamentalist_theocracy_subtype_desc:0 "Deriving its mandate to rule and political doctrines solely on a religious basis, Fundamentalist Theocracy is a self-justifying and nebulous form of government. Usually but not always socially reactionary, these Theocrats are still deeply opposed to secularism, foreign religions, and disruptive social change. Fundamentalist Theocrats can be of any religion and hold nearly any specific policy positions, but are differentiated from other ideologies due to their strict adherence to a religious text or doctrine that forms the basis of their politics."
+ fundamentalist_theocracy_subtype_desc:0 "Deriving its mandate to rule and political doctrines solely on a religious basis, §YFundamentalist Theocracy§! is a self-justifying and nebulous form of government. Usually but not always socially reactionary, these Theocrats are still deeply opposed to secularism, foreign religions, and disruptive social change. Fundamentalist Theocrats can be of any religion and hold nearly any specific policy positions, but are differentiated from other ideologies due to their strict adherence to a religious text or doctrine that forms the basis of their politics."
+ 
+ absolute_monarchy_subtype_desc:0 ""
  
  far_right_authoritarianism:0 "Far-Right Authoritarianism"
  far_right_authoritarianism_noun: "Far-Right Authoritarianism"

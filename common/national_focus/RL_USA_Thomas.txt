@@ -998,7 +998,10 @@ shared_focus = {
 	relative_position_id = USA_second_bill_of_rights
 	prerequisite = { focus = USA_second_bill_of_rights }
     completion_reward = {
-        # add event
+        country_event = {
+			id = united_states_thomas.28
+			days = 1
+		}
     }
 	
 	ai_will_do = {
@@ -1171,7 +1174,10 @@ shared_focus = {
 	relative_position_id = USA_second_bill_of_rights
 	prerequisite = { focus = USA_second_bill_of_rights }
     completion_reward = {
-        # add event
+        country_event = {
+			id = united_states_thomas.29
+			days = 1
+		}
     }
 	
 	ai_will_do = {
@@ -1320,7 +1326,10 @@ shared_focus = {
 	relative_position_id = USA_second_bill_of_rights
 	prerequisite = { focus = USA_second_bill_of_rights }
     completion_reward = {
-        # add event
+        country_event = {
+			id = united_states_thomas.30
+			days = 1
+		}
     }
 	
 	ai_will_do = {
@@ -1504,7 +1513,10 @@ shared_focus = {
 	relative_position_id = USA_second_bill_of_rights
 	prerequisite = { focus = USA_second_bill_of_rights }
     completion_reward = {
-        # add event
+        country_event = {
+			id = united_states_thomas.30
+			days = 1
+		}
     }
 	
 	ai_will_do = {

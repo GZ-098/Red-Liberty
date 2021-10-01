@@ -26,9 +26,7 @@
  
  USA_congress_voting_none:0 "There is currently no important legislation being considered."
  
- USA_congress_voting_bill:0 "§YCongress§! is currently considering §Y[get_bill_name]§!, which currently expects the support of [get_rep_color]/§Y[?USA.rep_quorum_medium]§! Representatives and [get_senator_color]/§Y[?USA.quorum_medium]§! Senators.\n[get_us_communist_rep_support][get_us_socialist_rep_support][get_us_farmer_labor_rep_support][get_us_liberal_rep_support][get_us_republican_rep_support][get_us_democrat_rep_support][get_us_afp_rep_support]"
- 
- asubdisa:0 "\n\n§G[?republican_supporting_senators]§! Republican Senator(s) support the bill.\n§G[?democrat_supporting_senators]§! Democratic Senator(s) support the bill.\n§G[?socialist_supporting_senators]§! Socialist Senator(s) support the bill.\n§G[?fascist_supporting_senators]§! America First Senator(s) support the bill.\n§G[?communist_supporting_senators]§! Communist Senator(s) support the bill."
+ USA_congress_voting_bill:0 "§YCongress§! is currently considering §Y[get_bill_name]§!, which currently expects the support of [get_rep_color]/§Y[?USA.rep_quorum_medium]§! Representatives and [get_senator_color]/§Y[?USA.quorum_medium]§! Senators.\n[get_us_communist_rep_support][get_us_socialist_rep_support][get_us_farmer_labor_rep_support][get_us_liberal_rep_support][get_us_republican_rep_support][get_us_democrat_rep_support][get_us_afp_rep_support]\n\n§G[?republican_supporting_senators]§! Republican Senator(s) support the bill.\n§G[?democrat_supporting_senators]§! Democratic Senator(s) support the bill.\n§G[?socialist_supporting_senators]§! Socialist Senator(s) support the bill.\n§G[?fascist_supporting_senators]§! America First Senator(s) support the bill.\n§G[?communist_supporting_senators]§! Communist Senator(s) support the bill."
  
  USA_congress_communist_rep_support:0 "\n§G[?communist_supporting_reps]§! Communist Representative(s) support the bill."
  USA_congress_socialist_rep_support:0 "\n§G[?socialist_supporting_reps]§! Socialist Representative(s) support this bill."
